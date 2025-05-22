@@ -234,23 +234,7 @@
 			]
 		},
 		{
-	"name": "Escape a Grapple",
-	"source": "PHB",
-	"page": 195,
-	"srd": true,
-	"basicRules": true,
-	"time": [
-		{
-			"number": 1,
-			"unit": "action"
-		}
-	],
-	"entries": [
-		"A Grappled creature can use its action to make a Strength ({@skill Athletics|PHB}) or Dexterity ({@skill Acrobatics|PHB}) check against the grapple's escape DC, ending the condition on itself on a success. The condition also ends if the grappler has the {@condition Incapacitated|PHB} condition or if the distance between the Grappled target and the grappler exceeds the grapple's range."
-	]
-},
-		{
-			"name": "Grapple",
+			"name": "Escape a Grapple",
 			"source": "PHB",
 			"page": 195,
 			"srd": true,
@@ -262,18 +246,7 @@
 				}
 			],
 			"entries": [
-				"When you want to grab a creature or wrestle with it, you can use the {@action Attack} action to make a special melee attack, a grapple. If you're able to make multiple attacks with the {@action Attack} action, this attack replaces one of them. The target of your grapple must be no more than one size larger than you, and it must be within your reach.",
-				"Using at least one free hand, you try to seize the target by making a grapple check, a Strength ({@skill Athletics}) check contested by the target's Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check (the target chooses the ability to use). You succeed automatically if the target is {@condition incapacitated}. If you succeed, you subject the target to the {@condition grappled} condition (see the appendix). The condition specifies the things that end it, and you can release the target whenever you like (no action required).",
-				{
-					"type": "entries",
-					"name": "Moving a Grappled Target",
-					"entries": [
-						"When you move, you can drag or carry the {@condition grappled} creature with you, but your speed is halved, unless the creature is two or more sizes smaller than you."
-					]
-				}
-			],
-			"seeAlsoAction": [
-				"Escape a Grapple"
+				"A Grappled creature can use its action to make a Strength ({@skill Athletics|PHB}) or Dexterity ({@skill Acrobatics|PHB}) check against the grapple's escape DC, ending the condition on itself on a success. The condition also ends if the grappler has the {@condition Incapacitated|PHB} condition or if the distance between the Grappled target and the grappler exceeds the grapple's range."
 			]
 		},
 		{
@@ -502,27 +475,6 @@
 			]
 		},
 		{
-			"name": "Shove",
-			"source": "PHB",
-			"page": 195,
-			"srd": true,
-			"basicRules": true,
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"entries": [
-				"Using the {@action Attack} action, you can make a special melee attack to shove a creature, either to knock it {@condition prone} or push it away from you. If you're able to make multiple attacks with the {@action Attack} action, this attack replaces one of them.",
-				"The target of your shove must be no more than one size larger than you, and it must be within your reach. You make a Strength ({@skill Athletics}) check contested by the target's Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check (the target chooses the ability to use). You succeed automatically if the target is {@condition incapacitated}. If you succeed, you either knock the target {@condition prone} or push it 5 feet away from you."
-			],
-			"seeAlsoAction": [
-				"Attack",
-				"Shove Aside|DMG"
-			]
-		},
-		{
 			"name": "Shove Aside",
 			"source": "DMG",
 			"page": 272,
@@ -534,7 +486,7 @@
 				}
 			],
 			"entries": [
-				"With this option, a creature uses the special {@action shove} attack from the {@book Player's Handbook|PHB|9|Shoving a Creature} to force a target to the side, rather than away. The attacker has disadvantage on its Strength ({@skill Athletics}) check when it does so. If that check is successful, the attacker moves the target 5 feet to a different space within its reach."
+				"With this option, a creature uses the {@action Unarmed Attack} Shove action from the {@book Player's Handbook|PHB} to force a target to the side, rather than away. The attacker has disadvantage on its Strength ({@skill Athletics}) check when it does so. If that check is successful, the attacker moves the target 5 feet to a different space within its reach."
 			]
 		},
 		{
