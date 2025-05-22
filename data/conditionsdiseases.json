@@ -223,6 +223,9 @@
          "After taking any action or making any perceivable audible sound, you are no longer Hidden."
 					]
 				}
+			],
+			"seeAlsoCondition": [
+    		    "Invisible|PHB"
 			]
 		},
 		{
@@ -265,17 +268,37 @@
 					"source": "HftT",
 					"page": 48
 				}
-			],
+			]
 			"entries": [
+				"When you have the Invisible Condition, you, as well as the belongings you are wearing and carrying, become transparent. You cannot be seen without the aid of magic or a special sense, however, your actions can still produce noise and visibly impact your environment.",
+     		   "While Invisible, you gain the following benefits.",
 				{
-					"type": "list",
-					"items": [
-						"An invisible creature is impossible to see without the aid of magic or a special sense. For the purpose of hiding, the creature is heavily obscured. The creature's location can be detected by any noise it makes or any tracks it leaves.",
-						"Attack rolls against the creature have disadvantage, and the creature's attack rolls have advantage."
-					]
-				}
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Initiative Boost",
+							"entries": [
+								"You gain advantage on initiative rolls."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Attacks Affected",
+							"entries": [
+								"Your attacks have advantage while attacks against you have disadvantage. You lose this benefit against individual creatures that can see you while you're still invisible."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Hidden",
+							"entries": [
+								"You have advantage when making a Dexterity ({@skill Stealth}) Check to hide, granting the {@condition hidden} Condition on a success, however any noise made, including casting spells with a verbal component, will end the {@condition hidden} Condition, while maintaining your invisibility pending any caveats related to how you became Invisible."
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+    		"seeAlsoCondition": [
+    		    "Hidden|PHB"
+			]
 		},
 		{
 			"name": "Paralyzed",
