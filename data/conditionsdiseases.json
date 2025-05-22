@@ -371,34 +371,52 @@
 			]
 		},
 		{
-			"name": "Paralyzed",
-			"source": "PHB",
-			"page": 291,
-			"srd": true,
-			"basicRules": true,
-			"otherSources": [
-				{
-					"source": "RMR",
-					"page": 62
-				},
-				{
-					"source": "HftT",
-					"page": 48
-				}
-			],
+	"name": "Paralyzed",
+	"source": "PHB",
+	"page": 291,
+	"srd": true,
+	"basicRules": true,
+	"otherSources": [
+		{
+			"source": "RMR",
+			"page": 62
+		},
+		{
+			"source": "HftT",
+			"page": 48
+		}
+	],
+	"entries": [
+		"While you have the paralyzed, you experience the following effects.",
+		{
+			"type": "entries",
 			"entries": [
 				{
-					"type": "list",
-					"items": [
-						"A paralyzed creature is {@condition incapacitated} and can't move or speak.",
-						"The creature automatically fails Strength and Dexterity saving throws.",
-						"Attack rolls against the creature have advantage.",
-						"Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature."
+					"type": "entries",
+					"name": "Incapacitated Plus",
+					"entries": [
+						"You are restrained and have the {@condition Incapacitated|PHB} condition. Your movement speed is dropped to 0 and cannot be increased. Additionally, you cannot speak and you automatically fail Strength and Dexterity Saving Throws. "
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Easy Target",
+					"entries": [
+						"Attack rolls against you have advantage and if the attacker hits you while within 5 feet of you, the attack roll is considered a Critical Hit. "
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Paralysis",
+					"entries": [
+						"You lose the ability to move or feel any body part from the neck down as you are frozen in the position you were in when you gained the condition. When you make a Perception check that relies on the feeling of touch or physical sensation, you automatically fail the check."
 					]
 				}
-			],
-			"hasFluffImages": true
-		},
+			]
+		}
+	],
+	"hasFluffImages": true
+},
 		{
 			"name": "Petrified",
 			"source": "PHB",
@@ -501,7 +519,7 @@
 				}
 			],
 			"entries": [
-				"While you have the Restrained condition, you experience the following effects.",
+				"While you are restrained, you experience the following effects.",
 				{
 					"type": "entries",
 					"entries": [
