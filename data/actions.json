@@ -214,24 +214,21 @@
 			]
 		},
 		{
-			"name": "Escape a Grapple",
-			"source": "PHB",
-			"page": 195,
-			"srd": true,
-			"basicRules": true,
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"entries": [
-				"A {@condition grappled} creature can use its action to escape. To do so, it must succeed on a Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check contested by your Strength ({@skill Athletics}) check."
-			],
-			"seeAlsoAction": [
-				"Grapple"
-			]
-		},
+	"name": "Escape a Grapple",
+	"source": "PHB",
+	"page": 195,
+	"srd": true,
+	"basicRules": true,
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"entries": [
+		"A Grappled creature can use its action to make a Strength ({@skill Athletics|PHB}) or Dexterity ({@skill Acrobatics|PHB}) check against the grapple's escape DC, ending the condition on itself on a success. The condition also ends if the grappler has the {@condition Incapacitated|PHB} condition or if the distance between the Grappled target and the grappler exceeds the grapple's range."
+	]
+},
 		{
 			"name": "Grapple",
 			"source": "PHB",
