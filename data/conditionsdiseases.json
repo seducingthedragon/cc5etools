@@ -595,14 +595,46 @@
 				}
 			],
 			"entries": [
+				"While you are unconscious, you experience the following effects.",
 				{
-					"type": "list",
-					"items": [
-						"An unconscious creature is {@condition incapacitated}, can't move or speak, and is unaware of its surroundings.",
-						"The creature drops whatever it's holding and falls {@condition prone}.",
-						"The creature automatically fails Strength and Dexterity saving throws.",
-						"Attack rolls against the creature have advantage.",
-						"Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature."
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Multi-Conditions",
+							"entries": [
+								"You have the {@condition Incapacitated|PHB} and {@condition Prone|PHB} conditions, and you drop whatever you're holding. When this condition ends, you remain {@condition Prone|PHB}."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "No Response",
+							"entries": [
+								"You automatically fail Strength and Dexterity Saving Throws. Your speed is 0 as you can't move, you can't speak, and you are unaware of your surroundings."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Easy Target",
+							"entries": [
+								"Attack rolls against you have advantage. If the attacker hits you while within 5 feet of you, the attack roll is considered a Critical Hit. "
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Specialized Effects",
+							"entries": [
+								"If you gain this condition due to dropping to 0 Hit Points, you experience additional effects."
+                    		    {
+                         		   "type": "list",
+                          		  "items": [
+                             		   "Taking any damage results in 1 Failed Death Saving Throw.",
+                             		   "Taking damage from a Critical Hit results in 2 Failed Death Saving Throws.",
+                             		   "Regaining any number of hit points ends the Unconscious Condition."
+                            ]
+                       	}
+							]
+						}
 					]
 				}
 			],
