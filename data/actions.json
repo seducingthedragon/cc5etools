@@ -60,17 +60,30 @@
 				}
 			],
 			"entries": [
-				"The most common action to take in combat is the Attack action, whether you are swinging a sword, firing an arrow from a bow, or brawling with your fists.",
-				"With this action, you make one melee or ranged attack. See the \"{@book Making an Attack|phb|9|making an attack}\" section for the rules that govern attacks.",
-				"Certain features, such as the Extra Attack feature of the fighter, allow you to make more than one attack with this action."
+				"When you take the Attack action, you can make one attack roll with a weapon, engage in {@actions Two-Weapon Fighting|PHB}, or an {@action Unarmed Strike|PHB}.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Equipping and Unequipping Weapons",
+							"entries": [
+								"You can either equip or unequip one weapon when you make an attack as part of this action. You do so either before or after the attack. If you equip a weapon before an attack, you don't need to use it for that attack. Equipping a weapon includes drawing it from a sheath or picking it up. Unequipping a weapon includes sheathing, stowing, or dropping it."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Moving Between Attacks",
+							"entries": [
+								"If you move on your turn and have a feature, such as Extra Attack, that gives you more than one attack as part of the Attack action, you can use some or all of that movement to move between those attacks."
+							]
+						}
+					]
+				}
 			],
 			"seeAlsoAction": [
-				"Disarm|DMG",
-				"Grapple",
-				"Mark|DMG",
-				"Shove",
-				"Shove Aside|DMG",
-				"Two-Weapon Fighting"
+				"Two-Weapon Fighting|PHB",
+        		"Unarmed Attack|PHB"
 			]
 		},
 		{
