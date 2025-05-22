@@ -193,6 +193,39 @@
 			"hasFluffImages": true
 		},
 		{
+			"name": "Hidden",
+			"source": "PHB",
+			"page": 290,
+			"srd": true,
+			"basicRules": true,
+			"entries": [
+				"On a successful Stealth check to Hide, you gain the Hidden Condition, granting you total cover behind the object or creature you are hiding behind, concealing your presence.",
+  		      "While hidden, you cannot be perceived without the use of movement, noise, or magic, and you gain the following benefits.",
+  		     		 {
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Initiative Boost",
+							"entries": [
+								"You have advantage on initiative rolls if you are already hidden."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Surprise",
+							"entries": [
+								"You have advantage on your next attack roll immediately after your Hide Action. If your next action is related to magic, such as casting spells, and it requires a saving throw, the targeted creature(s) will make their saving throw with disadvantage as long as you were able to see them while hidden and the spell does not have any Verbal components."
+							]
+						}
+					]
+				},
+         "After taking any action or making any perceivable audible sound, you are no longer Hidden."
+					]
+				}
+			]
+		},
+		{
 			"name": "Incapacitated",
 			"source": "PHB",
 			"page": 290,
