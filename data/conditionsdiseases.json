@@ -450,12 +450,31 @@
 				}
 			],
 			"entries": [
+				"While you have the Restrained condition, you experience the following effects.",
 				{
-					"type": "list",
-					"items": [
-						"A restrained creature's speed becomes 0, and it can't benefit from any bonus to its speed.",
-						"Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.",
-						"The creature has disadvantage on Dexterity saving throws."
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Speed 0",
+							"entries": [
+								"Your speed is 0 and can't increase."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Attacks Affected",
+							"entries": [
+								"{@action Attack|PHB} rolls against you have Advantage, and your attack rolls have Disadvantage."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Saving Throws Affected",
+							"entries": [
+								"You have Disadvantage on Dexterity Saving Throws."
+							]
+						}
 					]
 				}
 			],
