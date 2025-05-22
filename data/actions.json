@@ -134,6 +134,22 @@
 			]
 		},
 		{
+			"name": "Delay Your Initiative",
+			"source": "DMG",
+			"page": 271,
+			"fromVariant": "Action Options",
+  		  "time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			"entries": [
+				"When you delay your initiative, you spend your action determining your new place in the order for the next round. You can only take a later spot and once you have your new initiative order, that is your new spot until the next time you choose to delay it again.",
+				"If you end up moving your turn to the end of the initiative order, you cannot use this action again, until you are no longer last.",
+				"Additionally, if you end up not choosing a new spot in the initiative order, you still maintain your previous spot but do lose out on your full turn from the previous round."
+			]
+		},
+		{
 			"name": "Disarm",
 			"source": "DMG",
 			"page": 271,
