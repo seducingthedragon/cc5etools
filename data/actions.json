@@ -194,10 +194,14 @@
 				{
 					"number": 1,
 					"unit": "action"
+				},
+				{
+					"number": 1,
+					"unit": "bone"
 				}
 			],
 			"entries": [
-				"The time it takes to don or doff armor {@table Getting Into and Out of Armor; Donning and Doffing Armor|phb|depends on the armor's category}. A {@item shield|phb} can be donned or doffed as an action."
+				"A {@item shield|phb} can be donned or doffed as an action, however if you have {@item shield|phb} training, then it takes a bonus action instead."
 			]
 		},
 		{
@@ -614,6 +618,9 @@
 						}
 					]
 				}
+			],
+			"seeAlsoAction": [
+				"Attack|PHB"
 			]
 		},
 		{
