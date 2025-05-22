@@ -548,12 +548,31 @@
 				}
 			],
 			"entries": [
+				"While you have the Stunned condition, you experience the following effects.",
 				{
-					"type": "list",
-					"items": [
-						"A stunned creature is {@condition incapacitated}, can't move, and can speak only falteringly.",
-						"The creature automatically fails Strength and Dexterity saving throws.",
-						"Attack rolls against the creature have advantage."
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Incapacitated Plus",
+							"entries": [
+								"You have the {@condition Incapacitated|PHB} condition, your speed is 0, and you can't speak. Your physical movements from your space appear uncontrolled and uncoordinated. "
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Awareness Challenges",
+							"entries": [
+								"You struggle maintaining awareness of your situation and environment. Making any Intelligence, Wisdom, or Charisma check while stunned is made with disadvantage."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Easy Target",
+							"entries": [
+								"{You automatically fail Strength and Dexterity Saving Throws, and attack rolls against you have advantage against you."
+							]
+						}
 					]
 				}
 			],
