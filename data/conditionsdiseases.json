@@ -371,52 +371,52 @@
 			]
 		},
 		{
-	"name": "Paralyzed",
-	"source": "PHB",
-	"page": 291,
-	"srd": true,
-	"basicRules": true,
-	"otherSources": [
-		{
-			"source": "RMR",
-			"page": 62
-		},
-		{
-			"source": "HftT",
-			"page": 48
-		}
-	],
-	"entries": [
-		"While you have the paralyzed, you experience the following effects.",
-		{
-			"type": "entries",
+			"name": "Paralyzed",
+			"source": "PHB",
+			"page": 291,
+			"srd": true,
+			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 62
+				},
+				{
+					"source": "HftT",
+					"page": 48
+				}
+			],
 			"entries": [
+				"While you have the paralyzed, you experience the following effects.",
 				{
 					"type": "entries",
-					"name": "Incapacitated Plus",
 					"entries": [
-						"You are restrained and have the {@condition Incapacitated|PHB} condition. Your movement speed is dropped to 0 and cannot be increased. Additionally, you cannot speak and you automatically fail Strength and Dexterity Saving Throws. "
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Easy Target",
-					"entries": [
-						"Attack rolls against you have advantage and if the attacker hits you while within 5 feet of you, the attack roll is considered a Critical Hit. "
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Paralysis",
-					"entries": [
-						"You lose the ability to move or feel any body part from the neck down as you are frozen in the position you were in when you gained the condition. When you make a Perception check that relies on the feeling of touch or physical sensation, you automatically fail the check."
+						{
+							"type": "entries",
+							"name": "Incapacitated Plus",
+							"entries": [
+								"You are restrained and have the {@condition Incapacitated|PHB} condition. Your movement speed is dropped to 0 and cannot be increased. Additionally, you cannot speak and you automatically fail Strength and Dexterity Saving Throws. "
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Easy Target",
+							"entries": [
+								"Attack rolls against you have advantage and if the attacker hits you while within 5 feet of you, the attack roll is considered a Critical Hit. "
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Paralysis",
+							"entries": [
+								"You lose the ability to move or feel any body part from the neck down as you are frozen in the position you were in when you gained the condition. When you make a Perception check that relies on the feeling of touch or physical sensation, you automatically fail the check."
+							]
+						}
 					]
 				}
-			]
-		}
-	],
-	"hasFluffImages": true
-},
+			],
+			"hasFluffImages": true
+		},
 		{
 			"name": "Petrified",
 			"source": "PHB",
@@ -434,17 +434,41 @@
 				}
 			],
 			"entries": [
+				"While you are Petrified, you experience the following effects.",
 				{
-					"type": "list",
-					"items": [
-						"A petrified creature is transformed, along with any nonmagical object it is wearing or carrying, into a solid inanimate substance (usually stone). Its weight increases by a factor of ten, and it ceases aging.",
-						"The creature is {@condition incapacitated}, can't move or speak, and is unaware of its surroundings.",
-						"Attack rolls against the creature have advantage.",
-						"The creature automatically fails Strength and Dexterity saving throws.",
-						"The creature has resistance to all damage.",
-						"The creature is immune to poison and disease, although a poison or disease already in its system is suspended, not neutralized."
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Inanimate Transformation",
+							"entries": [
+								"You are transformed, along with any nonmagical objects you are wearing and carrying, into a solid inanimate substance (usually stone). Your weight increases by a factor of ten, and you cease aging."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Incapacitated Plus",
+							"entries": [
+								"You have the {@condition Incapacitated|PHB} condition, can't move (speed 0) or speak, and are unaware of your surroundings"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Easy Target and Autofails",
+							"entries": [
+								" Attack rolls against the you have advantage. Your Armor Class is related to the material object that you are turned into. The DM will have that information. You also automatically fail all saving throws and ability checks."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Resistance and Immunity",
+							"entries": [
+								"You have resistance to all damage. Additionally, you are immune to poison and disease, although a poison or disease already in its system is suspended, not neutralized."
+							]
+						}
 					]
-				}
+				},
+     		   "Only a Greater Restoration spell or similar magic can remove the condition and transform you back into yourself."
 			],
 			"hasFluffImages": true
 		},
