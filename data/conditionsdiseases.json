@@ -293,12 +293,34 @@
 				}
 			],
 			"entries": [
+				"While you have the Incapacitated condition, you experience the following effects.",
 				{
-					"type": "list",
-					"items": [
-						"An incapacitated creature can't take actions or reactions."
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Limited Abilities",
+							"entries": [
+								"You can't take any action, bonus action, or reactions. In addition, you immediately lose concentration if you are concentrating on a spell.."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Slow to React, Slow to Respond",
+							"entries": [
+								"You have disadvantage on Initiative. If you are proficiency in either Strength or Dexterity Saving Throws, you lose your proficiency bonus while Incapacitated."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Stunted Interactions",
+							"entries": [
+								"Your movement speed drops to 5ft and appears uncontrolled, and your speech is mumbled and incoherent, however you are still able to make auditory noise. "
+							]
+						}
 					]
-				}
+				},
+    		    "If you are Incapacitated and either {@condition Paralyzed}, {@condition Petrified}, {@condition Stunned}, or {@condition Unconscious}, use their guidelines for any overlapping effects."
 			]
 		},
 		{
