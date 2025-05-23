@@ -188,6 +188,30 @@
 			]
 		},
 		{
+			"name": "Drinking a Potion",
+			"source": "PHB",
+			"page": 195,
+			"srd": true,
+			"basicRules": true,
+			"time": [
+		        {
+					"number": 1,
+					"unit": "bonus"
+				},
+                {
+					"number": 1,
+					"unit": "action"
+				}
+	        ],
+			"entries": [
+				"It takes a Bonus Action to drink a potion. If you are administering the potion to another creature, it takes an Action. Passing the potion bottle to someone else falls under the {@actions Other Activity} action.",
+				"Additionally, when drinking a potion that has a spell effect that would require concentration if that same spell was cast, it does not use concentration, lasting the full duration of its spell, however you cannot end the effects early"
+			],
+			"seeAlsoAction": [
+				"Other Activity"
+			]
+		},
+		{
 			"name": "End Concentration",
 			"source": "PHB",
 			"page": 203,
