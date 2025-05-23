@@ -12589,6 +12589,9 @@
 				"weightMod": "1d6"
 			},
 			"darkvision": 120,
+			"traitTags": [
+				"Sunlight Sensitivity"
+			],
 			"weaponProficiencies": [
 				{
 					"rapier|phb": true,
@@ -12631,6 +12634,13 @@
 					"data": {
 						"overwrite": "Darkvision"
 					},
+					"type": "entries"
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"You have disadvantage on attack rolls and on Wisdom ({@skill Perception}) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight."
+					],
 					"type": "entries"
 				},
 				{
