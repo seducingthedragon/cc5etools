@@ -547,9 +547,10 @@
 				}
 			],
 			"entries": [
-   		     "When you engage in Two-Weapon Fighting, you will use both your Action and Bonus Action to make two weapon attacks. To do so, you must be wielding one light melee weapon in each hand that you are proficient in, for example: {@item dagger}.",
-      		  "Your main hand will make one {@action Attack} action while your off-hand will make one {@action Attack} action as a Bonus Action. When you hit with your off-hand, you do not add your ability modifier to the damage roll.",
-				"If either weapon has the thrown property, you can use its ranged ability as one or both attack, and still use two-weapon fighting."
+   		    "When you engage in Two-Weapon Fighting, you will use both your Action and Bonus Action to make two weapon attacks. To do so, you must be wielding one light melee weapon in each hand that you are proficient in, for example: {@item dagger}.",
+      		 "Your main hand will make one {@action Attack} action while your off-hand will make one {@action Attack} action as a Bonus Action. When you hit with your off-hand, you do not add your ability modifier to the damage roll.",
+				 "If either weapon has the thrown property, you can use its ranged ability as one or both attack, and still use two-weapon fighting.",
+				 "When you make an opportunity attack while engaging in two-weapon fighting, you can only make one attack. If you make it with your off-hand weapon, the attack roll is made with disadvantage."
 			],
 			"seeAlsoAction": [
 				"Attack"
