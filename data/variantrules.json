@@ -4870,6 +4870,25 @@
 			]
 		},
 		{
+			"name": "Feats Ability Score Increase",
+			"source": "DMG",
+			"ruleType": "V",
+			"entries": [
+				"When utilizing Feats from our non-Core sources, they may not necessarily come with an Ability Score Increase (or ASI for short) as part of the Feat. Since all Feats from our core source materials, except for {@feats Skilled}, provides a +1 ASI, players may want to include that bonus in additional feats from additional sources used per campaign.",
+				"With your permission, those additional feats can come with a +1 ASI. The guidelines that were used to provide ASI to our core feats, goes as follows:",
+				{
+					"type": "list",
+					"items": [
+						"If the feat is related to spellcasting, the abilities available for a +1 ASI are Intelligence, Wisdom, and Charisma.",
+						"If the feat is purely martial based, the abilities available for a +1 ASI are Strength, Dexterity, and Constitution.",
+						"If the feat is general, such as the {@feats Skill Expert} feat, the abilities are any one ability for a +1.",
+						"If the feat focuses on a specific skill or ability, or two unique ones that is not purely spellcasting or purely martial based, select the one or two abilities that best reflect the growth gained from the feat."
+					]
+				},
+                "Feel free to determine your own guidelines that best fit your campaign, sources, or Feat in question."
+            ]
+		},
+		{
 			"name": "Firearms",
 			"source": "DMG",
 			"page": 267,
