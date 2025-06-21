@@ -125,9 +125,16 @@
 			"entries": [
 				"Skilled at mimicry and dramatics, you gain the following benefits:",
 				{
-					"type": "list",
-					"items": [
-						"You have advantage on Charisma ({@skill Deception}) and Charisma ({@skill Performance}) checks when trying to pass yourself off as a different person.",
+					"type": "entries",
+					"name": "Impersonation.",
+					"entries": [
+						"You have advantage on Charisma ({@skill Deception}) and Charisma ({@skill Performance}) checks when trying to pass yourself off as a different person."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Mimicry.",
+					"entries": [
 						"You can mimic the speech of another person or the sounds made by other creatures. You must have heard the person speaking, or heard the creature make the sound, for at least 1 minute. A successful Wisdom ({@skill Insight}) check contested by your Charisma ({@skill Deception}) check allows a listener to determine that the effect is faked."
 					]
 				}
@@ -312,6 +319,33 @@
 		},
 		{
 			"name": "Adroit Crafter",
+			"source": "MPMM",
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "Proficiency in a skill or tool",
+						"entrySummary": "Prof skill/tool"
+					}
+				}
+			],
+			"ability": [
+				{
+					"wis": 1
+				}
+			],
+			"entries": [
+				"You've trained in crafting items using a skill or tool that you're proficient with, and the steps in crafting have become second nature to you. You gain the following benefits:",
+				{
+					"type": "entries",
+					"name": "Quick Crafting.",
+					"entries": [
+						"The time it takes to create an item using your proficient skills or tools is halved. If you fail to successfully craft the item and would lose the components, you retain the components instead."
+					]
+				}
+			]
+		},
+		{
+			"name": "Adroit Crafter",
 			"source": "GHLoE",
 			"prerequisite": [
 				{
@@ -380,16 +414,40 @@
 			"name": "Alert",
 			"source": "PHB",
 			"page": 165,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"dex",
+							"wis"
+						],
+						"amount": 1
+					}
+				}
+			],
 			"entries": [
 				"Always on the lookout for danger, you gain the following benefits:",
 				{
-					"type": "list",
-					"items": [
-						"You gain a +5 bonus to initiative.",
-						"You can't be {@status surprised} while you are conscious.",
-						"Other creatures don't gain advantage on attack rolls against you as a result of being unseen by you."
-					]
-				}
+					"type": "entries",
+      	      "name": "Initiative Boost.",
+            	"entries": [
+                	"You gain a +5 bonus to your initiative roll."
+            	]
+        		},
+        		{
+            	"type": "entries",
+            	"name": "Surprise Immunity.",
+            	"entries": [
+               	"You can't be {@status surprised} while you are conscious."
+           		]
+        		},
+        		{
+            	"type": "entries",
+            	"name": "Avert Advantage Attack Rolls.",
+            	"entries": [
+               	"Other creatures do not gain advantage on attack rolls against you as a result of being unseen by you."
+            	]
+        		}
 			]
 		},
 		{
@@ -399,6 +457,11 @@
 			"toolProficiencies": [
 				{
 					"anyArtisansTool": 1
+				}
+			],
+			"ability": [
+				{
+					"int": 1,
 				}
 			],
 			"additionalSpells": [
@@ -427,10 +490,17 @@
 			"entries": [
 				"You've learned some of an artificer's inventiveness:",
 				{
-					"type": "list",
-					"items": [
+					"type": "entries",
+					"name": "Gained Spells.",
+					"entries": [
 						"You learn one cantrip of your choice from the {@filter artificer spell list|spells|level=0;1|class=artificer}, and you learn one 1st-level spell of your choice from {@filter that list|spells|level=0;1|class=artificer}. Intelligence is your spellcasting ability for these spells.",
-						"You can cast this feat's 1st-level spell without a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast the spell using any spell slots you have.",
+						"You can cast this feat's 1st-level spell without a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast the spell using any spell slots you have."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Artisan's Tool Proficiency.",
+					"entries": [
 						"You gain proficiency with one type of {@filter artisan's tools|items|type=artisan's tools} of your choice, and you can use that type of tool as a spellcasting focus for any spell you cast that uses Intelligence as its spellcasting ability."
 					]
 				}
@@ -454,10 +524,23 @@
 			"entries": [
 				"You have undergone extensive physical training to gain the following benefits:",
 				{
-					"type": "list",
-					"items": [
-						"When you are {@condition prone}, standing up uses only 5 feet of your movement.",
-						"Climbing doesn't cost you extra movement.",
+					"type": "entries",
+					"name": "Quick to Stand.",
+					"entries": [
+						"When you are {@condition prone}, standing up uses only 5 feet of your movement."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Climber.",
+					"entries": [
+						"Climbing doesn't cost you extra movement."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Running Jump.",
+					"entries": [
 						"You can make a running long jump or a running high jump after moving only 5 feet on foot, rather than 10 feet."
 					]
 				}
@@ -520,10 +603,71 @@
 					]
 				}
 			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+                            "dex",
+                            "con",
+                            "int",
+                            "wis",
+                            "cha"
+						],
+						"amount": 1
+					}
+				}
+			],
 			"entries": [
 				"Your people have extraordinary luck, which you have learned to mystically lend to your companions when you see them falter. You're not sure how you do it; you just wish it, and it happens. Surely a sign of fortune's favor!",
-				"When an ally you can see within 30 feet of you rolls a 1 on the {@dice d20} for an attack roll, an ability check, or a saving throw, you can use your reaction to let the ally reroll the die. The ally must use the new roll.",
-				"When you use this ability, you can't use your Lucky racial trait before the end of your next turn."
+				{
+					"type": "entries",
+					"name": "Ally Support.",
+					"entries": [
+						"When an ally you can see within 30 feet of you rolls a 1 on the {@dice d20} for an attack roll, an ability check, or a saving throw, you can use your reaction to let the ally reroll the die. The ally must use the new roll."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Limited Luck.",
+					"entries": [
+						"When you use this ability, you can't use your Lucky racial trait before the end of your next turn."
+					]
+				}
+			]
+		},
+		{
+			"name": "Careful Crafter",
+			"source": "MPMM",
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "Proficiency with at least one tool",
+						"entrySummary": "Prof tool"
+					}
+				}
+			],
+			"ability": [
+                {
+                    "int": 1
+                }
+            ]
+			"entries": [
+				"You've trained in crafting items using a skill or tool that you're proficient with, and your creations are known for being well made and reliable. You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Advantage.",
+					"entries": [
+						"You make all ability checks for crafting with advantage. Anyone assisting you in crafting an item gains advantage on their ability checks for crafting."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Quickfail.",
+					"entries": [
+						"If you fail to successfully craft the item, the amount of time it took to complete the process is halved."
+					]
+				}
 			]
 		},
 		{
@@ -559,6 +703,18 @@
 					"spellcastingFeature": true
 				}
 			],
+			"ability": [ (comes with standard response and auto adds entry)
+				{
+					"choose": {
+						"from": [
+                            "int",
+                            "wis",
+                            "cha"
+						],
+						"amount": 1
+					}
+				}
+			],
 			"additionalSpells": [
 				{
 					"known": {
@@ -571,27 +727,23 @@
 			"entries": [
 				"You have learned to channel your magic through a deck of cards. You can use a card deck as your spellcasting focus, and you gain the following benefits:",
 				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"items": [
-						{
-							"type": "item",
-							"name": "Card Tricks",
-							"entries": [
-								"You learn the {@spell Prestidigitation} cantrip and can use it to create illusions that duplicate the effects of stage magic. When you use {@spell Prestidigitation} in this way, you can conceal the verbal and somatic components of the spell as ordinary conversation and card handling."
-							]
-						},
-						{
-							"type": "item",
-							"name": "Hidden Ace",
-							"entries": [
-								"When you finish a long rest, you can choose one spell from your class's spell list and imbue that spell into a card. The chosen spell must have a casting time of 1 action, and it must be a level for which you have spell slots. The card remains imbued with this spell for 8 hours. While the card is imbued with the spell, you can use a bonus action to flourish the card and cast the spell within. The card then immediately loses its magic."
-							]
-						}
-					]
-				}
-			]
-		},
+					"type": "entries",
+					"name": "Card Tricks",
+					"entries": [
+                        "You learn the {@spell Prestidigitation} cantrip and can use it to create illusions that duplicate the effects of stage magic. When you use {@spell Prestidigitation} in this way, you can conceal the verbal and somatic components of the spell as ordinary conversation and card handling."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Hidden Ace",
+                    "entries": [
+                        "When you finish a long rest, you can choose one spell from your class's spell list and imbue that spell into a card. The chosen spell must have a casting time of 1 action, and it must be a level for which you have spell slots. The card remains imbued with this spell for 8 hours. While the card is imbued with the spell, you can use a bonus action to flourish the card and cast the spell within. The card then immediately loses its magic."
+                    ]
+                }
+            ]
+        }
+    ]
+},
 		{
 			"name": "Charger",
 			"source": "PHB",
@@ -622,12 +774,25 @@
 				}
 			],
 			"entries": [
-				"Time spent mastering the culinary arts has paid off, granting you the following benefits:",
+				"Time spent mastering the culinary arts has paid off, granting you the following benefits.",
 				{
-					"type": "list",
-					"items": [
-						"You gain proficiency with {@item cook's utensils|phb} if you don't already have it.",
-						"As part of a short rest, you can cook special food, provided you have ingredients and {@item cook's utensils|phb} on hand. You can prepare enough of this food for a number of creatures equal to 4 + your proficiency bonus. At the end of the short rest, any creature who eats the food and spends one or more Hit Dice to regain hit points regains an extra {@dice 1d8} hit points.",
+					"type": "entries",
+					"name": "Cook's Utensils.",
+					"entries": [
+						"You gain proficiency with {@item cook's utensils|phb} if you don't already have it."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Replenishing Meal.",
+					"entries": [
+						"As part of a short rest, you can cook special food, provided you have ingredients and {@item cook's utensils|phb} on hand. You can prepare enough of this food for a number of creatures equal to 4 + your proficiency bonus. At the end of the short rest, any creature who eats the food and spends one or more Hit Dice to regain hit points regains an extra {@dice 1d8} hit points."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Bolstering Treats.",
+					"entries": [
 						"With one hour of work or when you finish a long rest, you can cook a number of treats equal to your proficiency bonus. These special treats last 8 hours after being made. A creature can use a bonus action to eat one of those treats to gain temporary hit points equal to your proficiency bonus."
 					]
 				}
@@ -725,6 +890,78 @@
 		},
 		{
 			"name": "Cruel",
+			"source": "MPMM",
+			"prerequisite": [
+                {
+                    "proficiency": [
+						{
+							"skill": "Intimidation"
+						}
+					]
+                }
+            ],
+            "ability": [
+					{
+						"choose": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"The challenges and struggles you've faced throughout your life have led you to delight in inflicting pain and anguish upon others, gaining the following benefits.",
+				{
+					"type": "entries",
+					"name": "Curelty Dice.",
+					"entries": [
+						"You gain a number of cruelty dice equal to your proficiency bonus. Your cruelty dice are {@dice d6|d6s}. You can roll only one cruelty die per turn, and a cruelty die is spent when you roll it. You regain all spent cruelty dice when you finish a {@quickref resting|PHB|2|0|long rest}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Dice Use.",
+					"entries": [
+						"You can roll a cruelty die under any of the following circumstances, with the indicated result:",
+						 {
+							  "type": "list",
+							  "style": "list-hang-notile",
+							  "items": [
+									{
+										 "type": "item",
+										 "name": "Cruel Damage.",
+										 "entries": [
+											  "When you deal damage to a creature, spend one cruelty die to deal extra damage to the creature equal to the roll."
+										 ]
+									},
+									{
+										 "type": "item",
+										 "name": "Cruel Critical",
+										 "entries": [
+											  "When you score a critical hit, spend one cruelty die to gain temporary hit points equal to the roll."
+										 ]
+									},
+									{
+										 "type": "item",
+										 "name": "Cruel Indimidator",
+										 "entries": [
+											  "When you make a Charisma ({@skill Intimidation}) check, spend one cruelty die and add the roll to your check."
+											]
+									}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Cruel",
 			"source": "TDCSR",
 			"page": 190,
 			"entries": [
@@ -757,11 +994,18 @@
 				}
 			],
 			"entries": [
-				"You are practiced in the art of crushing your enemies, granting you the following benefits:",
+				"You are practiced in the art of crushing your enemies through bludgeoning damage, granting you the following benefits.",
 				{
-					"type": "list",
-					"items": [
-						"Once per turn, when you hit a creature with an attack that deals bludgeoning damage, you can move it 5 feet to an unoccupied space, provided the target is no more than one size larger than you.",
+					"type": "entries",
+					"name": "Hit & Push.",
+					"entries": [
+						"Once per turn, when you hit a creature with an attack that deals bludgeoning damage, such as a melee weapon or with an unarmed strike attack, you can move it 5 feet to an unoccupied space of your choice away from you, provided the target is no more than one size larger than you."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Enhanced Critical.",
+					"entries": [
 						"When you score a critical hit that deals bludgeoning damage to a creature, attack rolls against that creature are made with advantage until the start of your next turn."
 					]
 				}
