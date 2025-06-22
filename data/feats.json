@@ -534,7 +534,7 @@
 					"type": "entries",
 					"name": "Climber.",
 					"entries": [
-						"Climbing doesn't cost you extra movement."
+						"You gain a climbing speed equal to your walking speed."
 					]
 				},
 				{
@@ -1192,10 +1192,11 @@
 				}
 			],
 			"entries": [
-				"When angered, you radiate menace. You gain the following benefits:",
+				"When angered, you radiate menace. You gain the following benefits.",
 				{
-					"type": "list",
-					"items": [
+					"type": "entries",
+					"name": "Frighten Foes.",
+                    "entries": [
 						"Instead of exhaling destructive energy, you can expend a use of your Breath Weapon trait to roar, forcing each creature of your choice within 30 feet of you to make a Wisdom saving throw ({@dc 8} + your proficiency bonus + your Charisma modifier). A target automatically succeeds on the save if it can't hear or see you. On a failed save, a target becomes {@condition frightened} of you for 1 minute. If the {@condition frightened} target takes any damage, it can repeat the saving throw, ending the effect on itself on a success."
 					]
 				}
@@ -1229,12 +1230,20 @@
 			"entries": [
 				"You manifest scales and claws reminiscent of your draconic ancestors. You gain the following benefits:",
 				{
-					"type": "list",
-					"items": [
-						"Your scales harden. While you aren't wearing armor, you can calculate your AC as 13 + your Dexterity modifier. You can use a shield and still gain this benefit.",
-						"You grow retractable claws from the tips of your fingers. Extending or retracting the claws requires no action. The claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to {@damage 1d4} + your Strength modifier, instead of the normal bludgeoning damage for an unarmed strike."
+					"type": "entries",
+                    "name": "Dragon Armor.",
+					"entries": [
+						"Your scales harden. While you aren't wearing armor, you can calculate your AC as 13 + your Dexterity modifier. You can use a shield and still gain this benefit."
 					]
-				}
+				},
+                {
+                	"type": "entries",
+                    "name": "Natural Weapons.",
+					"entries": [
+						"You grow retractable claws from the tips of your fingers. Extending or retracting the claws requires no action. The claws are natural weapons, which you can use to make Unarmed Strike Attacks. If you hit with them, you deal slashing damage instead of the normal bludgeoning damage for an unarmed strike attack.",
+						"Additionally, if your claws are extended when you make an Unarmed Shove Attack, the target takes half damage from your Unarmed Strike Attack when they fail the check in addition to being shoved."
+					]
+                }
 			]
 		},
 		{
@@ -1251,9 +1260,21 @@
 					]
 				}
 			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+                            "int",
+                            "wis",
+                            "cha"
+						],
+						"amount": 1
+					}
+				}
+			],
 			"additionalSpells": [
 				{
-					"ability": "cha",
+					"ability": "inherit",
 					"innate": {
 						"_": {
 							"will": [
@@ -1270,7 +1291,14 @@
 				}
 			],
 			"entries": [
-				"You learn more of the magic typical of dark elves. You learn the {@spell detect magic} spell and can cast it at will, without expending a spell slot. You also learn {@spell levitate} and {@spell dispel magic}, each of which you can cast once without expending a spell slot. You regain the ability to cast those two spells in this way when you finish a long rest. Charisma is your spellcasting ability for all three spells."
+				"You learn additional magic utilized by your lineage, gaining the following benefits.", 
+				{
+					"type": "entries",
+					"name": "Bonus Spells.",
+					"entries": [
+						"You learn the {@spell detect magic} spell and can cast it at will, without expending a spell slot. You also learn {@spell levitate} and {@spell dispel magic}, each of which you can cast once without expending a spell slot. You regain the ability to cast those two spells in this way when you finish a long rest. Your spellcasting ability is the one you use to cast your other Drow spells."
+					]
+				}
 			]
 		},
 		{
@@ -1346,8 +1374,9 @@
 			"entries": [
 				"You have the blood of dwarf heroes flowing through your veins. You gain the following benefits:",
 				{
-					"type": "list",
-					"items": [
+					"type": "entries",
+					"name": "Dodge to Heal.",
+					"entries": [
 						"Whenever you take the {@action Dodge} action in combat, you can spend one Hit Die to heal yourself. Roll the die, add your Constitution modifier, and regain a number of hit points equal to the total (minimum of 1)."
 					]
 				}
@@ -1374,8 +1403,21 @@
 				}
 			],
 			"entries": [
-				"Studying occult lore, you learn one {@filter Eldritch Invocation|optionalfeatures|Feature Type=EI} option of your choice from the warlock class. Your spellcasting ability for the invocation is Intelligence, Wisdom, or Charisma (choose when you select this feat). If the invocation has a prerequisite of any kind, you can choose that invocation only if you're a warlock who meets the prerequisite.",
-				"Whenever you gain a level, you can replace the invocation with another one from the warlock class."
+				"Studying occult lore, you gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Invocation.",
+					"entries": [
+						"You learn one {@filter Eldritch Invocation|optionalfeatures|Feature Type=EI} option of your choice from the warlock class. The invocation's spellcasting ability is the abiity increased by this feat. If the invocation has a prerequisite of any kind, you can choose that invocation only if you're a warlock who meets the prerequisite."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Optional Replacement.",
+					"entries": [
+						"Whenever you gain a level, you can replace the invocation with another one from the warlock class."
+					]
+				}
 			],
 			"hasFluffImages": true
 		},
@@ -1388,10 +1430,34 @@
 					"spellcasting": true
 				}
 			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+                            "int",
+                            "wis",
+                            "cha"
+						],
+						"amount": 1
+					}
+				}
+			],
 			"entries": [
-				"When you gain this feat, choose one of the following damage types: acid, cold, fire, lightning, or thunder.",
-				"Spells you cast ignore resistance to damage of the chosen type. In addition, when you roll damage for a spell you cast that deals damage of that type, you can treat any 1 on a damage die as a 2.",
-				"You can select this feat multiple times. Each time you do so, you must choose a different damage type."
+				"You become adept at utilizing elements in your magic. You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Energy Mastery.",
+					"entries": [
+						"Choose one of the following damage types: acid, cold, fire, lightning, or thunder. Spells you cast ignore resistance to damage of the chosen type. In addition, when you roll damage for a spell you cast that deals damage of that type, you can treat any 1 on a damage die as a 2."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Repeatable.",
+					"entries": [
+						"You can take this feat more than once, but you must choose a different damage type each time from the Energy Mastery benefit."
+					]
+				}
 			]
 		},
 		{
@@ -1424,10 +1490,11 @@
 				}
 			],
 			"entries": [
-				"The accuracy of elves is legendary, especially that of elf archers and spellcasters. You have uncanny aim with attacks that rely on precision rather than brute force. You gain the following benefits:",
+				"The accuracy of elves is legendary, especially that of elf archers and spellcasters. You have uncanny aim with attacks that rely on precision rather than brute force. You gain the following benefits.",
 				{
-					"type": "list",
-					"items": [
+					"type": "entries",
+					"name": "Reroll Advantage.",
+					"entries": [
 						"Whenever you have advantage on an attack roll using Dexterity, Intelligence, Wisdom, or Charisma, you can reroll one of the dice once."
 					]
 				}
@@ -1509,10 +1576,11 @@
 				}
 			],
 			"entries": [
-				"Your people are clever, with a knack for illusion magic. You have learned a magical trick for fading away when you suffer harm. You gain the following benefits:",
+				"Your people are clever, with a knack for illusion magic. You have learned a magical trick for fading away when you suffer harm. You gain the following benefits.",
 				{
-					"type": "list",
-					"items": [
+					"type": "entries",
+					"name": "Invisible Reaction.",
+					"entries": [
 						"Immediately after you take damage, you can use a reaction to magically become {@condition invisible} until the end of your next turn or until you attack, deal damage, or force someone to make a saving throw. Once you use this ability, you can't do so again until you finish a short or long rest."
 					]
 				}
@@ -1563,11 +1631,18 @@
 				}
 			],
 			"entries": [
-				"Your study of high elven lore has unlocked fey power that few other elves possess, except your eladrin cousins. Drawing on your fey ancestry, you can momentarily stride through the Feywild to shorten your path from one place to another. You gain the following benefits:",
+				"Your study of high elven lore has unlocked fey power that few other elves possess, except your eladrin cousins. Drawing on your fey ancestry, you can momentarily stride through the Feywild to shorten your path from one place to another. You gain the following benefits.",
 				{
-					"type": "list",
-					"items": [
-						"You learn to speak, read, and write {@language Sylvan}.",
+					"type": "entries",
+					"name": "Sylvan.",
+					"entries": [
+						"You learn to speak, read, and write {@language Sylvan}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Misty Step.",
+					"entries": [
 						"You learn the {@spell misty step} spell and can cast it once without expending a spell slot. You regain the ability to cast it in this way when you finish a short or long rest. Intelligence is your spellcasting ability for this spell."
 					]
 				}
@@ -1609,9 +1684,10 @@
 			"entries": [
 				"Your exposure to the Feywild's magic has changed you, granting you the following benefits:",
 				{
-					"type": "list",
-					"items": [
-						"You learn the {@spell misty step} spell and one {@filter 1st-level spell|spells|level=1|school=E;D} of your choice. The {@filter 1st-level spell|spells|level=1|school=E;D} must be from the divination or enchantment school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat."
+					"type": "entries",
+					"name": "Fey Magic.",
+					"entries": [
+						"You learn the {@spell misty step} spell and one {@filter 1st-level spell|spells|level=1|school=E;D} of your choice. The {@filter 1st-level spell|spells|level=1|school=E;D} must be from the divination or enchantment school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat or your own if you already have one."
 					]
 				}
 			]
@@ -1670,12 +1746,47 @@
 				}
 			],
 			"entries": [
-				"You learn to call on hellfire to serve your commands. You gain the following benefits:",
+				"You learn to call on hellfire to serve your commands. You gain the following benefits.",
 				{
-					"type": "list",
-					"items": [
-						"When you roll fire damage for a spell you cast, you can reroll any roll of 1 on the fire damage dice, but you must use the new roll, even if it is another 1.",
+					"type": "entries",
+					"name": "Reroll Fire Damage.",
+					"entries": [
+						"When you roll fire damage for a spell you cast, you can reroll any roll of 1 on the fire damage dice, but you must use the new roll, even if it is another 1."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fire Aura.",
+					"entries": [
 						"Whenever you cast a spell that deals fire damage, you can cause flames to wreathe you until the end of your next turn. The flames don't harm you or your possessions, and they shed bright light out to 30 feet and dim light for an additional 30 feet. While the flames are present, any creature within 5 feet of you that hits you with a melee attack takes {@damage 1d4} fire damage."
+					]
+				}
+			]
+		},
+		{
+			"name": "Flash Recall",
+			"source": "MPMM",
+			"prerequisite": [
+				{
+					"spellcastingPrepared": true
+				}
+			],
+			"entries": [
+				"You've developed the ability to instantly recall an unprepared spell in moments of sudden necessity, gaining the following benefits.",
+				{
+					"type": "entries",
+					"name": "Bonus Action Re-Prepare.",
+					"entries": [
+						"As a bonus action, you prepare a spell of 1st level or higher from your spellbook (if you're a {@class wizard}) or from your class spell list (if you're not a {@class wizard}). This spell must be of a level for which you have spell slots, and it replaces another spell of an equal or higher level that you had previously prepared.",
+						"Once you use this feat to recall a spell, you can't do so again until you complete a {@quickref resting|PHB|2|0|short or long rest}."
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Rules Tip: Prepared Spells",
+					"page": 190,
+					"entries": [
+						"The Flash Recall feat requires you to be a spellcaster who prepares spells. This includes classes such as {@class cleric||clerics}, {@class druid||druids}, and {@class rangers||rangers}, who prepare spells each day from their class list, and {@class wizard||wizards}, who prepare spells from a spellbook. Classes such as {@class bard||bards} and {@class sorcerer||sorcerers}, who inherently know their spells rather than preparing them, can't benefit from this feat."
 					]
 				}
 			]
@@ -1759,26 +1870,32 @@
 			"name": "Gift of the Chromatic Dragon",
 			"source": "FTD",
 			"page": 17,
-			"entries": [
-				"You've manifested some of the power of chromatic dragons, granting you the following benefits:",
+			"ability": [
 				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"items": [
-						{
-							"type": "item",
-							"name": "Chromatic Infusion",
-							"entries": [
-								"As a bonus action, you can touch a {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon} and infuse it with one of the following damage types: acid, cold, fire, lightning, or poison. For the next minute, the weapon deals an extra {@damage 1d4} damage of the chosen type when it hits. After you use this bonus action, you can't do so again until you finish a long rest."
-							]
-						},
-						{
-							"type": "item",
-							"name": "Reactive Resistance",
-							"entries": [
-								"When you take acid, cold, fire, lightning, or poison damage, you can use your reaction to give yourself resistance to that instance of damage. You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
-							]
-						}
+					"choose": {
+						"from": [
+                            "str",
+                            "dex",
+                            "con"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You've manifested some of the power of chromatic dragons, granting you the following benefits.",
+				{
+					"type": "entries",
+					"name": "Chromatic Infusion",
+					"entries": [
+						"As a bonus action, you can touch a {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon} and infuse it with one of the following damage types: acid, cold, fire, lightning, or poison. For the next minute, the weapon deals an extra {@damage 1d4} damage of the chosen type when it hits. After you use this bonus action, you can't do so again until you finish a long rest."
+						]
+				},
+				{
+					"type": "entries",
+					"name": "Reactive Resistance",
+					"entries": [
+						"When you take acid, cold, fire, lightning, or poison damage, you can use your reaction to give yourself resistance to that instance of damage. You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
 					]
 				}
 			]
@@ -1799,19 +1916,32 @@
 					}
 				}
 			],
-			"entries": [
-				"You've manifested some of the power of gem dragons, granting you the following benefits:",
+			"additionalSpells": [
 				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"items": [
-						{
-							"type": "item",
-							"name": "Telekinetic Reprisal",
-							"entries": [
-								"When you take damage from a creature that is within 10 feet of you, you can use your reaction to emanate telekinetic energy. The creature that dealt damage to you must make a Strength saving throw (DC equals 8 + your proficiency bonus + the ability modifier of the score increased by this feat). On a failed save, the creature takes {@damage 2d8} force damage and is pushed up to 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed. You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
-							]
+					"ability": "inherit",
+					"innate": {
+						"_": {
+							"will": [
+								"mage hand"
+							],
 						}
+					}
+				}
+			],
+			"entries": [
+				"You've manifested some of the power of gem dragons, granting you the following benefits.",
+				{
+					"type": "entries",
+					"name": "Crystaline Mage Hand.",
+					"entries": [
+						"You can cast the Mage Hand cantrip, using the ability you increased with this feat as your spellcasting ability."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Telekinetic Reprisal",
+					"entries": [
+						"When you take damage from a creature that is within 10 feet of you, you can use your reaction to emanate telekinetic energy. The creature that dealt damage to you must make a Strength saving throw (DC equals 8 + your proficiency bonus + the ability modifier of the score increased by this feat). On a failed save, the creature takes {@damage 2d8} force damage and is pushed up to 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed. You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
 					]
 				}
 			]
@@ -1841,25 +1971,19 @@
 				}
 			],
 			"entries": [
-				"You've manifested some of the power of metallic dragons, granting you the following benefits:",
+				"You've manifested some of the power of metallic dragons, granting you the following benefits.",
 				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"items": [
-						{
-							"type": "item",
-							"name": "Draconic Healing",
-							"entries": [
-								"You learn the {@spell cure wounds} spell. You can cast this spell without expending a spell slot. Once you cast this spell in this way, you can't do so again until you finish a long rest. You can also cast this spell using spell slots you have. The spell's spellcasting ability is Intelligence, Wisdom, or Charisma when you cast it with this feat (choose when you gain the feat)."
-							]
-						},
-						{
-							"type": "item",
-							"name": "Protective Wings",
-							"entries": [
-								"You can manifest protective wings that can shield you or others. When you or another creature you can see within 5 feet of you is hit by an attack roll, you can use your reaction to manifest spectral wings from your back for a moment. You grant a bonus to the target's AC equal to your proficiency bonus against that attack roll, potentially causing it to miss. You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
-							]
-						}
+					"type": "entries",
+					"name": "Draconic Healing",
+					"entries": [
+						"You learn the {@spell cure wounds} spell. You can cast this spell without expending a spell slot. Once you cast this spell in this way, you can't do so again until you finish a long rest. You can also cast this spell using spell slots you have. The spell's spellcasting ability is Intelligence, Wisdom, or Charisma when you cast it with this feat (choose when you gain the feat)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Protective Wings",
+					"entries": [
+						"You can manifest protective wings that can shield you or others. When you or another creature you can see within 5 feet of you is hit by an attack roll, you can use your reaction to manifest spectral wings from your back for a moment. You grant a bonus to the target's AC equal to your proficiency bonus against that attack roll, potentially causing it to miss. You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
 					]
 				}
 			]
@@ -1960,13 +2084,27 @@
 				}
 			],
 			"entries": [
-				"You have a quick hand and keen eye when employing firearms, granting you the following benefits:",
+				"You have a quick hand and keen eye when employing firearms, granting you the following benefits.",
 				{
-					"type": "list",
-					"items": [
-						"You gain proficiency with firearms (see \"{@variantrule Firearms|DMG}\" in the Dungeon Master's Guide).",
-						"You ignore the loading property of firearms.",
-						"Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls."
+					"type": "entries",
+					"name": "Firearm Proficiency.",
+					"entries": [
+						"You gain proficiency with firearms (see \"{@variantrule Firearms|DMG}\" in the Dungeon Master's Guide)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Quickshot.",
+					"entries": [
+						"You ignore the loading property of firearms. "
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ranged Melee Attacks.",
+					"entries": [
+						"Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls, however you don't add your proficiency bonus for one player level. After you gain 1 player level, you can re-add your proficiency bonus for your ranged melee attacks.",
+						"If you have the {@optionalfeatures Melee Marksman} Fighting Style, you make this roll with advantage. Additionally, you ignore the minus proficiency bonus penalty."
 					]
 				}
 			]
