@@ -2103,8 +2103,8 @@
 					"type": "entries",
 					"name": "Ranged Melee Attacks.",
 					"entries": [
-						"Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls, however you don't add your proficiency bonus for one player level. After you gain 1 player level, you can re-add your proficiency bonus for your ranged melee attacks.",
-						"If you have the {@optionalfeatures Melee Marksman} Fighting Style, you make this roll with advantage. Additionally, you ignore the minus proficiency bonus penalty."
+						"Choose 1 firearm weapon. Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls with that selected firearm. When you reach a higher level that grants you the Ability Score Increase or Feat feature, this benefit extends to all firearms.",
+						"If you have the {@optionalfeatures Melee Marksman} Fighting Style, you make this roll with advantage."
 					]
 				}
 			]
