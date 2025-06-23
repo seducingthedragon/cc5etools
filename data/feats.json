@@ -2139,7 +2139,13 @@
 			],
 			"ability": [
 				{
-					"str": 1
+					"choose": {
+						"from": [
+							"str",
+							"con"
+						],
+						"amount": 1
+					}
 				}
 			],
 			"armorProficiencies": [
@@ -2148,11 +2154,11 @@
 				}
 			],
 			"entries": [
-				"You have trained to master the use of heavy armor, gaining the following benefits:",
+				"You have trained to master the use of heavy armor, gaining the following benefits.",
 				{
 					"type": "list",
 					"items": [
-						"You gain proficiency with heavy armor."
+						"You now have Heavy Armor Training."
 					]
 				}
 			]
@@ -2172,15 +2178,22 @@
 			],
 			"ability": [
 				{
-					"str": 1
+					"choose": {
+						"from": [
+							"str",
+							"con"
+						],
+						"amount": 1
+					}
 				}
 			],
 			"entries": [
-				"You can use your armor to deflect strikes that would kill others. You gain the following benefits:",
+				"You can use your armor to deflect strikes that would kill others. You gain the following benefits.",
 				{
-					"type": "list",
-					"items": [
-						"While you are wearing heavy armor, bludgeoning, piercing, and slashing damage that you take from nonmagical attacks is reduced by 3."
+					"type": "entries",
+					"name": "Damage Reduction.",
+					"entries": [
+						"When you're hit by an attack while you're wearing Heavy armor, any Bludgeoning, Piercing, and Slashing damage dealt to you by that attack is reduced by an amount equal to your Proficiency Bonus."
 					]
 				}
 			]
@@ -2208,12 +2221,19 @@
 				"poison"
 			],
 			"entries": [
-				"Fiendish blood runs strong in you, unlocking a resilience akin to that possessed by some fiends. You gain the following benefits:",
+				"Fiendish blood runs strong in you, unlocking a resilience akin to that possessed by some fiends. You gain the following benefits.",
 				{
-					"type": "list",
-					"items": [
-						"You have resistance to cold and poison damage.",
-						"You have advantage on saving throws against being {@condition poisoned}."
+					"type": "entries",
+					"name": "Damage Resistance.",
+					"entries": [
+						"You have resistance to cold and poison damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Saving Throws.",
+					"entries": [
+						"You have advantage on saving throws against being poisoned."
 					]
 				}
 			]
@@ -2660,11 +2680,12 @@
 				}
 			],
 			"entries": [
-				"You have trained to master the use of light armor, gaining the following benefits:",
+				"You have trained to master the use of light armor, gaining the following benefits.",
 				{
-					"type": "list",
-					"items": [
-						"You gain proficiency with light armor."
+					"type": "entries",
+					"name": "Light Armor Training.",
+					"entries": [
+						"You now have Light Armor Training."
 					]
 				}
 			]
@@ -2684,11 +2705,18 @@
 				}
 			],
 			"entries": [
-				"You have studied languages and codes, gaining the following benefits:",
+				"You have studied languages and codes, gaining the following benefits.",
 				{
-					"type": "list",
-					"items": [
-						"You learn three languages of your choice.",
+					"type": "entries",
+					"name": "Language Proficiency.",
+					"entries": [
+						"You learn three languages of your choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Creating Ciphers.",
+					"entries": [
 						"You can ably create written ciphers. Others can't decipher a code you create unless you teach them, they succeed on an Intelligence check (DC equal to your Intelligence score + your proficiency bonus), or they use magic to decipher it."
 					]
 				}
@@ -2725,6 +2753,18 @@
 			"name": "Magic Initiate",
 			"source": "PHB",
 			"page": 168,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+                            "int",
+                            "wis",
+                            "cha"
+						],
+						"amount": 1
+					}
+				}
+			],
 			"additionalSpells": [
 				{
 					"name": "Bard Spells",
@@ -2866,9 +2906,21 @@
 				}
 			],
 			"entries": [
-				"Choose a class: {@filter bard|spells|level=0;1|class=bard}, {@filter cleric|spells|level=0;1|class=cleric}, {@filter druid|spells|level=0;1|class=druid}, {@filter sorcerer|spells|level=0;1|class=sorcerer}, {@filter warlock|spells|level=0;1|class=warlock}, or {@filter wizard|spells|level=0;1|class=wizard}. You learn two cantrips of your choice from that class's spell list.",
-				"In addition, choose one 1st-level spell to learn from that same list. Using this feat, you can cast the spell once at its lowest level, and you must finish a long rest before you can cast it in this way again.",
-				"Your spellcasting ability for these spells depends on the class you chose: Charisma for {@filter bard|spells|level=0;1|class=bard}, {@filter sorcerer|spells|level=0;1|class=sorcerer}, or {@filter warlock|spells|level=0;1|class=warlock}; Wisdom for {@filter cleric|spells|level=0;1|class=cleric} or {@filter druid|spells|level=0;1|class=druid}; or Intelligence for {@filter wizard|spells|level=0;1|class=wizard}."
+				"You have been touched by magic, granting you the following benefits.",
+				{
+					"type": "entries",
+					"name": "Gained Spells.",
+					"entries": [
+						"Choose a class: {@filter bard|spells|level=0;1|class=bard}, {@filter cleric|spells|level=0;1|class=cleric}, {@filter druid|spells|level=0;1|class=druid}, {@filter sorcerer|spells|level=0;1|class=sorcerer}, {@filter warlock|spells|level=0;1|class=warlock}, or {@filter wizard|spells|level=0;1|class=wizard}. You learn two cantrips of your choice from that class's spell list. In addition, choose one 1st-level spell to learn from that same list. Using this feat, you can cast the spell once at its lowest level, and you must finish a long rest before you can cast it in this way again."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability.",
+					"entries": [
+						"Your spellcasting ability for these spells depends on the class you chose: Charisma for {@filter bard|spells|level=0;1|class=bard}, {@filter sorcerer|spells|level=0;1|class=sorcerer}, or {@filter warlock|spells|level=0;1|class=warlock}; Wisdom for {@filter cleric|spells|level=0;1|class=cleric} or {@filter druid|spells|level=0;1|class=druid}; or Intelligence for {@filter wizard|spells|level=0;1|class=wizard}."
+					]
+				}
 			]
 		},
 		{
@@ -2901,6 +2953,17 @@
 			"name": "Medium Armor Master",
 			"source": "PHB",
 			"page": 168,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+                            "str",
+                            "dex"
+						],
+						"amount": 1
+					}
+				}
+			],
 			"prerequisite": [
 				{
 					"proficiency": [
@@ -2911,11 +2974,18 @@
 				}
 			],
 			"entries": [
-				"You have practiced moving in medium armor to gain the following benefits:",
+				"You have practiced moving in medium armor to gain the following benefits.",
 				{
-					"type": "list",
-					"items": [
-						"Wearing medium armor doesn't impose disadvantage on your Dexterity ({@skill Stealth}) checks.",
+					"type": "entries",
+					"name": "Stealthy.",
+					"entries": [
+						"Wearing medium armor doesn't impose disadvantage on your Dexterity ({@skill Stealth}) checks."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Dexterous Armor.",
+					"entries": [
 						"When you wear medium armor, you can add 3, rather than 2, to your AC if you have a Dexterity of 16 or higher."
 					]
 				}
@@ -2999,11 +3069,12 @@
 				}
 			],
 			"entries": [
-				"You have trained to master the use of medium armor and shields, gaining the following benefits:",
+				"You have trained to master the use of medium armor and shields, gaining the following benefits.",
 				{
-					"type": "list",
-					"items": [
-						"You gain proficiency with medium armor and shields."
+					"type": "entries",
+					"name": "Medium Armor Training.",
+					"entries": [
+						"You now have Medium Armor Training and Shield Training."
 					]
 				}
 			]
@@ -3020,6 +3091,51 @@
 						"You have advantage on melee attack rolls against any unmounted creature that is smaller than your mount.",
 						"You can force an attack targeted at your mount to target you instead.",
 						"If your mount is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				}
+			]
+		},
+		{
+			"name": "Mystic Conflux",
+			"source": "MPMM",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+                            "int",
+                            "wis"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1e": [
+									"identify"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"You possess an intuitive understanding of the way magic ebbs and flows within enchanted items. Such items attune easily to you, and you are able to sound out their secrets. You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Increased Attunement.",
+					"entries": [
+						"You can attune to up to four magic items at once."
+					]
+				},
+				{
+					"type": "Identify",
+					"name": "Bold Italics statement.",
+					"entries": [
+						"You can cast the {@spell identify} spell without expending a spell slot or material components. You must finish a {@quickref resting|PHB|2|0|long rest} before you can do so again."
 					]
 				}
 			]
@@ -3087,6 +3203,9 @@
 					"race": [
 						{
 							"name": "half-orc"
+						},
+						{
+							"name": "orc"
 						}
 					]
 				}
@@ -3103,11 +3222,18 @@
 				}
 			],
 			"entries": [
-				"Your fury burns tirelessly. You gain the following benefits:",
+				"Your fury burns tirelessly. You gain the following benefits.",
 				{
-					"type": "list",
-					"items": [
-						"When you hit with an attack using a {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon}, you can roll one of the weapon's damage dice an additional time and add it as extra damage of the weapon's damage type. Once you use this ability, you can't use it again until you finish a short or long rest.",
+					"type": "entries",
+					"name": "Heavy Hitter.",
+					"entries": [
+						"When you hit with an attack using a {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon}, you can roll one of the weapon's damage dice an additional time and add it as extra damage of the weapon's damage type. Once you use this ability, you can't use it again until you finish a short or long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Enhanced Relentless Endurance.",
+					"entries": [
 						"Immediately after you use your Relentless Endurance trait, you can use your reaction to make one weapon attack."
 					]
 				}
@@ -3173,11 +3299,18 @@
 				}
 			],
 			"entries": [
-				"You have achieved a penetrating precision in combat, granting you the following benefits:",
+				"You have achieved a penetrating precision in combat, granting you the following benefits.",
 				{
-					"type": "list",
-					"items": [
-						"Once per turn, when you hit a creature with an attack that deals piercing damage, you can reroll one of the attack's damage dice, and you must use the new roll.",
+					"type": "entries",
+					"name": "Puncture.",
+					"entries": [
+						"Once per turn, when you hit a creature with an attack that deals piercing damage, you can reroll one of the attack's damage dice, and you must use the new roll."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Enhanced Critical.",
+					"entries": [
 						"When you score a critical hit that deals piercing damage to a creature, you can roll one additional damage die when determining the extra piercing damage the target takes."
 					]
 				}
@@ -3270,6 +3403,18 @@
 			"name": "Prodigy",
 			"source": "XGE",
 			"page": 75,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+                            "int",
+                            "wis",
+                            "cha"
+						],
+						"amount": 1
+					}
+				}
+			],
 			"prerequisite": [
 				{
 					"race": [
@@ -3322,11 +3467,18 @@
 				}
 			],
 			"entries": [
-				"You have a knack for learning new things. You gain the following benefits:",
+				"You have a knack for learning new things. You gain the following benefits.",
 				{
-					"type": "list",
-					"items": [
-						"You gain one {@table skills|phb|skill proficiency} of your choice, one {@filter tool proficiency|items|type=tool;artisan's tools} of your choice, and fluency in one language of your choice.",
+					"type": "entries",
+					"name": "Bonus Proficiencies.",
+					"entries": [
+						"You gain one {@table skills|phb|skill proficiency} of your choice, one {@filter tool proficiency|items|type=tool;artisan's tools} of your choice, and fluency in one language of your choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Expertise.",
+					"entries": [
 						"Choose one skill in which you have proficiency. You gain expertise with that skill, which means your proficiency bonus is doubled for any ability check you make with it. The skill you choose must be one that isn't already benefiting from a feature, such as Expertise, that doubles your proficiency bonus."
 					]
 				}
