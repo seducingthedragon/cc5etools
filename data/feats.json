@@ -2199,6 +2199,65 @@
 			]
 		},
 		{
+			"name": "High Wood Elf Magic",
+			"source": "XGE",
+			"page": 75,
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "elf",
+							"subrace": "wood"
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+                            "int",
+                            "wis",
+                            "cha"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "wis",
+					"innate": {
+						"_": {
+							"daily": {
+								"1e": [
+									"longstrider",
+									"pass without trace"
+								]
+							}
+						}
+					},
+					"known": {
+						"_": [
+							{
+								"choose": "level=0|class=Druid"
+							}
+						]
+					}
+				}
+			],
+			"entries": [
+				"You learn additional magic of the primeval woods, which are revered and protected by your people. You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Additional Spells.",
+					"entries": [
+						"You learn one druid cantrip of your choice. You also learn the {@spell longstrider} and {@spell pass without trace} spells, each of which you can cast once without expending a spell slot. You regain the ability to cast these two spells in this way when you finish a long rest. Your spellcasting ability is the one you use to cast your other Wood Elf spells."
+					]
+				}
+			]
+		},
+		{
 			"name": "Infernal Constitution",
 			"source": "XGE",
 			"page": 75,
@@ -3550,6 +3609,32 @@
 		},
 		{
 			"name": "Remarkable Recovery",
+			"source": ""MPMM,
+			"ability": [
+				{
+					"con": 1
+				}
+			],
+			"entries": [
+				"Your body has the ability to recover quickly from terrible injuries, and is unusually receptive to healing magic. You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Bonus HP Stabilization.",
+					"entries": [
+						"When you are successfully stabilized while dying, you regain hit points equal to your Constitution modifier (minimum of 1)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Bonus HP Regained.",
+					"entries": [
+						"Whenever you regain hit points as a result of a spell, potion, or class feature (but not this feat), you regain additional hit points equal to your Constitution modifier (minimum of 1)."
+					]
+				}
+			]
+		},
+		{
+			"name": "Remarkable Recovery",
 			"source": "TDCSR",
 			"page": 190,
 			"ability": [
@@ -3568,7 +3653,7 @@
 				}
 			]
 		},
-		{
+				{
 			"name": "Resilient",
 			"source": "PHB",
 			"page": 168,
@@ -3605,9 +3690,51 @@
 			"entries": [
 				"Choose one ability score. You gain the following benefits:",
 				{
-					"type": "list",
-					"items": [
+					"type": "entries",
+					"name": "Saving Throw Proficiency",
+					"entries": [
 						"You gain proficiency in saving throws using the chosen ability."
+					]
+				}
+			]
+		},
+		{
+			"name": "Revenant Blade",
+			"source": "MPMM",
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "elf"
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You are descended from a master of the {@item double-bladed scimitar|ERLW}, and some of that mastery has passed on to you. You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Armor Class Bonus.",
+					"entries": [
+						"While you are holding a double-bladed scimitar with two hands, you gain a +1 bonus to Armor Class."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Finesse Blade.",
+					"entries": [
+						"A double-bladed scimitar has the finesse property when you wield it."
 					]
 				}
 			]
@@ -3816,6 +3943,18 @@
 			"name": "Rune Shaper",
 			"source": "BGG",
 			"page": 18,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+                            "int",
+                            "wis",
+                            "cha"
+						],
+						"amount": 1
+					}
+				}
+			],
 			"prerequisite": [
 				{
 					"spellcastingFeature": true
@@ -3856,90 +3995,84 @@
 				}
 			],
 			"entries": [
-				"You've studied the magic of Giant runes, granting you the following benefits:",
+				"You've studied the magic of Giant runes, granting you the following benefits.",
 				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"items": [
+					"type": "entries",
+					"name": "Comprehend Languages",
+					"entries": [
+						"You learn the {@spell comprehend languages} spell. You can cast this spell without expending a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast this spell using any spell slots you have."
+					]
+				},
+				{
+					"type": "item",
+					"name": "Rune Magic",
+					"entries": [
+						"You know a number of runes equal to half your proficiency bonus (rounded down), chosen from the Rune Spells table. Whenever you finish a long rest, you can inscribe each rune you know onto one nonmagical weapon, armor, piece of clothing, or other object you touch. You temporarily learn the 1st-level spells that correspond to the runes you inscribed, as specified on the Rune Spells table, and you know those spells until you finish a long rest, when the runes fade. While you are wearing or carrying any rune-marked object, you can cast the spells associated with those runes using any spell slots you have.",
+						"You can also invoke a rune inscribed on an object you are wearing or carrying and cast its associated spell without expending a spell slot or using material components. Once you cast the spell in this way, you can't do so again until you finish a long rest. Your spellcasting ability for this feat is Intelligence, Wisdom, or Charisma (choose when you select this feat).",
+						"Each time you gain a level, you can replace one of the runes you know with another one from the Rune Spells table.",
 						{
-							"type": "item",
-							"name": "Comprehend Languages",
-							"entries": [
-								"You learn the {@spell comprehend languages} spell. You can cast this spell without expending a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast this spell using any spell slots you have."
-							]
-						},
-						{
-							"type": "item",
-							"name": "Rune Magic",
-							"entries": [
-								"You know a number of runes equal to half your proficiency bonus (rounded down), chosen from the Rune Spells table. Whenever you finish a long rest, you can inscribe each rune you know onto one nonmagical weapon, armor, piece of clothing, or other object you touch. You temporarily learn the 1st-level spells that correspond to the runes you inscribed, as specified on the Rune Spells table, and you know those spells until you finish a long rest, when the runes fade. While you are wearing or carrying any rune-marked object, you can cast the spells associated with those runes using any spell slots you have.",
-								"You can also invoke a rune inscribed on an object you are wearing or carrying and cast its associated spell without expending a spell slot or using material components. Once you cast the spell in this way, you can't do so again until you finish a long rest. Your spellcasting ability for this feat is Intelligence, Wisdom, or Charisma (choose when you select this feat).",
-								"Each time you gain a level, you can replace one of the runes you know with another one from the Rune Spells table.",
-								{
-									"type": "table",
-									"colStyles": [
-										"col-2",
-										"col-10"
-									],
-									"colLabels": [
-										"Rune",
-										"Spell"
-									],
-									"rows": [
-										[
-											"Cloud",
-											"{@spell Fog cloud}"
-										],
-										[
-											"Death",
-											"{@spell Inflict wounds}"
-										],
-										[
-											"Dragon",
-											"{@spell Chromatic orb}"
-										],
-										[
-											"Enemy",
-											"{@spell Disguise self}"
-										],
-										[
-											"Fire",
-											"{@spell Burning hands}"
-										],
-										[
-											"Friend",
-											"{@spell Speak with animals}"
-										],
-										[
-											"Frost",
-											"{@spell Armor of Agathys}"
-										],
-										[
-											"Hill",
-											"{@spell Goodberry}"
-										],
-										[
-											"Journey",
-											"{@spell Longstrider}"
-										],
-										[
-											"King",
-											"{@spell Command}"
-										],
-										[
-											"Mountain",
-											"{@spell Entangle}"
-										],
-										[
-											"Stone",
-											"{@spell Sanctuary}"
-										],
-										[
-											"Storm",
-											"{@spell Thunderwave}"
-										]
-									]
-								}
+							"type": "table",
+							"colStyles": [
+								"col-2",
+								"col-10"
+							],
+							"colLabels": [
+								"Rune",
+								"Spell"
+							],
+							"rows": [
+								[
+									"Cloud",
+									"{@spell Fog cloud}"
+								],
+								[
+									"Death",
+									"{@spell Inflict wounds}"
+								],
+								[
+									"Dragon",
+									"{@spell Chromatic orb}"
+								],
+								[
+									"Enemy",
+									"{@spell Disguise self}"
+								],
+								[
+									"Fire",
+									"{@spell Burning hands}"
+								],
+								[
+									"Friend",
+									"{@spell Speak with animals}"
+								],
+								[
+									"Frost",
+									"{@spell Armor of Agathys}"
+								],
+								[
+									"Hill",
+									"{@spell Goodberry}"
+								],
+								[
+									"Journey",
+									"{@spell Longstrider}"
+								],
+								[
+									"King",
+									"{@spell Command}"
+								],
+								[
+									"Mountain",
+									"{@spell Entangle}"
+								],
+								[
+									"Stone",
+									"{@spell Sanctuary}"
+								],
+								[
+									"Storm",
+									"{@spell Thunderwave}"
+								]
 							]
 						}
 					]
@@ -4125,10 +4258,11 @@
 				}
 			],
 			"entries": [
-				"Fortune favors you when someone tries to strike you. You gain the following benefits:",
+				"Fortune favors you when someone tries to strike you. You gain the following benefits.",
 				{
-					"type": "list",
-					"items": [
+					"type": "entries",
+					"name": "Reaction.",
+					"entries": [
 						"When a creature you can see hits you with an attack roll, you can use your reaction to force that creature to reroll. Once you use this ability, you can't use it again until you roll initiative at the start of combat or until you finish a short or long rest."
 					]
 				}
@@ -4138,13 +4272,37 @@
 			"name": "Sentinel",
 			"source": "PHB",
 			"page": 169,
-			"entries": [
-				"You have mastered techniques to take advantage of every drop in any enemy's guard, gaining the following benefits:",
+			"ability": [
 				{
-					"type": "list",
-					"items": [
-						"When you hit a creature with an opportunity attack, the creature's speed becomes 0 for the rest of the turn.",
-						"Creatures provoke opportunity attacks from you even if they take the {@action Disengage} action before leaving your reach.",
+					"choose": {
+						"from": [
+                            "str",
+                            "dex"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You have mastered techniques to take advantage of every drop in any enemy's guard, gaining the following benefits.",
+				{
+					"type": "entries",
+					"name": "Halt.",
+					"entries": [
+						"When you hit a creature with an opportunity attack, the creature's speed becomes 0 for the rest of the turn."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ignoring Disengage.",
+					"entries": [
+						"Creatures provoke opportunity attacks from you even if they take the {@action Disengage} action before leaving your reach."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Guardian Reaction.",
+					"entries": [
 						"When a creature within 5 feet of you makes an attack against a target other than you (and that target doesn't have this feat), you can use your reaction to make a melee weapon attack against the attacking creature."
 					]
 				}
@@ -4217,9 +4375,10 @@
 			"entries": [
 				"Your exposure to the Shadowfell's magic has changed you, granting you the following benefits:",
 				{
-					"type": "list",
-					"items": [
-						"You learn the {@spell invisibility} spell and one {@filter 1st-level spell|spells|level=1|school=I;N} of your choice. The {@filter 1st-level spell|spells|level=1|school=I;N} must be from the illusion or necromancy school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat."
+					"type": "entries",
+					"name": "Shadow Magic",
+					"entries": [
+						"You learn the {@spell invisibility} spell and one {@filter 1st-level spell|spells|level=1|school=I;N} of your choice. The {@filter 1st-level spell|spells|level=1|school=I;N} must be from the illusion or necromancy school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat or your own if you already have one."
 					]
 				}
 			]
@@ -4244,13 +4403,31 @@
 			"name": "Shield Master",
 			"source": "PHB",
 			"page": 170,
-			"entries": [
-				"You use shields not just for protection but also for offense. You gain the following benefits while you are wielding a {@item shield|phb}:",
+			"ability": [
 				{
-					"type": "list",
-					"items": [
-						"If you take the {@action Attack} action on your turn, you can use a bonus action to try to {@action shove} a creature within 5 feet of you with your shield.",
-						"If you aren't {@condition incapacitated}, you can add your shield's AC bonus to any Dexterity saving throw you make against a spell or other harmful effect that targets only you.",
+					"str": 1
+				}
+			],
+			"entries": [
+				"You use shields not just for protection but also for offense. You gain the following benefits while you are wielding a {@item shield|phb}.",
+				{
+					"type": "entries",
+					"name": "Shove.",
+					"entries": [
+						"If you take the {@action Attack} action on your turn, you can use a bonus action to ake an Unarmed Shove Attack against a creature within 5 feet of you with your shield."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "DEX Saves.",
+					"entries": [
+						"If you aren't {@condition incapacitated}, you can add your shield's AC bonus to any Dexterity saving throw you make against a spell or other harmful effect that targets only you."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Shield-Vasion.",
+					"entries": [
 						"If you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can use your reaction to take no damage if you succeed on the saving throw, interposing your shield between yourself and the source of the effect."
 					]
 				}
@@ -4307,11 +4484,18 @@
 				}
 			],
 			"entries": [
-				"You have honed your proficiency with particular skills, granting you the following benefits:",
+				"You have honed your proficiency with particular skills, granting you the following benefits.",
 				{
-					"type": "list",
-					"items": [
-						"You gain proficiency in one {@table skills|phb|skill} of your choice.",
+					"type": "entries",
+					"name": "Skill Proficiency.",
+					"entries": [
+						"You gain proficiency in one {@table skills|phb|skill} of your choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Expertise.",
+					"entries": [
 						"Choose one skill in which you have proficiency. You gain expertise with that skill, which means your proficiency bonus is doubled for any ability check you make with it. The skill you choose must be one that isn't already benefiting from a feature, such as Expertise, that doubles your proficiency bonus."
 					]
 				}
@@ -4379,11 +4563,18 @@
 				}
 			],
 			"entries": [
-				"You've learned where to cut to have the greatest results, granting you the following benefits:",
+				"You've learned where to cut to have the greatest results, granting you the following benefits.",
 				{
-					"type": "list",
-					"items": [
-						"Once per turn when you hit a creature with an attack that deals slashing damage, you can reduce the speed of the target by 10 feet until the start of your next turn.",
+					"type": "entries",
+					"name": "Hamstring.",
+					"entries": [
+						"Once per turn when you hit a creature with an attack that deals slashing damage, you can reduce the speed of the target by 10 feet until the start of your next turn."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Enhanced Critical.",
+					"entries": [
 						"When you score a critical hit that deals slashing damage to a creature, you grievously wound it. Until the start of your next turn, the target has disadvantage on all attack rolls."
 					]
 				}
@@ -4525,6 +4716,46 @@
 				}
 			]
 		},
+{
+			"name": "Spelldriver",
+			"source": "MPMM",
+			"prerequisite": [
+				{
+					"level": 11,
+					"spellcasting2020": true
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+                            "int",
+                            "wis",
+                            "cha"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Through intense focus, training, and dedication, you've harnessed the techniques of rapid spellcasting, gaining the following benefits.",
+				{
+					"type": "entries",
+					"name": "Dual-Leveled Casting",
+					"entries": [
+						"When you use your bonus action to cast a spell of 1st level or higher, you can also use your action to cast another spell of 1st level or higher. However, if you cast two or more spells in a single turn, only one of them can be 3rd level or higher.",
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Rules Tip: Casting Multiple Spells",
+					"page": 190,
+					"entries": [
+						"Normally, when you cast a spell as a bonus action, you can't use your action to also cast a spell that turn unless that spell is a cantrip\u2014{@note see {@book PHB p202|PHB|10|Bonus Action}.} The Spelldriver feat removes that restriction, but the focus necessary to channel multiple spells in the same round still limits the overall power of those spells."
+					]
+				}
+			]
+		},
 		{
 			"name": "Spelldriver",
 			"source": "TDCSR",
@@ -4548,6 +4779,7 @@
 				}
 			]
 		},
+		
 		{
 			"name": "Squat Nimbleness",
 			"source": "XGE",
@@ -4587,12 +4819,25 @@
 				}
 			],
 			"entries": [
-				"You are uncommonly nimble for your race. You gain the following benefits:",
+				"You are uncommonly nimble for your race. You gain the following benefits.",
 				{
-					"type": "list",
-					"items": [
-						"Increase your walking speed by 5 feet.",
-						"You gain proficiency in the {@skill Acrobatics} or {@skill Athletics} skill (your choice).",
+					"type": "entries",
+					"name": "Movement Speed Bonus.",
+					"entries": [
+						"Increase your walking speed by 5 feet."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Skill Proficiency.",
+					"entries": [
+						"You gain proficiency in the {@skill Acrobatics} or {@skill Athletics} skill (your choice)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Advantage against Grappled.",
+					"entries": [
 						"You have advantage on any Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check you make to escape from being {@condition grappled}."
 					]
 				}
@@ -4691,8 +4936,20 @@
 					]
 				}
 			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+                            "str",
+                            "con",
+                            "wis"
+						],
+						"amount": 1
+					}
+				}
+			],
 			"entries": [
-				"You have absorbed primeval magic that gives you an echo of the might of giants. When you take this feat, choose one of the benefits listed below. Once per turn, when you hit a target with a melee weapon attack or a ranged weapon attack using a thrown weapon, you can imbue the attack with an additional effect depending on the benefit you chose:",
+				"You have absorbed primeval magic that gives you an echo of the might of giants. When you take this feat, choose one of the benefits listed below. Once per turn, when you hit a target with a melee weapon attack or a ranged weapon attack using a thrown weapon, you can imbue the attack with an additional effect depending on the benefit you chose.",
 				{
 					"type": "entries",
 					"name": "Cloud Strike",
@@ -5235,6 +5492,71 @@
 		},
 		{
 			"name": "Svirfneblin Magic",
+			"source": "MPMM",
+			"additionalSources": [
+				{
+					"source": "EEPC",
+					"page": 7
+				},
+				{
+					"source": "SCAG",
+					"page": 115
+				}
+			],
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "gnome",
+							"subrace": "deep"
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+                            "int",
+                            "wis",
+                            "cha"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "int",
+					"innate": {
+						"_": {
+							"will": [
+								"nondetection"
+							],
+							"daily": {
+								"1e": [
+									"blindness/deafness",
+									"blur",
+									"disguise self"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"You have inherited the innate spellcasting ability of your ancestors, granting you the following benefits.",
+				{
+					"type": "entries",
+					"name": "Additional Spells",
+					"entries": [
+						"You can cast {@spell nondetection} on yourself at will, without needing a material component. You can also cast each of the following spells once per long rest at its lowest level: {@spell blindness/deafness}, {@spell blur}, and {@spell disguise self}. Your spellcasting ability is the one you use to cast your other Deep Gnome spells."
+					]
+				}
+			]
+		},
+		{
+			"name": "Svirfneblin Magic",
 			"source": "MTF",
 			"page": 114,
 			"additionalSources": [
@@ -5335,11 +5657,18 @@
 				}
 			],
 			"entries": [
-				"You learn to move things with your mind, granting you the following benefits:",
+				"You learn to move things with your mind, granting you the following benefits.",
 				{
-					"type": "list",
-					"items": [
-						"You learn the {@spell mage hand} cantrip. You can cast it without verbal or somatic components, and you can make the spectral hand {@condition invisible}. If you already know this spell, its range increases by 30 feet when you cast it. Its spellcasting ability is the ability increased by this feat.",
+					"type": "entries",
+					"name": "Minor Telekinesis.",
+					"entries": [
+						"You learn the {@spell mage hand} cantrip. You can cast it without verbal or somatic components, and you can make the spectral hand {@condition invisible}. If you already know this spell, its range increases by 30 feet when you cast it. Its spellcasting ability is the ability increased by this feat."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Telekinetic Shove.",
+					"entries": [
 						"As a bonus action, you can try to telekinetically shove one creature you can see within 30 feet of you. When you do so, the target must succeed on a Strength saving throw ({@dc 8} + your proficiency bonus + the ability modifier of the score increased by this feat) or be moved 5 feet toward you or away from you. A creature can willingly fail this save."
 					]
 				}
@@ -5376,16 +5705,57 @@
 				}
 			],
 			"entries": [
-				"You awaken the ability to mentally connect with others, granting you the following benefits:",
+				"You awaken the ability to mentally connect with others, granting you the following benefits.",
 				{
-					"type": "list",
-					"items": [
-						"You can speak telepathically to any creature you can see within 60 feet of you. Your telepathic utterances are in a language you know, and the creature understands you only if it knows that language. Your communication doesn't give the creature the ability to respond to you telepathically.",
+					"type": "entries",
+					"name": "Telepathic Utterance.",
+					"entries": [
+						"You can speak telepathically to any creature you can see within 60 feet of you. Your telepathic utterances are in a language you know, and the creature understands you only if it knows that language. Your communication doesn't give the creature the ability to respond to you telepathically."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Detect Thoughts.",
+					"entries": [
 						"You can cast the {@spell detect thoughts} spell, requiring no spell slot or components, and you must finish a long rest before you can cast it this way again. Your spellcasting ability for the spell is the ability increased by this feat. If you have spell slots of 2nd level or higher, you can cast this spell with them."
 					]
 				}
 			],
 			"hasFluffImages": true
+		},
+		{
+			"name": "Thrown Arms Master",
+			"source": "MPMM",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You've honed your ability to lob weaponry into the fray, including weapons not meant for ranged combat. You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "All Weapons are Thrown Weapons.",
+					"entries": [
+						"Simple and martial melee weapons without the thrown property have the thrown property for you. One-handed weapons have a normal range of 20 feet and a long range of 60 feet, while two-handed weapons have a normal range of 15 feet and a long range of 30 feet.",
+						"Weapons that already have the thrown property increase their short range by 20 feet and their long range by 40 feet for you.",
+						"If you have the {@optionalfeatures Hurler} Fighting Style, melee weapons that do not come with the thrown weapon property gain a 10 feet bonus to the above listed ranges.",
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Boomerang.",
+					"entries": [
+						"When you miss with a thrown weapon attack using a light weapon, the weapon returns to your grasp like a boomerang at the end of your turn, unless something prevents it from returning. You can catch and stow as many weapons as you threw in this way."
+					]
+				}
+			]
 		},
 		{
 			"name": "Thrown Arms Master",
@@ -5418,8 +5788,30 @@
 			"name": "Tough",
 			"source": "PHB",
 			"page": 170,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+                            "dex",
+                            "con",
+                            "int",
+                            "wis",
+                            "cha"
+						],
+						"amount": 1
+					}
+				}
+			],
 			"entries": [
-				"Your hit point maximum increases by an amount equal to twice your level when you gain this feat. Whenever you gain a level thereafter, your hit point maximum increases by an additional 2 hit points."
+				"You have the ability to push yourself in difficult situations to last longer than most. You gain the following benefits.
+				{
+					"type": "entries",
+					"name": "Consistent Hit Point Increase.",
+					"entries": [
+						"You gain a bonus to your Hit Point Maximum equal to two times your player level when you gained this feat. Whenever you gain a level thereafter, your hit point maximum increases by an additional 2 hit points."
+					]
+				}
 			]
 		},
 		{
@@ -5557,46 +5949,6 @@
 						"You gain proficiency with four weapons of your choice. Each one must be a simple or a martial weapon."
 					]
 				}
-			]
-		},
-		{
-			"name": "Wood Elf Magic",
-			"source": "XGE",
-			"page": 75,
-			"prerequisite": [
-				{
-					"race": [
-						{
-							"name": "elf",
-							"subrace": "wood"
-						}
-					]
-				}
-			],
-			"additionalSpells": [
-				{
-					"ability": "wis",
-					"innate": {
-						"_": {
-							"daily": {
-								"1e": [
-									"longstrider",
-									"pass without trace"
-								]
-							}
-						}
-					},
-					"known": {
-						"_": [
-							{
-								"choose": "level=0|class=Druid"
-							}
-						]
-					}
-				}
-			],
-			"entries": [
-				"You learn the magic of the primeval woods, which are revered and protected by your people. You learn one druid cantrip of your choice. You also learn the {@spell longstrider} and {@spell pass without trace} spells, each of which you can cast once without expending a spell slot. You regain the ability to cast these two spells in this way when you finish a long rest. Wisdom is your spellcasting ability for all three spells."
 			]
 		}
 	]
