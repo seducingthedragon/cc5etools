@@ -180,6 +180,13 @@
 			"entries": [
 				{
 					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Aarakocra reach maturity by age 3. Compared to humans, aarakocra don't usually live longer than 30 years."
+					]
+				},
+				{
+					"type": "entries",
 					"name": "Flight",
 					"entries": [
 						"Because of your wings, you have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor."
