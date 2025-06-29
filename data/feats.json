@@ -347,6 +347,9 @@
 		{
 			"name": "Adroit Crafter",
 			"source": "GHLoE",
+			"reprintedAs": [
+				"Adroit Crafter|MPMM"
+			],
 			"prerequisite": [
 				{
 					"otherSummary": {
@@ -673,6 +676,9 @@
 		{
 			"name": "Careful Crafter",
 			"source": "GHLoE",
+			"reprintedAs": [
+				"Careful Crafter|MPMM"
+			],
 			"prerequisite": [
 				{
 					"otherSummary": {
@@ -703,7 +709,7 @@
 					"spellcastingFeature": true
 				}
 			],
-			"ability": [ (comes with standard response and auto adds entry)
+			"ability": [
 				{
 					"choose": {
 						"from": [
@@ -740,10 +746,8 @@
                         "When you finish a long rest, you can choose one spell from your class's spell list and imbue that spell into a card. The chosen spell must have a casting time of 1 action, and it must be a level for which you have spell slots. The card remains imbued with this spell for 8 hours. While the card is imbued with the spell, you can use a bonus action to flourish the card and cast the spell within. The card then immediately loses its magic."
                     ]
                 }
-            ]
-        }
-    ]
-},
+         	]
+		},
 		{
 			"name": "Charger",
 			"source": "PHB",
@@ -964,6 +968,9 @@
 			"name": "Cruel",
 			"source": "TDCSR",
 			"page": 190,
+			"reprintedAs": [
+				"Cruel|MPMM"
+			],
 			"entries": [
 				"The challenges and struggles you've faced throughout your life have led you to delight in inflicting pain and anguish upon others. You gain a number of cruelty dice equal to your proficiency bonus. Your cruelty dice are {@dice d6|d6s}. You can roll only one cruelty die per turn, and a cruelty die is spent when you roll it.",
 				"You can roll a cruelty die under any of the following circumstances, with the indicated result:",
@@ -1386,6 +1393,18 @@
 			"name": "Eldritch Adept",
 			"source": "TCE",
 			"page": 79,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+                            "int",
+                            "wis",
+                            "cha"
+						],
+						"amount": 1
+					}
+				}
+			],
 			"prerequisite": [
 				{
 					"spellcasting2020": true
@@ -1766,6 +1785,18 @@
 		{
 			"name": "Flash Recall",
 			"source": "MPMM",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+                            "int",
+                            "wis",
+                            "cha"
+						],
+						"amount": 1
+					}
+				}
+			],
 			"prerequisite": [
 				{
 					"spellcastingPrepared": true
@@ -1795,6 +1826,9 @@
 			"name": "Flash Recall",
 			"source": "TDCSR",
 			"page": 190,
+			"reprintedAs": [
+				"Flash Recall|MPMM"
+			],
 			"prerequisite": [
 				{
 					"spellcastingPrepared": true
@@ -3203,6 +3237,9 @@
 			"name": "Mystic Conflux",
 			"source": "TDCSR",
 			"page": 190,
+			"reprintedAs": [
+				"Mystic Conflux|MPMM"
+			],
 			"additionalSpells": [
 				{
 					"innate": {
@@ -3637,6 +3674,9 @@
 			"name": "Remarkable Recovery",
 			"source": "TDCSR",
 			"page": 190,
+			"reprintedAs": [
+				"Remarkable Recovery|MPMM"
+			],
 			"ability": [
 				{
 					"con": 1
@@ -3653,7 +3693,7 @@
 				}
 			]
 		},
-				{
+		{
 			"name": "Resilient",
 			"source": "PHB",
 			"page": 168,
@@ -3743,6 +3783,9 @@
 			"name": "Revenant Blade",
 			"source": "ERLW",
 			"page": 22,
+			"reprintedAs": [
+				"Revenant Blade|MPMM"
+			],
 			"prerequisite": [
 				{
 					"race": [
@@ -4716,7 +4759,7 @@
 				}
 			]
 		},
-{
+		{
 			"name": "Spelldriver",
 			"source": "MPMM",
 			"prerequisite": [
@@ -4760,6 +4803,9 @@
 			"name": "Spelldriver",
 			"source": "TDCSR",
 			"page": 190,
+			"reprintedAs": [
+				"Spelldriver|MPMM"
+			],
 			"prerequisite": [
 				{
 					"level": 11,
@@ -4779,7 +4825,6 @@
 				}
 			]
 		},
-		
 		{
 			"name": "Squat Nimbleness",
 			"source": "XGE",
@@ -5559,6 +5604,9 @@
 			"name": "Svirfneblin Magic",
 			"source": "MTF",
 			"page": 114,
+			"reprintedAs": [
+				"Svirfneblin Magic|MPMM"
+			],
 			"additionalSources": [
 				{
 					"source": "EEPC",
@@ -5761,6 +5809,9 @@
 			"name": "Thrown Arms Master",
 			"source": "TDCSR",
 			"page": 191,
+			"reprintedAs": [
+				"Thrown Arms Master|MPMM"
+			],
 			"ability": [
 				{
 					"choose": {
