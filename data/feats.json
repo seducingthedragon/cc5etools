@@ -2144,6 +2144,50 @@
 			]
 		},
 		{
+			"name": "Hardy Physique",
+			"source": "MPMM",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+                            "str",
+                            "con"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"str": 13
+						},
+						{
+							"con": 13
+						}
+					]
+				}
+			],
+			"entries": [
+				"You have hardened your physical body to absorb hits rather than dodge them, granting you the following benefits.",
+				{
+					"type": "entries",
+					"name": "AC Recalculation.",
+						"entries": [
+							"You can use your Constitution, in place of Dexterity, when calculating your Armor Class in armor."
+						]
+				},
+				{
+					"type": "entries",
+					"name": "Advantage on Saving Throws.",
+					"entries": [
+						"You also have advantage on saving throws to avoid being moved against your will, Grappled, or knocked Prone."
+					]
+				}
+			]
+		},
+		{
 			"name": "Healer",
 			"source": "PHB",
 			"page": 167,
