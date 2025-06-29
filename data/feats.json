@@ -2605,6 +2605,44 @@
 			"hasFluffImages": true
 		},
 		{
+			"name": "Intimidating Leader",
+			"source": "MPMM",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"con",
+							"cha"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"prerequisite": [
+				{
+					"other": "proficiency in Intimidation"
+				},
+				{
+					"ability": [
+						{
+							"cha": 13
+						}
+					]
+				}
+			],
+			"entries": [
+				"You use fear and intimidation to rally those who follow you into battle. You gain the following benefits.",
+				{
+					"type": "entry",
+					"name": "Fearsome Rally",
+					"entry": [
+						"When another creature within 30 feet of you that can also see or hear you fails a saving throw to resist the {@condition Charmed} or {@condition Frightened} condition, you can use a reaction to make a Charisma({@skill Intimidation}) check against the same save DC. On a success, the creature is not Charmed or Frightened. You can use this reaction a number of times equal to your Proficiency Bonus, and you regain all expended uses of this feature each time you finish a long rest."
+					]
+				}
+			]
+		},
+		{
 			"name": "Keen Mind",
 			"source": "PHB",
 			"page": 167,
