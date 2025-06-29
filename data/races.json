@@ -182,7 +182,7 @@
 					"type": "entries",
 					"name": "Age",
 					"entries": [
-						"Aarakocra reach maturity by age 3. Compared to humans, aarakocra don't usually live longer than 30 years."
+						"Aarakocra reach maturity by age 3. Compared to Humans, Aarakocra don't usually live longer than 30 years."
 					]
 				},
 				{
@@ -714,8 +714,8 @@
 		},
 		{
 			"name": "Astral Elf",
-			"source": "AAG",
-			"page": 10,
+			"source": "MPMM",
+			"page": 7,
 			"lineage": "VRGR",
 			"creatureTypes": [
 				"humanoid"
@@ -834,6 +834,219 @@
 					"entries": [
 						"You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you remain conscious.",
 						"Whenever you finish this trance, you gain proficiency in one skill of your choice and with one weapon or tool of your choice, selected from the {@book Player's Handbook|PHB}. You mystically acquire these proficiencies by drawing them from shared elven memory and the experiences of entities on the Astral Plane, and you retain them until you finish your next long rest."
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Astral Elf",
+			"source": "AAG",
+			"page": 10,
+			"reprintedAs": [
+				"Astral Elf|MPMM"
+			],
+			"lineage": "VRGR",
+			"creatureTypes": [
+				"humanoid"
+			],
+			"creatureTypeTags": [
+				"elf"
+			],
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"age": {
+				"max": 750
+			},
+			"darkvision": 60,
+			"traitTags": [
+				"Improved Resting",
+				"Tool Proficiency",
+				"Weapon Proficiency"
+			],
+			"skillProficiencies": [
+				{
+					"perception": true
+				}
+			],
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"dancing lights#c"
+						]
+					},
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					}
+				},
+				{
+					"known": {
+						"1": [
+							"light#c"
+						]
+					},
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					}
+				},
+				{
+					"known": {
+						"1": [
+							"sacred flame#c"
+						]
+					},
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Creature Type",
+					"entries": [
+						"You are a Humanoid. You are also considered an elf for any prerequisite or effect that requires you to be an elf."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Astral Fire",
+					"entries": [
+						"You know one of the following cantrips of your choice: {@spell dancing lights}, {@spell light}, or {@spell sacred flame}. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you select this race)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of yourself as if it were bright light, and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fey Ancestry",
+					"entries": [
+						"You have advantage on saving throws you make to avoid or end the {@condition charmed} condition on yourself."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Keen Senses",
+					"entries": [
+						"You have proficiency in the {@skill Perception} skill."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Starlight Step",
+					"entries": [
+						"As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Astral Trance",
+					"entries": [
+						"You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you remain conscious.",
+						"Whenever you finish this trance, you gain proficiency in one skill of your choice and with one weapon or tool of your choice, selected from the {@book Player's Handbook|PHB}. You mystically acquire these proficiencies by drawing them from shared elven memory and the experiences of entities on the Astral Plane, and you retain them until you finish your next long rest."
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Autognome",
+			"source": "MPMM",
+			"page": 8,
+			"lineage": "VRGR",
+			"creatureTypes": [
+				"construct"
+			],
+			"size": [
+				"S"
+			],
+			"speed": 30,
+			"traitTags": [
+				"Improved Resting",
+				"Natural Armor"
+			],
+			"toolProficiencies": [
+				{
+					"any": 2
+				}
+			],
+			"resist": [
+				"poison"
+			],
+			"conditionImmune": [
+				"disease"
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Creature Type",
+					"entries": [
+						"You are a Construct."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Armored Casing",
+					"entries": [
+						"You are encased in thin metal or some other durable material. While you aren't wearing armor, your base Armor Class is 13 + your Dexterity modifier."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Built for Success",
+					"entries": [
+						"You can add a {@dice d4} to one attack roll, ability check, or saving throw you make, and you can do so after seeing the {@dice d20} roll but before the effects of the roll are resolved. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Healing Machine",
+					"entries": [
+						"If the {@spell mending} spell is cast on you, you can spend a Hit Die, roll it, and regain a number of hit points equal to the roll plus your Constitution modifier (minimum of 1 hit point).",
+						"In addition, your creator designed you to benefit from several spells that preserve life but that normally don't affect Constructs: {@spell cure wounds}, {@spell healing word}, {@spell mass cure wounds}, {@spell mass healing word}, and {@spell spare the dying}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Mechanical Nature",
+					"entries": [
+						"You have resistance to poison damage and immunity to disease, and you have advantage on saving throws against being {@condition paralyzed} or {@condition poisoned}. You don't need to eat, drink, or breathe."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sentry's Rest",
+					"entries": [
+						"When you take a long rest, you spend at least 6 hours in an inactive, motionless state, instead of sleeping. In this state, you appear inert, but you remain conscious."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Specialized Design",
+					"entries": [
+						"You gain two tool proficiencies of your choice, selected from the {@book Player's Handbook|PHB}."
 					]
 				}
 			],
@@ -1191,6 +1404,12 @@
 			"size": [
 				"M"
 			],
+			"heightAndWeight": {
+				"baseHeight": 72,
+				"heightMod": "2d12",
+				"baseWeight": 200,
+				"weightMod": "2d6"
+			},
 			"speed": 30,
 			"darkvision": 60,
 			"traitTags": [
@@ -1202,6 +1421,13 @@
 				}
 			],
 			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Bugbears reach adulthood at age 16 and live up to 80 years."
+					]
+				},
 				{
 					"type": "entries",
 					"name": "Creature Type",
