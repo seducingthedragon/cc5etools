@@ -2277,6 +2277,32 @@
 			]
 		},
 		{
+			"name": "Helpful Insights",
+			"source": "MPMM",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"int",
+							"wis"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You always seem to have helpful advice for any situation. You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Providing Help.",
+					"entries": [
+						"You can take the {@action Help} action as a bonus action on each of your turns. Additionally, when you use a Help action to give advantage on an ability check with a skill or tool you are proficient in, the target can treat a result of 7 or lower on the {@dice d20} as an 8. This excludes Nat 1s."
+					]
+				}
+			],
+			"foundryImg": "icons/skills/social/thumbsup-approval-like.webp"
+		},
+		{
 			"name": "High Wood Elf Magic",
 			"source": "XGE",
 			"page": 75,
