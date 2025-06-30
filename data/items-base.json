@@ -2313,7 +2313,8 @@
 			"source": "PHB",
 			"page": 154,
 			"entries": [
-				"These special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
+				"These special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency.",
+				"Additionally, if you have proficiency in a skill that's used with a proficient artisan's tool, you have Advantage on the check."
 			]
 		},
 		{
@@ -2340,7 +2341,8 @@
 			"source": "PHB",
 			"page": 154,
 			"entries": [
-				"If you are proficient with a gaming set, you can add your proficiency bonus to ability checks you make to play a game with that set. Each type of gaming set requires a separate proficiency."
+				"If you are proficient with a gaming set, you can add your proficiency bonus to ability checks you make to play a game with that set. Each type of gaming set requires a separate proficiency.",
+				"Additionally, if you have proficiency in a skill that's used with a proficient gaming set, you have Advantage on the check."
 			]
 		},
 		{
@@ -2370,7 +2372,8 @@
 			"source": "PHB",
 			"page": 154,
 			"entries": [
-				"If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency."
+				"If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.",
+				"Additionally, if you have proficiency in a skill that's used with a proficient instrument, you have Advantage on the check."
 			]
 		},
 		{
@@ -2496,7 +2499,7 @@
 					"type": "entries",
 					"name": "Ship Repair",
 					"entries": [
-						"Repairs to a damaged ship can be made while the vessel is berthed. Repairing 1 hit point of damage requires 1 day and costs 20 gp for materials and labor."
+						"Repairs to a damaged ship can be made while the vessel is berthed. Repairing 1 Hit Point of damage requires 1 day and costs 20 GP for materials and labor. If the repairs are made in a location where supplies and skilled labor are abundant, such as a city shipyard, the repair time and cost are halved."
 					]
 				}
 			]
@@ -2505,13 +2508,21 @@
 			"name": "Vehicle (Space)",
 			"abbreviation": "SPC",
 			"source": "AAG",
-			"page": 24
+			"page": 24,
+			"_copy": {
+				"abbreviation": "SHP",
+				"source": "DMG"
+			}
 		},
 		{
 			"name": "Tool",
 			"abbreviation": "T",
 			"source": "PHB",
-			"page": 154
+			"page": 154,
+			"entries": [
+				"These special tools include the items needed for specific vocational activities. Proficiency with a set of tools lets you add your proficiency bonus to any ability checks you make using the tools in your work. Each type of tool set requires a separate proficiency.",
+				"Additionally, if you have proficiency in a skill that's used with a proficient tool set, you have Advantage on the check."
+			]
 		},
 		{
 			"name": "Tack and Harness",
