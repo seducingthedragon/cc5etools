@@ -134,6 +134,16 @@
 		},
 		{
 			"name": "Birdpipes",
+			"source": "PHB",
+			"page": 154,
+			"type": "INS",
+			"rarity": "none",
+			"entries": [
+				"Pan pipes or satyr pipes, also known as the shalm, these are sacred to {@deity Lliira|Faerûnian|scag} and popular with wood elf and wild elf bards."
+			]
+		},
+		{
+			"name": "Birdpipes",
 			"source": "SCAG",
 			"page": 124,
 			"type": "INS",
@@ -348,6 +358,34 @@
 		},
 		{
 			"name": "Double-Bladed Scimitar",
+			"source": "PHB",
+			"page": 149,
+			"type": "M",
+			"rarity": "none",
+			"weight": 6,
+			"value": 10000,
+			"weaponCategory": "martial",
+			"property": [
+				"S",
+				"2H"
+			],
+			"dmg1": "2d4",
+			"dmgType": "S",
+			"sword": true,
+			"weapon": true,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Special",
+					"entries": [
+						"If you attack with a double-bladed scimitar as part of the {@action Attack} action on your turn, you can use a bonus action immediately after to make a melee attack with it. This attack deals {@damage 1d4} slashing damage on a hit, instead of {@damage 2d4}."
+					]
+				}
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Double-Bladed Scimitar",
 			"source": "ERLW",
 			"page": 21,
 			"type": "M",
@@ -455,6 +493,16 @@
 			"dmgType": "S",
 			"polearm": true,
 			"weapon": true
+		},
+		{
+			"name": "Glaur",
+			"source": "PHB",
+			"page": 154,
+			"type": "INS",
+			"rarity": "none",
+			"entries": [
+				"Short, curved horns like a cornucopia. Played with valves, glaur sound like trumpets, while those without valves, known as gloon, have a more mournful sound."
+			]
 		},
 		{
 			"name": "Glaur",
@@ -588,6 +636,16 @@
 		},
 		{
 			"name": "Hand Drum",
+			"source": "PHB",
+			"page": 154,
+			"type": "INS",
+			"rarity": "none",
+			"entries": [
+				"A double-headed skin drum fitted with handles along its side."
+			]
+		},
+		{
+			"name": "Hand Drum",
 			"source": "SCAG",
 			"page": 124,
 			"type": "INS",
@@ -674,6 +732,38 @@
 			"entries": [
 				"On a hit with this weapon, the wielder can forgo dealing damage and attempt to trip the target, in which case the target must succeed on a Strength saving throw or fall {@condition prone}. The DC is 8 + the wielder's Strength modifier + the wielder's proficiency bonus."
 			]
+		},
+		{
+			"name": "Hoopak",
+			"source": "PHB",
+			"page": 149,
+			"type": "M",
+			"rarity": "none",
+			"weight": 2,
+			"value": 10,
+			"weaponCategory": "martial",
+			"property": [
+				"A",
+				"F",
+				"S",
+				"2H"
+			],
+			"range": "40/160",
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"weapon": true,
+			"entries": [
+				"A hoopak is a sturdy stick with a sling at one end and a pointed tip at the other.",
+				{
+					"type": "entries",
+					"name": "Special",
+					"entries": [
+						"When you make a melee attack with this weapon, you ignore its ammunition property. You can use the hoopak as a martial ranged weapon. If you do, it uses the ammunition property, uses sling bullets, and deals {@damage 1d4} bludgeoning damage on a hit."
+					]
+				}
+			],
+			"ammoType": "sling bullet|phb",
+			"hasFluffImages": true
 		},
 		{
 			"name": "Hoopak",
@@ -936,6 +1026,16 @@
 			"bow": true,
 			"weapon": true,
 			"ammoType": "arrow|phb"
+		},
+		{
+			"name": "Longhorn",
+			"source": "PHB",
+			"page": 154,
+			"type": "INS",
+			"rarity": "none",
+			"entries": [
+				"A Faerûnian flute of sophisticated make, found only in areas with skilled artisans, as in great cities or elven enclaves."
+			]
 		},
 		{
 			"name": "Longhorn",
@@ -1390,6 +1490,9 @@
 			"basicRules": true,
 			"type": "INS",
 			"rarity": "none",
+			"entries": [
+				"A double-reed instrument similar to an oboe or a bassoon, popular with gnomes, who have developed some bellows-powered versions."
+			],
 			"weight": 1,
 			"value": 200
 		},
@@ -1551,6 +1654,16 @@
 		},
 		{
 			"name": "Songhorn",
+			"source": "PHB",
+			"page": 154,
+			"type": "INS",
+			"rarity": "none",
+			"entries": [
+				"A recorder, a simple type of flute, usually carved from wood."
+			]
+		},
+		{
+			"name": "Songhorn",
 			"source": "SCAG",
 			"page": 124,
 			"type": "INS",
@@ -1580,6 +1693,21 @@
 			"dmg2": "1d8",
 			"spear": true,
 			"weapon": true
+		},
+		{
+			"name": "Spiked Armor",
+			"source": "PHB",
+			"page": 145,
+			"type": "MA",
+			"rarity": "unknown",
+			"weight": 45,
+			"value": 7500,
+			"ac": 14,
+			"armor": true,
+			"stealth": true,
+			"entries": [
+				"Spiked armor is a rare type of medium armor made by dwarves. It consists of a leather coat and leggings covered with spikes that are usually made of metal."
+			]
 		},
 		{
 			"name": "Spiked Armor",
@@ -1652,6 +1780,16 @@
 		},
 		{
 			"name": "Tantan",
+			"source": "PHB",
+			"page": 154,
+			"type": "INS",
+			"rarity": "none",
+			"entries": [
+				"A tambourine, a popular instrument with halflings and humans south of the Dalelands."
+			]
+		},
+		{
+			"name": "Tantan",
 			"source": "SCAG",
 			"page": 124,
 			"type": "INS",
@@ -1662,12 +1800,32 @@
 		},
 		{
 			"name": "Thelarr",
+			"source": "PHB",
+			"page": 154,
+			"type": "INS",
+			"rarity": "none",
+			"entries": [
+				"Also known as a whistlecane, a simple and easy-to-make wind instrument cut from a reed. They are so simple, in fact, that skilled bards frequently make and give them away to children\u2014to the parents' delight or regret."
+			]
+		},
+		{
+			"name": "Thelarr",
 			"source": "SCAG",
 			"page": 124,
 			"type": "INS",
 			"rarity": "none",
 			"entries": [
 				"Also known as a whistlecane, a simple and easy-to-make wind instrument cut from a reed. They are so simple, in fact, that skilled bards frequently make and give them away to children\u2014to the parents' delight or regret."
+			]
+		},
+		{
+			"name": "Tocken",
+			"source": "PHB",
+			"page": 154,
+			"type": "INS",
+			"rarity": "none",
+			"entries": [
+				"A hanging set of carved oval bells, usually played with a pair of light wooden hammers (or open handed). They are most common in underground cultures, where the resonant tones can carry."
 			]
 		},
 		{
@@ -1741,6 +1899,16 @@
 		},
 		{
 			"name": "Wargong",
+			"source": "PHB",
+			"page": 154,
+			"type": "INS",
+			"rarity": "none",
+			"entries": [
+				"A metal gong, traditionally made from a shield, particularly the shield of an enemy. Both goblins and dwarves make and play wargongs, their sound echoing through tunnels in the Underdark."
+			]
+		},
+		{
+			"name": "Wargong",
 			"source": "SCAG",
 			"page": 124,
 			"type": "INS",
@@ -1809,6 +1977,16 @@
 		},
 		{
 			"name": "Yarting",
+			"source": "PHB",
+			"page": 154,
+			"type": "INS",
+			"rarity": "none",
+			"entries": [
+				"A southern instrument from Amn and Calimshan that is a Faerûnian analog to the guitar. Numerous variations have spread across the continent."
+			]
+		},
+		{
+			"name": "Yarting",
 			"source": "SCAG",
 			"page": 124,
 			"type": "INS",
@@ -1835,6 +2013,16 @@
 			"weapon": true,
 			"entries": [
 				"A yklwa (pronounced YICK-ul-wah) is a simple melee weapon that is the traditional weapon of Chultan warriors. A yklwa consists of a 3-foot wooden shaft with a steel or stone blade up to 18 inches long. Although it has the thrown weapon property, the yklwa is not well balanced for throwing."
+			]
+		},
+		{
+			"name": "Zulkoon",
+			"source": "PHB",
+			"page": 154,
+			"type": "INS",
+			"rarity": "none",
+			"entries": [
+				"A complex pump organ that originated with the zulkirs of Thay, who use it in the casting of their spells. It is considered to have a dramatic, but sinister, sound."
 			]
 		},
 		{
