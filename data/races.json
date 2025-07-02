@@ -1843,6 +1843,12 @@
 				"Natural Weapon",
 				"Powerful Build"
 			],
+			"heightAndWeight": {
+				"baseHeight": 72,
+				"heightMod": "1d10",
+				"baseWeight": 600,
+				"weightMod": "2d12"
+			},
 			"skillProficiencies": [
 				{
 					"choose": {
@@ -1856,6 +1862,13 @@
 				}
 			],
 			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Centaurs mature and age at about the same rate as humans."
+					]
+				},
 				{
 					"type": "entries",
 					"name": "Creature Type",
@@ -2011,6 +2024,12 @@
 				"S",
 				"M"
 			],
+			"heightAndWeight": {
+				"baseHeight": 61,
+				"heightMod": "2d4",
+				"baseWeight": 115,
+				"weightMod": "2d4"
+			},
 			"speed": 30,
 			"skillProficiencies": [
 				{
@@ -2027,6 +2046,13 @@
 				}
 			],
 			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Changelings mature slightly faster than humans but share a similar lifespan\u2014typically a century or less. While a changeling can transform to conceal their age, the effects of aging affect them similarly to humans."
+					]
+				},
 				{
 					"type": "entries",
 					"name": "Creature Type",
@@ -3941,6 +3967,12 @@
 			"traitTags": [
 				"Powerful Build"
 			],
+			"heightAndWeight": {
+				"baseHeight": 74,
+				"heightMod": "2d12",
+				"baseWeight": 175,
+				"weightMod": "2d6"
+			},
 			"additionalSpells": [
 				{
 					"ability": {
@@ -3959,6 +3991,13 @@
 				}
 			],
 			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"As humanoids related to the fey, firbolg have long lifespans. A firbolg reaches adulthood around 30, and the oldest of them can live for 500 years."
+					]
+				},
 				{
 					"type": "entries",
 					"name": "Firbolg Magic",
@@ -4202,8 +4241,21 @@
 			"age": {
 				"max": 120
 			},
+			"heightAndWeight": {
+				"baseHeight": 56,
+				"heightMod": "2d10",
+				"baseWeight": 110,
+				"weightMod": "2d4"
+			},
 			"darkvision": 60,
 			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Genasi mature at about the same rate as humans and reach adulthood in their late teens. They live somewhat longer than humans do, up to 120 years."
+					]
+				},
 				{
 					"type": "entries",
 					"name": "Size",
@@ -4329,6 +4381,12 @@
 			"size": [
 				"M"
 			],
+			"heightAndWeight": {
+				"baseHeight": 60,
+				"heightMod": "2d12",
+				"baseWeight": 100,
+				"weightMod": "2d4"
+			},
 			"speed": 30,
 			"traitTags": [
 				"Weapon Proficiency"
@@ -4380,6 +4438,13 @@
 			],
 			"entries": [
 				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Gith reach adulthood in their late teens and live for about a century."
+					]
+				},
+				{
 					"type": "entries",
 					"name": "Astral Knowledge",
 					"entries": [
@@ -4418,6 +4483,12 @@
 			"resist": [
 				"psychic"
 			],
+			"heightAndWeight": {
+				"baseHeight": 59,
+				"heightMod": "2d12",
+				"baseWeight": 90,
+				"weightMod": "1d4"
+			},
 			"additionalSpells": [
 				{
 					"innate": {
@@ -4451,6 +4522,13 @@
 				}
 			],
 			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Gith reach adulthood in their late teens and live for about a century."
+					]
+				},
 				{
 					"type": "entries",
 					"name": "Githzerai Psionics",
@@ -4848,9 +4926,21 @@
 			"size": [
 				"S"
 			],
+			"heightAndWeight": {
+				"baseHeight": 41,
+				"heightMod": "2d4",
+				"baseWeight": 35
+			},
 			"speed": 30,
 			"darkvision": 60,
 			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Goblins reach adulthood at age 8 and live up to 60 years."
+					]
+				},
 				{
 					"type": "entries",
 					"name": "Creature Type",
