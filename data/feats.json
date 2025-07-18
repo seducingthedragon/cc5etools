@@ -752,9 +752,73 @@
 			"name": "Charger",
 			"source": "PHB",
 			"page": 165,
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"str": 13
+						},
+						{
+							"dex": 13
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						]
+					}
+				}
+			],
 			"entries": [
-				"When you use your action to {@action Dash}, you can use a bonus action to make one melee weapon attack or to {@action shove} a creature.",
-				"If you move at least 10 feet in a straight line immediately before taking this bonus action, you either gain a +5 bonus to the attack's damage roll (if you chose to make a melee attack and hit) or push the target up to 10 feet away from you (if you chose to shove and you succeed)."
+				"Your ability to use your movement to aid your attacks grants you the following benefits.",
+				{
+					"type": "entries",
+					"name": "Dash Attack.",
+					"entries": [
+						"When you take the Dash action, you can use your Bonus Action to make one of the following attacks:",
+						{
+							"type": "list",
+							"items": [
+								"Melee Weapon Attack",
+								"Unarmed Strike Attack",
+								"Unarmed Shove Attack"
+							]
+						},
+						"If you have the Brawler Fighting Style, you can add your Unarmed Grapple Attack as an option for your Bonus Action Dash Attack."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Charge Attack",
+					"entries": [
+						"If you move at least 10 feet in a straight line toward a target immediately before before making your bonus action Dash Attack, you gain the following benefits on a hit:",
+						{
+							"type": "list",
+							"style": "list-hang-notile",
+							"items": [
+								{
+									"type": "item",
+									"name": "Attack Roll.",
+									"entries": [
+										"You gain a +5 bonus to your damage roll for a melee weapon attack or unarmed strike attack."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Contested Roll.",
+									"entries": [
+										"You can shove the target up to 10 feet away if it is no more than one size larger than you with your unarmed shove attack."
+									]
+								}
+							]
+						}
+					]
+				}
 			]
 		},
 		{
@@ -880,14 +944,42 @@
 			"name": "Crossbow Expert",
 			"source": "PHB",
 			"page": 165,
-			"entries": [
-				"Thanks to extensive practice with the crossbow, you gain the following benefits:",
+			"prerequisite": [
 				{
-					"type": "list",
-					"items": [
-						"You ignore the loading quality of crossbows with which you are proficient.",
-						"Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls.",
-						"When you use the {@action Attack} action and attack with a one-handed weapon, you can use a bonus action to attack with a {@item hand crossbow|phb} you are holding."
+					"ability": [
+						{
+							"dex": 13
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"dex": 1
+				}
+			],
+			"entries": [
+				"You have trained extensively with the crossbow and can use it more efficiently than most. You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Ignore Loading.",
+					"entries": [
+						"You can ignore the loading property of all crossbows you wield as long as you have a free hand and have proficiency with the weapon. When it comes to crossbows with the Reload Property, it takes your Bonus Action, instead of your Action, to refill the entire cartridge with bolts."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Melee-Range Ranged Attacks.",
+					"entries": [
+						"Being within 5 feet of a hostile creature does not impose disadvantage on your ranged attack rolls.",
+						"If you have the Melee Marksman Fighting Style, you have advantage on ranged attack rolls against a target within 5 feet of you."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Two-Weapon Fighting with a Hand Crossbow.",
+					"entries": [
+						"When you take the Attack action and make an attack with a one-handed melee weapon, you can use a bonus action to make an attack with a hand crossbow in your off-hand."
 					]
 				}
 			]
@@ -1031,8 +1123,21 @@
 					]
 				}
 			],
+			"ability": [
+				{
+					"dex": 1
+				}
+			],
 			"entries": [
-				"When you are wielding a finesse weapon with which you are proficient and another creature hits you with a melee attack, you can use your reaction to add your proficiency bonus to your AC for that attack, potentially causing the attack to miss you."
+				"You are skilled in dueling and responding to attacks. You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Reactive Defense.",
+					"entries": [
+						"When a creature you can see hits you with a melee attack while you are wielding a Finesse or Light melee weapon you are proficient with, you can use your reaction to add your Proficiency Bonus to your Armor Class against that attack, potentially causing a miss. This bonus lasts until the start of your next turn against melee weapon attacks.",
+						"When you use this reaction and the attack misses, you can make a single melee weapon attack against your attacker as part of the same reaction."
+					]
+				}
 			]
 		},
 		{
@@ -1309,34 +1414,44 @@
 			]
 		},
 		{
-			"name": "Dual Wielder",
-			"source": "PHB",
-			"page": 165,
-			"entries": [
-				"You master fighting with two weapons, gaining the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"You gain a +1 bonus to AC while you are wielding a separate melee weapon in each hand.",
-						"You can use two-weapon fighting even when the one-handed melee weapons you are wielding aren't light.",
-						"You can draw or stow two one-handed weapons when you would normally be able to draw or stow only one."
-					]
-				}
-			]
-		},
-		{
 			"name": "Dungeon Delver",
 			"source": "PHB",
 			"page": 166,
-			"entries": [
-				"Alert to the hidden traps and secret doors found in many dungeons, you gain the following benefits:",
+			"ability": [
 				{
-					"type": "list",
-					"items": [
-						"You have advantage on Wisdom ({@skill Perception}) and Intelligence ({@skill Investigation}) checks made to detect the presence of secret doors.",
-						"You have advantage on saving throws made to avoid or resist traps.",
-						"You have resistance to the damage dealt by traps.",
-						"Traveling at a fast pace doesn't impose the normal -5 penalty on your passive Wisdom ({@skill Perception}) score."
+					"choose": {
+						"from": [
+                            "int",
+                            "wis"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"proficiency": [
+				"item": "thieves' tools"
+			]
+			"entries": [
+				"You are as skilled as one can be at exploring dungeons and disarming deadly traps, bringing these skills to all environments you explore. You gain the benefits listed below.",
+				{
+					"type": "entries",
+					"name": "Skills and Toolset.",
+					"entries": [
+						"You have advantage on Wisdom ({@skill Perception}) and Intelligence ({@skill Investigation}) checks made to detect the presence of secret doors and traps. You also gain proficiency in {@item Thieves’ Tools}, if you don’t already have it."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Advantage and Resistance.",
+					"entries": [
+						"You have advantage on saving throws to avoid or resist traps and are resistant to the damage dealt by traps."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fast Travel.",
+					"entries": [
+						"Traveling at a fast pace does not impose the normal -5 penalty on your passive Investigation and Perception scores."
 					]
 				}
 			]
@@ -1351,11 +1466,26 @@
 				}
 			],
 			"entries": [
-				"Hardy and resilient, you gain the following benefits:",
+				"Hardy and resilient, you gain the following benefits.",
 				{
-					"type": "list",
-					"items": [
+					"type": "entries",
+					"name": "Hit Points Regained.",
+					"entries": [
 						"When you roll a Hit Die to regain hit points, the minimum number of hit points you regain from the roll equals twice your Constitution modifier (minimum of 2)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Defy Death.",
+					"entries": [
+						"You have Advantage on Death Saving Throws."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Speedy Recovery",
+					"entries": [
+						"As a Bonus Action, you can expend and roll one of your Hit Dice to regain hit points."
 					]
 				}
 			]
@@ -1566,6 +1696,77 @@
 								"When you take the {@action Attack} action on your turn, you can replace a single attack with a magical burst of flame. Each creature of your choice in a 15-foot-radius sphere centered on you must make a Dexterity saving throw (DC equals 8 + your proficiency bonus + the modifier of the ability increased by this feat). On a failed save, a creature takes fire damage equal to {@damage 1d8} + your proficiency bonus, and it has the blinded condition until the start of your next turn. On a successful save, the creature takes half as much damage only. You can use your Searing Ignition a number of times equal to your proficiency bonus (but no more than once per turn), and you regain all expended uses when you finish a long rest."
 							]
 						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Exploit Training",
+			"source": "MPMM",
+			"prerequisite": [
+				{
+					"level": 4,
+					"ability": [
+						{
+							"str": 13
+						}
+					]
+				},
+				{
+					"level": 4,
+					"ability": [
+						{
+							"dex": 13
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+                            "str",
+                            "dex",
+                            "con"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "Exploits",
+					"featureType": [
+						"MV:B"
+					],
+					"progression": {
+						"*": 1
+					}
+				}
+			],
+			"entries": [
+				"You have studied the use of exploits from a specific source. When you choose this feat, choose 1 of the following categories below to gain two 1st-Degree Exploits from and you gain the following benefits.",
+				{
+					"type": "list",
+					"items": [
+						"{@filter Devious Exploits (Rogue Class)|optionalfeatures|feature type=ll:1de;ll:me=sand}",
+						"{@filter Martial Exploits (Fighter Class)|optionalfeatures|feature type=ll:1de;ll:me=sand}",
+						"{@filter Savage Exploits (Barbarian Class)|optionalfeatures|feature type=ll:1de;ll:me=sand}"
+					]
+				},
+				" If an Exploit you use requires the target to make a saving throw to resist the effects, the DC is equal to 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).",
+				{
+					"type": "entries",
+					"name": "Exploit Dice.",
+					"entries": [
+						"You gain two d4 exploit dice. When you use your exploit, you expend the use of 1 of those dice, regaining all expended uses on a short or long rest, however if you already have Exploit Dice from another source, you only gain 1 exploit die at the die size you currently have."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Repeatable and Replaceable.",
+					"entries": [
+						"You can choose this feat again at higher levels, choosing a different category of exploits to choose from. Additionally, when you gain a level, you can choose to replace one 1st-Degree exploit with another 1st-Degree Exploit from the same category."
 					]
 				}
 			]
@@ -2054,17 +2255,45 @@
 					"ability": [
 						{
 							"str": 13
+						},
+						{
+							"dex": 13
 						}
 					]
 				}
 			],
-			"entries": [
-				"You've developed the skills necessary to hold your own in close-quarters grappling. You gain the following benefits:",
+			"ability": [
 				{
-					"type": "list",
-					"items": [
-						"You have advantage on attack rolls against a creature you are grappling.",
-						"You can use your action to try to pin a creature {@condition grappled} by you. To do so, make another grapple check. If you succeed, you and the creature are both {@condition restrained} until the grapple ends."
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						]
+					}
+				}
+			],
+			"entries": [
+				"You've developed the skills necessary to hold your own in close-quarters grappling, gaining the following benefits.",
+				{
+					"type": "entries",
+					"name": "Punch and Grab.",
+					"entries": [
+						"When you hit a creature with an {@action Unarmed Attack} action on your turn, you can use both the Strike and the Grapple option as part of the same attack action. You can use this benefit only once per turn.",
+						"If you have the Brawler Fighting Style, you can use your Bonus Action to make one Unarmed Strike Attack against your Punch & Grab target."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Attack Advantage.",
+					"entries": [
+						""You have Advantage on attack rolls against a creature {@condition Grappled} by you."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fast Wrestler.",
+					"entries": [
+						"You don't have to spend extra movement to move a creature {@condition Grappled|XPHB} by you if the creature is your size or smaller."
 					]
 				}
 			]
@@ -2073,13 +2302,35 @@
 			"name": "Great Weapon Master",
 			"source": "PHB",
 			"page": 167,
-			"entries": [
-				"You've learned to put the weight of a weapon to your advantage, letting its momentum empower your strikes. You gain the following benefits:",
+			"prerequisite": [
 				{
-					"type": "list",
-					"items": [
-						"On your turn, when you score a critical hit with a melee weapon or reduce a creature to 0 hit points with one, you can make one melee weapon attack as a bonus action.",
-						"Before you make a melee attack with a heavy weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If the attack hits, you add +10 to the attack's damage."
+					"ability": [
+						{
+							"str": 13
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"str": 1
+				}
+			],
+			"entries": [
+				"You've learned to put the weight of a weapon to your advantage, letting its momentum empower your strikes. You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Bonus Attack.",
+					"entries": [
+						"Immediately after you score a Critical Hit or reduce a creature to 0 Hit Points on your turn using a Heavy or Two-Handed Melee weapon, you can make one attack with the same weapon as a Bonus Action."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Proficient Damage Dealer.",
+					"entries": [
+						"You add your proficiency bonus to your damage rolls for Heavy melee weapons and Two-Handed melee weapons.",
+						"If you have the Great Weapon Master Fighting Style, you gain the above benefits for any melee weapon that does not have the Light or Finesse property."
 					]
 				}
 			]
@@ -2213,13 +2464,25 @@
 			"name": "Healer",
 			"source": "PHB",
 			"page": 167,
-			"entries": [
-				"You are an able physician, allowing you to mend wounds quickly and get your allies back in the fight. You gain the following benefits:",
+			"ability": [
 				{
-					"type": "list",
-					"items": [
-						"When you use a {@item healer's kit|phb} to stabilize a dying creature, that creature also regains 1 hit point.",
-						"As an action, you can spend one use of a {@item healer's kit|phb} to tend to a creature and restore {@dice 1d6 + 4} hit points to it, plus additional hit points equal to the creature's maximum number of Hit Dice. The creature can't regain hit points from this feat again until it finishes a short or long rest."
+					"wis": 1
+				}
+			],
+			"entries": [
+				"You are an able physician, allowing you to mend wounds quickly and get your allies back in the fight. You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Battle Medic",
+					"entries": [
+						"If you have a {@item healer's kit|phb}, you can expend one use of it and tend to a creature within 5 feet of yourself as a action. That creature can expend one of its Hit Dice to regain a number of Hit Points equal to the roll plus your Proficiency Bonus. Additionally, if the Hit Die rolls a 1, the creature can reroll the die but must use the new roll."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Stabilizing Bonus.",
+					"entries": [
+						"When you use a {@item healer's kit|phb} to stabilize a creature with 0 hit points, the creature regains a number of hit points equal to your proficiency bonus."
 					]
 				}
 			]
@@ -2616,13 +2879,34 @@
 				{
 					"ability": [
 						{
+							"wis": 13
+						},
+						{
 							"cha": 13
 						}
 					]
 				}
 			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+                            "wis",
+                            "cha"
+						],
+						"amount": 1
+					}
+				}
+			],
 			"entries": [
-				"You can spend 10 minutes inspiring your companions, shoring up their resolve to fight. When you do so, choose up to six friendly creatures (which can include yourself) within 30 feet of you who can see or hear you and who can understand you. Each creature can gain temporary hit points equal to your level + your Charisma modifier. A creature can't gain temporary hit points from this feat again until it has finished a short or long rest."
+				"You spend time inspiring your companions, shoring up their resolve to fight. You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Bolstering Performance.",
+					"entries": [
+						"When you finish a Short or Long Rest, you can give an inspiring performance: a speech, song, or dance. When you do so, choose up to six allies (which can include yourself) within 30 feet of yourself. The chosen creatures each gain Temporary Hit Points equal to your character level plus the modifier of the ability you increased with this feat. The Temp Hit Points last until their next short or long rest."
+					]
+				}
 			],
 			"hasFluffImages": true
 		},
@@ -2981,11 +3265,50 @@
 			"name": "Lucky",
 			"source": "PHB",
 			"page": 167,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+                            "dex",
+                            "con",
+                            "int",
+                            "wis",
+                            "cha"
+						],
+						"amount": 1
+					}
+				}
+			],
 			"entries": [
-				"You have inexplicable luck that seems to kick in at just the right moment.",
-				"You have 3 luck points. Whenever you make an attack roll, an ability check, or a saving throw, you can spend one luck point to roll an additional {@dice d20}. You can choose to spend one of your luck points after you roll the die, but before the outcome is determined. You choose which of the {@dice d20}s is used for the attack roll, ability check, or saving throw.",
-				"You can also spend one luck point when an attack roll is made against you. Roll a {@dice d20}, and then choose whether the attack uses the attacker's roll or yours. If more than one creature spends a luck point to influence the outcome of a roll, the points cancel each other out; no additional dice are rolled.",
-				"You regain your expended luck points when you finish a long rest."
+				"You have inexplicable luck that seems to kick in at just the right moment, gaining the following benefits.",
+				{
+					"type": "entries",
+					"name": "Luck Points.",
+					"entries": [
+						"You have a number of Luck Points equal to your Proficiency Bonus and can spend the points on the benefits below. You can choose to spend one of your luck points after you roll the die, but before the outcome is determined. You regain your expended Luck Points when you finish a Long Rest. If more than one creature spends a luck point to influence the outcome of a roll, the points cancel each other out; no additional dice are rolled.",
+						{
+							"type": "list",
+							"style": "list-hang-notile",
+							"items": [
+								{
+									"type": "item",
+									"name": "Advantage.",
+									"entries": [
+										"When you roll a {@dice d20} for a D20 Test, you can spend 1 Luck Point to give yourself Advantage on the roll. A D20 Test is any roll that requires a {@dice d20} die, such as an attack roll, skill check, or saving throw."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Disadvantage.",
+									"entries": [
+										"When a creature rolls a {@dice d20} for an attack roll against you, you can spend 1 Luck Point to impose Disadvantage on that roll."
+									]
+								}
+							]
+						}
+					]
+				}
 			]
 		},
 		{
@@ -3179,32 +3502,6 @@
 			]
 		},
 		{
-			"name": "Martial Adept",
-			"source": "PHB",
-			"page": 168,
-			"optionalfeatureProgression": [
-				{
-					"name": "Maneuvers",
-					"featureType": [
-						"MV:B"
-					],
-					"progression": {
-						"*": 2
-					}
-				}
-			],
-			"entries": [
-				"You have martial training that allows you to perform special combat maneuvers. You gain the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"You learn two {@filter maneuvers|optionalfeatures|feature type=MV:B} of your choice from among those available to the {@class fighter|phb|Battle Master|Battle Master|phb|2-0} archetype in the fighter class. If a maneuver you use requires your target to make a saving throw to resist the maneuver's effects, the saving throw DC equals 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).",
-						"You gain one superiority die, which is a {@dice d6} (this die is added to any superiority dice you have from another source). This die is used to fuel your maneuvers. A superiority die is expended when you use it. You regain your expended superiority dice when you finish a short or long rest."
-					]
-				}
-			]
-		},
-		{
 			"name": "Martial Arts Initiate",
 			"source": "MPMM",
 			"prerequisite": [
@@ -3327,14 +3624,38 @@
 			"name": "Mobile",
 			"source": "PHB",
 			"page": 168,
-			"entries": [
-				"You are exceptionally speedy and agile. You gain the following benefits:",
+			"ability": [
 				{
-					"type": "list",
-					"items": [
-						"Your speed increases by 10 feet.",
-						"When you use the {@action Dash} action, {@quickref difficult terrain||3} doesn't cost you extra movement on that turn.",
-						"When you make a melee attack against a creature, you don't provoke opportunity attacks from that creature for the rest of the turn, whether you hit or not."
+					"choose": {
+						"from": [
+							"dex",
+							"con"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You are exceptionally speedy and agile. You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Speed Increase",
+					"entries": [
+						"Your Speed increases by 10 feet."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Dash over Difficult Terrain",
+					"entries": [
+						"When you take the {@action Dash|PHB} action on your turn, Difficult Terrain doesn't cost you extra movement for the rest of that turn."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Agile Movement",
+					"entries": [
+						"Opportunity Attacks have Disadvantage against you."
 					]
 				}
 			]
@@ -4925,14 +5246,25 @@
 					]
 				}
 			],
-			"entries": [
-				"You are expert at slinking through shadows. You gain the following benefits:",
+			"ability": [
 				{
-					"type": "list",
-					"items": [
-						"You can try to hide when you are lightly obscured from the creature from which you are hiding.",
-						"When you are hidden from a creature and miss it with a ranged weapon attack, making the attack doesn't reveal your position.",
-						"Dim light doesn't impose disadvantage on your Wisdom ({@skill Perception}) checks relying on sight."
+					"dex": 1
+				}
+			],
+			"entries": [
+				"You are an expert at slinking through shadows and staying hidden. You gain the benefits listed below.",
+				{
+					"type": "entries",
+					"name": "Hide.",
+					"entries": [
+						"When you are lightly obscured, you can take the {@action Hide} action as a bonus action on your turn. If you are hidden from a creature and miss with a ranged attack, you don't reveal your position."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision.",
+					"entries": [
+						"You gain Darkvision to a range of 60 feet. If you already have Darkvision, your range increases by 30ft."
 					]
 				}
 			]
@@ -6385,6 +6717,54 @@
 				}
 			]
 		},
+{
+			"name": "Two-Weapon Adept",
+			"source": "PHB",
+			"page": 170,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You have trained extensively to effectively fight wielding two melee weapons at once. You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Armor Class Bonus.",
+					"entries": [
+						"You gain a +1 bonus to your Armor Class while you are wielding one melee weapon per hand."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Dual Wielding.",
+					"entries": [
+						"You can engage in the {@action Two-Weapon Fighting} Action while wielding any one-handed non-Heavy weapon in your main hand and a Light Weapon in your off-hand."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Weapons Stow.",
+					"entries": [
+						"You can draw or stow two one-handed weapons when you would normally be able to draw or stow only one."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Opportunity Attacks.",
+					"entries": [
+						When you make an {@action opportunity attack} while engaging in {@action two-weapon fighting}, you can make the attack with either weapon you wield, ignoring disadvantage with your off-hand attack.",
+						"If you have the Dual Wielder Fighting Style, you can make two attacks, one with each hand, when making an opportunity attack."
+					]
+				}
+			]
+		},
 		{
 			"name": "Vampiric Exultation",
 			"source": "PSX",
@@ -6472,19 +6852,44 @@
 			"name": "War Caster",
 			"source": "PHB",
 			"page": 170,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+                            "int",
+                            "wis",
+                            "cha"
+						],
+						"amount": 1
+					}
+				}
+			],
 			"prerequisite": [
 				{
 					"spellcasting": true
 				}
 			],
 			"entries": [
-				"You have practiced casting spells in the midst of combat, learning techniques that grant you the following benefits:",
+				"You have practiced casting spells in the midst of combat, learning techniques that grant you the following benefits.",
 				{
-					"type": "list",
-					"items": [
-						"You have advantage on Constitution saving throws that you make to maintain your {@status concentration} on a spell when you take damage.",
-						"You can perform the somatic components of spells even when you have weapons or a {@item shield|phb} in one or both hands.",
-						"When a hostile creature's movement provokes an opportunity attack from you, you can use your reaction to cast a spell at the creature, rather than making an opportunity attack. The spell must have a casting time of 1 action and must target only that creature."
+					"type": "entries",
+					"name": "Maintaining Concentration.",
+					"entries": [
+						"You have Advantage on Constitution saving throws that you make to maintain {@status concentration}. If neither roll makes the save, you can use your reaction to add your spell attack bonus to the highest roll in an attempt to maintain {@status concentration}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Somatic Components.",
+					"entries": [
+						"You can perform the somatic components of spells even when you have weapons or a shield in one or both hands."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Reactive Casting.",
+					"entries": [
+						"When you make an {@action Opportunity Attack|PHB}, you can cast a spell instead. It must have a casting time of 1 Action or 1 Attack and this spell can only target that creature. Your reach does not change for this {@action Opportunity Attack|PHB}. If a spell has a casting time of Special: On Hit, it does not qualify for this benefit."
 					]
 				}
 			]
