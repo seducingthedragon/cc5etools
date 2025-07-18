@@ -2949,27 +2949,6 @@
 			]
 		},
 		{
-			"name": "Keen Mind",
-			"source": "PHB",
-			"page": 167,
-			"ability": [
-				{
-					"int": 1
-				}
-			],
-			"entries": [
-				"You have a mind that can track time, direction, and detail with uncanny precision. You gain the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"You always know which way is north.",
-						"You always know the number of hours left before the next sunrise or sunset.",
-						"You can accurately recall anything you have seen or heard within the past month."
-					]
-				}
-			]
-		},
-		{
 			"name": "Inventive Adept",
 			"source": "MPMM",
 			"prerequisite": [
@@ -2997,6 +2976,56 @@
 					"entries": [
 						"You learn a number of Infusions equal to your proficiency bonus available to the Artificer Class. In between long rests, you can infuse a number of items equal to half of your proficiency bonus, round down. Your infusion remains in an item indefinitely, but when you die, the infusion vanishes immediately. The infusion also vanishes immediately if you give up your knowledge of the infusion for another one when you increase your player level. Additionally, if the infusion requires attunement, you are able to instantly attune yourself to the item when you infuse it.",
 						"Please note that infusions with a listed level prerequisite are not available to gain through this feat as the level is related to your Artificer level."
+					]
+				}
+			]
+		},
+		{
+			"name": "Keen Mind",
+			"source": "PHB",
+			"page": 167,
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"int": 13
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"int": 1
+				}
+			],
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"arcana",
+							"history",
+							"investigation",
+							"medicine",
+							"nature",
+							"religion"
+						]
+					}
+				}
+			],
+			"entries": [
+				"Your mind is a wonderful thing, capable of bursts of insight and mental fortitude. You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Lore Knowledge.",
+					"entries": [
+						"Choose one of the following skills: {@skill Arcana}, {@skill History}, {@skill Investigation}, {@skill Medicine}, {@skill Nature}, or {@skill Religion}. If you lack proficiency in the chosen skill, you gain proficiency in it. If you already have proficiency in the chosen skill, you gain Expertise in it."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Environmental Knowledge.",
+					"entries": [
+						"You always know which way is north and always know the number of hours left before the next sunrise or sunset."
 					]
 				}
 			]
@@ -3315,14 +3344,44 @@
 			"name": "Mage Slayer",
 			"source": "PHB",
 			"page": 168,
-			"entries": [
-				"You have practiced techniques useful in melee combat against spellcasters, gaining the following benefits:",
+			"prerequisite": [
+				"otherSummary": {
+						"entry": "Proficiency in at least 1 martial weapon",
+						"entrySummary": "Prof m. weapon"
+			],
+			"ability": [
 				{
-					"type": "list",
-					"items": [
-						"When a creature within 5 feet of you casts a spell, you can use your reaction to make a melee weapon attack against that creature.",
-						"When you damage a creature that is {@status concentration||concentrating} on a spell, that creature has disadvantage on the saving throw it makes to maintain its {@status concentration}.",
-						"You have advantage on saving throws against spells cast by creatures within 5 feet of you."
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You have trained extensively to counter sinister spellcasters and foil their arcane abilities. You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Opportunity Attacks.",
+					"entries": [
+						"When a creature within 5 feet of you casts a spell, you can use your reaction to make one weapon attack against it. On a hit, the creature must succeed on a Constitution saving throw as if it were doing so to maintain concentration. On a failed save, its spell fails to take effect, and its slot or use of that feature/trait is still expended."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Impact Concentration.",
+					"entries": [
+						"If you damage a creature {@status concentration||concentrating} on a spell, it has disadvantage on its Constitution saving throw to maintain {@status concentration}. This benefit only targets spellcasters who are already maintaining concentration on an active spell and does not stack with the above Opportunity Attacks benefit."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Guarded Advantage.",
+					"entries": [
+						"You have advantage on saving throws against spells cast by creatures you can see or hear. If you still fail with advantage on an Intelligence, Wisdom, or Charisma saving throw, you can use your reaction to choose to succeed once per long rest."
 					]
 				}
 			]
@@ -3595,7 +3654,7 @@
 			"page": 80,
 			"prerequisite": [
 				{
-					"spellcasting2020": true
+					"spellcasting": true
 				}
 			],
 			"optionalfeatureProgression": [
@@ -3605,17 +3664,30 @@
 						"MM"
 					],
 					"progression": {
-						"*": 2
+						"*": 1
+					}
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						],
+						"amount": 1
 					}
 				}
 			],
 			"entries": [
-				"You've learned how to exert your will on your spells to alter how they function:",
+				"You have practiced and learned to manipulate your magic in unique ways. You gain the following benefits.",
 				{
-					"type": "list",
-					"items": [
-						"You learn two {@filter Metamagic|optionalfeatures|Feature Type=MM} options of your choice from the sorcerer class. You can use only one Metamagic option on a spell when you cast it, unless the option says otherwise. Whenever you reach a level that grants the Ability Score Improvement feature, you can replace one of these Metamagic options with another one from the sorcerer class.",
-						"You gain 2 sorcery points to spend on Metamagic (these points are added to any sorcery points you have from another source but can be used only on Metamagic). You regain all spent sorcery points when you finish a long rest."
+					"type": "entries",
+					"name": "Metamagic.",
+					"entries": [
+						"You learn one {@filter Metamagic|optionalfeatures|Feature Type=MM} of your choice from those available to the Sorcerer class. You can use this Metamagic once per short or long rest, without using or expending. If you already have access to Sorcery Points, you can use those with the Metamagic gained from this feat.",
+						"Whenever you reach a level that grants the Ability Score Improvement feature, you can replace one of these Metamagic options with another one from the sorcerer class."
 					]
 				}
 			]
@@ -3705,14 +3777,39 @@
 			"name": "Mounted Combatant",
 			"source": "PHB",
 			"page": 168,
-			"entries": [
-				"You are a dangerous foe to face while {@book mounted|PHB|9|Mounted Combat}. While you are mounted and aren't {@condition incapacitated}, you gain the following benefits:",
+			"ability": [
 				{
-					"type": "list",
-					"items": [
-						"You have advantage on melee attack rolls against any unmounted creature that is smaller than your mount.",
-						"You can force an attack targeted at your mount to target you instead.",
-						"If your mount is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"wis"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You are a dangerous foe to face while {@book mounted|PHB|9|Mounted Combat}, gaining a bonus to an ability score listed below. Additionally, while you are mounted and aren't incapacitated, you gain the remaining benefits.",
+				{
+					"type": "entries",
+					"name": "Mounted Strike and Veer.",
+					"entries": [
+						"You have advantage on melee attack rolls against any unmounted creature that is smaller than your mount. Additionally, you can force an attack targeted at your mount to target you instead."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Mounted Evasion.",
+					"entries": [
+						"If your mount is subjected to an effect that forces it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Animal Handling Bonus.",
+					"entries": [
+						"If you are proficient in the {@skill Animal Handling} Skill, you can also command your mount to take any action, including actions on your mount’s Stat Block."
 					]
 				}
 			]
@@ -3851,12 +3948,19 @@
 				}
 			],
 			"entries": [
-				"Quick to notice details of your environment, you gain the following benefits:",
+				"Quick to notice details of your environment, you gain the following benefits.",
 				{
-					"type": "list",
-					"items": [
-						"If you can see a creature's mouth while it is speaking a language you understand, you can interpret what it's saying by reading its lips.",
-						"You have a +5 bonus to your passive Wisdom ({@skill Perception}) and passive Intelligence ({@skill Investigation}) scores."
+					"type": "entries",
+					"name": "Lip Reading.",
+					"entries": [
+						"If you can see a creature's mouth while it is speaking a language you understand, you can interpret what it's saying by reading its lips."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Keen Observer.",
+					"entries": [
+						"Choose two of the following skills to gain a +5 bonus to their passive scores: {@skill Insight}, {@skill Investigation}, or {@skill Perception}."
 					]
 				}
 			]
@@ -4091,19 +4195,50 @@
 			"name": "Poisoner",
 			"source": "TCE",
 			"page": 80,
+			"prerequisite": [
+				"ability": [
+					{
+						"int": 13
+					}
+				]
+			]
 			"toolProficiencies": [
 				{
 					"poisoner's kit": true
 				}
 			],
-			"entries": [
-				"You can prepare and deliver deadly poisons, granting you the following benefits:",
+			"ability": [
 				{
-					"type": "list",
-					"items": [
-						"When you make a damage roll that deals poison damage, it ignores resistance to poison damage.",
-						"You can apply poison to a weapon or piece of ammunition as a bonus action, instead of an action.",
-						"You gain proficiency with the {@item poisoner's kit|phb} if you don't already have it. With one hour of work using a {@item poisoner's kit|phb} and expending 50 gp worth of materials, you can create a number of doses of potent poison equal to your proficiency bonus. Once applied to a weapon or piece of ammunition, the poison retains its potency for 1 minute or until you hit with the weapon or ammunition. When a creature takes damage from the coated weapon or ammunition, that creature must succeed on a {@dc 14} Constitution saving throw or take {@damage 2d8} poison damage and become {@condition poisoned} until the end of your next turn."
+					"choose": {
+						"from": [
+							"dex",
+							"int"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You can prepare and deliver deadly poisons, granting you the following benefits.",
+				{
+					"type": "entries",
+					"name": "Proficiency and Advantage.",
+					"entries": [
+						"You gain proficiency in {@item poisoner's kit|phb}. Additionally, whenever you make an ability check to detect or identify a poison, venom, or toxin, you have advantage on the roll."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Brew Poisons.",
+					"entries": [
+						"With one hour of work using a poisoner's kit and expending 50 gp worth of materials, you can create a number of doses of potent poison equal to your proficiency bonus. Once applied to a weapon or piece of ammunition, the poison retains its potency for 1 minute or until you hit with the weapon or ammunition. When a creature takes damage from the coated weapon or ammunition, that creature must succeed on a {@DC 14} Constitution saving throw or take {@damage 2d8} poison damage and become {@condition poisoned} until the end of your next turn."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Potent Poison and Weapons.",
+					"entries": [
+						"When you make a damage roll that deals Poison damage, it ignores Resistance to Poison damage. Additionally, you can apply poison to a weapon or piece of ammunition as a bonus action, instead of an action."
 					]
 				}
 			]
@@ -4112,13 +4247,56 @@
 			"name": "Polearm Master",
 			"source": "PHB",
 			"page": 168,
-			"entries": [
-				"You can keep your enemies at bay with reach weapons. You gain the following benefits:",
+			"ability": [
 				{
-					"type": "list",
-					"items": [
-						"When you take the {@action Attack} action and attack with only a {@item glaive|phb}, {@item halberd|phb}, {@item quarterstaff|phb}, or {@item spear|phb}, you can use a bonus action to make a melee attack with the opposite end of the weapon; this attack uses the same ability modifier as the primary attack. The weapon's damage die for this attack is a {@dice d4}, and the attack deals bludgeoning damage.",
-						"While you are wielding a {@item glaive|phb}, {@item halberd|phb}, {@item pike|phb}, {@item quarterstaff|phb}, or {@item spear|phb}, other creatures provoke an opportunity attack from you when they enter the reach you have with that weapon."
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"prerequisite": [
+				{
+					"other": "Proficiency in at least 1 \"Polearm Weapon\" listed below",
+					"ability": [
+						{
+							"str": 13
+						}
+					]
+				},
+				{
+					"other": "Proficiency in at least 1 \"Polearm Weapon\" listed below",
+					"ability": [
+						{
+							"dex": 13
+						}
+					]
+				}
+			],
+			"entries": [
+				"You can keep your enemies at bay with various polearm weapons, granting you the following benefits. For the purpose of this feat, the term \“Polearm Weapon\” refers to the following: {@item glaives}, {@item halberd}, {@item javelin}, {@item pike}, {@item quarterstaff}, and {@item spear}. Consult with your DM for a potential expanded list.",
+				{
+					"type": "entries",
+					"name": "Damage Boost.",
+					"entries": [
+						"You gain a +1 bonus to damage rolls using polearm weapons."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Finessed Reach.",
+					"entries": [
+						"You treat all polearm weapons as if they have the Finesse and Reach Property, if they don’t already have one. Additionally, you can make an opportunity attack when someone enters your weapon’s reach, as long as you are wielding a polearm weapon."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Dual Heads.",
+					"entries": [
+						"Whenever you take the Attack action while wielding a Polearm Weapon, you can use your bonus action on that turn to make a melee attack with the opposite end of your weapon. On a hit, it deals bludgeoning damage equal to {@damage 1d4} + your ability modifier used for the attack roll."
 					]
 				}
 			]
@@ -4501,112 +4679,83 @@
 						},
 						{
 							"wis": 13
+						},
+						{
+							"cha": 13
 						}
 					]
 				}
 			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						]
+					}
+				}
+			],
 			"additionalSpells": [
 				{
-					"name": "Bard Spells",
-					"ability": "cha",
-					"innate": {
-						"_": {
-							"daily": {
-								"1": [
-									{
-										"choose": "level=1|class=Bard|components & miscellaneous=ritual",
-										"count": 2
-									}
-								]
+					"prepared": {
+						"1": [
+							{
+								"choose": "level=1|components & miscellaneous=ritual",
+								"count": 2
 							}
-						}
-					}
-				},
-				{
-					"name": "Cleric Spells",
-					"ability": "wis",
-					"innate": {
-						"_": {
-							"daily": {
-								"1": [
-									{
-										"choose": "level=1|class=Cleric|components & miscellaneous=ritual",
-										"count": 2
-									}
-								]
+						],
+						"5": [
+							{
+								"choose": "level=1|components & miscellaneous=ritual",
+								"count": 1
 							}
-						}
-					}
-				},
-				{
-					"name": "Druid Spells",
-					"ability": "wis",
-					"innate": {
-						"_": {
-							"daily": {
-								"1": [
-									{
-										"choose": "level=1|class=Druid|components & miscellaneous=ritual",
-										"count": 2
-									}
-								]
+						],
+						"9": [
+							{
+								"choose": "level=1|components & miscellaneous=ritual",
+								"count": 1
 							}
-						}
-					}
-				},
-				{
-					"name": "Sorcerer Spells",
-					"ability": "cha",
-					"innate": {
-						"_": {
-							"daily": {
-								"1": [
-									{
-										"choose": "level=1|class=Sorcerer|components & miscellaneous=ritual",
-										"count": 2
-									}
-								]
+						],
+						"13": [
+							{
+								"choose": "level=1|components & miscellaneous=ritual",
+								"count": 1
 							}
-						}
-					}
-				},
-				{
-					"name": "Warlock Spells",
-					"ability": "cha",
-					"innate": {
-						"_": {
-							"daily": {
-								"1": [
-									{
-										"choose": "level=1|class=Warlock|components & miscellaneous=ritual",
-										"count": 2
-									}
-								]
+						],
+						"17": [
+							{
+								"choose": "level=1|components & miscellaneous=ritual",
+								"count": 1
 							}
-						}
-					}
-				},
-				{
-					"name": "Wizard Spells",
-					"ability": "int",
-					"innate": {
-						"_": {
-							"daily": {
-								"1": [
-									{
-										"choose": "level=1|class=Wizard|components & miscellaneous=ritual",
-										"count": 2
-									}
-								]
-							}
-						}
+						]
 					}
 				}
 			],
 			"entries": [
-				"You have learned a number of spells that you can cast as rituals. These spells are written in a ritual book, which you must have in hand while casting one of them.",
-				"When you choose this feat, you acquire a ritual book holding two 1st-level spells of your choice. Choose one of the following classes: {@filter bard|spells|level=1|class=bard|components & miscellaneous=ritual}, {@filter cleric|spells|level=1|class=cleric|components & miscellaneous=ritual}, {@filter druid|spells|level=1|class=druid|components & miscellaneous=ritual}, {@filter sorcerer|spells|level=1|class=sorcerer|components & miscellaneous=ritual}, {@filter warlock|spells|level=1|class=warlock|components & miscellaneous=ritual}, or {@filter wizard|spells|level=1|class=wizard|components & miscellaneous=ritual}. You must choose your spells from that class's spell list, and the spells you choose must have the ritual tag. The class you choose also determines your spellcasting ability for these spells: Charisma for bard, sorcerer, or warlock; Wisdom for cleric or druid; or Intelligence for wizard.",
-				"If you come across a spell in written form, such as a magical {@item spell scroll} or a wizard's spellbook, you might be able to add it to your ritual book. The spell must be on the spell list for the class you chose, the spell's level can be no higher than half your level (rounded up), and it must have the ritual tag. The process of copying the spell into your ritual book takes 2 hours per level of the spell, and costs 50 gp per level. The cost represents material components you expend as you experiment with the spell to master it, as well as the fine inks you need to record it."
+				"You have learned a number of spells that you can cast as rituals. These spells are written in a ritual book, which you must have in hand when you cast them. You also gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Ritual Spells",
+					"entries": [
+						"Choose a number of level 1 spells equal to your Proficiency Bonus that have the {@filter Ritual tag|spells|level=1|components & miscellaneous=ritual}. The spells' spellcasting ability is the ability increased by this feat."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Gaining Additional Ritual Spells",
+					"entries": [
+						"When your Proficiency Bonus increases, you can add an additional level 1 Ritual Spell to your Ritual Book. You can also add new Ritual Spells if you find a spellbook or a spell scroll with a level 1 ritual spell available. The process of copying the spell into your ritual book takes 2 hours per level of the spell, and costs 50 gp per level. The cost represents material components you expend as you experiment with the spell to master it, as well as the fine inks you need to record it."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasters and Pact Magic.",
+					"entries": [
+						"If you cast spells by expending spell slots, your Ritual Spells are always prepared for you, allowing you to cast them at higher levels using your available spell slots. Additionally, one of your selected spells with the Ritual Tag can be higher level than level 1, as long as you have the available spell slots, when you gain this Feat and when your Proficiency Bonus increases. The time and cost to record found ritual spells from your class list are halved."
+					]
+				}
 			],
 			"hasFluffImages": true
 		},
@@ -4794,8 +4943,34 @@
 			"name": "Savage Attacker",
 			"source": "PHB",
 			"page": 169,
+			"prerequisite": [
+				"ability": [
+						{
+							"str": 13
+						}
+					]
+			],
+			"ability": [
+				{
+					"str": 1
+				}
+			],
 			"entries": [
-				"Once per turn when you roll damage for a melee weapon attack, you can reroll the weapon's damage dice and use either total."
+				"Your savage battle instincts let you exploit even the smallest weakness. You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Brutal Critical.",
+					"entries": [
+						"Whenever you score a critical hit with a melee weapon attack you roll the weapon's damage die three times instead of twice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Damage Reroll.",
+					"entries": [
+						"Once per turn when you hit with a melee weapon attack, you can reroll the weapon’s damage dice, using either roll you choose."
+					]
+				}
 			]
 		},
 		{
@@ -5098,14 +5273,42 @@
 			"name": "Sharpshooter",
 			"source": "PHB",
 			"page": 170,
-			"entries": [
-				"You have mastered ranged weapons and can make shots that others find impossible. You gain the following benefits:",
+			"prerequisite": [
 				{
-					"type": "list",
-					"items": [
-						"Attacking at long range doesn't impose disadvantage on your ranged weapon attack rolls.",
-						"Your ranged weapon attacks ignore {@quickref Cover||3||half cover} and {@quickref Cover||3||three-quarters cover}.",
-						"Before you make an attack with a ranged weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If the attack hits, you add +10 to the attack's damage."
+					"ability": [
+						{
+							"dex": 13
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"dex": 1
+				}
+			],
+			"entries": [
+				"You have trained extensively with ranged weapons to become a master marksman. You gain the following benefits below.",
+				{
+					"type": "entries",
+					"name": "Long Range.",
+					"entries": [
+						"Attacking at long range doesn't impose Disadvantage on your attack rolls with Ranged weapons.",
+						"If you have the Archery Fighting Style, being within 5 feet of a hostile creature does not impose disadvantage on your ranged attack rolls."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Overcome Cover.",
+					"entries": [
+						"Your attacks with ranged weapons ignore {@quickref Cover||3||half cover} and {@quickref Cover||3||three-quarters cover}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Steady Aim.",
+					"entries": [
+						"You can use a bonus action to give yourself advantage on your next ranged weapon attack roll on your current turn. You can only do so if you have not used any of your movement speed and your speed becomes 0 for the rest of your turn once you do so."
 					]
 				}
 			]
@@ -5379,88 +5582,39 @@
 					"spellcasting": true
 				}
 			],
-			"additionalSpells": [
+			"ability": [
 				{
-					"name": "Bard Spells",
-					"ability": "cha",
-					"known": {
-						"_": [
-							{
-								"choose": "level=0|class=Bard|spell attack=m;r;o",
-								"count": 1
-							}
-						]
-					}
-				},
-				{
-					"name": "Cleric Spells",
-					"ability": "wis",
-					"known": {
-						"_": [
-							{
-								"choose": "level=0|class=Cleric|spell attack=m;r;o",
-								"count": 1
-							}
-						]
-					}
-				},
-				{
-					"name": "Druid Spells",
-					"ability": "wis",
-					"known": {
-						"_": [
-							{
-								"choose": "level=0|class=Druid|spell attack=m;r;o",
-								"count": 1
-							}
-						]
-					}
-				},
-				{
-					"name": "Sorcerer Spells",
-					"ability": "cha",
-					"known": {
-						"_": [
-							{
-								"choose": "level=0|class=Sorcerer|spell attack=m;r;o",
-								"count": 1
-							}
-						]
-					}
-				},
-				{
-					"name": "Warlock Spells",
-					"ability": "cha",
-					"known": {
-						"_": [
-							{
-								"choose": "level=0|class=Warlock|spell attack=m;r;o",
-								"count": 1
-							}
-						]
-					}
-				},
-				{
-					"name": "Wizard Spells",
-					"ability": "int",
-					"known": {
-						"_": [
-							{
-								"choose": "level=0|class=Wizard|spell attack=m;r;o",
-								"count": 1
-							}
-						]
+					"choose": {
+						"from": [
+                            "int",
+                            "wis",
+                            "cha"
+						],
+						"amount": 1
 					}
 				}
 			],
 			"entries": [
 				"You have learned techniques to enhance your attacks with certain kinds of spells, gaining the following benefits:",
 				{
-					"type": "list",
-					"items": [
-						"When you cast a spell that requires you to make an attack roll, the spell's range is doubled.",
-						"Your ranged spell attacks ignore {@quickref Cover||3||half cover} and {@quickref Cover||3||three-quarters cover}.",
-						"You learn one cantrip that requires an attack roll. Choose the cantrip from the {@filter bard|spells|level=0|class=bard|spell attack=m;r;o}, {@filter cleric|spells|level=0|class=cleric|spell attack=m;r;o}, {@filter druid|spells|level=0|class=druid|spell attack=m;r;o}, {@filter sorcerer|spells|level=0|class=sorcerer|spell attack=m;r;o}, {@filter warlock|spells|level=0|class=warlock|spell attack=m;r;o}, or {@filter wizard|spells|level=0|class=wizard|spell attack=m;r;o} spell list. Your spellcasting ability for this cantrip depends on the spell list you chose from: Charisma for bard, sorcerer, or warlock; Wisdom for cleric or druid; or Intelligence for wizard."
+					"type": "entries",
+					"name": "Increased and Decreased Range.",
+					"entries": [
+						"When you cast a spell that requires you to make an attack roll and has a range of at least 10 feet, the spell's range is doubled. Additionally, casting a spell with a ranged spell attack roll on a target within 5 feet of you does not impose disadvantage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Bypass Cover",
+					"entries": [
+						"Your attack rolls for spells ignore {@quickref Cover||3||half cover} and {@quickref Cover||3||three-quarters cover}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Bonus cantrip.",
+					"entries": [
+						"You learn one {@filter cantrip|spells|level=0|spell attack=m;r;o} that requires an attack roll from any class list. Your spellcasting ability for this cantrip is the one increased by this feat."
 					]
 				}
 			]
@@ -6507,28 +6661,56 @@
 			"name": "Tavern Brawler",
 			"source": "PHB",
 			"page": 170,
-			"ability": [
+			"weaponProficiencies": [
 				{
-					"choose": {
-						"from": [
-							"str",
-							"con"
-						],
-						"amount": 1
-					}
+					"improvised": true
 				}
 			],
+			"ability": [
+						{
+							"choose": {
+								"from": [
+									"str",
+									"dex",
+									"con"
+								],
+								"amount": 1
+							}
+						}
+					],
 			"entries": [
-				"Accustomed to rough-and-tumble fighting using whatever weapons happen to be at hand, you gain the following benefits:",
+				"You gain the following benefits.",
 				{
-					"type": "list",
-					"items": [
-						"You are proficient with improvised weapons.",
-						"Your unarmed strike uses a {@damage d4} for damage.",
-						"When you hit a creature with an unarmed strike or an improvised weapon on your turn, you can use a bonus action to attempt to grapple the target."
+					"type": "entries",
+					"name": "Enhanced Unarmed Strike",
+					"entries": [
+						"When you hit with your Unarmed Strike Attack, you gain a bonus to your damage roll equal to half of your proficiency bonus, round down."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Damage Rerolls",
+					"entries": [
+						"Whenever you roll a damage die for your Unarmed Strike Attack, you can reroll the die if it rolls a 1, and you must use the new roll."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Punch and Push",
+					"entries": [
+						"When you hit a creature with an Unarmed Strike Attack as part of the {@action Attack|PHB} action on your turn, you can deal damage to the target and also push it 5 feet away from you. You can use this benefit only once per turn."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Improvised Weaponry",
+					"entries": [
+						"You have proficiency with improvised weapons, treating objects as if they have the Finesse Weapon property. Once per turn, when you hit with an improvised weapon attack, you can choose to destroy the object, rendering it useless for future attacks, but dealing the maximum possible damage, instead of rolling.",
+						"Additionally, on your turn, you can use your Free Object Interaction to grab up to two objects to use as weapons as long as you have free hands available. You do not gain this benefit if you already used your Free Object Interaction for something else, including stowing your standard weapons."
 					]
 				}
 			]
+		},
 		},
 		{
 			"name": "Telekinetic",
@@ -6895,7 +7077,7 @@
 			]
 		},
 		{
-			"name": "Weapon Master",
+			"name": "Weapon Adept",
 			"source": "PHB",
 			"page": 170,
 			"ability": [
@@ -6918,11 +7100,68 @@
 				}
 			],
 			"entries": [
-				"You have practiced extensively with a variety of weapons, gaining the following benefits:",
+				"You have spent many hours honing your skills with the deadly armaments of war. You gain the benefits listed below:",
 				{
-					"type": "list",
-					"items": [
-						"You gain proficiency with four weapons of your choice. Each one must be a simple or a martial weapon."
+					"type": "entries",
+					"name": "Gaining Additional Weapon Proficiencies.",
+					"entries": [
+						"You gain proficiency with four weapons of your choice. Each one must be a simple or a martial weapon.",
+						"When you gain this feat, if you already have proficiency in at least 8 simple weapons, you can instead choose to gain proficiency in all simple weapons."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Attack or Damage Bonus.",
+					"entries": [
+						"Choose 1 weapon that you already have proficiency in. This weapon gains a +1 bonus to either your attack or damage roll."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Repeatable.",
+					"entries": [
+						"You can choose this feat again at higher levels."
+					]
+				}
+			]
+		},
+		{
+			"name": "Weapon Master",
+			"source": "PHB",
+			"page": 170,
+			"prerequisite": [
+				{
+					"proficiency": [
+						{
+							"weapons": "simple"
+						}
+					],
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						]
+					}
+				}
+			],
+			"entries": [
+				"You have practiced extensively with certain weapons, learning how to wield it in a way that others can’t. You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Access to Mastery Property.",
+					"entries": [
+						"Your training with weapons allows you to use the mastery property of one kind of Simple or Martial weapon of your choice, provided you have proficiency with it. Whenever you finish a Long Rest, you can change the kind of weapon to another eligible kind. If you already have access to weapon mastery as a class feature, this does not count towards your known mastery weapons."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Attack AND Damage Bonus.",
+					"entries": [
+						"Choose 1 weapon that you have. This weapon gains a +1 bonus to your attack and damage rolls. When your proficiency bonus increases, you can choose an additional weapon to gain this benefit."
 					]
 				}
 			]
