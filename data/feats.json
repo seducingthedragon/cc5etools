@@ -937,27 +937,27 @@
 							  "type": "list",
 							  "style": "list-hang-notile",
 							  "items": [
-									{
-										 "type": "item",
-										 "name": "Cruel Damage.",
-										 "entries": [
-											  "When you deal damage to a creature, spend one cruelty die to deal extra damage to the creature equal to the roll."
-										 ]
-									},
-									{
-										 "type": "item",
-										 "name": "Cruel Critical",
-										 "entries": [
-											  "When you score a critical hit, spend one cruelty die to gain temporary hit points equal to the roll."
-										 ]
-									},
-									{
-										 "type": "item",
-										 "name": "Cruel Indimidator",
-										 "entries": [
-											  "When you make a Charisma ({@skill Intimidation}) check, spend one cruelty die and add the roll to your check."
-											]
-									}
+								{
+									 "type": "item",
+									 "name": "Cruel Damage.",
+									 "entries": [
+										  "When you deal damage to a creature, spend one cruelty die to deal extra damage to the creature equal to the roll."
+									 ]
+								},
+								{
+									 "type": "item",
+									 "name": "Cruel Critical",
+									 "entries": [
+										  "When you score a critical hit, spend one cruelty die to gain temporary hit points equal to the roll."
+									 ]
+								},
+								{
+									 "type": "item",
+									 "name": "Cruel Indimidator",
+									 "entries": [
+										  "When you make a Charisma ({@skill Intimidation}) check, spend one cruelty die and add the roll to your check."
+									]
+								}
 							]
 						}
 					]
@@ -2686,6 +2686,38 @@
 			]
 		},
 		{
+			"name": "Inventive Adept",
+			"source": "MPMM",
+			"prerequisite": [
+				{
+					"spellcasting2020:" true
+				}
+			],
+			"ability": [
+				{
+					"int": 1
+				}
+			],
+			"entries": [
+				"You have spent many days tinkering with various inventions, tool sets, and arcane forces. You gain the following benefit.",
+				{
+					"type": "entries",
+					"name": "Tinker's Tools.",
+					"entries": [
+						"You gain proficiency with [@item Tinker's Tools]. If you are already proficienct, you gain expertise with the toolset."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Infusions.",
+					"entries": [
+						"You learn a number of Infusions equal to your proficiency bonus available to the Artificer Class. In between long rests, you can infuse a number of items equal to half of your proficiency bonus, round down. Your infusion remains in an item indefinitely, but when you die, the infusion vanishes immediately. The infusion also vanishes immediately if you give up your knowledge of the infusion for another one when you increase your player level. Additionally, if the infusion requires attunement, you are able to instantly attune yourself to the item when you infuse it.",
+						"Please note that infusions with a listed level prerequisite are not available to gain through this feat as the level is related to your Artificer level."
+					]
+				}
+			]
+		},
+		{
 			"name": "Keenness of the Stone Giant",
 			"source": "BGG",
 			"page": 18,
@@ -3173,6 +3205,52 @@
 			]
 		},
 		{
+			"name": "Martial Arts Initiate",
+			"source": "MPMM",
+			"prerequisite": [
+				"ability": [
+					{
+						"dex": 13
+					}
+				]
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+                            "str",
+                            "dex"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You have some basic martial arts training, giving you some skill in both unarmed combat and unarmed defense.",
+				{
+					"type": "entries",
+					"name": "Unarmored.",
+					"entries": [
+						"When you are not wearing any armor or wielding a shield, your Armor Class equals 13 + your Dexterity modifier."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Unarmed Strikes.",
+					"entries": [
+						"Your unarmed strike attacks deal bludgeoning damage equal to {@dice 1d6} + your Strength or Dexterity modifier on a hit (your choice)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Bonus Attack.",
+					"entries": [
+						"When you take the {@action Attack} action on your turn and only make Unarmed Strike Attacks, you can make a single unarmed strike attack as a bonus action on that same turn."
+					]
+				}
+			]
+		},
+		{
 			"name": "Medium Armor Master",
 			"source": "PHB",
 			"page": 168,
@@ -3314,6 +3392,48 @@
 						"You have advantage on melee attack rolls against any unmounted creature that is smaller than your mount.",
 						"You can force an attack targeted at your mount to target you instead.",
 						"If your mount is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				}
+			]
+		},
+		{
+			"name": "Musician",
+			"source": "PHB",
+			"page": 168,
+			"toolProficiencies": [
+				{
+					"anyMusicalInstrument": 3
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+                		"dex",
+               	   "con",
+                 		"int",
+                 		"wis",
+                  	"cha"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You learn the ways of the Bard and can inspire through music. You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Instrument Training",
+					"entries": [
+						"You gain proficiency with three Musical Instruments of your choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Encouraging Song",
+			"entries": [
+						"The first time you play your musical instrument for 10 minutes after a short or long rest, you can give inspiration to allies who hear the song or watch you perform. The number of allies you can affect in this way equals your Proficiency Bonus."
 					]
 				}
 			]
@@ -3538,6 +3658,63 @@
 					"name": "Enhanced Critical.",
 					"entries": [
 						"When you score a critical hit that deals piercing damage to a creature, you can roll one additional damage die when determining the extra piercing damage the target takes."
+					]
+				}
+			]
+		},
+		{
+			"name": "Pit Fighter",
+			"source": "MPMM",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+                            "dex",
+                            "con"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"prerequisite": [
+				"proficiency": [
+					{
+						"weapons": "martial"
+					},
+					{
+						other": "Proficiency with Tridents"
+					}
+				]
+			],
+			"entries": [
+				"You have trained to fight with weapons typically associated with gladiators, granting you the following benefits.",
+				{
+					"type": "entries",
+					"name": "Improvised or Specialized Weapons.",
+					"entries": [
+						"You gain proficiency in one of the following:",
+						{
+							"type": "list",
+							"items": [
+								"Improvised Weapons",
+								"2 Specialized Weapons of your Choice"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Trident Wielder.",
+					"entries": [
+						"For you, tridents deal 1d8 (1d10) piercing damage on a hit, instead of its usual 1d6 (1d8) piercing damage. Additionally, Tridents have the finesse property for you, as long as you are not wielding a shield or wearing heavy or medium armor."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Net Thrower",
+					"entries": [
+						"When you take the Attack action on your turn with a net, it only takes the place of one attack instead of using your entire action. Additionally, you do not have disadvantage on attack rolls when using your net on targets within 5 feet of you."
 					]
 				}
 			]
@@ -3776,7 +3953,7 @@
 		},
 		{
 			"name": "Remarkable Recovery",
-			"source": ""MPMM,
+			"source": "MPMM",
 			"ability": [
 				{
 					"con": 1
@@ -4111,6 +4288,46 @@
 				"If you come across a spell in written form, such as a magical {@item spell scroll} or a wizard's spellbook, you might be able to add it to your ritual book. The spell must be on the spell list for the class you chose, the spell's level can be no higher than half your level (rounded up), and it must have the ritual tag. The process of copying the spell into your ritual book takes 2 hours per level of the spell, and costs 50 gp per level. The cost represents material components you expend as you experiment with the spell to master it, as well as the fine inks you need to record it."
 			],
 			"hasFluffImages": true
+		},
+		{
+			"name": "Roguish Initiate",
+			"source": "MPMM",
+			"ability": [
+				{
+					"dex": 1
+				}
+			],
+			"prerequisite": [
+				"ability": [
+						{
+							"dex": 13
+						}
+					]
+			],
+			"entries": [
+				"You have spent time honing talents associated with the criminal underworld. You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Language and Tool Proficiency.",
+					"entries": [
+						"You learn to speak, read, write, and decode Thieves' Cant. You also gain proficiency with Thieves' Tools."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Cunning Action.",
+					"entries": [
+						"Choose one of the following actions: Dash, Dodge, Disengage, Hide, or Use an Object. You can use that Action as a Bonus Action."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Repeatable.",
+					"entries": [
+						"You can choose this Feat multiple times. Each time you do you must pick a different action from the Cunning Action benefit above, however you replace the Language and Tool Proficiency with gaining Expertise in 1 skill you already have proficiency with."
+					]
+				}
+			]
 		},
 		{
 			"name": "Rune Shaper",
@@ -4795,6 +5012,33 @@
 			]
 		},
 		{
+			"name": "Specialized Training",
+			"source": "MPMM",
+			"ability": [
+				{
+					"str": 1,
+					"dex": 1
+				}
+			],
+			"entries": [
+				"You have practiced extensively with unique weapons, uncommon in these lands. You gain the following benefits. ",
+				{
+					"type": "entries",
+					"name": "Specialized Weapon Training.",
+					"entries": [
+						"You gain proficiency in 4 Specialized Weapons of your choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Preferred Specialty.",
+					"entries": [
+						"Choose one of your specialized weapons to be your preferred weapon. You always know that weapon’s mastery property. It does not count against your known mastery properties if you have the weapon mastery class feature."
+					]
+				}
+			]
+		},
+		{
 			"name": "Spell Sniper",
 			"source": "PHB",
 			"page": 170,
@@ -4951,6 +5195,115 @@
 					"page": 190,
 					"entries": [
 						"Normally, when you cast a spell as a bonus action, you can't use your action to also cast a spell that turn unless that spell is a cantrip\u2014{@note see {@book PHB p202|PHB|10|Bonus Action}.} The Spelldriver feat removes that restriction, but the focus necessary to channel multiple spells in the same round still limits the overall power of those spells."
+					]
+				}
+			]
+		},
+		{
+			"name": "Spellsword Adept",
+			"source": "MPMM",
+			"prerequisite": [
+				{
+					"proficiency": [
+						{
+							"weapon": "martial",
+							"amount": 1
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"_": [
+							{
+								"choose": {
+									"from": [
+										"acid splash (alternate)|llspell",
+										"blade ward (alternate)|llspell",
+										"booming blade (alternate)|llspell",
+										"chill touch",
+										"dancing lights",
+										"firebolt",
+										"frostbite|xge",
+										"glitterbeam|llspell",
+										"green-flame blade (alternate)|llspell",
+										"light",
+										"lightning lure|tce",
+										"mage hand",
+										"minor illusion",
+										"poison spray",
+										"prestidigitation",
+										"resistance",
+										"ray of frost",
+										"shocking grasp",
+										"sword burst (alternate)|llspell",
+										"tempestuous blade|llspell",
+										"true strike (alternate)|llspell"
+									]
+								}
+							}
+						]
+					}
+				}
+			],
+			"entries": [
+				"You have trained to combine your minor magics with weapon attacks, gaining the following benefits.",
+				{
+					"type": "entries",
+					"name": "Bonus Cantrips.",
+					"entries": [
+						"You learn two Cantrips of your choice from any class list, choosing Intelligence, Wisdom, or Charisma as your spellcasting ability. Both Cantrips must meet the following criteria:",
+						{
+							"type": "list",
+							"items": [
+								"Must deal damage with a Spell Attack roll",
+								"Duration is Instantaneous or 1 Round",
+								"Targets only 1 creature"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Magical Weapons.",
+					"entries": [
+						"On your turn, you can use a Bonus Action to imbue 1 of the cantrips gained through this feat onto your weapon of choice, placing Ranged Spell Attacks on Ranged Weapons, or Melee Spell Attacks on Melee Weapons. The magical effect lasts on the weapon until the end of your current turn or on your next hit, whichever happens first. You can use either your standard weapon ability or your chosen spellcasting ability for your attack and damage roll. On a hit, you deal the spell’s damage and its effects with a bonus +1 to the damage roll.",
+						{
+							"type": "list",
+							"style": "list-hang-notile",
+							"items": [
+								{
+									"type": "item",
+									"name": "Limitations.",
+									"entries": [
+										"You do not gain the Cantrip Upgrade benefits when you deal damage."
+									]
+								}
+							]
+						}
 					]
 				}
 			]
@@ -5666,6 +6019,43 @@
 			]
 		},
 		{
+			"name": "Survivalist Training",
+			"source": "MPMM",
+			"prerequisite": [
+				"proficiency": [
+					{
+						"skill": "survival"
+					}
+				]
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"wis"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You have been trained to survive, track, and explore in the wild, much like a Ranger. You gain the benefits.",
+					{
+						"type": "entries",
+						"name": "Gained Knack.",
+						"entries": [
+							"You learn one Knack of your choice from those available to the Ranger class. If the Knack requires you to roll a Quarry Die, you roll a {@dice d4} unless you already have a Quarry Die from another source. If the Knack forces a saving throw, the DC is equal to 8 + your proficiency bonus + your Wisdom modifier.",
+							"If the Knack has a listed level prerequisite, you are unable to gain it with this feat as the levels relate to your Ranger level."
+						]
+					}
+				],
+			"foundrySystem": {
+				"formula": "d4"
+			}
+		},
+		{
 			"name": "Svirfneblin Magic",
 			"source": "MPMM",
 			"additionalSources": [
@@ -5985,7 +6375,7 @@
 				}
 			],
 			"entries": [
-				"You have the ability to push yourself in difficult situations to last longer than most. You gain the following benefits.
+				"You have the ability to push yourself in difficult situations to last longer than most. You gain the following benefits."
 				{
 					"type": "entries",
 					"name": "Consistent Hit Point Increase.",
@@ -6128,6 +6518,77 @@
 					"type": "list",
 					"items": [
 						"You gain proficiency with four weapons of your choice. Each one must be a simple or a martial weapon."
+					]
+				}
+			]
+		},
+		{
+			"name": "Wild Companion",
+			"source": "MPMM",
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"wis": 13
+						}
+					],
+					"proficiency": [
+						{
+							"skill": "animal handling"
+						}
+					],
+				}
+			],
+			"entries": [
+				"You have forged a bond with an animal companion that will adventure by your side, granting you the following benefits."
+				{
+					"type": "entries",
+					"name": "Your Wild Companion.",
+					"entries": [
+						"Choose a {@filter Medium or smaller beast of CR 1/8 or lower|bestiary|Challenge Rating=[&0;&1/8]|type=beast|size=&tiny;&Medium} to be your Wild Companion. This Companion is friendly to you, and it obeys your commands to the best of its abilities.",
+						"Your Companion uses its normal stat block, and it learns to understand one language of your choice that you already speak at the time you take this feat. You and your Companion can communicate simple ideas to each other using a series of clicks, whistles, and gestures. It gains all the normal benefits of both short and long rests."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Combat Commands.",
+					"entries": [
+						"In combat, your Wild Companion acts during your turn. It can move and use its reaction on its own, but it will only take the Dodge action on its turn unless you use a bonus action to command it to take an action. If you have proficiency in Animal Handling, it takes no action to command your companion. If you are incapacitated, your Companion will defend you to the best of its ability.",
+						"If your Companion dies, you can spend 8 hours tracking a suitable beast of CR 1/8 or lower in your immediate vicinity to take on as your new Wild Companion. If you are unable to locate a Companion after 8 hours of searching, you may try again after a long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Leveling Up your Companion.",
+					"entries": [
+						"On subsequent level advancements, your Companion gains additional HP equal to the average (or roll) of the creature’s hit die, as noted in parenthesis to the right of the “Hit Points” section of their stat block, along with one additional hit die. Ability Score Increases you attain after finding your companion are also gained by your companion."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Variant Wild Copanions.",
+					"entries": [
+						"You may alternatively select a Wild Familiar or a Wild Mount, provided it follows the respective prerequisites:",
+						{
+							"type": "list",
+							"style": "list-hang-notile",
+							"items": [
+								{
+									"type": "item",
+									"name": "Wild Familiar.",
+									"entries": [
+										"The size of your Wild Familiar is Tiny and cannot be any larger."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Wild Mount.",
+									"entries": [
+										"The size of your Wild Mount can be Large. It is recommended that your Mount is one size larger than you. If you choose a Mount that is your size, they cannot take the Dash Action while you are mounted. Additionally, you follow the rules on Mounted Combat."
+									]
+								}
+							]
+						}
 					]
 				}
 			]
