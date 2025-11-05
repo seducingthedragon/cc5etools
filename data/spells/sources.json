@@ -276,6 +276,11 @@
 					"definedInSource": "FTD"
 				},
 				{
+					"name": "Ranger",
+					"source": "PHB",
+					"definedInSource": "FTD"
+				},
+				{
 					"name": "Sorcerer",
 					"source": "PHB",
 					"definedInSource": "FTD"
@@ -6026,6 +6031,45 @@
 		}
 	},
 	"TCE": {
+		"Air Bubble": {
+			"class": [
+                {
+					"name": "Artificer",
+					"source": "TCE"
+				}
+			],
+			"classVariant": [
+				{
+					"name": "Druid",
+					"source": "PHB",
+					"definedInSource": "TCE"
+				},
+				{
+					"name": "Ranger",
+					"source": "PHB",
+					"definedInSource": "TCE"
+				},
+				{
+					"name": "Sorcerer",
+					"source": "PHB",
+					"definedInSource": "TCE"
+				},
+				{
+					"name": "Wizard",
+					"source": "PHB",
+					"definedInSource": "TCE"
+				}
+			]
+		},
+		"Arboreal Curse": {
+			"class": [
+				{
+					"name": "Druid",
+					"source": "PHB",
+					"definedInSource": "GHLoE"
+				}
+			]
+		},
 		"Blade of Disaster": {
 			"classVariant": [
 				{
@@ -6109,6 +6153,29 @@
 				}
 			]
 		},
+		"Galder's Speedy Courier": {
+			"classVariant": [
+				{
+					"name": "Warlock",
+					"source": "PHB",
+					"definedInSource": "TCE"
+				},
+				{
+					"name": "Wizard",
+					"source": "PHB",
+					"definedInSource": "TCE"
+				}
+			]
+		},
+		"Galder's Tower": {
+			"classVariant": [
+				{
+					"name": "Wizard",
+					"source": "PHB",
+					"definedInSource": "TCE"
+				}
+			]
+		},
 		"Green-Flame Blade": {
 			"class": [
 				{
@@ -6149,6 +6216,15 @@
 				}
 			]
 		},
+		"Hunter Sense": {
+			"classVariant": [
+				{
+					"name": "Druid",
+					"source": "PHB",
+					"definedInSource": "TCE"
+				}
+			]
+		},
 		"Intellect Fortress": {
 			"class": [
 				{
@@ -6175,6 +6251,30 @@
 				{
 					"name": "Wizard",
 					"source": "PHB",
+					"definedInSource": "TCE"
+				}
+			]
+		},
+		"Kinetic Jaunt": {
+			"classVariant": [
+				{
+					"name": "Bard",
+					"source": "PHB",
+					"definedInSource": "TCE"
+				},
+				{
+					"name": "Sorcerer",
+					"source": "PHB",
+					"definedInSource": "TCE"
+				},
+				{
+					"name": "Wizard",
+					"source": "PHB",
+					"definedInSource": "TCE"
+				},
+				{
+					"name": "Artificer",
+					"source": "TCE",
 					"definedInSource": "TCE"
 				}
 			]
@@ -6219,6 +6319,15 @@
 				}
 			]
 		},
+		"Magic Mirror": {
+			"classVariant": [
+				{
+					"name": "Sorcerer",
+					"source": "PHB",
+					"definedInSource": "TCE"
+				}
+			]
+		},
 		"Mind Sliver": {
 			"classVariant": [
 				{
@@ -6228,6 +6337,49 @@
 				},
 				{
 					"name": "Warlock",
+					"source": "PHB",
+					"definedInSource": "TCE"
+				},
+				{
+					"name": "Wizard",
+					"source": "PHB",
+					"definedInSource": "TCE"
+				}
+			]
+		},
+		"Power Word Maim": {
+			"classVariant": [
+				{
+					"name": "Bard",
+					"source": "PHB",
+					"definedInSource": "TCE"
+				},
+				{
+					"name": "Sorcerer",
+					"source": "PHB",
+					"definedInSource": "TCE"
+				},
+				{
+					"name": "Warlock",
+					"source": "PHB",
+					"definedInSource": "TCE"
+				},
+				{
+					"name": "Wizard",
+					"source": "PHB",
+					"definedInSource": "TCE"
+				},
+			]
+		},
+		"Silvery Barbs": {
+			"classVariant": [
+				{
+					"name": "Bard",
+					"source": "PHB",
+					"definedInSource": "TCE"
+				},
+				{
+					"name": "Sorcerer",
 					"source": "PHB",
 					"definedInSource": "TCE"
 				},
@@ -6444,6 +6596,20 @@
 				}
 			]
 		},
+		"Tasha's Bubbling Cauldron": {
+			"classVariant": [
+				{
+					"name": "Warlock",
+					"source": "PHB",
+					"definedInSource": "TCE"
+				},
+				{
+					"name": "Wizard",
+					"source": "PHB",
+					"definedInSource": "TCE"
+				}
+			]
+		},
 		"Tasha's Caustic Brew": {
 			"class": [
 				{
@@ -6487,6 +6653,44 @@
 				},
 				{
 					"name": "Warlock",
+					"source": "PHB",
+					"definedInSource": "TCE"
+				},
+				{
+					"name": "Wizard",
+					"source": "PHB",
+					"definedInSource": "TCE"
+				}
+			]
+		},
+		"Vortex Warp": {
+			"classVariant": [
+				{
+					"name": "Sorcerer",
+					"source": "PHB",
+					"definedInSource": "TCE"
+				},
+				{
+					"name": "Wizard",
+					"source": "PHB",
+					"definedInSource": "TCE"
+				},
+				{
+					"name": "Artificer",
+					"source": "TCE",
+					"definedInSource": "TCE"
+				}
+			]
+		},
+		"Wither and Bloom": {
+			"classVariant": [
+				{
+					"name": "Druid",
+					"source": "PHB",
+					"definedInSource": "TCE"
+				},
+				{
+					"name": "Sorcerer",
 					"source": "PHB",
 					"definedInSource": "TCE"
 				},
