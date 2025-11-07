@@ -101,7 +101,7 @@
 				}
 			],
 			"entries": [
-				"The spell captures some of the incoming energy, lessening its effect on you and storing it for your next melee attack. You have resistance to the triggering damage type until the start of your next turn. Also, the first time you hit with a melee attack on your next turn, the target takes an extra {@damage 1d6} damage of the triggering type, and the spell ends."
+				"The spell captures some of the incoming energy, lessening its effect on you and storing it for your next melee or ranged attack. You have resistance to the triggering damage type until the start of your next turn. Also, the first time you hit with a melee attack on your next turn, the target takes an extra {@damage 1d6} damage of the triggering type, and the spell ends."
 			],
 			"entriesHigherLevel": [
 				{
@@ -208,16 +208,18 @@
 			},
 			"duration": [
 				{
-					"type": "timed",
-					"duration": {
-						"type": "minute",
-						"amount": 10
-					},
-					"concentration": true
+					"type": "special"
 				}
 			],
 			"entries": [
-				"You establish a telepathic link with one beast you touch that is friendly to you or {@condition charmed} by you. The spell fails if the beast's Intelligence score is 4 or higher. Until the spell ends, the link is active while you and the beast are within line of sight of each other. Through the link, the beast can understand your telepathic messages to it, and it can telepathically communicate simple emotions and concepts back to you. While the link is active, the beast gains advantage on attack rolls against any creature within 5 feet of you that you can see."
+				"You establish a telepathic link with one beast you touch that is friendly to you or {@condition charmed} by you. The spell fails if the beast's Intelligence score is 4 or higher. Until the spell ends, the link is active while you and the beast are within line of sight of each other. Through the link, the beast can understand your telepathic messages to it, and it can telepathically communicate simple emotions and concepts back to you. While the link is active, the beast gains advantage on attack rolls against any creature within 5 feet of you that you can see.",
+				{
+					"type": "entries",
+					"name": "Duration",
+					"entries": [
+						"This spell's duration is 10 minutes, however the use of Concentration varies. If you cast this spell on a beast that is your companion, then Concentration is not required. If you cast this spell on any other friendly or charmed beast that is not your companion, then Concentration is required for the duration of this spell."
+					]
+				}
 			],
 			"conditionInflict": [
 				"charmed"
@@ -420,7 +422,7 @@
 			"source": "XGE",
 			"page": 151,
 			"level": 1,
-			"school": "N",
+			"school": "E",
 			"time": [
 				{
 					"number": 1,
@@ -786,6 +788,221 @@
 			],
 			"areaTags": [
 				"ST"
+			]
+		},{
+			"name": "Conjure Greater Demon",
+			"source": "XGE",
+			"page": 151,
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a fiend's true name and a vial of blood from a humanoid killed within the past 24 hours",
+					"consume": "optional"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You utter foul words and speaking its true name, you conjure a powerful Demonic Fiend to your aid. While your concentration lasts, it is Indifferent to you and your allies and follows your commands to the letter. For the duration, the Fiend uses the rules below:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Statistics",
+							"entries": [
+								"The Fiend appears in an unoccupied space of your choice you can see within range. When it appears, you can force the Fiend to take on the appearance and statistics of another Fiend of your choice with a {@filter CR 5 or lower|bestiary|challenge rating=[&0;&5]|tag=demon|miscellaneous=!swarm}."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Combat",
+							"entries": [
+								"Roll initiative for the demon, which has its own turns. When you summon it and on each of your turns thereafter, you can issue a verbal command to it (no action required). If the Fiend does not receive any commands, or its commands are completed, it will respond in a way that it sees fit."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Control",
+							"entries": [
+								"If your concentration on this spell is broken, the Fiend remains. It instantly returns to its true form and is no longer under your control. For the remaining duration of the spell, it is Hostile to you and your allies and acts according to its alignment. The Fiend will disappear at 0 hit points or after {@dice 1d6} rounds, which ever comes first."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Consumed Component",
+							"entries": [
+								"As part of casting the spell, you can form a circle on the ground with the blood used as a material component. The circle is large enough to encompass your space. While the spell lasts, the summoned demon can't cross the circle or harm it, and it can't target anyone within it. It will be consumed at the end of the spell's duration, even if concentration is dropped."
+							]
+						}
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the challenge rating increases by 1 for each slot level above 4th."
+					]
+				}
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"miscTags": [
+				"SGT",
+				"SMN"
+			]
+		},
+		{
+			"name": "Conjure Lesser Demons",
+			"source": "XGE",
+			"page": 152,
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a vial of blood from a humanoid killed within the past 24 hours",
+					"consume": "optional"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You utter foul words, summoning demons from the chaos of the Abyss. Roll on the following table to determine what appears.",
+				{
+					"type": "table",
+					"colLabels": [
+						"{@dice d6}",
+						"Demons Summoned"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-11"
+					],
+					"rows": [
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"min": 1,
+									"max": 2
+								}
+							},
+							"Two {@filter demons of challenge rating 1 or lower|bestiary|challenge rating=[&0;&1]|tag=demon|miscellaneous=!swarm}"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"min": 3,
+									"max": 4
+								}
+							},
+							"Four {@filter demons of challenge rating 1/2 or lower|bestiary|challenge rating=[&0;&1/2]|tag=demon|miscellaneous=!swarm}"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"min": 5,
+									"max": 6
+								}
+							},
+							"Eight {@filter demons of challenge rating 1/4 or lower|bestiary|challenge rating=[&0;&1/4]|tag=demon|miscellaneous=!swarm}"
+						]
+					]
+				},
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Statistics",
+							"entries": [
+								"The DM chooses the demons, such as {@creature manes} or {@creature dretch||dretches}, and you choose the unoccupied spaces you can see within range where they appear. A summoned demon disappears when it drops to 0 hit points or when the spell ends."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Combat",
+							"entries": [
+								"The demons are Indifferent to you and only you while you maintain concentration. Roll initiative for the summoned demons as a group, which has its own turns. When you summon them and on each of your turns thereafter, you can issue a verbal command to them (no action required). If they does not receive any commands, or its commands are completed, they will respond in a way that they sees fit."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Consumed Component",
+							"entries": [
+								"As part of casting the spell, you can form a circle on the ground with the blood used as a material component. The circle is large enough to encompass your space. While maintaining concentration, the summoned demons can't cross the circle or harm it, and can't target anyone within it. It will be consumed when the spell ends, which includes dropping concentration to end the spell early. When the material component is consumed, all summoned demons will vanish as well."
+							]
+						}
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th or 7th level, you summon twice as many demons. If you cast it using a spell slot of 8th or 9th level, you summon three times as many demons."
+					]
+				}
+			],
+			"miscTags": [
+				"RO",
+				"SGT",
+				"SMN"
 			]
 		},
 		{
@@ -1233,8 +1450,7 @@
 					"duration": {
 						"type": "minute",
 						"amount": 1
-					},
-					"concentration": true
+					}
 				}
 			],
 			"entries": [
@@ -1601,6 +1817,80 @@
 			]
 		},
 		{
+			"name": "Elementalism",
+			"source": "XGE",
+			"page": 155,
+			"level": 0,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You exert control over the elements, creating one of the following effects within range.",
+				{
+					"type": "entries",
+					"name": "Beckon Air",
+					"entries": [
+						"You create a breeze strong enough to ripple cloth, stir dust, rustle leaves, and close open doors and shutters, all in a 5-foot cube. Doors and shutters being held open by someone or something aren't affected."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Beckon Earth",
+					"entries": [
+						"You create a thin shroud of dust or sand that covers surfaces in a 5-foot-square area, or you cause a single word to appear in your handwriting in a patch of dirt or sand."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Beckon Fire",
+					"entries": [
+						"You create a thin cloud of harmless embers and colored, scented smoke in a 5-foot cube. You choose the color and scent, and the embers can light candles, torches, or lamps in that area. The smoke's scent lingers for 1 minute."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Beckon Water",
+					"entries": [
+						"You create a spray of cool mist that lightly dampens creatures and objects in a 5-foot cube. Alternatively, you create 1 cup of clean water either in an open container or on a surface, and the water evaporates in 1 minute."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sculpt Element",
+					"entries": [
+						"You cause dirt, sand, fire, smoke, mist, or water that can fit in a 1-foot cube to assume a crude shape (such as that of a creature) for 1 hour."
+					]
+				}
+			],
+			"miscTags": [
+				"OBJ"
+			],
+			"areaTags": [
+				"C",
+				"Q"
+			]
+		},
+		{
 			"name": "Enemies Abound",
 			"source": "XGE",
 			"page": 155,
@@ -1920,6 +2210,169 @@
 			],
 			"miscTags": [
 				"AAD"
+			]
+		},
+		{
+			"name": "Freedom of the Waves",
+			"source": "XGE",
+			"page": 156,
+			"otherSources": [
+				{
+					"source": "TDCSR",
+					"page": 176
+				}
+			],
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a strand of wet hair"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You conjure a deluge of seawater in a 15-foot-radius, 10-foot-tall cylinder centered on a point within range. This water takes the form of a tidal wave, a whirlpool, a waterspout, or another form of your choice. Each creature in the area must succeed on a Strength {@quickref saving throws|PHB|2|1|saving throw} against your spell save DC or take {@damage 2d8} bludgeoning damage and fall {@condition prone}. You can choose a number of creatures equal to your spellcasting modifier (minimum of 1) to automatically succeed on this {@quickref saving throws|PHB|2|1|saving throw}.",
+				"If you are within the spell's area, as part of the action you use to cast the spell, you can vanish into the deluge and teleport to an unoccupied space that you can see within the spell's area."
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"miscTags": [
+				"SGT",
+				"TP"
+			],
+			"areaTags": [
+				"MT",
+				"Y"
+			]
+		},
+		{
+			"name": "Freedom of the Winds",
+			"source": "XGE",
+			"page": 156,
+			"otherSources": [
+				{
+					"source": "TDCSR",
+					"page": 176
+				}
+			],
+			"level": 5,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a scrap of sailcloth"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Wind wraps around your body, tugging at your hair and clothing as your feet lift off the ground. You gain a flying speed of 60 feet. Additionally, you have {@quickref Advantage and Disadvantage|PHB|2|0|advantage} on {@quickref ability checks|PHB|2|0} to avoid being {@condition grappled}, and on {@quickref saving throws|PHB|2|1} against being {@condition restrained} or {@condition paralyzed}.",
+				"When you are targeted by a spell or attack while this spell is in effect, you can use a reaction to teleport up to 60 feet to an unoccupied space you can see. If this movement takes you out of range of the triggering spell or attack, you are unaffected by it. This spell then ends when you reappear."
+			],
+			"miscTags": [
+				"ADV",
+				"SGT",
+				"TP"
+			]
+		},
+		{
+			"name": "Frost Fingers",
+			"source": "XGE",
+			"page": 156,
+			"otherSources": [
+				{
+					"source": "IDRotF",
+					"page": 318
+				}
+			],
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Freezing cold blasts from your fingertips in a 15-foot cone. Each creature in that area must make a Constitution saving throw, taking {@damage 2d8} cold damage on a failed save, or half as much damage on a successful one.",
+				"The cold freezes nonmagical liquids in the area that aren't being worn or carried."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@damage 1d8} for each slot level above 1st."
+					]
+				}
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"N"
 			]
 		},
 		{
@@ -3852,8 +4305,7 @@
 					"duration": {
 						"type": "minute",
 						"amount": 1
-					},
-					"concentration": true
+					}
 				}
 			],
 			"entries": [
@@ -4071,8 +4523,7 @@
 					"duration": {
 						"type": "hour",
 						"amount": 1
-					},
-					"concentration": true
+					}
 				}
 			],
 			"entries": [
@@ -4411,7 +4862,7 @@
 			"entries": [
 				"A 20-foot-radius sphere of whirling air springs into existence, centered on a point you choose within range. The sphere remains for the spell's duration. Each creature in the sphere when it appears or that ends its turn there must succeed on a Strength saving throw or take {@damage 2d6} bludgeoning damage. The sphere's space is {@quickref difficult terrain||3}.",
 				"Until the spell ends, you can use a bonus action on each of your turns to cause a bolt of lightning to leap from the center of the sphere toward one creature you choose within 60 feet of the center. Make a ranged spell attack. You have advantage on the attack roll if the target is in the sphere. On a hit, the target takes {@damage 4d6} lightning damage.",
-				"Creatures within 30 feet of the sphere have disadvantage on Wisdom ({@skill Perception}) checks made to listen."
+				"Creatures within 30 feet of the sphere have disadvantage on Wisdom ({@skill Perception}) checks."
 			],
 			"entriesHigherLevel": [
 				{
@@ -4441,167 +4892,6 @@
 				"ST"
 			],
 			"hasFluffImages": true
-		},
-		{
-			"name": "Summon Greater Demon",
-			"source": "XGE",
-			"page": 166,
-			"level": 4,
-			"school": "C",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 60
-				}
-			},
-			"components": {
-				"v": true,
-				"s": true,
-				"m": {
-					"text": "a vial of blood from a humanoid killed within the past 24 hours",
-					"consume": "optional"
-				}
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "hour",
-						"amount": 1
-					},
-					"concentration": true
-				}
-			],
-			"entries": [
-				"You utter foul words, summoning one demon from the chaos of the Abyss. You choose the demon's type, which must be {@filter one of challenge rating 5 or lower|bestiary|challenge rating=[&0;&5]|tag=demon|miscellaneous=!swarm}, such as a {@creature shadow demon} or a {@creature barlgura}. The demon appears in an unoccupied space you can see within range, and the demon disappears when it drops to 0 hit points or when the spell ends.",
-				"Roll initiative for the demon, which has its own turns. When you summon it and on each of your turns thereafter, you can issue a verbal command to it (requiring no action on your part), telling it what it must do on its next turn. If you issue no command, it spends its turn attacking any creature within reach that has attacked it.",
-				"At the end of each of the demon's turns, it makes a Charisma saving throw. The demon has disadvantage on this saving throw if you say its true name. On a failed save, the demon continues to obey you. On a successful save, your control of the demon ends for the rest of the duration, and the demon spends its turns pursuing and attacking the nearest non-demons to the best of its ability. If you stop {@status concentration||concentrating} on the spell before it reaches its full duration, an uncontrolled demon doesn't disappear for {@dice 1d6} rounds if it still has hit points.",
-				"As part of casting the spell, you can form a circle on the ground with the blood used as a material component. The circle is large enough to encompass your space. While the spell lasts, the summoned demon can't cross the circle or harm it, and it can't target anyone within it. Using the material component in this manner consumes it when the spell ends."
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 5th level or higher, the challenge rating increases by 1 for each slot level above 4th."
-					]
-				}
-			],
-			"savingThrow": [
-				"charisma"
-			],
-			"miscTags": [
-				"SGT",
-				"SMN"
-			]
-		},
-		{
-			"name": "Summon Lesser Demons",
-			"source": "XGE",
-			"page": 167,
-			"level": 3,
-			"school": "C",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 60
-				}
-			},
-			"components": {
-				"v": true,
-				"s": true,
-				"m": {
-					"text": "a vial of blood from a humanoid killed within the past 24 hours",
-					"consume": "optional"
-				}
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "hour",
-						"amount": 1
-					},
-					"concentration": true
-				}
-			],
-			"entries": [
-				"You utter foul words, summoning demons from the chaos of the Abyss. Roll on the following table to determine what appears.",
-				{
-					"type": "table",
-					"colLabels": [
-						"{@dice d6}",
-						"Demons Summoned"
-					],
-					"colStyles": [
-						"col-1 text-center",
-						"col-11"
-					],
-					"rows": [
-						[
-							{
-								"type": "cell",
-								"roll": {
-									"min": 1,
-									"max": 2
-								}
-							},
-							"Two {@filter demons of challenge rating 1 or lower|bestiary|challenge rating=[&0;&1]|tag=demon|miscellaneous=!swarm}"
-						],
-						[
-							{
-								"type": "cell",
-								"roll": {
-									"min": 3,
-									"max": 4
-								}
-							},
-							"Four {@filter demons of challenge rating 1/2 or lower|bestiary|challenge rating=[&0;&1/2]|tag=demon|miscellaneous=!swarm}"
-						],
-						[
-							{
-								"type": "cell",
-								"roll": {
-									"min": 5,
-									"max": 6
-								}
-							},
-							"Eight {@filter demons of challenge rating 1/4 or lower|bestiary|challenge rating=[&0;&1/4]|tag=demon|miscellaneous=!swarm}"
-						]
-					]
-				},
-				"The DM chooses the demons, such as {@creature manes} or {@creature dretch||dretches}, and you choose the unoccupied spaces you can see within range where they appear. A summoned demon disappears when it drops to 0 hit points or when the spell ends.",
-				"The demons are hostile to all creatures, including you. Roll initiative for the summoned demons as a group, which has its own turns. The demons pursue and attack the nearest non-demons to the best of their ability.",
-				"As part of casting the spell, you can form a circle on the ground with the blood used as a material component. The circle is large enough to encompass your space. While the spell lasts, the summoned demons can't cross the circle or harm it, and they can't target anyone within it. Using the material component in this manner consumes it when the spell ends."
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 6th or 7th level, you summon twice as many demons. If you cast it using a spell slot of 8th or 9th level, you summon three times as many demons."
-					]
-				}
-			],
-			"miscTags": [
-				"RO",
-				"SGT",
-				"SMN"
-			]
 		},
 		{
 			"name": "Synaptic Static",
@@ -4846,7 +5136,7 @@
 				}
 			],
 			"range": {
-				"type": "point",
+				"type": "emanation",
 				"distance": {
 					"type": "feet",
 					"amount": 5
@@ -5574,7 +5864,7 @@
 				}
 			],
 			"range": {
-				"type": "point",
+				"type": "emanation",
 				"distance": {
 					"type": "feet",
 					"amount": 5
