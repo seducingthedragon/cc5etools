@@ -6932,6 +6932,34 @@
 				}
 			]
 		},
+		"Conjure Greater Demon": {
+			"classVariant": [
+				{
+					"name": "Warlock",
+					"source": "PHB",
+					"definedInSource": "XGE"
+				},
+				{
+					"name": "Wizard",
+					"source": "PHB",
+					"definedInSource": "XGE"
+				}
+			]
+		},
+		"Conjure Lesser Demons": {
+			"classVariant": [
+				{
+					"name": "Warlock",
+					"source": "PHB",
+					"definedInSource": "XGE"
+				},
+				{
+					"name": "Wizard",
+					"source": "PHB",
+					"definedInSource": "XGE"
+				}
+			]
+		},
 		"Control Flames": {
 			"classVariant": [
 				{
@@ -7169,6 +7197,25 @@
 				}
 			]
 		},
+		"Elementalism": {
+			"classVariant": [
+				{
+					"name": "Druid",
+					"source": "PHB",
+					"definedInSource": "XGE"
+				},
+				{
+					"name": "Sorcerer",
+					"source": "PHB",
+					"definedInSource": "XGE"
+				},
+				{
+					"name": "Wizard",
+					"source": "PHB",
+					"definedInSource": "XGE"
+				}
+			]
+		},
 		"Enemies Abound": {
 			"classVariant": [
 				{
@@ -7284,6 +7331,53 @@
 				{
 					"name": "Artificer",
 					"source": "TCE",
+					"definedInSource": "XGE"
+				}
+			]
+		},
+		"Freedom of the Waves": {
+			"classVariant": [
+				{
+					"name": "Druid",
+					"source": "PHB",
+					"definedInSource": "XGE"
+				},
+				{
+					"name": "Ranger",
+					"source": "PHB",
+					"definedInSource": "XGE"
+				},
+				{
+					"name": "Sorcerer",
+					"source": "PHB",
+					"definedInSource": "XGE"
+				}
+			]
+		},
+		"Freedom of the Winds": {
+			"classVariant": [
+				{
+					"name": "Druid",
+					"source": "PHB",
+					"definedInSource": "XGE"
+				},
+				{
+					"name": "Sorcerer",
+					"source": "PHB",
+					"definedInSource": "XGE"
+				},
+				{
+					"name": "Ranger",
+					"source": "PHB",
+					"definedInSource": "XGE"
+				}
+			]
+		}
+		"Frost Fingers": {
+			"classVariant": [
+				{
+					"name": "Wizard",
+					"source": "PHB",
 					"definedInSource": "XGE"
 				}
 			]
@@ -8034,34 +8128,6 @@
 			"classVariant": [
 				{
 					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "XGE"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "XGE"
-				}
-			]
-		},
-		"Summon Greater Demon": {
-			"classVariant": [
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "XGE"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "XGE"
-				}
-			]
-		},
-		"Summon Lesser Demons": {
-			"classVariant": [
-				{
-					"name": "Warlock",
 					"source": "PHB",
 					"definedInSource": "XGE"
 				},
