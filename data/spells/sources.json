@@ -585,6 +585,18 @@
 				}
 			]
 		},
+		"Arcane Vigor": {
+			"class": [
+				{
+					"name": "Sorcerer",
+					"source": "PHB"
+				},
+				{
+					"name": "Wizard",
+					"source": "PHB"
+				}
+			]
+		},
 		"Armor of Agathys": {
 			"class": [
 				{
@@ -638,6 +650,18 @@
 					"name": "Wizard",
 					"source": "PHB",
 					"definedInSource": "TCE"
+				}
+			]
+		},
+		"Aura of Frost": {
+			"class": [
+				{
+					"name": "Druid",
+					"source": "PHB"
+				},
+				{
+					"name": "Sorcerer",
+					"source": "PHB"
 				}
 			]
 		},
@@ -697,6 +721,14 @@
 					"name": "Bard",
 					"source": "PHB"
 				},
+				{
+					"name": "Druid",
+					"source": "PHB"
+				}
+			]
+		},
+		"Awaken Plant": {
+			"class": [
 				{
 					"name": "Druid",
 					"source": "PHB"
@@ -1809,6 +1841,14 @@
 				},
 				{
 					"name": "Wizard",
+					"source": "PHB"
+				}
+			]
+		},
+		"Dire Wail": {
+			"class": [
+				{
+					"name": "Bard",
 					"source": "PHB"
 				}
 			]
@@ -3374,6 +3414,18 @@
 				}
 			]
 		},
+		"Irresistible Dance": {
+			"class": [
+				{
+					"name": "Bard",
+					"source": "PHB"
+				},
+				{
+					"name": "Wizard",
+					"source": "PHB"
+				}
+			]
+		},
 		"Jump": {
 			"class": [
 				{
@@ -3439,18 +3491,6 @@
 				{
 					"name": "Artificer",
 					"source": "TCE"
-				}
-			]
-		},
-		"Leomund's Tiny Hut": {
-			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB"
 				}
 			]
 		},
@@ -4170,18 +4210,6 @@
 				{
 					"name": "Artificer",
 					"source": "TCE"
-				}
-			]
-		},
-		"Otto's Irresistible Dance": {
-			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB"
 				}
 			]
 		},
@@ -5123,6 +5151,18 @@
 				}
 			]
 		},
+		"Sonic Wave": {
+			"class": [
+				{
+					"name": "Bard",
+					"source": "PHB"
+				},
+				{
+					"name": "Sorcerer",
+					"source": "PHB"
+				}
+			]
+		},
 		"Sorcerous Burst": {
 			"class": [
 				{
@@ -5546,6 +5586,22 @@
 			"class": [
 				{
 					"name": "Sorcerer",
+					"source": "PHB"
+				},
+				{
+					"name": "Wizard",
+					"source": "PHB"
+				}
+			]
+		},
+		"Tiny Hut": {
+			"class": [
+				{
+					"name": "Bard",
+					"source": "PHB"
+				},
+				{
+					"name": "Ranger",
 					"source": "PHB"
 				},
 				{
