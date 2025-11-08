@@ -995,6 +995,49 @@
 			]
 		},
 		{
+			"name": "Arcane Vigor",
+			"source": "PHB",
+			"page": 215,
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You tap into your life force to heal yourself. Roll one or two of your unexpended Hit Point Dice, and regain a number of Hit Points equal to the roll's total plus your spellcasting ability modifier. Those dice are then expended."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The number of unexpended Hit Dice you can roll increases by one for each spell slot level above 2."
+					]
+				}
+			],
+			"miscTags": [
+				"HL"
+			]
+		},
+		{
 			"name": "Armor of Agathys",
 			"source": "PHB",
 			"page": 215,
@@ -1194,16 +1237,93 @@
 			"entries": [
 				"By casting gem-inlaid sticks, rolling dragon bones, laying out ornate cards, or employing some other divining tool, you receive an omen from an otherworldly entity about the results of a specific course of action that you plan to take within the next 30 minutes. The DM chooses from the following possible omens:",
 				{
-					"type": "list",
-					"items": [
-						"Weal, for good results",
-						"Woe, for bad results",
-						"Weal and woe, for both good and bad results",
-						"Nothing, for results that aren't especially good or bad"
+					"type": "table",
+					"caption": "Omens",
+					"colStyles": [
+						"col-4",
+						"col-8"
+					],
+					"colLabels": [
+						"Omen",
+						"For Results That Will Be..."
+					],
+					"rows": [
+						[
+							"Weal",
+							"Good"
+						],
+						[
+							"Woe",
+							"Bad"
+						],
+						[
+							"Weal and woe",
+							"Good and bad"
+						],
+						[
+							"Indifference",
+							"Neither good nor bad"
+						]
 					]
 				},
 				"The spell doesn't take into account any possible circumstances that might change the outcome, such as the casting of additional spells or the loss or gain of a companion.",
 				"If you cast the spell two or more times before completing your next long rest, there is a cumulative {@chance 25|||Random reading!|Regular reading} chance for each casting after the first that you get a random reading. The DM makes this roll in secret."
+			]
+		},
+		{
+			"name": "Aura of Frost",
+			"source": "PHB",
+			"level": 216,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"amount": 1,
+						"type": "minute"
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Arcane frost, snow, and wind swirl about you in an aura with a 10-foot radius, and until the spell ends, the aura moves with you, centered on you. When a creature other than you, enters the area for the first time on a turn or starts its turn there, it must succeed on a Constitution saving throw or it takes {@damage 2d8} cold damage and have its speed is reduced by 20 feet until the start of its next turn. On a successful save, it takes half as much cold damage and its speed isn't reduced."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd-level or higher, a creature that fails its save takes an additional {@scaledamage 2d8|2-9|1d8} cold damage and has its speed reduced by an additional 10 feet for each spell level above 2nd."
+					]
+				}
+			],
+			"areaTags": [
+				"S"
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"savingThrow": [
+				"constitution"
 			]
 		},
 		{
@@ -1301,7 +1421,7 @@
 			"source": "PHB",
 			"page": 216,
 			"level": 3,
-			"school": "V",
+			"school": "A",
 			"time": [
 				{
 					"number": 1,
@@ -1388,6 +1508,97 @@
 			],
 			"areaTags": [
 				"ST"
+			]
+		},
+		{
+			"name": "Awaken Plant",
+			"source": "PHB",
+			"level": 216,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"amount": 30,
+					"type": "feet"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You infuse a Small or smaller plant you can see with magic, animating it under your control. For the duration, or until it is destroyed, this Awakened Plant uses the rules below:",
+				{
+					"type": "entries",
+					"name": "Statistics",
+					"entries": [
+						"The {@creature Awakened Plant|llspell} uses the stat block below. It uses your Spell save DC, the slot spent on this spell (Spell Slot), your Spell Attack Modifier, and Proficiency Bonus (PB) in several places. The Plant is destroyed at 0 hit points.",
+						"If your concentration is broken before the end of the spell, the Plant reverts to its original state, taking root in its space."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Control",
+					"entries": [
+						"The Awakened Plant follows your commands to the best of its abilities. If it is not given a command it remains in its space and only acts to defend itself. In combat, it shares your initiative and it acts during your turn.",
+						"While the Plant is within 60 feet of you, you can use your bonus action to mentally issue it a command. You determine how it will act, or you can set a general course of action for it ('defend that tree'). This Plant follows your commands until they are completed or it is destroyed."
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell with a slot of a higher level, you can animate larger plants, as shown on the table below. The damage dice for its Slam also increase:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Slot Level",
+								"Size",
+								"Damage"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-2-2",
+								"col-2-2"
+							],
+							"rows": [
+								[
+									"3rd",
+									"Medium",
+									"2d6"
+								],
+								[
+									"4th",
+									"Large",
+									"2d10"
+								],
+								[
+									"5th",
+									"Huge",
+									"2d12"
+								]
+							]
+						}
+					]
+				}
 			]
 		},
 		{
@@ -1565,7 +1776,7 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "action"
+					"unit": "bonus"
 				}
 			],
 			"range": {
@@ -1585,12 +1796,11 @@
 					"duration": {
 						"type": "hour",
 						"amount": 1
-					},
-					"concentration": true
+					}
 				}
 			],
 			"entries": [
-				"You touch a willing creature. Until the spell ends, the target's skin has a rough, bark-like appearance, and the target's AC can't be less than 16, regardless of what kind of armor it is wearing."
+				"You touch a willing creature. Until the spell ends, the target's skin assumes a bark-like appearance, and the target has an Armor Class of 17 if its AC is lower than that."
 			],
 			"miscTags": [
 				"MAC"
@@ -2133,7 +2343,7 @@
 			"page": 219,
 			"srd": true,
 			"level": 2,
-			"school": "N",
+			"school": "T",
 			"time": [
 				{
 					"number": 1,
@@ -2419,7 +2629,7 @@
 				}
 			],
 			"entries": [
-				"A storm cloud appears in the shape of a cylinder that is 10 feet tall with a 60-foot radius, centered on a point you can see within range directly above you. The spell fails if you can't see a point in the air where the storm cloud could appear (for example, if you are in a room that can't accommodate the cloud).",
+				"A storm cloud appears in the shape of a cylinder that is 10 feet tall with a 60-foot radius, centered on a point you can see within range directly above you. The spell fails if there is a roof or covering above you that is less than 20feet above you.",
 				"When you cast the spell, choose a point you can see under the cloud. A bolt of lightning flashes down from the cloud to that point. Each creature within 5 feet of that point must make a Dexterity saving throw. A creature takes {@damage 3d10} lightning damage on a failed save, or half as much damage on a successful one. On each of your turns until the spell ends, you can use your action to call down lightning in this way again, targeting the same point or a different one.",
 				"If you are outdoors in stormy conditions when you cast this spell, the spell gives you control over the existing storm instead of creating a new one. Under such conditions, the spell's damage increases by {@damage 1d10}."
 			],
@@ -2482,8 +2692,13 @@
 			],
 			"entries": [
 				"You attempt to suppress strong emotions in a group of people. Each humanoid in a 20-foot-radius sphere centered on a point you choose within range must make a Charisma saving throw; a creature can choose to fail this saving throw if it wishes. If a creature fails its saving throw, choose one of the following two effects.",
-				"You can suppress any effect causing a target to be {@condition charmed} or {@condition frightened}. When this spell ends, any suppressed effect resumes, provided that its duration has not expired in the meantime.",
-				"Alternatively, you can make a target indifferent about creatures of your choice that it is hostile toward. This indifference ends if the target is attacked or harmed by a spell or if it witnesses any of its friends being harmed. When the spell ends, the creature becomes hostile again, unless the DM rules otherwise."
+				{
+					"type": "list",
+					"items": [
+						"The creature has Immunity to the {@condition Charmed|PHB} and {@condition Frightened|XPHB} conditions until the spell ends. If the creature was already {@condition Charmed|PHB} or {@condition Frightened|PHB}, those conditions are suppressed for the duration.",
+						"The creature becomes Indifferent about creatures of your choice that it's Hostile toward. This indifference ends if the target takes damage or witnesses its allies taking damage. When the spell ends, the creature's attitude returns to normal."
+					]
+				}
 			],
 			"savingThrow": [
 				"charisma"
@@ -4222,7 +4437,7 @@
 			"page": 227,
 			"srd": true,
 			"level": 2,
-			"school": "V",
+			"school": "C",
 			"time": [
 				{
 					"number": 1,
@@ -4914,7 +5129,7 @@
 				}
 			],
 			"entries": [
-				"Holy power radiates from you in an aura with a 30-foot radius, awakening boldness in friendly creatures. Until the spell ends, the aura moves with you, centered on you. While in the aura, each nonhostile creature in the aura (including you) deals an extra {@damage 1d4} radiant damage when it hits with a weapon attack."
+				"Holy power radiates from you in an aura with a 30-foot radius, awakening boldness in friendly creatures. Until the spell ends, the aura moves with you, centered on you. While in the aura, each nonhostile creature in the aura (including you) deals an extra {@damage 1d4} radiant damage when it hits with a weapon attack or an unarmed strike attack."
 			],
 			"damageInflict": [
 				"radiant"
@@ -5058,7 +5273,7 @@
 				}
 			],
 			"level": 2,
-			"school": "V",
+			"school": "I",
 			"time": [
 				{
 					"number": 1,
@@ -5104,7 +5319,7 @@
 			"page": 230,
 			"srd": true,
 			"level": 2,
-			"school": "T",
+			"school": "D",
 			"time": [
 				{
 					"number": 1,
@@ -5132,7 +5347,7 @@
 				}
 			],
 			"entries": [
-				"You touch a willing creature to grant it the ability to see in the dark. For the duration, that creature has {@sense darkvision} out to a range of 60 feet."
+				"You touch a willing creature to grant it the ability to see in the dark. For the duration, that creature has {@sense darkvision} out to a range of 150 feet."
 			],
 			"areaTags": [
 				"ST"
@@ -5606,6 +5821,64 @@
 				"TP"
 			],
 			"hasFluffImages": true
+		},
+		{
+			"name": "Dire Wail",
+			"source": "PHB",
+			"level": 233,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"amount": 30,
+					"type": "feet"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"amount": 1,
+						"type": "minute"
+					}
+				}
+			],
+			"entries": [
+				"You let forth a wail filled with otherworldly power. Creatures of your choice within 30 feet must succeed on a Constitution saving throw or take {@damage 4d10} thunder damage and be {@condition deafened} for the duration. At the end of each turn, targets can make a Constitution saving throw, ending the spell on a success. On a successful save, it takes half damage and is not deafened."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th-level or higher, the damage increases by {@scaledamage 4d10|3-9|1d10} for each slot level above 3rd."
+					]
+				}
+			],
+			"areaTags": [
+				"S"
+			],
+			"conditionInflict": [
+				"deafened"
+			],
+			"damageInflict": [
+				"thunder"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"savingThrow": [
+				"constitution"
+			]
 		},
 		{
 			"name": "Disguise Self",
@@ -6596,8 +6869,7 @@
 					"duration": {
 						"type": "hour",
 						"amount": 1
-					},
-					"concentration": true
+					}
 				}
 			],
 			"entries": [
@@ -7265,7 +7537,7 @@
 			"page": 239,
 			"srd": true,
 			"level": 3,
-			"school": "I",
+			"school": "E",
 			"time": [
 				{
 					"number": 1,
@@ -7282,7 +7554,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a white feather or the heart of a hen"
+				"m": "a white feather"
 			},
 			"duration": [
 				{
@@ -7409,7 +7681,7 @@
 			"source": "PHB",
 			"page": 240,
 			"level": 3,
-			"school": "N",
+			"school": "I",
 			"time": [
 				{
 					"number": 1,
@@ -7441,7 +7713,8 @@
 			},
 			"entries": [
 				"You touch a willing creature and put it into a cataleptic state that is indistinguishable from death.",
-				"For the spell's duration, or until you use an action to touch the target and dismiss the spell, the target appears dead to all outward inspection and to spells used to determine the target's status. The target is {@condition blinded} and {@condition incapacitated}, and its speed drops to 0. The target has resistance to all damage except psychic damage. If the target is diseased or {@condition poisoned} when you cast the spell, or becomes diseased or {@condition poisoned} while under the spell's effect, the disease and poison have no effect until the spell ends."
+				"For the spell's duration, or until you use an action to touch the target and dismiss the spell, the target appears dead to all outward inspection and to spells used to determine the target's status. The target is {@condition blinded} and {@condition incapacitated}, and its speed drops to 0.",
+				"The target also has Resistance to all damage except Psychic damage, and it has Immunity to the {@condition Poisoned|PHB} condition as well as diseases. If the target is diseased or {@condition poisoned} when you cast the spell, the disease and poison have no effect until the spell ends."
 			],
 			"damageResist": [
 				"acid",
@@ -8049,6 +8322,68 @@
 			]
 		},
 		{
+			"name": "Flame Whip",
+			"source": "PHB",
+			"level": 242,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"distance": {
+					"type": "self"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a charred wooden hilt"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"amount": 1,
+						"type": "minute"
+					},
+				}
+			],
+			"entries": [
+				"As a bonus action, you can evoke a whip of pure flame in a free hand. It lasts for the duration and sheds bright light out to a 10-foot radius. If you let go of the whip, it disappears, but you can evoke the Flame Whip again in place of an attack without expending a spell slot.",
+				"Whenever you could make an attack, you can instead make a melee spell attack with your Flame Whip against one target within 10 feet that you can see. On hit, it takes fire damage equal to {@dice 1d10} + your spellcasting modifier, and if the target is Large or smaller you can instantly grapple it with the Whip.",
+				"You cannot attack with the Whip while it is grappling a creature, but a grappled creature takes {@dice 1d10} fire damage at the start of its turns and can use its action to make a Strength check against your spell save DC, escaping on a success."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, both instances of fire damage dealt increase by {@scaledamage 1d10|2,4,6,8|1d10} for every two slot levels above 2nd."
+					]
+				}
+			],
+			"conditionInflict": [
+				"grappled"
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"miscTags": [
+				"LGT",
+				"SCL"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"spellAttack": [
+				"M"
+			]
+		},
+		{
 			"name": "Flaming Sphere",
 			"source": "PHB",
 			"page": 242,
@@ -8562,7 +8897,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a bit of gauze and a wisp of smoke"
+				"m": "a bit of gauze"
 			},
 			"duration": [
 				{
@@ -8575,12 +8910,25 @@
 				}
 			],
 			"entries": [
-				"You transform a willing creature you touch, along with everything it's wearing and carrying, into a misty cloud for the duration. The spell ends if the creature drops to 0 hit points. An incorporeal creature isn't affected.",
-				"While in this form, the target's only method of movement is a flying speed of 10 feet. The target can enter and occupy the space of another creature. The target has resistance to nonmagical damage, and it has advantage on Strength, Dexterity, and Constitution saving throws. The target can pass through small holes, narrow openings, and even mere cracks, though it treats liquids as though they were solid surfaces. The target can't fall and remains hovering in the air even when {@condition stunned} or otherwise {@condition incapacitated}.",
-				"While in the form of a misty cloud, the target can't talk or manipulate objects, and any objects it was carrying or holding can't be dropped, used, or otherwise interacted with. The target can't attack or cast spells."
+				"A willing creature you touch shape-shifts, along with everything it's wearing and carrying, into a misty cloud for the duration. The spell ends on the target if it drops to 0 Hit Points or if it takes an action to end the spell on itself.",
+				"While in this form, the target's only method of movement is a Fly Speed of 10 feet, and it can hover. The target can enter and occupy the space of another creature. The target has Resistance to Bludgeoning, Piercing, and Slashing damage; it has Immunity to the {@condition Prone|PHB} condition; and it has Advantage on Strength, Dexterity, and Constitution saving throws. The target can pass through narrow openings, but it treats liquids as though they were solid surfaces.",
+				"The target can't talk or manipulate objects, and any objects it was carrying or holding can't be dropped, used, or otherwise interacted with. Finally, the target can't attack or cast spells."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"You can target one additional creature for each spell slot level above 3."
+					]
+				}
+			],
+			"conditionImmune": [
+				"prone"
 			],
 			"miscTags": [
-				"ADV"
+				"ADV",
+				"SCT"
 			],
 			"areaTags": [
 				"ST"
@@ -9017,7 +9365,7 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "incense and powdered diamond worth at least 200 gp, which the spell consumes",
+					"text": "powdered diamond worth 200+ GP, which the spell consumes",
 					"cost": 20000,
 					"consume": true
 				}
@@ -9032,32 +9380,39 @@
 				}
 			],
 			"entries": [
-				"When you cast this spell, you inscribe a glyph that later unleashes a magical effect. You inscribe it either on a surface (such as a table or a section of floor or wall) or within an object that can be closed (such as a book, a scroll, or a treasure chest) to conceal the glyph. The glyph can cover an area no larger than 10 feet in diameter. If the surface or object is moved more than 10 feet from where you cast this spell, the glyph is broken, and the spell ends without being triggered.",
-				"The glyph is nearly invisible and requires a successful Intelligence ({@skill Investigation}) check against your spell save DC to be found.",
-				"You decide what triggers the glyph when you cast the spell. For glyphs inscribed on a surface, the most typical triggers include touching or standing on the glyph, removing another object covering the glyph, approaching within a certain distance of the glyph, or manipulating the object on which the glyph is inscribed. For glyphs inscribed within an object, the most common triggers include opening that object, approaching within a certain distance of the object, or seeing or reading the glyph. Once a glyph is triggered, this spell ends.",
-				"You can further refine the trigger so the spell activates only under certain circumstances or according to physical characteristics (such as height or weight), creature kind (for example, the ward could be set to affect aberrations or drow), or alignment. You can also set conditions for creatures that don't trigger the glyph, such as those who say a certain password.",
-				"When you inscribe the glyph, choose explosive runes or a spell glyph.",
+				"You inscribe a glyph that later unleashes a magical effect. You inscribe it either on a surface (such as a table or a section of floor) or within an object that can be closed (such as a book or chest) to conceal the glyph. The glyph can cover an area no larger than 10 feet in diameter. If the surface or object is moved more than 10 feet from where you cast this spell, the glyph is broken, and the spell ends without being triggered.",
+				"The glyph is nearly imperceptible and requires a successful Wisdom ({@skill perception}) check against your spell save DC to notice.",
+				"When you inscribe the glyph, you set its trigger and choose whether it's an explosive rune or a spell glyph, as explained below.",
 				{
 					"type": "entries",
-					"name": "Explosive Runes",
+					"name": "Set the Trigger",
 					"entries": [
-						"When triggered, the glyph erupts with magical energy in a 20-foot-radius sphere centered on the glyph. The sphere spreads around corners. Each creature in the area must make a Dexterity saving throw. A creature takes {@damage 5d8} acid, cold, fire, lightning, or thunder damage on a failed saving throw (your choice when you create the glyph), or half as much damage on a successful one."
+						"You decide what triggers the glyph when you cast the spell. For glyphs inscribed on a surface, common triggers include touching or stepping on the glyph, removing another object covering it, or approaching within a certain distance of it. For glyphs inscribed within an object, common triggers include opening that object or seeing the glyph. Once a glyph is triggered, this spell ends.",
+						"You can refine the trigger so that only creatures of certain types activate it (for example, the glyph could be set to affect Aberrations). You can also set conditions for creatures that don't trigger the glyph, such as those who say a certain password."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Explosive Rune",
+					"entries": [
+						"When triggered, the glyph erupts with magical energy in a 20-foot-radius Sphere centered on the glyph. Each creature in the area makes a Dexterity saving throw. A creature takes {@damage 5d8} Acid, Cold, Fire, Lightning, or Thunder damage (your choice when you create the glyph) on a failed save or half as much damage on a successful one."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Spell Glyph",
 					"entries": [
-						"You can store a prepared spell of 3rd level or lower in the glyph by casting it as part of creating the glyph. The spell must target a single creature or an area. The spell being stored has no immediate effect when cast in this way. When the glyph is triggered, the stored spell is cast. If the spell has a target, it targets the creature that triggered the glyph. If the spell affects an area, the area is centered on that creature. If the spell summons hostile creatures or creates harmful objects or traps, they appear as close as possible to the intruder and attack it. If the spell requires {@status concentration}, it lasts until the end of its full duration."
+						"You can store a prepared spell of level 3 or lower in the glyph by casting it as part of creating the glyph. The spell must target a single creature or an area. The spell being stored has no immediate effect when cast in this way.",
+						"When the glyph is triggered, the stored spell takes effect. If the spell has a target, it targets the creature that triggered the glyph. If the spell affects an area, the area is centered on that creature. If the spell summons Hostile creatures or creates harmful objects or traps, they appear as close as possible to the intruder and attack it. If the spell requires {@status Concentration|PHB}, it lasts until the end of its full duration."
 					]
 				}
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
-					"name": "At Higher Levels",
+					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"When you cast this spell using a spell slot of 4th level or higher, the damage of an explosive runes glyph increases by {@scaledamage 5d8|3-9|1d8} for each slot level above 3rd. If you create a spell glyph, you can store any spell of up to the same level as the slot you use for the glyph of warding."
+						"The damage of an explosive rune increases by {@scaledamage 5d8|3-9|1d8} for each spell slot level above 3. If you create a spell glyph, you can store any spell of up to the same level as the spell slot you use for the Glyph of Warding."
 					]
 				}
 			],
@@ -9072,7 +9427,7 @@
 				"dexterity"
 			],
 			"abilityCheck": [
-				"intelligence"
+				"wisdom"
 			],
 			"areaTags": [
 				"S"
@@ -10573,46 +10928,57 @@
 				}
 			],
 			"range": {
-				"type": "point",
 				"distance": {
-					"type": "feet",
-					"amount": 150
-				}
+					"amount": 120,
+					"type": "feet"
+				},
+				"type": "point"
 			},
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a pickled octopus tentacle"
+				"m": "pickled octopus tentacle"
 			},
 			"duration": [
 				{
-					"type": "timed",
+					"concentration": true,
 					"duration": {
-						"type": "minute",
-						"amount": 1
+						"upTo": true,
+						"amount": 1,
+						"type": "minute"
 					},
-					"concentration": true
+					"type": "timed"
 				}
 			],
 			"entries": [
-				"You open a gateway to the dark between the stars, a region infested with unknown horrors. A 20-foot-radius sphere of blackness and bitter cold appears, centered on a point within range and lasting for the duration. This void is filled with a cacophony of soft whispers and slurping noises that can be heard up to 30 feet away. No light, magical or otherwise, can illuminate the area, and creatures fully within the area are {@condition blinded}.",
-				"The void creates a warp in the fabric of space, and the area is {@quickref difficult terrain||3}. Any creature that starts its turn in the area takes {@damage 2d6} cold damage. Any creature that ends its turn in the area must succeed on a Dexterity saving throw or take {@damage 2d6} acid damage as milky, otherworldly tentacles rub against it."
+				"You open a gateway to the dark between the stars, a region infested with unknown horrors. A 20-foot-radius sphere of blackness and bitter cold appears, centered on a point with range and lasting for the duration. This void is filled with a cacophony of soft whispers and slurping noises that can be heard up to 30 feet away. No light, magical or otherwise, can illuminate the area, and creatures in the area are {@condition blinded}.",
+				"The void creates a warp in the fabric of space, and the area is difficult terrain. Any creature that starts its turn in the area takes {@damage 2d6} cold damage. Any creature that ends its turn in the area must succeed on a Dexterity saving throw or take {@damage 2d6} acid damage as milky, otherworldly tentacles rub against it."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the radius of the spell increases by 5 feet and both the cold and acid damage each increase by {@scaledamage 2d6|3-9|1d6} for each slot level above 3rd."
+					]
+				}
+			],
+			"areaTags": [
+				"S"
+			],
+			"conditionInflict": [
+				"blinded"
 			],
 			"damageInflict": [
 				"acid",
 				"cold"
 			],
-			"conditionInflict": [
-				"blinded"
+			"miscTags": [
+				"DFT",
+				"SCL"
 			],
 			"savingThrow": [
 				"dexterity"
-			],
-			"miscTags": [
-				"DFT"
-			],
-			"areaTags": [
-				"S"
 			]
 		},
 		{
@@ -11213,6 +11579,61 @@
 			]
 		},
 		{
+			"name": "Irresistible Dance",
+			"source": "PHB",
+			"page": 254,
+			"level": 3,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You force a creature that can hear you within range to make a Wisdom saving throw. On a failure, it begins a comic dance in place: shuffling, tapping feet, and capering for the duration. Creatures that can't be {@condition charmed} are immune to this spell.",
+				"This creature must use all its movement to dance without leaving its space and has disadvantage on Dexterity saving throws and attack rolls. While the target is affected by this spell, creatures have advantage on attack rolls against it. As an action, a dancing creature makes a Wisdom saving throw to regain control of itself, ending the spell on a success."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th-level or higher, you target one additional creature who can hear you within range for each slot level above 3rd."
+					]
+				}
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
 			"name": "Jump",
 			"source": "PHB",
 			"page": 254,
@@ -11385,52 +11806,6 @@
 			"miscTags": [
 				"OBJ",
 				"PRM"
-			]
-		},
-		{
-			"name": "Leomund's Tiny Hut",
-			"source": "PHB",
-			"page": 255,
-			"srd": "Tiny Hut",
-			"level": 3,
-			"school": "V",
-			"time": [
-				{
-					"number": 1,
-					"unit": "minute"
-				}
-			],
-			"range": {
-				"type": "hemisphere",
-				"distance": {
-					"type": "feet",
-					"amount": 10
-				}
-			},
-			"components": {
-				"v": true,
-				"s": true,
-				"m": "a small crystal bead"
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "hour",
-						"amount": 8
-					}
-				}
-			],
-			"meta": {
-				"ritual": true
-			},
-			"entries": [
-				"A 10-foot-radius immobile dome of force springs into existence around and above you and remains stationary for the duration. The spell ends if you leave its area.",
-				"Nine creatures of Medium size or smaller can fit inside the dome with you. The spell fails if its area includes a larger creature or more than nine creatures. Creatures and objects within the dome when you cast this spell can move through it freely. All other creatures and objects are barred from passing through it. Spells and other magical effects can't extend through the dome or be cast through it. The atmosphere inside the space is comfortable and dry, regardless of the weather outside.",
-				"Until the spell ends, you can command the interior to become dimly lit or dark. The dome is opaque from the outside, of any color you choose, but it is transparent from the inside."
-			],
-			"areaTags": [
-				"H"
 			]
 		},
 		{
@@ -12184,7 +12559,7 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "a small bit of honeycomb and jade dust worth at least 10 gp, which the spell consumes",
+					"text": "jade dust worth 10+ GP, which the spell consumes",
 					"cost": 1000,
 					"consume": true
 				}
@@ -12201,9 +12576,9 @@
 				"ritual": true
 			},
 			"entries": [
-				"You implant a message within an object in range, a message that is uttered when a trigger condition is met. Choose an object that you can see and that isn't being worn or carried by another creature. Then speak the message, which must be 25 words or less, though it can be delivered over as long as 10 minutes. Finally, determine the circumstance that will trigger the spell to deliver your message.",
-				"When that circumstance occurs, a magical mouth appears on the object and recites the message in your voice and at the same volume you spoke. If the object you chose has a mouth or something that looks like a mouth (for example, the mouth of a statue), the magical mouth appears there so that the words appear to come from the object's mouth. When you cast this spell, you can have the spell end after it delivers its message, or it can remain and repeat its message whenever the trigger occurs.",
-				"The triggering circumstance can be as general or as detailed as you like, though it must be based on visual or audible conditions that occur within 30 feet of the object. For example, you could instruct the mouth to speak when any creature moves within 30 feet of the object or when a silver bell rings within 30 feet of it."
+				"You implant a message within an object in range—a message that is uttered when a trigger condition is met. Choose an object that you can see and that isn't being worn or carried by another creature. Then speak the message, which must be 25 words or fewer, though it can be delivered over as long as 10 minutes. Finally, determine the circumstance that will trigger the spell to deliver your message.",
+				"When that trigger occurs, a magical mouth appears on the object and recites the message in your voice and at the same volume you spoke. If the object you chose has a mouth or something that looks like a mouth (for example, the mouth of a statue), the magical mouth appears there, so the words appear to come from the object's mouth. When you cast this spell, you can have the spell end after it delivers its message, or it can remain and repeat its message whenever the trigger occurs.",
+				"The trigger can be as general or as detailed as you like, though it must be based on visual or audible conditions that occur within 30 feet of the object. For example, you could instruct the mouth to speak when any creature moves within 30 feet of the object or when a silver bell rings within 30 feet of it."
 			],
 			"miscTags": [
 				"OBJ",
@@ -12447,7 +12822,7 @@
 				}
 			],
 			"level": 3,
-			"school": "V",
+			"school": "A",
 			"time": [
 				{
 					"number": 1,
@@ -12470,14 +12845,14 @@
 				}
 			],
 			"entries": [
-				"As you call out words of restoration, up to six creatures of your choice that you can see within range regain hit points equal to {@dice 1d4} + your spellcasting ability modifier. This spell has no effect on undead or constructs."
+				"As you call out words of restoration, up to six creatures of your choice that you can see within range regain hit points equal to {@dice 2d4} + your spellcasting ability modifier. This spell has no effect on undead or constructs."
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 4th level or higher, the healing increases by {@scaledice 1d4|3-9|1d4} for each slot level above 3rd."
+						"When you cast this spell using a spell slot of 4th level or higher, the healing increases by {@scaledice 2d4|3-9|2d4} for each slot level above 3rd."
 					]
 				}
 			],
@@ -13718,54 +14093,6 @@
 			]
 		},
 		{
-			"name": "Otto's Irresistible Dance",
-			"source": "PHB",
-			"page": 264,
-			"srd": "Irresistible Dance",
-			"basicRules": true,
-			"level": 6,
-			"school": "E",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 30
-				}
-			},
-			"components": {
-				"v": true
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "minute",
-						"amount": 1
-					},
-					"concentration": true
-				}
-			],
-			"entries": [
-				"Choose one creature that you can see within range. The target begins a comic dance in place: shuffling, tapping its feet, and capering for the duration. Creatures that can't be {@condition charmed} are immune to this spell.",
-				"A dancing creature must use all its movement to dance without leaving its space and has disadvantage on Dexterity saving throws and attack rolls. While the target is affected by this spell, other creatures have advantage on attack rolls against it. As an action, a dancing creature makes a Wisdom saving throw to regain control of itself. On a successful save, the spell ends."
-			],
-			"savingThrow": [
-				"wisdom"
-			],
-			"miscTags": [
-				"SGT"
-			],
-			"areaTags": [
-				"ST"
-			]
-		},
-		{
 			"name": "Pass without Trace",
 			"source": "PHB",
 			"page": 264,
@@ -14194,11 +14521,13 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "action"
+					"unit": "action",
+					"note": "Overgrowth"
 				},
 				{
 					"number": 8,
-					"unit": "hour"
+					"unit": "hour",
+					"note": "Enrichment"
 				}
 			],
 			"range": {
@@ -14218,10 +14547,21 @@
 				}
 			],
 			"entries": [
-				"This spell channels vitality into plants within a specific area. There are two possible uses for the spell, granting either immediate or long-term benefits.",
-				"If you cast this spell using 1 action, choose a point within range. All normal plants in a 100-foot radius centered on that point become thick and overgrown. A creature moving through the area must spend 4 feet of movement for every 1 foot it moves.",
-				"You can exclude one or more areas of any size within the spell's area from being affected.",
-				"If you cast this spell over 8 hours, you enrich the land. All plants in a half-mile radius centered on a point within range become enriched for 1 year. The plants yield twice the normal amount of food when harvested."
+				"This spell channels vitality into plants. The casting time you use determines whether the spell has the Overgrowth or the Enrichment effect below.",
+				{
+					"type": "entries",
+					"name": "Overgrowth",
+					"entries": [
+						"Choose a point within range. All normal plants in a 100-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on that point become thick and overgrown. A creature moving through that area must spend 4 feet of movement for every 1 foot it moves. You can exclude one or more areas of any size within the spell's area from being affected."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Enrichment",
+					"entries": [
+						"All plants in a half-mile radius centered on a point within range become enriched for 365 days. The plants yield twice the normal amount of food when harvested. They can benefit from only one Plant Growth per year."
+					]
+				}
 			],
 			"miscTags": [
 				"DFT"
@@ -14493,7 +14833,7 @@
 				}
 			],
 			"level": 2,
-			"school": "V",
+			"school": "A",
 			"time": [
 				{
 					"number": 10,
@@ -14516,34 +14856,19 @@
 				}
 			],
 			"entries": [
-				"Up to six creatures of your choice that you can see within range each regain hit points equal to {@dice 2d8} + your spellcasting ability modifier. This spell has no effect on undead or constructs."
+				"Up to six creatures of your choice who remain within range for the spell's entire casting gain the benefits of a Short Rest and also regain {@dice 2d8} Hit Points. A creature can't be affected by this spell again until that creature finishes a Long Rest."
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 3rd level or higher, the healing increases by {@scaledice 2d8|2-9|1d8} for each slot level above 2nd."
+						"The healing increases by {@scaledice 2d8|2-9|1d8} for each spell slot level above 2."
 					]
 				}
 			],
-			"affectsCreatureType": [
-				"aberration",
-				"beast",
-				"celestial",
-				"dragon",
-				"elemental",
-				"fey",
-				"fiend",
-				"giant",
-				"humanoid",
-				"monstrosity",
-				"ooze",
-				"plant"
-			],
 			"miscTags": [
-				"HL",
-				"SGT"
+				"HL"
 			],
 			"areaTags": [
 				"MT"
@@ -15364,11 +15689,8 @@
 				}
 			],
 			"entries": [
-				"A black beam of enervating energy springs from your finger toward a creature within range. Make a ranged spell attack against the target. On a hit, the target deals only half damage with weapon attacks that use Strength until the spell ends.",
-				"At the end of each of the target's turns, it can make a Constitution saving throw against the spell. On a success, the spell ends."
-			],
-			"spellAttack": [
-				"R"
+				"A beam of enervating energy shoots from you toward a creature within range. The target must make a Constitution saving throw. On a successful save, the target has Disadvantage on the next attack roll it makes until the start of your next turn.",
+				"On a failed save, the target has Disadvantage on Strength-based D20 Test for the duration. During that time, it also subtracts {@dice 1d8} from all its damage rolls. The target repeats the save at the end of each of its turns, ending the spell on a success."
 			],
 			"savingThrow": [
 				"constitution"
@@ -15996,7 +16318,7 @@
 			"page": 272,
 			"srd": true,
 			"level": 2,
-			"school": "T",
+			"school": "A",
 			"time": [
 				{
 					"number": 1,
@@ -16012,7 +16334,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "powdered corn extract and a twisted loop of parchment"
+				"m": "a segment of rope"
 			},
 			"duration": [
 				{
@@ -17184,6 +17506,63 @@
 			]
 		},
 		{
+			"name": "Sonic Wave",
+			"source": "PHB",
+			"level": 277,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"amount": 30,
+					"type": "feet"
+				},
+				"type": "cone"
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You forcefully clasp your hands and a shockwave of booming force shoots forth from you and emits a boom audible out to 500 feet. All creatures in a 30-foot cone must succeed on a Constitution saving throw or take {@damage 4d8} thunder damage, fall {@condition prone}, and be {@condition deafened} for 1 minute. On a success, creatures take half damage and are not knocked prone or deafened.",
+				"A creature can repeat this saving throw at the end of each of its turns, ending the effect on a success."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th-level or higher, the damage increases by {@scaledamage 4d8|3-9|1d8}, and the cone increases by 5 feet for each slot level above 3rd."
+					]
+				}
+			],
+			"areaTags": [
+				"N"
+			],
+			"conditionInflict": [
+				"deafened",
+				"prone"
+			],
+			"damageInflict": [
+				"thunder"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"savingThrow": [
+				"constitution"
+			]
+		},
+		{
 			"name": "Sorcerous Burst",
 			"source": "PHB",
 			"page": 277,
@@ -17646,7 +18025,8 @@
 					"duration": {
 						"type": "minute",
 						"amount": 1
-					}
+					},
+					"concentration": true
 				}
 			],
 			"entries": [
@@ -19025,6 +19405,59 @@
 			]
 		},
 		{
+			"name": "Tiny Hut",
+			"source": "PHB",
+			"page": 283,
+			"srd": true,
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "hemisphere",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a pearl cut perfectly in half"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"A 10-foot-radius immobile dome of arcane force springs into existence around and above you and remains stationary for the duration. The spell ends if you leave its area.",
+				"Nine creatures of Medium size or smaller can fit inside the dome with you. The spell fails if its area includes any Large creatures or more than nine creatures. Creatures and objects within the dome when you cast this spell can move through it freely. All other creatures and objects cannot pass through it. Spells and other magical effects cannot extend through the dome or be cast through it, however they can still occur within the dome. The atmosphere inside the dome is comfortable and dry, regardless of the weather outside.",
+				"Until the spell ends, you can command the interior to be dimly lit or dark. The dome is opaque and dull in color as to blend in with surroundings. It is transparent from the inside.",
+				{
+					"type": "entries",
+					"name": "Statistics",
+					"entries": [
+						"The dome has 100 hit points and Armor Class equal to your Spell save DC. It is immune to poison, psychic, and non-magical bludgeoning, piercing, and slashing damage, it is vulnerable to force and all magical bludgeoning, piercing, and slashing damage, and it is resistant to all other damage types. A disintegrate spell destroys it instantly."
+					]
+				}
+			],
+			"areaTags": [
+				"H"
+			]
+		},
+		{
 			"name": "Torrent",
 			"source": "PHB",
 			"level": 283,
@@ -20212,7 +20645,7 @@
 			],
 			"entries": [
 				"A wall of strong wind rises from the ground at a point you choose within range. You can make the wall up to 50 feet long, 15 feet high, and 1 foot thick. You can shape the wall in any way you choose so long as it makes one continuous path along the ground. The wall lasts for the duration.",
-				"When the wall appears, each creature within its area must make a Strength saving throw. A creature takes {@damage 3d8} bludgeoning damage on a failed save, or half as much damage on a successful one.",
+				"When the wall appears, each creature within its area must make a Strength saving throw. A creature takes {@damage 4d8} bludgeoning damage on a failed save, or half as much damage on a successful one.",
 				"The strong wind keeps fog, smoke, and other gases at bay. Small or smaller flying creatures or objects can't pass through the wall. Loose, lightweight materials brought into the wall fly upward. Arrows, bolts, and other ordinary projectiles launched at targets behind the wall are deflected upward and automatically miss. (Boulders hurled by giants or siege engines, and similar projectiles, are unaffected.) Creatures in {@spell gaseous form} can't pass through it."
 			],
 			"damageInflict": [
