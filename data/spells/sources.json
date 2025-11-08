@@ -1129,8 +1129,16 @@
 					"source": "PHB"
 				},
 				{
+					"name": "Warlock",
+					"source": "PHB"
+				},
+				{
 					"name": "Wizard",
 					"source": "PHB"
+				},
+				{
+					"name": "Artificer",
+					"source": "TCE"
 				}
 			],
 			"classVariant": [
@@ -2944,11 +2952,19 @@
 		"Guidance": {
 			"class": [
 				{
+					"name": "Bard",
+					"source": "PHB"
+				},
+				{
 					"name": "Cleric",
 					"source": "PHB"
 				},
 				{
 					"name": "Druid",
+					"source": "PHB"
+				},
+				{
+					"name": "Wizard",
 					"source": "PHB"
 				},
 				{
