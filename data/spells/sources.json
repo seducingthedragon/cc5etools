@@ -561,6 +561,18 @@
 				}
 			]
 		},
+		"Arcane Lance": {
+			"class": [
+				{
+					"name": "Sorcerer",
+					"source": "PHB"
+				},
+				{
+					"name": "Wizard",
+					"source": "PHB"
+				}
+			]
+		},
 		"Arcane Lock": {
 			"class": [
 				{
@@ -2121,6 +2133,10 @@
 				{
 					"name": "Ranger",
 					"source": "PHB"
+				},
+				{
+					"name": "Artificer",
+					"source": "TCE"
 				}
 			]
 		},
@@ -2751,6 +2767,14 @@
 				}
 			]
 		},
+		"Ghastly Flight": {
+			"class": [
+				{
+					"name": "Warlock",
+					"source": "PHB"
+				}
+			]
+		},
 		"Giant Insect": {
 			"class": [
 				{
@@ -2767,6 +2791,14 @@
 				},
 				{
 					"name": "Warlock",
+					"source": "PHB"
+				}
+			]
+		},
+		"Glitterbeam": {
+			"class": [
+				{
+					"name": "Bard",
 					"source": "PHB"
 				}
 			]
@@ -5075,6 +5107,14 @@
 				}
 			]
 		},
+		"Sorcerous Burst": {
+			"class": [
+				{
+					"name": "Sorcerer",
+					"source": "PHB"
+				}
+			]
+		},
 		"Spare the Dying": {
 			"class": [
 				{
@@ -5518,6 +5558,18 @@
 				},
 				{
 					"name": "Wizard",
+					"source": "PHB"
+				}
+			]
+		},
+		"Torrent": {
+			"class": [
+				{
+					"name": "Druid",
+					"source": "PHB"
+				},
+				{
+					"name": "Sorcerer",
 					"source": "PHB"
 				}
 			]
