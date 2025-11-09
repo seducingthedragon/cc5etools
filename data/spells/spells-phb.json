@@ -759,7 +759,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "either a lump of alum soaked in vinegar for the antipathy effect or a drop of honey for the sympathy effect"
+				"m": "a mix of vinegar and honey"
 			},
 			"duration": [
 				{
@@ -1898,6 +1898,55 @@
 			},
 			"entries": [
 				"You touch a willing beast. For the duration of the spell, you can use your action to see through the beast's eyes and hear what it hears, and continue to do so until you use your action to return to your normal senses. While perceiving through the beast's senses, you gain the benefits of any special senses possessed by that creature, though you are {@condition blinded} and {@condition deafened} to your own surroundings."
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Befuddlement",
+			"source": "PHB",
+			"page": 217,
+			"srd": true,
+			"level": 8,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a handful of clay, crystal, glass, or mineral spheres"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You blast the mind of a creature that you can see within range, attempting to shatter its intellect and personality. The target takes {@damage 4d6} psychic damage and must make an Intelligence saving throw.",
+				"On a failed save, the creature's Intelligence and Charisma scores become 1. The creature can't cast spells, activate magic items, understand language, or communicate in any intelligible way. The creature can, however, identify its friends, follow them, and even protect them.",
+				"At the end of every 30 days, the creature can repeat its saving throw against this spell. If it succeeds on its saving throw, the spell ends.",
+				"The spell can also be ended by {@spell greater restoration}, {@spell heal}, or {@spell wish}."
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"miscTags": [
+				"SGT"
 			],
 			"areaTags": [
 				"ST"
@@ -7633,55 +7682,6 @@
 			]
 		},
 		{
-			"name": "Feeblemind",
-			"source": "PHB",
-			"page": 239,
-			"srd": true,
-			"level": 8,
-			"school": "E",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 150
-				}
-			},
-			"components": {
-				"v": true,
-				"s": true,
-				"m": "a handful of clay, crystal, glass, or mineral spheres"
-			},
-			"duration": [
-				{
-					"type": "instant"
-				}
-			],
-			"entries": [
-				"You blast the mind of a creature that you can see within range, attempting to shatter its intellect and personality. The target takes {@damage 4d6} psychic damage and must make an Intelligence saving throw.",
-				"On a failed save, the creature's Intelligence and Charisma scores become 1. The creature can't cast spells, activate magic items, understand language, or communicate in any intelligible way. The creature can, however, identify its friends, follow them, and even protect them.",
-				"At the end of every 30 days, the creature can repeat its saving throw against this spell. If it succeeds on its saving throw, the spell ends.",
-				"The spell can also be ended by {@spell greater restoration}, {@spell heal}, or {@spell wish}."
-			],
-			"damageInflict": [
-				"psychic"
-			],
-			"savingThrow": [
-				"intelligence"
-			],
-			"miscTags": [
-				"SGT"
-			],
-			"areaTags": [
-				"ST"
-			]
-		},
-		{
 			"name": "Feign Death",
 			"source": "PHB",
 			"page": 240,
@@ -11442,7 +11442,7 @@
 			"page": 253,
 			"srd": true,
 			"level": 8,
-			"school": "C",
+			"school": "V",
 			"time": [
 				{
 					"number": 1,
@@ -12920,7 +12920,7 @@
 			"srd": true,
 			"basicRules": true,
 			"level": 9,
-			"school": "V",
+			"school": "A",
 			"time": [
 				{
 					"number": 1,
@@ -14912,7 +14912,7 @@
 			"source": "PHB",
 			"page": 266,
 			"level": 9,
-			"school": "V",
+			"school": "A",
 			"time": [
 				{
 					"number": 1,
@@ -14922,7 +14922,8 @@
 			"range": {
 				"type": "point",
 				"distance": {
-					"type": "touch"
+					"type": "feet",
+					"amount": 60
 				}
 			},
 			"components": {
@@ -14965,7 +14966,7 @@
 			"srd": true,
 			"basicRules": true,
 			"level": 9,
-			"school": "E",
+			"school": "N",
 			"time": [
 				{
 					"number": 1,
@@ -14988,7 +14989,7 @@
 				}
 			],
 			"entries": [
-				"You utter a word of power that can compel one creature you can see within range to die instantly. If the creature you choose has 100 hit points or fewer, it dies. Otherwise, the spell has no effect."
+				"You utter a word of power that drains the life out of one creature you can see within range instantly. If the target has 100 Hit Points or fewer, it dies. Otherwise, it takes {@damage 12d12} Psychic damage."
 			],
 			"miscTags": [
 				"SGT"
@@ -19052,7 +19053,7 @@
 			"source": "PHB",
 			"page": 281,
 			"level": 8,
-			"school": "V",
+			"school": "D",
 			"time": [
 				{
 					"number": 1,
@@ -19619,7 +19620,7 @@
 			],
 			"entries": [
 				"You briefly stop the flow of time for everyone but yourself. No time passes for other creatures, while you take {@dice 1d4 + 1} turns in a row, during which you can use actions and move as normal.",
-				"This spell ends if one of the actions you use during this period, or any effects that you create during this period, affects a creature other than you or an object being worn or carried by someone other than you. In addition, the spell ends if you move to a place more than 1,000 feet from the location where you cast it."
+				"This spell ends if one of the actions you use during this period, or any magical effects that you create during this period, affects a creature other than you or an object being worn or carried by someone other than you while time has stopped. In addition, the spell ends if you move to a place more than 1,000 feet from the location where you cast it."
 			]
 		},
 		{
