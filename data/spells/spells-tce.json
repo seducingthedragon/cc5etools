@@ -171,25 +171,18 @@
 			"name": "Booming Blade",
 			"source": "TCE",
 			"page": 106,
-			"otherSources": [
-				{
-					"source": "SCAG",
-					"page": 142
-				}
-			],
-			"level": 0,
 			"school": "V",
+			"level": 0,
 			"time": [
 				{
 					"number": 1,
-					"unit": "action"
+					"unit": "bonus"
 				}
 			],
 			"range": {
-				"type": "radius",
+				"type": "point",
 				"distance": {
-					"type": "feet",
-					"amount": 5
+					"type": "self"
 				}
 			},
 			"components": {
@@ -201,16 +194,25 @@
 			},
 			"duration": [
 				{
-					"type": "timed",
 					"duration": {
-						"type": "round",
-						"amount": 1
-					}
+						"amount": 1,
+						"type": "round"
+					},
+					"type": "timed"
 				}
 			],
 			"entries": [
-				"You brandish the weapon used in the spell's casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack's normal effects and then becomes sheathed in booming energy until the start of your next turn. If the target willingly moves 5 feet or more before then, the target takes {@damage 1d8} thunder damage, and the spell ends.",
-				"This spell's damage increases when you reach certain levels. At 5th level, the melee attack deals an extra {@damage 1d8} thunder damage to the target on a hit, and the damage the target takes for moving increases to {@damage 2d8}. Both damage rolls increase by 1d8 at 11th level ({@damage 2d8} and {@damage 3d8}) and again at 17th level ({@damage 3d8} and {@damage 4d8})."
+				"As a bonus action, you wreathe the melee weapon used in the casting of this spell with thunderous magic. Until the start of your next turn, your weapon attacks deal thunder damage in place of the weapon's normal damage type.",
+				"When you deal thunder damage with this spell, you can envelop your target in thunderous energy until the start of your next turn. If you have the Extra Attack feature or you make multiple weapon attacks on different creatures, only one of them will become enveloped. If the target willingly moves 5 feet or more before then, this thunderous energy explodes and it takes {@damage 1d6} thunder damage, then the energy dissipates."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"This spell's damage increases when you reach certain levels. At 5th level, the melee attack deals an extra {@damage 1d8} thunder damage to the target on a hit, and the damage the target takes for moving increases to {@damage 2d8}. Both damage rolls increase by 1d8 at 11th level ({@damage 2d8} and {@damage 3d8}) and again at 17th level ({@damage 3d8} and {@damage 4d8})"
+					]
+				}
 			],
 			"scalingLevelDice": [
 				{
@@ -234,16 +236,9 @@
 			"damageInflict": [
 				"thunder"
 			],
-			"spellAttack": [
-				"M"
-			],
 			"miscTags": [
-				"AAD",
 				"SCL"
 			],
-			"areaTags": [
-				"ST"
-			]
 		},
 		{
 			"name": "Dream of the Blue Veil",
@@ -688,8 +683,16 @@
 				}
 			],
 			"entries": [
-				"You create a lash of lightning energy that strikes at one creature of your choice that you can see within 15 feet of you. The target must succeed on a Strength saving throw or be pulled up to 10 feet in a straight line toward you and then take {@damage 1d8} lightning damage if it is within 5 feet of you.",
-				"This spell's damage increases by {@damage 1d8} when you reach 5th level ({@damage 2d8}), 11th level ({@damage 3d8}), and 17th level ({@damage 4d8})."
+				"You create a lash of arcane lightning and make a ranged spell attack at a creature of your choice you can see within 15 feet. On a hit, the target takes {@damage 1d8} lightning damage and then, it must succeed on a Strength saving throw. On a failed save, the target is pulled up to 10 feet closer to you."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Cantrip Upgrade",
+					"entries": [
+						"The damage increases by {@damage 1d8} when you reach levels 5 ({@damage 2d8}), 11 ({@damage 3d8}), and 17 ({@damage 4d8}). Additionally, the range of this spell increases at 5th level (20 feet), 11th level (25 feet), and 17th level (30 feet)."
+					]
+				}
 			],
 			"scalingLevelDice": {
 				"label": "lightning damage",
@@ -705,6 +708,9 @@
 			],
 			"savingThrow": [
 				"strength"
+			],
+			"spellAttack": [
+				"R"
 			],
 			"miscTags": [
 				"FMV",
@@ -1480,22 +1486,23 @@
 				}
 			],
 			"level": 0,
-			"school": "C",
+			"school": "A",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"unit": "special",
+					"condition": "action or reaction"
 				}
 			],
 			"range": {
-				"type": "radius",
+				"type": "emanation",
 				"distance": {
 					"type": "feet",
 					"amount": 5
 				}
 			},
 			"components": {
-				"v": true
+				"v": true,
+				"s": true
 			},
 			"duration": [
 				{
@@ -1503,8 +1510,23 @@
 				}
 			],
 			"entries": [
-				"You create a momentary circle of spectral blades that sweep around you. All other creatures within 5 feet of you must succeed on a Dexterity saving throw or take {@damage 1d6} force damage.",
-				"This spell's damage increases by {@damage 1d6} when you reach 5th level ({@damage 2d6}), 11th level ({@damage 3d6}), and 17th level ({@damage 4d6})."
+				"You conjure a defensive ring of spectral blades which sweep around you. All other creatures within 5 feet of you must succeed on a Dexterity saving throw or take 1d6 force damage.",
+				{
+					"type": "entries",
+					"name": "Special Casting Time",
+					"entries": [
+						"You can cast this spell as either an Action or as a Reaction. Your reaction trigger is when you are targetted with a melee attack, either with a weapon or a spell. The attack does not have to hit in order to trigger this reaction."
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Cantrip Upgrade",
+					"entries": [
+						"This spell's damage increases by {@damage 1d6} when you reach 5th level ({@damage 2d6}), 11th level ({@damage 3d6}), and 17th level ({@damage 4d6})."
+					]
+				}
 			],
 			"scalingLevelDice": {
 				"label": "force damage",
@@ -1522,10 +1544,11 @@
 				"dexterity"
 			],
 			"miscTags": [
-				"SCL"
+				"SCL",
+				"SGT"
 			],
 			"areaTags": [
-				"S"
+				"ST"
 			]
 		},
 		{
