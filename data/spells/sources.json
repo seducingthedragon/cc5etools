@@ -6349,6 +6349,11 @@
 			],
 			"classVariant": [
 				{
+					"name": "Bard",
+					"source": "PHB",
+					"definedInSource": "TCE"
+				},
+				{
 					"name": "Sorcerer",
 					"source": "PHB",
 					"definedInSource": "TCE"
