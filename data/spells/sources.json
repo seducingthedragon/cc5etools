@@ -9779,6 +9779,25 @@
 				}
 			]
 		},
+		"Vengeful Blade": {
+			"classVariant": [
+				{
+					"name": "Sorcerer",
+					"source": "PHB",
+					"definedInSource": "BMT"
+				},
+				{
+					"name": "Warlock",
+					"source": "PHB",
+					"definedInSource": "BMT"
+				},
+				{
+					"name": "Wizard",
+					"source": "PHB",
+					"definedInSource": "BMT"
+				}
+			]
+		},
 		"Whelm Weapon": {
 			"classVariant": [
 				{
