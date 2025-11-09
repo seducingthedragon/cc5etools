@@ -469,6 +469,40 @@
 			]
 		},
 		{
+			"name": "Concealed Shot",
+			"source": "BMT",
+			"level": 50,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a Ranged weapon"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"A Ranged weapon you touch is made supernaturally subtle. For the duration, when you make a ranged attack using the weapon, the weapon or ammunition you're using becomes {@condition invisible} while in flight and the weapon becomes silent. If the weapon produces smoke or light, the spell suppresses these effects. The projectile or ammunition you're using becomes visible again after the attack hits or misses. If you are hidden and the target is 80 feet or further from you, the attack doesn't reveal your location."
+			]
+		},
+		{
 			"name": "Confounding Shadows",
 			"source": "BMT",
 			"page": 50,
@@ -2560,6 +2594,56 @@
 			],
 			"miscTags": [
 				"THP"
+			]
+		},
+		{
+			"name": "Vengeful Blade",
+			"source": "BMT",
+			"page": 50,
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a melee weapon worth at least 1 gp",
+					"cost": 100
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You brandish the weapon used in the spell's casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack's normal effects and then radiates a dark aura of energy until the start of your next turn. If the target makes an attack or casts a spell before then, the target takes {@damage 1d8} necrotic damage and the spell ends."
+			]
+				"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Cantrip Upgrade",
+					"entries": [
+						"This spell's damage increases when you reach certain levels. At 5th level, the melee attack deals an extra {@damage 1d8} necrotic damage to the target on a hit, and the damage the target takes for making an attack or casting a spell increases to {@dice 2d8}. Both damage rolls increase by {@dice 1d8} at 11th level ({@dice 2d8} and {@dice 3d8}) and again at 17th level ({@dice 3d8} and {@dice 4d8})."
+					]
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"miscTags": [
+				"AAD",
+				"SCL"
 			]
 		},
 		{
