@@ -8942,6 +8942,35 @@
 				}
 			]
 		},
+		"Concealed Shot": {
+			"classVariant": [
+				{
+					"name": "Bard",
+					"source": "PHB",
+					"definedInSource": "BMT"
+				},
+				{
+					"name": "Ranger",
+					"source": "PHB",
+					"definedInSource": "BMT"
+				},
+				{
+					"name": "Sorcerer",
+					"source": "PHB",
+					"definedInSource": "BMT"
+				},
+				{
+					"name": "Warlock",
+					"source": "PHB",
+					"definedInSource": "BMT"
+				},
+				{
+					"name": "Wizard",
+					"source": "PHB",
+					"definedInSource": "BMT"
+				}
+			]
+		},
 		"Confounding Shadows": {
 			"classVariant": [
 				{
