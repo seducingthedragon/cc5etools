@@ -9242,6 +9242,30 @@
 				}
 			]
 		},
+		"Grim Harvest": {
+			"classVariant": [
+				{
+					"name": "Cleric",
+					"source": "PHB",
+					"definedInSource": "BMT"
+				},
+				{
+					"name": "Druid",
+					"source": "PHB",
+					"definedInSource": "BMT"
+				},
+				{
+					"name": "Warlock",
+					"source": "PHB",
+					"definedInSource": "BMT"
+				},
+				{
+					"name": "Wizard",
+					"source": "PHB",
+					"definedInSource": "BMT"
+				}
+			]
+		},
 		"Gust Barrier": {
 			"classVariant": [
 				{
