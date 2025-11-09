@@ -848,7 +848,7 @@
 			"entries": [
 				"You create an invisible, magical eye within range that hovers in the air for the duration.",
 				"You mentally receive visual information from the eye, which has normal vision and {@sense darkvision} out to 30 feet. The eye can look in every direction.",
-				"As an action, you can move the eye up to 30 feet in any direction. There is no limit to how far away from you the eye can move, but it can't enter another plane of existence. A solid barrier blocks the eye's movement, but the eye can pass through an opening as small as 1 inch in diameter."
+				"As a bonus action, you can move the eye up to 30 feet in any direction. There is no limit to how far away from you the eye can move, but it can't enter another plane of existence. A solid barrier blocks the eye's movement, but the eye can pass through an opening as small as 1 inch in diameter."
 			]
 		},
 		{
@@ -1493,8 +1493,8 @@
 				}
 			],
 			"entries": [
-				"After spending the casting time tracing magical pathways within a precious gemstone, you touch a Huge or smaller beast or plant. The target must have either no Intelligence score or an Intelligence of 3 or less. The target gains an Intelligence of 10. The target also gains the ability to speak one language you know. If the target is a plant, it gains the ability to move its limbs, roots, vines, creepers, and so forth, and it gains senses similar to a human's. Your DM chooses statistics appropriate for the awakened plant, such as the statistics for the {@creature awakened shrub} or the {@creature awakened tree}.",
-				"The awakened beast or plant is {@condition charmed} by you for 30 days or until you or your companions do anything harmful to it. When the {@condition charmed} condition ends, the awakened creature chooses whether to remain friendly to you, based on how you treated it while it was {@condition charmed}."
+				"You spend the casting time tracing magical pathways within a precious gemstone, and then touch the target. The target must be either a {@filter Beast|bestiary|type=beast|intelligence=[0;3]|miscellaneous=!swarm} or {@filter Plant|bestiary|type=plant|intelligence=[0;3]|miscellaneous=!swarm} creature with an Intelligence of 3 or less or a natural plant that isn't a creature. The target gains an Intelligence of 10 and the ability to speak one language you know. If the target is a natural plant, it becomes a Plant creature and gains the ability to move its limbs, roots, vines, creepers, and so forth, and it gains senses similar to a human's. The DM chooses statistics appropriate for the awakened Plant, such as the statistics for the {@creature Awakened Shrub|MM} or {@creature Awakened Tree|MM} in the {@book Monster Manual|MM}.",
+				"The awakened target has the {@condition Charmed|PHB} condition for 30 days or until you or your allies deal damage to it. When that condition ends, the awakened creature chooses its attitude toward you."
 			],
 			"conditionInflict": [
 				"charmed"
@@ -3037,7 +3037,7 @@
 				}
 			],
 			"range": {
-				"type": "radius",
+				"type": "emanation",
 				"distance": {
 					"type": "feet",
 					"amount": 30
@@ -3057,7 +3057,7 @@
 				}
 			],
 			"entries": [
-				"Divine energy radiates from you, distorting and diffusing magical energy within 30 feet of you. Until the spell ends, the sphere moves with you, centered on you. For the duration, each friendly creature in the area (including you) has advantage on saving throws against spells and other magical effects. Additionally, when an affected creature succeeds on a saving throw made against a spell or magical effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw."
+				"An aura radiates from you in a 30-foot Emanation for the duration. While in the aura, you and your allies have Advantage on saving throws against spells and other magical effects. When an affected creature makes a saving throw against a spell or magical effect that allows a save to take only half damage, it takes no damage if it succeeds on the save."
 			],
 			"miscTags": [
 				"ADV"
@@ -3210,7 +3210,7 @@
 			"page": 222,
 			"srd": true,
 			"level": 5,
-			"school": "C",
+			"school": "V",
 			"time": [
 				{
 					"number": 1,
@@ -3490,26 +3490,30 @@
 			},
 			"duration": [
 				{
-					"type": "instant"
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
 				}
 			],
 			"meta": {
 				"ritual": true
 			},
 			"entries": [
-				"You briefly become one with nature and gain knowledge of the surrounding territory. In the outdoors, the spell gives you knowledge of the land within 3 miles of you. In caves and other natural underground settings, the radius is limited to 300 feet. The spell doesn't function where nature has been replaced by construction, such as in dungeons and towns.",
-				"You instantly gain knowledge of up to three facts of your choice about any of the following subjects as they relate to the area:",
+				"You commune with nature spirits and gain knowledge of the surrounding area. In the outdoors, the spell gives you knowledge of the area within 3 miles of you. In caves and other natural underground settings, the radius is limited to 300 feet. The spell doesn't function where nature has been replaced by construction, such as in castles and settlements.",
+				"Choose three of the following facts; you learn those facts as they pertain to the spell's area:",
 				{
 					"type": "list",
 					"items": [
-						"terrain and bodies of water",
-						"prevalent plants, minerals, animals, or peoples",
-						"powerful celestials, fey, fiends, elementals, or undead",
-						"influence from other planes of existence",
-						"buildings"
+						"Locations of settlements and buildings",
+						"Locations of portals to or influence from other planes of existence",
+						"Location of powerful celestials, fey, fiends, elementals, or undead",
+						"The most prevalent plants, minerals, animals, or peoples (your choice)",
+						"Locations of bodies of water and/or terrain"
 					]
 				},
-				"For example, you could determine the location of powerful undead in the area, the location of major sources of safe drinking water, and the location of any nearby towns."
+				"For example, you could determine the location of a powerful monster in the area, the locations of bodies of water, and the locations of any towns."
 			]
 		},
 		{
@@ -6007,7 +6011,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "holy water or powdered silver and iron"
+				"m": "powered silver and iron in holy water"
 			},
 			"duration": [
 				{
@@ -8299,14 +8303,14 @@
 				}
 			],
 			"entries": [
-				"A vertical column of divine fire roars down from the heavens in a location you specify. Each creature in a 10-foot-radius, 40-foot-high cylinder centered on a point within range must make a Dexterity saving throw. A creature takes {@damage 4d6} fire damage and {@damage 4d6} radiant damage on a failed save, or half as much damage on a successful one."
+				"A vertical column of divine fire roars down from the heavens in a location you specify. Each creature in a 10-foot-radius, 40-foot-high cylinder centered on a point within range must make a Dexterity saving throw. A creature takes {@damage 5d6} fire damage and {@damage 4d6} radiant damage on a failed save, or half as much damage on a successful one."
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 6th level or higher, the fire damage or the radiant damage (your choice) increases by {@scaledamage 4d6|5-9|1d6} for each slot level above 5th."
+						"When you cast this spell using a spell slot of 6th level or higher, the fire damage or the radiant damage (your choice) increases by {@scaledamage 5d6|5-9|1d6} for each slot level above 5th."
 					]
 				}
 			],
@@ -8783,6 +8787,61 @@
 			]
 		},
 		{
+			"name": "Fount of Moonlight",
+			"source": "PHB",
+			"page": 244,
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"A cool light wreathes your body for the duration, emitting Bright Light in a 20-foot radius and Dim Light for an additional 20 feet.",
+				"Until the spell ends, you have Resistance to Radiant damage, and your melee attacks deal an extra {@damage 2d6} Radiant damage on a hit.",
+				"In addition, immediately after you take damage from a creature you can see within 60 feet of yourself, you can take a Reaction to force the creature to make a Constitution saving throw. On a failed save, the creature has the {@condition Blinded|PHB} condition until the end of your next turn."
+			],
+			"damageResist": [
+				"radiant"
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"AAD",
+				"LGT",
+				"SGT"
+			]
+		},
+		{
 			"name": "Freedom of Movement",
 			"source": "PHB",
 			"page": 244,
@@ -8805,7 +8864,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a leather strap, bound around the arm or a similar appendage"
+				"m": "a leather strap"
 			},
 			"duration": [
 				{
@@ -8817,8 +8876,17 @@
 				}
 			],
 			"entries": [
-				"You touch a willing creature. For the duration, the target's movement is unaffected by {@quickref difficult terrain||3}, and spells and other magical effects can neither reduce the target's speed nor cause the target to be {@condition paralyzed} or {@condition restrained}.",
-				"The target can also spend 5 feet of movement to automatically escape from nonmagical restraints, such as manacles or a creature that has it {@condition grappled}. Finally, being underwater imposes no penalties on the target's movement or attacks."
+				"You touch a willing creature. For the duration, the target's movement is unaffected by Difficult Terrain, and spells and other magical effects can neither reduce the target's Speed nor cause the target to have the {@condition Paralyzed|PHB} or {@condition Restrained|PHB} conditions. The target also has a Swim Speed equal to its Speed.",
+				"In addition, the target can spend 5 feet of movement to automatically escape from nonmagical restraints, such as manacles or a creature imposing the {@condition Grappled|PHB} condition on it."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"You can target one additional creature for each spell slot level above 4."
+					]
+				}
 			],
 			"conditionImmune": [
 				"paralyzed",
@@ -10019,7 +10087,7 @@
 			"page": 249,
 			"srd": true,
 			"level": 5,
-			"school": "V",
+			"school": "A",
 			"time": [
 				{
 					"number": 24,
@@ -10050,77 +10118,95 @@
 				}
 			],
 			"entries": [
-				"You touch a point and infuse an area around it with holy (or unholy) power. The area can have a radius up to 60 feet, and the spell fails if the radius includes an area already under the effect a hallow spell. The affected area is subject to the following effects.",
-				"First, celestials, elementals, fey, fiends, and undead can't enter the area, nor can such creatures charm, frighten, or possess creatures within it. Any creature {@condition charmed}, {@condition frightened}, or possessed by such a creature is no longer {@condition charmed}, {@condition frightened}, or possessed upon entering the area. You can exclude one or more of those types of creatures from this effect.",
-				"Second, you can bind an extra effect to the area. Choose the effect from the following list, or choose an effect offered by the DM. Some of these effects apply to creatures in the area; you can designate whether the effect applies to all creatures, creatures that follow a specific deity or leader, or creatures of a specific sort, such as orcs or trolls. When a creature that would be affected enters the spell's area for the first time on a turn or starts its turn there, it can make a Charisma saving throw. On a success, the creature ignores the extra effect until it leaves the area.",
+				"You touch a point and infuse an area around it with holy or unholy power. The area can have a radius up to 60 feet, and the spell fails if the radius includes an area already under the effect of Hallow. The affected area has the following effects.",
 				{
 					"type": "entries",
-					"name": "Courage",
+					"name": "Hallowed Ward",
 					"entries": [
-						"Affected creatures can't be {@condition frightened} while in the area."
+						"Choose any of these creature types: Aberration, Celestial, Elemental, Fey, Fiend, or Undead. Creatures of the chosen types can't willingly enter the area, and any creature that is possessed by or that has the {@condition Charmed|XPHB} or {@condition Frightened|XPHB} condition from such creatures isn't possessed, {@condition Charmed|XPHB}, or {@condition Frightened|XPHB} by them while in the area."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Darkness",
+					"name": "Extra Effect",
 					"entries": [
-						"Darkness fills the area. Normal light, as well as magical light created by spells of a lower level than the slot you used to cast this spell, can't illuminate the area."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Daylight",
-					"entries": [
-						"Bright light fills the area. Magical darkness created by spells of a lower level than the slot you used to cast this spell can't extinguish the light."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Energy Protection",
-					"entries": [
-						"Affected creatures in the area have resistance to one damage type of your choice, except for bludgeoning, piercing, or slashing."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Energy Vulnerability",
-					"entries": [
-						"Affected creatures in the area have vulnerability to one damage type of your choice, except for bludgeoning, piercing, or slashing."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Everlasting Rest",
-					"entries": [
-						"Dead bodies interred in the area can't be turned into undead."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Extradimensional Interference",
-					"entries": [
-						"Affected creatures can't move or travel using teleportation or by extradimensional or interplanar means."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Fear",
-					"entries": [
-						"Affected creatures are {@condition frightened} while in the area."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Silence",
-					"entries": [
-						"No sound can emanate from within the area, and no sound can reach into it."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Tongues",
-					"entries": [
-						"Affected creatures can communicate with any other creature in the area, even if they don't share a common language."
+						"You bind an extra effect to the area from the list below:",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Courage",
+									"entries": [
+										"Creatures of any types you choose can't gain the {@condition Frightened|XPHB} condition while in the area."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Darkness",
+									"entries": [
+										"{@variantrule Darkness|XPHB} fills the area. Normal light, as well as magical light created by spells of a level lower than this spell, can't illuminate the area."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Daylight",
+									"entries": [
+										"Bright light fills the area. Magical {@variantrule Darkness|XPHB} created by spells of a level lower than this spell can't extinguish the light."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Peaceful Rest",
+									"entries": [
+										"{@variantrule Dead|XPHB} bodies interred in the area can't be turned into Undead."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Extradimensional Interference",
+									"entries": [
+										"Creatures of any types you choose can't enter or exit the area using teleportation or interplanar travel."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Fear",
+									"entries": [
+										"Creatures of any types you choose have the {@condition Frightened|XPHB} condition while in the area."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Resistance",
+									"entries": [
+										"Creatures of any types you choose have {@variantrule Resistance|XPHB} to one damage type of your choice while in the area."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Silence",
+									"entries": [
+										"No sound can emanate from within the area, and no sound can reach into it."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Tongues",
+									"entries": [
+										"Creatures of any types you choose can communicate with any other creature in the area even if they don't share a common language."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Vulnerability",
+									"entries": [
+										"Creatures of any types you choose have {@variantrule Vulnerability|XPHB} to one damage type of your choice while in the area."
+									]
+								}
+							]
+						}
 					]
 				}
 			],
@@ -10148,11 +10234,17 @@
 				"radiant",
 				"thunder"
 			],
-			"savingThrow": [
-				"charisma"
+			"affectsCreatureType": [
+				"aberration",
+				"celestial",
+				"elemental",
+				"fey",
+				"fiend",
+				"undead"
 			],
 			"miscTags": [
-				"LGT"
+				"LGT",
+				"OBS"
 			]
 		},
 		{
@@ -10178,7 +10270,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a stone, a twig, and a bit of green plant"
+				"m": "a mushroom"
 			},
 			"duration": [
 				{
@@ -11117,7 +11209,7 @@
 				}
 			],
 			"entries": [
-				"A hail of rock-hard ice pounds to the ground in a 20-foot-radius, 40-foot-high cylinder centered on a point within range. Each creature in the cylinder must make a Dexterity saving throw. A creature takes {@damage 2d8} bludgeoning damage and {@damage 4d6} cold damage on a failed save, or half as much damage on a successful one.",
+				"A hail of rock-hard ice pounds to the ground in a 20-foot-radius, 40-foot-high cylinder centered on a point within range. Each creature in the cylinder must make a Dexterity saving throw. A creature takes {@damage 2d10} bludgeoning damage and {@damage 4d6} cold damage on a failed save, or half as much damage on a successful one.",
 				"Hailstones turn the storm's area of effect into {@quickref difficult terrain||3} until the end of your next turn."
 			],
 			"entriesHigherLevel": [
@@ -11125,7 +11217,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 5th level or higher, the bludgeoning damage increases by {@scaledamage 2d8|4-9|1d8} for each slot level above 4th."
+						"When you cast this spell using a spell slot of 5th level or higher, the bludgeoning damage increases by {@scaledamage 2d10|4-9|1d10} for each slot level above 4th."
 					]
 				}
 			],
@@ -11632,6 +11724,72 @@
 			"areaTags": [
 				"ST"
 			]
+		},
+		{
+			"name": "Jallarzi's Storm of Radiance",
+			"source": "PHB",
+			"page": 254,
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a pinch of phosphorus"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You unleash a storm of flashing light and raging thunder in a 10-foot-radius, 40-foot-high Cylinder centered on a point you can see within range. While in this area, creatures have the {@condition Blinded|PHB} and {@condition Deafened|PHB} conditions, and they can't cast spells with a Verbal component.",
+				"When the storm appears, each creature in it makes a Constitution saving throw, taking {@damage 2d10} Radiant damage and {@damage 2d10} Thunder damage on a failed save or half as much damage on a successful one. A creature also makes this save when it enters the spell's area for the first time on a turn or ends its turn there. A creature makes this save only once per turn."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The Radiant and Thunder damage increase by {@scaledamage 2d10|5-9|1d10} for each spell slot level above 5."
+					]
+				}
+			],
+			"damageInflict": [
+				"radiant",
+				"thunder"
+			],
+			"conditionInflict": [
+				"blinded",
+				"deafened"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"Y"
+			],
+			"hasFluffImages": true
 		},
 		{
 			"name": "Jump",
@@ -12697,7 +12855,7 @@
 			"srd": true,
 			"basicRules": true,
 			"level": 5,
-			"school": "V",
+			"school": "A",
 			"time": [
 				{
 					"number": 1,
@@ -12721,14 +12879,14 @@
 				}
 			],
 			"entries": [
-				"A wave of healing energy washes out from a point of your choice within range. Choose up to six creatures in a 30-foot-radius sphere centered on that point. Each target regains hit points equal to {@dice 3d8} + your spellcasting ability modifier. This spell has no effect on undead or constructs."
+				"A wave of healing energy washes out from a point of your choice within range. Choose up to six creatures in a 30-foot-radius sphere centered on that point. Each target regains hit points equal to {@dice 5d8} + your spellcasting ability modifier. This spell has no effect on undead or constructs."
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 6th level or higher, the healing increases by {@scaledice 3d8|5-9|1d8} for each slot level above 5th."
+						"When you cast this spell using a spell slot of 6th level or higher, the healing increases by {@scaledice 5d8|5-9|1d8} for each slot level above 5th."
 					]
 				}
 			],
@@ -13636,10 +13794,10 @@
 			"entries": [
 				"You conjure a phantom watchdog in an unoccupied space that you can see within range, where it remains for the duration, until you dismiss it as an action, or until you move more than 100 feet away from it.",
 				"The hound is {@condition invisible} to all creatures except you and can't be harmed. When a Small or larger creature comes within 30 feet of it without first speaking the password that you specify when you cast this spell, the hound starts barking loudly. The hound sees {@condition invisible} creatures and can see into the Ethereal Plane. It ignores illusions.",
-				"At the start of each of your turns, the hound attempts to bite one creature within 5 feet of it that is hostile to you. The hound's attack bonus is equal to your spellcasting ability modifier + your proficiency bonus. On a hit, it deals {@damage 4d8} piercing damage."
+				"At the start of each of your turns, the hound attempts to bite one creature within 5 feet of it that is hostile to you. The hound's attack bonus is equal to your spellcasting ability modifier + your proficiency bonus. On a hit, it deals {@damage 4d8} force damage."
 			],
 			"damageInflict": [
-				"piercing"
+				"force"
 			],
 			"miscTags": [
 				"SGT"
@@ -14032,7 +14190,7 @@
 			"page": 264,
 			"srd": "Resilient Sphere",
 			"level": 4,
-			"school": "V",
+			"school": "A",
 			"time": [
 				{
 					"number": 1,
@@ -14049,7 +14207,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a hemispherical piece of clear crystal and a matching hemispherical piece of gum arabic"
+				"m": "a glass sphere"
 			},
 			"duration": [
 				{
@@ -14280,22 +14438,20 @@
 				}
 			],
 			"entries": [
-				"You tap into the nightmares of a creature you can see within range and create an illusory manifestation of its deepest fears, visible only to that creature. The target must make a Wisdom saving throw. On a failed save, the target becomes {@condition frightened} for the duration. At the end of each of the target's turns before the spell ends, the target must succeed on a Wisdom saving throw or take {@damage 4d10} psychic damage. On a successful save, the spell ends."
+				"You tap into the nightmares of a creature you can see within range and create an illusion of its deepest fears, visible only to that creature. The target makes a Wisdom saving throw. On a failed save, the target takes {@damage 4d10} Psychic damage and has Disadvantage on ability checks and attack rolls for the duration. On a successful save, the target takes half as much damage, and the spell ends.",
+				"For the duration, the target makes a Wisdom saving throw at the end of each of its turns. On a failed save, it takes the Psychic damage again. On a successful save, the spell ends."
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
-					"name": "At Higher Levels",
+					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@scaledamage 4d10|4-9|1d10} for each slot level above 4th."
+						"The damage increases by {@scaledamage 4d10|4-9|1d10} for each spell slot level above 4."
 					]
 				}
 			],
 			"damageInflict": [
 				"psychic"
-			],
-			"conditionInflict": [
-				"frightened"
 			],
 			"savingThrow": [
 				"wisdom"
@@ -14636,7 +14792,6 @@
 			"name": "Polymorph",
 			"source": "PHB",
 			"page": 266,
-			"srd": true,
 			"level": 4,
 			"school": "T",
 			"time": [
@@ -14648,8 +14803,8 @@
 			"range": {
 				"type": "point",
 				"distance": {
-					"type": "feet",
-					"amount": 60
+					"amount": 60,
+					"type": "feet"
 				}
 			},
 			"components": {
@@ -14668,20 +14823,48 @@
 				}
 			],
 			"entries": [
-				"This spell transforms a creature that you can see within range into a new form. An unwilling creature must make a Wisdom saving throw to avoid the effect. The spell has no effect on a shapechanger or a creature with 0 hit points.",
-				"The transformation lasts for the duration, or until the target drops to 0 hit points or dies. The new form can be {@filter any beast|bestiary|type=beast|miscellaneous=!swarm} whose challenge rating is equal to or less than the target's (or the target's level, if it doesn't have a challenge rating). The target's game statistics, including mental ability scores, are replaced by the statistics of the chosen beast. It retains its alignment and personality.",
-				"The target assumes the hit points of its new form. When it reverts to its normal form, the creature returns to the number of hit points it had before it transformed. If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form. As long as the excess damage doesn't reduce the creature's normal form to 0 hit points, it isn't knocked unconscious.",
-				"The creature is limited in the actions it can perform by the nature of its new form, and it can't speak, cast spells, or take any other action that requires hands or speech.",
-				"The target's gear melds into the new form. The creature can't activate, use, wield, or otherwise benefit from any of its equipment."
+				"You attempt to transform a creature you can see within range into a {@filter any beast|bestiary|type=beast|miscellaneous=!swarm} using the rules below. An unwilling target makes a Wisdom saving throw to resist this effect. Shapechangers automatically succeed on this saving throw.",
+				{
+					"type": "entries",
+					"name": "Form and Stats",
+					"entries": [
+						"The new form can be any living Beast you have seen before. Creatures can only be transformed into a {@filter any beast|bestiary|type=beast|miscellaneous=!swarm} with a CR equal to (or lower then) half its level or CR.",
+						"The creature's game statistics are replaced by those of the Beast while retaining its alignment and personality."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Actions and Equipment",
+					"entries": [
+						"The creature can only take the actions that would be available to that Beast. It cannot speak, cast spells, or take any actions that require hands or speech.",
+						"Its clothing, weapons, armor, and objects it is holding meld into the new form. However, it can't activate, use, wield, or otherwise benefit from any of its equipment."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Reverting",
+					"entries": [
+						"If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form. As long as the excess damage doesn't reduce the creature's normal form to 0 hit points, it isn't knocked unconscious."
+					]
+				}
 			],
-			"savingThrow": [
-				"wisdom"
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell with a slot of 5th-level or higher, you can target one additional creature for each slot level above 4th. You can choose the Beast that you transform each target into individually."
+					]
+				}
+			],
+			"areaTags": [
+				"ST"
 			],
 			"miscTags": [
 				"SGT"
 			],
-			"areaTags": [
-				"ST"
+			"savingThrow": [
+				"wisdom"
 			]
 		},
 		{
@@ -17989,6 +18172,48 @@
 			]
 		},
 		{
+			"name": "Spiritual Sundering",
+			"source": "PHB",
+			"page": 278,
+			"level": 5,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"amount": 120,
+					"type": "feet"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Creatures in a 20-foot-radius sphere centered on a point of your choice within range have their soul rent, and must make a Charisma saving throw. On a failure, they take {@damage 8d6} necrotic damage, and for the next minute, they have a muddied sense of self and subtract {@dice 1d6} from any Intelligence, Wisdom, or Charisma saving throw they make. On a success, they take half damage and suffer no saving throw penalty.",
+				"Targets can make a Charisma saving throw at the end of each of their turns, ending the effect on a successful save."
+			],
+			"areaTags": [
+				"S"
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"charisma"
+			]
+		},
+		{
 			"name": "Spiritual Weapon",
 			"source": "PHB",
 			"page": 278,
@@ -18172,7 +18397,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "soft clay, which must be worked into roughly the desired shape of the stone object"
+				"m": "soft clay"
 			},
 			"duration": [
 				{
@@ -18727,7 +18952,7 @@
 			"page": 280,
 			"srd": true,
 			"level": 5,
-			"school": "T",
+			"school": "V",
 			"time": [
 				{
 					"number": 1,
@@ -20097,7 +20322,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a pinch of powder made by crushing a clear gemstone"
+				"m": "powder from crushed clear gemstone"
 			},
 			"duration": [
 				{
@@ -20110,11 +20335,36 @@
 				}
 			],
 			"entries": [
-				"An invisible wall of force springs into existence at a point you choose within range. The wall appears in any orientation you choose, as a horizontal or vertical barrier or at an angle. It can be free floating or resting on a solid surface. You can form it into a hemispherical dome or a sphere with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-foot-by-10-foot panels. Each panel must be contiguous with another panel. In any form, the wall is 1/4 inch thick. It lasts for the duration. If the wall cuts through a creature's space when it appears, the creature is pushed to one side of the wall (your choice which side).",
-				"Nothing can physically pass through the wall. It is immune to all damage and can't be dispelled by {@spell dispel magic}. A {@spell disintegrate} spell destroys the wall instantly, however. The wall also extends into the Ethereal Plane, blocking ethereal travel through the wall."
+				"A shimmering opaque wall of force springs into existence at a point you choose within range and lasts for the duration. If it cuts through a creature's space when it appears, the creatures must make a Dexterity saving throw. On a success, it chooses which side of the wall it moves to. On a failure, you choose the side it moves to.",
+				{
+					"type": "entries",
+					"name": "Orientation & Shape",
+					"entries": [
+						"The wall appears in any orientation you choose, as a horizontal or vertical barrier or an angle. It can be free floating or rest on a solid surface. You can form it into a hemispherical dome, a sphere with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-by-10-foot panels. Each panel must be contiguous with another. In any form, the wall is 1/4 inch thick. Nothing can pass through the wall physically, and anything viewed through it is lightly obscured. The wall extends into the Ethereal Plane, blocking ethereal travel through the wall."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Statistics",
+					"entries": [
+						"The wall has 150 hit points and its Armor Class equals your Spell save DC. It is immune to poison, psychic, and non-magical bludgeoning, piercing, and slashing damage, vulnerable to force and magical bludgeoning, piercing, and slashing damage, and resistant to all other damage types. It cannot be dispelled by a {@spell dispel magic} spell, but a {@spell disintegrate} spell destroys the wall it instantly."
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th-level or higher, the hit points of the wall created by this spell increase by 25 for each spell slot level above 5th."
+					]
+				}
 			],
 			"areaTags": [
 				"W"
+			],
+			"savingThrow": [
+				"dexterity"
 			]
 		},
 		{
@@ -20184,7 +20434,7 @@
 			"srd": true,
 			"basicRules": true,
 			"level": 5,
-			"school": "V",
+			"school": "T",
 			"time": [
 				{
 					"number": 1,
@@ -20237,7 +20487,7 @@
 			"source": "PHB",
 			"page": 287,
 			"srd": true,
-			"level": 6,
+			"level": 4,
 			"school": "C",
 			"time": [
 				{
@@ -20245,18 +20495,6 @@
 					"unit": "action"
 				}
 			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 120
-				}
-			},
-			"components": {
-				"v": true,
-				"s": true,
-				"m": "a handful of thorns"
-			},
 			"duration": [
 				{
 					"type": "timed",
@@ -20267,17 +20505,35 @@
 					"concentration": true
 				}
 			],
+			"range": {
+				"distance": {
+					"amount": 120,
+					"type": "feet"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a handful of thorns"
+			},
 			"entries": [
-				"You create a wall of tough, pliable, tangled brush bristling with needle-sharp thorns. The wall appears within range on a solid surface and lasts for the duration. You choose to make the wall up to 60 feet long, 10 feet high, and 5 feet thick or a circle that has a 20-foot diameter and is up to 20 feet high and 5 feet thick. The wall blocks line of sight.",
-				"When the wall appears, each creature within its area must make a Dexterity saving throw. On a failed save, a creature takes {@damage 7d8} piercing damage, or half as much damage on a successful save.",
-				"A creature can move through the wall, albeit slowly and painfully. For every 1 foot a creature moves through the wall, it must spend 4 feet of movement. Furthermore, the first time a creature enters the wall on a turn or ends its turn there, the creature must make a Dexterity saving throw. It takes {@damage 7d8} slashing damage on a failed save, or half as much damage on a successful one."
+				"You conjure a wall of thick plant growth bristling with thorns hard as iron. It appears in range on a solid surface. The wall can be up to 60 feet long, 10 feet high, and 5 feet thick. Or, it forms a 20-foot diameter circle, 20 feet high and 5 feet thick. Both forms block line of sight.",
+				"When it appears, creatures within it must make a Dexterity saving throw. On a failure, they take 5d8 piercing damage and remain within the wall. On a successful save, they take half as much damage and move to an adjacent space of its choice not within the area of the wall.",
+				{
+					"type": "entries",
+					"name": "Moving Through",
+					"entries": [
+						"Any creature can painfully move through the wall, but it must spend 4 feet of movement for every 1 foot it moves within it. The first time a creature enters the wall or begins its turn in it, it must make a Dexterity saving throw. It takes 5d8 slashing damage on a failure, half on a success."
+					]
+				}
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 7th level or higher, both types of damage increase by {@scaledamage 7d8|6-9|1d8} for each slot level above 6th."
+						"When you cast this spell using a spell slot of 5th level or higher, both types of damage increase by {@scaledamage 5d8|4-9|1d8} for each slot level above 5th."
 					]
 				}
 			],
@@ -20867,6 +21123,61 @@
 			"miscTags": [
 				"AAD"
 			]
+		},
+		{
+			"name": "Yolande's Regal Presence",
+			"source": "PHB",
+			"page": 289,
+			"level": 5,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "emanation",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a miniature tiara"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You surround yourself with unearthly majesty in a 10-foot Emanation. Whenever the Emanation enters the space of a creature you can see and whenever a creature you can see enters the Emanation or ends its turn there, you can force that creature to make a Wisdom saving throw. On a failed save, the target takes {@damage 4d6} Psychic damage and has the {@condition Prone|PHB} condition, and you can push it up to 10 feet away. On a successful save, the target takes half as much damage only. A creature makes this save only once per turn."
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"FMV",
+				"SGT"
+			],
+			"areaTags": [
+				"S"
+			],
+			"hasFluffImages": true
 		},
 		{
 			"name": "Zone of Truth",
