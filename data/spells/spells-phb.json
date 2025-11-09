@@ -2734,7 +2734,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a bit of fur; a piece of amber, glass, or a crystal rod; and three silver pins"
+				"m": "three silver pins"
 			},
 			"duration": [
 				{
@@ -3003,14 +3003,14 @@
 				}
 			],
 			"entries": [
-				"A sphere of negative energy ripples out in a 60-foot-radius sphere from a point within range. Each creature in that area must make a Constitution saving throw. A target takes {@damage 8d6} necrotic damage on a failed save, or half as much damage on a successful one."
+				"A sphere of negative energy ripples out in a 60-foot-radius sphere from a point within range. Each creature in that area must make a Constitution saving throw. A target takes {@damage 8d8} necrotic damage on a failed save, or half as much damage on a successful one."
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 7th level or higher, the damage increases by {@scaledamage 8d6|6-9|2d6} for each slot level above 6th."
+						"When you cast this spell using a spell slot of 7th level or higher, the damage increases by {@scaledamage 8d8|6-9|2d8} for each slot level above 6th."
 					]
 				}
 			],
@@ -4399,7 +4399,7 @@
 			"page": 227,
 			"srd": true,
 			"level": 6,
-			"school": "V",
+			"school": "A",
 			"time": [
 				{
 					"number": 10,
@@ -4416,7 +4416,7 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "a statuette of yourself carved from ivory and decorated with gems worth at least 1,500 gp",
+					"text": "a gem-encrusted statuette of yourself worth 1,500+ GP",
 					"cost": 150000
 				}
 			},
@@ -4935,7 +4935,7 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "one clay pot filled with grave dirt, one clay pot filled with brackish water, and one 150 gp black onyx stone for each corpse",
+					"text": "one 150+ GP black onyx stone for each corpse",
 					"cost": 15000
 				}
 			},
@@ -5936,7 +5936,7 @@
 			"srd": true,
 			"basicRules": true,
 			"level": 6,
-			"school": "T",
+			"school": "V",
 			"time": [
 				{
 					"number": 1,
@@ -7332,7 +7332,7 @@
 			"page": 238,
 			"srd": true,
 			"level": 6,
-			"school": "N",
+			"school": "I",
 			"time": [
 				{
 					"number": 1,
@@ -7379,12 +7379,13 @@
 					"type": "entries",
 					"name": "Sickened",
 					"entries": [
-						"The target has disadvantage on attack rolls and ability checks. At the end of each of its turns, it can make another Wisdom saving throw. If it succeeds, the effect ends."
+						"The target has the {@condition poisoned} condition. At the end of each of its turns, it can make another Wisdom saving throw. If it succeeds, the effect ends."
 					]
 				}
 			],
 			"conditionInflict": [
 				"frightened",
+				"poisoned",
 				"unconscious"
 			],
 			"savingThrow": [
@@ -8481,7 +8482,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a pinch of lime, water, and earth"
+				"m": "a cockatrice feather"
 			},
 			"duration": [
 				{
@@ -10393,7 +10394,7 @@
 			"srd": true,
 			"basicRules": true,
 			"level": 6,
-			"school": "V",
+			"school": "A",
 			"time": [
 				{
 					"number": 1,
@@ -13934,14 +13935,14 @@
 				"type": "point",
 				"distance": {
 					"type": "feet",
-					"amount": 60
+					"amount": 90
 				}
 			},
 			"components": {
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "a miniature platinum sword with a grip and pommel of copper and zinc, worth 250 gp",
+					"text": "a miniature sword worth 250+ GP",
 					"cost": 25000
 				}
 			},
@@ -13956,8 +13957,9 @@
 				}
 			],
 			"entries": [
-				"You create a sword-shaped plane of force that hovers within range. It lasts for the duration.",
-				"When the sword appears, you make a melee spell attack against a target of your choice within 5 feet of the sword. On a hit, the target takes {@damage 3d10} force damage. Until the spell ends, you can use a bonus action on each of your turns to move the sword up to 20 feet to a spot you can see and repeat this attack against the same target or a different one."
+				"You create a spectral sword that hovers within range. It lasts for the duration.",
+				"When the sword appears, you make a melee spell attack against a target within 5 feet of the sword. On a hit, the target takes Force damage equal to {@damage 4d12} plus your spellcasting ability modifier.",
+				"On your later turns, you can take a Bonus Action to move the sword up to 30 feet to a spot you can see and repeat the attack against the same target or a different one."
 			],
 			"damageInflict": [
 				"force"
@@ -14865,6 +14867,44 @@
 			],
 			"savingThrow": [
 				"wisdom"
+			]
+		},
+		{
+			"name": "Power Word Fortify",
+			"source": "PHB",
+			"page": 266,
+			"level": 7,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You fortify up to six creatures you can see within range. The spell bestows 120 Temporary Hit Points, which you divide among the spell's recipients."
+			],
+			"miscTags": [
+				"SGT",
+				"THP"
+			],
+			"areaTags": [
+				"MT"
 			]
 		},
 		{
@@ -17006,7 +17046,7 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "a powder composed of diamond, emerald, ruby, and sapphire dust worth at least 5,000 gp, which the spell consumes",
+					"text": "gem dust worth 5,000+ GP, which the spell consumes",
 					"cost": 500000,
 					"consume": true
 				}
@@ -18796,65 +18836,58 @@
 				}
 			],
 			"entries": [
-				"When you cast this spell, you inscribe a harmful glyph either on a surface (such as a section of floor, a wall, or a table) or within an object that can be closed to conceal the glyph (such as a book, a scroll, or a treasure chest). If you choose a surface, the glyph can cover an area of the surface no larger than 10 feet in diameter. If you choose an object, that object must remain in its place; if the object is moved more than 10 feet from where you cast this spell, the glyph is broken, and the spell ends without being triggered.",
-				"The glyph is nearly invisible, requiring an Intelligence ({@skill Investigation}) check against your spell save DC to find it.",
-				"You decide what triggers the glyph when you cast the spell. For glyphs inscribed on a surface, the most typical triggers include touching or stepping on the glyph, removing another object covering it, approaching within a certain distance of it, or manipulating the object that holds it. For glyphs inscribed within an object, the most common triggers are opening the object, approaching within a certain distance of it, or seeing or reading the glyph.",
-				"You can further refine the trigger so the spell is activated only under certain circumstances or according to a creature's physical characteristics (such as height or weight), or physical kind (for example, the ward could be set to affect hags or shapechangers). You can also specify creatures that don't trigger the glyph, such as those who say a certain password.",
-				"When you inscribe the glyph, choose one of the options below for its effect. Once triggered, the glyph glows, filling a 60-foot-radius sphere with dim light for 10 minutes, after which time the spell ends. Each creature in the sphere when the glyph activates is targeted by its effect, as is a creature that enters the sphere for the first time on a turn or ends its turn there.",
+				"You inscribe a harmful glyph either on a surface (such as a section of floor or wall) or within an object that can be closed (such as a book or chest). The glyph can cover an area no larger than 10 feet in diameter. If you choose an object, it must remain in place; if it is moved more than 10 feet from where you cast this spell, the glyph is broken, and the spell ends without being triggered.",
+				"The glyph is nearly imperceptible and requires a successful Wisdom ({@skill Perception|PHB}) check against your spell save DC to notice.",
+				"When you inscribe the glyph, you set its trigger and choose which effect the symbol bears: Death, Discord, Fear, Pain, Sleep, or Stunning. Each one is explained below.",
+				{
+					"type": "entries",
+					"name": "Set the Trigger",
+					"entries": [
+						"You decide what triggers the glyph when you cast the spell. For glyphs inscribed on a surface, common triggers include touching or stepping on the glyph, removing another object covering it, or approaching within a certain distance of it. For glyphs inscribed within an object, common triggers include opening that object or seeing the glyph.",
+						"You can refine the trigger so that only creatures of certain types activate it (for example, the glyph could be set to affect Aberrations). You can also set conditions for creatures that don't trigger the glyph, such as those who say a certain password.",
+						"Once triggered, the glyph glows, filling a 60-foot-radius Sphere with Dim Light for 10 minutes, after which time the spell ends. Each creature in the Sphere when the glyph activates is targeted by its effect, as is a creature that enters the Sphere for the first time on a turn or ends its turn there. A creature is targeted only once per turn."
+					]
+				},
 				{
 					"type": "entries",
 					"name": "Death",
 					"entries": [
-						"Each target must make a Constitution saving throw, taking {@damage 10d10} necrotic damage on a failed save, or half as much damage on a successful save."
+						"Each target makes a Constitution saving throw, taking {@damage 10d10} Necrotic damage on a failed save or half as much damage on a successful save."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Discord",
 					"entries": [
-						"Each target must make a Constitution saving throw. On a failed save, a target bickers and argues with other creatures for 1 minute. During this time, it is incapable of meaningful communication and has disadvantage on attack rolls and ability checks."
+						"Each target makes a Wisdom saving throw. On a failed save, a target argues with other creatures for 1 minute. During this time, it is incapable of meaningful communication and has Disadvantage on attack rolls and ability checks."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Fear",
 					"entries": [
-						"Each target must make a Wisdom saving throw and becomes {@condition frightened} for 1 minute on a failed save. While {@condition frightened}, the target drops whatever it is holding and must move at least 30 feet away from the glyph on each of its turns, if able."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Hopelessness",
-					"entries": [
-						"Each target must make a Charisma saving throw. On a failed save, the target is overwhelmed with despair for 1 minute. During this time, it can't attack or target any creature with harmful abilities, spells, or other magical effects."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Insanity",
-					"entries": [
-						"Each target must make an Intelligence saving throw. On a failed save, the target is driven insane for 1 minute. An insane creature can't take actions, can't understand what other creatures say, can't read, and speaks only in gibberish. The DM controls its movement, which is erratic."
+						"Each target must succeed on a Wisdom saving throw or have the {@condition Frightened|PHB} condition for 1 minute. While {@condition Frightened|PHB}, the target must move at least 30 feet away from the glyph on each of its turns, if able."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Pain",
 					"entries": [
-						"Each target must make a Constitution saving throw and becomes {@condition incapacitated} with excruciating pain for 1 minute on a failed save."
+						"Each target must succeed on a Constitution saving throw or have the {@condition Incapacitated|PHB} condition for 1 minute."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Sleep",
 					"entries": [
-						"Each target must make a Wisdom saving throw and falls {@condition unconscious} for 10 minutes on a failed save. A creature awakens if it takes damage or if someone uses an action to shake or slap it awake."
+						"Each target must succeed on a Wisdom saving throw or have the {@condition Unconscious|PHB} condition for 10 minutes. A creature awakens if it takes damage or if someone takes an action to shake it awake."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Stunning",
 					"entries": [
-						"Each target must make a Wisdom saving throw and becomes {@condition stunned} for 1 minute on a failed save."
+						"Each target must succeed on a Wisdom saving throw or have the {@condition Stunned|PHB} condition for 1 minute."
 					]
 				}
 			],
@@ -18870,11 +18903,10 @@
 			"savingThrow": [
 				"constitution",
 				"wisdom",
-				"charisma",
 				"intelligence"
 			],
 			"abilityCheck": [
-				"intelligence"
+				"wisdom"
 			],
 			"miscTags": [
 				"LGT",
@@ -20851,14 +20883,11 @@
 				}
 			],
 			"entries": [
-				"You and up to ten willing creatures you can see within range assume a gaseous form for the duration, appearing as wisps of cloud. While in this cloud form, a creature has a flying speed of 300 feet and has resistance to damage from nonmagical weapons. The only actions a creature can take in this form are the {@action Dash} action or to revert to its normal form. Reverting takes 1 minute, during which time a creature is {@condition incapacitated} and can't move. Until the spell ends, a creature can revert to cloud form, which also requires the 1-minute transformation.",
-				"If a creature is in cloud form and flying when the effect ends, the creature descends 60 feet per round for 1 minute until it lands, which it does safely. If it can't land after 1 minute, the creature falls the remaining distance."
+				"You and up to ten willing creatures of your choice within range assume gaseous forms for the duration, appearing as wisps of cloud. While in this cloud form, a target has a Fly Speed of 300 feet and can hover; it has Immunity to the {@condition Prone|PHB} condition; and it has Resistance to Bludgeoning, Piercing, and Slashing damage. The only actions a target can take in this form are the {@action Dash|PHB} action or an action to begin reverting to its normal form. Reverting takes 1 minute, during which the target has the {@condition Stunned|PHB} condition. Until the spell ends, the target can revert to cloud form, which also requires an action followed by a 1-minute transformation.",
+				"If a target is in cloud form and flying when the effect ends, the target descends 60 feet per round for 1 minute until it lands, which it does safely. If it can't land after 1 minute, it falls the remaining distance."
 			],
 			"conditionInflict": [
-				"incapacitated"
-			],
-			"miscTags": [
-				"SGT"
+				"stunned"
 			],
 			"areaTags": [
 				"MT"
