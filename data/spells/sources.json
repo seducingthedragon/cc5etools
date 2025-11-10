@@ -2251,6 +2251,14 @@
 				}
 			]
 		},
+		"Ethereal Anchor": {
+			"class": [
+				{
+					"name": "Paladin",
+					"source": "PHB"
+				}
+			]
+		},
 		"Etherealness": {
 			"class": [
 				{
@@ -3224,7 +3232,11 @@
 				{
 					"name": "Paladin",
 					"source": "PHB"
-				}
+				},
+				{
+					"name": "Artificer",
+					"source": "TCE"
+				},
 			]
 		},
 		"Hex": {
@@ -5203,8 +5215,16 @@
 					"source": "PHB"
 				},
 				{
+					"name": "Warlock",
+					"source": "PHB"
+				},
+				{
 					"name": "Wizard",
 					"source": "PHB"
+				},
+				{
+					"name": "Artificer",
+					"source": "TCE"
 				}
 			]
 		},
@@ -6120,6 +6140,10 @@
 				{
 					"name": "Wizard",
 					"source": "PHB"
+				},
+				{
+					"name": "Artificer",
+					"source": "TCE"
 				}
 			]
 		},
