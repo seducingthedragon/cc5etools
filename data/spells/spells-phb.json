@@ -927,7 +927,7 @@
 			],
 			"entries": [
 				"You touch a closed door, window, gate, chest, or other entryway, and it becomes locked for the duration. You and the creatures you designate when you cast this spell can open the object normally. You can also set a password that, when spoken within 5 feet of the object, suppresses this spell for 1 minute. Otherwise, it is impassable until it is broken or the spell is dispelled or suppressed. Casting {@spell knock} on the object suppresses {@spell arcane lock} for 10 minutes.",
-				"While affected by this spell, the object is more difficult to break or force open; the DC to break it or pick any locks on it increases by 10."
+				"While affected by this spell, the object is more difficult to break or force open; the DC to break it or pick any locks on it increases by 15."
 			],
 			"miscTags": [
 				"OBJ"
@@ -1617,11 +1617,7 @@
 			},
 			"duration": [
 				{
-					"type": "timed",
-					"duration": {
-						"type": "hour",
-						"amount": 1
-					},
+					"type": "special",
 					"concentration": true
 				}
 			],
@@ -1629,7 +1625,14 @@
 				"ritual": true
 			},
 			"entries": [
-				"You touch a willing beast. For the duration of the spell, you can use your action to see through the beast's eyes and hear what it hears, and continue to do so until you use your action to return to your normal senses. While perceiving through the beast's senses, you gain the benefits of any special senses possessed by that creature, though you are {@condition blinded} and {@condition deafened} to your own surroundings."
+				"You touch a willing beast. For the duration of the spell, you can use your action to see through the beast's eyes and hear what it hears, and continue to do so until you use your action to return to your normal senses. While perceiving through the beast's senses, you gain the benefits of any special senses possessed by that creature, though you are {@condition blinded} and {@condition deafened} to your own surroundings.",
+				{
+					"type": "entries",
+					"name": "Special Duration",
+					"entries": [
+						"If you cast this spell with your beastly companion, then you can forgo concentration for 1 hour. Otherwise, this spell utilizes concentration with all other beasts for up to 1 hour."
+					]
+				}
 			],
 			"areaTags": [
 				"ST"
@@ -2905,7 +2908,16 @@
 				}
 			],
 			"entries": [
-				"You fill the air with spinning daggers in a cube 5 feet on each side, centered on a point you choose within range. A creature takes {@damage 4d4} slashing damage when it enters the spell's area for the first time on a turn or starts its turn there."
+				"You fill the air with spectral spinning glass daggers in a 5 foot cube that pulse outwards another 5 feet, centered on a point you choose within range. Creatures can make a {@skill Perception} check against your spell save DC in order to perceive it as a magical cloud, however it's considered to be Lightly Obscured if attempting to perceive the daggers within. A creature takes {@damage 4d4} slashing damage once per turn for the following scenarios:",
+				{
+					"type": "list",
+					"items": [
+						"moving within 5ft of the spell's area for the first time",
+						"being within the spell's center",
+						"starting or ending its turn within 5ft of the spell"
+					]
+				},
+				"On your subsequent turns, you can take a bonus action to move or teleport the dagger cloud up to 30 feet."
 			],
 			"entriesHigherLevel": [
 				{
@@ -4457,26 +4469,23 @@
 			"range": {
 				"type": "point",
 				"distance": {
-					"type": "feet",
-					"amount": 5
+					"type": "touch"
 				}
 			},
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "four or more arrows or bolts"
+				"m": "four or more arrows or bolts",
+				"consume": "optional"
 			},
 			"duration": [
 				{
-					"type": "timed",
-					"duration": {
-						"type": "hour",
-						"amount": 8
-					}
+					"type": "special"
 				}
 			],
 			"entries": [
-				"You plant four pieces of nonmagical ammunition\u2014{@item arrow|phb|arrows} or {@item crossbow bolt|phb|crossbow bolts}\u2014in the ground within range and lay magic upon them to protect an area. Until the spell ends, whenever a creature other than you comes within 30 feet of the ammunition for the first time on a turn or ends its turn there, one piece of ammunition flies up to strike it. The creature must succeed on a Dexterity saving throw or take {@damage 1d6} piercing damage. The piece of ammunition is then destroyed. The spell ends when no ammunition remains.",
+				"You plant four pieces of nonmagical ammunition\u2014{@item arrow|phb|arrows} or {@item crossbow bolt|phb|crossbow bolts}\u2014in the ground and lay magic upon them to protect an area. Until the spell ends, whenever a creature other than you comes within 30 feet of the ammunition for the first time on a turn or ends its turn there, one piece of ammunition flies up to strike it. The creature must succeed on a Dexterity saving throw or take {@damage 1d6} magical piercing damage. The piece of ammunition is then consumed by the spell.", 
+				"The spell ends when no ammunition remains or until you remove all remaining arrows yourself. The arrows can only be removed without magic by you.",
 				"When you cast this spell, you can designate any creatures you choose, and the spell ignores them."
 			],
 			"entriesHigherLevel": [
@@ -6795,7 +6804,7 @@
 				}
 			],
 			"entries": [
-				"You weave a distracting string of words, causing creatures of your choice that you can see within range and that can hear you to make a Wisdom saving throw. Any creature that can't be {@condition charmed} succeeds on this saving throw automatically, and if you or your companions are fighting a creature, it has advantage on the save. On a failed save, the target has disadvantage on Wisdom ({@skill Perception}) checks made to perceive any creature other than you until the spell ends or until the target can no longer hear you. The spell ends if you are {@condition incapacitated} or can no longer speak."
+				"You weave a distracting string of words, causing creatures of your choice that you can see within range and that can hear you to make a Wisdom saving throw. Any creature that can't be {@condition charmed} succeeds on this saving throw automatically, and if you or your companions are fighting a creature, it has advantage on the save. On a failed save, a target has a -10 penalty to Wisdom ({@skill Perception}) checks and Passive {@skill Perception} until the spell ends. The spell ends if you are {@condition incapacitated} or can no longer speak."
 			],
 			"savingThrow": [
 				"wisdom"
@@ -10324,7 +10333,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 3rd level or higher, you can target one additional humanoid for each slot level above 2nd. The humanoids must be within 30 feet of each other when you target them."
+						"When you cast this spell using a spell slot of 3rd level or higher, you can target one additional humanoid within range of the spell for each slot level above 2nd."
 					]
 				}
 			],
@@ -11130,6 +11139,15 @@
 				"A target that is held shut by a mundane lock or that is stuck or barred becomes unlocked, unstuck, or unbarred. If the object has multiple locks, only one of them is unlocked.",
 				"If you choose a target that is held shut with {@spell arcane lock}, that spell is suppressed for 10 minutes, during which time the target can be opened and shut normally.",
 				"When you cast the spell, a loud knock, audible from as far away as 300 feet, emanates from the target object."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, you can reduce the auditory range of the spell by 50 feet for each slot level above 2."
+					]
+				}
 			],
 			"miscTags": [
 				"OBJ",
@@ -13685,7 +13703,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "ashes from a burned leaf of mistletoe and a sprig of spruce"
+				"m": "ashes from burned mistletoe"
 			},
 			"duration": [
 				{
@@ -13698,7 +13716,22 @@
 				}
 			],
 			"entries": [
-				"A veil of shadows and silence radiates from you, masking you and your companions from detection. For the duration, each creature you choose within 30 feet of you (including you) has a +10 bonus to Dexterity ({@skill Stealth}) checks and can't be tracked except by magical means. A creature that receives this bonus leaves behind no tracks or other traces of its passage."
+				"A veil of shadows and silence radiates from you, masking you and your companions from detection. When you cast this spell, choose one of the following options.",
+				{
+					"type": "entries",
+					"name": "Shadowy Aura",
+					"entries": [
+						"For the duration, you radiate a concealing aura. Each creature of your choice within 30 feet of you (including you) has a +10 bonus to Dexterity ({@skill Stealth}) checks as long as they remain within 30 feet of you."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Shadowy Self",
+					"entries": [
+						"For the duration, you summon the shadows to conceal your allies while you all travel in different directions. Each creature of your choice within 30 feet of you at the time of casting (including yourself) are now considered to be Lightly Obscured and gain a bonus to Dexterity ({@skill Stealth}) checks equal to your spellcasting modifier and proficiency bonus, if you are proficient or have expertise in {@skill Stealth}."
+					]
+				},
+				"Regardless of which option you choose, you and all creatures targetted by this spell leaves behind no tracks or other traces of its passage and can't be tracked except by magical means."
 			],
 			"areaTags": [
 				"MT"
@@ -17796,14 +17829,13 @@
 						"type": "hour",
 						"amount": 8
 					},
-					"concentration": true
 				}
 			],
 			"entries": [
 				"You suggest a course of activity (limited to a sentence or two) and magically influence a creature you can see within range that can hear and understand you. Creatures that can't be {@condition charmed} are immune to this effect. The suggestion must be worded in such a manner as to make the course of action sound reasonable. Asking the creature to stab itself, throw itself onto a spear, immolate itself, or do some other obviously harmful act ends the spell.",
 				"The target must make a Wisdom saving throw. On a failed save, it pursues the course of action you described to the best of its ability. The suggested course of action can continue for the entire duration. If the suggested activity can be completed in a shorter time, the spell ends when the subject finishes what it was asked to do.",
 				"You can also specify conditions that will trigger a special activity during the duration. For example, you might suggest that a knight give her warhorse to the first beggar she meets. If the condition isn't met before the spell expires, the activity isn't performed.",
-				"If you or any of your companions damage the target, the spell ends."
+				"If you or any of your companions damage the target, the spell ends. Additionally, if you cast this spell on a second target before the first activity has been completed, the spell ends with an incompleted activity and the target knows that you had attempted to magically influence it."
 			],
 			"savingThrow": [
 				"wisdom"
