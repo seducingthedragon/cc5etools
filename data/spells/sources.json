@@ -4238,6 +4238,14 @@
 				}
 			]
 		},
+		"Otherworldly Grasp": {
+			"class": [
+				{
+					"name": "Warlock",
+					"source": "PHB"
+				}
+			]
+		},
 		"Otiluke's Freezing Sphere": {
 			"class": [
 				{
@@ -4844,11 +4852,19 @@
 		"Resistance": {
 			"class": [
 				{
+					"name": "Bard",
+					"source": "PHB"
+				},
+				{
 					"name": "Cleric",
 					"source": "PHB"
 				},
 				{
 					"name": "Druid",
+					"source": "PHB"
+				},
+				{
+					"name": "Wizard",
 					"source": "PHB"
 				},
 				{
@@ -5611,6 +5627,22 @@
 					"name": "Warlock",
 					"source": "PHB",
 					"definedInSource": "TCE"
+				}
+			]
+		},
+		"Tempestuous Blade": {
+			"class": [
+				{
+					"name": "Sorcerer",
+					"source": "PHB"
+				},
+				{
+					"name": "Wizard",
+					"source": "PHB"
+				},
+				{
+					"name": "Artificer",
+					"source": "TCE"
 				}
 			]
 		},
