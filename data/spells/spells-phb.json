@@ -5526,6 +5526,48 @@
 			]
 		},
 		{
+			"name": "Detect Traps",
+			"source": "PHB",
+			"page": 231,
+			"srd": true,
+			"level": 2,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "sphere",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You sense the presence of any trap within range as well as visible locations. A trap, for the purpose of this spell, includes anything that would inflict a sudden or unexpected effect you consider harmful or undesirable, which was specifically intended as such by its creator. Thus, the spell would locate an area affected by the {@spell alarm} spell, a {@spell glyph of warding}, a mechanical pit trap, or other trap-related aspects.",
+				"The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt. This allows you to locate triggering mechanisms and other visible parts of a trap but not concealed parts."
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
 			"name": "Dimension Door",
 			"source": "PHB",
 			"page": 233,
@@ -7622,43 +7664,6 @@
 			"entries": [
 				"This spell allows you to find the shortest, most direct physical route to a specific fixed location that you are familiar with on the same plane of existence. If you name a destination on another plane of existence, a destination that moves (such as a mobile fortress), or a destination that isn't specific (such as \"a green dragon's lair\"), the spell fails.",
 				"For the duration, as long as you are on the same plane of existence as the destination, you know how far it is and in what direction it lies. While you are traveling there, whenever you are presented with a choice of paths along the way, you automatically determine which path is the shortest and most direct route (but not necessarily the safest route) to the destination."
-			]
-		},
-		{
-			"name": "Find Traps",
-			"source": "PHB",
-			"page": 241,
-			"srd": true,
-			"level": 2,
-			"school": "D",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 120
-				}
-			},
-			"components": {
-				"v": true,
-				"s": true
-			},
-			"duration": [
-				{
-					"type": "instant"
-				}
-			],
-			"entries": [
-				"You sense the presence of any trap within range that is within line of sight. A trap, for the purpose of this spell, includes anything that would inflict a sudden or unexpected effect you consider harmful or undesirable, which was specifically intended as such by its creator. Thus, the spell would sense an area affected by the {@spell alarm} spell, a {@spell glyph of warding}, or a mechanical pit trap, but it would not reveal a natural weakness in the floor, an unstable ceiling, or a hidden sinkhole.",
-				"This spell merely reveals that a trap is present. You don't learn the location of each trap, but you do learn the general nature of the danger posed by a trap you sense."
-			],
-			"miscTags": [
-				"SGT"
 			]
 		},
 		{
@@ -11522,10 +11527,9 @@
 			]
 		},
 		{
-			"name": "Locate Animals or Plants",
+			"name": "Locate Creature",
 			"source": "PHB",
 			"page": 256,
-			"srd": true,
 			"level": 2,
 			"school": "D",
 			"time": [
@@ -11535,51 +11539,10 @@
 				}
 			],
 			"range": {
-				"type": "point",
 				"distance": {
 					"type": "self"
-				}
-			},
-			"components": {
-				"v": true,
-				"s": true,
-				"m": "a bit of fur from a bloodhound"
-			},
-			"duration": [
-				{
-					"type": "instant"
-				}
-			],
-			"meta": {
-				"ritual": true
-			},
-			"entries": [
-				"Describe or name a specific kind of beast or plant. Concentrating on the voice of nature in your surroundings, you learn the direction and distance to the closest creature or plant of that kind within 5 miles, if any are present."
-			],
-			"affectsCreatureType": [
-				"beast",
-				"plant"
-			]
-		},
-		{
-			"name": "Locate Creature",
-			"source": "PHB",
-			"page": 256,
-			"srd": true,
-			"basicRules": true,
-			"level": 4,
-			"school": "D",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "self"
-				}
+				},
+				"type": "point"
 			},
 			"components": {
 				"v": true,
@@ -11590,16 +11553,59 @@
 				{
 					"type": "timed",
 					"duration": {
-						"type": "hour",
-						"amount": 1
+						"amount": 1,
+						"type": "hour"
 					},
 					"concentration": true
 				}
 			],
+			"meta": {
+				"ritual": true
+			},
 			"entries": [
-				"Describe or name a creature that is familiar to you. You sense the direction to the creature's location, as long as that creature is within 1,000 feet of you. If the creature is moving, you know the direction of its movement.",
-				"The spell can locate a specific creature known to you, or the nearest creature of a specific kind (such as a human or a {@creature unicorn}), so long as you have seen such a creature up close\u2014within 30 feet\u2014at least once. If the creature you described or named is in a different form, such as being under the effects of a {@spell polymorph} spell, this spell doesn't locate the creature.",
-				"This spell can't locate a creature if running water at least 10 feet wide blocks a direct path between you and the creature."
+				"Describe or name a specific kind of beast or plant. It can be a specific creature known to you, or the nearest creature of a specific kind (such as a bear, oak, or horse), so long as you have seen such a creature within 30 feet at least once.",
+				"If one is within 1 mile, you will learn the direction and distance. If the target is in motion, you will continue to gain updates on its direction and distance while concentrating on this spell. If the creature is in a different form, such as under the effect of the polymorph spell, this spell doesn't locate the creature.",
+				"This spell can't locate its target if any thickness of lead blocks a straight line to the target."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd-level or higher, the range and the type of creature you can locate increase as show in the table below:",
+						{
+							"type": "table",
+							"caption": "Locate Creature",
+							"colLabels": [
+								"Slot Level",
+								"Range",
+								"Creature Types"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-5",
+								"col-5"
+							],
+							"rows": [
+								[
+									"3rd",
+									"2 miles",
+									"Dragon, Giant, Humanoid, Monstrosity"
+								],
+								[
+									"4th",
+									"3 miles",
+									"Aberration, Construct, Ooze, Undead"
+								],
+								[
+									"5th",
+									"5 miles",
+									"Celestial, Elemental, Fey, Fiend"
+								]
+							]
+						}
+					]
+				}
 			]
 		},
 		{
