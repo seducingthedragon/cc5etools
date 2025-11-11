@@ -2563,21 +2563,6 @@
 				}
 			]
 		},
-		"Flame Blade": {
-			"class": [
-				{
-					"name": "Druid",
-					"source": "PHB"
-				}
-			],
-			"classVariant": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "TCE"
-				}
-			]
-		},
 		"Flame Strike": {
 			"class": [
 				{
@@ -4578,6 +4563,18 @@
 				{
 					"name": "Artificer",
 					"source": "TCE"
+				}
+			]
+		},
+		"Primordial Blade": {
+			"class": [
+				{
+					"name": "Druid",
+					"source": "PHB"
+				},
+				{
+					"name": "Sorcerer",
+					"source": "PHB"
 				}
 			]
 		},
@@ -7589,15 +7586,6 @@
 				},
 				{
 					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "XGE"
-				}
-			]
-		},
-		"Find Greater Steed": {
-			"classVariant": [
-				{
-					"name": "Paladin",
 					"source": "PHB",
 					"definedInSource": "XGE"
 				}
