@@ -1861,6 +1861,22 @@
 				}
 			]
 		},
+		"Detect Traps": {
+			"class": [
+				{
+					"name": "Cleric",
+					"source": "PHB"
+				},
+				{
+					"name": "Druid",
+					"source": "PHB"
+				},
+				{
+					"name": "Ranger",
+					"source": "PHB"
+				}
+			]
+		},
 		"Dimension Door": {
 			"class": [
 				{
@@ -2463,22 +2479,6 @@
 				},
 				{
 					"name": "Druid",
-					"source": "PHB"
-				}
-			]
-		},
-		"Find Traps": {
-			"class": [
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
 					"source": "PHB"
 				}
 			]
@@ -3627,22 +3627,6 @@
 				},
 				{
 					"name": "Wizard",
-					"source": "PHB"
-				}
-			]
-		},
-		"Locate Animals or Plants": {
-			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
 					"source": "PHB"
 				}
 			]
