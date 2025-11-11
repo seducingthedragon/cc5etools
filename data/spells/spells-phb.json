@@ -6487,61 +6487,6 @@
 			]
 		},
 		{
-			"name": "Elemental Weapon",
-			"source": "PHB",
-			"page": 237,
-			"level": 3,
-			"school": "T",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "touch"
-				}
-			},
-			"components": {
-				"v": true,
-				"s": true
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "hour",
-						"amount": 1
-					},
-					"concentration": true
-				}
-			],
-			"entries": [
-				"A nonmagical weapon you touch becomes a magic weapon. Choose one of the following damage types: acid, cold, fire, lightning, or thunder. For the duration, the weapon has a +1 bonus to attack rolls and deals an extra {@damage 1d4} damage of the chosen type when it hits."
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 5th or 6th level, the bonus to attack rolls increases to +2 and the extra damage increases to {@scaledamage 1d4|3-9|2d4}. When you use a spell slot of 7th level or higher, the bonus increases to +3 and the extra damage increases to {@scaledamage 1d4|3-9|3d4}."
-					]
-				}
-			],
-			"damageInflict": [
-				"acid",
-				"cold",
-				"fire",
-				"lightning",
-				"thunder"
-			],
-			"miscTags": [
-				"AAD"
-			]
-		},
-		{
 			"name": "Enhance Ability",
 			"source": "PHB",
 			"page": 237,
@@ -11530,6 +11475,7 @@
 			"name": "Locate Creature",
 			"source": "PHB",
 			"page": 256,
+			"srd": true,
 			"level": 2,
 			"school": "D",
 			"time": [
@@ -12058,10 +12004,10 @@
 				}
 			],
 			"range": {
-				"type": "point",
 				"distance": {
 					"type": "touch"
-				}
+				},
+				"type": "point"
 			},
 			"components": {
 				"v": true,
@@ -12073,21 +12019,35 @@
 					"duration": {
 						"type": "hour",
 						"amount": 1
-					},
-					"concentration": true
+					}
 				}
 			],
 			"entries": [
-				"You touch a nonmagical weapon. Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls."
+				"You touch a nonmagical weapon and imbue it with arcane power. For the duration, it becomes a magical weapon with a +1 bonus to attack and damage rolls.",
+				"Additionally, choose one of the following elemental damage types: acid, cold, fire, lightning, poison, or thunder. You also deal additional damage equal to {@damage 1d4} of the elemental damage choosen."
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 4th level or higher, the bonus increases to +2. When you use a spell slot of 6th level or higher, the bonus increases to +3."
+						"When you cast this spell using a spell slot of 4th level or higher, the weapon becomes a +2 weapon. When you cast this spell using a spell slot of 7th level or higher, the weapon becomes a +3 weapon.", 
+						"Additionally, the bonus elemental damage increases by {@scaledamage 1d4|2,4,6,8|1d4} for every two slot levels above 2nd."
 					]
 				}
+			],
+			"damageInflict": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"poison",
+				"thunder"
+			],
+			"miscTags": [
+				"AAD"
+				"OBJ",
+				"SCL"
 			]
 		},
 		{
