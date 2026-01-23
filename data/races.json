@@ -6163,9 +6163,26 @@
 			"size": [
 				"M"
 			],
+			"heightAndWeight": {
+				"baseHeight": 56,
+				"heightMod": "2d10",
+				"baseWeight": 110,
+				"weightMod": "2d4"
+			},
+			"age": {
+				"mature": 20,
+				"max": 100
+			},
 			"speed": 30,
 			"darkvision": 60,
 			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Hobgoblins mature at the same rate as humans and have lifespans similar in length to theirs."
+					]
+				},
 				{
 					"type": "entries",
 					"name": "Creature Type",
@@ -6889,6 +6906,16 @@
 				"S",
 				"M"
 			],
+			"heightAndWeight": {
+				"baseHeight": 52,
+				"heightMod": "2d8",
+				"baseWeight": 50,
+				"weightMod": "1d6"
+			},
+			"age": {
+				"mature": 12,
+				"max": 60
+			},
 			"speed": 30,
 			"skillProficiencies": [
 				{
@@ -6896,6 +6923,13 @@
 				}
 			],
 			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Kenku have shorter lifespans than humans. They reach maturity at about 12 years old and can live to 60."
+					]
+				},
 				{
 					"type": "entries",
 					"name": "Size",
@@ -7174,6 +7208,15 @@
 			"size": [
 				"S"
 			],
+			"heightAndWeight": {
+				"baseHeight": 25,
+				"heightMod": "2d4",
+				"baseWeight": 25
+			},
+			"age": {
+				"mature": 6,
+				"max": 120
+			},
 			"speed": 30,
 			"darkvision": 60,
 			"skillProficiencies": [
@@ -7209,6 +7252,13 @@
 				}
 			],
 			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Kobolds reach adulthood at age 6 and can live up to 120 years but rarely do so."
+					]
+				},
 				{
 					"type": "entries",
 					"name": "Darkvision",
@@ -7732,6 +7782,16 @@
 				"walk": 30,
 				"swim": true
 			},
+			"heightAndWeight": {
+				"baseHeight": 57,
+				"heightMod": "2d10",
+				"baseWeight": 120,
+				"weightMod": "2d6"
+			},
+			"age": {
+				"mature": 14,
+				"max": 60
+			},
 			"traitTags": [
 				"Natural Armor",
 				"Natural Weapon"
@@ -7752,6 +7812,13 @@
 				}
 			],
 			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Lizardfolk reach maturity around age 14 and rarely live longer than 60 years."
+					]
+				},
 				{
 					"type": "entries",
 					"name": "Speed",
@@ -8421,7 +8488,24 @@
 			"traitTags": [
 				"Natural Weapon"
 			],
+			"heightAndWeight": {
+				"baseHeight": 64,
+				"heightMod": "2d8",
+				"baseWeight": 175,
+				"weightMod": "2d6"
+			},
+			"age": {
+				"mature": 17,
+				"max": 150
+			},
 			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Minotaurs enter adulthood at around the age of 17 and can live up to 150 years."
+					]
+				},
 				{
 					"type": "entries",
 					"name": "Horns",
