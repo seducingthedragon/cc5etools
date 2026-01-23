@@ -1057,6 +1057,9 @@
 			"name": "Autognome",
 			"source": "AAG",
 			"page": 11,
+			"reprintedAs": [
+				"Autognome|MPMM"
+			],
 			"lineage": "VRGR",
 			"creatureTypes": [
 				"construct"
