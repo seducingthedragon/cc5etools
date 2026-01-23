@@ -60,7 +60,7 @@
                 }
             ],
             "entries": [
-                "When you take the Attack action, you can make one attack roll with a weapon, engage in {@actions Two-Weapon Fighting|PHB}, or an {@action Unarmed Strike|PHB}.",
+                "When you take the Attack action, you can make one attack roll with a weapon, engage in {@action Two-Weapon Fighting}, or an {@action Unarmed Strike}.",
                 {
                     "type": "entries",
                     "entries": [
@@ -82,8 +82,8 @@
                 }
             ],
             "seeAlsoAction": [
-                "Two-Weapon Fighting|PHB",
-                "Unarmed Attack|PHB"
+                "Two-Weapon Fighting",
+                "Unarmed Attack"
             ]
         },
         {
@@ -238,7 +238,7 @@
                 }
             ],
             "entries": [
-                "It takes a Bonus Action to drink a potion. If you are administering the potion to another creature, it takes an Action. Passing the potion bottle to someone else falls under the {@actions Other Activity} action.",
+                "It takes a Bonus Action to drink a potion. If you are administering the potion to another creature, it takes an Action. Passing the potion bottle to someone else falls under the {@action Other Activity} action.",
                 "Additionally, when drinking a potion that has a spell effect that would require concentration if that same spell was cast, it does not use concentration, lasting the full duration of its spell, however you cannot end the effects early"
             ],
             "seeAlsoAction": [
