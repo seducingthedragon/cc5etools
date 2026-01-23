@@ -17,11 +17,24 @@
 				}
 			],
 			"entries": [
+				"While you have the Blinded condition, you experience the following effects.",
 				{
-					"type": "list",
-					"items": [
-						"A blinded creature can't see and automatically fails any ability check that requires sight.",
-						"Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage."
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Auto Fail",
+							"entries": [
+								"You cannot see and automatically fail any ability check and saving throw that requires sight."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Attacks Affected",
+							"entries": [
+								"Attack rolls against you have advantage, and your attack rolls have disadvantage."
+							]
+						}
 					]
 				}
 			],
@@ -44,11 +57,24 @@
 				}
 			],
 			"entries": [
+				"While you have the Charmed condition, you experience the following effects.",
 				{
-					"type": "list",
-					"items": [
-						"A charmed creature can't attack the charmer or target the charmer with harmful abilities or magical effects.",
-						"The charmer has advantage on any ability check to interact socially with the creature."
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Non-Threatening",
+							"entries": [
+								"You can't attack the charmer or target the charmer with harmful abilities or magical effects."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Easily Swayed",
+							"entries": [
+								"The charmer has advantage on any ability check to interact socially with you."
+							]
+						}
 					]
 				}
 			],
@@ -71,12 +97,7 @@
 				}
 			],
 			"entries": [
-				{
-					"type": "list",
-					"items": [
-						"A deafened creature can't hear and automatically fails any ability check that requires hearing."
-					]
-				}
+				"While you are Deafened, you cannot hear and automatically fail any ability check and saving throw that requires hearing."
 			],
 			"hasFluffImages": true
 		},
@@ -115,14 +136,14 @@
 							"type": "entries",
 							"name": "Speed Reduced",
 							"entries": [
-								"Your {@variantrule Speed|XPHB} is reduced by a number of feet equal to 5 times your Exhaustion level."
+								"Your speed is reduced by a number of feet equal to 5 times your Exhaustion level."
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Removing Exhaustion Levels",
 							"entries": [
-								"Finishing a {@variantrule Long Rest|XPHB} removes 1 of your Exhaustion levels. When your Exhaustion level reaches 0, the condition ends."
+								"Finishing a Long Rest removes 1 of your Exhaustion levels. When your Exhaustion level reaches 0, the condition ends."
 							]
 						}
 					]
@@ -140,23 +161,23 @@
 					"rows": [
 						[
 							"1",
-							"-2 on D20 rolls, -5ft from Movement Speed"
+							"\u22122 on D20 rolls, \u22125ft from Movement Speed"
 						],
 						[
 							"2",
-							"-4 on D20 rolls, -10ft from Movement Speed"
+							"\u22124 on D20 rolls, \u221210ft from Movement Speed"
 						],
 						[
 							"3",
-							"-6 on D20 rolls, -15ft from Movement Speed"
+							"\u22126 on D20 rolls, \u221215ft from Movement Speed"
 						],
 						[
 							"4",
-							"-8 on D20 rolls, -20ft from Movement Speed"
+							"\u22128 on D20 rolls, \u221220ft from Movement Speed"
 						],
 						[
 							"5",
-							"-10 on D20 rolls, -25ft from Movement Speed"
+							"\u221210 on D20 rolls, \u221225ft from Movement Speed"
 						],
 						[
 							"6",
@@ -183,11 +204,24 @@
 				}
 			],
 			"entries": [
+				"While you have the Frightened condition, you experience the following effects.",
 				{
-					"type": "list",
-					"items": [
-						"A frightened creature has disadvantage on ability checks and attack rolls while the source of its fear is within line of sight.",
-						"The creature can't willingly move closer to the source of its fear."
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Disadvantage",
+							"entries": [
+								"You have disadvantage on ability checks and saving throws while the source of your fear is within line of sight."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Movement Impacted",
+							"entries": [
+								"You can't willingly move closer to the source of your fear."
+							]
+						}
 					]
 				}
 			],
@@ -247,9 +281,9 @@
 			"srd": true,
 			"basicRules": true,
 			"entries": [
-				"On a successful Stealth check to Hide, you gain the Hidden Condition, granting you total cover behind the object or creature you are hiding behind, concealing your presence.",
-  		      "While hidden, you cannot be perceived without the use of movement, noise, or magic, and you gain the following benefits.",
-  		     		 {
+				"On a successful Stealth check to {@action hide}, you gain the Hidden Condition, granting you total cover behind the object or creature you are hiding behind, concealing your presence.",
+				"While hidden, you cannot be perceived without the use of movement, noise, or magic, and you gain the following benefits.",
+				{
 					"type": "entries",
 					"entries": [
 						{
@@ -263,17 +297,15 @@
 							"type": "entries",
 							"name": "Surprise",
 							"entries": [
-								"You have advantage on your next attack roll immediately after your Hide Action. If your next action is related to magic, such as casting spells, and it requires a saving throw, the targeted creature(s) will make their saving throw with disadvantage as long as you were able to see them while hidden and the spell does not have any Verbal components."
+								"You have advantage on your next attack roll immediately after your {@action hide} Action. If your next action is related to magic, such as casting spells, and it requires a saving throw, the targeted creature(s) will make their saving throw with disadvantage as long as you were able to see them while hidden and the spell does not have any Verbal components."
 							]
 						}
 					]
 				},
-         "After taking any action or making any perceivable audible sound, you are no longer Hidden."
-					]
-				}
+				"After taking any action or making any perceivable audible sound, you are no longer Hidden."
 			],
 			"seeAlsoCondition": [
-    		    "Invisible|PHB"
+    		    "Invisible"
 			]
 		},
 		{
@@ -338,10 +370,10 @@
 					"source": "HftT",
 					"page": 48
 				}
-			]
+			],
 			"entries": [
 				"When you have the Invisible Condition, you, as well as the belongings you are wearing and carrying, become transparent. You cannot be seen without the aid of magic or a special sense, however, your actions can still produce noise and visibly impact your environment.",
-     		   "While Invisible, you gain the following benefits.",
+				"While Invisible, you gain the following benefits.",
 				{
 					"type": "entries",
 					"entries": [
@@ -363,11 +395,15 @@
 							"type": "entries",
 							"name": "Hidden",
 							"entries": [
-								"You have advantage when making a Dexterity ({@skill Stealth}) Check to hide, granting the {@condition hidden} Condition on a success, however any noise made, including casting spells with a verbal component, will end the {@condition hidden} Condition, while maintaining your invisibility pending any caveats related to how you became Invisible."
+								"You have advantage when making a Dexterity ({@skill Stealth}) Check to {@action hide}, granting the {@condition hidden} Condition on a success, however any noise made, including casting spells with a verbal component, will end the {@condition hidden} Condition, while maintaining your invisibility pending any caveats related to how you became Invisible."
+							]
+						}
+					]
+				}
 			],
 			"hasFluffImages": true,
     		"seeAlsoCondition": [
-    		    "Hidden|PHB"
+    		    "Hidden"
 			]
 		},
 		{
@@ -468,7 +504,7 @@
 						}
 					]
 				},
-     		   "Only a Greater Restoration spell or similar magic can remove the condition and transform you back into yourself."
+     		   "Only a level 5 {@spell Restoration} spell or similar magic can remove the condition and transform you back into yourself."
 			],
 			"hasFluffImages": true
 		},
@@ -489,12 +525,7 @@
 				}
 			],
 			"entries": [
-				{
-					"type": "list",
-					"items": [
-						"A poisoned creature has disadvantage on attack rolls and ability checks."
-					]
-				}
+				"While you have the Poisoned condition, you have disadvantage on all attack rolls and ability checks."
 			],
 			"hasFluffImages": true
 		},
@@ -515,12 +546,31 @@
 				}
 			],
 			"entries": [
+				"While you are Prone, you experience the following effects.",
 				{
-					"type": "list",
-					"items": [
-						"A prone creature's only movement option is to crawl, unless it stands up and thereby ends the condition.",
-						"The creature has disadvantage on attack rolls.",
-						"An attack roll against the creature has advantage if the attacker is within 5 feet of the creature. Otherwise, the attack roll has disadvantage."
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Limited Mobility",
+							"entries": [
+								"Your only movement option is to crawl, unless you stand up and end the condition."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Attacks Affected",
+							"entries": [
+								"You have Disadvantage on attack rolls."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Melee Target",
+							"entries": [
+								"An attack roll against you has advantage if the attacker is within melee range. Otherwise, their attack roll has disadvantage."
+							]
+						}
 					]
 				}
 			],
@@ -666,7 +716,7 @@
 							"type": "entries",
 							"name": "Specialized Effects",
 							"entries": [
-								"If you gain this condition due to dropping to 0 Hit Points, you experience additional effects."
+								"If you gain this condition due to dropping to 0 Hit Points, you experience additional effects.",
                     		    {
                          		   "type": "list",
                           		  "items": [
@@ -851,7 +901,7 @@
 			"srd": true,
 			"entries": [
 				"This painful infection causes bleeding from the eyes and eventually blinds the victim.",
-				"A beast or humanoid that drinks water tainted by sight rot must succeed on a {@dc 15} Constitution saving throw or become infected. One day after infection, the creature's vision starts to become blurry. The creature takes a -1 penalty to attack rolls and ability checks that rely on sight. At the end of each long rest after the symptoms appear, the penalty worsens by 1. When it reaches -5, the victim is {@condition blinded} until its sight is restored by magic such as {@spell lesser restoration} or {@spell heal}.",
+				"A beast or humanoid that drinks water tainted by sight rot must succeed on a {@dc 15} Constitution saving throw or become infected. One day after infection, the creature's vision starts to become blurry. The creature takes a -1 penalty to attack rolls and ability checks that rely on sight. At the end of each long rest after the symptoms appear, the penalty worsens by 1. When it reaches -5, the victim is {@condition blinded} until its sight is restored by magic such as {@spell restoration} or {@spell heal}.",
 				"Sight rot can be cured using a rare flower called Eyebright, which grows in some swamps. Given an hour, a character who has proficiency with an {@item herbalism kit|phb} can turn the flower into one dose of ointment. Applied to the eyes before a long rest, one dose of it prevents the disease from worsening after that rest. After three doses, the ointment cures the disease entirely."
 			]
 		},
@@ -870,7 +920,7 @@
 			"page": 47,
 			"entries": [
 				"If the party is defeated, stabilized characters awaken after {@dice 1d4} hours to find themselves cocooned in sticky webs and suspended 10 feet off the floor, with spider eggs implanted in their bodies. A cocooned character is {@condition restrained} and can use its action to try to escape by making a successful {@dc 15} Strength check.",
-				"Spider eggs implanted in a host hatch in {@dice 2d12} hours, killing the host as the baby spiders chew their way out. This infestation functions like a disease. A {@spell lesser restoration} spell or similar magic cast upon the host kills the spider eggs, ending the threat."
+				"Spider eggs implanted in a host hatch in {@dice 2d12} hours, killing the host as the baby spiders chew their way out. This infestation functions like a disease. A {@spell restoration} spell or similar magic cast upon the host kills the spider eggs, ending the threat."
 			]
 		},
 		{
@@ -942,6 +992,16 @@
 	],
 	"status": [
 		{
+			"name": "Bloodied",
+			"source": "PHB",
+			"page": 203,
+			"srd": true,
+			"basicRules": true,
+			"entries": [
+				"A creature is Bloodied while it has half its Hit Points or fewer remaining."
+			]
+		},
+		{
 			"name": "Concentration",
 			"source": "PHB",
 			"page": 203,
@@ -963,33 +1023,33 @@
 			]
 		},
 		{
-			"name": "Surprise",
-			"source": "PHB",
-			"page": 189,
-			"srd": true,
-			"basicRules": true,
-			"entries": [
-				"Sometimes when you and your allies, as well as your enemies, are surprised, they are not always \“caught with their pants down,”\ and yet sometimes they are. Your DM will let you know how surprise has impacted your initiative relating to one of the two ways listed below. Additionally, a member of a group can be surprised even if the other members aren't.",
-				{
-					"type": "entries",
-					"entries": [
-						{
-							"type": "entries",
-							"name": "Shocked by the Unexpected",
-							"entries": [
-								"When you're surprised in this manner, you roll initiative as you would normally do, however you can't move or take an action on your first turn of the combat, and you can't take a reaction until that turn ends."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Ready but Wasn't",
-							"entries": [
-								"When someone is surprised in this way, they have Disadvantage on their initiative rolls. They also get to interact within the first round of combat under normal conditions."
-							]
-						}
-					]
-				}
-			]
-		}
+            "name": "Surprise",
+            "source": "PHB",
+            "page": 189,
+            "srd": true,
+            "basicRules": true,
+            "entries": [
+                "Sometimes when you and your allies, as well as your enemies, are surprised, they are not always \"caught with their pants down,\" and yet sometimes they are. Your DM will let you know how surprise has impacted your initiative relating to one of the two ways listed below. Additionally, a member of a group can be surprised even if the other members aren't.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Shocked by the Unexpected",
+                            "entries": [
+                                "When you're surprised in this manner, you roll initiative as you would normally do, however you can't move or take an action on your first turn of the combat, and you can't take a reaction until that turn ends."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Ready but Wasn't",
+                            "entries": [
+                                "When someone is surprised in this way, they have Disadvantage on their initiative rolls. They also get to interact within the first round of combat under normal conditions."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
 	]
 }
