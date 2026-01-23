@@ -9529,6 +9529,16 @@
 			"size": [
 				"M"
 			],
+			"heightAndWeight": {
+				"baseHeight": 56,
+				"heightMod": "2d8",
+				"baseWeight": 100,
+				"weightMod": "2d4"
+			},
+			"age": {
+				"mature": 20,
+				"max": 100
+			},
 			"speed": 35,
 			"traitTags": [
 				"Magic Resistance",
@@ -9551,6 +9561,13 @@
 					"name": "Creature Type",
 					"entries": [
 						"You are a Fey."
+					]
+				},
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Satyrs mature and age at about the same rate as humans."
 					]
 				},
 				{
@@ -9861,6 +9878,16 @@
 			"size": [
 				"M"
 			],
+			"heightAndWeight": {
+				"baseHeight": 54,
+				"heightMod": "2d8",
+				"baseWeight": 90,
+				"weightMod": "2d4"
+			},
+			"age": {
+				"mature": 10,
+				"max": 70
+			},
 			"speed": 30,
 			"darkvision": 60,
 			"skillProficiencies": [
@@ -9876,6 +9903,13 @@
 				}
 			],
 			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Shifters are quick to mature both physically and emotionally, reaching young adulthood at age 10. They rarely live to be more than 70 years old."
+					]
+				},
 				{
 					"type": "entries",
 					"name": "Bestial Instincts",
@@ -10291,6 +10325,16 @@
 				"walk": 30,
 				"climb": true
 			},
+			"heightAndWeight": {
+				"baseHeight": 58,
+				"heightMod": "2d10",
+				"baseWeight": 90,
+				"weightMod": "2d4"
+			},
+			"age": {
+				"mature": 20,
+				"max": 100
+			},
 			"darkvision": 60,
 			"traitTags": [
 				"Natural Weapon"
@@ -10302,6 +10346,13 @@
 				}
 			],
 			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Tabaxi have lifespans equivalent to humans."
+					]
+				},
 				{
 					"type": "entries",
 					"name": "Size",
@@ -10877,6 +10928,16 @@
 				"walk": 30,
 				"swim": true
 			},
+			"heightAndWeight": {
+				"baseHeight": 54,
+				"heightMod": "2d10",
+				"baseWeight": 90,
+				"weightMod": "2d4"
+			},
+			"age": {
+				"mature": 15,
+				"max": 200
+			},
 			"darkvision": 60,
 			"traitTags": [
 				"Amphibious"
@@ -10919,6 +10980,13 @@
 				}
 			],
 			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Tritons reach maturity around age 15 and can live up to 200 years."
+					]
+				},
 				{
 					"type": "entries",
 					"name": "Speed",
@@ -11682,6 +11750,16 @@
 				"S",
 				"M"
 			],
+			"heightAndWeight": {
+				"baseHeight": 56,
+				"heightMod": "2d10",
+				"baseWeight": 110,
+				"weightMod": "2d4"
+			},
+			"age": {
+				"mature": 20,
+				"max": 100
+			},
 			"speed": 30,
 			"darkvision": 60,
 			"traitTags": [
@@ -11719,6 +11797,13 @@
 				}
 			],
 			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Purebloods mature at the same rate as humans and have lifespans similar in length to theirs."
+					]
+				},
 				{
 					"type": "entries",
 					"name": "Size",
