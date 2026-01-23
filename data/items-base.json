@@ -2155,7 +2155,7 @@
 					"type": "entries",
 					"name": "Light",
 					"entries": [
-						"Light Weapons are small and easy to handle in your off-hand, making it ideal for engaging in Two-Weapon Fighting."
+						"Light Weapons are small and easy to handle in your off-hand, making it ideal for engaging in {@action Two-Weapon Fighting}."
 					]
 				}
 			]
