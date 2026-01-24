@@ -6149,6 +6149,29 @@
 				}
 			]
 		},
+		"Galder's Speedy Courier": {
+            "classVariant": [
+                {
+                    "name": "Warlock",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                }
+            ]
+        },
+        "Galder's Tower": {
+            "classVariant": [
+                {
+                    "name": "Wizard",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                }
+            ]
+        },
 		"Green-Flame Blade": {
 			"class": [
 				{
@@ -6219,6 +6242,30 @@
 				}
 			]
 		},
+		"Kinetic Jaunt": {
+            "classVariant": [
+                {
+                    "name": "Bard",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                },
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                },
+                {
+                    "name": "Artificer",
+                    "source": "TCE",
+                    "definedInSource": "TCE"
+                }
+            ]
+        },
 		"Lightning Lure": {
 			"class": [
 				{
