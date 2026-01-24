@@ -251,6 +251,51 @@
 			]
         },
 		{
+			"name": "Borrowed Knowledge",
+			"source": "TCE",
+			"page": 106,
+			"otherSources": [
+                {
+                    "source": "SCC",
+                    "page": 37
+                }
+            ],
+			"level": 2,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a book worth at least 25 gp",
+					"cost": 2500
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You draw on knowledge from spirits of the past. Choose one skill in which you lack proficiency. For the spell's duration, you have proficiency in the chosen skill. The spell ends early if you cast it again."
+			]
+		},
+		{
 			"name": "Dream of the Blue Veil",
 			"source": "TCE",
 			"page": 106,
