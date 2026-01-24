@@ -6352,6 +6352,30 @@
 				}
 			]
 		},
+		"Power Word Maim": {
+            "classVariant": [
+                {
+                    "name": "Bard",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                },
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                },
+                {
+                    "name": "Warlock",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                }
+            ]
+        },
 		"Silvery Barbs": {
             "classVariant": [
                 {
@@ -6577,6 +6601,20 @@
 				}
 			]
 		},
+		"Tasha's Bubbling Cauldron": {
+            "classVariant": [
+                {
+                    "name": "Warlock",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                }
+            ]
+        },
 		"Tasha's Caustic Brew": {
 			"class": [
 				{
