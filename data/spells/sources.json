@@ -7051,15 +7051,6 @@
 				}
 			]
 		},
-		"Find Greater Steed": {
-			"classVariant": [
-				{
-					"name": "Paladin",
-					"source": "PHB",
-					"definedInSource": "XGE"
-				}
-			]
-		},
 		"Flame Arrows": {
 			"classVariant": [
 				{
