@@ -1773,6 +1773,22 @@
 				}
 			]
 		},
+		"Detect Traps": {
+            "class": [
+                {
+                    "name": "Cleric",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Druid",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Ranger",
+                    "source": "PHB"
+                }
+            ]
+        },
 		"Dimension Door": {
 			"class": [
 				{
@@ -2375,22 +2391,6 @@
 				},
 				{
 					"name": "Druid",
-					"source": "PHB"
-				}
-			]
-		},
-		"Find Traps": {
-			"class": [
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
 					"source": "PHB"
 				}
 			]
@@ -5328,7 +5328,7 @@
 				}
 			]
 		},
-		"Swift Quiver": {
+		"Swift Shots": {
 			"class": [
 				{
 					"name": "Ranger",
