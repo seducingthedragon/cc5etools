@@ -5618,6 +5618,39 @@
                 }
             }
         },
+        "detect traps": {
+            "class": {
+                "PHB": {
+                    "Cleric": true,
+                    "Druid": true,
+                    "Ranger": true
+                }
+            },
+            "subclass": {
+                "PHB": {
+                    "Sorcerer": {
+                        "XGE": {
+                            "Divine Soul": {
+                                "name": "Divine Soul"
+                            }
+                        }
+                    }
+                }
+            },
+            "feat": {
+                "DSotDQ": {
+                    "Adept of the White Robes": true
+                }
+            },
+            "race": {
+                "ERLW": {
+                    "Half-Elf (Variant; Mark of Detection)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    }
+                }
+            }
+        },
         "dimension door": {
             "class": {
                 "PHB": {
@@ -7421,39 +7454,6 @@
                                 "name": "Divine Soul"
                             }
                         }
-                    }
-                }
-            }
-        },
-        "find traps": {
-            "class": {
-                "PHB": {
-                    "Cleric": true,
-                    "Druid": true,
-                    "Ranger": true
-                }
-            },
-            "subclass": {
-                "PHB": {
-                    "Sorcerer": {
-                        "XGE": {
-                            "Divine Soul": {
-                                "name": "Divine Soul"
-                            }
-                        }
-                    }
-                }
-            },
-            "feat": {
-                "DSotDQ": {
-                    "Adept of the White Robes": true
-                }
-            },
-            "race": {
-                "ERLW": {
-                    "Half-Elf (Variant; Mark of Detection)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
                     }
                 }
             }
@@ -17217,7 +17217,7 @@
                 }
             }
         },
-        "swift quiver": {
+        "swift shots": {
             "class": {
                 "PHB": {
                     "Ranger": true
@@ -19182,6 +19182,42 @@
         }
     },
     "tce": {
+        "air bubble": {
+            "class": {
+                "PHB": {
+                    "Druid": true,
+                    "Ranger": true,
+                    "Sorcerer": true,
+                    "Wizard": true
+                },
+                "TCE": {
+                    "Artificer": true
+                }
+            },
+            "subclass": {
+                "PHB": {
+                    "Fighter": {
+                        "PHB": {
+                            "Eldritch Knight": {
+                                "name": "Eldritch Knight"
+                            }
+                        }
+                    },
+                    "Rogue": {
+                        "PHB": {
+                            "Arcane Trickster": {
+                                "name": "Arcane Trickster"
+                            }
+                        }
+                    }
+                }
+            },
+            "reward": {
+                "BAM": {
+                    "Charm of Air Bubbles": true
+                }
+            }
+        },
         "blade of disaster": {
             "classVariant": {
                 "PHB": {
@@ -19239,6 +19275,11 @@
             },
             "classVariant": {
                 "PHB": {
+                    "Bard": {
+                        "definedInSources": [
+                            "TCE"
+                        ]
+                    },
                     "Sorcerer": {
                         "definedInSources": [
                             "TCE"
@@ -19369,6 +19410,21 @@
                             }
                         }
                     }
+                }
+            }
+        },
+        "galder's speedy courier": {
+            "class": {
+                "PHB": {
+                    "Warlock": true,
+                    "Wizard": true
+                }
+            }
+        },
+        "galder's tower": {
+            "class": {
+                "PHB": {
+                    "Wizard": true
                 }
             }
         },
