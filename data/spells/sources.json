@@ -6061,6 +6061,15 @@
                 }
             ]
         },
+		"Arboreal Curse": {
+            "class": [
+                {
+                    "name": "Druid",
+                    "source": "PHB",
+                    "definedInSource": "GHLoE"
+                }
+            ]
+        },
 		"Blade of Disaster": {
 			"classVariant": [
 				{
@@ -6212,6 +6221,15 @@
 				}
 			]
 		},
+		"Hunter Sense": {
+            "classVariant": [
+                {
+                    "name": "Druid",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                }
+            ]
+        },
 		"Intellect Fortress": {
 			"class": [
 				{
@@ -6306,6 +6324,15 @@
 				}
 			]
 		},
+		"Magic Mirror": {
+            "classVariant": [
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                }
+            ]
+        },
 		"Mind Sliver": {
 			"classVariant": [
 				{

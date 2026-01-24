@@ -55,6 +55,61 @@
             "hasFluffImages": true
         },
 		{
+            "name": "Arboreal Curse",
+            "source": "TCE",
+            "page": 106,
+            "otherSources": [
+                {
+                    "source": "GrimHollowLairsEtharis"
+                }
+            ],
+            "level": 7,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a cup of sap"
+            },
+            "duration": [
+                {
+                    "type": "permanent",
+                    "ends": [
+                        "dispel"
+                    ]
+                }
+            ],
+            "entries": [
+                "You attempt to turn one creature that you can see within range into wood. The creature makes a Constitution saving throw. On a failed save, it has the {@condition Restrained|PHB} condition as its flesh begins to harden into bark. On a successful save, its speed is 0 until the start of your next turn.",
+                "A creature {@condition Restrained|PHB} by this spell makes a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the condition ends. If it fails three times, it is turned into a tree and has the {@condition Petrified|PHB} condition. The successes and failures needn't be consecutive; keep track of both until the target collects three of a kind.",
+                "If the transformed creature is burned, chopped down, or otherwise destroyed while {@condition Petrified|PHB}, the creature is slain.",
+                "A creature remains transformed unless the effect is reversed within one year with a level 5 {@spell restoration}, {@spell wish}, or similar magical effects. If the creature spends 1 year and 1 day as a tree, the transformation becomes permanent, and nothing can return the creature to its original form."
+            ],
+            "conditionInflict": [
+                "petrified",
+                "restrained"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "miscTags": [
+                "PRM",
+                "SGT"
+            ]
+        },
+		{
 			"name": "Blade of Disaster",
 			"source": "TCE",
 			"page": 106,
@@ -451,6 +506,47 @@
 			]
 		},
 		{
+            "name": "Hunter Sense",
+            "source": "TCE",
+            "page": 107,
+            "otherSources": [
+                {
+                    "source": "GrimHollowLairsEtharis"
+                }
+            ],
+            "level": 0,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You touch a willing creature. For the duration, the target's senses are heightened. Whenever the target makes a Wisdom ({@skill Perception}) check, it can treat a {@dice d20} roll of 9 or lower as a 10."
+            ]
+        },
+		{
 			"name": "Intellect Fortress",
 			"source": "TCE",
 			"page": 107,
@@ -626,6 +722,47 @@
             ],
             "areaTags": [
                 "ST"
+            ]
+        },
+		{
+            "name": "Magic Mirror",
+            "source": "TCE",
+            "page": 108,
+            "otherSources": [
+                {
+                    "source": "GHLoE"
+                }
+            ],
+            "level": 5,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "reaction",
+                    "condition": "which you take when you are targeted by a spell"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a polished silver marble"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "A momentary bubble of iridescent energy shimmers in the air between you and the caster of the triggering spell. The spell is redirected to a creature of your choice that you can see within 60 feet. If the spell is 5th level or lower, you are no longer a target of the spell and the chosen creature is instead. If the spell is 6th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a successful check, you are no longer a target of the spell and the chosen creature is instead. On a failed check, you remain the target of the triggering spell."
+            ],
+            "miscTags": [
+                "SGT"
             ]
         },
 		{
