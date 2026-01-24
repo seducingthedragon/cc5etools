@@ -6051,45 +6051,50 @@
 			]
 		},
 		"Booming Blade": {
-			"class": [
-				{
-					"name": "Artificer",
-					"source": "TCE"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "SCAG"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "SCAG"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "SCAG"
-				}
-			],
-			"classVariant": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "TCE"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "TCE"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "TCE"
-				}
-			]
-		},
+            "class": [
+                {
+                    "name": "Artificer",
+                    "source": "TCE"
+                },
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB",
+                    "definedInSource": "SCAG"
+                },
+                {
+                    "name": "Warlock",
+                    "source": "PHB",
+                    "definedInSource": "SCAG"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB",
+                    "definedInSource": "SCAG"
+                }
+            ],
+            "classVariant": [
+                {
+                    "name": "Bard",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                },
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                },
+                {
+                    "name": "Warlock",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                }
+            ]
+        },
 		"Dream of the Blue Veil": {
 			"classVariant": [
 				{
