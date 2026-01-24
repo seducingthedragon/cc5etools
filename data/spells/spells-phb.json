@@ -3878,44 +3878,60 @@
 			]
 		},
 		{
-			"name": "Conjure Volley",
-			"source": "PHB",
-			"page": 226,
-			"level": 5,
-			"school": "C",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 150
-				}
-			},
-			"components": {
-				"v": true,
-				"s": true,
-				"m": "one piece of ammunition or one thrown weapon"
-			},
-			"duration": [
-				{
-					"type": "instant"
-				}
-			],
-			"entries": [
-				"You fire a piece of nonmagical ammunition from a ranged weapon or throw a nonmagical weapon into the air and choose a point within range. Hundreds of duplicates of the ammunition or weapon fall in a volley from above and then disappear. Each creature in a 40-foot-radius, 20-foot-high cylinder centered on that point must make a Dexterity saving throw. A creature takes {@damage 8d8} damage on a failed save, or half as much damage on a successful one. The damage type is the same as that of the ammunition or weapon."
-			],
-			"savingThrow": [
-				"dexterity"
-			],
-			"areaTags": [
-				"Y"
-			]
-		},
+            "name": "Conjure Volley",
+            "source": "PHB",
+            "page": 226,
+            "level": 3,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 150
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a single piece of ammunition and a ranged weapon"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You fire one piece of nonmagical ammunition from a ranged weapon into the air and choose a point within range.",
+                "The ammunition or weapon explodes into a multitude of exact copies of it, which fall in a 30-foot-radius, 20-foot-high cylinder centered on the point you chose. Creatures within that area must make a Dexterity saving throw. They take {@damage 6d8} force damage on a failed save, and half as much damage on a successful save. Any piece of ammunition created by this spell disintegrate once the effects of this spell are resolved."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th-level or higher, the damage of this spell increases by {@scaledamage 6d8|3-9|1d8} and the radius of the cylinder increases by 5 feet for each slot level above 3rd."
+                    ]
+                }
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "damageInflict": [
+                "force"
+            ],
+            "areaTags": [
+                "Y"
+            ],
+            "miscTags": [
+                "SCL"
+            ]
+        },
 		{
 			"name": "Conjure Woodland Beings",
 			"source": "PHB",
