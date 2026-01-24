@@ -859,7 +859,8 @@
                 "necrotic"
             ],
             "conditionInflict": [
-                "prone"
+                "paralyzed",
+				"prone"
             ],
             "savingThrow": [
                 "constitution"
