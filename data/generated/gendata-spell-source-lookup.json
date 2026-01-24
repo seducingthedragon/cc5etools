@@ -19210,6 +19210,30 @@
                     "Artificer": true
                 }
             },
+            "classVariant": {
+                "PHB": {
+                    "Druid": {
+                        "definedInSources": [
+                            "TCE"
+                        ]
+                    },
+                    "Ranger": {
+                        "definedInSources": [
+                            "TCE"
+                        ]
+                    },
+                    "Sorcerer": {
+                        "definedInSources": [
+                            "TCE"
+                        ]
+                    },
+                    "Wizard": {
+                        "definedInSources": [
+                            "TCE"
+                        ]
+                    }
+                }
+            },
             "subclass": {
                 "PHB": {
                     "Fighter": {
@@ -19235,6 +19259,15 @@
             }
         },
         "arboreal curse": {
+            "class": {
+                "PHB": {
+                    "Druid": {
+                        "definedInSources": [
+                            "GHLoE"
+                        ]
+                    }
+                }
+            },
             "classVariant": {
                 "PHB": {
                     "Druid": {
@@ -19428,6 +19461,30 @@
                     }
                 }
             },
+            "classVariant": {
+                "PHB": {
+                    "Bard": {
+                        "definedInSources": [
+                            "TCE"
+                        ]
+                    },
+                    "Cleric": {
+                        "definedInSources": [
+                            "TCE"
+                        ]
+                    },
+                    "Warlock": {
+                        "definedInSources": [
+                            "TCE"
+                        ]
+                    },
+                    "Wizard": {
+                        "definedInSources": [
+                            "TCE"
+                        ]
+                    }
+                }
+            },
             "subclass": {
                 "PHB": {
                     "Fighter": {
@@ -19502,6 +19559,20 @@
             }
         },
         "galder's speedy courier": {
+            "class": {
+                "PHB": {
+                    "Warlock": {
+                        "definedInSources": [
+                            "LLK"
+                        ]
+                    },
+                    "Wizard": {
+                        "definedInSources": [
+                            "LLK"
+                        ]
+                    }
+                }
+            },
             "classVariant": {
                 "PHB": {
                     "Warlock": {
@@ -19518,6 +19589,15 @@
             }
         },
         "galder's tower": {
+            "class": {
+                "PHB": {
+                    "Wizard": {
+                        "definedInSources": [
+                            "LLK"
+                        ]
+                    }
+                }
+            },
             "classVariant": {
                 "PHB": {
                     "Wizard": {
@@ -19650,6 +19730,15 @@
             }
         },
         "hunter sense": {
+            "class": {
+                "PHB": {
+                    "Druid": {
+                        "definedInSources": [
+                            "GHLoE"
+                        ]
+                    }
+                }
+            },
             "classVariant": {
                 "PHB": {
                     "Druid": {
@@ -19730,6 +19819,25 @@
                 },
                 "TCE": {
                     "Artificer": true
+                }
+            },
+            "classVariant": {
+                "PHB": {
+                    "Bard": {
+                        "definedInSources": [
+                            "TCE"
+                        ]
+                    },
+                    "Sorcerer": {
+                        "definedInSources": [
+                            "TCE"
+                        ]
+                    },
+                    "Wizard": {
+                        "definedInSources": [
+                            "TCE"
+                        ]
+                    }
                 }
             },
             "subclass": {
@@ -19882,6 +19990,15 @@
             }
         },
         "magic mirror": {
+            "class": {
+                "PHB": {
+                    "Sorcerer": {
+                        "definedInSources": [
+                            "GHLoE"
+                        ]
+                    }
+                }
+            },
             "classVariant": {
                 "PHB": {
                     "Sorcerer": {

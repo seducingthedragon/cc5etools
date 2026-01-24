@@ -6057,10 +6057,39 @@
                     "source": "PHB",
                     "definedInSource": "AAG"
                 }
+            ],
+			"classVariant": [
+                {
+                    "name": "Druid",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                },
+                {
+                    "name": "Ranger",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                },
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                }
             ]
         },
 		"Arboreal Curse": {
-            "classVariant": [
+            "class": [
+                {
+                    "name": "Druid",
+                    "source": "PHB",
+                    "definedInSource": "GHLoE"
+                }
+            ],
+			"classVariant": [
                 {
                     "name": "Druid",
                     "source": "PHB",
@@ -6154,6 +6183,28 @@
 					"source": "PHB",
 					"definedInSource": "SCC"
 				}
+			],
+			"classVariant": [
+				{
+					"name": "Bard",
+					"source": "PHB",
+					"definedInSource": "TCE"
+				},
+				{
+					"name": "Cleric",
+					"source": "PHB",
+					"definedInSource": "TCE"
+				},
+				{
+					"name": "Warlock",
+					"source": "PHB",
+					"definedInSource": "TCE"
+				},
+				{
+					"name": "Wizard",
+					"source": "PHB",
+					"definedInSource": "TCE"
+				}
 			]
 		},
 		"Dream of the Blue Veil": {
@@ -6181,7 +6232,19 @@
 			]
 		},
 		"Galder's Speedy Courier": {
-            "classVariant": [
+            "class": [
+                {
+                    "name": "Warlock",
+                    "source": "PHB",
+                    "definedInSource": "LLK"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB",
+                    "definedInSource": "LLK"
+                }
+            ],
+			"classVariant": [
                 {
                     "name": "Warlock",
                     "source": "PHB",
@@ -6195,7 +6258,14 @@
             ]
         },
         "Galder's Tower": {
-            "classVariant": [
+            "class": [
+                {
+                    "name": "Wizard",
+                    "source": "PHB",
+                    "definedInSource": "LLK"
+                }
+            ],
+			"classVariant": [
                 {
                     "name": "Wizard",
                     "source": "PHB",
@@ -6244,7 +6314,14 @@
 			]
 		},
 		"Hunter Sense": {
-            "classVariant": [
+            "class": [
+                {
+                    "name": "Druid",
+                    "source": "PHB",
+                    "definedInSource": "GHLoE"
+                }
+            ],
+			"classVariant": [
                 {
                     "name": "Druid",
                     "source": "PHB",
@@ -6303,6 +6380,23 @@
                     "source": "PHB",
                     "definedInSource": "SCC"
                 }
+            ],
+			"classVariant": [
+				{
+                    "name": "Bard",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                },
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                }
             ]
         },
 		"Lightning Lure": {
@@ -6346,7 +6440,14 @@
 			]
 		},
 		"Magic Mirror": {
-            "classVariant": [
+            "class": [
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB",
+                    "definedInSource": "GHLoE"
+                }
+            ],
+			"classVariant": [
                 {
                     "name": "Sorcerer",
                     "source": "PHB",
