@@ -927,7 +927,7 @@
 			],
 			"entries": [
 				"You touch a closed door, window, gate, chest, or other entryway, and it becomes locked for the duration. You and the creatures you designate when you cast this spell can open the object normally. You can also set a password that, when spoken within 5 feet of the object, suppresses this spell for 1 minute. Otherwise, it is impassable until it is broken or the spell is dispelled or suppressed. Casting {@spell knock} on the object suppresses {@spell arcane lock} for 10 minutes.",
-				"While affected by this spell, the object is more difficult to break or force open; the DC to break it or pick any locks on it increases by 15."
+				"While affected by this spell, the object is more difficult to break or force open; the DC to break it or pick any locks on it increases by 10."
 			],
 			"miscTags": [
 				"OBJ"
@@ -997,7 +997,7 @@
 				}
 			],
 			"range": {
-				"type": "emanation",
+				"type": "radius",
 				"distance": {
 					"type": "feet",
 					"amount": 10
@@ -1013,7 +1013,7 @@
 				}
 			],
 			"entries": [
-				"You invoke the power of Hadar, the Dark Hunger. Tendrils of dark energy erupt from you and batter all creatures within 10 feet of you. Each creature in that area must make a Strength saving throw. On a failed save, a target takes {@damage 2d6} necrotic damage and can't take reactions while they have the {@condition Restrained} condition until the end of its next turn. On a successful save, the creature takes half damage, but suffers no other effect."
+				"You invoke the power of Hadar, the Dark Hunger. Tendrils of dark energy erupt from you and batter all creatures within 10 feet of you. Each creature in that area must make a Strength saving throw. On a failed save, a target takes {@damage 2d6} necrotic damage and can't take reactions until its next turn. On a successful save, the creature takes half damage, but suffers no other effect."
 			],
 			"entriesHigherLevel": [
 				{
@@ -1029,9 +1029,6 @@
 			],
 			"savingThrow": [
 				"strength"
-			],
-			"conditionInflict": [
-				"restrained"
 			],
 			"areaTags": [
 				"S"
@@ -1617,7 +1614,11 @@
 			},
 			"duration": [
 				{
-					"type": "special",
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
 					"concentration": true
 				}
 			],
@@ -1625,14 +1626,7 @@
 				"ritual": true
 			},
 			"entries": [
-				"You touch a willing beast. For the duration of the spell, you can use your action to see through the beast's eyes and hear what it hears, and continue to do so until you use your action to return to your normal senses. While perceiving through the beast's senses, you gain the benefits of any special senses possessed by that creature, though you are {@condition blinded} and {@condition deafened} to your own surroundings.",
-				{
-					"type": "entries",
-					"name": "Special Duration",
-					"entries": [
-						"If you cast this spell with your beastly companion, then you can forgo concentration for 1 hour. Otherwise, this spell utilizes concentration with all other beasts for up to 1 hour."
-					]
-				}
+				"You touch a willing beast. For the duration of the spell, you can use your action to see through the beast's eyes and hear what it hears, and continue to do so until you use your action to return to your normal senses. While perceiving through the beast's senses, you gain the benefits of any special senses possessed by that creature, though you are {@condition blinded} and {@condition deafened} to your own surroundings."
 			],
 			"areaTags": [
 				"ST"
@@ -2908,16 +2902,7 @@
 				}
 			],
 			"entries": [
-				"You fill the air with spectral spinning glass daggers in a 5 foot cube that pulse outwards another 5 feet, centered on a point you choose within range. Creatures can make a {@skill Perception} check against your spell save DC in order to perceive it as a magical cloud, however it's considered to be Lightly Obscured if attempting to perceive the daggers within. A creature takes {@damage 4d4} slashing damage once per turn for the following scenarios:",
-				{
-					"type": "list",
-					"items": [
-						"moving within 5ft of the spell's area for the first time",
-						"being within the spell's center",
-						"starting or ending its turn within 5ft of the spell"
-					]
-				},
-				"On your subsequent turns, you can take a bonus action to move or teleport the dagger cloud up to 30 feet."
+				"You fill the air with spinning daggers in a cube 5 feet on each side, centered on a point you choose within range. A creature takes {@damage 4d4} slashing damage when it enters the spell's area for the first time on a turn or starts its turn there."
 			],
 			"entriesHigherLevel": [
 				{
@@ -4469,23 +4454,26 @@
 			"range": {
 				"type": "point",
 				"distance": {
-					"type": "touch"
+					"type": "feet",
+					"amount": 5
 				}
 			},
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "four or more arrows or bolts",
-				"consume": "optional"
+				"m": "four or more arrows or bolts"
 			},
 			"duration": [
 				{
-					"type": "special"
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
 				}
 			],
 			"entries": [
-				"You plant four pieces of nonmagical ammunition\u2014{@item arrow|phb|arrows} or {@item crossbow bolt|phb|crossbow bolts}\u2014in the ground and lay magic upon them to protect an area. Until the spell ends, whenever a creature other than you comes within 30 feet of the ammunition for the first time on a turn or ends its turn there, one piece of ammunition flies up to strike it. The creature must succeed on a Dexterity saving throw or take {@damage 1d6} magical piercing damage. The piece of ammunition is then consumed by the spell.", 
-				"The spell ends when no ammunition remains or until you remove all remaining arrows yourself. The arrows can only be removed without magic by you.",
+				"You plant four pieces of nonmagical ammunition\u2014{@item arrow|phb|arrows} or {@item crossbow bolt|phb|crossbow bolts}\u2014in the ground within range and lay magic upon them to protect an area. Until the spell ends, whenever a creature other than you comes within 30 feet of the ammunition for the first time on a turn or ends its turn there, one piece of ammunition flies up to strike it. The creature must succeed on a Dexterity saving throw or take {@damage 1d6} piercing damage. The piece of ammunition is then destroyed. The spell ends when no ammunition remains.",
 				"When you cast this spell, you can designate any creatures you choose, and the spell ignores them."
 			],
 			"entriesHigherLevel": [
@@ -5049,7 +5037,8 @@
 				"If any of this spell's area overlaps with an area of light created by a spell of 2nd level or lower, the spell that created the light is dispelled."
 			],
 			"miscTags": [
-				"OBJ"
+				"OBJ",
+				"OBS"
 			],
 			"areaTags": [
 				"S"
@@ -5349,10 +5338,9 @@
 				}
 			],
 			"range": {
-				"type": "sphere",
+				"type": "point",
 				"distance": {
-					"type": "feet",
-					"amount": 30
+					"type": "self"
 				}
 			},
 			"components": {
@@ -5370,7 +5358,7 @@
 				}
 			],
 			"entries": [
-				"For the duration, you know if there is an aberration, celestial, elemental, fey, fiend, or undead within 30 feet of you, as well as where the creature is located. Similarly, you know if there is a place or object within 30 feet of you that has been magically consecrated or desecrated, such as an active {@spell Hallow|PHB} spell with its location.",
+				"For the duration, you know if there is an aberration, celestial, elemental, fey, fiend, or undead within 30 feet of you, as well as where the creature is located. Similarly, you know if there is a place or object within 30 feet of you that has been magically consecrated or desecrated.",
 				"The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt."
 			],
 			"affectsCreatureType": [
@@ -5403,10 +5391,9 @@
 				}
 			],
 			"range": {
-				"type": "sphere",
+				"type": "point",
 				"distance": {
-					"type": "feet",
-					"amount": 30
+					"type": "self"
 				}
 			},
 			"components": {
@@ -5445,10 +5432,9 @@
 				}
 			],
 			"range": {
-				"type": "sphere",
+				"type": "point",
 				"distance": {
-					"type": "feet",
-					"amount": 30
+					"type": "self"
 				}
 			},
 			"components": {
@@ -5520,48 +5506,6 @@
 			],
 			"abilityCheck": [
 				"intelligence"
-			],
-			"miscTags": [
-				"SGT"
-			]
-		},
-		{
-			"name": "Detect Traps",
-			"source": "PHB",
-			"page": 231,
-			"srd": true,
-			"level": 2,
-			"school": "D",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "sphere",
-				"distance": {
-					"type": "feet",
-					"amount": 30
-				}
-			},
-			"components": {
-				"v": true,
-				"s": true
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "minute",
-						"amount": 10
-					},
-					"concentration": true
-				}
-			],
-			"entries": [
-				"You sense the presence of any trap within range as well as visible locations. A trap, for the purpose of this spell, includes anything that would inflict a sudden or unexpected effect you consider harmful or undesirable, which was specifically intended as such by its creator. Thus, the spell would locate an area affected by the {@spell alarm} spell, a {@spell glyph of warding}, a mechanical pit trap, or other trap-related aspects.",
-				"The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt. This allows you to locate triggering mechanisms and other visible parts of a trap but not concealed parts."
 			],
 			"miscTags": [
 				"SGT"
@@ -6487,6 +6431,61 @@
 			]
 		},
 		{
+			"name": "Elemental Weapon",
+			"source": "PHB",
+			"page": 237,
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"A nonmagical weapon you touch becomes a magic weapon. Choose one of the following damage types: acid, cold, fire, lightning, or thunder. For the duration, the weapon has a +1 bonus to attack rolls and deals an extra {@damage 1d4} damage of the chosen type when it hits."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th or 6th level, the bonus to attack rolls increases to +2 and the extra damage increases to {@scaledamage 1d4|3-9|2d4}. When you use a spell slot of 7th level or higher, the bonus increases to +3 and the extra damage increases to {@scaledamage 1d4|3-9|3d4}."
+					]
+				}
+			],
+			"damageInflict": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"thunder"
+			],
+			"miscTags": [
+				"AAD"
+			]
+		},
+		{
 			"name": "Enhance Ability",
 			"source": "PHB",
 			"page": 237,
@@ -6791,7 +6790,7 @@
 				}
 			],
 			"entries": [
-				"You weave a distracting string of words, causing creatures of your choice that you can see within range and that can hear you to make a Wisdom saving throw. Any creature that can't be {@condition charmed} succeeds on this saving throw automatically, and if you or your companions are fighting a creature, it has advantage on the save. On a failed save, a target has a -10 penalty to Wisdom ({@skill Perception}) checks and Passive {@skill Perception} until the spell ends. The spell ends if you are {@condition incapacitated} or can no longer speak."
+				"You weave a distracting string of words, causing creatures of your choice that you can see within range and that can hear you to make a Wisdom saving throw. Any creature that can't be {@condition charmed} succeeds on this saving throw automatically, and if you or your companions are fighting a creature, it has advantage on the save. On a failed save, the target has disadvantage on Wisdom ({@skill Perception}) checks made to perceive any creature other than you until the spell ends or until the target can no longer hear you. The spell ends if you are {@condition incapacitated} or can no longer speak."
 			],
 			"savingThrow": [
 				"wisdom"
@@ -6801,70 +6800,6 @@
 			],
 			"areaTags": [
 				"MT"
-			]
-		},
-		{
-			"name": "Ethereal Anchor",
-			"source": "PHB",
-			"page": 238,
-			"level": 1,
-			"school": "V",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"distance": {
-					"amount": 60,
-					"type": "feet"
-				},
-				"type": "point"
-			},
-			"components": {
-				"v": true,
-				"s": true,
-				"m": "a silver nail"
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"amount": 1,
-						"type": "minute"
-					},
-					"concentration": true
-				}
-			],
-			"entries": [
-				"You hurl a bolt of pure spirit at a creature within range. Make a ranged spell attack against your target. On hit, it takes {@damage 2d6} radiant damage and for the duration, and both you and the target has a speed of 0 while you maintain concentration to hold the target in place.", 
-				"As an action on its turn, the creature can make a Strength saving throw against your Spell save DC, ending the spell on a success. If you target another creature with an attack or cast an effect that does not center on the target of this spell, the target had advantage on their Strength saving throw to end the effect."
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the radiant damage increases by {@scaledamage 2d6|1-9|1d6} for each slot level above 1st."
-					]
-				}
-			],
-			"areaTags": [
-				"ST"
-			],
-			"damageInflict": [
-				"radiant"
-			],
-			"miscTags": [
-				"ADV",
-				"SCL"
-			],
-			"savingThrow": [
-				"strength"
-			],
-			"spellAttack": [
-				"R"
 			]
 		},
 		{
@@ -7500,16 +7435,16 @@
 			"school": "C",
 			"time": [
 				{
-					"number": 1,
+					"number": 10,
 					"unit": "minute"
 				}
 			],
 			"range": {
+				"type": "point",
 				"distance": {
-					"amount": 30,
-					"type": "feet"
-				},
-				"type": "point"
+					"type": "feet",
+					"amount": 30
+				}
 			},
 			"components": {
 				"v": true,
@@ -7521,47 +7456,11 @@
 				}
 			],
 			"entries": [
-				"You conjure a spirit in an unoccupied space within range that assumes the form of a supernaturally intelligent, strong, and loyal steed, which is instantly bonded to you. The Steed takes on the form of a Medium or Large quadrupedal (four-legged) {@filter beasts of challenge rating 1/2 or lower|bestiary|challenge rating=[&0;&1/2]|type=beast|miscellaneous=!swarm} of CR ½ or lower without a flying speed or you can summon an {@creature Otherworldly Steed|PHB}. Some recommended steeds are a {@creature warhorse}, a {@creature pony}, a {@creature camel}, an {@creature elk}, or a {@creature mastiff}..",
-				{
-					"type": "entries",
-					"name": "Statistics",
-					"entries": [
-						"Your Steed uses the stat block of the creature you chose for it, but its creature type changes to reflect your alignment: Celestial (good), Fey (neutral), or Fiend (evil). The Steed's Intelligence score becomes 6 (if it was lower), and it can understand one language that you speak."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Control",
-					"entries": [
-						"You control your Steed and decide how it acts, both in and out of combat In combat, it shares your initiative and acts during your turn. While riding it, you can make any spell you cast that targets only you also target your Steed."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Care for Steed",
-					"entries": [
-						"While you and your Steed are within 1 mile of one another, you can use a special form of Telepathy to communicate.",
-						"If your Steed is reduced to 0 hit points it disappears. You can also use a bonus action to dismiss your Steed, causing it to disappear. Should you cast this spell again you can choose to either conjure the same Steed, and it reappears in range at its maximum hit points, or to conjure a new Steed, releasing your previous Steed from its bond in the process."
-					]
-				}
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell with a slot of 4th-level or higher, you can choose for your Steed to take the form a Greater Steed. This steed takes the form of a Medium or Large Beast, Celestial, or Monstrosity of CR 2 or lower that you have seen before. The form the Steed takes must be quadrupedal and/or winged, and a fly speed is allowed. Some recommended greater steeds are a {@creature griffon}, a {@creature pegasus}, a {@creature peryton}, a {@creature dire wolf}, a {@creature rhinoceros}, or a {@creature saber-toothed tiger}.",
-						{
-							"type": "inset",
-							"source": "FTD",
-							"page": 190,
-							"name": "Dragonnel Steeds",
-							"entries": [
-								"With the DM's permission, a paladin can summon a spirit in the form of a {@creature dragonnel|ftd} when casting this spell with a 4th level spell slot of higher."
-							]
-						}
-					]
-				}
+				"You summon a spirit that assumes the form of an unusually intelligent, strong, and loyal steed, creating a long-lasting bond with it. Appearing in an unoccupied space within range, the steed takes on a form that you choose: a {@creature warhorse}, a {@creature pony}, a {@creature camel}, an {@creature elk}, or a {@creature mastiff}. (Your DM might allow other animals to be summoned as steeds.) The steed has the statistics of the chosen form, though it is a celestial, fey, or fiend (your choice) instead of its normal type. Additionally, if your steed has an Intelligence of 5 or less, its Intelligence becomes 6, and it gains the ability to understand one language of your choice that you speak.",
+				"Your steed serves you as a mount, both in combat and out, and you have an instinctive bond with it that allows you to fight as a seamless unit. While mounted on your steed, you can make any spell you cast that targets only you also target your steed.",
+				"When the steed drops to 0 hit points, it disappears, leaving behind no physical form. You can also dismiss your steed at any time as an action, causing it to disappear. In either case, casting this spell again summons the same steed, restored to its hit point maximum.",
+				"While your steed is within 1 mile of you, you can communicate with each other telepathically.",
+				"You can't have more than one steed bonded by this spell at a time. As an action, you can release the steed from its bond at any time, causing it to disappear."
 			],
 			"miscTags": [
 				"PRM",
@@ -7609,6 +7508,43 @@
 			"entries": [
 				"This spell allows you to find the shortest, most direct physical route to a specific fixed location that you are familiar with on the same plane of existence. If you name a destination on another plane of existence, a destination that moves (such as a mobile fortress), or a destination that isn't specific (such as \"a green dragon's lair\"), the spell fails.",
 				"For the duration, as long as you are on the same plane of existence as the destination, you know how far it is and in what direction it lies. While you are traveling there, whenever you are presented with a choice of paths along the way, you automatically determine which path is the shortest and most direct route (but not necessarily the safest route) to the destination."
+			]
+		},
+		{
+			"name": "Find Traps",
+			"source": "PHB",
+			"page": 241,
+			"srd": true,
+			"level": 2,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You sense the presence of any trap within range that is within line of sight. A trap, for the purpose of this spell, includes anything that would inflict a sudden or unexpected effect you consider harmful or undesirable, which was specifically intended as such by its creator. Thus, the spell would sense an area affected by the {@spell alarm} spell, a {@spell glyph of warding}, or a mechanical pit trap, but it would not reveal a natural weakness in the floor, an unstable ceiling, or a hidden sinkhole.",
+				"This spell merely reveals that a trap is present. You don't learn the location of each trap, but you do learn the general nature of the danger posed by a trap you sense."
+			],
+			"miscTags": [
+				"SGT"
 			]
 		},
 		{
@@ -7880,6 +7816,68 @@
 				"S"
 			],
 			"hasFluffImages": true
+		},
+		{
+			"name": "Flame Blade",
+			"source": "PHB",
+			"page": 242,
+			"srd": true,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "leaf of sumac"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You evoke a fiery blade in your free hand. The blade is similar in size and shape to a scimitar, and it lasts for the duration. If you let go of the blade, it disappears, but you can evoke the blade again as a bonus action.",
+				"You can use your action to make a melee spell attack with the fiery blade. On a hit, the target takes {@damage 3d6} fire damage.",
+				"The flaming blade sheds bright light in a 10-foot radius and dim light for an additional 10 feet."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@scaledamage 3d6|2,4,6,8|1d6} for every two slot levels above 2nd."
+					]
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"miscTags": [
+				"LGT",
+				"UBA"
+			],
+			"areaTags": [
+				"ST"
+			]
 		},
 		{
 			"name": "Flame Strike",
@@ -9570,7 +9568,8 @@
 				"charisma"
 			],
 			"miscTags": [
-				"LGT"
+				"LGT",
+				"OBS"
 			]
 		},
 		{
@@ -10050,7 +10049,7 @@
 				}
 			],
 			"entries": [
-				"A willing creature you touch is imbued with bravery. Until the spell ends, the creature is immune to being {@condition frightened} and gains temporary hit points equal to your spellcasting ability modifier at the start of each of its turns, which do stack while the spell is active. When the spell ends, the target loses any remaining temporary hit points from this spell."
+				"A willing creature you touch is imbued with bravery. Until the spell ends, the creature is immune to being {@condition frightened} and gains temporary hit points equal to your spellcasting ability modifier at the start of each of its turns. When the spell ends, the target loses any remaining temporary hit points from this spell."
 			],
 			"entriesHigherLevel": [
 				{
@@ -10257,7 +10256,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 3rd level or higher, you can target one additional humanoid within range of the spell for each slot level above 2nd."
+						"When you cast this spell using a spell slot of 3rd level or higher, you can target one additional humanoid for each slot level above 2nd. The humanoids must be within 30 feet of each other when you target them."
 					]
 				}
 			],
@@ -10382,7 +10381,8 @@
 				"dexterity"
 			],
 			"miscTags": [
-				"DFT"
+				"DFT",
+				"OBS"
 			],
 			"areaTags": [
 				"S"
@@ -10422,8 +10422,7 @@
 				}
 			],
 			"entries": [
-				"You choose a creature you can see within range and mystically mark it as your quarry. Until the spell ends, you deal an extra {@damage 1d6} Force damage to the target whenever you hit it with an attack roll, and you have advantage on any Wisdom ({@skill Perception}) or Wisdom ({@skill Survival}) check you make to find it.",
-				"If the target drops to 0 hit points before this spell ends, you can use a bonus action on a subsequent turn of yours to mark a new creature."
+				"You choose a creature you can see within range and mystically mark it as your quarry. Until the spell ends, you deal an extra {@damage 1d6} damage to the target whenever you hit it with a weapon attack, and you have advantage on any Wisdom ({@skill Perception}) or Wisdom ({@skill Survival}) check you make to find it. If the target drops to 0 hit points before this spell ends, you can use a bonus action on a subsequent turn of yours to mark a new creature."
 			],
 			"entriesHigherLevel": [
 				{
@@ -10433,9 +10432,6 @@
 						"When you cast this spell using a spell slot of 3rd or 4th level, you can maintain your {@status concentration} on the spell for up to 8 hours. When you use a spell slot of 5th level or higher, you can maintain your {@status concentration} on the spell for up to 24 hours."
 					]
 				}
-			],
-			"damageInflict": [
-				"force"
 			],
 			"miscTags": [
 				"AAD",
@@ -11064,15 +11060,6 @@
 				"If you choose a target that is held shut with {@spell arcane lock}, that spell is suppressed for 10 minutes, during which time the target can be opened and shut normally.",
 				"When you cast the spell, a loud knock, audible from as far away as 300 feet, emanates from the target object."
 			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 3rd level or higher, you can reduce the auditory range of the spell by 50 feet for each slot level above 2."
-					]
-				}
-			],
 			"miscTags": [
 				"OBJ",
 				"SGT"
@@ -11472,7 +11459,7 @@
 			]
 		},
 		{
-			"name": "Locate Creature",
+			"name": "Locate Animals or Plants",
 			"source": "PHB",
 			"page": 256,
 			"srd": true,
@@ -11485,10 +11472,51 @@
 				}
 			],
 			"range": {
+				"type": "point",
 				"distance": {
 					"type": "self"
-				},
-				"type": "point"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a bit of fur from a bloodhound"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"Describe or name a specific kind of beast or plant. Concentrating on the voice of nature in your surroundings, you learn the direction and distance to the closest creature or plant of that kind within 5 miles, if any are present."
+			],
+			"affectsCreatureType": [
+				"beast",
+				"plant"
+			]
+		},
+		{
+			"name": "Locate Creature",
+			"source": "PHB",
+			"page": 256,
+			"srd": true,
+			"basicRules": true,
+			"level": 4,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
 			},
 			"components": {
 				"v": true,
@@ -11499,59 +11527,16 @@
 				{
 					"type": "timed",
 					"duration": {
-						"amount": 1,
-						"type": "hour"
+						"type": "hour",
+						"amount": 1
 					},
 					"concentration": true
 				}
 			],
-			"meta": {
-				"ritual": true
-			},
 			"entries": [
-				"Describe or name a specific kind of beast or plant. It can be a specific creature known to you, or the nearest creature of a specific kind (such as a bear, oak, or horse), so long as you have seen such a creature within 30 feet at least once.",
-				"If one is within 1 mile, you will learn the direction and distance. If the target is in motion, you will continue to gain updates on its direction and distance while concentrating on this spell. If the creature is in a different form, such as under the effect of the polymorph spell, this spell doesn't locate the creature.",
-				"This spell can't locate its target if any thickness of lead blocks a straight line to the target."
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 3rd-level or higher, the range and the type of creature you can locate increase as show in the table below:",
-						{
-							"type": "table",
-							"caption": "Locate Creature",
-							"colLabels": [
-								"Slot Level",
-								"Range",
-								"Creature Types"
-							],
-							"colStyles": [
-								"col-2 text-center",
-								"col-5",
-								"col-5"
-							],
-							"rows": [
-								[
-									"3rd",
-									"2 miles",
-									"Dragon, Giant, Humanoid, Monstrosity"
-								],
-								[
-									"4th",
-									"3 miles",
-									"Aberration, Construct, Ooze, Undead"
-								],
-								[
-									"5th",
-									"5 miles",
-									"Celestial, Elemental, Fey, Fiend"
-								]
-							]
-						}
-					]
-				}
+				"Describe or name a creature that is familiar to you. You sense the direction to the creature's location, as long as that creature is within 1,000 feet of you. If the creature is moving, you know the direction of its movement.",
+				"The spell can locate a specific creature known to you, or the nearest creature of a specific kind (such as a human or a {@creature unicorn}), so long as you have seen such a creature up close\u2014within 30 feet\u2014at least once. If the creature you described or named is in a different form, such as being under the effects of a {@spell polymorph} spell, this spell doesn't locate the creature.",
+				"This spell can't locate a creature if running water at least 10 feet wide blocks a direct path between you and the creature."
 			]
 		},
 		{
@@ -12004,10 +11989,10 @@
 				}
 			],
 			"range": {
+				"type": "point",
 				"distance": {
 					"type": "touch"
-				},
-				"type": "point"
+				}
 			},
 			"components": {
 				"v": true,
@@ -12019,35 +12004,21 @@
 					"duration": {
 						"type": "hour",
 						"amount": 1
-					}
+					},
+					"concentration": true
 				}
 			],
 			"entries": [
-				"You touch a nonmagical weapon and imbue it with arcane power. For the duration, it becomes a magical weapon with a +1 bonus to attack and damage rolls.",
-				"Additionally, choose one of the following elemental damage types: acid, cold, fire, lightning, poison, or thunder. You also deal additional damage equal to {@damage 1d4} of the elemental damage choosen."
+				"You touch a nonmagical weapon. Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls."
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 4th level or higher, the weapon becomes a +2 weapon. When you cast this spell using a spell slot of 7th level or higher, the weapon becomes a +3 weapon.", 
-						"Additionally, the bonus elemental damage increases by {@scaledamage 1d4|2,4,6,8|1d4} for every two slot levels above 2nd."
+						"When you cast this spell using a spell slot of 4th level or higher, the bonus increases to +2. When you use a spell slot of 6th level or higher, the bonus increases to +3."
 					]
 				}
-			],
-			"damageInflict": [
-				"acid",
-				"cold",
-				"fire",
-				"lightning",
-				"poison",
-				"thunder"
-			],
-			"miscTags": [
-				"AAD"
-				"OBJ",
-				"SCL"
 			]
 		},
 		{
@@ -13388,69 +13359,6 @@
 			]
 		},
 		{
-			"name": "Otherworldly Grasp",
-			"source": "PHB",
-			"page": 263,
-			"school": "N",
-			"level": 0,
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"distance": {
-					"type": "self"
-				},
-				"type": "point"
-			},
-			"components": {
-				"s": true
-			},
-			"duration": [
-				{
-					"type": "instant"
-				}
-			],
-			"entries": [
-				"You channel necrotic spiritual power to your hand, mutating it into a withered specter of itself. Make a melee spell attack against one creature within your reach. On hit, it takes 1d8 necrotic damage, and you can choose to gain temporary hit points equal to half the necrotic damage dealt."
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "Cantrip Upgrades",
-					"entries": [
-						"The damage of this spell increases by 1d8 when you reach 5th level ({@damage 2d8}), 11th level ({@damage 3d8}), and 17th level ({@damage 4d8})."
-					]
-				}
-			],
-			"areaTags": [
-				"ST"
-			],
-			"damageInflict": [
-				"necrotic"
-			],
-			"miscTags": [
-				"SCL",
-				"THP"
-			],
-			"scalingLevelDice": [
-				{
-					"label": "necrotic damage",
-					"scaling": {
-						"1": "1d8",
-						"5": "2d8",
-						"11": "3d8",
-						"17": "4d8"
-					}
-				}
-			],
-			"spellAttack": [
-				"M"
-			],
-		},
-		{
 			"name": "Otiluke's Freezing Sphere",
 			"source": "PHB",
 			"page": 263,
@@ -13643,7 +13551,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "ashes from burned mistletoe"
+				"m": "ashes from a burned leaf of mistletoe and a sprig of spruce"
 			},
 			"duration": [
 				{
@@ -13656,22 +13564,7 @@
 				}
 			],
 			"entries": [
-				"A veil of shadows and silence radiates from you, masking you and your companions from detection. When you cast this spell, choose one of the following options.",
-				{
-					"type": "entries",
-					"name": "Shadowy Aura",
-					"entries": [
-						"For the duration, you radiate a concealing aura. Each creature of your choice within 30 feet of you (including you) has a +10 bonus to Dexterity ({@skill Stealth}) checks as long as they remain within 30 feet of you."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Shadowy Self",
-					"entries": [
-						"For the duration, you summon the shadows to conceal your allies while you all travel in different directions. Each creature of your choice within 30 feet of you at the time of casting (including yourself) are now considered to be Lightly Obscured and gain a bonus to Dexterity ({@skill Stealth}) checks equal to your spellcasting modifier and proficiency bonus, if you are proficient or have expertise in {@skill Stealth}."
-					]
-				},
-				"Regardless of which option you choose, you and all creatures targetted by this spell leaves behind no tracks or other traces of its passage and can't be tracked except by magical means."
+				"A veil of shadows and silence radiates from you, masking you and your companions from detection. For the duration, each creature you choose within 30 feet of you (including you) has a +10 bonus to Dexterity ({@skill Stealth}) checks and can't be tracked except by magical means. A creature that receives this bonus leaves behind no tracks or other traces of its passage."
 			],
 			"areaTags": [
 				"MT"
@@ -14473,73 +14366,6 @@
 			]
 		},
 		{
-			"name": "Primordial Blade",
-			"source": "PHB",
-			"page": 267,
-			"srd": true,
-			"level": 2,
-			"school": "V",
-			"time": [
-				{
-					"number": 1,
-					"unit": "bonus"
-				}
-			],
-			"range": {
-				"distance": {
-					"type": "self"
-				},
-				"type": "point"
-			},
-			"components": {
-				"v": true,
-				"s": true,
-				"m": "a charred wooden hilt"
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"amount": 10,
-						"type": "minute"
-					},
-					"concentration": true
-				}
-			],
-			"entries": [
-				"You evoke an elemental blade in a free hand, choosing one of the following damage types: acid, cold, fire, lightning, or poison. The elemental blade appears as if it were made of the chosen element in the shape of a scimitar, and lasts for the duration. If you let go of the blade, it disappears, but you can evoke the blade again as a bonus action without expending a spell slot.",
-				"Whenever you take the attack action, you can make a melee spell attack with the elemental blade against a target within 5 feet of you. On hit, it takes damage of the chosen type equal to {@damage 3d6} + your spellcasting modifier.",
-				"While in your hand, the blade sheds bright light in a 10-foot radius and dim light an additional 10 feet beyond that."
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@scaledamage 3d6|2,4,6,8|1d6} for every two slot levels above 2nd."
-					]
-				}
-			],
-			"damageInflict": [
-				"acid",
-				"cold",
-				"fire",
-				"lightning",
-				"poison"
-			],
-			"spellAttack": [
-				"M"
-			],
-			"miscTags": [
-				"LGT",
-				"SCL",
-				"UBA"
-			],
-			"areaTags": [
-				"ST"
-			]
-		},
-		{
 			"name": "Prismatic Spray",
 			"source": "PHB",
 			"page": 267,
@@ -14802,16 +14628,8 @@
 			],
 			"entries": [
 				"A flickering flame appears in your hand. The flame remains there for the duration and harms neither you nor your equipment. The flame sheds bright light in a 10-foot radius and dim light for an additional 10 feet. The spell ends if you dismiss it as an action or if you cast it again.",
-				"You can also attack with the flame, although doing so ends the spell. When you cast this spell, or as an action on a later turn, you can hurl the flame at a creature within 30 feet of you for a ranged spell attack or target a creature within 5 feet of you for a melee spell attack. On a hit, the target takes {@damage 1d8} fire damage."
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "Cantrip Upgrade",
-					"entries": [
-						"This spell's damage increases by {@damage 1d8} when you reach 5th level ({@damage 2d8}), 11th level ({@damage 3d8}), and 17th level ({@damage 4d8})."
-					]
-				}
+				"You can also attack with the flame, although doing so ends the spell. When you cast this spell, or as an action on a later turn, you can hurl the flame at a creature within 30 feet of you. Make a ranged spell attack. On a hit, the target takes {@damage 1d8} fire damage.",
+				"This spell's damage increases by {@damage 1d8} when you reach 5th level ({@damage 2d8}), 11th level ({@damage 3d8}), and 17th level ({@damage 4d8})."
 			],
 			"scalingLevelDice": {
 				"label": "fire damage",
@@ -14826,7 +14644,6 @@
 				"fire"
 			],
 			"spellAttack": [
-				"M",
 				"R"
 			],
 			"miscTags": [
@@ -15733,21 +15550,7 @@
 				}
 			],
 			"entries": [
-				"You touch one willing creature and grant them one of the following forms of resistances.",
-				{
-					"type": "entries",
-					"name": "Saving Throw Support",
-					"entries": [
-						"Once per turn while the spell is active, when the target is forced to make any saving throw to avoid taking damage, the target can roll a {@dice d4} and add the number to its saving throw total."
-					]
-				}
-				{
-					"type": "entries",
-					"name": "Damage Reduction",
-					"entries": [
-						"Choose one of the following damage types: Acid, Bludgeoning, Cold, Fire, Lightning, Necrotic, Piercing, Poison, Radiant, Slashing, or Thunder. Once per turn when the target takes damage of the chosen type while the spell is active, the target can reduce the total damage taken by {@dice 1d4}."
-					]
-				}
+				"You touch one willing creature. Once before the spell ends, the target can roll a {@dice d4} and add the number rolled to one saving throw of its choice. It can roll the die before or after making the saving throw. The spell then ends."
 			],
 			"areaTags": [
 				"ST"
@@ -16677,8 +16480,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "mistletoe or a shamrock leaf, and a club or quarterstaff worth at least 1cp",
-				"cost": 1
+				"m": "mistletoe, a shamrock leaf, and a club or quarterstaff"
 			},
 			"duration": [
 				{
@@ -16692,27 +16494,8 @@
 			"entries": [
 				"The wood of a {@item club|phb} or {@item quarterstaff|phb} you are holding is imbued with nature's power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon's damage die becomes a {@dice d8}. The weapon also becomes magical, if it isn't already. The spell ends if you cast it again or if you let go of the weapon."
 			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "Cantrip Upgrade",
-					"entries": [
-						"The damage die changes when you reach levels 5 ({@damage 2d8}), 11 ({@damage 3d8}), and 17 ({@damage 4d8})."
-					]
-				}
-			],
-			"scalingLevelDice": {
-				"label": "damage",
-				"scaling": {
-					"1": "1d8",
-					"5": "2d8",
-					"11": "3d8",
-					"17": "4d8"
-				}
-			},
 			"miscTags": [
-				"AAD",
-				"SCL"
+				"AAD"
 			]
 		},
 		{
@@ -16955,13 +16738,13 @@
 				"type": "point",
 				"distance": {
 					"type": "feet",
-					"amount": 60
+					"amount": 90
 				}
 			},
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a pinch of sand or rose petals"
+				"m": "a pinch of fine sand, rose petals, or a cricket"
 			},
 			"duration": [
 				{
@@ -16973,11 +16756,20 @@
 				}
 			],
 			"entries": [
-				"Each creature of your choice in a 20-foot-radius Sphere centered on a point within range must succeed on a Wisdom saving throw or have the {@condition Incapacitated|PHB} condition until the end of its next turn, at which point it must repeat the save. If the target fails the second save, the target has the {@condition Unconscious|PHB} condition for the duration. The spell ends on a target if it takes damage or someone within 5 feet of it takes an action to shake it out of the spell's effect.",
-				"Creatures that don't sleep, such as elves, or that have Immunity to the {@condition Exhaustion|PHB} condition automatically succeed on saves against this spell."
+				"This spell sends creatures into a magical slumber. Roll {@dice 5d8}; the total is how many hit points of creatures this spell can affect. Creatures within 20 feet of a point you choose within range are affected in ascending order of their current hit points (ignoring {@condition unconscious} creatures).",
+				"Starting with the creature that has the lowest current hit points, each creature affected by this spell falls {@condition unconscious} until the spell ends, the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake. Subtract each creature's hit points from the total before moving on to the creature with the next lowest hit points. A creature's hit points must be equal to or less than the remaining total for that creature to be affected.",
+				"Undead and creatures immune to being {@condition charmed} aren't affected by this spell."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, roll an additional {@scaledice 5d8|1-9|2d8} for each slot level above 1st."
+					]
+				}
 			],
 			"conditionInflict": [
-				"incapacitated",
 				"unconscious"
 			],
 			"affectsCreatureType": [
@@ -17836,13 +17628,14 @@
 						"type": "hour",
 						"amount": 8
 					},
+					"concentration": true
 				}
 			],
 			"entries": [
 				"You suggest a course of activity (limited to a sentence or two) and magically influence a creature you can see within range that can hear and understand you. Creatures that can't be {@condition charmed} are immune to this effect. The suggestion must be worded in such a manner as to make the course of action sound reasonable. Asking the creature to stab itself, throw itself onto a spear, immolate itself, or do some other obviously harmful act ends the spell.",
 				"The target must make a Wisdom saving throw. On a failed save, it pursues the course of action you described to the best of its ability. The suggested course of action can continue for the entire duration. If the suggested activity can be completed in a shorter time, the spell ends when the subject finishes what it was asked to do.",
 				"You can also specify conditions that will trigger a special activity during the duration. For example, you might suggest that a knight give her warhorse to the first beggar she meets. If the condition isn't met before the spell expires, the activity isn't performed.",
-				"If you or any of your companions damage the target, the spell ends. Additionally, if you cast this spell on a second target before the first activity has been completed, the spell ends with an incompleted activity and the target knows that you had attempted to magically influence it."
+				"If you or any of your companions damage the target, the spell ends."
 			],
 			"savingThrow": [
 				"wisdom"
@@ -18493,79 +18286,6 @@
 			]
 		},
 		{
-			"name": "Tempestuous Blade",
-			"source": "PHB",
-			"page": 282,
-			"school": "V",
-			"level": 0,
-			"time": [
-				{
-					"number": 1,
-					"unit": "bonus"
-				}
-			],
-			"range": {
-				"distance": {
-					"type": "self"
-				},
-				"type": "point"
-			},
-			"components": {
-				"s": true,
-				"m": {
-					"text": "a melee weapon worth at least 1 sp",
-					"cost": 10
-				}
-			},
-			"duration": [
-				{
-					"duration": {
-						"amount": 1,
-						"type": "round"
-					},
-					"type": "timed"
-				}
-			],
-			"entries": [
-				"As a bonus action, you infuse the melee weapon used in the casting of this spell with electrified magic. Until the start of your next turn, your attacks with that weapon deal lightning damage in place of the weapon's normal damage type.",
-				"Once per casting when you deal lightning damage with this spell, you can infuse your target with an electrical charge until the start of your next turn. If the target uses a reaction of any kind before then, this tempestuous charge is unleashed and it takes {@damage 1d8} lightning damage."
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "Cantrip Upgrade",
-					"entries": [
-						"This spell's damage increases when you reach certain levels. At 5th level, the melee attack deals an extra {@damage 1d8} lightning damage to the target on a hit, and the damage the target takes for using a reaction increases to {@damage 2d8}. Both damage rolls increase by 1d8 at 11th level ({@damage 2d8} and {@damage 3d8}) and again at 17th level ({@damage 3d8} and {@damage 4d8})"
-					]
-				}
-			],
-			"scalingLevelDice": [
-				{
-					"label": "lightning damage on reaction",
-					"scaling": {
-						"1": "1d8",
-						"5": "2d8",
-						"11": "3d8",
-						"17": "4d8"
-					}
-				},
-				{
-					"label": "lightning damage on hit",
-					"scaling": {
-						"5": "1d8",
-						"11": "2d8",
-						"17": "3d8"
-					}
-				}
-			],
-			"damageInflict": [
-				"lightning"
-			],
-			"miscTags": [
-				"SCL"
-			]
-		},
-		{
 			"name": "Tenser's Floating Disk",
 			"source": "PHB",
 			"page": 282,
@@ -19162,21 +18882,18 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "bonus"
+					"unit": "action"
 				}
 			],
 			"range": {
+				"type": "point",
 				"distance": {
-					"type": "self"
-				},
-				"type": "point"
+					"type": "feet",
+					"amount": 30
+				}
 			},
 			"components": {
-				"s": true,
-				"m": {
-					"text": "a melee weapon worth at least 1 sp",
-					"cost": 10
-				}
+				"s": true
 			},
 			"duration": [
 				{
@@ -19184,29 +18901,13 @@
 					"duration": {
 						"type": "round",
 						"amount": 1
-					}
+					},
+					"concentration": true
 				}
 			],
 			"entries": [
-				"You infuse your weapon with divination magic and point it at one creature you can see granting you a brief insight into the target's defenses. The next time you make a melee attack with this weapon against that target before the start of your next turn, you gain advantage on your that attack roll against the target."
+				"You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target's defenses. On your next turn, you gain advantage on your first attack roll against the target, provided that this spell hasn't ended."
 			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "Cantrip Upgrade",
-					"entries": [
-						"When you cast this spell, you gain a bonus to your attack roll when you reach 5th ({@dice 1d6}), 11th ({@dice 1d8}), and 17th level ({@dice 1d10})."
-					]
-				}
-			],
-			"scalingLevelDice": {
-				"label": "attack bonus",
-				"scaling": {
-					"5": "1d6",
-					"11": "1d8",
-					"17": "1d10"
-				}
-			},
 			"miscTags": [
 				"ADV"
 			],
@@ -19399,24 +19100,16 @@
 				}
 			],
 			"entries": [
-				"You unleash a string of provoking insults laced with subtle enchantments at a creature you can see within range. The target must succeed on a Wisdom saving throw, or it takes {@damage 1d6} psychic damage and have disadvantage on every attack roll against targets other than you until the start of your next turn."
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"This spell's damage increases by 1d6 when you reach 5th ({@damage 2d6}), 11th ({@damage 3d6}), and 17th level ({@damage 4d6})."
-					]
-				}
+				"You unleash a string of insults laced with subtle enchantments at a creature you can see within range. If the target can hear you (though it need not understand you), it must succeed on a Wisdom saving throw or take {@damage 1d4} psychic damage and have disadvantage on the next attack roll it makes before the end of its next turn.",
+				"This spell's damage increases by {@damage 1d4} when you reach 5th level ({@damage 2d4}), 11th level ({@damage 3d4}), and 17th level ({@damage 4d4})."
 			],
 			"scalingLevelDice": {
 				"label": "psychic damage",
 				"scaling": {
-					"1": "1d6",
-					"5": "2d6",
-					"11": "3d6",
-					"17": "4d6"
+					"1": "1d4",
+					"5": "2d4",
+					"11": "3d4",
+					"17": "4d4"
 				}
 			},
 			"damageInflict": [
@@ -20149,7 +19842,7 @@
 			"source": "PHB",
 			"page": 289,
 			"level": 1,
-			"school": "C",
+			"school": "V",
 			"time": [
 				{
 					"number": 1,
@@ -20166,7 +19859,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a piece of wood struck by lightning"
+				"m": "a twig from a tree that has been struck by lightning"
 			},
 			"duration": [
 				{
@@ -20179,10 +19872,7 @@
 				}
 			],
 			"entries": [
-				"A beam of crackling energy lances out toward a creature within range, forming a sustained arc of lightning between you and the target. Make a ranged spell attack against that creature. On a hit, the target takes {@damage 1d12} lightning damage, and neither you nor the target can move more than 30 feet away from each other while this spell lasts.",
-				"If you miss on the attack roll, you can maintain concentration on this spell as the lightning arc hovers within the air, granting you advantage on your next attack roll before the end of your next turn. Any damage you take before then will still trigger a Constitution Saving Throw to maintain concentration or you lose the advantage.",
-				"You can use a bonus action on each subsequent turn to deal an additional {@damage 1d12} lighting damage to the creature. A creature can attempt to move beyond the range of the spell by using its action to make a Strength check against your Spell save DC. If another creature attempts to move the target of this spell beyond the range of this spell it can use its action to make a Strength check against your Spell save DC. Any attempts by the target or another creature (magical or mundane) to move the target beyond this range automatically fail.",
-				"The spell immediately ends if you are forced to move more than 30 feet away from the target of this spell."
+				"A beam of crackling, blue energy lances out toward a creature within range, forming a sustained arc of lightning between you and the target. Make a ranged spell attack against that creature. On a hit, the target takes {@damage 1d12} lightning damage, and on each of your turns for the duration, you can use your action to deal {@damage 1d12} lightning damage to the target automatically. The spell ends if you use your action to do anything else. The spell also ends if the target is ever outside the spell's range or if it has {@quickref Cover||3||total cover} from you."
 			],
 			"entriesHigherLevel": [
 				{
@@ -20199,12 +19889,8 @@
 			"spellAttack": [
 				"R"
 			],
-			"savingThrow": [
-				"strength"
-			],
-			"miscTags": [
-				"ADV",
-				"SCL"
+			"areaTags": [
+				"ST"
 			]
 		},
 		{

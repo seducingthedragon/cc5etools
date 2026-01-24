@@ -268,15 +268,10 @@
 				}
 			]
 		},
-		"Summon Dragon": {
+		"Summon Draconic Spirit": {
 			"classVariant": [
 				{
 					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "FTD"
-				},
-				{
-					"name": "Ranger",
 					"source": "PHB",
 					"definedInSource": "FTD"
 				},
@@ -561,18 +556,6 @@
 				}
 			]
 		},
-		"Arcane Lance": {
-			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB"
-				}
-			]
-		},
 		"Arcane Lock": {
 			"class": [
 				{
@@ -582,18 +565,6 @@
 				{
 					"name": "Artificer",
 					"source": "TCE"
-				}
-			]
-		},
-		"Arcane Vigor": {
-			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB"
 				}
 			]
 		},
@@ -653,18 +624,6 @@
 				}
 			]
 		},
-		"Aura of Frost": {
-			"class": [
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				}
-			]
-		},
 		"Aura of Life": {
 			"class": [
 				{
@@ -721,22 +680,6 @@
 					"name": "Bard",
 					"source": "PHB"
 				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
-				}
-			]
-		},
-		"Awaken Plant": {
-			"class": [
 				{
 					"name": "Druid",
 					"source": "PHB"
@@ -815,26 +758,6 @@
 				},
 				{
 					"name": "Ranger",
-					"source": "PHB"
-				}
-			]
-		},
-		"Befuddlement": {
-			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
-					"name": "Wizard",
 					"source": "PHB"
 				}
 			]
@@ -1117,15 +1040,7 @@
 		"Circle of Power": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
 					"name": "Paladin",
-					"source": "PHB"
-				},
-				{
-					"name": "Wizard",
 					"source": "PHB"
 				}
 			]
@@ -1197,16 +1112,8 @@
 					"source": "PHB"
 				},
 				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			],
 			"classVariant": [
@@ -1861,22 +1768,6 @@
 				}
 			]
 		},
-		"Detect Traps": {
-			"class": [
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB"
-				}
-			]
-		},
 		"Dimension Door": {
 			"class": [
 				{
@@ -1893,14 +1784,6 @@
 				},
 				{
 					"name": "Wizard",
-					"source": "PHB"
-				}
-			]
-		},
-		"Dire Wail": {
-			"class": [
-				{
-					"name": "Bard",
 					"source": "PHB"
 				}
 			]
@@ -2140,6 +2023,30 @@
 				}
 			]
 		},
+		"Elemental Weapon": {
+			"class": [
+				{
+					"name": "Paladin",
+					"source": "PHB"
+				},
+				{
+					"name": "Artificer",
+					"source": "TCE"
+				}
+			],
+			"classVariant": [
+				{
+					"name": "Druid",
+					"source": "PHB",
+					"definedInSource": "TCE"
+				},
+				{
+					"name": "Ranger",
+					"source": "PHB",
+					"definedInSource": "TCE"
+				}
+			]
+		},
 		"Enhance Ability": {
 			"class": [
 				{
@@ -2209,10 +2116,6 @@
 				{
 					"name": "Ranger",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
@@ -2239,14 +2142,6 @@
 				},
 				{
 					"name": "Warlock",
-					"source": "PHB"
-				}
-			]
-		},
-		"Ethereal Anchor": {
-			"class": [
-				{
-					"name": "Paladin",
 					"source": "PHB"
 				}
 			]
@@ -2407,6 +2302,26 @@
 				}
 			]
 		},
+		"Feeblemind": {
+			"class": [
+				{
+					"name": "Bard",
+					"source": "PHB"
+				},
+				{
+					"name": "Druid",
+					"source": "PHB"
+				},
+				{
+					"name": "Warlock",
+					"source": "PHB"
+				},
+				{
+					"name": "Wizard",
+					"source": "PHB"
+				}
+			]
+		},
 		"Feign Death": {
 			"class": [
 				{
@@ -2455,6 +2370,22 @@
 				},
 				{
 					"name": "Druid",
+					"source": "PHB"
+				}
+			]
+		},
+		"Find Traps": {
+			"class": [
+				{
+					"name": "Cleric",
+					"source": "PHB"
+				},
+				{
+					"name": "Druid",
+					"source": "PHB"
+				},
+				{
+					"name": "Ranger",
 					"source": "PHB"
 				}
 			]
@@ -2536,6 +2467,21 @@
 				{
 					"name": "Wizard",
 					"source": "PHB"
+				}
+			]
+		},
+		"Flame Blade": {
+			"class": [
+				{
+					"name": "Druid",
+					"source": "PHB"
+				}
+			],
+			"classVariant": [
+				{
+					"name": "Sorcerer",
+					"source": "PHB",
+					"definedInSource": "TCE"
 				}
 			]
 		},
@@ -2674,18 +2620,6 @@
 				}
 			]
 		},
-		"Fount of Moonlight": {
-			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				}
-			]
-		},
 		"Freedom of Movement": {
 			"class": [
 				{
@@ -2698,10 +2632,6 @@
 				},
 				{
 					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Paladin",
 					"source": "PHB"
 				},
 				{
@@ -2816,14 +2746,6 @@
 				}
 			]
 		},
-		"Ghastly Flight": {
-			"class": [
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				}
-			]
-		},
 		"Giant Insect": {
 			"class": [
 				{
@@ -2840,14 +2762,6 @@
 				},
 				{
 					"name": "Warlock",
-					"source": "PHB"
-				}
-			]
-		},
-		"Glitterbeam": {
-			"class": [
-				{
-					"name": "Bard",
 					"source": "PHB"
 				}
 			]
@@ -2993,19 +2907,11 @@
 		"Guidance": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
 					"name": "Cleric",
 					"source": "PHB"
 				},
 				{
 					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Wizard",
 					"source": "PHB"
 				},
 				{
@@ -3057,14 +2963,6 @@
 			"class": [
 				{
 					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Paladin",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
 					"source": "PHB"
 				}
 			]
@@ -3193,11 +3091,7 @@
 				{
 					"name": "Paladin",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
-				},
+				}
 			]
 		},
 		"Hex": {
@@ -3427,30 +3321,6 @@
 				}
 			]
 		},
-		"Irresistible Dance": {
-			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB"
-				}
-			]
-		},
-		"Jallarzi's Storm of Radiance": {
-			"class": [
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB"
-				}
-			]
-		},
 		"Jump": {
 			"class": [
 				{
@@ -3516,6 +3386,18 @@
 				{
 					"name": "Artificer",
 					"source": "TCE"
+				}
+			]
+		},
+		"Leomund's Tiny Hut": {
+			"class": [
+				{
+					"name": "Bard",
+					"source": "PHB"
+				},
+				{
+					"name": "Wizard",
+					"source": "PHB"
 				}
 			]
 		},
@@ -3603,6 +3485,22 @@
 				},
 				{
 					"name": "Wizard",
+					"source": "PHB"
+				}
+			]
+		},
+		"Locate Animals or Plants": {
+			"class": [
+				{
+					"name": "Bard",
+					"source": "PHB"
+				},
+				{
+					"name": "Druid",
+					"source": "PHB"
+				},
+				{
+					"name": "Ranger",
 					"source": "PHB"
 				}
 			]
@@ -3795,11 +3693,6 @@
 				}
 			],
 			"classVariant": [
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "TCE"
-				},
 				{
 					"name": "Ranger",
 					"source": "PHB",
@@ -4200,14 +4093,6 @@
 				}
 			]
 		},
-		"Otherworldly Grasp": {
-			"class": [
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				}
-			]
-		},
 		"Otiluke's Freezing Sphere": {
 			"class": [
 				{
@@ -4226,16 +4111,24 @@
 		"Otiluke's Resilient Sphere": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				},
 				{
 					"name": "Artificer",
 					"source": "TCE"
+				}
+			]
+		},
+		"Otto's Irresistible Dance": {
+			"class": [
+				{
+					"name": "Bard",
+					"source": "PHB"
+				},
+				{
+					"name": "Wizard",
+					"source": "PHB"
 				}
 			]
 		},
@@ -4277,10 +4170,6 @@
 		},
 		"Phantasmal Killer": {
 			"class": [
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -4416,23 +4305,7 @@
 					"source": "PHB"
 				},
 				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
-					"source": "PHB"
-				}
-			]
-		},
-		"Power Word Fortify": {
-			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
 					"source": "PHB"
 				}
 			]
@@ -4528,18 +4401,6 @@
 				{
 					"name": "Artificer",
 					"source": "TCE"
-				}
-			]
-		},
-		"Primordial Blade": {
-			"class": [
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
 				}
 			]
 		},
@@ -4826,19 +4687,11 @@
 		"Resistance": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
 					"name": "Cleric",
 					"source": "PHB"
 				},
 				{
 					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Wizard",
 					"source": "PHB"
 				},
 				{
@@ -5177,16 +5030,8 @@
 					"source": "PHB"
 				},
 				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
@@ -5222,26 +5067,6 @@
 					"name": "Bard",
 					"source": "PHB",
 					"definedInSource": "TCE"
-				}
-			]
-		},
-		"Sonic Wave": {
-			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				}
-			]
-		},
-		"Sorcerous Burst": {
-			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
 				}
 			]
 		},
@@ -5344,18 +5169,6 @@
 			"class": [
 				{
 					"name": "Cleric",
-					"source": "PHB"
-				}
-			]
-		},
-		"Spiritual Sundering": {
-			"class": [
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
 					"source": "PHB"
 				}
 			]
@@ -5612,22 +5425,6 @@
 				}
 			]
 		},
-		"Tempestuous Blade": {
-			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
-				}
-			]
-		},
 		"Tenser's Floating Disk": {
 			"class": [
 				{
@@ -5696,22 +5493,6 @@
 				}
 			]
 		},
-		"Tiny Hut": {
-			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB"
-				}
-			]
-		},
 		"Tongues": {
 			"class": [
 				{
@@ -5732,18 +5513,6 @@
 				},
 				{
 					"name": "Wizard",
-					"source": "PHB"
-				}
-			]
-		},
-		"Torrent": {
-			"class": [
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
 					"source": "PHB"
 				}
 			]
@@ -5772,10 +5541,6 @@
 			"class": [
 				{
 					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
 					"source": "PHB"
 				},
 				{
@@ -5914,10 +5679,6 @@
 		"Wall of Force": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -5955,10 +5716,6 @@
 			"class": [
 				{
 					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
 					"source": "PHB"
 				}
 			]
@@ -6102,10 +5859,6 @@
 				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
@@ -6119,18 +5872,6 @@
 		},
 		"Wrathful Smite": {
 			"class": [
-				{
-					"name": "Paladin",
-					"source": "PHB"
-				}
-			]
-		},
-		"Yolande's Regal Presence": {
-			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
 				{
 					"name": "Paladin",
 					"source": "PHB"
@@ -6285,45 +6026,6 @@
 		}
 	},
 	"TCE": {
-		"Air Bubble": {
-			"class": [
-                {
-					"name": "Artificer",
-					"source": "TCE"
-				}
-			],
-			"classVariant": [
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "TCE"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB",
-					"definedInSource": "TCE"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "TCE"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "TCE"
-				}
-			]
-		},
-		"Arboreal Curse": {
-			"class": [
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "GHLoE"
-				}
-			]
-		},
 		"Blade of Disaster": {
 			"classVariant": [
 				{
@@ -6367,11 +6069,6 @@
 			],
 			"classVariant": [
 				{
-					"name": "Bard",
-					"source": "PHB",
-					"definedInSource": "TCE"
-				},
-				{
 					"name": "Sorcerer",
 					"source": "PHB",
 					"definedInSource": "TCE"
@@ -6405,29 +6102,6 @@
 					"source": "PHB",
 					"definedInSource": "TCE"
 				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "TCE"
-				}
-			]
-		},
-		"Galder's Speedy Courier": {
-			"classVariant": [
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "TCE"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "TCE"
-				}
-			]
-		},
-		"Galder's Tower": {
-			"classVariant": [
 				{
 					"name": "Wizard",
 					"source": "PHB",
@@ -6475,15 +6149,6 @@
 				}
 			]
 		},
-		"Hunter Sense": {
-			"classVariant": [
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "TCE"
-				}
-			]
-		},
 		"Intellect Fortress": {
 			"class": [
 				{
@@ -6510,30 +6175,6 @@
 				{
 					"name": "Wizard",
 					"source": "PHB",
-					"definedInSource": "TCE"
-				}
-			]
-		},
-		"Kinetic Jaunt": {
-			"classVariant": [
-				{
-					"name": "Bard",
-					"source": "PHB",
-					"definedInSource": "TCE"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "TCE"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "TCE"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE",
 					"definedInSource": "TCE"
 				}
 			]
@@ -6578,15 +6219,6 @@
 				}
 			]
 		},
-		"Magic Mirror": {
-			"classVariant": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "TCE"
-				}
-			]
-		},
 		"Mind Sliver": {
 			"classVariant": [
 				{
@@ -6596,49 +6228,6 @@
 				},
 				{
 					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "TCE"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "TCE"
-				}
-			]
-		},
-		"Power Word Maim": {
-			"classVariant": [
-				{
-					"name": "Bard",
-					"source": "PHB",
-					"definedInSource": "TCE"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "TCE"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "TCE"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "TCE"
-				},
-			]
-		},
-		"Silvery Barbs": {
-			"classVariant": [
-				{
-					"name": "Bard",
-					"source": "PHB",
-					"definedInSource": "TCE"
-				},
-				{
-					"name": "Sorcerer",
 					"source": "PHB",
 					"definedInSource": "TCE"
 				},
@@ -6855,20 +6444,6 @@
 				}
 			]
 		},
-		"Tasha's Bubbling Cauldron": {
-			"classVariant": [
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "TCE"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "TCE"
-				}
-			]
-		},
 		"Tasha's Caustic Brew": {
 			"class": [
 				{
@@ -6912,44 +6487,6 @@
 				},
 				{
 					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "TCE"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "TCE"
-				}
-			]
-		},
-		"Vortex Warp": {
-			"classVariant": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "TCE"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "TCE"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE",
-					"definedInSource": "TCE"
-				}
-			]
-		},
-		"Wither and Bloom": {
-			"classVariant": [
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "TCE"
-				},
-				{
-					"name": "Sorcerer",
 					"source": "PHB",
 					"definedInSource": "TCE"
 				},
@@ -7179,34 +6716,6 @@
 					"source": "PHB",
 					"definedInSource": "XGE"
 				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "XGE"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "XGE"
-				}
-			]
-		},
-		"Conjure Greater Demon": {
-			"classVariant": [
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "XGE"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "XGE"
-				}
-			]
-		},
-		"Conjure Lesser Demons": {
-			"classVariant": [
 				{
 					"name": "Warlock",
 					"source": "PHB",
@@ -7456,25 +6965,6 @@
 				}
 			]
 		},
-		"Elementalism": {
-			"classVariant": [
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "XGE"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "XGE"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "XGE"
-				}
-			]
-		},
 		"Enemies Abound": {
 			"classVariant": [
 				{
@@ -7556,6 +7046,15 @@
 				}
 			]
 		},
+		"Find Greater Steed": {
+			"classVariant": [
+				{
+					"name": "Paladin",
+					"source": "PHB",
+					"definedInSource": "XGE"
+				}
+			]
+		},
 		"Flame Arrows": {
 			"classVariant": [
 				{
@@ -7581,53 +7080,6 @@
 				{
 					"name": "Artificer",
 					"source": "TCE",
-					"definedInSource": "XGE"
-				}
-			]
-		},
-		"Freedom of the Waves": {
-			"classVariant": [
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "XGE"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB",
-					"definedInSource": "XGE"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "XGE"
-				}
-			]
-		},
-		"Freedom of the Winds": {
-			"classVariant": [
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "XGE"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "XGE"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB",
-					"definedInSource": "XGE"
-				}
-			]
-		}
-		"Frost Fingers": {
-			"classVariant": [
-				{
-					"name": "Wizard",
-					"source": "PHB",
 					"definedInSource": "XGE"
 				}
 			]
@@ -8388,6 +7840,34 @@
 				}
 			]
 		},
+		"Summon Greater Demon": {
+			"classVariant": [
+				{
+					"name": "Warlock",
+					"source": "PHB",
+					"definedInSource": "XGE"
+				},
+				{
+					"name": "Wizard",
+					"source": "PHB",
+					"definedInSource": "XGE"
+				}
+			]
+		},
+		"Summon Lesser Demons": {
+			"classVariant": [
+				{
+					"name": "Warlock",
+					"source": "PHB",
+					"definedInSource": "XGE"
+				},
+				{
+					"name": "Wizard",
+					"source": "PHB",
+					"definedInSource": "XGE"
+				}
+			]
+		},
 		"Synaptic Static": {
 			"classVariant": [
 				{
@@ -8711,993 +8191,10 @@
 		}
 	},
 	"BMT": {
-		"Aim and Fire": {
-			"classVariant": [
-				{
-					"name": "Bard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
 		"Antagonize": {
 			"classVariant": [
 				{
 					"name": "Bard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Assisted Aim": {
-			"classVariant": [
-				{
-					"name": "Bard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Paladin",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"At Your Side": {
-			"classVariant": [
-				{
-					"name": "Bard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Become Nightwing": {
-			"classVariant": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Bubble Lift": {
-			"classVariant": [
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Calling Card": {
-			"classVariant": [
-				{
-					"name": "Bard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Cat's Spring": {
-			"classVariant": [
-				{
-					"name": "Bard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Claws of Darkness": {
-			"classVariant": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Clue": {
-			"classVariant": [
-				{
-					"name": "Bard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Paladin",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Concealed Shot": {
-			"classVariant": [
-				{
-					"name": "Bard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Confounding Shadows": {
-			"classVariant": [
-				{
-					"name": "Bard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Conjure Cover": {
-			"classVariant": [
-				{
-					"name": "Cleric",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Paladin",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Creeping Darkness": {
-			"classVariant": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Crown of Radiance": {
-			"classVariant": [
-				{
-					"name": "Bard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Dark Path": {
-			"classVariant": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Dazing Blast": {
-			"classVariant": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Delay": {
-			"classVariant": [
-				{
-					"name": "Bard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Divine Arrow": {
-			"classVariant": [
-				{
-					"name": "Bard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Douse Light": {
-			"classVariant": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Enhanced Plants": {
-			"classVariant": [
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Enspelled Armament": {
-			"classVariant": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Feline Chaos": {
-			"classVariant": [
-				{
-					"name": "Bard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Forest Guard": {
-			"classVariant": [
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Greater Animate Dead": {
-			"classVariant": [
-				{
-					"name": "Cleric",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Grim Harvest": {
-			"classVariant": [
-				{
-					"name": "Cleric",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Gust Barrier": {
-			"classVariant": [
-				{
-					"name": "Bard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Hangover": {
-			"classVariant": [
-				{
-					"name": "Bard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Hibernation": {
-			"classVariant": [
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Hide in One's Shadow": {
-			"classVariant": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Holy Word": {
-			"classVariant": [
-				{
-					"name": "Cleric",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Incite Riot": {
-			"classVariant": [
-				{
-					"name": "Bard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Jethero's Instant Reload": {
-			"classVariant": [
-				{
-					"name": "Bard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Lifesink": {
-			"classVariant": [
-				{
-					"name": "Cleric",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Mandy's Feral Follower": {
-			"classVariant": [
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Nature Storm": {
-			"classVariant": [
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Obfuscate Object": {
-			"classVariant": [
-				{
-					"name": "Bard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Phantom Panther": {
-			"classVariant": [
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Phoenix Flames": {
-			"classVariant": [
-				{
-					"name": "Cleric",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Primordial Power": {
-			"classVariant": [
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Radiant Beacon": {
-			"classVariant": [
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Rageful Nimbus": {
-			"classVariant": [
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Resilient Friendship": {
-			"classVariant": [
-				{
-					"name": "Bard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Ride the Lightning": {
-			"classVariant": [
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Shadow Hands": {
-			"classVariant": [
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Shadow Puppets": {
-			"classVariant": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Shadow Step": {
-			"classVariant": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Spell Signature": {
-			"classVariant": [
-				{
-					"name": "Bard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Paladin",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Ranger",
 					"source": "PHB",
 					"definedInSource": "BMT"
 				},
@@ -9737,20 +8234,6 @@
 				}
 			]
 		},
-		"Spirit Swarm": {
-			"classVariant": [
-				{
-					"name": "Cleric",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
 		"Spray of Cards": {
 			"classVariant": [
 				{
@@ -9772,568 +8255,6 @@
 					"name": "Wizard",
 					"source": "PHB",
 					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Summon Plant": {
-			"classVariant": [
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Summon Sea Spirit": {
-			"classVariant": [
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Thorn Armor": {
-			"classVariant": [
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Vengeful Blade": {
-			"classVariant": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Whelm Weapon": {
-			"classVariant": [
-				{
-					"name": "Bard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		},
-		"Wipe Face": {
-			"classVariant": [
-				{
-					"name": "Cleric",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "BMT"
-				}
-			]
-		}
-	},
-	"GHLoE": {
-		"Arboreal Curse": {
-			"class": [
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "GHLoE"
-				}
-			]
-		},
-		"Consume Mind": {
-			"class": [
-				{
-					"name": "Cleric",
-					"source": "PHB",
-					"definedInSource": "GHLoE"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "GHLoE"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "GHLoE"
-				}
-			]
-		},
-		"Heartseeker": {
-			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "GHLoE"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "GHLoE"
-				}
-			]
-		},
-		"Hunter Sense": {
-			"class": [
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "GHLoE"
-				}
-			]
-		},
-		"Magic Mirror": {
-			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "GHLoE"
-				}
-			]
-		},
-		"Suffocate": {
-			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB",
-					"definedInSource": "GHLoE"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "GHLoE"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "GHLoE"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "GHLoE"
-				}
-			]
-		},
-		"Wrack": {
-			"class": [
-				{
-					"name": "Cleric",
-					"source": "PHB",
-					"definedInSource": "GHLoE"
-				}
-			]
-		}
-	},
-	"DoDk": {
-		"Conjure the Deep Haze": {
-			"classVariant": [
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				}
-			]
-		},
-		"Contaminated Power": {
-			"classVariant": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				}
-			]
-		},
-		"Contamination Immunity": {
-			"classVariant": [
-				{
-					"name": "Bard",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				}
-			]
-		},
-		"Delerium Blast": {
-			"classVariant": [
-				{
-					"name": "Bard",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				}
-			]
-		},
-		"Delerium Orb": {
-			"classVariant": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				}
-			]
-		},
-		"Forced Evolution": {
-			"classVariant": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				}
-			]
-		},
-		"Neutralizing Field": {
-			"classVariant": [
-				{
-					"name": "Bard",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Paladin",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				}
-			]
-		},
-		"Octarine Spray": {
-			"classVariant": [
-				{
-					"name": "Bard",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				}
-			]
-		},
-		"Purge Contamination": {
-			"classVariant": [
-				{
-					"name": "Bard",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Paladin",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				}
-			]
-		},
-		"Ray of Contamination": {
-			"classVariant": [
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				}
-			]
-		},
-		"Ride the Rifts": {
-			"classVariant": [
-				{
-					"name": "Bard",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				}
-			]
-		},
-		"Sacrament of the Falling Fire": {
-			"classVariant": [
-				{
-					"name": "Bard",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				}
-			]
-		},
-		"Siphon Contamination": {
-			"classVariant": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				}
-			]
-		},
-		"Warp Bolt": {
-			"classVariant": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "DoDk"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "DoDk"
 				}
 			]
 		}
