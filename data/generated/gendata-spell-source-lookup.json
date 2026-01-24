@@ -19185,10 +19185,26 @@
         "air bubble": {
             "class": {
                 "PHB": {
-                    "Druid": true,
-                    "Ranger": true,
-                    "Sorcerer": true,
-                    "Wizard": true
+                    "Druid": {
+                        "definedInSources": [
+                            "AAG"
+                        ]
+                    },
+                    "Ranger": {
+                        "definedInSources": [
+                            "AAG"
+                        ]
+                    },
+                    "Sorcerer": {
+                        "definedInSources": [
+                            "AAG"
+                        ]
+                    },
+                    "Wizard": {
+                        "definedInSources": [
+                            "AAG"
+                        ]
+                    }
                 },
                 "TCE": {
                     "Artificer": true
@@ -19390,10 +19406,26 @@
         "borrowed knowledge": {
             "class": {
                 "PHB": {
-                    "Bard": true,
-                    "Cleric": true,
-                    "Warlock": true,
-                    "Wizard": true
+                    "Bard": {
+                        "definedInSources": [
+                            "SCC"
+                        ]
+                    },
+                    "Cleric": {
+                        "definedInSources": [
+                            "SCC"
+                        ]
+                    },
+                    "Warlock": {
+                        "definedInSources": [
+                            "SCC"
+                        ]
+                    },
+                    "Wizard": {
+                        "definedInSources": [
+                            "SCC"
+                        ]
+                    }
                 }
             },
             "subclass": {
@@ -19470,17 +19502,29 @@
             }
         },
         "galder's speedy courier": {
-            "class": {
+            "classVariant": {
                 "PHB": {
-                    "Warlock": true,
-                    "Wizard": true
+                    "Warlock": {
+                        "definedInSources": [
+                            "TCE"
+                        ]
+                    },
+                    "Wizard": {
+                        "definedInSources": [
+                            "TCE"
+                        ]
+                    }
                 }
             }
         },
         "galder's tower": {
-            "class": {
+            "classVariant": {
                 "PHB": {
-                    "Wizard": true
+                    "Wizard": {
+                        "definedInSources": [
+                            "TCE"
+                        ]
+                    }
                 }
             }
         },
@@ -19668,9 +19712,21 @@
         "kinetic jaunt": {
             "class": {
                 "PHB": {
-                    "Bard": true,
-                    "Sorcerer": true,
-                    "Wizard": true
+                    "Bard": {
+                        "definedInSources": [
+                            "SCC"
+                        ]
+                    },
+                    "Sorcerer": {
+                        "definedInSources": [
+                            "SCC"
+                        ]
+                    },
+                    "Wizard": {
+                        "definedInSources": [
+                            "SCC"
+                        ]
+                    }
                 },
                 "TCE": {
                     "Artificer": true
@@ -19967,9 +20023,40 @@
         "silvery barbs": {
             "class": {
                 "PHB": {
-                    "Bard": true,
-                    "Sorcerer": true,
-                    "Wizard": true
+                    "Bard": {
+                        "definedInSources": [
+                            "SCC"
+                        ]
+                    },
+                    "Sorcerer": {
+                        "definedInSources": [
+                            "SCC"
+                        ]
+                    },
+                    "Wizard": {
+                        "definedInSources": [
+                            "SCC"
+                        ]
+                    }
+                }
+            },
+            "classVariant": {
+                "PHB": {
+                    "Bard": {
+                        "definedInSources": [
+                            "TCE"
+                        ]
+                    },
+                    "Sorcerer": {
+                        "definedInSources": [
+                            "TCE"
+                        ]
+                    },
+                    "Wizard": {
+                        "definedInSources": [
+                            "TCE"
+                        ]
+                    }
                 }
             },
             "subclass": {
@@ -20634,11 +20721,33 @@
         "vortex warp": {
             "class": {
                 "PHB": {
-                    "Sorcerer": true,
-                    "Wizard": true
+                    "Sorcerer": {
+                        "definedInSources": [
+                            "SCC"
+                        ]
+                    },
+                    "Wizard": {
+                        "definedInSources": [
+                            "SCC"
+                        ]
+                    }
                 },
                 "TCE": {
                     "Artificer": true
+                }
+            },
+            "classVariant": {
+                "PHB": {
+                    "Sorcerer": {
+                        "definedInSources": [
+                            "TCE"
+                        ]
+                    },
+                    "Wizard": {
+                        "definedInSources": [
+                            "TCE"
+                        ]
+                    }
                 }
             },
             "subclass": {
@@ -20668,9 +20777,40 @@
         "wither and bloom": {
             "class": {
                 "PHB": {
-                    "Druid": true,
-                    "Sorcerer": true,
-                    "Wizard": true
+                    "Druid": {
+                        "definedInSources": [
+                            "SCC"
+                        ]
+                    },
+                    "Sorcerer": {
+                        "definedInSources": [
+                            "SCC"
+                        ]
+                    },
+                    "Wizard": {
+                        "definedInSources": [
+                            "SCC"
+                        ]
+                    }
+                }
+            },
+            "classVariant": {
+                "PHB": {
+                    "Druid": {
+                        "definedInSources": [
+                            "TCE"
+                        ]
+                    },
+                    "Sorcerer": {
+                        "definedInSources": [
+                            "TCE"
+                        ]
+                    },
+                    "Wizard": {
+                        "definedInSources": [
+                            "TCE"
+                        ]
+                    }
                 }
             },
             "subclass": {

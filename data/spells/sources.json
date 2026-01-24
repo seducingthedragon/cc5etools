@@ -6036,37 +6036,35 @@
                 {
                     "name": "Artificer",
                     "source": "TCE"
+                },
+                {
+                    "name": "Druid",
+                    "source": "PHB",
+                    "definedInSource": "AAG"
+                },
+                {
+                    "name": "Ranger",
+                    "source": "PHB",
+                    "definedInSource": "AAG"
+                },
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB",
+                    "definedInSource": "AAG"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB",
+                    "definedInSource": "AAG"
                 }
-            ],
+            ]
+        },
+		"Arboreal Curse": {
             "classVariant": [
                 {
                     "name": "Druid",
                     "source": "PHB",
                     "definedInSource": "TCE"
-                },
-                {
-                    "name": "Ranger",
-                    "source": "PHB",
-                    "definedInSource": "TCE"
-                },
-                {
-                    "name": "Sorcerer",
-                    "source": "PHB",
-                    "definedInSource": "TCE"
-                },
-                {
-                    "name": "Wizard",
-                    "source": "PHB",
-                    "definedInSource": "TCE"
-                }
-            ]
-        },
-		"Arboreal Curse": {
-            "class": [
-                {
-                    "name": "Druid",
-                    "source": "PHB",
-                    "definedInSource": "GHLoE"
                 }
             ]
         },
@@ -6138,19 +6136,23 @@
 			"class": [
 				{
 					"name": "Bard",
-					"source": "PHB"
+					"source": "PHB",
+					"definedInSource": "SCC"
 				},
 				{
 					"name": "Cleric",
-					"source": "PHB"
+					"source": "PHB",
+					"definedInSource": "SCC"
 				},
 				{
 					"name": "Warlock",
-					"source": "PHB"
+					"source": "PHB",
+					"definedInSource": "SCC"
 				},
 				{
 					"name": "Wizard",
-					"source": "PHB"
+					"source": "PHB",
+					"definedInSource": "SCC"
 				}
 			]
 		},
@@ -6281,26 +6283,25 @@
 			]
 		},
 		"Kinetic Jaunt": {
-            "classVariant": [
+            "class": [
                 {
+                    "name": "Artificer",
+                    "source": "TCE"
+                },
+				{
                     "name": "Bard",
                     "source": "PHB",
-                    "definedInSource": "TCE"
+                    "definedInSource": "SCC"
                 },
                 {
                     "name": "Sorcerer",
                     "source": "PHB",
-                    "definedInSource": "TCE"
+                    "definedInSource": "SCC"
                 },
                 {
                     "name": "Wizard",
                     "source": "PHB",
-                    "definedInSource": "TCE"
-                },
-                {
-                    "name": "Artificer",
-                    "source": "TCE",
-                    "definedInSource": "TCE"
+                    "definedInSource": "SCC"
                 }
             ]
         },
@@ -6397,7 +6398,24 @@
             ]
         },
 		"Silvery Barbs": {
-            "classVariant": [
+            "class": [
+                {
+                    "name": "Bard",
+                    "source": "PHB",
+                    "definedInSource": "SCC"
+                },
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB",
+                    "definedInSource": "SCC"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB",
+                    "definedInSource": "SCC"
+                }
+            ],
+			"classVariant": [
                 {
                     "name": "Bard",
                     "source": "PHB",
@@ -6689,8 +6707,24 @@
 			]
 		},
 		"Vortex Warp": {
-            "classVariant": [
+            "class": [
                 {
+                    "name": "Artificer",
+                    "source": "TCE"
+                },
+				{
+                    "name": "Sorcerer",
+                    "source": "PHB",
+                    "definedInSource": "SCC"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB",
+                    "definedInSource": "SCC"
+                }
+            ],
+			"classVariant": [
+				{
                     "name": "Sorcerer",
                     "source": "PHB",
                     "definedInSource": "TCE"
@@ -6699,16 +6733,28 @@
                     "name": "Wizard",
                     "source": "PHB",
                     "definedInSource": "TCE"
-                },
-                {
-                    "name": "Artificer",
-                    "source": "TCE",
-                    "definedInSource": "TCE"
                 }
             ]
         },
         "Wither and Bloom": {
-            "classVariant": [
+            "class": [
+                {
+                    "name": "Druid",
+                    "source": "PHB",
+                    "definedInSource": "SCC"
+                },
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB",
+                    "definedInSource": "SCC"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB",
+                    "definedInSource": "SCC"
+                }
+            ],
+			"classVariant": [
                 {
                     "name": "Druid",
                     "source": "PHB",
