@@ -6325,6 +6325,25 @@
 				}
 			]
 		},
+		"Silvery Barbs": {
+            "classVariant": [
+                {
+                    "name": "Bard",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                },
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                }
+            ]
+        },
 		"Spirit Shroud": {
 			"classVariant": [
 				{
@@ -6583,7 +6602,45 @@
 					"definedInSource": "TCE"
 				}
 			]
-		}
+		},
+		"Vortex Warp": {
+            "classVariant": [
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                },
+                {
+                    "name": "Artificer",
+                    "source": "TCE",
+                    "definedInSource": "TCE"
+                }
+            ]
+        },
+        "Wither and Bloom": {
+            "classVariant": [
+                {
+                    "name": "Druid",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                },
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                }
+            ]
+        }
 	},
 	"TDCSR": {
 		"Freedom of the Waves": {
