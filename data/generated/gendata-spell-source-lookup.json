@@ -19218,6 +19218,17 @@
                 }
             }
         },
+        "arboreal curse": {
+            "classVariant": {
+                "PHB": {
+                    "Druid": {
+                        "definedInSources": [
+                            "TCE"
+                        ]
+                    }
+                }
+            }
+        },
         "blade of disaster": {
             "classVariant": {
                 "PHB": {
@@ -19594,6 +19605,17 @@
                 }
             }
         },
+        "hunter sense": {
+            "classVariant": {
+                "PHB": {
+                    "Druid": {
+                        "definedInSources": [
+                            "TCE"
+                        ]
+                    }
+                }
+            }
+        },
         "intellect fortress": {
             "class": {
                 "TCE": {
@@ -19803,6 +19825,17 @@
                 }
             }
         },
+        "magic mirror": {
+            "classVariant": {
+                "PHB": {
+                    "Sorcerer": {
+                        "definedInSources": [
+                            "TCE"
+                        ]
+                    }
+                }
+            }
+        },
         "mind sliver": {
             "classVariant": {
                 "PHB": {
@@ -19901,6 +19934,32 @@
                     "Merfolk (Zendikar; Ula Creed)": {
                         "baseName": "Merfolk",
                         "baseSource": "PSZ"
+                    }
+                }
+            }
+        },
+        "power wood maim": {
+            "classVariant": {
+                "PHB": {
+                    "Bard": {
+                        "definedInSources": [
+                            "TCE"
+                        ]
+                    },
+                    "Sorcerer": {
+                        "definedInSources": [
+                            "TCE"
+                        ]
+                    },
+                    "Warlock": {
+                        "definedInSources": [
+                            "TCE"
+                        ]
+                    },
+                    "Wizard": {
+                        "definedInSources": [
+                            "TCE"
+                        ]
                     }
                 }
             }
@@ -20428,6 +20487,22 @@
                     "Merfolk (Zendikar; Ula Creed)": {
                         "baseName": "Merfolk",
                         "baseSource": "PSZ"
+                    }
+                }
+            }
+        },
+        "tasha's bubbling cauldron": {
+            "classVariant": {
+                "PHB": {
+                    "Warlock": {
+                        "definedInSources": [
+                            "TCE"
+                        ]
+                    },
+                    "Wizard": {
+                        "definedInSources": [
+                            "TCE"
+                        ]
                     }
                 }
             }
