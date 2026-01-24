@@ -268,25 +268,30 @@
 				}
 			]
 		},
-		"Summon Draconic Spirit": {
-			"classVariant": [
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "FTD"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "FTD"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "FTD"
-				}
-			]
-		}
+		"Summon Dragon Spirit": {
+            "classVariant": [
+                {
+                    "name": "Druid",
+                    "source": "PHB",
+                    "definedInSource": "FTD"
+                },
+                {
+                    "name": "Ranger",
+                    "source": "PHB",
+                    "definedInSource": "FTD"
+                },
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB",
+                    "definedInSource": "FTD"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB",
+                    "definedInSource": "FTD"
+                }
+            ]
+        }
 	},
 	"IDRotF": {
 		"Create Magen": {
