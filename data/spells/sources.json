@@ -6031,6 +6031,36 @@
 		}
 	},
 	"TCE": {
+		"Air Bubble": {
+            "class": [
+                {
+                    "name": "Artificer",
+                    "source": "TCE"
+                }
+            ],
+            "classVariant": [
+                {
+                    "name": "Druid",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                },
+                {
+                    "name": "Ranger",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                },
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                }
+            ]
+        },
 		"Blade of Disaster": {
 			"classVariant": [
 				{
