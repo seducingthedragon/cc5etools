@@ -322,66 +322,77 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Lightning Lure",
-			"source": "TCE",
-			"page": 107,
-			"otherSources": [
-				{
-					"source": "SCAG",
-					"page": 143
-				}
-			],
-			"level": 0,
-			"school": "V",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "radius",
-				"distance": {
-					"type": "feet",
-					"amount": 15
-				}
-			},
-			"components": {
-				"v": true
-			},
-			"duration": [
-				{
-					"type": "instant"
-				}
-			],
-			"entries": [
-				"You create a lash of lightning energy that strikes at one creature of your choice that you can see within 15 feet of you. The target must succeed on a Strength saving throw or be pulled up to 10 feet in a straight line toward you and then take {@damage 1d8} lightning damage if it is within 5 feet of you.",
-				"This spell's damage increases by {@damage 1d8} when you reach 5th level ({@damage 2d8}), 11th level ({@damage 3d8}), and 17th level ({@damage 4d8})."
-			],
-			"scalingLevelDice": {
-				"label": "lightning damage",
-				"scaling": {
-					"1": "1d8",
-					"5": "2d8",
-					"11": "3d8",
-					"17": "4d8"
-				}
-			},
-			"damageInflict": [
-				"lightning"
-			],
-			"savingThrow": [
-				"strength"
-			],
-			"miscTags": [
-				"FMV",
-				"SCL",
-				"SGT"
-			],
-			"areaTags": [
-				"ST"
-			]
-		},
+            "name": "Lightning Lure",
+            "source": "TCE",
+            "page": 107,
+            "otherSources": [
+                {
+                    "source": "SCAG",
+                    "page": 143
+                }
+            ],
+            "level": 0,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "radius",
+                "distance": {
+                    "type": "feet",
+                    "amount": 15
+                }
+            },
+            "components": {
+                "v": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You create a lash of arcane lightning and make a ranged spell attack at a creature of your choice you can see within 15 feet. On a hit, the target takes {@damage 1d8} lightning damage and then, it must succeed on a Strength saving throw. On a failed save, the target is pulled up to 10 feet closer to you."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Cantrip Upgrade",
+                    "entries": [
+                        "The damage increases by {@damage 1d8} when you reach 5th level ({@damage 2d8}), 11th level ({@damage 3d8}), and 17th level ({@damage 4d8}). Additionally, the range of this spell increases at 5th level (20 feet), 11th level (25 feet), and 17th level (30 feet)."
+                    ]
+                }
+            ],
+            "scalingLevelDice": {
+                "label": "lightning damage",
+                "scaling": {
+                    "1": "1d8",
+                    "5": "2d8",
+                    "11": "3d8",
+                    "17": "4d8"
+                }
+            },
+            "damageInflict": [
+                "lightning"
+            ],
+            "savingThrow": [
+                "strength"
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "miscTags": [
+                "FMV",
+                "SCL",
+                "SGT"
+            ],
+            "areaTags": [
+                "ST"
+            ]
+        },
 		{
 			"name": "Mind Sliver",
 			"source": "TCE",
