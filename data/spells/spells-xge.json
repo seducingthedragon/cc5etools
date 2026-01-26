@@ -789,6 +789,219 @@
 			]
 		},
 		{
+			"name": "Conjure Greater Demon",
+			"source": "XGE",
+			"page": 151,
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a fiend's true name and a vial of blood from a humanoid killed within the past 24 hours",
+					"consume": "optional"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You utter foul words and speaking its true name, you conjure a powerful Demonic Fiend to your aid. While your concentration lasts, it is Indifferent to you and your allies and follows your commands to the letter. For the duration, the Fiend uses the rules below:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Statistics",
+							"entries": [
+								"The Fiend appears in an unoccupied space of your choice you can see within range. When it appears, you can force the Fiend to take on the appearance and statistics of another Fiend of your choice with a {@filter CR 5 or lower|bestiary|challenge rating=[&0;&5]|tag=demon|miscellaneous=!swarm}."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Combat",
+							"entries": [
+								"Roll initiative for the demon, which has its own turns. When you summon it and on each of your turns thereafter, you can issue a verbal command to it (no action required). If the Fiend does not receive any commands, or its commands are completed, it will respond in a way that it sees fit."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Control",
+							"entries": [
+								"If your concentration on this spell is broken, the Fiend remains. It instantly returns to its true form and is no longer under your control. For the remaining duration of the spell, it is Hostile to you and your allies and acts according to its alignment. The Fiend will disappear at 0 hit points or after {@dice 1d6} rounds, which ever comes first."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Consumed Component",
+							"entries": [
+								"As part of casting the spell, you can form a circle on the ground with the blood used as a material component. The circle is large enough to encompass your space. While the spell lasts, the summoned demon can't cross the circle or harm it, and it can't target anyone within it. It will be consumed at the end of the spell's duration, even if concentration is dropped."
+							]
+						}
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the challenge rating increases by 1 for each slot level above 4th."
+					]
+				}
+			],
+			"miscTags": [
+				"SGT",
+				"SMN"
+			]
+		},
+		{
+			"name": "Conjure Lesser Demons",
+			"source": "XGE",
+			"page": 152,
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a vial of blood from a humanoid killed within the past 24 hours",
+					"consume": "optional"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You utter foul words, summoning demons from the chaos of the Abyss. Roll on the following table to determine what appears.",
+				{
+					"type": "table",
+					"colLabels": [
+						"{@dice d6}",
+						"Demons Summoned"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-11"
+					],
+					"rows": [
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"min": 1,
+									"max": 2
+								}
+							},
+							"Two {@filter demons of challenge rating 1 or lower|bestiary|challenge rating=[&0;&1]|tag=demon|miscellaneous=!swarm}"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"min": 3,
+									"max": 4
+								}
+							},
+							"Four {@filter demons of challenge rating 1/2 or lower|bestiary|challenge rating=[&0;&1/2]|tag=demon|miscellaneous=!swarm}"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"min": 5,
+									"max": 6
+								}
+							},
+							"Eight {@filter demons of challenge rating 1/4 or lower|bestiary|challenge rating=[&0;&1/4]|tag=demon|miscellaneous=!swarm}"
+						]
+					]
+				},
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Statistics",
+							"entries": [
+								"The DM chooses the demons, such as {@creature manes} or {@creature dretch||dretches}, and you choose the unoccupied spaces you can see within range where they appear. A summoned demon disappears when it drops to 0 hit points or when the spell ends."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Combat",
+							"entries": [
+								"The demons are Indifferent to you and only you while you maintain concentration. Roll initiative for the summoned demons as a group, which has its own turns. When you summon them and on each of your turns thereafter, you can issue a verbal command to them (no action required). If they does not receive any commands, or its commands are completed, they will respond in a way that they sees fit."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Consumed Component",
+							"entries": [
+								"As part of casting the spell, you can form a circle on the ground with the blood used as a material component. The circle is large enough to encompass your space. While maintaining concentration, the summoned demons can't cross the circle or harm it, and can't target anyone within it. It will be consumed when the spell ends, which includes dropping concentration to end the spell early. When the material component is consumed, all summoned demons will vanish as well."
+							]
+						}
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th or 7th level, you summon twice as many demons. If you cast it using a spell slot of 8th or 9th level, you summon three times as many demons."
+					]
+				}
+			],
+			"miscTags": [
+				"RO",
+				"SGT",
+				"SMN"
+			]
+		},
+		{
 			"name": "Control Flames",
 			"source": "XGE",
 			"page": 152,
@@ -4280,167 +4493,6 @@
 				"ST"
 			],
 			"hasFluffImages": true
-		},
-		{
-			"name": "Summon Greater Demon",
-			"source": "XGE",
-			"page": 166,
-			"level": 4,
-			"school": "C",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 60
-				}
-			},
-			"components": {
-				"v": true,
-				"s": true,
-				"m": {
-					"text": "a vial of blood from a humanoid killed within the past 24 hours",
-					"consume": "optional"
-				}
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "hour",
-						"amount": 1
-					},
-					"concentration": true
-				}
-			],
-			"entries": [
-				"You utter foul words, summoning one demon from the chaos of the Abyss. You choose the demon's type, which must be {@filter one of challenge rating 5 or lower|bestiary|challenge rating=[&0;&5]|tag=demon|miscellaneous=!swarm}, such as a {@creature shadow demon} or a {@creature barlgura}. The demon appears in an unoccupied space you can see within range, and the demon disappears when it drops to 0 hit points or when the spell ends.",
-				"Roll initiative for the demon, which has its own turns. When you summon it and on each of your turns thereafter, you can issue a verbal command to it (requiring no action on your part), telling it what it must do on its next turn. If you issue no command, it spends its turn attacking any creature within reach that has attacked it.",
-				"At the end of each of the demon's turns, it makes a Charisma saving throw. The demon has disadvantage on this saving throw if you say its true name. On a failed save, the demon continues to obey you. On a successful save, your control of the demon ends for the rest of the duration, and the demon spends its turns pursuing and attacking the nearest non-demons to the best of its ability. If you stop {@status concentration||concentrating} on the spell before it reaches its full duration, an uncontrolled demon doesn't disappear for {@dice 1d6} rounds if it still has hit points.",
-				"As part of casting the spell, you can form a circle on the ground with the blood used as a material component. The circle is large enough to encompass your space. While the spell lasts, the summoned demon can't cross the circle or harm it, and it can't target anyone within it. Using the material component in this manner consumes it when the spell ends."
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 5th level or higher, the challenge rating increases by 1 for each slot level above 4th."
-					]
-				}
-			],
-			"savingThrow": [
-				"charisma"
-			],
-			"miscTags": [
-				"SGT",
-				"SMN"
-			]
-		},
-		{
-			"name": "Summon Lesser Demons",
-			"source": "XGE",
-			"page": 167,
-			"level": 3,
-			"school": "C",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 60
-				}
-			},
-			"components": {
-				"v": true,
-				"s": true,
-				"m": {
-					"text": "a vial of blood from a humanoid killed within the past 24 hours",
-					"consume": "optional"
-				}
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "hour",
-						"amount": 1
-					},
-					"concentration": true
-				}
-			],
-			"entries": [
-				"You utter foul words, summoning demons from the chaos of the Abyss. Roll on the following table to determine what appears.",
-				{
-					"type": "table",
-					"colLabels": [
-						"{@dice d6}",
-						"Demons Summoned"
-					],
-					"colStyles": [
-						"col-1 text-center",
-						"col-11"
-					],
-					"rows": [
-						[
-							{
-								"type": "cell",
-								"roll": {
-									"min": 1,
-									"max": 2
-								}
-							},
-							"Two {@filter demons of challenge rating 1 or lower|bestiary|challenge rating=[&0;&1]|tag=demon|miscellaneous=!swarm}"
-						],
-						[
-							{
-								"type": "cell",
-								"roll": {
-									"min": 3,
-									"max": 4
-								}
-							},
-							"Four {@filter demons of challenge rating 1/2 or lower|bestiary|challenge rating=[&0;&1/2]|tag=demon|miscellaneous=!swarm}"
-						],
-						[
-							{
-								"type": "cell",
-								"roll": {
-									"min": 5,
-									"max": 6
-								}
-							},
-							"Eight {@filter demons of challenge rating 1/4 or lower|bestiary|challenge rating=[&0;&1/4]|tag=demon|miscellaneous=!swarm}"
-						]
-					]
-				},
-				"The DM chooses the demons, such as {@creature manes} or {@creature dretch||dretches}, and you choose the unoccupied spaces you can see within range where they appear. A summoned demon disappears when it drops to 0 hit points or when the spell ends.",
-				"The demons are hostile to all creatures, including you. Roll initiative for the summoned demons as a group, which has its own turns. The demons pursue and attack the nearest non-demons to the best of their ability.",
-				"As part of casting the spell, you can form a circle on the ground with the blood used as a material component. The circle is large enough to encompass your space. While the spell lasts, the summoned demons can't cross the circle or harm it, and they can't target anyone within it. Using the material component in this manner consumes it when the spell ends."
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 6th or 7th level, you summon twice as many demons. If you cast it using a spell slot of 8th or 9th level, you summon three times as many demons."
-					]
-				}
-			],
-			"miscTags": [
-				"RO",
-				"SGT",
-				"SMN"
-			]
 		},
 		{
 			"name": "Synaptic Static",

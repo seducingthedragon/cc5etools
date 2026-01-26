@@ -7104,6 +7104,34 @@
 				}
 			]
 		},
+		"Conjure Greater Demon": {
+            "classVariant": [
+                {
+                    "name": "Warlock",
+                    "source": "PHB",
+                    "definedInSource": "XGE"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB",
+                    "definedInSource": "XGE"
+                }
+            ]
+        },
+        "Conjure Lesser Demons": {
+            "classVariant": [
+                {
+                    "name": "Warlock",
+                    "source": "PHB",
+                    "definedInSource": "XGE"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB",
+                    "definedInSource": "XGE"
+                }
+            ]
+        },
 		"Control Flames": {
 			"classVariant": [
 				{
@@ -8125,34 +8153,6 @@
 			"classVariant": [
 				{
 					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "XGE"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "XGE"
-				}
-			]
-		},
-		"Summon Greater Demon": {
-			"classVariant": [
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "XGE"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "XGE"
-				}
-			]
-		},
-		"Summon Lesser Demons": {
-			"classVariant": [
-				{
-					"name": "Warlock",
 					"source": "PHB",
 					"definedInSource": "XGE"
 				},

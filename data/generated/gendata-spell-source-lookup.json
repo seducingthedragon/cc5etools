@@ -21473,6 +21473,74 @@
                 }
             }
         },
+        "conjure greater demon": {
+            "classVariant": {
+                "PHB": {
+                    "Warlock": {
+                        "definedInSources": [
+                            "XGE"
+                        ]
+                    },
+                    "Wizard": {
+                        "definedInSources": [
+                            "XGE"
+                        ]
+                    }
+                }
+            },
+            "subclass": {
+                "PHB": {
+                    "Fighter": {
+                        "PHB": {
+                            "Eldritch Knight": {
+                                "name": "Eldritch Knight"
+                            }
+                        }
+                    },
+                    "Rogue": {
+                        "PHB": {
+                            "Arcane Trickster": {
+                                "name": "Arcane Trickster"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "conjure lesser demons": {
+            "classVariant": {
+                "PHB": {
+                    "Warlock": {
+                        "definedInSources": [
+                            "XGE"
+                        ]
+                    },
+                    "Wizard": {
+                        "definedInSources": [
+                            "XGE"
+                        ]
+                    }
+                }
+            },
+            "subclass": {
+                "PHB": {
+                    "Fighter": {
+                        "PHB": {
+                            "Eldritch Knight": {
+                                "name": "Eldritch Knight"
+                            }
+                        }
+                    },
+                    "Rogue": {
+                        "PHB": {
+                            "Arcane Trickster": {
+                                "name": "Arcane Trickster"
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "control flames": {
             "classVariant": {
                 "PHB": {
@@ -24192,74 +24260,6 @@
             "classVariant": {
                 "PHB": {
                     "Sorcerer": {
-                        "definedInSources": [
-                            "XGE"
-                        ]
-                    },
-                    "Wizard": {
-                        "definedInSources": [
-                            "XGE"
-                        ]
-                    }
-                }
-            },
-            "subclass": {
-                "PHB": {
-                    "Fighter": {
-                        "PHB": {
-                            "Eldritch Knight": {
-                                "name": "Eldritch Knight"
-                            }
-                        }
-                    },
-                    "Rogue": {
-                        "PHB": {
-                            "Arcane Trickster": {
-                                "name": "Arcane Trickster"
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "summon greater demon": {
-            "classVariant": {
-                "PHB": {
-                    "Warlock": {
-                        "definedInSources": [
-                            "XGE"
-                        ]
-                    },
-                    "Wizard": {
-                        "definedInSources": [
-                            "XGE"
-                        ]
-                    }
-                }
-            },
-            "subclass": {
-                "PHB": {
-                    "Fighter": {
-                        "PHB": {
-                            "Eldritch Knight": {
-                                "name": "Eldritch Knight"
-                            }
-                        }
-                    },
-                    "Rogue": {
-                        "PHB": {
-                            "Arcane Trickster": {
-                                "name": "Arcane Trickster"
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "summon lesser demons": {
-            "classVariant": {
-                "PHB": {
-                    "Warlock": {
                         "definedInSources": [
                             "XGE"
                         ]
