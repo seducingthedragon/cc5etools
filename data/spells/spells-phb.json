@@ -3654,58 +3654,77 @@
 			]
 		},
 		{
-			"name": "Conjure Celestial",
-			"source": "PHB",
-			"page": 225,
-			"srd": true,
-			"level": 7,
-			"school": "C",
-			"time": [
-				{
-					"number": 1,
-					"unit": "minute"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 90
-				}
-			},
-			"components": {
-				"v": true,
-				"s": true
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "hour",
-						"amount": 1
-					},
-					"concentration": true
-				}
-			],
-			"entries": [
-				"You summon a {@filter celestial of challenge rating 4 or lower|bestiary|challenge rating=[&0;&4]|type=celestial|miscellaneous=!swarm}, which appears in an unoccupied space that you can see within range. The celestial disappears when it drops to 0 hit points or when the spell ends.",
-				"The celestial is friendly to you and your companions for the duration. Roll initiative for the celestial, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you), as long as they don't violate its alignment. If you don't issue any commands to the celestial, it defends itself from hostile creatures but otherwise takes no actions.",
-				"The DM has {@creature couatl||the celestial}'s statistics."
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a 9th-level spell slot, you summon a {@filter celestial of challenge rating 5 or lower|bestiary|challenge rating=[&0;&5]|type=celestial|miscellaneous=!swarm}."
-					]
-				}
-			],
-			"miscTags": [
-				"SGT",
-				"SMN"
-			]
-		},
+            "name": "Conjure Celestial",
+            "source": "PHB",
+            "page": 225,
+            "srd": true,
+            "level": 6,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "minute"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You conjure a Celestial to your aid when you cast this spell. While your concentration lasts, it is Friendly to you and your allies and obeys your commands. For the duration, the Celestial follows the rules below:",
+                {
+                    "type": "entries",
+                    "name": "Statistics",
+                    "entries": [
+                        "You summon a {@filter celestial of challenge rating 4 or lower|bestiary|challenge rating=[&0;&4]|type=celestial|miscellaneous=!swarm}, which appears in an unoccupied space that you can see within range. The celestial disappears when it drops to 0 hit points or when the spell ends."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Combat",
+                    "entries": [
+                        "In combat, this Celestial shares your initiative and acts on your turn. You can give it verbal commands (no action required). If the Celestial does not receive any commands, or if its commands are completed, it defend itself with prejudice."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Control",
+                    "entries": [
+                        "If the spell ends because your concentration was broken, the Celestial remains, but is no longer under your control. For the duration of the spell, or until it is reduced to 0 hit points, the Celestial acts according to its alignment, potentially becoming hostile towards you. An uncontrolled Celestial can't be dismissed by you, and they disappear 1 hour after summoned."
+                    ]
+                }
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using an 8th-level spell slot, you summon a {@filter celestial of challenge rating 5 or lower|bestiary|challenge rating=[&0;&5]|type=celestial|miscellaneous=!swarm}."
+                    ]
+                }
+            ],
+            "miscTags": [
+                "SGT",
+                "SMN"
+            ]
+        },
 		{
 			"name": "Conjure Elemental",
 			"source": "PHB",
