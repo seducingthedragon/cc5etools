@@ -7621,102 +7621,30 @@
 				}
 			]
 		},
-		"Investiture of Flame": {
-			"classVariant": [
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "XGE"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "XGE"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "XGE"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "XGE"
-				}
-			]
-		},
-		"Investiture of Ice": {
-			"classVariant": [
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "XGE"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "XGE"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "XGE"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "XGE"
-				}
-			]
-		},
-		"Investiture of Stone": {
-			"classVariant": [
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "XGE"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "XGE"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "XGE"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "XGE"
-				}
-			]
-		},
-		"Investiture of Wind": {
-			"classVariant": [
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "XGE"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "XGE"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB",
-					"definedInSource": "XGE"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB",
-					"definedInSource": "XGE"
-				}
-			]
-		},
+		"Investiture of Elements": {
+            "classVariant": [
+                {
+                    "name": "Druid",
+                    "source": "PHB",
+                    "definedInSource": "XGE"
+                },
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB",
+                    "definedInSource": "XGE"
+                },
+                {
+                    "name": "Warlock",
+                    "source": "PHB",
+                    "definedInSource": "XGE"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB",
+                    "definedInSource": "XGE"
+                }
+            ]
+        },
 		"Invulnerability": {
 			"classVariant": [
 				{
