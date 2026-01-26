@@ -767,6 +767,26 @@
 				}
 			]
 		},
+		"Befuddlement": {
+			"class": [
+				{
+					"name": "Bard",
+					"source": "PHB"
+				},
+				{
+					"name": "Druid",
+					"source": "PHB"
+				},
+				{
+					"name": "Warlock",
+					"source": "PHB"
+				},
+				{
+					"name": "Wizard",
+					"source": "PHB"
+				}
+			]
+		},
 		"Bestow Curse": {
 			"class": [
 				{
@@ -2320,26 +2340,6 @@
 				{
 					"name": "Artificer",
 					"source": "TCE"
-				}
-			]
-		},
-		"Feeblemind": {
-			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB"
 				}
 			]
 		},

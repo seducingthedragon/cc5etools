@@ -2060,6 +2060,27 @@
                 }
             }
         },
+        "befuddlement": {
+            "class": {
+                "PHB": {
+                    "Bard": true,
+                    "Druid": true,
+                    "Warlock": true,
+                    "Wizard": true
+                }
+            },
+            "subclass": {
+                "PHB": {
+                    "Cleric": {
+                        "SCAG": {
+                            "Arcana": {
+                                "name": "Arcana Domain"
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "bestow curse": {
             "class": {
                 "PHB": {
@@ -7306,27 +7327,6 @@
                     "Half-Elf (Variant; Mark of Storm)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
-                    }
-                }
-            }
-        },
-        "feeblemind": {
-            "class": {
-                "PHB": {
-                    "Bard": true,
-                    "Druid": true,
-                    "Warlock": true,
-                    "Wizard": true
-                }
-            },
-            "subclass": {
-                "PHB": {
-                    "Cleric": {
-                        "SCAG": {
-                            "Arcana": {
-                                "name": "Arcana Domain"
-                            }
-                        }
                     }
                 }
             }
