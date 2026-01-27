@@ -2475,21 +2475,6 @@
 				}
 			]
 		},
-		"Flame Blade": {
-			"class": [
-				{
-					"name": "Druid",
-					"source": "PHB"
-				}
-			],
-			"classVariant": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "TCE"
-				}
-			]
-		},
 		"Flame Strike": {
 			"class": [
 				{
@@ -4409,6 +4394,21 @@
 				}
 			]
 		},
+		"Primordial Blade": {
+            "class": [
+                {
+                    "name": "Druid",
+                    "source": "PHB"
+                }
+            ],
+            "classVariant": [
+				{
+					"name": "Sorcerer",
+					"source": "PHB",
+					"definedInSource": "TCE"
+				}
+			]
+        },
 		"Prismatic Spray": {
 			"class": [
 				{
