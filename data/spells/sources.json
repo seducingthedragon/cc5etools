@@ -1486,6 +1486,14 @@
 				}
 			]
 		},
+		"Create Simulacrum": {
+			"class": [
+				{
+					"name": "Wizard",
+					"source": "PHB"
+				}
+			]
+		},
 		"Create Undead": {
 			"class": [
 				{
@@ -5010,14 +5018,6 @@
 					"name": "Sorcerer",
 					"source": "PHB"
 				},
-				{
-					"name": "Wizard",
-					"source": "PHB"
-				}
-			]
-		},
-		"Simulacrum": {
-			"class": [
 				{
 					"name": "Wizard",
 					"source": "PHB"

@@ -4606,6 +4606,24 @@
                 }
             }
         },
+        "create simulacrum": {
+            "class": {
+                "PHB": {
+                    "Wizard": true
+                }
+            },
+            "subclass": {
+                "PHB": {
+                    "Cleric": {
+                        "SCAG": {
+                            "Arcana": {
+                                "name": "Arcana Domain"
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "create undead": {
             "class": {
                 "PHB": {
@@ -16143,24 +16161,6 @@
                     "Elf (Mark of Shadow)": {
                         "baseName": "Elf",
                         "baseSource": "PHB"
-                    }
-                }
-            }
-        },
-        "simulacrum": {
-            "class": {
-                "PHB": {
-                    "Wizard": true
-                }
-            },
-            "subclass": {
-                "PHB": {
-                    "Cleric": {
-                        "SCAG": {
-                            "Arcana": {
-                                "name": "Arcana Domain"
-                            }
-                        }
                     }
                 }
             }
