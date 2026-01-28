@@ -1658,10 +1658,10 @@
 				}
 			],
 			"range": {
-				"type": "point",
+				"type": "emanation",
 				"distance": {
 					"type": "feet",
-					"amount": 10
+					"amount": 15
 				}
 			},
 			"components": {
@@ -1674,7 +1674,7 @@
 				}
 			],
 			"entries": [
-				"You cause a tremor in the ground within range. Each creature other than you in that area must make a Dexterity saving throw. On a failed save, a creature takes {@damage 1d6} bludgeoning damage and is knocked {@condition prone}. If the ground in that area is loose earth or stone, it becomes {@quickref difficult terrain||3} until cleared, with each 5-foot-diameter portion requiring at least 1 minute to clear by hand."
+				"You cause a tremor in the ground, emanating from you. Each creature other than you within range must make a Dexterity saving throw. On a failed save, a creature takes {@damage 1d6} bludgeoning damage and is knocked {@condition prone}. If the ground in that area is loose earth or stone, it becomes {@quickref difficult terrain||3} until cleared, with each 5-foot-diameter portion requiring at least 1 minute to clear by hand, excluding the spot you are standing in."
 			],
 			"entriesHigherLevel": [
 				{
@@ -1740,7 +1740,16 @@
 				}
 			],
 			"entries": [
-				"Choose one creature you can see within range. Yellow strips of magical energy loop around the creature. The target must succeed on a Strength saving throw, or its flying speed (if any) is reduced to 0 feet for the spell's duration. An airborne creature affected by this spell safely descends at 60 feet per round until it reaches the ground or the spell ends."
+				"Choose one creature you can see within range. Yellow strips of magical energy loop around the creature. The target must succeed on a Strength saving throw, or its flying speed (if any) is reduced to 0 feet for the spell's duration as the creature becomes bound to the earth. An airborne creature affected by this spell safely descends at 60 feet per round until it reaches the ground or the spell ends."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of a level higher than 2nd, you can cause additional impacts. When you cast this spell using a 4th level slot or higher, you can also cause the target's walking speed to be reduced by half when it fails the Strength Saving Throw. When you cast this spell using a 6th level slot or higher, you can reduce any teleportation the target has access to also be reduced by half."
+					]
+				}
 			],
 			"savingThrow": [
 				"strength"
@@ -2145,7 +2154,7 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "action"
+					"unit": "bonus"
 				}
 			],
 			"range": {
@@ -2164,19 +2173,18 @@
 					"duration": {
 						"type": "hour",
 						"amount": 1
-					},
-					"concentration": true
+					}
 				}
 			],
 			"entries": [
-				"You touch a quiver containing arrows or bolts. When a target is hit by a ranged weapon attack using a piece of ammunition drawn from the quiver, the target takes an extra {@damage 1d6} fire damage. The spell's magic ends on a piece of ammunition when it hits or misses, and the spell ends when twelve pieces of ammunition have been drawn from the quiver."
+				"You touch a container carrying ranged weapon ammunition, transforming them into fiery magical ammunition. The first twelve pieces of ammunition drawn deal fire damage in place of their normal damage type, plus an additional {@damage 1d6} fire damage on hit. If fired into a flammable object, it bursts into flame on hit. After a hit or miss, the ammunition returns to the container and the magic of this spell ends on that individual ammunition as it returns to its mundane state. The spell ends after twelve pieces of ammunition are fired."
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 4th level or higher, the number of pieces of ammunition you can affect with this spell increases by two for each slot level above 3rd."
+						"When you cast this spell using a spell slot of 4th-level or higher, you can draw two additional pieces of ammunition from the container for each slot level above 3rd. Additionally, when you cast this spell using a spell slot of 4th level or higher, the fire damage increases by {@scaledamage 1d6|3-9|1d6} for each slot level above 3rd."
 					]
 				}
 			],
@@ -2291,6 +2299,63 @@
 				"ADV",
 				"SGT",
 				"TP"
+			]
+		},
+		{
+			"name": "Frost Fingers",
+			"source": "XGE",
+			"page": 156,
+			"otherSources": [
+				{
+					"source": "IDRotF",
+					"page": 318
+				}
+			],
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Freezing cold blasts from your fingertips in a 15-foot cone. Each creature in that area must make a Constitution saving throw, taking {@damage 2d8} cold damage on a failed save, or half as much damage on a successful one.",
+				"The cold freezes nonmagical liquids in the area that aren't being worn or carried."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@damage 1d8} for each slot level above 1st."
+					]
+				}
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"N"
 			]
 		},
 		{
@@ -2431,70 +2496,72 @@
 			]
 		},
 		{
-			"name": "Gust",
-			"source": "XGE",
-			"page": 157,
-			"otherSources": [
-				{
-					"source": "EEPC",
-					"page": 19
-				},
-				{
-					"source": "ERLW",
-					"page": 50
-				},
-				{
-					"source": "TCE",
-					"page": 50
-				}
-			],
-			"level": 0,
-			"school": "T",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 30
-				}
-			},
-			"components": {
-				"v": true,
-				"s": true
-			},
-			"duration": [
-				{
-					"type": "instant"
-				}
-			],
-			"entries": [
-				"You seize the air and compel it to create one of the following effects at a point you can see within range:",
-				{
-					"type": "list",
-					"items": [
-						"One Medium or smaller creature that you choose must succeed on a Strength saving throw or be pushed up to 5 feet away from you.",
-						"You create a small blast of air capable of moving one object that is neither held nor carried and that weighs no more than 5 pounds. The object is pushed up to 10 feet away from you. It isn't pushed with enough force to cause damage.",
-						"You create a harmless sensory effect using air, such as causing leaves to rustle, wind to slam shutters closed, or your clothing to ripple in a breeze."
-					]
-				}
-			],
-			"savingThrow": [
-				"strength"
-			],
-			"miscTags": [
-				"FMV",
-				"OBJ",
-				"SGT"
-			],
-			"areaTags": [
-				"ST"
-			]
-		},
+            "name": "Gust",
+            "source": "XGE",
+            "page": 157,
+            "otherSources": [
+                {
+                    "source": "EEPC",
+                    "page": 19
+                },
+                {
+                    "source": "ERLW",
+                    "page": 50
+                },
+                {
+                    "source": "TCE",
+                    "page": 50
+                }
+            ],
+            "level": 0,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You seize the air and compel it to create one of the following effects at a point you can see within range:",
+                {
+                    "type": "list",
+                    "items": [
+                        "One Medium or smaller creature that you choose must succeed on a Strength saving throw or be pushed up to 5 feet away from you.",
+                        "You create a small blast of air capable of moving one object that is neither held nor carried and that weighs no more than 5 pounds. The object is pushed up to 10 feet away from you. It isn't pushed with enough force to cause damage.",
+                        "You create a harmless sensory effect using air, such as causing leaves to rustle, wind to slam shutters closed, or your clothing to ripple in a breeze.",
+                        "You cause simple shapes\u2014such as the vague form of a creature, an inanimate object, words, or a location\u2014to appear within the gust and animate as you like. The shapes last for 1 hour."
+                    ]
+                },
+                "You can also manipulate the breeze in other ways that aren't listed as long as the results are harmless.",
+                "If you cast this spell multiple times, you can have up to three non-instantaneous effects created by it active at a time, and you can dismiss such an effect as an action."
+            ],
+            "savingThrow": [
+                "strength"
+            ],
+            "miscTags": [
+                "FMV",
+                "OBJ",
+                "SGT"
+            ],
+            "areaTags": [
+                "ST"
+            ]
+        },
 		{
 			"name": "Healing Spirit",
 			"source": "XGE",

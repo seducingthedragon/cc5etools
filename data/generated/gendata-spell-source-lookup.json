@@ -22437,17 +22437,6 @@
                 }
             }
         },
-        "find greater steed": {
-            "classVariant": {
-                "PHB": {
-                    "Paladin": {
-                        "definedInSources": [
-                            "XGE"
-                        ]
-                    }
-                }
-            }
-        },
         "flame arrows": {
             "classVariant": {
                 "PHB": {
@@ -22598,6 +22587,39 @@
                             }
                         }
                     }
+                }
+            }
+        },
+        "frost fingers": {
+            "class": {
+                "PHB": {
+                    "Wizard": true
+                }
+            },
+            "subclass": {
+                "PHB": {
+                    "Fighter": {
+                        "PHB": {
+                            "Eldritch Knight": {
+                                "name": "Eldritch Knight"
+                            }
+                        }
+                    },
+                    "Rogue": {
+                        "PHB": {
+                            "Arcane Trickster": {
+                                "name": "Arcane Trickster"
+                            }
+                        }
+                    }
+                }
+            },
+            "feat": {
+                "PHB": {
+                    "Magic Initiate": true
+                },
+                "SCC": {
+                    "Strixhaven Initiate": true
                 }
             }
         },

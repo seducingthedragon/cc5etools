@@ -7570,6 +7570,14 @@
 				}
 			]
 		},
+		"Frost Fingers": {
+			"class": [
+				{
+					"name": "Wizard",
+					"source": "PHB"
+				}
+			]
+		},
 		"Frostbite": {
 			"classVariant": [
 				{
