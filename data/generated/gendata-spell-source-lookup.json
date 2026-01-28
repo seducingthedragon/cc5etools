@@ -22188,6 +22188,130 @@
                 }
             }
         },
+        "elementalism": {
+            "class": {
+                "PHB": {
+                    "Druid": true,
+                    "Sorcerer": true,
+                    "Wizard": true
+                }
+            },
+            "subclass": {
+                "PHB": {
+                    "Cleric": {
+                        "PHB": {
+                            "Nature": {
+                                "name": "Nature Domain"
+                            }
+                        },
+                        "SCAG": {
+                            "Arcana": {
+                                "name": "Arcana Domain"
+                            }
+                        },
+                        "PSA": {
+                            "Strength (PSA)": {
+                                "name": "Strength Domain (PSA)"
+                            }
+                        }
+                    },
+                    "Druid": {
+                        "PHB": {
+                            "Land": {
+                                "name": "Circle of the Land"
+                            }
+                        }
+                    },
+                    "Fighter": {
+                        "PHB": {
+                            "Eldritch Knight": {
+                                "name": "Eldritch Knight"
+                            }
+                        }
+                    },
+                    "Rogue": {
+                        "PHB": {
+                            "Arcane Trickster": {
+                                "name": "Arcane Trickster"
+                            }
+                        }
+                    }
+                }
+            },
+            "feat": {
+                "ERLW": {
+                    "Aberrant Dragonmark": true
+                },
+                "DSotDQ": {
+                    "Initiate of High Sorcery": true
+                },
+                "PHB": {
+                    "Magic Initiate": true
+                },
+                "XGE": {
+                    "Wood Elf Magic": true
+                }
+            },
+            "optionalfeature": {
+                "TCE": {
+                    "Druidic Warrior": {
+                        "featureType": [
+                            "FS:R"
+                        ]
+                    }
+                },
+                "PHB": {
+                    "Pact of the Tome": {
+                        "featureType": [
+                            "PB"
+                        ]
+                    }
+                }
+            },
+            "race": {
+                "PHB": {
+                    "Elf (High)": {
+                        "baseName": "Elf",
+                        "baseSource": "PHB"
+                    }
+                },
+                "PSK": {
+                    "Elf (Kaladesh; Vahadar)": {
+                        "baseName": "Elf (Kaladesh)",
+                        "baseSource": "PSK"
+                    }
+                },
+                "SCAG": {
+                    "Half-Elf (Variant; Moon Elf or Sun Elf Descent)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    }
+                },
+                "MPMM": {
+                    "Kobold": true
+                },
+                "PSX": {
+                    "Merfolk (Ixalan; Blue)": {
+                        "baseName": "Merfolk",
+                        "baseSource": "PSZ"
+                    },
+                    "Merfolk (Ixalan; Green)": {
+                        "baseName": "Merfolk",
+                        "baseSource": "PSZ"
+                    }
+                },
+                "PSZ": {
+                    "Merfolk (Zendikar; Emeria Creed)": {
+                        "baseName": "Merfolk",
+                        "baseSource": "PSZ"
+                    },
+                    "Merfolk (Zendikar; Ula Creed)": {
+                        "baseName": "Merfolk",
+                        "baseSource": "PSZ"
+                    }
+                }
+            }
+        },
         "enemies abound": {
             "classVariant": {
                 "PHB": {

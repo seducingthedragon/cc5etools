@@ -7369,6 +7369,25 @@
 				}
 			]
 		},
+		"Elementalism": {
+            "classVariant": [
+                {
+                    "name": "Druid",
+                    "source": "PHB",
+                    "definedInSource": "XGE"
+                },
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB",
+                    "definedInSource": "XGE"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB",
+                    "definedInSource": "XGE"
+                }
+            ]
+        },
 		"Enemies Abound": {
 			"classVariant": [
 				{
