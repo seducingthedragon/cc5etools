@@ -22499,6 +22499,108 @@
                 }
             }
         },
+        "freedom of the waves": {
+            "class": {
+                "PHB": {
+                    "Druid": {
+                        "definedInSources": [
+                            "TDCSR"
+                        ]
+                    },
+                    "Ranger": {
+                        "definedInSources": [
+                            "TDCSR"
+                        ]
+                    },
+                    "Sorcerer": {
+                        "definedInSources": [
+                            "TDCSR"
+                        ]
+                    }
+                }
+            },
+            "classVariant": {
+                "PHB": {
+                    "Druid": {
+                        "definedInSources": [
+                            "XGE"
+                        ]
+                    },
+                    "Ranger": {
+                        "definedInSources": [
+                            "XGE"
+                        ]
+                    },
+                    "Sorcerer": {
+                        "definedInSources": [
+                            "XGE"
+                        ]
+                    }
+                }
+            },
+            "subclass": {
+                "PHB": {
+                    "Paladin": {
+                        "TDCSR": {
+                            "Open Sea": {
+                                "name": "Oath of the Open Sea"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "freedom of the winds": {
+            "class": {
+                "PHB": {
+                    "Druid": {
+                        "definedInSources": [
+                            "TDCSR"
+                        ]
+                    },
+                    "Sorcerer": {
+                        "definedInSources": [
+                            "TDCSR"
+                        ]
+                    },
+                    "Ranger": {
+                        "definedInSources": [
+                            "TDCSR"
+                        ]
+                    }
+                }
+            },
+            "classVariant": {
+                "PHB": {
+                    "Druid": {
+                        "definedInSources": [
+                            "XGE"
+                        ]
+                    },
+                    "Sorcerer": {
+                        "definedInSources": [
+                            "XGE"
+                        ]
+                    },
+                    "Ranger": {
+                        "definedInSources": [
+                            "XGE"
+                        ]
+                    }
+                }
+            },
+            "subclass": {
+                "PHB": {
+                    "Paladin": {
+                        "TDCSR": {
+                            "Open Sea": {
+                                "name": "Oath of the Open Sea"
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "frostbite": {
             "classVariant": {
                 "PHB": {

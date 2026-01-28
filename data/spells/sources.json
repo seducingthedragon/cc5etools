@@ -7498,6 +7498,78 @@
 				}
 			]
 		},
+		"Freedom of the Waves": {
+			"class": [
+				{
+					"name": "Druid",
+					"source": "PHB",
+					"definedInSource": "TDCSR"
+				},
+				{
+					"name": "Ranger",
+					"source": "PHB",
+					"definedInSource": "TDCSR"
+				},
+				{
+					"name": "Sorcerer",
+					"source": "PHB",
+					"definedInSource": "TDCSR"
+				}
+			],
+			"classVariant": [
+				{
+					"name": "Druid",
+					"source": "PHB",
+					"definedInSource": "XGE"
+				},
+				{
+					"name": "Ranger",
+					"source": "PHB",
+					"definedInSource": "XGE"
+				},
+				{
+					"name": "Sorcerer",
+					"source": "PHB",
+					"definedInSource": "XGE"
+				}
+			]
+		},
+		"Freedom of the Winds": {
+			"class": [
+				{
+					"name": "Druid",
+					"source": "PHB",
+					"definedInSource": "TDCSR"
+				},
+				{
+					"name": "Sorcerer",
+					"source": "PHB",
+					"definedInSource": "TDCSR"
+				},
+				{
+					"name": "Ranger",
+					"source": "PHB",
+					"definedInSource": "TDCSR"
+				}
+			],
+			"classVariant": [
+				{
+					"name": "Druid",
+					"source": "PHB",
+					"definedInSource": "XGE"
+				},
+				{
+					"name": "Sorcerer",
+					"source": "PHB",
+					"definedInSource": "XGE"
+				},
+				{
+					"name": "Ranger",
+					"source": "PHB",
+					"definedInSource": "XGE"
+				}
+			]
+		},
 		"Frostbite": {
 			"classVariant": [
 				{
