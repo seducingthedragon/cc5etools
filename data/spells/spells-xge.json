@@ -4263,6 +4263,15 @@
 				"Flame-like shadows wreathe your body until the spell ends, causing you to become heavily obscured to others. The shadows turn dim light within 10 feet of you into darkness, and bright light in the same area to dim light.",
 				"Until the spell ends, you have resistance to radiant damage. In addition, whenever a creature within 10 feet of you hits you with an attack, the shadows lash out at that creature, dealing it {@damage 2d8} necrotic damage."
 			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the necrotic damage increases by {@scaledamage 2d8|4-9|1d8} for each slot level above 4th."
+					]
+				}
+			],
 			"damageResist": [
 				"radiant"
 			],
@@ -4320,18 +4329,19 @@
 				}
 			],
 			"entries": [
-				"You choose an area of water that you can see within range and that fits within a 5-foot cube. You manipulate it in one of the following ways:",
-				{
-					"type": "list",
-					"items": [
-						"You instantaneously move or otherwise change the flow of the water as you direct, up to 5 feet in any direction. This movement doesn't have enough force to cause damage.",
-						"You cause the water to form into simple shapes and animate at your direction. This change lasts for 1 hour.",
-						"You change the water's color or opacity. The water must be changed in the same way throughout. This change lasts for 1 hour.",
-						"You freeze the water, provided that there are no creatures in it. The water unfreezes in 1 hour."
-					]
-				},
-				"If you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action."
-			],
+                "You choose an area of water that you can see within range and that fits within a 5-foot cube. You manipulate it in one of the following ways:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You instantaneously move or otherwise change the flow of the water as you direct, up to 5 feet in any direction. This movement doesn't have enough force to cause damage.",
+                        "You change the water's color or opacity. The water must be changed in the same way throughout. This change lasts for 1 hour.",
+                        "You freeze the water, provided that there are no creatures in it. The water unfreezes in 1 hour.",
+                        "You cause simple shapes\u2014such as the vague form of a creature, an inanimate object, words, or a location,\u2014to appear within the water and animate as you like. The shapes last for 1 hour."
+                    ]
+                },
+                "You can also manipulate the water in other ways that aren't listed as long as the results are harmless.",
+                "If you cast this spell multiple times, you can have up to three non-instantaneous effects created by it active at a time, and you can dismiss such an effect as an action."
+            ],
 			"miscTags": [
 				"SGT"
 			],
@@ -4373,8 +4383,8 @@
 				}
 			],
 			"entries": [
-				"Dim, greenish light spreads within a 30-foot-radius sphere centered on a point you choose within range. The light spreads around corners, and it lasts until the spell ends.",
-				"When a creature moves into the spell's area for the first time on a turn or starts its turn there, that creature must succeed on a Constitution saving throw or take {@damage 4d10} radiant damage, and it suffers one level of {@condition exhaustion} and emits a dim, greenish light in a 5-foot radius. This light makes it impossible for the creature to benefit from being {@condition invisible}. The light and any levels of {@condition exhaustion} caused by this spell go away when the spell ends."
+				"Dim, greenish light spreads within a 30-foot-radius sphere centered on a point you choose within range. The light spreads around corners, and it lasts until the spell ends. When you cast this spell, creatures already in the spell's area must make a Constitution Saving Throw or suffer the effects of the spell. Additionally, when a creature moves into the spell's area for the first time on a turn or starts its turn there, that creature must succeed on a Constitution saving throw.",
+				"If a creature fails the saving throw, they take {@damage 4d10} radiant damage, and it suffers one level of {@condition exhaustion} and emits a dim, greenish light in a 5-foot radius. This light makes it impossible for the creature to benefit from being {@condition invisible}. The light and any levels of {@condition exhaustion} caused by this spell go away when the spell ends. On a save, the creature takes half damage only."
 			],
 			"damageInflict": [
 				"radiant"
@@ -4756,7 +4766,7 @@
 			"entries": [
 				"A 20-foot-radius sphere of whirling air springs into existence, centered on a point you choose within range. The sphere remains for the spell's duration. Each creature in the sphere when it appears or that ends its turn there must succeed on a Strength saving throw or take {@damage 2d6} bludgeoning damage. The sphere's space is {@quickref difficult terrain||3}.",
 				"Until the spell ends, you can use a bonus action on each of your turns to cause a bolt of lightning to leap from the center of the sphere toward one creature you choose within 60 feet of the center. Make a ranged spell attack. You have advantage on the attack roll if the target is in the sphere. On a hit, the target takes {@damage 4d6} lightning damage.",
-				"Creatures within 30 feet of the sphere have disadvantage on Wisdom ({@skill Perception}) checks made to listen."
+				"Creatures within 30 feet of the sphere have disadvantage on Wisdom ({@skill Perception}) checks."
 			],
 			"entriesHigherLevel": [
 				{
@@ -5924,8 +5934,17 @@
 				}
 			],
 			"entries": [
-				"You move like the wind. Until the spell ends, your movement doesn't provoke opportunity attacks.",
-				"Once before the spell ends, you can give yourself advantage on one weapon attack roll on your turn. That attack deals an extra {@damage 1d8} force damage on a hit. Whether you hit or miss, your walking speed increases by 30 feet until the end of that turn."
+				"You move like the wind. Until the spell ends, your movement doesn't provoke opportunity attacks and your AC increases by 1.",
+				"Once before the spell ends, you can give yourself advantage on all weapon attacks for 1 round. These attacks deals an extra {@damage 1d8} force damage on a hit. During that same round, your walking speed increases by 30 feet."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, your AC bonus increases by 1. Additionally, you can give yourself advantage on 1 additional round of combat for each slot level above 1st. Your speed does not gain any bonus benefits when casting this spell at a higher level."
+					]
+				}
 			],
 			"damageInflict": [
 				"force"
