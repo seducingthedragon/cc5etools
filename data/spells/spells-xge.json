@@ -3324,7 +3324,8 @@
 				}
 			],
 			"entries": [
-				"A swirling mass of 5-foot-deep water appears in a 30-foot radius centered on a point you can see within range. The point must be on the ground or in a body of water. Until the spell ends, that area is {@quickref difficult terrain||3}, and any creature that starts its turn there must succeed on a Strength saving throw or take {@damage 6d6} bludgeoning damage and be pulled 10 feet toward the center."
+				"A swirling mass of 5-foot-deep water appears in a 30-foot radius centered on a point you can see within range. The point must be on the ground or in a body of water. Until the spell ends, that area is {@quickref difficult terrain||3} and any creature that starts or ends its turn there must succeed on a Strength saving throw or take {@damage 6d6} bludgeoning damage and be pulled 10 feet toward the center. On a save, the creature takes half damage and is not pulled.",
+				"As a bonus action on subsequent turns, you can move the maelstrom to another point within 30 feet of it, forcing creatures to make the Strength Saving Throw at the end of its movement."
 			],
 			"damageInflict": [
 				"bludgeoning"
@@ -3379,8 +3380,8 @@
 				}
 			],
 			"entries": [
-				"You touch one to three pebbles and imbue them with magic. You or someone else can make a ranged spell attack with one of the pebbles by throwing it or hurling it with a {@item sling|phb}. If thrown, a pebble has a range of 60 feet. If someone else attacks with a pebble, that attacker adds your spellcasting ability modifier, not the attacker's, to the attack roll. On a hit, the target takes bludgeoning damage equal to {@damage 1d6} + your spellcasting ability modifier. Whether the attack hits or misses, the spell then ends on the stone.",
-				"If you cast this spell again, the spell ends on any pebbles still affected by your previous casting."
+				"You touch one to three pebbles and imbue them with magic. You or someone else can make a ranged spell attack with one of the pebbles by throwing it or hurling it with a {@item sling|phb}. If thrown, a pebble has a range of 60 feet. If someone else attacks with a pebble, that attacker adds your spellcasting ability modifier, not the attacker's, to the attack roll. On a hit, the target takes bludgeoning damage equal to {@damage 1d6} + your spellcasting ability modifier.",
+				"Whether the attack hits or misses, the effect ends on the stone used in the attack. The spell ends when all stones have been used before the full duration or when you cast this spell again."
 			],
 			"damageInflict": [
 				"bludgeoning"
@@ -3786,15 +3787,16 @@
 			],
 			"entries": [
 				"You choose a portion of dirt or stone that you can see within range and that fits within a 5-foot cube. You manipulate it in one of the following ways:",
-				{
-					"type": "list",
-					"items": [
-						"If you target an area of loose earth, you can instantaneously excavate it, move it along the ground, and deposit it up to 5 feet away. This movement doesn't involve enough force to cause damage.",
-						"You cause shapes, colors, or both to appear on the dirt or stone, spelling out words, creating images, or shaping patterns. The changes last for 1 hour.",
-						"If the dirt or stone you target is on the ground, you cause it to become {@quickref difficult terrain||3}. Alternatively, you can cause the ground to become normal terrain if it is already {@quickref difficult terrain||3}. This change lasts for 1 hour."
-					]
-				},
-				"If you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action."
+                {
+                    "type": "list",
+                    "items": [
+                        "If you target an area of loose earth, you can instantaneously excavate it, move it along the ground, and deposit it up to 5 feet away. This movement doesn't involve enough force to cause damage.",
+                        "If the dirt or stone you target is on the ground, you cause it to become {@quickref difficult terrain||3}. Alternatively, you can cause the ground to become normal terrain if it is already {@quickref difficult terrain||3}. This change lasts for 1 hour.",
+                        "You cause simple shapes\u2014such as the vague form of a creature, an inanimate object, words, or a location,\u2014to appear within the loose earth and animate as you like. The shapes last for 1 hour."
+                    ]
+                },
+                "You can also manipulate the earth in other ways that aren't listed as long as the results are harmless.",
+                "If you cast this spell multiple times, you can have up to three non-instantaneous effects created by it active at a time, and you can dismiss such an effect as an action."
 			],
 			"miscTags": [
 				"DFT",
@@ -3902,7 +3904,7 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "action"
+					"unit": "bonus"
 				}
 			],
 			"range": {
@@ -3916,12 +3918,25 @@
 			},
 			"duration": [
 				{
-					"type": "instant"
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
 				}
 			],
 			"entries": [
-				"You channel primal magic to cause your teeth or fingernails to sharpen, ready to deliver a corrosive attack. Make a melee spell attack against one creature within 5 feet of you. On a hit, the target takes {@damage 1d10} acid damage. After you make the attack, your teeth or fingernails return to normal.",
-				"The spell's damage increases by {@damage 1d10} when you reach 5th level ({@damage 2d10}), 11th level ({@damage 3d10}), and 17th level ({@damage 4d10})."
+				"You channel primal magic in preparation for a corrosive unarmed attack, transforming your teeth or hands into fangs or claws, respectively.", 
+				"Until the start of your next turn, any unarmed strike attack you make deals {@damage 1d10} acid damage. You can choose either Strength Modifier or your Spellcasting Ability Modifier for your attack rolls with proficiency, using the same modifier for your damage rolls. You revert back into your form at the start of your next turn."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Cantrip Upgrade",
+					"entries": [
+						"The spell's damage increases by {@damage 1d10} when you reach 5th level ({@damage 2d10}), 11th level ({@damage 3d10}), and 17th level ({@damage 4d10})."
+					]
+				}
 			],
 			"scalingLevelDice": {
 				"label": "acid damage",
@@ -3979,13 +3994,12 @@
 					"duration": {
 						"type": "minute",
 						"amount": 1
-					},
-					"concentration": true
+					}
 				}
 			],
 			"entries": [
 				"You have resistance to acid, cold, fire, lightning, and thunder damage for the spell's duration.",
-				"When you take damage of one of those types, you can use your reaction to gain immunity to that type of damage, including against the triggering damage. If you do so, the resistances end, and you have the immunity until the end of your next turn, at which time the spell ends."
+				"When you take damage of one of those types, you can use your reaction to gain immunity to that type of damage, including against the triggering damage. If you do so, you lose all damage resistances gained by this spell in exchange for immunity against one damage type. This immunity lasts until the end of your next turn, at which time the spell ends."
 			],
 			"damageResist": [
 				"acid",
