@@ -2072,30 +2072,6 @@
 				}
 			]
 		},
-		"Elemental Weapon": {
-			"class": [
-				{
-					"name": "Paladin",
-					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
-				}
-			],
-			"classVariant": [
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "TCE"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB",
-					"definedInSource": "TCE"
-				}
-			]
-		},
 		"Enhance Ability": {
 			"class": [
 				{
@@ -4407,11 +4383,24 @@
                 {
                     "name": "Druid",
                     "source": "PHB"
-                }
+                },
+				{
+					"name": "Paladin",
+					"source": "PHB"
+				},
+				{
+					"name": "Artificer",
+					"source": "TCE"
+				}
             ],
             "classVariant": [
 				{
 					"name": "Sorcerer",
+					"source": "PHB",
+					"definedInSource": "TCE"
+				},
+				{
+					"name": "Ranger",
 					"source": "PHB",
 					"definedInSource": "TCE"
 				}

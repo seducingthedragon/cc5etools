@@ -6528,61 +6528,6 @@
                 }
             }
         },
-        "elemental weapon": {
-            "class": {
-                "PHB": {
-                    "Paladin": true
-                },
-                "TCE": {
-                    "Artificer": true
-                }
-            },
-            "classVariant": {
-                "PHB": {
-                    "Druid": {
-                        "definedInSources": [
-                            "TCE"
-                        ]
-                    },
-                    "Ranger": {
-                        "definedInSources": [
-                            "TCE"
-                        ]
-                    }
-                }
-            },
-            "subclass": {
-                "PHB": {
-                    "Cleric": {
-                        "XGE": {
-                            "Forge": {
-                                "name": "Forge Domain"
-                            }
-                        }
-                    },
-                    "Warlock": {
-                        "XGE": {
-                            "Hexblade": {
-                                "name": "The Hexblade"
-                            }
-                        }
-                    }
-                }
-            },
-            "background": {
-                "GGR": {
-                    "Izzet Engineer": true
-                }
-            },
-            "race": {
-                "ERLW": {
-                    "Human (Mark of Making)": {
-                        "baseName": "Human",
-                        "baseSource": "PHB"
-                    }
-                }
-            }
-        },
         "enhance ability": {
             "class": {
                 "PHB": {
@@ -14019,11 +13964,20 @@
         "primordial blade": {
             "class": {
                 "PHB": {
-                    "Druid": true
+                    "Druid": true,
+                    "Paladin": true
+                },
+                "TCE": {
+                    "Artificer": true
                 }
             },
             "classVariant": {
                 "PHB": {
+                    "Ranger": {
+                        "definedInSources": [
+                            "TCE"
+                        ]
+                    },
                     "Sorcerer": {
                         "definedInSources": [
                             "TCE"
@@ -14031,7 +13985,36 @@
                     }
                 }
             },
+            "subclass": {
+                "PHB": {
+                    "Cleric": {
+                        "XGE": {
+                            "Forge": {
+                                "name": "Forge Domain"
+                            }
+                        }
+                    },
+                    "Warlock": {
+                        "XGE": {
+                            "Hexblade": {
+                                "name": "The Hexblade"
+                            }
+                        }
+                    }
+                }
+            },
+            "background": {
+                "GGR": {
+                    "Izzet Engineer": true
+                }
+            },
             "race": {
+                "ERLW": {
+                    "Human (Mark of Making)": {
+                        "baseName": "Human",
+                        "baseSource": "PHB"
+                    }
+                },
                 "MPMM": {
                     "Genasi (Fire)": {
                         "baseName": "Genasi",
