@@ -10942,32 +10942,6 @@
                 }
             }
         },
-        "locate animals or plants": {
-            "class": {
-                "PHB": {
-                    "Bard": true,
-                    "Druid": true,
-                    "Ranger": true
-                }
-            },
-            "feat": {
-                "DSotDQ": {
-                    "Adept of the White Robes": true
-                }
-            },
-            "race": {
-                "ERLW": {
-                    "Half-Orc (Variant; Mark of Finding)": {
-                        "baseName": "Half-Orc",
-                        "baseSource": "PHB"
-                    },
-                    "Human (Variant; Mark of Finding)": {
-                        "baseName": "Human",
-                        "baseSource": "PHB"
-                    }
-                }
-            }
-        },
         "locate creature": {
             "class": {
                 "PHB": {
@@ -11019,6 +10993,11 @@
                             }
                         }
                     }
+                }
+            },
+            "feat": {
+                "DSotDQ": {
+                    "Adept of the White Robes": true
                 }
             },
             "race": {

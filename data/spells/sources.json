@@ -3408,22 +3408,6 @@
 				}
 			]
 		},
-		"Locate Animals or Plants": {
-			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB"
-				}
-			]
-		},
 		"Locate Creature": {
 			"class": [
 				{

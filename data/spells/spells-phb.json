@@ -11408,52 +11408,12 @@
 			]
 		},
 		{
-			"name": "Locate Animals or Plants",
-			"source": "PHB",
-			"page": 256,
-			"srd": true,
-			"level": 2,
-			"school": "D",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "self"
-				}
-			},
-			"components": {
-				"v": true,
-				"s": true,
-				"m": "a bit of fur from a bloodhound"
-			},
-			"duration": [
-				{
-					"type": "instant"
-				}
-			],
-			"meta": {
-				"ritual": true
-			},
-			"entries": [
-				"Describe or name a specific kind of beast or plant. Concentrating on the voice of nature in your surroundings, you learn the direction and distance to the closest creature or plant of that kind within 5 miles, if any are present."
-			],
-			"affectsCreatureType": [
-				"beast",
-				"plant"
-			]
-		},
-		{
 			"name": "Locate Creature",
 			"source": "PHB",
 			"page": 256,
 			"srd": true,
 			"basicRules": true,
-			"level": 4,
+			"level": 2,
 			"school": "D",
 			"time": [
 				{
@@ -11482,11 +11442,54 @@
 					"concentration": true
 				}
 			],
+			"meta": {
+                "ritual": true
+            },
 			"entries": [
-				"Describe or name a creature that is familiar to you. You sense the direction to the creature's location, as long as that creature is within 1,000 feet of you. If the creature is moving, you know the direction of its movement.",
-				"The spell can locate a specific creature known to you, or the nearest creature of a specific kind (such as a human or a {@creature unicorn}), so long as you have seen such a creature up close\u2014within 30 feet\u2014at least once. If the creature you described or named is in a different form, such as being under the effects of a {@spell polymorph} spell, this spell doesn't locate the creature.",
-				"This spell can't locate a creature if running water at least 10 feet wide blocks a direct path between you and the creature."
-			]
+                "Describe or name a specific kind of beast or plant. It can be a specific creature known to you, or the nearest creature of a specific kind (such as a bear, oak, or horse), so long as you have seen such a creature within 30 feet at least once.",
+                "If one is within 1 mile, you will learn the direction and distance. If the target is in motion, you will continue to gain updates on its direction and distance while concentrating on this spell. If the creature is in a different form, such as under the effect of the polymorph spell, this spell doesn't locate the creature.",
+                "This spell can't locate its target if any thickness of lead blocks a straight line to the target."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd-level or higher, the range and the type of creature you can locate increase as show in the table below:",
+                        {
+                            "type": "table",
+                            "caption": "Locate Creature",
+                            "colLabels": [
+                                "Slot Level",
+                                "Range",
+                                "Creature Types"
+                            ],
+                            "colStyles": [
+                                "col-2 text-center",
+                                "col-5",
+                                "col-5"
+                            ],
+                            "rows": [
+                                [
+                                    "3rd",
+                                    "2 miles",
+                                    "Dragon, Giant, Humanoid, Monstrosity"
+                                ],
+                                [
+                                    "4th",
+                                    "3 miles",
+                                    "Aberration, Construct, Ooze, Undead"
+                                ],
+                                [
+                                    "5th",
+                                    "5 miles",
+                                    "Celestial, Elemental, Fey, Fiend"
+                                ]
+                            ]
+                        }
+                    ]
+                }
+            ]
 		},
 		{
 			"name": "Locate Object",
