@@ -2831,33 +2831,6 @@
 				}
 			]
 		},
-		"Greater Restoration": {
-			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
-				}
-			],
-			"classVariant": [
-				{
-					"name": "Ranger",
-					"source": "PHB",
-					"definedInSource": "TCE"
-				}
-			]
-		},
 		"Guardian of Faith": {
 			"class": [
 				{
@@ -3372,34 +3345,6 @@
 				{
 					"name": "Wizard",
 					"source": "PHB"
-				}
-			]
-		},
-		"Lesser Restoration": {
-			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Paladin",
-					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
@@ -4702,6 +4647,34 @@
 				}
 			]
 		},
+		"Restoration": {
+            "class": [
+                {
+                    "name": "Bard",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Cleric",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Druid",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Paladin",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Ranger",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Artificer",
+                    "source": "TCE"
+                }
+            ]
+        },
 		"Resurrection": {
 			"class": [
 				{

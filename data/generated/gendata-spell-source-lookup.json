@@ -8791,80 +8791,6 @@
                 }
             }
         },
-        "greater restoration": {
-            "class": {
-                "PHB": {
-                    "Bard": true,
-                    "Cleric": true,
-                    "Druid": true
-                },
-                "TCE": {
-                    "Artificer": true
-                }
-            },
-            "classVariant": {
-                "PHB": {
-                    "Ranger": {
-                        "definedInSources": [
-                            "TCE"
-                        ]
-                    }
-                }
-            },
-            "subclass": {
-                "PHB": {
-                    "Cleric": {
-                        "TCE": {
-                            "Peace": {
-                                "name": "Peace Domain"
-                            }
-                        }
-                    },
-                    "Sorcerer": {
-                        "XGE": {
-                            "Divine Soul": {
-                                "name": "Divine Soul"
-                            }
-                        },
-                        "TCE": {
-                            "Clockwork Soul": {
-                                "name": "Clockwork Soul"
-                            }
-                        },
-                        "TDCSR": {
-                            "Runechild": {
-                                "name": "Runechild"
-                            }
-                        }
-                    },
-                    "Warlock": {
-                        "XGE": {
-                            "Celestial": {
-                                "name": "The Celestial"
-                            }
-                        }
-                    }
-                }
-            },
-            "background": {
-                "SCC": {
-                    "Witherbloom Student": true
-                }
-            },
-            "race": {
-                "ERLW": {
-                    "Halfling (Mark of Healing)": {
-                        "baseName": "Halfling",
-                        "baseSource": "PHB"
-                    }
-                }
-            },
-            "reward": {
-                "DMG": {
-                    "Charm of Restoration": true
-                }
-            }
-        },
         "guardian of faith": {
             "class": {
                 "PHB": {
@@ -10724,93 +10650,6 @@
             "reward": {
                 "IDRotF": {
                     "Charm of the Traveler's Haven": true
-                }
-            }
-        },
-        "lesser restoration": {
-            "class": {
-                "PHB": {
-                    "Bard": true,
-                    "Cleric": true,
-                    "Druid": true,
-                    "Paladin": true,
-                    "Ranger": true
-                },
-                "TCE": {
-                    "Artificer": true
-                }
-            },
-            "subclass": {
-                "PHB": {
-                    "Cleric": {
-                        "PHB": {
-                            "Life": {
-                                "name": "Life Domain"
-                            }
-                        }
-                    },
-                    "Paladin": {
-                        "PHB": {
-                            "Devotion": {
-                                "name": "Oath of Devotion"
-                            }
-                        }
-                    },
-                    "Sorcerer": {
-                        "XGE": {
-                            "Divine Soul": {
-                                "name": "Divine Soul"
-                            }
-                        },
-                        "TCE": {
-                            "Clockwork Soul": {
-                                "name": "Clockwork Soul"
-                            }
-                        },
-                        "TDCSR": {
-                            "Runechild": {
-                                "name": "Runechild"
-                            }
-                        },
-                        "DSotDQ": {
-                            "Lunar": {
-                                "name": "Lunar Sorcery"
-                            }
-                        }
-                    },
-                    "Warlock": {
-                        "XGE": {
-                            "Celestial": {
-                                "name": "The Celestial"
-                            }
-                        }
-                    }
-                }
-            },
-            "background": {
-                "SCC": {
-                    "Witherbloom Student": true
-                }
-            },
-            "feat": {
-                "DSotDQ": {
-                    "Adept of the White Robes": true
-                }
-            },
-            "race": {
-                "DMG": {
-                    "Aasimar": true
-                },
-                "ERLW": {
-                    "Halfling (Mark of Healing)": {
-                        "baseName": "Halfling",
-                        "baseSource": "PHB"
-                    }
-                }
-            },
-            "reward": {
-                "DMG": {
-                    "Charm of Restoration": true
                 }
             }
         },
@@ -14979,6 +14818,98 @@
                         "baseName": "Merfolk",
                         "baseSource": "PSZ"
                     }
+                }
+            }
+        },
+        "restoration": {
+            "class": {
+                "PHB": {
+                    "Bard": true,
+                    "Cleric": true,
+                    "Druid": true,
+                    "Paladin": true,
+                    "Ranger": true
+                },
+                "TCE": {
+                    "Artificer": true
+                }
+            },
+            "subclass": {
+                "PHB": {
+                    "Cleric": {
+                        "PHB": {
+                            "Life": {
+                                "name": "Life Domain"
+                            }
+                        },
+                        "TCE": {
+                            "Peace": {
+                                "name": "Peace Domain"
+                            }
+                        }
+                    },
+                    "Paladin": {
+                        "PHB": {
+                            "Devotion": {
+                                "name": "Oath of Devotion"
+                            }
+                        }
+                    },
+                    "Sorcerer": {
+                        "XGE": {
+                            "Divine Soul": {
+                                "name": "Divine Soul"
+                            }
+                        },
+                        "TCE": {
+                            "Clockwork Soul": {
+                                "name": "Clockwork Soul"
+                            }
+                        },
+                        "TDCSR": {
+                            "Runechild": {
+                                "name": "Runechild"
+                            }
+                        },
+                        "DSotDQ": {
+                            "Lunar": {
+                                "name": "Lunar Sorcery"
+                            }
+                        }
+                    },
+                    "Warlock": {
+                        "XGE": {
+                            "Celestial": {
+                                "name": "The Celestial"
+                            }
+                        }
+                    }
+                }
+            },
+            "background": {
+                "SCC": {
+                    "Witherbloom Student": true
+                }
+            },
+            "feat": {
+                "DSotDQ": {
+                    "Adept of the White Robes": true
+                }
+            },
+            "race": {
+                "DMG": {
+                    "Aasimar": true
+                },
+                "ERLW": {
+                    "Halfling (Mark of Healing)": {
+                        "baseName": "Halfling",
+                        "baseSource": "PHB"
+                    }
+                }
+            },
+            "reward": {
+                "DMG": {
+                    "Charm of Restoration": true
                 }
             }
         },

@@ -9066,56 +9066,6 @@
 			]
 		},
 		{
-			"name": "Greater Restoration",
-			"source": "PHB",
-			"page": 246,
-			"srd": true,
-			"basicRules": true,
-			"level": 5,
-			"school": "A",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "touch"
-				}
-			},
-			"components": {
-				"v": true,
-				"s": true,
-				"m": {
-					"text": "diamond dust worth at least 100 gp, which the spell consumes",
-					"cost": 10000,
-					"consume": true
-				}
-			},
-			"duration": [
-				{
-					"type": "instant"
-				}
-			],
-			"entries": [
-				"You imbue a creature you touch with positive energy to undo a debilitating effect. You can reduce the target's {@condition exhaustion} level by one, or end one of the following effects on the target:",
-				{
-					"type": "list",
-					"items": [
-						"One effect that {@condition charmed} or {@condition petrified} the target",
-						"One curse, including the target's attunement to a cursed magic item",
-						"Any reduction to one of the target's ability scores",
-						"One effect reducing the target's hit point maximum"
-					]
-				}
-			],
-			"areaTags": [
-				"ST"
-			]
-		},
-		{
 			"name": "Guardian of Faith",
 			"source": "PHB",
 			"page": 246,
@@ -11233,48 +11183,6 @@
 			],
 			"areaTags": [
 				"H"
-			]
-		},
-		{
-			"name": "Lesser Restoration",
-			"source": "PHB",
-			"page": 255,
-			"srd": true,
-			"basicRules": true,
-			"otherSources": [
-				{
-					"source": "RMR",
-					"page": 55
-				}
-			],
-			"level": 2,
-			"school": "A",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "touch"
-				}
-			},
-			"components": {
-				"v": true,
-				"s": true
-			},
-			"duration": [
-				{
-					"type": "instant"
-				}
-			],
-			"entries": [
-				"You touch a creature and can end either one disease or one condition afflicting it. The condition can be {@condition blinded}, {@condition deafened}, {@condition paralyzed}, or {@condition poisoned}."
-			],
-			"areaTags": [
-				"ST"
 			]
 		},
 		{
@@ -15663,6 +15571,86 @@
 				"ST"
 			]
 		},
+		{
+            "name": "Restoration",
+            "source": "PHB",
+            "page": 272,
+            "srd": true,
+            "basicRules": true,
+            "level": 2,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You touch a willing creature and instantly end one disease or one of the following conditions currently afflicting it: {@condition blinded}, {@condition deafened}, {@condition frightened}, {@condition paralyzed}, or {@condition poisoned}."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd-level or higher, the conditions and effects you can end increase, but the spell requires you to expend diamond dust of a certain value, which is consumed during casting:",
+                        {
+                            "type": "table",
+                            "caption": "Restoration",
+                            "colLabels": [
+                                "Slot Level",
+                                "Value",
+                                "Conditions/Effects"
+                            ],
+                            "colStyles": [
+                                "col-2 text-center",
+                                "col-5",
+                                "col-5"
+                            ],
+                            "rows": [
+                                [
+                                    "3rd",
+                                    "10 gp",
+                                    "{@condition Charmed}, {@condition Exhaustion} (1 level)"
+                                ],
+                                [
+                                    "4th",
+                                    "50 gp",
+                                    "Reduction to one Ability Score or Hit Point Maximum"
+                                ],
+                                [
+                                    "5th",
+                                    "100 gp",
+                                    "{@condition Petrified}, One Curse, or Attunement to a Cursed Item"
+                                ]
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "OBJ",
+                "SCL"
+            ]
+        },
 		{
 			"name": "Resurrection",
 			"source": "PHB",
