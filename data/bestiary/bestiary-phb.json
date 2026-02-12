@@ -1,6 +1,152 @@
 {
 	"monster": [
 		{
+			"name": "Animated Object",
+			"source": "PHB",
+			"page": 213,
+			"summonedBySpell": "Animate Objects|PHB",
+			"summonedBySpellLevel": 2,
+            "size": [
+                "T",
+                "S",
+                "M",
+                "L",
+                "H"
+            ],
+            "type": "construct",
+            "alignment": [
+                "U"
+            ],
+            "ac": [
+                15
+            ],
+            "hp": {
+                "special": "10 (Medium or smaller), 20 (Large), 40 (Huge)"
+            },
+            "speed": {
+                "walk": 30
+            },
+            "str": 16,
+            "dex": 10,
+            "con": 10,
+            "int": 3,
+            "wis": 3,
+            "cha": 1,
+            "senses": [
+                "Blindsight 30 ft."
+            ],
+            "resist": [
+                {
+                    "resist": [
+                        "bludgeoning",
+                        "piercing",
+                        "slashing"
+                    ],
+                    "note": "from nonmagical attacks",
+                    "cond": true
+                }
+            ],
+            "immune": [
+                "poison"
+            ],
+            "conditionImmune": [
+                "exhaustion",
+                "petrified",
+                "poisoned"
+            ],
+            "passive": 6,
+            "languages": [
+                "understands the languages you know"
+            ],
+            "pbNote": "equals your Proficiency Bonus",
+            "trait": [
+				{
+					"name": "Spell Level Dependent.",
+					"entries": [
+						"Casting {@spell Animate Objects} as a level 2 spell, allows you to target a Medium or smaller object. In order to target a Large object, you must cast the spell using, at least, a level 3 spell slot. Additionally, in order to target a Huge object, you must cast the spell using, at least, a level 4 spell slot."
+					]
+				}
+			],
+			"action": [
+                {
+                    "name": "Slam",
+                    "entries": [
+                        "{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}Force damage equal to {@damage 2d4 + summonSpellLevel} (Small or Smaller), {@damage 2d6 + summonSpellLevel} (Medium), {@damage 2d10 + summonSpellLevel} (Large), or {@damage 2d12 + summonSpellLevel} (Huge)."
+                    ]
+                }
+            ],
+            "senseTags": [
+                "B"
+            ],
+            "miscTags": [
+                "MA"
+            ],
+            "hasToken": true,
+            "hasFluffImages": true,
+            "_versions": [
+                {
+                    "name": "Animated Object (Huge)",
+                    "source": "PHB",
+                    "hp": {
+                        "special": "40"
+                    },
+                    "action": [
+                        {
+                            "name": "Slam",
+                            "entries": [
+                                "{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}Force damage equal to {@damage 2d12 + summonSpellLevel}."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Animated Object (Large)",
+                    "source": "PHB",
+                    "hp": {
+                        "special": "20"
+                    },
+                    "action": [
+                        {
+                            "name": "Slam",
+                            "entries": [
+                                "{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}Force damage equal to {@damage 2d10 + summonSpellLevel}."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Animated Object (Medium)",
+                    "source": "PHB",
+                    "hp": {
+                        "special": "10"
+                    },
+                    "action": [
+                        {
+                            "name": "Slam",
+                            "entries": [
+                                "{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}Force damage equal to {@damage 2d6 + summonSpellLevel}."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Animated Object (Small or Smaller)",
+                    "source": "PHB",
+                    "hp": {
+                        "special": "10"
+                    },
+                    "action": [
+                        {
+                            "name": "Slam",
+                            "entries": [
+                                "{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}Force damage equal to {@damage 2d4 + summonSpellLevel}."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+		{
 			"name": "Animated Object (Huge)",
 			"source": "PHB",
 			"page": 213,

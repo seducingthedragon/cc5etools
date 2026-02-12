@@ -515,7 +515,7 @@
                                     "type": "item",
                                     "name": "Level 5 and Up.",
                                     "entries": [
-                                        "When you cast this spell using a level 5 spell slot, you can target a number of inanimate objects equal to your spellcasting ability modifier. A Medium or smaller target counts as one object, a Large target counts as two, and a Huge target counts as three. Additionally, you can target two additional objects and deal 1 additional damage die on the object's Slam attack for each spell slot level above 5."
+                                        "When you cast this spell using a level 5 spell slot, you can target a number of inanimate objects equal to your spellcasting ability modifier. A Medium or smaller target counts as one object, a Large target counts as two, and a Huge target counts as three. You can target two additional objects for each spell slot level above 5."
                                     ]
                                 }
                             ]
