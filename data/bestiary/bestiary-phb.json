@@ -319,6 +319,212 @@
 				"MW"
 			],
 			"hasToken": true
+		},
+		{
+			"name": "Otherworldly Steed",
+			"source": "PHB",
+			"page": 213,
+			"summonedBySpell": "Find Steed|PHB",
+			"summonedBySpellLevel": 2,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": {
+					"choose": [
+						"celestial",
+						"fey",
+						"fiend"
+					]
+				}
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"special": "10 + 1 per spell level"
+				}
+			],
+			"hp": {
+				"special": "5 + 10 per spell level (the steed has a number of Hit Dice [d10s] equal to the spell's level)"
+			},
+			"speed": {
+				"walk": 60,
+				"fly": {
+					"number": 60,
+					"condition": "(requires level 4+ spell)"
+				}
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 14,
+			"int": 6,
+			"wis": 12,
+			"cha": 8,
+			"passive": 11,
+			"languages": [
+				"telepathy 1 mile (works only with you)"
+			],
+			"pbNote": "equals your Proficiency Bonus",
+			"trait": [
+				{
+					"name": "Life Bond",
+					"entries": [
+						"When you regain Hit Points from a level 1+ spell, the steed regains the same number of Hit Points if you're within 5 feet of it."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Otherworldly Slam",
+					"entries": [
+						"{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}{@damage 1d8 + summonSpellLevel} of Radiant (Celestial), Psychic (Fey), or Necrotic (Fiend) damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Fell Glare (Fiend Only; Recharges after a Long Rest)",
+					"entries": [
+						"{@actSave wis} DC equals your spell save DC, one creature within 60 feet the steed can see. {@actSaveFail} The target has the {@condition Frightened} condition until the end of your next turn."
+					]
+				},
+				{
+					"name": "Fey Step (Fey Only; Recharges after a Long Rest)",
+					"entries": [
+						"The steed teleports, along with its rider, to an unoccupied space of your choice up to 60 feet away from itself."
+					]
+				},
+				{
+					"name": "Healing Touch (Celestial Only; Recharges after a Long Rest)",
+					"entries": [
+						"One creature within 5 feet of the steed regains a number of Hit Points equal to {@dice 2d8 + summonSpellLevel}."
+					]
+				}
+			],
+			"languageTags": [
+				"TP"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"_versions": [
+				{
+					"name": "Otherworldly Steed (Celestial)",
+					"source": "PHB",
+					"_mod": {
+						"bonus": [
+							{
+								"mode": "removeArr",
+								"names": [
+									"Fell Glare (Fiend Only; Recharges after a Long Rest)",
+									"Fey Step (Fey Only; Recharges after a Long Rest)"
+								]
+							},
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Healing Touch (Celestial Only; Recharges after a Long Rest)",
+									"with": "Healing Touch (Recharges after a Long Rest)"
+								}
+							}
+						]
+					},
+					"type": "celestial",
+					"action": [
+						{
+							"name": "Otherworldly Slam",
+							"entries": [
+								"{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}{@damage 1d8 + summonSpellLevel} Radiant damage."
+							]
+						}
+					],
+					"damageTags": [
+						"R"
+					],
+					"conditionInflict": null,
+					"savingThrowForced": null
+				},
+				{
+					"name": "Otherworldly Steed (Fey)",
+					"source": "PHB",
+					"_mod": {
+						"bonus": [
+							{
+								"mode": "removeArr",
+								"names": [
+									"Fell Glare (Fiend Only; Recharges after a Long Rest)",
+									"Healing Touch (Celestial Only; Recharges after a Long Rest)"
+								]
+							},
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Fey Step (Fey Only; Recharges after a Long Rest)",
+									"with": "Fey Step (Recharges after a Long Rest)"
+								}
+							}
+						]
+					},
+					"type": "fey",
+					"action": [
+						{
+							"name": "Otherworldly Slam",
+							"entries": [
+								"{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}{@damage 1d8 + summonSpellLevel} Psychic damage."
+							]
+						}
+					],
+					"damageTags": [
+						"Y"
+					],
+					"conditionInflict": null,
+					"savingThrowForced": null
+				},
+				{
+					"name": "Otherworldly Steed (Fiend)",
+					"source": "PHB",
+					"_mod": {
+						"bonus": [
+							{
+								"mode": "removeArr",
+								"names": [
+									"Fey Step (Fey Only; Recharges after a Long Rest)",
+									"Healing Touch (Celestial Only; Recharges after a Long Rest)"
+								]
+							},
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Fell Glare (Fiend Only; Recharges after a Long Rest)",
+									"with": "Fell Glare (Recharges after a Long Rest)"
+								}
+							}
+						]
+					},
+					"type": "fiend",
+					"action": [
+						{
+							"name": "Otherworldly Slam",
+							"entries": [
+								"{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}{@damage 1d8 + summonSpellLevel} Necrotic damage."
+							]
+						}
+					],
+					"damageTags": [
+						"N"
+					]
+				}
+			]
 		}
 	]
 }
