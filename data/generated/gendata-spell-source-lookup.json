@@ -10452,6 +10452,25 @@
                 }
             }
         },
+        "jallarzi's storm of radiance": {
+          "class": {
+            "PHB": {
+              "Warlock": true,
+              "Wizard": true
+            }
+          },
+          "subclass": {
+            "PHB": {
+              "Wizard": {
+                "PHB": {
+                  "Evocation": {
+                    "name": "Evocation"
+                  }
+                }
+              }
+            }
+          }
+        },
         "jump": {
             "class": {
                 "PHB": {

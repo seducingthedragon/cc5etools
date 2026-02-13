@@ -3292,6 +3292,18 @@
 				}
 			]
 		},
+		"Jallarzi's Storm of Radiance": {
+            "class": [
+                {
+                    "name": "Warlock",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ]
+        },
 		"Jump": {
 			"class": [
 				{
