@@ -4575,6 +4575,16 @@
                 }
             }
         },
+        "create construct": {
+            "class": {
+                "PHB": {
+                    "Wizard": true
+                },
+                "TCE": {
+                    "Artificer": true
+                }
+            }
+        },
         "create food and water": {
             "class": {
                 "PHB": {
@@ -4624,6 +4634,13 @@
             "reward": {
                 "MOT": {
                     "Karametra's Votary": true
+                }
+            }
+        },
+        "create monstrosity": {
+            "class": {
+                "PHB": {
+                    "Wizard": true
                 }
             }
         },

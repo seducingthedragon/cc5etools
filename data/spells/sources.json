@@ -1526,6 +1526,18 @@
 				}
 			]
 		},
+		"Create Construct": {
+			"class": [
+				{
+					"name": "Wizard",
+					"source": "PHB"
+				},
+				{
+					"name": "Artificer",
+					"source": "TCE"
+				}
+			]
+		},
 		"Create Food and Water": {
 			"class": [
 				{
@@ -1539,6 +1551,14 @@
 				{
 					"name": "Artificer",
 					"source": "TCE"
+				}
+			]
+		},
+		"Create Monstrosity": {
+			"class": [
+				{
+					"name": "Wizard",
+					"source": "PHB"
 				}
 			]
 		},

@@ -5025,6 +5025,66 @@
 			]
 		},
 		{
+            "name": "Create Construct",
+            "source": "PHB",
+            "page": 229,
+            "level": 5,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "hour"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "high quality materials worth at least 200 gold per level of the spell, all of which are consumed"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "Using a set of artisan's tools with which you are proficient, you set to work creating a creation of arcane power. Once the spell is complete, the material components are transformed into a {@creature Golem Servant}, which uses the rules below:",
+                {
+                    "type": "entries",
+                    "name": "Statistics",
+                    "entries": [
+                        "The Golem Servant uses the stat block below. It uses your Spellcasting Ability, the Spell Slot spent to cast this spell, your Spell Attack Modifier, and Proficiency Bonus (PB) in several places throughout the stat block. You choose if your Golem is Medium or Large sized, and its appearance reflects the materials you used in its creation."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Control",
+                    "entries": [
+                        "Your Golem has no mind of its own and obeys you absolutely. In combat, it shares your initiative and acts during your turn. However, unless you give it a command, the Golem Servant remains in its space and will only act in self defense. If you are within 500 feet of your Golem, you can use a bonus action to Telepathically issue it a command, determining how it will act on its turn or to set a general course of action for it (ie: 'defend this creature') until you give it another command."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Magical Nature",
+                    "entries": [
+                        "The Golem cannot benefit from healing spells, nor short or long rests. The only way for it to regain hit points is for a creature to touch it and spend one spell slot. It then regains hit points equal to 10 times the slot's level."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Creator's Bond",
+                    "entries": [
+                        "While the Golem lives, you cannot regain the spell slot you expended to create it, and casting this spell again instantly destroys any previous Golem Servants."
+                    ]
+                }
+            ]
+        },
+		{
 			"name": "Create Food and Water",
 			"source": "PHB",
 			"page": 229,
@@ -5057,6 +5117,102 @@
 				"You create 45 pounds of food and 30 gallons of water on the ground or in containers within range, enough to sustain up to fifteen humanoids or five steeds for 24 hours. The food is bland but nourishing, and spoils if uneaten after 24 hours. The water is clean and doesn't go bad."
 			]
 		},
+		{
+            "name": "Create Monstrosity",
+            "source": "PHB",
+            "page": 229,
+            "level": 6,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "hour"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+					"text": "the corpses of the appropriate Beasts and blood of the spellcaster, both of which are consumed",
+					"consumed": true
+				}
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You spill your blood onto the corpses binding them together into a new form, reducing your maximum hit points by 5 and creating a {@creature Hippogriff}, a {@creature Griffon}, or a {@creature Peryton} under your control. Monstrosities created by this spell use the rules below:",
+                {
+                    "type": "entries",
+                    "name": "Control",
+                    "entries": [
+                        "As a bonus action, you can mentally command any monstrosities created by this spell, so long as they are within 60 feet. You determine how they act or set a general course of action for them ('defend this dungeon'). Monstrosities follow commands until they are complete. If they are not given a command, they will defend themselves with extreme prejudice."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Creator's Bond",
+                    "entries": [
+                        "While a monstrosity is under your control you can't regain the maximum hit points spent in its creation. When you finish a long rest, you can choose to release control over a monstrosity to regain the maximum hit points spent to create it. When released, the creature will respond accordingly to its treatment and understanding of the world."
+                    ]
+                }
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "You can cast this spell with a spell slot of a higher level, you can expend additional maximum hit points (Max. HP) to create other Monstrosities, as shown here: ",
+                        {
+                            "type": "table",
+                            "colLabels": [
+                                "Slot Level",
+                                "Max HP",
+                                "Monstrosity"
+                            ],
+                            "colStyles": [
+                                "col-1 text-center",
+                                "col-2-2",
+                                "col-2-2"
+                            ],
+                            "rows": [
+                                [
+                                    "7th",
+                                    "8",
+                                    "{@creature Manticore}, {@creature Owlbear}"
+                                ],
+                                [
+                                    "8th",
+                                    "10",
+                                    "{@creature Bulette}, {@creature Gorgon}"
+                                ],
+                                [
+                                    "9th",
+                                    "15",
+                                    "{@creature Chimera}"
+                                ]
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "miscTags": [
+                "PRM",
+                "SMN",
+                "UBA"
+            ],
+            "areaTags": [
+                "ST"
+            ]
+        },
 		{
 			"name": "Create or Destroy Water",
 			"source": "PHB",
