@@ -18822,6 +18822,25 @@
                 }
             }
         },
+        "yolande's regal presence": {
+            "class": {
+                "PHB": {
+                    "Bard": true,
+                    "Wizard": true
+                }
+            },
+            "subclass": {
+                "PHB": {
+                    "Paladin": {
+                        "TCE": {
+                            "Glory": {
+                                "name": "Oath of Glory"
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "zone of truth": {
             "class": {
                 "PHB": {

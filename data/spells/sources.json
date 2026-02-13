@@ -5877,6 +5877,18 @@
 				}
 			]
 		},
+		"Yolande's Regal Presence": {
+            "class": [
+                {
+                    "name": "Bard",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Paladin",
+                    "source": "PHB"
+                }
+            ]
+        },
 		"Zone of Truth": {
 			"class": [
 				{
