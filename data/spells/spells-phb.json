@@ -3821,6 +3821,81 @@
 			]
 		},
 		{
+            "name": "Conjure Aberration",
+            "source": "PHB",
+            "page": 224,
+            "level": 6,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "minute"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "a prism worth at least 500 gp, bathed in the aberrant energies of the Far Realm",
+                    "cost": 50000
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You grasp the material component of this spell, tearing a rift in reality, causing an Aberration to appear in range. For the duration, the Aberration uses the rules below:",
+                {
+                    "type": "entries",
+                    "name": "Statistics",
+                    "entries": [
+                        "When you cast the spell, you summon an {@filter Aberration|bestiary|type=Aberration|challenge rating=[&0;&4]} of CR 4 or lower, coming through the torn rift."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Combat",
+                    "entries": [
+                        "The Aberration shares your initiative and acts on your turn. You can give it verbal orders (no action required). If the Aberration does not receive any orders, or its orders are completed, it moves and defends itself with prejudice."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Control",
+                    "entries": [
+                        "If the spell ends because your concentration was broken, the Aberration remains, but is no longer under your control. For the duration of the spell, or until it is reduced to 0 hit points, the Aberration acts according to its alignment, potentially becoming hostile towards you. An uncontrolled Aberration can't be dismissed by you, and they disappear 1 hour after summoned."
+                    ]
+                }
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 7th level or higher, the CR of the Aberration that you can conjure increases by 1 for each slot level above 6th."
+                    ]
+                }
+            ],
+            "miscTags": [
+                "SGT",
+                "SMN"
+            ]
+        },
+		{
 			"name": "Conjure Animals",
 			"source": "PHB",
 			"page": 225,
@@ -4102,6 +4177,110 @@
 				"SMN"
 			]
 		},
+		{
+            "name": "Conjure Giant",
+            "source": "PHB",
+            "page": 226,
+            "level": 5,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "minute"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "a gemstone worth at least 500 gold and a giant-inscribed rune",
+                    "cost": 50000
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "Grasping the material component of this spell, you conjure a portion of a Giants's essence to your aid. While your concentration lasts, it is Friendly to you and your allies and obeys your commands. For the duration, this titanic essence uses the rules below:",
+                {
+                    "type": "entries",
+                    "name": "Statistics",
+                    "entries": [
+                        "The titanic essence manifests a {@creature Hill Giant}. It appears in an unoccupied space of your choice within range."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Combat",
+                    "entries": [
+                        "In combat, this Giant shares your initiative and acts on your turn. You can give it verbal commands (no action required). If the Giant does not receive any commands, or if its commands are completed, it defend itself with prejudice."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Control",
+                    "entries": [
+                        "If the spell ends because your concentration was broken, the Giant remains, but is no longer under your control. For the duration of the spell, or until it is reduced to 0 hit points, the Giant acts according to its alignment, potentially becoming hostile towards you. An uncontrolled Giant can't be dismissed by you, and they disappear 1 hour after summoned."
+                    ]
+                }
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "You can cast this spell with higher level spell slots to cause this titanic essence to take on the form of more powerful Giants, as shown in the table below:",
+                        {
+                            "type": "table",
+                            "colLabels": [
+                                "Spell Slot",
+                                "Giant"
+                            ],
+                            "colStyles": [
+                                "col-1 text-center",
+                                "col-2-2"
+                            ],
+                            "rows": [
+                                [
+                                    "6th",
+                                    "{@creature Stone Giant}"
+                                ],
+                                [
+                                    "7th",
+                                    "{@creature Frost Giant}"
+                                ],
+                                [
+                                    "8th",
+                                    "{@creature Cloud Giant}, {@creature Fire Giant}"
+                                ],
+                                [
+                                    "9th",
+                                    "{@creature Storm Giant}"
+                                ]
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "miscTags": [
+                "SGT",
+                "SMN"
+            ]
+        },
 		{
 			"name": "Conjure Minor Elementals",
 			"source": "PHB",

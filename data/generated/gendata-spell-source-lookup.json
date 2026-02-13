@@ -4067,6 +4067,14 @@
                 }
             }
         },
+        "conjure aberration": {
+            "class": {
+                "PHB": {
+                    "Warlock": true,
+                    "Wizard": true
+                }
+            }
+        },
         "conjure animals": {
             "class": {
                 "PHB": {
@@ -4197,6 +4205,14 @@
                 "PHB": {
                     "Druid": true,
                     "Warlock": true
+                }
+            }
+        },
+        "conjure giant": {
+            "class": {
+                "PHB": {
+                    "Druid": true,
+                    "Wizard": true
                 }
             }
         },

@@ -1307,6 +1307,18 @@
 				}
 			]
 		},
+		"Conjure Aberration": {
+			"class": [
+				{
+					"name": "Warlock",
+					"source": "PHB"
+				},
+				{
+					"name": "Wizard",
+					"source": "PHB"
+				}
+			]
+		},
 		"Conjure Animals": {
 			"class": [
 				{
@@ -1355,6 +1367,18 @@
 				},
 				{
 					"name": "Warlock",
+					"source": "PHB"
+				}
+			]
+		},
+		"Conjure Giant": {
+			"class": [
+				{
+					"name": "Druid",
+					"source": "PHB"
+				},
+				{
+					"name": "Wizard",
 					"source": "PHB"
 				}
 			]
