@@ -9782,6 +9782,60 @@
 			]
 		},
 		{
+            "name": "Ghastly Flight",
+            "source": "PHB",
+            "page": 245,
+            "level": 1,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "line",
+                "distance": {
+                    "amount": 60,
+                    "type": "feet"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "the powdered remains of a creature"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You release a malevolent spirit that flies out from you in a direction of your choice in a 60-foot long, 5-foot wide line, at which point it fades away. Each creature within the line must make a Constitution saving throw. On a failed save, creatures take {@damage 2d8} necrotic damage and cannot regain hit points until the start of your next turn. On a success, creatures take half as much damage and can regain hit points as normal."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd-level or higher, the damage increases by {@scaledamage 2d8|1-9|1d8} for each slot level above 1st."
+                    ]
+                }
+            ],
+            "areaTags": [
+                "L"
+            ],
+            "damageInflict": [
+                "necrotic"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "savingThrow": [
+                "constitution"
+            ]
+        },
+		{
 			"name": "Giant Insect",
 			"source": "PHB",
 			"page": 245,
@@ -9863,6 +9917,68 @@
 				"Until the spell ends, when you make a Charisma check, you can replace the number you roll with a 15. Additionally, no matter what you say, magic that would determine if you are telling the truth indicates that you are being truthful."
 			]
 		},
+		{
+            "name": "Glitterbeam",
+            "source": "PHB",
+            "page": 245,
+            "school": "V",
+            "level": 0,
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You project a beam of twinkling lights at a creature or object within range. Make a ranged spell attack against the target. On a hit, it takes {@damage 1d8} radiant damage. Until a creature uses an action to remove the glitter, a target hit by this spell emits bright light in a 5-foot radius and has disadvantage on any Dexterity ({@skill Stealth}) checks it makes to {@condition hidden||hide} or conceal itself."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "The damage of this spell increases by 1d8 at 5th ({@damage 2d8}), 11th ({@damage 3d8}), and 17th level ({@damage 4d8})."
+                    ]
+                }
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "damageInflict": [
+                "radiant"
+            ],
+            "miscTags": [
+                "LGT",
+                "SCL"
+            ],
+            "scalingLevelDice": {
+                "scaling": {
+                    "1": "1d8",
+                    "5": "2d8",
+                    "11": "3d8",
+                    "17": "4d8"
+                }
+            },
+            "spellAttack": [
+                "R"
+            ]
+        },
 		{
 			"name": "Globe of Invulnerability",
 			"source": "PHB",
@@ -14494,6 +14610,69 @@
 				"ST"
 			]
 		},
+		{
+            "name": "Otherworldly Grasp",
+            "source": "PHB",
+            "page": 263,
+            "school": "N",
+            "level": 0,
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "distance": {
+                    "type": "self"
+                },
+                "type": "point"
+            },
+            "components": {
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You channel necrotic spiritual power to your hand, mutating it into a withered specter of itself. Make a melee spell attack against one creature within your reach. On hit, it takes {@damage 1d8} necrotic damage, and you can choose to gain temporary hit points equal to half the necrotic damage dealt."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Cantrip Upgrades",
+                    "entries": [
+                        "The damage of this spell increases by 1d8 when you reach 5th level ({@damage 2d8}), 11th level ({@damage 3d8}), and 17th level ({@damage 4d8})."
+                    ]
+                }
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "damageInflict": [
+                "necrotic"
+            ],
+            "miscTags": [
+                "SCL",
+                "THP"
+            ],
+            "scalingLevelDice": [
+                {
+                    "label": "necrotic damage",
+                    "scaling": {
+                        "1": "1d8",
+                        "5": "2d8",
+                        "11": "3d8",
+                        "17": "4d8"
+                    }
+                }
+            ],
+            "spellAttack": [
+                "M"
+            ]
+        },
 		{
 			"name": "Otiluke's Freezing Sphere",
 			"source": "PHB",

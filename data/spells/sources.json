@@ -2924,6 +2924,14 @@
 				}
 			]
 		},
+		"Ghastly Flight": {
+            "class": [
+                {
+                    "name": "Warlock",
+                    "source": "PHB"
+                }
+            ]
+        },
 		"Giant Insect": {
 			"class": [
 				{
@@ -2944,6 +2952,14 @@
 				}
 			]
 		},
+		"Glitterbeam": {
+            "class": [
+                {
+                    "name": "Bard",
+                    "source": "PHB"
+                }
+            ]
+        },
 		"Globe of Invulnerability": {
 			"class": [
 				{
@@ -4212,6 +4228,14 @@
 				}
 			]
 		},
+		"Otherworldly Grasp": {
+            "class": [
+                {
+                    "name": "Warlock",
+                    "source": "PHB"
+                }
+            ]
+        },
 		"Otiluke's Freezing Sphere": {
 			"class": [
 				{

@@ -8800,6 +8800,13 @@
                 }
             }
         },
+        "ghastly flight": {
+            "class": {
+                "PHB": {
+                    "Warlock": true
+                }
+            }
+        },
         "giant insect": {
             "class": {
                 "PHB": {
@@ -8817,6 +8824,13 @@
                 "PHB": {
                     "Bard": true,
                     "Warlock": true
+                }
+            }
+        },
+        "glitterbeam": {
+            "class": {
+                "PHB": {
+                    "Bard": true
                 }
             }
         },
@@ -13195,6 +13209,13 @@
             "feat": {
                 "DSotDQ": {
                     "Adept of the Red Robes": true
+                }
+            }
+        },
+        "otherworldly grasp": {
+            "class": {
+                "PHB": {
+                    "Warlock": true
                 }
             }
         },
