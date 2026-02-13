@@ -1367,6 +1367,51 @@
                 }
             }
         },
+        "arcane vigor": {
+            "class": {
+                "PHB": {
+                "Sorcerer": true,
+                "Wizard": true
+                }
+            },
+          "subclass": {
+            "PHB": {
+              "Bard": {
+                "PHB": {
+                  "Lore": {
+                    "name": "College of Lore"
+                  }
+                }
+              },
+              "Fighter": {
+                "PHB": {
+                  "Eldritch Knight": {
+                    "name": "Eldritch Knight"
+                  }
+                }
+              },
+              "Rogue": {
+                "PHB": {
+                  "Arcane Trickster": {
+                    "name": "Arcane Trickster"
+                  }
+                }
+              },
+              "Wizard": {
+                "PHB": {
+                  "Abjuration": {
+                    "name": "Abjuration"
+                  }
+                }
+              }
+            }
+          },
+          "feat": {
+            "DSotDQ": {
+              "Adept of the White Robes": true
+            }
+          }
+        },
         "armor of agathys": {
             "class": {
                 "PHB": {
