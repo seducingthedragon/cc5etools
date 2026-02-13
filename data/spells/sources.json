@@ -2215,6 +2215,94 @@
 				}
 			]
 		},
+		"Evoke Beast": {
+			"class": [
+				{
+					"name": "Druid",
+					"source": "PHB"
+				},
+				{
+					"name": "Ranger",
+					"source": "PHB"
+				}
+			]
+		},
+		"Evoke Elemental Guardians": {
+			"class": [
+				{
+					"name": "Druid",
+					"source": "PHB"
+				},
+				{
+					"name": "Ranger",
+					"source": "PHB"
+				},
+				{
+					"name": "Wizard",
+					"source": "PHB"
+				}
+			]
+		},
+		"Evoke Elements": {
+			"class": [
+				{
+					"name": "Druid",
+					"source": "PHB"
+				},
+				{
+					"name": "Ranger",
+					"source": "PHB"
+				},
+				{
+					"name": "Sorcerer",
+					"source": "PHB"
+				},
+				{
+					"name": "Warlock",
+					"source": "PHB"
+				},
+				{
+					"name": "Wizard",
+					"source": "PHB"
+				}
+			]
+		},
+		"Evoke Faerie": {
+			"class": [
+				{
+					"name": "Druid",
+					"source": "PHB"
+				}
+			]
+		},
+		"Evoke Fey Ward": {
+			"class": [
+				{
+					"name": "Druid",
+					"source": "PHB"
+				},
+				{
+					"name": "Ranger",
+					"source": "PHB"
+				}
+			]
+		},
+		"Evoke Heavenly Light": {
+			"class": [
+				{
+					"name": "Cleric",
+					"source": "PHB"
+				},
+				{
+					"name": "Paladin",
+					"source": "PHB"
+				},
+				{
+					"name": "Wizard",
+					"source": "PHB"
+				}
+			]
+		},
 		"Expeditious Retreat": {
 			"class": [
 				{

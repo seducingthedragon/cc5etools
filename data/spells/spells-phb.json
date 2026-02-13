@@ -7078,6 +7078,392 @@
 			]
 		},
 		{
+			"name": "Evoke Beast",
+			"source": "PHB",
+			"page": 238,
+			"srd": true,
+			"basicRules": true,
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You evoke the essense of a Large pack of spectral, intangible animals in an unoccupied space you can see within range. The pack lasts for the duration, and you choose the spirits' beastly form.",
+				"You have Advantage on Strength saving throws while you're within 5 feet of the pack, and when you move on your turn, you can also move the pack up to 30 feet to an unoccupied space you can see.",
+				"Whenever the pack moves within 10 feet of a creature you can see and whenever a creature you can see enters a space within 10 feet of the pack or ends its turn there, you can force that creature to make a Dexterity saving throw. On a failed save, the creature takes {@damage 3d10} Slashing damage and its speed is reduced by 10 feet. On a successful save, the target takes half damage only. A creature makes this save only once per turn."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The damage increases by {@scaledamage 3d10|3-9|1d10} for each spell slot level above 3."
+					]
+				}
+			],
+			"damageInflict": [
+				"slashing"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"ADV",
+				"SGT"
+			],
+			"areaTags": [
+				"C"
+			]
+		},
+		{
+			"name": "Evoke Elemental Guardians",
+			"source": "PHB",
+			"page": 238,
+			"srd": true,
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "emanation",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You evoke elemental guardian spirits that flit around you in a 15-foot Emanation for the duration. Until the spell ends, any attack you make deals an extra {@damage 3d8} damage when you hit a creature in the Emanation. This damage is Acid, Cold, Fire, or Lightning (your choice when you make the attack).",
+				"In addition, the ground in the Emanation is Difficult Terrain for your enemies."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The damage increases by {@scaledamage 3d8|4-9|1d8} for each spell slot level above 4."
+					]
+				}
+			],
+			"damageInflict": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning"
+			],
+			"miscTags": [
+				"AAD",
+				"DFT"
+			],
+			"areaTags": [
+				"S"
+			]
+		},
+        {
+			"name": "Evoke Elements",
+			"source": "PHB",
+			"page": 238,
+			"srd": true,
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You evoke elemental energy that takes the shape of a Large, intangible spirit which appears in an unoccupied space within range. Choose the spirit's element, which determines its damage type: air (Lightning), earth (Thunder), fire (Fire), or water (Cold). The spirit lasts for the duration.",
+				"Whenever a creature you can see enters the spirit's space or starts its turn within 5 feet of the spirit, you can force that creature to make a Dexterity saving throw if the spirit has no creature {@condition Restrained}. On failed save, the target takes {@damage 8d8} damage of the spirit's type, and the target has the {@condition Restrained} condition until the spell ends. At the start of each of its turns, the {@condition Restrained} target repeats the save. On a failed save, the target takes {@damage 4d8} damage of the spirit's type. On a successful save, the target isn't {@condition Restrained} by the spirit.",
+				"Until the spell ends, when you move on your turn, you can also move the elemental spirit up to 30 feet as long as it is not restraining any creature. Additionally, as a Bonus Action on your turn, you can change its appearance to a different element type, which changes the damage dealt to its related type."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The damage increases by {@scaledamage 8d8;4d8|5-9|1d8} for each spell slot level above 5."
+					]
+				}
+			],
+			"damageInflict": [
+				"lightning",
+				"thunder",
+				"fire",
+				"cold"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SGT",
+				"UBA"
+			]
+		},
+		{
+			"name": "Evoke Faerie",
+			"source": "PHB",
+			"page": 238,
+			"level": 6,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You evoke the energy from the Feywild in the form of a Medium spirit. The spirit lasts for the duration, and it looks like a Fey creature of your choice. When the spirit appears, you can make one melee spell attack against a creature within 5 feet of it. On a hit, the target takes Psychic damage equal to {@damage 3d12} plus your spellcasting ability modifier, and the target has the {@condition Frightened} condition until the start of your next turn, with both you and the spirit as the source of the fear.",
+				"As a Bonus Action on your later turns, you can teleport the spirit to an unoccupied space you can see within 30 feet of the space it left and make the attack against a creature within 5 feet of it."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The damage increases by {@scaledamage 3d12|6-9|1d12} for each spell slot level above 6."
+					]
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"miscTags": [
+				"SGT",
+				"UBA"
+			]
+		},
+		{
+			"name": "Evoke Fey Ward",
+			"source": "PHB",
+			"page": 238,
+			"srd": true,
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "emanation",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You evoke the nature spirits of the FeyWild as a ward that flits around you in a 10-foot Emanation for the duration. Whenever the emanation enters the space of a creature you can see and whenever a creature you can see enters the emanation or ends its turn there, you can force that creature to make a Wisdom saving throw. On a failed save, the creature takes {@damage 5d8} Force damage and is pushed back 10 feet. On a successful save, the creature takes only half as much damage. A creature makes this save only once per turn.",
+				"In addition, you can take the {@action Disengage} action as a Bonus Action for the spell's duration."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The damage increases by {@scaledamage 5d8|4-9|1d8} for each spell slot level above 4."
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"SGT",
+				"UBA"
+			]
+		},
+		{
+            "name": "Evoke Heavenly Light",
+            "source": "PHB",
+            "page": 238,
+            "srd": true,
+            "level": 5,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 10
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You evoke enrgy from the Upper Planes, which manifests as a pillar of light in a 10-foot-radius, 40-foot-high Cylinder centered on a point within range. For each creature you can see in the Cylinder, choose which of these lights shines on it:",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Healing Light",
+                            "entries": [
+                                "The target regains Hit Points equal to {@dice 3d12} plus your spellcasting ability modifier."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Searing Light",
+                            "entries": [
+                                "The target makes a Dexterity saving throw, taking {@damage 4d12} Radiant damage on a failed save or half as much damage on a successful one."
+                            ]
+                        }
+                    ]
+                },
+                "Until the spell ends, Bright Light fills the Cylinder, and when you move on your turn, you can also move the Cylinder up to 30 feet.",
+                "Whenever the Cylinder moves into the space of a creature you can see and whenever a creature you can see enters the Cylinder or ends its turn there, you can bathe it in one of the lights. A creature can be affected by this spell only once per turn."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "The healing and damage increase by {@scaledamage 3d12;4d12|5-9|1d12} for each spell slot level above 5."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "radiant"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "miscTags": [
+                "HL",
+                "SGT"
+            ],
+            "areaTags": [
+                "Y"
+            ]
+        },
+		{
 			"name": "Expeditious Retreat",
 			"source": "PHB",
 			"page": 238,
