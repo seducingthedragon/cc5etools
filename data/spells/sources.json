@@ -2606,6 +2606,18 @@
 				}
 			]
 		},
+		"Fount of Moonlight": {
+            "class": [
+                {
+                    "name": "Bard",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Druid",
+                    "source": "PHB"
+                }
+            ]
+        },
 		"Freedom of Movement": {
 			"class": [
 				{

@@ -8378,6 +8378,61 @@
 			]
 		},
 		{
+            "name": "Fount of Moonlight",
+            "source": "PHB",
+            "page": 244,
+            "level": 4,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 10
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "A cool light wreathes your body for the duration, emitting Bright Light in a 20-foot radius and Dim Light for an additional 20 feet.",
+                "Until the spell ends, you have Resistance to Radiant damage, and your melee attacks deal an extra {@damage 2d6} Radiant damage on a hit.",
+                "In addition, immediately after you take damage from a creature you can see within 60 feet of yourself, you can take a Reaction to force the creature to make a Constitution saving throw. On a failed save, the creature has the {@condition Blinded} condition until the end of your next turn."
+            ],
+            "damageResist": [
+                "radiant"
+            ],
+            "damageInflict": [
+                "radiant"
+            ],
+            "conditionInflict": [
+                "blinded"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "miscTags": [
+                "AAD",
+                "LGT",
+                "SGT"
+            ]
+        },
+		{
 			"name": "Freedom of Movement",
 			"source": "PHB",
 			"page": 244,

@@ -8124,6 +8124,25 @@
                 }
             }
         },
+        "fount of moonlight": {
+          "class": {
+            "PHB": {
+              "Bard": true,
+              "Druid": true
+            }
+          },
+          "subclass": {
+            "PHB": {
+              "Druid": {
+                "PHB": {
+                  "Moon": {
+                    "name": "Circle of the Moon"
+                  }
+                }
+              }
+            }
+          }
+        },
         "freedom of movement": {
             "class": {
                 "PHB": {
