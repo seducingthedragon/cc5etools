@@ -5273,6 +5273,18 @@
 				}
 			]
 		},
+		"Sonic Wave": {
+            "class": [
+                {
+                    "name": "Bard",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB"
+                }
+            ]
+        },
 		"Spare the Dying": {
 			"class": [
 				{
@@ -5376,6 +5388,18 @@
 				}
 			]
 		},
+		"Spiritual Sundering": {
+            "class": [
+                {
+                    "name": "Cleric",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Warlock",
+                    "source": "PHB"
+                }
+            ]
+        },
 		"Spiritual Weapon": {
 			"class": [
 				{
@@ -5628,6 +5652,22 @@
 				}
 			]
 		},
+		"Tempestuous Blade": {
+            "class": [
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Artificer",
+                    "source": "TCE"
+                }
+            ]
+        },
 		"Tenser's Floating Disk": {
 			"class": [
 				{
@@ -5720,6 +5760,18 @@
 				}
 			]
 		},
+		"Torrent": {
+            "class": [
+                {
+                    "name": "Druid",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB"
+                }
+            ]
+        },
 		"Transport via Plants": {
 			"class": [
 				{

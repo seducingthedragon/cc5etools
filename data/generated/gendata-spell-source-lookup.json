@@ -16640,6 +16640,14 @@
                 }
             }
         },
+        "sonic wave": {
+            "class": {
+                "PHB": {
+                    "Bard": true,
+                    "Sorcerer": true
+                }
+            }
+        },
         "spare the dying": {
             "class": {
                 "PHB": {
@@ -17058,6 +17066,14 @@
                 },
                 "GGR": {
                     "Orzhov Representative": true
+                }
+            }
+        },
+        "spiritual sundering": {
+            "class": {
+                "PHB": {
+                    "Cleric": true,
+                    "Warlock": true
                 }
             }
         },
@@ -17682,6 +17698,17 @@
                 }
             }
         },
+        "tempestuous blade": {
+            "class": {
+                "PHB": {
+                    "Sorcerer": true,
+                    "Wizard": true
+                },
+                "TCE": {
+                    "Artificer": true
+                }
+            }
+        },
         "tenser's floating disk": {
             "class": {
                 "PHB": {
@@ -18098,6 +18125,14 @@
                         "baseName": "Gnome",
                         "baseSource": "PHB"
                     }
+                }
+            }
+        },
+        "torrent": {
+            "class": {
+                "PHB": {
+                    "Druid": true,
+                    "Sorcerer": true
                 }
             }
         },

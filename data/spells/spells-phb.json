@@ -18350,6 +18350,64 @@
 			]
 		},
 		{
+            "name": "Sonic Wave",
+            "source": "PHB",
+            "page": 277,
+            "school": "C",
+            "level": 3,
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "distance": {
+                    "amount": 30,
+                    "type": "feet"
+                },
+                "type": "cone"
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You forcefully clasp your hands and a shockwave of booming force shoots forth from you and emits a boom audible out to 500 feet. All creatures in a 30-foot cone must succeed on a Constitution saving throw or take {@damage 4d8} thunder damage and either fall {@condition prone} or become {@condition deafened} for 1 minute (your choice). On a success, creatures take half damage only.",
+                "A creature can repeat this saving throw at the end of each of its turns, ending the effect on a success."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th-level or higher, the damage increases by {@scaledamage 4d8|3-9|1d8}, and the cone increases by 5 feet for each slot level above 3rd."
+                    ]
+                }
+            ],
+            "areaTags": [
+                "N"
+            ],
+            "conditionInflict": [
+                "deafened",
+                "prone"
+            ],
+            "damageInflict": [
+                "thunder"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "savingThrow": [
+                "constitution"
+            ]
+        },
+		{
 			"name": "Spare the Dying",
 			"source": "PHB",
 			"page": 277,
@@ -18703,6 +18761,48 @@
 				"S"
 			]
 		},
+		{
+            "name": "Spiritual Sundering",
+            "source": "PHB",
+            "page": 278,
+            "level": 5,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "distance": {
+                    "amount": 120,
+                    "type": "feet"
+                },
+                "type": "point"
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "Creatures in a 20-foot-radius sphere centered on a point of your choice within range have their soul rent, and must make a Charisma saving throw. On a failure, they take {@damage 8d6} necrotic damage, and for the next minute, they have a muddied sense of self and subtract {@dice 1d6} from any Intelligence, Wisdom, or Charisma saving throw they make. On a success, they take half damage and suffer no saving throw penalty.",
+                "Targets can make a Charisma saving throw at the end of each of their turns, ending the effect on a successful save."
+            ],
+            "areaTags": [
+                "S"
+            ],
+            "damageInflict": [
+                "necrotic"
+            ],
+            "savingThrow": [
+                "charisma"
+            ]
+        },
 		{
 			"name": "Spiritual Weapon",
 			"source": "PHB",
@@ -19738,6 +19838,79 @@
 			]
 		},
 		{
+            "name": "Tempestuous Blade",
+            "source": "PHB",
+            "page": 282,
+            "school": "V",
+            "level": 0,
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "distance": {
+                    "type": "self"
+                },
+                "type": "point"
+            },
+            "components": {
+                "s": true,
+                "m": {
+                    "text": "a melee weapon worth at least 1 sp",
+                    "cost": 10
+                }
+            },
+            "duration": [
+                {
+                    "duration": {
+                        "amount": 1,
+                        "type": "round"
+                    },
+                    "type": "timed"
+                }
+            ],
+            "entries": [
+                "As a bonus action, you infuse the melee weapon used in the casting of this spell with electrified magic. Until the start of your next turn, your attacks with that weapon deal lightning damage in place of the weapon's normal damage type.",
+                "Once per casting when you deal lightning damage with this spell, you can infuse your target with an electrical charge until the start of your next turn. If the target uses a reaction of any kind before then, this tempestuous charge is unleashed and it takes {@damage 1d8} lightning damage."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Cantrip Upgrade",
+                    "entries": [
+                        "This spell's damage increases when you reach certain levels. At 5th level, the melee attack deals an extra {@damage 1d8} lightning damage to the target on a hit, and the damage the target takes for using a reaction increases to {@damage 2d8}. Both damage rolls increase by 1d8 at 11th level ({@damage 2d8} and {@damage 3d8}) and again at 17th level ({@damage 3d8} and {@damage 4d8})"
+                    ]
+                }
+            ],
+            "scalingLevelDice": [
+                {
+                    "label": "lightning damage on reaction",
+                    "scaling": {
+                        "1": "1d8",
+                        "5": "2d8",
+                        "11": "3d8",
+                        "17": "4d8"
+                    }
+                },
+                {
+                    "label": "lightning damage on hit",
+                    "scaling": {
+                        "5": "1d8",
+                        "11": "2d8",
+                        "17": "3d8"
+                    }
+                }
+            ],
+            "damageInflict": [
+                "lightning"
+            ],
+            "miscTags": [
+                "SCL"
+            ]
+        },
+		{
 			"name": "Tenser's Floating Disk",
 			"source": "PHB",
 			"page": 282,
@@ -20078,6 +20251,64 @@
 				"ST"
 			]
 		},
+		{
+            "name": "Torrent",
+            "source": "PHB",
+            "page": 283,
+            "school": "V",
+			"level": 1,
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "distance": {
+                    "amount": 30,
+                    "type": "feet"
+                },
+                "type": "line"
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a mirror"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "A burst of elemental water erupts from you in a line 30 feet long and 5 feet wide in a direction you choose, forcing any creature in that area to make a Strength saving throw. On a failure, it takes {@damage 1d12} cold damage and is knocked back 10 feet in a straight line and falls {@condition prone}. On a success, it takes half as much damage and is not moved or knocked prone. A Huge or larger creature has advantage on its saving throw."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd-level or higher, the damage increases by {@scaledamage 1d12|1-9|1d12} and it knocks back 10 additional feet for each slot level above 1st."
+                    ]
+                }
+            ],
+            "areaTags": [
+                "L"
+            ],
+            "conditionInflict": [
+                "prone"
+            ],
+            "damageInflict": [
+                "cold"
+            ],
+            "miscTags": [
+                "FMV",
+                "SCL"
+            ],
+            "savingThrow": [
+                "strength"
+            ]
+        },
 		{
 			"name": "Transport via Plants",
 			"source": "PHB",
