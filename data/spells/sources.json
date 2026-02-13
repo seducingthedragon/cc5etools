@@ -1925,6 +1925,14 @@
 				}
 			]
 		},
+		"Dire Wail": {
+            "class": [
+                {
+                    "name": "Bard",
+                    "source": "PHB"
+                }
+            ]
+        },
 		"Disguise Self": {
 			"class": [
 				{
@@ -2259,6 +2267,14 @@
 				}
 			]
 		},
+		"Ethereal Anchor": {
+            "class": [
+                {
+                    "name": "Paladin",
+                    "source": "PHB"
+                }
+            ]
+        },
 		"Etherealness": {
 			"class": [
 				{

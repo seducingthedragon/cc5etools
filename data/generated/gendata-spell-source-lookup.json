@@ -5853,6 +5853,13 @@
                 }
             }
         },
+        "dire wail": {
+            "class": {
+                "PHB": {
+                    "Bard": true
+                }
+            }
+        },
         "disguise self": {
             "class": {
                 "PHB": {
@@ -6882,6 +6889,13 @@
                         "baseName": "Tiefling",
                         "baseSource": "PHB"
                     }
+                }
+            }
+        },
+        "ethereal anchor": {
+            "class": {
+                "PHB": {
+                    "Paladin": true
                 }
             }
         },

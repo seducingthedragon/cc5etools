@@ -6317,6 +6317,65 @@
 			"hasFluffImages": true
 		},
 		{
+            "name": "Dire Wail",
+            "source": "PHB",
+            "page": 233,
+			"level": 3,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "radius",
+                "distance": {
+                    "amount": 30,
+                    "type": "feet"
+                }
+            },
+            "components": {
+                "v": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "amount": 1,
+                        "type": "minute"
+                    }
+                }
+            ],
+            "entries": [
+                "You let forth a wail filled with otherworldly power. Creatures of your choice within 30 feet must succeed on a Constitution saving throw or take {@damage 4d10} thunder damage and be {@condition deafened} for the duration. At the end of each turn, targets can make a Constitution saving throw, ending the spell on a success. On a successful save, it takes half damage and is not deafened."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th-level or higher, the damage increases by {@scaledamage 4d10|3-9|1d10} for each slot level above 3rd."
+                    ]
+                }
+            ],
+            "areaTags": [
+                "S"
+            ],
+            "conditionInflict": [
+                "deafened"
+            ],
+            "damageInflict": [
+                "thunder"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "savingThrow": [
+                "constitution"
+            ]
+        },
+		{
 			"name": "Disguise Self",
 			"source": "PHB",
 			"page": 233,
@@ -7510,6 +7569,70 @@
 				"MT"
 			]
 		},
+		{
+            "name": "Ethereal Anchor",
+            "source": "PHB",
+            "page": 238,
+            "level": 1,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "distance": {
+                    "amount": 60,
+                    "type": "feet"
+                },
+                "type": "point"
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a silver nail"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "amount": 1,
+                        "type": "minute"
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You hurl a bolt of pure spirit at a creature within range. Make a ranged spell attack against your target. On hit, it takes {@damage 2d6} radiant damage and for the duration, and both you and the target has a speed of 0 while you maintain concentration to hold the target in place.",
+                "As an action on its turn, the creature can make a Strength saving throw against your Spell save DC, ending the spell on a success. If you target another creature with an attack or cast an effect that does not center on the target of this spell, the target had advantage on their Strength saving throw to end the effect."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the radiant damage increases by {@scaledamage 2d6|1-9|1d6} for each slot level above 1st."
+                    ]
+                }
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "damageInflict": [
+                "radiant"
+            ],
+            "miscTags": [
+                "ADV",
+                "SCL"
+            ],
+            "savingThrow": [
+                "strength"
+            ],
+            "spellAttack": [
+                "R"
+            ]
+        },
 		{
 			"name": "Etherealness",
 			"source": "PHB",
