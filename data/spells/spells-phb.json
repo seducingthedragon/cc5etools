@@ -14177,6 +14177,44 @@
 			]
 		},
 		{
+            "name": "Power Word Fortify",
+            "source": "PHB",
+            "page": 266,
+            "level": 7,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You fortify up to six creatures you can see within range. The spell bestows 120 Temporary Hit Points, which you divide among the spell's recipients."
+            ],
+            "miscTags": [
+                "SGT",
+                "THP"
+            ],
+            "areaTags": [
+                "MT"
+            ]
+        },
+		{
 			"name": "Power Word Heal",
 			"source": "PHB",
 			"page": 266,

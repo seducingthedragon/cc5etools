@@ -4249,6 +4249,18 @@
 				}
 			]
 		},
+		"Power Word Fortify": {
+            "class": [
+                {
+                    "name": "Bard",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Cleric",
+                    "source": "PHB"
+                }
+            ]
+        },
 		"Power Word Heal": {
 			"class": [
 				{

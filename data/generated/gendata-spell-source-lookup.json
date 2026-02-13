@@ -13647,6 +13647,25 @@
                 }
             }
         },
+        "power word fortify": {
+          "class": {
+            "PHB": {
+              "Bard": true,
+              "Cleric": true
+            }
+          },
+          "subclass": {
+            "PHB": {
+              "Sorcerer": {
+                "XGE": {
+                  "Divine Soul": {
+                    "name": "Divine Soul"
+                  }
+                }
+              }
+            }
+          }
+        },
         "power word heal": {
             "class": {
                 "PHB": {
