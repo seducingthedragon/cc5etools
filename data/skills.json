@@ -115,7 +115,7 @@
 			"basicRules": true,
 			"ability": "wis",
 			"entries": [
-				"A Wisdom (Medicine) check lets you try to stabilize a dying companion or diagnose an illness."
+				"A Wisdom (Medicine) check lets you try to stabilize a dying companion, provide first aid, or offer home remedies for treating illnesses. Additionally, a DM may ask for either a Wisdom (Medicine) check or an Intelligence (Medicine) check in regards to diagnosing an illness."
 			]
 		},
 		{
