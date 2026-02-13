@@ -561,6 +561,18 @@
 				}
 			]
 		},
+		"Arcane Lance": {
+            "class": [
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ]
+        },
 		"Arcane Lock": {
 			"class": [
 				{
@@ -641,6 +653,18 @@
 				}
 			]
 		},
+		"Aura of Frost": {
+            "class": [
+                {
+                    "name": "Druid",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB"
+                }
+            ]
+        },
 		"Aura of Life": {
 			"class": [
 				{
@@ -703,6 +727,14 @@
 				}
 			]
 		},
+		"Awaken Plants": {
+            "class": [
+                {
+                    "name": "Druid",
+                    "source": "PHB"
+                }
+            ]
+        },
 		"Bane": {
 			"class": [
 				{

@@ -1315,6 +1315,14 @@
                 }
             }
         },
+        "arcane lance": {
+            "class": {
+                "PHB": {
+                    "Sorcerer": true,
+                    "Wizard": true
+                }
+            }
+        },
         "arcane lock": {
             "class": {
                 "PHB": {
@@ -1370,8 +1378,8 @@
         "arcane vigor": {
             "class": {
                 "PHB": {
-                "Sorcerer": true,
-                "Wizard": true
+                    "Sorcerer": true,
+                    "Wizard": true
                 }
             },
           "subclass": {
@@ -1584,6 +1592,14 @@
                 "DSotDQ": {
                     "Adept of the White Robes": true,
                     "Divinely Favored": true
+                }
+            }
+        },
+        "aura of frost": {
+            "class": {
+                "PHB": {
+                    "Druid": true,
+                    "Sorcerer": true
                 }
             }
         },
@@ -1810,6 +1826,13 @@
                         "baseName": "Human",
                         "baseSource": "PHB"
                     }
+                }
+            }
+        },
+        "awaken plants": {
+            "class": {
+                "PHB": {
+                    "Druid": true
                 }
             }
         },

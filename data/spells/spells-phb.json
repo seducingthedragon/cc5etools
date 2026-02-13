@@ -850,6 +850,60 @@
 			]
 		},
 		{
+            "name": "Arcane Lance",
+            "source": "PHB",
+            "page": 214,
+            "level": 1,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "distance": {
+                    "amount": 90,
+                    "type": "feet"
+                },
+                "type": "point"
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a clear 1-inch crystal"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You conjure a lance of pure arcane energy in your hand and make a ranged spell attack against a creature you can see within range. On hit, the target takes {@damage 3d4} force damage."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd-level or higher, the damage increases by {@scaledamage 3d4|1-9|2d4} for each slot level above 1st."
+                    ]
+                }
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "damageInflict": [
+                "force"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "spellAttack": [
+                "R"
+            ]
+        },
+		{
 			"name": "Arcane Lock",
 			"source": "PHB",
 			"page": 215,
@@ -1150,6 +1204,63 @@
 			]
 		},
 		{
+            "name": "Aura of Frost",
+            "source": "PHB",
+            "page": 216,
+			"level": 2,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "radius",
+                "distance": {
+                    "type": "feet",
+                    "amount": 10
+                }
+            },
+            "components": {
+                "v": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "amount": 1,
+                        "type": "minute"
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "Arcane frost, snow, and wind swirl about you in an aura with a 10-foot radius, and until the spell ends, the aura moves with you, centered on you. When a creature other than you, enters the area for the first time on a turn or starts its turn there, it must succeed on a Constitution saving throw or it takes {@damage 2d8} cold damage and have its speed is reduced by 20 feet until the start of its next turn. On a successful save, it takes half as much cold damage and its speed isn't reduced."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd-level or higher, a creature that fails its save takes an additional {@scaledamage 2d8|2-9|1d8} cold damage and has its speed reduced by an additional 10 feet for each spell level above 2nd."
+                    ]
+                }
+            ],
+            "areaTags": [
+                "S"
+            ],
+            "damageInflict": [
+                "cold"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "savingThrow": [
+                "constitution"
+            ]
+        },
+		{
 			"name": "Aura of Life",
 			"source": "PHB",
 			"page": 216,
@@ -1333,6 +1444,111 @@
 				"ST"
 			]
 		},
+		{
+            "name": "Awaken Plants",
+            "source": "PHB",
+            "page": 216,
+            "srd": true,
+            "level": 2,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "distance": {
+                    "amount": 60,
+                    "type": "feet"
+                },
+                "type": "point"
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You infuse up to a number of Small or smaller plants equal to half of your Spellcasting Ability score you can see with life, temporarily awakening them under your control. For the duration, or until destroyed, these plants use the rules below:",
+                {
+                    "type": "entries",
+                    "name": "Statistics",
+                    "entries": [
+                        "Each targeted plants use the {@creature Awakened Plant|llspell} stat block. It uses your Spell save DC, the slot spent on this spell (Spell Slot), your Spell Attack Modifier, and Proficiency Bonus (PB) in several places. The Plant is destroyed at 0 hit points.",
+                        "If your concentration is broken before the end of the spell, any and all remaining Awaken Plants reverts to its original state, taking root in its space."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Control",
+                    "entries": [
+                        "The Awakened Plant follows your commands to the best of its abilities. If it is not given a command it remains in its space and only acts to defend itself. In combat, it shares your initiative and it acts during your turn.",
+                        "While the Plant is within 100 feet of you, you can use your bonus action to mentally issue it a command. You determine how it will act, or you can set a general course of action for it ('defend that tree'). This Plant follows your commands until they are completed or it is destroyed."
+                    ]
+                }
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell with a slot of a higher level, you can larger plants, as shown on the table below. Targeting a plant that's larger than small will count for more than one target, as shown below. The damage dice for its Slam also increase:",
+                        {
+                            "type": "table",
+                            "colLabels": [
+                                "Slot Level",
+                                "Size",
+                                "Target Count",
+                                "Damage"
+                            ],
+                            "colStyles": [
+                                "col-1 text-center",
+                                "col-2-2",
+                                "col-2-2",
+                                "col-2-2"
+                            ],
+                            "rows": [
+                                [
+                                    "3rd",
+                                    "Medium",
+                                    "2",
+                                    "2d6"
+                                ],
+                                [
+                                    "4th",
+                                    "Large",
+                                    "4",
+                                    "2d10"
+                                ],
+                                [
+                                    "5th",
+                                    "Huge",
+                                    "8",
+                                    "2d12"
+                                ]
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "miscTags": [
+                "SMN",
+                "UBA"
+            ],
+            "areaTags": [
+                "MT"
+            ]
+        },
 		{
 			"name": "Bane",
 			"source": "PHB",
