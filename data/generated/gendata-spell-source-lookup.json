@@ -25717,6 +25717,27 @@
                 }
             }
         },
+        "dark path": {
+            "classVariant": {
+                "PHB": {
+                    "Sorcerer": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Warlock": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Wizard": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    }
+                }
+            }
+        },
         "douse light": {
             "classVariant": {
                 "PHB": {
@@ -25821,6 +25842,27 @@
                         ]
                     },
                     "Warlock": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    }
+                }
+            }
+        },
+        "shadow puppets": {
+            "classVariant": {
+                "PHB": {
+                    "Sorcerer": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Warlock": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Wizard": {
                         "definedInSources": [
                             "BMT"
                         ]

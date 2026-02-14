@@ -8900,6 +8900,25 @@
                 }
             ]
         },
+		"Dark Path": {
+            "classVariant": [
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+                {
+                    "name": "Warlock",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                }
+            ]
+        },
 		"Douse Light": {
             "classVariant": [
                 {
@@ -8996,6 +9015,25 @@
                 },
                 {
                     "name": "Warlock",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                }
+            ]
+        },
+		"Shadow Puppets": {
+            "classVariant": [
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+                {
+                    "name": "Warlock",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+                {
+                    "name": "Wizard",
                     "source": "PHB",
                     "definedInSource": "BMT"
                 }

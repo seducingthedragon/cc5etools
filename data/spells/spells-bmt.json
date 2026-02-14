@@ -105,6 +105,52 @@
             ]
         },
 		{
+            "name": "Dark Path",
+            "source": "BMT",
+            "page": 50,
+			"otherSources": [
+                {
+                    "source": "TftS"
+                }
+            ],
+            "level": 2,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a lodestone"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You conjure a shadowy road between two points, with at least one point within range, to create a bridge or path. This effect can bridge a chasm or create a smooth path through difficult terrain. The dark path is 10 feet wide and up to 50 feet long. It can support up to 500 pounds of weight at one time. A creature that adds more weight than what the path can support will fall through the path as if it were an illusion."
+            ],
+			"areaTags": [
+				"L"
+			]
+        },
+		{
             "name": "Douse Light",
             "source": "BMT",
             "page": 50,
@@ -313,6 +359,74 @@
             "miscTags": [
                 "ADV",
                 "SCL"
+            ]
+        },
+		{
+            "name": "Shadow Puppets",
+            "source": "BMT",
+            "page": 50,
+			"otherSources": [
+                {
+                    "source": "TftS"
+                }
+            ],
+            "level": 2,
+            "school": "I",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a pinch of powdered lead"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You animate the shadow of a creature within range, causing it to attack that creature. As part of the bonus action to cast this spell, as well as a bonus action on subsequent rounds while the spell is active, you can make a melee spell attack against the creature, using its own shadow. On a hit, the target takes {@damage 2d8} psychic damage and must make a successful Intelligence saving throw or be {@condition incapacitated} until the start of your next turn."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d8} for each slot level above 2nd."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "psychic"
+            ],
+            "conditionInflict": [
+                "incapacitated"
+            ],
+            "spellAttack": [
+                "M"
+            ],
+            "savingThrow": [
+                "intelligence"
+            ],
+            "miscTags": [
+                "SCL",
+				"UBA"
             ]
         },
 		{
