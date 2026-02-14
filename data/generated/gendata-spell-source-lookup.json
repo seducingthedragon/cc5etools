@@ -25717,6 +25717,49 @@
                 }
             }
         },
+        "douse light": {
+            "classVariant": {
+                "PHB": {
+                    "Bard": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Cleric": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Druid": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Sorcerer": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Warlock": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Wizard": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    }
+                },
+                "TCE": {
+                    "Artificer": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    }
+                }
+            }
+        },
         "feline chaos": {
             "classVariant": {
                 "PHB": {
@@ -25741,6 +25784,43 @@
                         ]
                     },
                     "Wizard": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    }
+                }
+            }
+        },
+        "hibernation": {
+            "classVariant": {
+                "PHB": {
+                    "Druid": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Ranger": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    }
+                }
+            }
+        },
+        "obfuscate object": {
+            "classVariant": {
+                "PHB": {
+                    "Bard": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Sorcerer": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Warlock": {
                         "definedInSources": [
                             "BMT"
                         ]

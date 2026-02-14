@@ -55,6 +55,11 @@
             "name": "Cat's Spring",
             "source": "BMT",
             "page": 50,
+			"otherSources": [
+                {
+                    "source": "CBT"
+                }
+            ],
             "level": 0,
             "school": "C",
             "time": [
@@ -100,9 +105,52 @@
             ]
         },
 		{
+            "name": "Douse Light",
+            "source": "BMT",
+            "page": 50,
+			"otherSources": [
+                {
+                    "source": "BoET",
+                    "page": 59
+                }
+            ],
+            "level": 0,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "With a simple gesture, you can put out a single small source of light within range. This spell extinguishes a torch, a candle, a lantern, or a single source from the {@spell Dancing Lights} cantrip, excluding its singular medium humanoid form."
+            ]
+        },
+		{
             "name": "Feline Chaos",
             "source": "BMT",
             "page": 50,
+			"otherSources": [
+                {
+                    "source": "CBT"
+                }
+            ],
             "level": 5,
             "school": "C",
             "time": [
@@ -149,6 +197,122 @@
             "savingThrow": [
                 "constitution",
                 "dexterity"
+            ]
+        },
+		{
+            "name": "Hibernation",
+            "source": "BMT",
+            "page": 50,
+			"otherSources": [
+                {
+                    "source": "BoET",
+                    "page": 64
+                }
+            ],
+            "level": 2,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "m": "a tuft of bear fur"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You hum a soothing melody and discard a bit of bear fur, which induces a soporific healing state in the next creature you touch. The target regains {@dice 2d6} plus your spellcasting modifier in hit points and is in a state of {@condition unconscious} rest for the duration of the spell. If the creature is unwilling, it must succeed on a Constitution saving throw or is {@condition charmed} and impacted by this spell.",
+                "Each creature affected by this spell falls {@condition unconscious} until the spell ends, the hibernating creature takes damage, or someone uses an action to shake or slap the hibernating creature awake. Undead and creatures immune to being {@condition charmed} aren't affected by this spell, however, those who enter a meditative restful state as their long rest, such as elves, can be affected by this spell."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "If cast using 3rd-level or higher spell slot, you may touch one willing creature per level to induce hibernation."
+                    ]
+                }
+            ],
+            "conditionInflict": [
+                "charmed",
+                "unconscious"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "miscTags": [
+                "HL"
+            ]
+        },
+		{
+            "name": "Obfuscate Object",
+            "source": "BMT",
+            "page": 50,
+			"otherSources": [
+                {
+                    "source": "BoET",
+                    "page": 68
+                }
+            ],
+            "level": 0,
+            "school": "I",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 10
+                }
+            },
+            "components": {
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "While you are in dim light, you cause an object in range to become unobtrusively obscured from the sight of other creatures. For the duration, you have advantage on Dexterity ({@skill Sleight of Hand}) checks to hide the object. The object can't be larger than a shortsword, and it must be on your person, held in your hand, or otherwise unattended."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Cantrip Upgrade",
+                    "entries": [
+                        "You can affect two objects when you reach 5th level, three objects at 11th level, and four objects at 17th level."
+                    ]
+                }
+            ],
+            "miscTags": [
+                "ADV",
+                "SCL"
             ]
         },
 		{
@@ -261,6 +425,12 @@
             "name": "Vengeful Blade",
             "source": "BMT",
             "page": 50,
+			"otherSources": [
+                {
+                    "source": "IllR",
+                    "page": 34
+                }
+            ],
             "level": 0,
             "school": "V",
             "time": [

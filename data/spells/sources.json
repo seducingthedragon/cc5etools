@@ -8900,6 +8900,45 @@
                 }
             ]
         },
+		"Douse Light": {
+            "classVariant": [
+                {
+                    "name": "Bard",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+				{
+                    "name": "Cleric",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+				{
+                    "name": "Druid",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+				{
+                    "name": "Sorcerer",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+                {
+                    "name": "Warlock",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+				{
+                    "name": "Artificer",
+                    "source": "TCE",
+                    "definedInSource": "BMT"
+                }
+            ]
+        },
 		"Feline Chaos": {
             "classVariant": [
                 {
@@ -8924,6 +8963,39 @@
                 },
                 {
                     "name": "Wizard",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                }
+            ]
+        },
+		"Hibernation": {
+            "classVariant": [
+                {
+                    "name": "Druid",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+                {
+                    "name": "Ranger",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                }
+            ]
+        },
+		"Obfuscate Object": {
+            "classVariant": [
+                {
+                    "name": "Bard",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+				{
+                    "name": "Sorcerer",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+                {
+                    "name": "Warlock",
                     "source": "PHB",
                     "definedInSource": "BMT"
                 }
