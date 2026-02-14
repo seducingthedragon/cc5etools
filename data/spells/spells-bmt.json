@@ -52,6 +52,106 @@
 			]
 		},
 		{
+            "name": "Cat's Spring",
+            "source": "BMT",
+            "page": 50,
+            "level": 0,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You jump up to 10 feet to an unoccupied space you can see and deliver a spectral claw attack that deals Slashing or Force damage (you choose when you cast the spell). Make a melee spell attack against a target. On a hit, the target takes {@damage 1d8} damage of the chosen type, and the next attack roll you make against it before the end of your next turn has advantage."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "The damage increases by {@dice 1d8} when you reach levels 5 ({@dice 2d8}), 11 (38), and 17 ({@dice 4d8})."
+                    ]
+                }
+            ],
+            "spellAttack": [
+                "M"
+            ],
+            "miscTags": [
+                "ADV",
+                "SCL",
+                "SGT"
+            ]
+        },
+		{
+            "name": "Feline Chaos",
+            "source": "BMT",
+            "page": 50,
+            "level": 5,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "components": {
+                "v": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "Each target must succeed on a Dexterity saving throw or be affected by this spell for the duration. An affected target takes {@damage 4d6} Slashing damage at the start of each of their turns, and they have Disadvantage on all ability checks and attack rolls. If they attempt to move, they must make a Constitution saving throw or gain the {@condition Prone} condition, taking another {@damage 2d6} Slashing damage from the startled cats. At the end of their turn an affected creature makes another Dexterity saving throw, ending the spell on itself on a success."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 6th level or higher, the damage at the start of an affected target's turns increases by {@dice 2d6} for each slot level above 5th."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "slashing"
+            ],
+            "savingThrow": [
+                "constitution",
+                "dexterity"
+            ]
+        },
+		{
 			"name": "Spirit of Death",
 			"source": "BMT",
 			"page": 50,
@@ -156,6 +256,56 @@
 			"savingThrow": [
 				"dexterity"
 			]
-		}
+		},
+		{
+            "name": "Vengeful Blade",
+            "source": "BMT",
+            "page": 50,
+            "level": 0,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "s": true,
+                "m": {
+                    "text": "a melee weapon worth at least 1 gp",
+                    "cost": 100
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You brandish the weapon used in the spell's casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack's normal effects and then radiates a dark aura of energy until the start of your next turn. If the target makes an attack or casts a spell before then, the target takes {@damage 1d8} necrotic damage and the spell ends."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Cantrip Upgrade",
+                    "entries": [
+                        "This spell's damage increases when you reach certain levels. At 5th level, the melee attack deals an extra {@damage 1d8} necrotic damage to the target on a hit, and the damage the target takes for making an attack or casting a spell increases to {@dice 2d8}. Both damage rolls increase by {@dice 1d8} at 11th level ({@dice 2d8} and {@dice 3d8}) and again at 17th level ({@dice 3d8} and {@dice 4d8})."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "necrotic"
+            ],
+            "miscTags": [
+                "AAD",
+                "SCL"
+            ]
+        }
 	]
 }
