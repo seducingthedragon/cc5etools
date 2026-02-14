@@ -25750,6 +25750,39 @@
                 }
             }
         },
+        "conjure cover": {
+            "classVariant": {
+                "PHB": {
+                    "Cleric": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Druid": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Sorcerer": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Wizard": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    }
+                },
+                "TCE": {
+                    "Artificer": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    }
+                }
+            }
+        },
         "dark path": {
             "classVariant": {
                 "PHB": {
@@ -25896,6 +25929,27 @@
                         ]
                     },
                     "Ranger": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    }
+                }
+            }
+        },
+        "jethero's instant reload": {
+            "classVariant": {
+                "PHB": {
+                    "Bard": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Ranger": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Wizard": {
                         "definedInSources": [
                             "BMT"
                         ]

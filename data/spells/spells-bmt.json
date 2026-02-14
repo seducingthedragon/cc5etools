@@ -89,7 +89,7 @@
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "Using a Higher-Level Spell Slot",
+                    "name": "Cantrip Upgrade",
                     "entries": [
                         "The damage increases by {@dice 1d8} when you reach levels 5 ({@dice 2d8}), 11 (38), and 17 ({@dice 4d8})."
                     ]
@@ -149,6 +149,64 @@
                 "When you cast this spell, all footprints and fingerprints within a 30-foot emanation originating from you become highlighted and glow faintly for the duration.", 
 				"When you cast the spell, choose any point in time up to 10 days ago. Only footprints and fingerprints left between that time and the present will be highlighted. Each creature that leaves footprints and fingerprints is assigned a unique color, but are not otherwise identified.", 
 				"Any creature that moves or touches objects within the emanation will also leave colorful footprints and fingerprints, which might reveal {@condition invisible} creatures in the area."
+            ]
+        },
+		{
+            "name": "Conjure Cover",
+            "source": "BMT",
+            "page": 50,
+			"otherSources": [
+                {
+                    "source": "VSS:PP"
+                }
+            ],
+            "level": 1,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 10
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a duck figurine"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 10
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You conjure a low cobblestone wall along the ground at a point you can see within range. The wall is 18 inches thick and is composed of three 5-foot-long, 3-foot-high segments. Each segment must be contiguous with at least one other segment.",
+                "A Medium creature that hunkers behind the wall has half-cover to three-quarters. A Small creature that hunkers behind it has three-quarters cover to full cover. The wall can be leapt over following standard jump rules, as well as at the discretion of your DM.",
+                "Each segment has AC 10 and 30 hit points. Reducing a segment of the wall to 0 hit points causes it to crumble, destroying it. The wall disappears when all the segments are destroyed or the spell ends."
+            ],
+			"entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When casting this spell using a 2nd level spell slot or higher, you can choose between either adding one additional wall segment per spell slot level above 1, or increasing each segments' hit points by 5 per spell slot level above 1."
+                    ]
+                }
+            ],
+            "miscTags": [
+                "SCL",
+				"SGT"
             ]
         },
 		{
@@ -452,6 +510,50 @@
             "miscTags": [
                 "HL"
             ]
+        },
+		{
+            "name": "Jethro's Instant Reload",
+            "source": "BMT",
+            "page": 50,
+			"otherSources": [
+                {
+                    "source": "VSS:PP"
+                }
+            ],
+            "school": "C",
+			"level": 2,
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a spent bullet casing"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You touch one ranged weapon with the {@itemProperty LD|PHB|Loading} or {@itemProperty RLD|DMG|Reload} property. It becomes enchanted and reload itself automatically, ignoring the {@itemProperty LD|PHB|Loading} or {@itemProperty RLD|DMG|Reload} property for the duration. When the weapon's ammunition is depleted, ammunition you are carrying teleports into the weapon."
+            ],
+			"miscTags": [
+				"OBJ"
+			]
         },
 		{
             "name": "Obfuscate Object",

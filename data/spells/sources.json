@@ -8929,6 +8929,35 @@
                 }
             ]
         },
+		"Conjure Cover": {
+            "classVariant": [
+                {
+                    "name": "Cleric",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+                {
+                    "name": "Druid",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+				{
+                    "name": "Artificer",
+                    "source": "TCE",
+                    "definedInSource": "BMT"
+                }
+            ]
+        },
 		"Dark Path": {
             "classVariant": [
                 {
@@ -9063,6 +9092,25 @@
                 },
                 {
                     "name": "Ranger",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                }
+            ]
+        },
+		"Jethero's Instant Reload": {
+            "classVariant": [
+                {
+                    "name": "Bard",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+                {
+                    "name": "Ranger",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+                {
+                    "name": "Wizard",
                     "source": "PHB",
                     "definedInSource": "BMT"
                 }
