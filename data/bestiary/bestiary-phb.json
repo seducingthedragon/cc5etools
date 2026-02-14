@@ -1,356 +1,324 @@
 {
 	"monster": [
 		{
-			"name": "Animated Object",
+			"name": "Animated Object (Huge)",
 			"source": "PHB",
 			"page": 213,
-			"summonedBySpell": "Animate Objects|PHB",
-			"summonedBySpellLevel": 2,
-            "size": [
-                "T",
-                "S",
-                "M",
-                "L",
-                "H"
-            ],
-            "type": "construct",
-            "alignment": [
-                "U"
-            ],
-            "ac": [
-                15
-            ],
-            "hp": {
-                "special": "10 (Medium or smaller), 20 (Large), 40 (Huge)"
-            },
-            "speed": {
-                "walk": 30
-            },
-            "str": 16,
-            "dex": 10,
-            "con": 10,
-            "int": 3,
-            "wis": 3,
-            "cha": 1,
-            "senses": [
-                "Blindsight 30 ft."
-            ],
-            "resist": [
-                {
-                    "resist": [
-                        "bludgeoning",
-                        "piercing",
-                        "slashing"
-                    ],
-                    "note": "from nonmagical attacks",
-                    "cond": true
-                }
-            ],
-            "immune": [
-                "poison"
-            ],
-            "conditionImmune": [
-                "exhaustion",
-                "petrified",
-                "poisoned"
-            ],
-            "passive": 6,
-            "languages": [
-                "understands the languages you know"
-            ],
-            "pbNote": "equals your Proficiency Bonus",
-            "trait": [
-				{
-					"name": "Spell Level Dependent.",
-					"entries": [
-						"Casting {@spell Animate Objects} as a level 2 spell, allows you to target a Medium or smaller object. In order to target a Large object, you must cast the spell using, at least, a level 3 spell slot. Additionally, in order to target a Huge object, you must cast the spell using, at least, a level 4 spell slot."
-					]
-				}
-			],
-			"action": [
-                {
-                    "name": "Slam",
-                    "entries": [
-                        "{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}Force damage equal to {@damage 2d4 + summonSpellLevel} (Small or Smaller), {@damage 2d6 + summonSpellLevel} (Medium), {@damage 2d10 + summonSpellLevel} (Large), or {@damage 2d12 + summonSpellLevel} (Huge)."
-                    ]
-                }
-            ],
-            "senseTags": [
-                "B"
-            ],
-            "miscTags": [
-                "MA"
-            ],
-            "hasToken": true,
-            "hasFluffImages": true,
-            "_versions": [
-                {
-                    "name": "Animated Object (Huge)",
-                    "source": "PHB",
-                    "hp": {
-                        "special": "40"
-                    },
-                    "action": [
-                        {
-                            "name": "Slam",
-                            "entries": [
-                                "{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}Force damage equal to {@damage 2d12 + summonSpellLevel}."
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "name": "Animated Object (Large)",
-                    "source": "PHB",
-                    "hp": {
-                        "special": "20"
-                    },
-                    "action": [
-                        {
-                            "name": "Slam",
-                            "entries": [
-                                "{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}Force damage equal to {@damage 2d10 + summonSpellLevel}."
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "name": "Animated Object (Medium)",
-                    "source": "PHB",
-                    "hp": {
-                        "special": "10"
-                    },
-                    "action": [
-                        {
-                            "name": "Slam",
-                            "entries": [
-                                "{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}Force damage equal to {@damage 2d6 + summonSpellLevel}."
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "name": "Animated Object (Small or Smaller)",
-                    "source": "PHB",
-                    "hp": {
-                        "special": "10"
-                    },
-                    "action": [
-                        {
-                            "name": "Slam",
-                            "entries": [
-                                "{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}Force damage equal to {@damage 2d4 + summonSpellLevel}."
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-		{
-			"name": "Otherworldly Steed",
-			"source": "PHB",
-			"page": 213,
-			"summonedBySpell": "Find Steed|PHB",
-			"summonedBySpellLevel": 2,
 			"size": [
-				"L"
+				"H"
 			],
-			"type": {
-				"type": {
-					"choose": [
-						"celestial",
-						"fey",
-						"fiend"
-					]
-				}
-			},
+			"type": "construct",
 			"alignment": [
-				"N"
+				"U"
 			],
 			"ac": [
 				{
-					"special": "10 + 1 per spell level"
+					"ac": 10,
+					"from": [
+						"natural armor"
+					]
 				}
 			],
 			"hp": {
-				"special": "5 + 10 per spell level (the steed has a number of Hit Dice [d10s] equal to the spell's level)"
+				"special": "80"
 			},
 			"speed": {
-				"walk": 60,
-				"fly": {
-					"number": 60,
-					"condition": "(requires level 4+ spell)"
-				}
+				"walk": 30
 			},
 			"str": 18,
-			"dex": 12,
-			"con": 14,
-			"int": 6,
-			"wis": 12,
-			"cha": 8,
-			"passive": 11,
-			"languages": [
-				"telepathy 1 mile (works only with you)"
+			"dex": 6,
+			"con": 10,
+			"int": 3,
+			"wis": 3,
+			"cha": 1,
+			"senses": [
+				"blindsight 30 ft. (blind beyond this radius)"
 			],
-			"pbNote": "equals your Proficiency Bonus",
+			"passive": 6,
 			"trait": [
 				{
-					"name": "Life Bond",
+					"name": "Animated",
 					"entries": [
-						"When you regain Hit Points from a level 1+ spell, the steed regains the same number of Hit Points if you're within 5 feet of it."
+						"If the object lacks legs or other appendages it can use for locomotion, it instead has a flying speed of 30 feet and can hover. If the object is securely attached to a surface or larger object, such as a chain bolted to a wall, its speed is 0.",
+						"When the animated object drops to 0 hit points, it reverts to its original object form, and any remaining damage carries over to its original object form.",
+						"The DM might rule that a specific objects slam attack inflicts slashing or piercing damage based on its form."
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "Otherworldly Slam",
+					"name": "Slam",
 					"entries": [
-						"{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}{@damage 1d8 + summonSpellLevel} of Radiant (Celestial), Psychic (Fey), or Necrotic (Fiend) damage."
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d12 + 4}) bludgeoning damage."
 					]
 				}
 			],
-			"bonus": [
-				{
-					"name": "Fell Glare (Fiend Only; Recharges after a Long Rest)",
-					"entries": [
-						"{@actSave wis} DC equals your spell save DC, one creature within 60 feet the steed can see. {@actSaveFail} The target has the {@condition Frightened} condition until the end of your next turn."
-					]
-				},
-				{
-					"name": "Fey Step (Fey Only; Recharges after a Long Rest)",
-					"entries": [
-						"The steed teleports, along with its rider, to an unoccupied space of your choice up to 60 feet away from itself."
-					]
-				},
-				{
-					"name": "Healing Touch (Celestial Only; Recharges after a Long Rest)",
-					"entries": [
-						"One creature within 5 feet of the steed regains a number of Hit Points equal to {@dice 2d8 + summonSpellLevel}."
-					]
-				}
+			"senseTags": [
+				"B"
 			],
-			"languageTags": [
-				"TP"
+			"damageTags": [
+				"B"
 			],
 			"miscTags": [
-				"MA"
+				"MW"
 			],
-			"conditionInflict": [
-				"frightened"
+			"hasToken": true
+		},
+		{
+			"name": "Animated Object (Large)",
+			"source": "PHB",
+			"page": 213,
+			"size": [
+				"L"
 			],
-			"savingThrowForced": [
-				"wisdom"
+			"type": "construct",
+			"alignment": [
+				"U"
 			],
-			"hasToken": true,
-			"hasFluffImages": true,
-			"_versions": [
+			"ac": [
 				{
-					"name": "Otherworldly Steed (Celestial)",
-					"source": "PHB",
-					"_mod": {
-						"bonus": [
-							{
-								"mode": "removeArr",
-								"names": [
-									"Fell Glare (Fiend Only; Recharges after a Long Rest)",
-									"Fey Step (Fey Only; Recharges after a Long Rest)"
-								]
-							},
-							{
-								"mode": "renameArr",
-								"renames": {
-									"rename": "Healing Touch (Celestial Only; Recharges after a Long Rest)",
-									"with": "Healing Touch (Recharges after a Long Rest)"
-								}
-							}
-						]
-					},
-					"type": "celestial",
-					"action": [
-						{
-							"name": "Otherworldly Slam",
-							"entries": [
-								"{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}{@damage 1d8 + summonSpellLevel} Radiant damage."
-							]
-						}
-					],
-					"damageTags": [
-						"R"
-					],
-					"conditionInflict": null,
-					"savingThrowForced": null
-				},
-				{
-					"name": "Otherworldly Steed (Fey)",
-					"source": "PHB",
-					"_mod": {
-						"bonus": [
-							{
-								"mode": "removeArr",
-								"names": [
-									"Fell Glare (Fiend Only; Recharges after a Long Rest)",
-									"Healing Touch (Celestial Only; Recharges after a Long Rest)"
-								]
-							},
-							{
-								"mode": "renameArr",
-								"renames": {
-									"rename": "Fey Step (Fey Only; Recharges after a Long Rest)",
-									"with": "Fey Step (Recharges after a Long Rest)"
-								}
-							}
-						]
-					},
-					"type": "fey",
-					"action": [
-						{
-							"name": "Otherworldly Slam",
-							"entries": [
-								"{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}{@damage 1d8 + summonSpellLevel} Psychic damage."
-							]
-						}
-					],
-					"damageTags": [
-						"Y"
-					],
-					"conditionInflict": null,
-					"savingThrowForced": null
-				},
-				{
-					"name": "Otherworldly Steed (Fiend)",
-					"source": "PHB",
-					"_mod": {
-						"bonus": [
-							{
-								"mode": "removeArr",
-								"names": [
-									"Fey Step (Fey Only; Recharges after a Long Rest)",
-									"Healing Touch (Celestial Only; Recharges after a Long Rest)"
-								]
-							},
-							{
-								"mode": "renameArr",
-								"renames": {
-									"rename": "Fell Glare (Fiend Only; Recharges after a Long Rest)",
-									"with": "Fell Glare (Recharges after a Long Rest)"
-								}
-							}
-						]
-					},
-					"type": "fiend",
-					"action": [
-						{
-							"name": "Otherworldly Slam",
-							"entries": [
-								"{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}{@damage 1d8 + summonSpellLevel} Necrotic damage."
-							]
-						}
-					],
-					"damageTags": [
-						"N"
+					"ac": 10,
+					"from": [
+						"natural armor"
 					]
 				}
-			]
+			],
+			"hp": {
+				"special": "50"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 10,
+			"int": 3,
+			"wis": 3,
+			"cha": 1,
+			"senses": [
+				"blindsight 30 ft. (blind beyond this radius)"
+			],
+			"passive": 6,
+			"trait": [
+				{
+					"name": "Animated",
+					"entries": [
+						"If the object lacks legs or other appendages it can use for locomotion, it instead has a flying speed of 30 feet and can hover. If the object is securely attached to a surface or larger object, such as a chain bolted to a wall, its speed is 0.",
+						"When the animated object drops to 0 hit points, it reverts to its original object form, and any remaining damage carries over to its original object form.",
+						"The DM might rule that a specific objects slam attack inflicts slashing or piercing damage based on its form."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d10 + 2}) bludgeoning damage."
+					]
+				}
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Animated Object (Medium)",
+			"source": "PHB",
+			"page": 213,
+			"size": [
+				"M"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "40"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 12,
+			"con": 10,
+			"int": 3,
+			"wis": 3,
+			"cha": 1,
+			"senses": [
+				"blindsight 30 ft. (blind beyond this radius)"
+			],
+			"passive": 6,
+			"trait": [
+				{
+					"name": "Animated",
+					"entries": [
+						"If the object lacks legs or other appendages it can use for locomotion, it instead has a flying speed of 30 feet and can hover. If the object is securely attached to a surface or larger object, such as a chain bolted to a wall, its speed is 0.",
+						"When the animated object drops to 0 hit points, it reverts to its original object form, and any remaining damage carries over to its original object form.",
+						"The DM might rule that a specific objects slam attack inflicts slashing or piercing damage based on its form."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d6 + 1}) bludgeoning damage."
+					]
+				}
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Animated Object (Small)",
+			"source": "PHB",
+			"page": 213,
+			"size": [
+				"S"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "25"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 6,
+			"dex": 14,
+			"con": 10,
+			"int": 3,
+			"wis": 3,
+			"cha": 1,
+			"senses": [
+				"blindsight 30 ft. (blind beyond this radius)"
+			],
+			"passive": 6,
+			"trait": [
+				{
+					"name": "Animated",
+					"entries": [
+						"If the object lacks legs or other appendages it can use for locomotion, it instead has a flying speed of 30 feet and can hover. If the object is securely attached to a surface or larger object, such as a chain bolted to a wall, its speed is 0.",
+						"When the animated object drops to 0 hit points, it reverts to its original object form, and any remaining damage carries over to its original object form.",
+						"The DM might rule that a specific objects slam attack inflicts slashing or piercing damage based on its form."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) bludgeoning damage."
+					]
+				}
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Animated Object (Tiny)",
+			"source": "PHB",
+			"page": 213,
+			"size": [
+				"T"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "20"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 4,
+			"dex": 18,
+			"con": 10,
+			"int": 3,
+			"wis": 3,
+			"cha": 1,
+			"senses": [
+				"blindsight 30 ft. (blind beyond this radius)"
+			],
+			"passive": 6,
+			"trait": [
+				{
+					"name": "Animated",
+					"entries": [
+						"If the object lacks legs or other appendages it can use for locomotion, it instead has a flying speed of 30 feet and can hover. If the object is securely attached to a surface or larger object, such as a chain bolted to a wall, its speed is 0.",
+						"When the animated object drops to 0 hit points, it reverts to its original object form, and any remaining damage carries over to its original object form.",
+						"The DM might rule that a specific objects slam attack inflicts slashing or piercing damage based on its form."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d4 + 4}) bludgeoning damage."
+					]
+				}
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true
 		}
 	]
 }
