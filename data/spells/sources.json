@@ -8900,6 +8900,35 @@
                 }
             ]
         },
+		"Clue": {
+            "classVariant": [
+                {
+                    "name": "Cleric",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+                {
+                    "name": "Druid",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+                {
+                    "name": "Ranger",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+				{
+                    "name": "Artificer",
+                    "source": "TCE",
+                    "definedInSource": "BMT"
+                }
+            ]
+        },
 		"Dark Path": {
             "classVariant": [
                 {
@@ -8909,6 +8938,25 @@
                 },
                 {
                     "name": "Warlock",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                }
+            ]
+        },
+		"Delay": {
+            "classVariant": [
+                {
+                    "name": "Bard",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+                {
+                    "name": "Sorcerer",
                     "source": "PHB",
                     "definedInSource": "BMT"
                 },
@@ -8977,6 +9025,25 @@
                 },
                 {
                     "name": "Warlock",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                }
+            ]
+        },
+		"Hangover": {
+            "classVariant": [
+                {
+                    "name": "Bard",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+                {
+                    "name": "Sorcerer",
                     "source": "PHB",
                     "definedInSource": "BMT"
                 },

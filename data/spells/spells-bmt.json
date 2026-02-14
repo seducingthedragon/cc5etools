@@ -105,6 +105,53 @@
             ]
         },
 		{
+            "name": "Clue",
+            "source": "BMT",
+            "page": 50,
+			"otherSources": [
+                {
+                    "source": "VSS:PP"
+                }
+            ],
+            "level": 1,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+				"type": "emanation",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a magnifying glass and pipe"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 10
+                    }
+                }
+            ],
+            "meta": {
+                "ritual": true
+            },
+            "entries": [
+                "When you cast this spell, all footprints and fingerprints within a 30-foot emanation originating from you become highlighted and glow faintly for the duration.", 
+				"When you cast the spell, choose any point in time up to 10 days ago. Only footprints and fingerprints left between that time and the present will be highlighted. Each creature that leaves footprints and fingerprints is assigned a unique color, but are not otherwise identified.", 
+				"Any creature that moves or touches objects within the emanation will also leave colorful footprints and fingerprints, which might reveal {@condition invisible} creatures in the area."
+            ]
+        },
+		{
             "name": "Dark Path",
             "source": "BMT",
             "page": 50,
@@ -149,6 +196,50 @@
 			"areaTags": [
 				"L"
 			]
+        },
+		{
+            "name": "Delay",
+            "source": "BMT",
+            "page": 50,
+			"otherSources": [
+                {
+                    "source": "VSS:PP"
+                }
+            ],
+            "level": 1,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "an octagonal sign"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You briefly slow time for a creature of your choice that you can see within range. The target must succeed on a Wisdom saving throw or be moved to last place in the initiative order from the start of the next round onwards."
+            ],
+            "savingThrow": [
+                "wisdom"
+            ],
+            "miscTags": [
+                "SGT"
+            ]
         },
 		{
             "name": "Douse Light",
@@ -243,6 +334,62 @@
             "savingThrow": [
                 "constitution",
                 "dexterity"
+            ]
+        },
+		{
+            "name": "Hangover",
+            "source": "BMT",
+            "page": 50,
+			"otherSources": [
+                {
+                    "source": "VSS:PP"
+                }
+            ],
+            "school": "E",
+			"level": 2,
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a vial of strong liquor"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You target one creature within range to become enveloped by a drunken aura that quickly washes away, leaving an intense hangover. The target makes a Constitution saving throw. On a failed save, the creature takes {@damage 3d8} Psychic damage and has the {@condition Poisoned} condition until the end of your next turn. On a successful save, the target takes half as much damage only. The target has Disadvantage on Constitution saving throws it makes to maintain {@status Concentration} as a result of this damage."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "The damage increases by {@dice 1d8} for each spell slot level above 2."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "psychic"
+            ],
+            "conditionInflict": [
+                "poisoned"
+            ],
+            "savingThrow": [
+                "constitution"
             ]
         },
 		{
