@@ -9288,6 +9288,35 @@
                 }
             ]
         },
+		"Ride the Lightning": {
+            "classVariant": [
+                {
+                    "name": "Bard",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+				{
+                    "name": "Druid",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+				{
+                    "name": "Warlock",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                }
+            ]
+        },
 		"Shadow Puppets": {
             "classVariant": [
                 {
@@ -9326,6 +9355,30 @@
 				}
 			]
 		},
+		"Spirit Swarm": {
+            "classVariant": [
+                {
+                    "name": "Cleric",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+				{
+                    "name": "Druid",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+				{
+                    "name": "Paladin",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                }
+            ]
+        },
 		"Spray of Cards": {
 			"classVariant": [
 				{
@@ -9350,6 +9403,58 @@
 				}
 			]
 		},
+		"Summon Plant": {
+            "classVariant": [
+                {
+                    "name": "Druid",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+                {
+                    "name": "Ranger",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                }
+            ]
+        },
+        "Summon Sea Spirit": {
+            "classVariant": [
+                {
+                    "name": "Druid",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+				{
+                    "name": "Ranger",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+				{
+                    "name": "Sorcerer",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+                {
+                    "name": "Warlock",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                }
+            ]
+        },
+        "Thorn Armor": {
+            "classVariant": [
+                {
+                    "name": "Druid",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+                {
+                    "name": "Ranger",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                }
+            ]
+        },
 		"Vengeful Blade": {
             "classVariant": [
                 {

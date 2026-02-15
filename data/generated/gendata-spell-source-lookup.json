@@ -26147,6 +26147,37 @@
                 }
             }
         },
+        "ride the lightning": {
+            "classVariant": {
+                "PHB": {
+                    "Bard": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Druid": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Paladin": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Ranger": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Wizard": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    }
+                }
+            }
+        },
         "shadow puppets": {
             "classVariant": {
                 "PHB": {
@@ -26207,6 +26238,32 @@
                 }
             }
         },
+        "spirit swarm": {
+            "classVariant": {
+                "PHB": {
+                    "Cleric": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Druid": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Paladin": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Wizard": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    }
+                }
+            }
+        },
         "spray of cards": {
             "classVariant": {
                 "PHB": {
@@ -26247,6 +26304,64 @@
                                 "name": "Arcane Trickster"
                             }
                         }
+                    }
+                }
+            }
+        },
+        "summon plant": {
+            "classVariant": {
+                "PHB": {
+                    "Druid": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Ranger": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    }
+                }
+            }
+        },
+        "summon sea serpent": {
+            "classVariant": {
+                "PHB": {
+                    "Druid": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Ranger": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Sorcerer": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Warlock": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    }
+                }
+            }
+        },
+        "thorn armor": {
+            "classVariant": {
+                "PHB": {
+                    "Druid": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Ranger": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
                     }
                 }
             }
