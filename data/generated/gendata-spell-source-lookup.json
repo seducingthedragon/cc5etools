@@ -25724,6 +25724,27 @@
                 }
             }
         },
+        "call of the wild": {
+            "classVariant": {
+                "PHB": {
+                    "Bard": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Druid": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Ranger": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    }
+                }
+            }
+        },
         "cat's spring": {
             "classVariant": {
                 "PHB": {
@@ -26166,6 +26187,32 @@
                         ]
                     },
                     "Ranger": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Wizard": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    }
+                }
+            }
+        },
+        "rumor": {
+            "classVariant": {
+                "PHB": {
+                    "Bard": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Sorcerer": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Warlock": {
                         "definedInSources": [
                             "BMT"
                         ]

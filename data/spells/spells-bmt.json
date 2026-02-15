@@ -99,6 +99,58 @@
                 "SCT"
             ]
         },
+        {
+        	"name": "Call of the Wild",
+        	"source": "BMT",
+        	"page": 50,
+        	"otherSources": [
+        		{
+                    "source": "TCM'14",
+                    "page": 125
+                }
+        	],
+        	"level": 2,
+        	"school": "E",
+        	"time": [
+        		{
+        			"number": 1,
+        			"unit": "action"
+        		}
+        	],
+        	"range": {
+        		"type": "emanation",
+        		"distance": {
+        			"type": "feet",
+        			"amount": 100
+        		}
+        	},
+        	"components": {
+        		"v": true,
+        		"s": true,
+        		"m": "a bit of animal fur or hide"
+        	},
+        	"duration": [
+        		{
+        			"type": "timed",
+        			"duration": {
+        				"type": "minute",
+        				"amount": 1
+        			}
+        		}
+        	],
+        	"entries": [
+        		"You unleash a primal howl that calls lesser creatures to your command. Each Beast in a 100-foot sphere centered on you when you cast the spell is now {@condition Charmed} by you. Each beast must make a Wisdom saving throw to determine the duration and additional effects of the {@condition Charmed} condition. On a failed save, the {@condition Charmed} condition lasts for the duration of the spell and the target understand your commands, following them to the best of its ability until you issue them a new command, which takes a bonus action on your subsequent turns. On a successful save, the {@condition charmed} condition lasts until the start of your next turn, but you have no additional ability to command it. The howl is audible within 300 feet."
+        	],
+        	"conditionInflict": [
+        		"charmed"
+        	],
+        	"savingThrow": [
+        		"wisdom"
+        	],
+            "miscTags": [
+                "UBA"
+            ]
+        },
 		{
             "name": "Cat's Spring",
             "source": "BMT",
@@ -1054,6 +1106,60 @@
                 "dexterity"
             ],
             "hasFluffImages": true
+        },
+        {
+        	"name": "Rumor",
+        	"source": "BMT",
+        	"page": 50,
+        	"otherSources": [
+        		{
+        			"source": "VSS:PP"
+        		}
+        	],
+        	"level": 1,
+        	"school": "E",
+        	"time": [
+        		{
+        			"number": 1,
+        			"unit": "action"
+        		}
+        	],
+        	"range": {
+        		"type": "emanation",
+        		"distance": {
+        			"type": "feet",
+        			"amount": 60
+        		}
+        	},
+        	"components": {
+        		"v": true,
+        		"s": true
+        	},
+        	"duration": [
+        		{
+        			"type": "timed",
+        			"duration": {
+        				"type": "minute",
+        				"amount": 1
+        			}
+        		}
+        	],
+        	"entries": [
+        		"You magically spread a rumor of 10 words or less in a 60-foot Emanation originating from you. Any creature within the Emanation that can hear and understand three or more other nearby creatures believes that they hear the rumor being repeated by someone nearby. Different creatures hear the rumor from different people, so a concrete origin is impossible to discern. Generally, creatures won't become Hostile upon hearing even the most vicious rumors, but hearing a rumor can affect their attitude positively or negatively.",
+                "When the spell ends, there is a chance the rumor still spreads, without the aid of magical influence."
+        	],
+            "entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a 4th level spell slot, the emanation range increases to 80 feet. When you cast this spell using a 7th level spell slot, the emanation range increases to 100 feet."
+					]
+				}
+			],
+            "miscTags": [
+                "SCL"
+            ]
         },
 		{
             "name": "Shadow Puppets",

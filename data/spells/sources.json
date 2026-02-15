@@ -8905,6 +8905,25 @@
                 }
             ]
         },
+		"Call of the Wild": {
+            "classVariant": [
+                {
+                    "name": "Bard",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+                {
+                    "name": "Druid",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                },
+                {
+                    "name": "Ranger",
+                    "source": "PHB",
+                    "definedInSource": "BMT"
+                }
+            ]
+        },
 		"Cat's Spring": {
             "classVariant": [
                 {
@@ -9317,6 +9336,30 @@
                 }
             ]
         },
+		"Rumor": {
+			"classVariant": [
+				{
+					"name": "Bard",
+					"source": "PHB",
+					"definedInSource": "BMT"
+				},
+				{
+					"name": "Sorcerer",
+					"source": "PHB",
+					"definedInSource": "BMT"
+				},
+				{
+					"name": "Warlock",
+					"source": "PHB",
+					"definedInSource": "BMT"
+				},
+				{
+					"name": "Wizard",
+					"source": "PHB",
+					"definedInSource": "BMT"
+				}
+			]
+		},
 		"Shadow Puppets": {
             "classVariant": [
                 {
