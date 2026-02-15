@@ -51,6 +51,54 @@
 				"SGT"
 			]
 		},
+        {
+            "name": "Assisted Aim",
+            "source": "BMT",
+            "page": 50,
+            "level": 1,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You invigorate up to three creatures, including yourself, within range with improved accuracy. Each target gains a +1 bonus to attack rolls it makes with Ranged weapons. Additionally, the normal and long range of Ranged weapons wielded by a target are doubled for the spell's duration."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "You can target one additional creature for each spell slot level above 1."
+                    ]
+                }
+            ],
+            "miscTags": [
+                "SCT"
+            ]
+        },
 		{
             "name": "Cat's Spring",
             "source": "BMT",
@@ -255,6 +303,59 @@
 				"L"
 			]
         },
+        {
+            "name": "Dazing Blast",
+            "source": "BMT",
+            "page": 50,
+            "level": 2,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "A wave of force leaves your palms, targeting a creature within range. The target makes a Constitution saving throw. On a failed save, the creature takes {@damage 2d6} Force damage and has the {@condition Stunned} condition until the end of its next turn. On a successful save, the creature takes half damage only."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "One additional creature can be targeted for each spell slot above 2."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "force"
+            ],
+            "conditionInflict": [
+                "stunned"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "miscTags": [
+                "SCT"
+            ]
+        },
 		{
             "name": "Delay",
             "source": "BMT",
@@ -335,6 +436,65 @@
             ],
             "entries": [
                 "With a simple gesture, you can put out a single small source of light within range. This spell extinguishes a torch, a candle, a lantern, or a single source from the {@spell Dancing Lights} cantrip, excluding its singular medium humanoid form."
+            ]
+        },
+        {
+            "name": "Enhanced Plants",
+            "source": "BMT",
+            "page": 50,
+            "level": 3,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 10
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You conjure animated plants that appear as a {@b Large} mass of vines, stems, shoots, roots, and leaves in an unoccupied space you can see within range. The vegetation lasts for the duration.",
+                "While you're within 5 feet of the plants or sharing a space with them, you are considered to be in a Lightly Obscured area. Other creatures cannot enter the same space as the plants. When you move on your turn, you can also move the plants up to 30 feet to an unoccupied space you can see.",
+                "Whenever the plants move within 5 feet of a creature you can see, and whenever a creature you can see enters a space within 5 feet of the plants or ends its turn there, you can force that creature to make a Dexterity saving throw. On a failed save, the creature takes {@damage 3d6} Slashing damage. A creature makes this save only once per turn."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "The damage increases by {@dice 1d6} for each spell slot level above 3."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "slashing"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "miscTags": [
+                "OBS",
+                "SGT",
+                "SMN"
             ]
         },
 		{
