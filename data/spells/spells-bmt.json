@@ -671,6 +671,111 @@
                 "HL"
             ]
         },
+        {
+            "name": "Holy Word",
+            "source": "BMT",
+            "page": 50,
+            "level": 0,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You whisper a divine word under your breath, making a ranged spell attack against a target within range. On a hit, the target takes {@damage 1d8} Radiant damage. If the target is Fey, Fiend, or Undead, its speed is reduced by 10 feet and it can't take reactions until the end of its next turn."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Cantrip Upgrade",
+                    "entries": [
+                        "The damage increases by {@dice 1d8} when you reach levels 5 ({@dice 2d8}), 11 ({@dice 3d8}), and 17 ({@dice 4d8})."
+                    ]
+                }
+            ],
+            "scalingLevelDice": {
+                "label": "Radiant damage",
+                "scaling": {
+                    "1": "1d8",
+                    "5": "2d8",
+                    "11": "3d8",
+                    "17": "4d8"
+                }
+            },
+            "damageInflict": [
+                "radiant"
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "hasFluffImages": true
+        },
+        {
+            "name": "Incite Riot",
+            "source": "BMT",
+            "page": 50,
+            "level": 3,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "emanation",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a red handkerchief"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "When you cast this spell, you call the masses to your attention and choose any number of creatures within range that can see you. Each chosen creature makes a Wisdom saving throw. Targets have Advantage if you or your allies are fighting it. On a failed save, the target has the {@condition Charmed} condition until the spell ends or until you or your allies damage it. The {@condition Charmed} creature is Friendly to you and your allies. While {@condition Charmed}, it must use its action to make melee attacks against the nearest creature (other than you or your allies) or use its turn to move toward the nearest target.",
+                "At the end of each of its turns, the target repeats the save, ending the spell on itself on a success."
+            ],
+            "conditionInflict": [
+                "charmed"
+            ],
+            "savingThrow": [
+                "wisdom"
+            ]
+        },
 		{
             "name": "Jethro's Instant Reload",
             "source": "BMT",
@@ -768,6 +873,138 @@
             "miscTags": [
                 "ADV",
                 "SCL"
+            ]
+        },
+        {
+            "name": "Phoenix Flames",
+            "source": "BMT",
+            "page": 50,
+            "level": 9,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "emanation",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You immolate yourself, consuming your body in a searing cloud of holy flames. You are reduced to 0 Hit Points and die, and burning radiance erupts from you in a 30-foot Emanation. Each creature in the area must make a Constitution saving throw. On a failed save, the creature takes {@damage 30d6} Radiant damage and gains 1 {@condition Exhaustion} level. On a successful save, a creature takes half as much damage only. If this damage reduces a creature to 0 Hit Points, it and everything nonmagical it is wearing and carrying are incinerated. The target can be revived only by a {@spell True Resurrection} or a {@spell Wish} spell.",
+                "After 10 minutes, you rise from the ashes where you originally cast the spell. You return to life as if you were targeted by a {@spell True Resurrection} spell."
+            ],
+            "damageInflict": [
+                "radiant"
+            ],
+            "conditionInflict": [
+                "exhaustion"
+            ],
+            "savingThrow": [
+                "constitution"
+            ]
+        },
+        {
+            "name": "Primordial Power",
+            "source": "BMT",
+            "page": 50,
+            "level": 4,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a handful of clay"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "When you cast this spell, grant a creature in range a portion of the power of the elementals. For the duration, the creature can speak and understand Primordial and gains additional benefits based on the element you choose when you cast the spell:",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Air",
+                            "entries": [
+                                "The target has Resistance to Lightning and Thunder damage. In addition, it has a Fly Speed of 30 feet."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Coldfire",
+                            "entries": [
+                                "The target has Resistance to Cold damage. In addition, it can use a Bonus Action to expend a Hit Point Dice, regaining a number of Hit Points equal to the numbered rolled plus its Constitution modifier. When the target takes Fire damage, it can't use this Bonus Action on its next turn."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Earth",
+                            "entries": [
+                                "The target has Advantage on saving throws against being moved or knocked {@condition Prone}. In addition, it has Tremorsense with a range of 30 feet."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Fire",
+                            "entries": [
+                                "The target has Resistance to Fire damage. In addition, when the target takes damage from a creature that is within 5 feet of it, it can take a Reaction to make one melee attack against that creature, using a weapon or an {@action Unarmed Attack|PHB|Unarmed Strike Attack}."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Water",
+                            "entries": [
+                                "The target has resistance to Acid damage. In addition, it can breathe underwater and has a swim speed of 60 feet."
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "miscTags": [
+                "ADV",
+                "HL",
+                "UBA"
+            ],
+            "damageResist": [
+                "acid",
+                "cold",
+                "fire",
+                "lightning",
+                "thunder"
             ]
         },
 		{
