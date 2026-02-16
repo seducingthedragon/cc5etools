@@ -5390,7 +5390,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a drop of water if creating water or a few grains of sand if destroying it"
+				"m": "a mix of water and sand"
 			},
 			"duration": [
 				{
@@ -5536,7 +5536,7 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "one clay pot filled with grave dirt, one clay pot filled with brackish water, and one 150 gp black onyx stone for each corpse",
+					"text": "one 150 gp black onyx stone for each corpse",
 					"cost": 15000
 				}
 			},
@@ -5591,7 +5591,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a tiny piece of matter of the same type of the item you plan to create"
+				"m": "a paintbrush"
 			},
 			"duration": [
 				{
@@ -5599,7 +5599,7 @@
 				}
 			],
 			"entries": [
-				"You pull wisps of shadow material from the Shadowfell to create a nonliving object of vegetable matter within range: soft goods, rope, wood, or something similar. You can also use this spell to create mineral objects such as stone, crystal, or metal. The object created must be no larger than a 5-foot cube, and the object must be of a form and material that you have seen before.",
+				"You pull wisps of shadow material to create a nonliving object of vegetable matter within range: soft goods, rope, wood, or something similar. You can also use this spell to create mineral objects such as stone, crystal, or metal. The object created must be no larger than a 5-foot cube, and the object must be of a form and material that you have seen before.",
 				"The duration depends on the object's material. If the object is composed of multiple materials, use the shortest duration.",
 				{
 					"type": "table",
@@ -5734,7 +5734,7 @@
 				}
 			],
 			"entries": [
-				"Holy power radiates from you in an aura with a 30-foot radius, awakening boldness in friendly creatures. Until the spell ends, the aura moves with you, centered on you. While in the aura, each nonhostile creature in the aura (including you) deals an extra {@damage 1d4} radiant damage when it hits with a weapon attack."
+				"Holy power radiates from you in an aura with a 30-foot radius, awakening boldness in friendly creatures. Until the spell ends, the aura moves with you, centered on you. While in the aura, each nonhostile creature in the aura (including you) deals an extra {@damage 1d4} radiant damage when it hits with a {@action attack|PHB|weapon} or an {@action unarmed attack|PHB|unarmed strike attack}."
 			],
 			"damageInflict": [
 				"radiant"
@@ -5759,7 +5759,7 @@
 				}
 			],
 			"level": 1,
-			"school": "V",
+			"school": "A",
 			"time": [
 				{
 					"number": 1,
@@ -5782,14 +5782,14 @@
 				}
 			],
 			"entries": [
-				"A creature you touch regains a number of hit points equal to {@dice 1d8} + your spellcasting ability modifier. This spell has no effect on undead or constructs."
+				"A creature you touch regains a number of hit points equal to {@dice 2d8} + your spellcasting ability modifier. This spell has no effect on undead or constructs."
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the healing increases by {@scaledice 1d8|1-9|1d8} for each slot level above 1st."
+						"When you cast this spell using a spell slot of 2nd level or higher, the healing increases by {@scaledice 2d8|1-9|2d8} for each slot level above 1st."
 					]
 				}
 			],
