@@ -1812,7 +1812,11 @@
             "class": {
                 "PHB": {
                     "Bard": true,
-                    "Druid": true
+                    "Druid": true,
+                    "Ranger": true
+                },
+                "TCE": {
+                    "Artificer": true
                 }
             },
             "background": {

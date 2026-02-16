@@ -724,7 +724,15 @@
 				{
 					"name": "Druid",
 					"source": "PHB"
-				}
+				},
+				{
+                    "name": "Ranger",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Artificer",
+                    "source": "TCE"
+                }
 			]
 		},
 		"Awaken Plants": {

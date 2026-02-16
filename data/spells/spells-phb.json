@@ -1222,19 +1222,40 @@
 				"ritual": true
 			},
 			"entries": [
-				"By casting gem-inlaid sticks, rolling dragon bones, laying out ornate cards, or employing some other divining tool, you receive an omen from an otherworldly entity about the results of a specific course of action that you plan to take within the next 30 minutes. The DM chooses from the following possible omens:",
-				{
-					"type": "list",
-					"items": [
-						"Weal, for good results",
-						"Woe, for bad results",
-						"Weal and woe, for both good and bad results",
-						"Nothing, for results that aren't especially good or bad"
-					]
-				},
-				"The spell doesn't take into account any possible circumstances that might change the outcome, such as the casting of additional spells or the loss or gain of a companion.",
-				"If you cast the spell two or more times before completing your next long rest, there is a cumulative {@chance 25|||Random reading!|Regular reading} chance for each casting after the first that you get a random reading. The DM makes this roll in secret."
-			]
+                "By casting gem-inlaid sticks, rolling dragon bones, laying out ornate cards, or employing some other divining tool, you receive an omen from an otherworldly entity about the results of a specific course of action that you plan to take within the next 30 minutes. The DM chooses from the following possible omens:",
+                {
+                    "type": "table",
+                    "caption": "Omens",
+                    "colStyles": [
+                        "col-4",
+                        "col-8"
+                    ],
+                    "colLabels": [
+                        "Omen",
+                        "For Results That Will Be..."
+                    ],
+                    "rows": [
+                        [
+                            "Weal",
+                            "Good"
+                        ],
+                        [
+                            "Woe",
+                            "Bad"
+                        ],
+                        [
+                            "Weal and woe",
+                            "Good and bad"
+                        ],
+                        [
+                            "Indifference",
+                            "Neither good nor bad"
+                        ]
+                    ]
+                },
+                "The spell doesn't take into account any possible circumstances that might change the outcome, such as the casting of additional spells or the loss or gain of a companion.",
+                "If you cast the spell two or more times before completing your next long rest, there is a cumulative {@chance 25|||Random reading!|Regular reading} chance for each casting after the first that you get a random reading. The DM makes this roll in secret."
+            ]
 		},
 		{
             "name": "Aura of Frost",
@@ -1388,7 +1409,7 @@
 			"source": "PHB",
 			"page": 216,
 			"level": 3,
-			"school": "V",
+			"school": "A",
 			"time": [
 				{
 					"number": 1,
@@ -1460,9 +1481,9 @@
 				}
 			],
 			"entries": [
-				"After spending the casting time tracing magical pathways within a precious gemstone, you touch a Huge or smaller beast or plant. The target must have either no Intelligence score or an Intelligence of 3 or less. The target gains an Intelligence of 10. The target also gains the ability to speak one language you know. If the target is a plant, it gains the ability to move its limbs, roots, vines, creepers, and so forth, and it gains senses similar to a human's. Your DM chooses statistics appropriate for the awakened plant, such as the statistics for the {@creature awakened shrub} or the {@creature awakened tree}.",
-				"The awakened beast or plant is {@condition charmed} by you for 30 days or until you or your companions do anything harmful to it. When the {@condition charmed} condition ends, the awakened creature chooses whether to remain friendly to you, based on how you treated it while it was {@condition charmed}."
-			],
+                "You spend the casting time tracing magical pathways within a precious gemstone, and then touch the target. The target must be either a {@filter Beast|bestiary|type=beast|intelligence=[0;3]|miscellaneous=!swarm} or {@filter Plant|bestiary|type=plant|intelligence=[0;3]|miscellaneous=!swarm} creature with an Intelligence of 3 or less or a natural plant that isn't a creature. The target gains an Intelligence of 10 and the ability to speak one language you know. If the target is a natural plant, it becomes a Plant creature and gains the ability to move its limbs, roots, vines, creepers, and so forth, and it gains senses similar to a human's. The DM chooses statistics appropriate for the awakened Plant, such as the statistics for the {@creature Awakened Shrub} or {@creature Awakened Tree} in the {@book Monster Manual|MM}.",
+                "The awakened target has the {@condition Charmed} condition for 30 days or until you or your allies deal damage to it. When that condition ends, the awakened creature chooses its attitude toward you, based on your treatment of it."
+            ],
 			"conditionInflict": [
 				"charmed"
 			],
@@ -1649,7 +1670,8 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "bonus"
+					"unit": "bonus",
+					"condition": "which you take immediately after hitting a target with a Melee weapon or an {@action unarmed attack|PHB|unarmed strike attack}"
 				}
 			],
 			"range": {
@@ -1672,8 +1694,9 @@
 				}
 			],
 			"entries": [
-				"The next time you hit a creature with a weapon attack before this spell ends, your weapon crackles with force, and the attack deals an extra {@damage 5d10} force damage to the target. Additionally, if this attack reduces the target to 50 hit points or fewer, you banish it. If the target is native to a different plane of existence than the one you're on, the target disappears, returning to its home plane. If the target is native to the plane you're on, the creature vanishes into a harmless demiplane. While there, the target is {@condition incapacitated}. It remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied."
-			],
+                "When you hit with a melee attack you can cause the target to seize with pure arcane force. This attack deals an extra {@damage 5d10} bonus force damage. If the target is not native to your current plane of existence, they take an additional {@damage 1d10} force damage.",
+                "If it reduces the target to 50 hit points or fewer, it is banished from the current plane to a harmless demiplane where it is {@condition incapacitated}. When the spell ends, the target returns to the space it was banished from, or the nearest unoccupied space."
+            ],
 			"damageInflict": [
 				"force"
 			],
@@ -1720,10 +1743,10 @@
 				}
 			],
 			"entries": [
-				"You attempt to send one creature that you can see within range to another plane of existence. The target must succeed on a Charisma saving throw or be banished.",
-				"If the target is native to the plane of existence you're on, you banish the target to a harmless demiplane. While there, the target is {@condition incapacitated}. The target remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.",
-				"If the target is native to a different plane of existence than the one you're on, the target is banished with a faint popping noise, returning to its home plane. If the spell ends before 1 minute has passed, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied. Otherwise, the target doesn't return."
-			],
+                "You attempt to send one creature that you can see within range to another plane of existence. The target must succeed on a Charisma saving throw or be banished.",
+                "If the target is native to the plane of existence you're on, you banish the target to a harmless demiplane. While there, the target is {@condition incapacitated}. If the target is native to a different plane of existence than the one you're on, the target is banished with a faint popping noise, returning to its home plane. The target remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.",
+                "If the target is an Aberration, a Celestial, an Elemental, a Fey, or a Fiend, the target doesn't return if the spell lasts for 1 minute."
+            ],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
@@ -1757,7 +1780,7 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "action"
+					"unit": "bonus"
 				}
 			],
 			"range": {
@@ -1777,12 +1800,11 @@
 					"duration": {
 						"type": "hour",
 						"amount": 1
-					},
-					"concentration": true
+					}
 				}
 			],
 			"entries": [
-				"You touch a willing creature. Until the spell ends, the target's skin has a rough, bark-like appearance, and the target's AC can't be less than 16, regardless of what kind of armor it is wearing."
+				"You touch a willing creature. Until the spell ends, the target's skin assumes a bark-like appearance, and the target gains an Armor Class of 17, if its AC is lower than that."
 			],
 			"miscTags": [
 				"MAC"
