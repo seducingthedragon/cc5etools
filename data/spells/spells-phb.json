@@ -7,7 +7,7 @@
 			"srd": true,
 			"basicRules": true,
 			"level": 0,
-			"school": "C",
+			"school": "V",
 			"time": [
 				{
 					"number": 1,
@@ -31,9 +31,17 @@
 				}
 			],
 			"entries": [
-				"You hurl a bubble of acid. Choose one creature you can see within range, or choose two creatures you can see within range that are within 5 feet of each other. A target must succeed on a Dexterity saving throw or take {@damage 1d6} acid damage.",
-				"This spell's damage increases by {@damage 1d6} when you reach 5th level ({@damage 2d6}), 11th level ({@damage 3d6}), and 17th level ({@damage 4d6})."
-			],
+                "You hurl an orb of caustic acid at a point you can see within range. Creatures within 5 feet of that point must succeed on a Dexterity saving throw or take {@damage 1d6} acid damage."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Cantrip Upgrade",
+                    "entries": [
+                        "The damage increases by {@damage 1d6} when you reach levels 5 ({@damage 2d6}), 11 ({@damage 3d6}), and 17 ({@damage 4d6})."
+                    ]
+                }
+            ],
 			"scalingLevelDice": {
 				"label": "acid damage",
 				"scaling": {
@@ -385,10 +393,30 @@
 				}
 			],
 			"entries": [
-				"Your magic turns others into beasts. Choose any number of willing creatures that you can see within range. You transform each target into the form of a {@filter Large or smaller beast with a challenge rating of 4 or lower|bestiary|challenge rating=[&0;&4]|type=beast|size=f;d;t;s;m;l|miscellaneous=!swarm}. On subsequent turns, you can use your action to transform affected creatures into new forms.",
-				"The transformation lasts for the duration for each target, or until the target drops to 0 hit points or dies. You can choose a different form for each target. A target's game statistics are replaced by the statistics of the chosen beast, though the target retains its alignment and Intelligence, Wisdom, and Charisma scores. The target assumes the hit points of its new form, and when it reverts to its normal form, it returns to the number of hit points it had before it transformed. If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form. As long as the excess damage doesn't reduce the creature's normal form to 0 hit points, it isn't knocked {@condition unconscious}. The creature is limited in the actions it can perform by the nature of its new form, and it can't speak or cast spells.",
-				"The target's gear melds into the new form. The target can't activate, wield, or otherwise benefit from any of its equipment."
-			],
+                "You use elder magicks to transmute others into animal forms. Choose any number of willing creatures within range to transform into a {@filter Beast|bestiary|challenge rating=[&0;&4]|type=beast|size=f;d;t;s;m;l|miscellaneous=!swarm}, using the following rules:",
+                {
+                    "type": "entries",
+                    "name": "Form",
+                    "entries": [
+                        "Each creature is transformed into a Large or smaller {@filter Beast|bestiary|challenge rating=[&0;&4]|type=beast|size=f;d;t;s;m;l|miscellaneous=!swarm} of CR 4 or lower. You can choose different form for each target. On subsequent turns, you can use your action to transform one target of this spell within 60 feet into another Beast, using the same restrictions."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Statistics",
+                    "entries": [
+                        "A target's game statistics are replaced by the statistics of the chosen beast. While transformed, it retains its alignment, personality, Intelligence, Wisdom, and Charisma scores, and ability to communicate. They also gain the ability to telepathically communicate with one another and the caster of this spell while within 120 feet of one another.",
+                        "The target assumes the hit points of the first beast form it takes, maintaining their current HP if they are transformed into another beast while taking on the new beast's max HP. The target's actions are limited by the Beast form's anatomy, and it can't cast spells. The target's equipment melds into the new form, and the target can't use any of that equipment while in that form."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Reverting",
+                    "entries": [
+                        "When a target of this spell reverts to its normal form, the spell effect ends for that target only. A creature reverts back to its normal form by either choosing to end the effect on themselves as an action, having their HP reduced to 0, or by dying. A target that ends the effect on themselves cannot restart the spell effect without another spell casting. If a target's HP is reduced to 0, any excess damage is carried over to their normal form. Otherwise, the spell lasts for the duration as long as you maintain concentration for the duration of the spell."
+                    ]
+                }
+            ],
 			"miscTags": [
 				"SGT"
 			],
@@ -607,10 +635,9 @@
 				}
 			],
 			"range": {
-				"type": "sphere",
+				"type": "point",
 				"distance": {
-					"type": "feet",
-					"amount": 10
+					"type": "touch"
 				}
 			},
 			"components": {
@@ -629,59 +656,59 @@
 				}
 			],
 			"entries": [
-				"A 10-foot-radius invisible sphere of antimagic surrounds you. This area is divorced from the magical energy that suffuses the multiverse. Within the sphere, spells can't be cast, summoned creatures disappear, and even magic items become mundane. Until the spell ends, the sphere moves with you, centered on you.",
-				"Spells and other magical effects, except those created by an artifact or a deity, are suppressed in the sphere and can't protrude into it. A slot expended to cast a suppressed spell is consumed. While an effect is suppressed, it doesn't function, but the time it spends suppressed counts against its duration.",
-				{
-					"type": "entries",
-					"name": "Targeted Effects",
-					"entries": [
-						"Spells and other magical effects, such as {@spell magic missile} and {@spell charm person}, that target a creature or an object in the sphere have no effect on that target."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Areas of Magic",
-					"entries": [
-						"The area of another spell or magical effect, such as {@spell fireball}, can't extend into the sphere. If the sphere overlaps an area of magic, the part of the area that is covered by the sphere is suppressed. For example, the flames created by a wall of fire are suppressed within the sphere, creating a gap in the wall if the overlap is large enough."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Spells",
-					"entries": [
-						"Any active spell or other magical effect on a creature or an object in the sphere is suppressed while the creature or object is in it."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Magic Items",
-					"entries": [
-						"The properties and powers of magic items are suppressed in the sphere. For example, a +1 longsword in the sphere functions as a nonmagical longsword.",
-						"A magic weapon's properties and powers are suppressed if it is used against a target in the sphere or wielded by an attacker in the sphere. If a magic weapon or a piece of magic ammunition fully leaves the sphere (for example, if you fire a magic arrow or throw a magic spear at a target outside the sphere), the magic of the item ceases to be suppressed as soon as it exits."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Magical Travel",
-					"entries": [
-						"Teleportation and planar travel fail to work in the sphere, whether the sphere is the destination or the departure point for such magical travel. A portal to another location, world, or plane of existence, as well as an opening to an extradimensional space such as that created by the rope trick spell, temporarily closes while in the sphere."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Creatures and Objects",
-					"entries": [
-						"A creature or object summoned or created by magic temporarily winks out of existence in the sphere. Such a creature instantly reappears once the space the creature occupied is no longer within the sphere."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Dispel Magic",
-					"entries": [
-						"Spells and magical effects such as {@spell dispel magic} have no effect on the sphere. Likewise, the spheres created by different {@spell antimagic field} spells don't nullify each other."
-					]
-				}
-			],
+                "A 10-foot-radius invisible sphere of antimagic surrounds the spot or creature you touch (including yourself). This area is divorced from the magical energy that suffuses the multiverse. Within the sphere, spells can't be cast, summoned creatures disappear, and even magic items become mundane. Until the spell ends, the sphere moves with you, centered on you.",
+                "Spells and other magical effects, except those created by an artifact or a deity, are suppressed in the sphere and can't protrude into it. A slot expended to cast a suppressed spell is consumed. While an effect is suppressed, it doesn't function, but the time it spends suppressed counts against its duration.",
+                {
+                    "type": "entries",
+                    "name": "Targeted Effects",
+                    "entries": [
+                        "Spells and other magical effects, such as {@spell magic missile} and {@spell charm person}, that target a creature or an object in the sphere have no effect on that target."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Areas of Magic",
+                    "entries": [
+                        "The area of another spell or magical effect, such as {@spell fireball}, can't extend into the sphere. If the sphere overlaps an area of magic, the part of the area that is covered by the sphere is suppressed. For example, the flames created by a wall of fire are suppressed within the sphere, creating a gap in the wall if the overlap is large enough."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spells",
+                    "entries": [
+                        "Any active spell or other magical effect on a creature or an object in the sphere is suppressed while the creature or object is in it."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Magic Items",
+                    "entries": [
+                        "The properties and powers of magic items are suppressed in the sphere. For example, a +1 longsword in the sphere functions as a nonmagical longsword.",
+                        "A magic weapon's properties and powers are suppressed if it is used against a target in the sphere or wielded by an attacker in the sphere. If a magic weapon or a piece of magic ammunition fully leaves the sphere (for example, if you fire a magic arrow or throw a magic spear at a target outside the sphere), the magic of the item ceases to be suppressed as soon as it exits."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Magical Travel",
+                    "entries": [
+                        "Teleportation and planar travel fail to work in the sphere, whether the sphere is the destination or the departure point for such magical travel. A portal to another location, world, or plane of existence, as well as an opening to an extradimensional space such as that created by the rope trick spell, temporarily closes while in the sphere."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Creatures and Objects",
+                    "entries": [
+                        "A creature or object summoned or created by magic temporarily winks out of existence in the sphere. Such a creature instantly reappears once the space the creature occupied is no longer within the sphere."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Dispel Magic",
+                    "entries": [
+                        "Spells and magical effects such as {@spell dispel magic} have no effect on the sphere. Likewise, the spheres created by different {@spell antimagic field} spells don't nullify each other."
+                    ]
+                }
+            ],
 			"miscTags": [
 				"OBJ"
 			],
@@ -712,7 +739,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "either a lump of alum soaked in vinegar for the antipathy effect or a drop of honey for the sympathy effect"
+				"m": "a mix of vinegar and honey"
 			},
 			"duration": [
 				{
@@ -737,7 +764,7 @@
 					"name": "Sympathy",
 					"entries": [
 						"The enchantment causes the specified creatures to feel an intense urge to approach the target while within 60 feet of it or able to see it. When such a creature can see the target or comes within 60 feet of it, the creature must succeed on a Wisdom saving throw or use its movement on each of its turns to enter the area or move within reach of the target. When the creature has done so, it can't willingly move away from the target.",
-						"If the target damages or otherwise harms an affected creature, the affected creature can make a Wisdom saving throw to end the effect, as described below."
+                        "If the target damages or otherwise harms an affected creature, the affected creature can make a Wisdom saving throw to end the effect, as described below."
 					]
 				},
 				{
@@ -801,7 +828,10 @@
 			"entries": [
 				"You create an invisible, magical eye within range that hovers in the air for the duration.",
 				"You mentally receive visual information from the eye, which has normal vision and {@sense darkvision} out to 30 feet. The eye can look in every direction.",
-				"As an action, you can move the eye up to 30 feet in any direction. There is no limit to how far away from you the eye can move, but it can't enter another plane of existence. A solid barrier blocks the eye's movement, but the eye can pass through an opening as small as 1 inch in diameter."
+				"As a bonus action, you can move the eye up to 30 feet in any direction. There is no limit to how far away from you the eye can move, but it can't enter another plane of existence. A solid barrier blocks the eye's movement, but the eye can pass through an opening as small as 1 inch in diameter."
+			],
+			"miscTags": [
+				"UBA"
 			]
 		},
 		{
@@ -941,9 +971,9 @@
 				}
 			],
 			"entries": [
-				"You touch a closed door, window, gate, chest, or other entryway, and it becomes locked for the duration. You and the creatures you designate when you cast this spell can open the object normally. You can also set a password that, when spoken within 5 feet of the object, suppresses this spell for 1 minute. Otherwise, it is impassable until it is broken or the spell is dispelled or suppressed. Casting {@spell knock} on the object suppresses {@spell arcane lock} for 10 minutes.",
-				"While affected by this spell, the object is more difficult to break or force open; the DC to break it or pick any locks on it increases by 10."
-			],
+                "You touch a closed door, window, gate, chest, or other entryway, and it becomes locked for the duration. You and the creatures you designate when you cast this spell can open the object normally. You can also set a password that, when spoken within 5 feet of the object, suppresses this spell for 1 minute. Otherwise, it is impassable until it is broken or the spell is dispelled or suppressed. Casting {@spell knock} on the object suppresses {@spell arcane lock} for 10 minutes.",
+                "While affected by this spell, the object is more difficult to break or force open; the DC to break it or pick any locks on it increases by 15."
+            ],
 			"miscTags": [
 				"OBJ"
 			]
@@ -1055,7 +1085,7 @@
 				}
 			],
 			"range": {
-				"type": "radius",
+				"type": "emanation",
 				"distance": {
 					"type": "feet",
 					"amount": 10
@@ -1071,8 +1101,8 @@
 				}
 			],
 			"entries": [
-				"You invoke the power of Hadar, the Dark Hunger. Tendrils of dark energy erupt from you and batter all creatures within 10 feet of you. Each creature in that area must make a Strength saving throw. On a failed save, a target takes {@damage 2d6} necrotic damage and can't take reactions until its next turn. On a successful save, the creature takes half damage, but suffers no other effect."
-			],
+                "You invoke the power of Hadar, the Dark Hunger. Tendrils of dark energy erupt and batter all creatures within 10 feet of you. Each creature in that area must make a Strength saving throw. On a failed save, a target takes {@damage 2d6} necrotic damage, has the {@condition Restrained} condition, and can't take reactions while until the end of its next turn. On a successful save, the creature takes half damage, but suffers no other effect."
+            ],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
@@ -1085,6 +1115,9 @@
 			"damageInflict": [
 				"necrotic"
 			],
+			"conditionInflict": [
+                "restrained"
+            ],
 			"savingThrow": [
 				"strength"
 			],
