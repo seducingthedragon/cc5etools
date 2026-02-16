@@ -8073,6 +8073,15 @@
                 }
             }
         },
+        "flame whip": {
+            "class": {
+                "PHB": {
+                    "Druid": true,
+                    "Sorcerer": true,
+                    "Wizard": true
+                }
+            }
+        },
         "flaming sphere": {
             "class": {
                 "PHB": {

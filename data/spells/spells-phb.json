@@ -9039,6 +9039,71 @@
 			]
 		},
 		{
+            "name": "Flame Whip",
+            "source": "PHB",
+            "page": 242,
+            "school": "V",
+            "level": 2,
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "distance": {
+                    "type": "self"
+                },
+                "type": "point"
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a charred wooden hilt"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "amount": 1,
+                        "type": "minute"
+                    },
+					"concentration": true
+                }
+            ],
+            "entries": [
+                "As a bonus action, you can evoke a whip of pure flame in a free hand. It lasts for the duration and sheds bright light out to a 10-foot radius. If you let go of the whip, it disappears, however you can evoke the Flame Whip again using a bonus action without expending a spell slot.",
+                "Whenever you take the {@action attack} action, you can make a melee spell attack with your Flame Whip against one target within 10 feet that you can see. On hit, it takes fire damage equal to {@dice 1d10} + your spellcasting modifier. If the target is Large or smaller, you can instantly grapple it with the whip. How you grapple the target is at your DM's discretion, as it may be just a limb, wrapped around your target's core, or something else.",
+                "You cannot attack with the Whip while it is grappling a creature, however a grappled creature takes {@dice 1d10} fire damage at the start of its turns and can use its action to make a Strength or Dexterity Saving Throw against your spell save DC, escaping on a success."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, both instances of fire damage dealt increase by {@scaledamage 1d10|2,4,6,8|1d10} for every two slot levels above 2nd."
+                    ]
+                }
+            ],
+            "conditionInflict": [
+                "grappled"
+            ],
+            "damageInflict": [
+                "fire"
+            ],
+            "miscTags": [
+                "LGT",
+                "SCL"
+            ],
+            "savingThrow": [
+				"dexterity",
+				"strength"
+            ],
+            "spellAttack": [
+                "M"
+            ]
+        },
+		{
 			"name": "Flaming Sphere",
 			"source": "PHB",
 			"page": 242,

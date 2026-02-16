@@ -2659,6 +2659,22 @@
 				}
 			]
 		},
+		"Flame Whip": {
+			"class": [
+				{
+					"name": "Druid",
+					"source": "PHB"
+				},
+				{
+					"name": "Sorcerer",
+					"source": "PHB"
+				},
+				{
+					"name": "Warlock",
+					"source": "PHB"
+				}
+			]
+		},
 		"Flaming Sphere": {
 			"class": [
 				{
