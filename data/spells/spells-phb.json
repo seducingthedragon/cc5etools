@@ -2701,10 +2701,10 @@
 				}
 			],
 			"entries": [
-				"A storm cloud appears in the shape of a cylinder that is 10 feet tall with a 60-foot radius, centered on a point you can see within range directly above you. The spell fails if you can't see a point in the air where the storm cloud could appear (for example, if you are in a room that can't accommodate the cloud).",
-				"When you cast the spell, choose a point you can see under the cloud. A bolt of lightning flashes down from the cloud to that point. Each creature within 5 feet of that point must make a Dexterity saving throw. A creature takes {@damage 3d10} lightning damage on a failed save, or half as much damage on a successful one. On each of your turns until the spell ends, you can use your action to call down lightning in this way again, targeting the same point or a different one.",
-				"If you are outdoors in stormy conditions when you cast this spell, the spell gives you control over the existing storm instead of creating a new one. Under such conditions, the spell's damage increases by {@damage 1d10}."
-			],
+                "A storm cloud appears in the shape of a cylinder that is 10 feet tall with a 60-foot radius, centered on a point you can see within range directly above you. The spell fails if there is a roof or covering above you that is less than 20feet above you.",
+                "When you cast the spell, choose a point you can see under the cloud. A bolt of lightning flashes down from the cloud to that point. Each creature within 5 feet of that point must make a Dexterity saving throw. A creature takes {@damage 3d10} lightning damage on a failed save, or half as much damage on a successful one. On each of your turns until the spell ends, you can use your action to call down lightning in this way again, targeting the same point or a different one.",
+                "If you are outdoors in stormy conditions when you cast this spell, the spell gives you control over the existing storm instead of creating a new one. Under such conditions, the spell's damage increases by {@damage 1d10}."
+            ],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
@@ -2763,10 +2763,28 @@
 				}
 			],
 			"entries": [
-				"You attempt to suppress strong emotions in a group of people. Each humanoid in a 20-foot-radius sphere centered on a point you choose within range must make a Charisma saving throw; a creature can choose to fail this saving throw if it wishes. If a creature fails its saving throw, choose one of the following two effects.",
-				"You can suppress any effect causing a target to be {@condition charmed} or {@condition frightened}. When this spell ends, any suppressed effect resumes, provided that its duration has not expired in the meantime.",
-				"Alternatively, you can make a target indifferent about creatures of your choice that it is hostile toward. This indifference ends if the target is attacked or harmed by a spell or if it witnesses any of its friends being harmed. When the spell ends, the creature becomes hostile again, unless the DM rules otherwise."
-			],
+                "You attempt to suppress strong emotions in a group of people. Each humanoid in a 20-foot-radius sphere centered on a point you choose within range must make a Charisma saving throw; a creature can choose to fail this saving throw if it wishes. If a creature fails its saving throw, choose one of the following two effects.",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Immunity",
+                            "entries": [
+                                "The creature has Immunity to the {@condition Charmed} and {@condition Frightened} conditions until the spell ends. If the creature was already {@condition Charmed} or {@condition Frightened}, those conditions are suppressed for the duration."
+                            ]
+                        },
+                        {
+                            "type":"item",
+                            "name":"Indifferent",
+                            "entries": [
+                                "The creature becomes Indifferent about creatures of your choice that it's Hostile toward. This indifference ends if the target takes damage or witnesses its allies taking damage. When the spell ends, the creature's attitude returns to normal."
+                            ]
+                        }
+                    ]
+                }
+            ],
 			"savingThrow": [
 				"charisma"
 			],
@@ -2801,7 +2819,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a bit of fur; a piece of amber, glass, or a crystal rod; and three silver pins"
+				"m": "three silver pins"
 			},
 			"duration": [
 				{
@@ -2940,10 +2958,18 @@
 				}
 			],
 			"entries": [
-				"You create a ghostly, skeletal hand in the space of a creature within range. Make a ranged spell attack against the creature to assail it with the chill of the grave. On a hit, the target takes {@damage 1d8} necrotic damage, and it can't regain hit points until the start of your next turn. Until then, the hand clings to the target.",
-				"If you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn.",
-				"This spell's damage increases by {@damage 1d8} when you reach 5th level ({@damage 2d8}), 11th level ({@damage 3d8}), and 17th level ({@damage 4d8})."
-			],
+                "You create a ghostly, skeletal hand in the space of a creature within range. Make a ranged spell attack against the creature to assail it with the chill of the grave. On a hit, the target takes {@damage 1d8} necrotic damage, and it can't regain hit points until the start of your next turn. Until then, the hand clings to the target.",
+                "If you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Cantrip Upgrade",
+                    "entries": [
+                        "The damage increases by {@damage 1d8} when you reach levels 5 ({@damage 2d8}), 11 ({@damage 3d8}), and 17 ({@damage 4d8})."
+                    ]
+                }
+            ],
 			"scalingLevelDice": {
 				"label": "necrotic damage",
 				"scaling": {
@@ -3062,17 +3088,17 @@
 				}
 			],
 			"entries": [
-				"A sphere of negative energy ripples out in a 60-foot-radius sphere from a point within range. Each creature in that area must make a Constitution saving throw. A target takes {@damage 8d6} necrotic damage on a failed save, or half as much damage on a successful one."
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 7th level or higher, the damage increases by {@scaledamage 8d6|6-9|2d6} for each slot level above 6th."
-					]
-				}
-			],
+                "A sphere of negative energy ripples out in a 60-foot-radius sphere from a point within range. Each creature in that area must make a Constitution saving throw. A target takes {@damage 8d8} necrotic damage on a failed save, or half as much damage on a successful one."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 7th level or higher, the damage increases by {@scaledamage 8d8|6-9|2d8} for each slot level above 6th."
+                    ]
+                }
+            ],
 			"damageInflict": [
 				"necrotic"
 			],
@@ -3096,7 +3122,7 @@
 				}
 			],
 			"range": {
-				"type": "radius",
+				"type": "emanation",
 				"distance": {
 					"type": "feet",
 					"amount": 30
@@ -3116,8 +3142,8 @@
 				}
 			],
 			"entries": [
-				"Divine energy radiates from you, distorting and diffusing magical energy within 30 feet of you. Until the spell ends, the sphere moves with you, centered on you. For the duration, each friendly creature in the area (including you) has advantage on saving throws against spells and other magical effects. Additionally, when an affected creature succeeds on a saving throw made against a spell or magical effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw."
-			],
+                "An aura radiates from you in a 30-foot Emanation for the duration. While in the aura, you and your allies have Advantage on saving throws against spells and other magical effects. When an affected creature makes a saving throw against a spell or magical effect that allows a save to take only half damage, it takes no damage if it succeeds on the save."
+            ],
 			"miscTags": [
 				"ADV"
 			],

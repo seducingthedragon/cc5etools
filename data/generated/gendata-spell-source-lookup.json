@@ -3266,7 +3266,9 @@
         "circle of power": {
             "class": {
                 "PHB": {
-                    "Paladin": true
+                    "Cleric": true,
+                    "Paladin": true,
+                    "Wizard": true
                 }
             },
             "subclass": {

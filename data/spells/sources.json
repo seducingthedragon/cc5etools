@@ -1117,7 +1117,15 @@
 		"Circle of Power": {
 			"class": [
 				{
+					"name": "Cleric",
+					"source": "PHB"
+				},
+				{
 					"name": "Paladin",
+					"source": "PHB"
+				},
+				{
+					"name": "Wizard",
 					"source": "PHB"
 				}
 			]
