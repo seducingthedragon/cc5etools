@@ -1197,9 +1197,17 @@
 					"source": "PHB"
 				},
 				{
+                    "name": "Warlock",
+                    "source": "PHB"
+                },
+				{
 					"name": "Wizard",
 					"source": "PHB"
-				}
+				},
+				{
+                    "name": "Artificer",
+                    "source": "TCE"
+                }
 			],
 			"classVariant": [
 				{

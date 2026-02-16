@@ -3271,8 +3271,17 @@
 				}
 			],
 			"entries": [
-				"You fill the air with spinning daggers in a cube 5 feet on each side, centered on a point you choose within range. A creature takes {@damage 4d4} slashing damage when it enters the spell's area for the first time on a turn or starts its turn there."
-			],
+                "You fill the air with spectral spinning glass daggers in a 5 foot cube that pulse outwards another 5 feet, centered on a point you choose within range. Creatures can make a Wisdom ({@skill Perception}) check against your spell save DC in order to perceive it as a magical cloud, however it's considered to be Lightly Obscured if attempting to perceive the daggers within. A creature takes {@damage 4d4} slashing damage once per turn for one of the following scenarios:",
+                {
+                    "type": "list",
+                    "items": [
+                        "moving within 5ft of the spell's area for the first time",
+                        "moving through the spell effect area",
+                        "starting or ending its turn within 5ft of the spell"
+                    ]
+                },
+                "On your subsequent turns, you can take a bonus action to move or teleport the dagger cloud up to 30 feet."
+            ],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
@@ -3295,7 +3304,7 @@
 			"page": 222,
 			"srd": true,
 			"level": 5,
-			"school": "C",
+			"school": "V",
 			"time": [
 				{
 					"number": 1,
@@ -3374,30 +3383,16 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a pinch of powder or sand that is colored red, yellow, and blue"
+				"m": "a pinch of colorful sand"
 			},
 			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "round",
-						"amount": 1
-					}
-				}
-			],
+                {
+                    "type": "instant"
+                }
+            ],
 			"entries": [
-				"A dazzling array of flashing, colored light springs from your hand. Roll {@dice 6d10}; the total is how many hit points of creatures this spell can effect. Creatures in a 15-foot cone originating from you are affected in ascending order of their current hit points (ignoring {@condition unconscious} creatures and creatures that can't see).",
-				"Starting with the creature that has the lowest current hit points, each creature affected by this spell is {@condition blinded} until the end of your next turn. Subtract each creature's hit points from the total before moving on to the creature with the next lowest hit points. A creature's hit points must be equal to or less than the remaining total for that creature to be affected."
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, roll an additional {@scaledice 6d10|1-9|2d10} for each slot level above 1st."
-					]
-				}
-			],
+                "You launch a dazzling array of flashing, colorful light. Each creature in a 15-foot Cone originating from you must succeed on a Constitution saving throw or have the {@condition Blinded} condition until the end of your next turn."
+            ],
 			"conditionInflict": [
 				"blinded"
 			],
@@ -3588,28 +3583,32 @@
 				"s": true
 			},
 			"duration": [
-				{
-					"type": "instant"
-				}
-			],
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
 			"meta": {
 				"ritual": true
 			},
 			"entries": [
-				"You briefly become one with nature and gain knowledge of the surrounding territory. In the outdoors, the spell gives you knowledge of the land within 3 miles of you. In caves and other natural underground settings, the radius is limited to 300 feet. The spell doesn't function where nature has been replaced by construction, such as in dungeons and towns.",
-				"You instantly gain knowledge of up to three facts of your choice about any of the following subjects as they relate to the area:",
-				{
-					"type": "list",
-					"items": [
-						"terrain and bodies of water",
-						"prevalent plants, minerals, animals, or peoples",
-						"powerful celestials, fey, fiends, elementals, or undead",
-						"influence from other planes of existence",
-						"buildings"
-					]
-				},
-				"For example, you could determine the location of powerful undead in the area, the location of major sources of safe drinking water, and the location of any nearby towns."
-			]
+                "You commune with nature spirits and gain knowledge of the surrounding area. In the outdoors, the spell gives you knowledge of the area within 3 miles of you. In caves and other natural underground settings, the radius is limited to 300 feet. The spell doesn't function where nature has been replaced by construction, such as in castles and settlements.",
+                "Choose three of the following facts; you learn those facts as they pertain to the spell's area:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Locations of settlements and buildings",
+                        "Locations of portals to or influence from other planes of existence",
+                        "Location of powerful celestials, fey, fiends, elementals, or undead",
+                        "The most prevalent plants, minerals, animals, or peoples (your choice)",
+                        "Locations of bodies of water and/or terrain"
+                    ]
+                },
+                "For example, you could determine the location of a powerful monster in the area, the locations of bodies of water, and the locations of any towns."
+            ]
 		},
 		{
 			"name": "Compelled Duel",
