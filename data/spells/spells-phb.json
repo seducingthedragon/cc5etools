@@ -1901,8 +1901,15 @@
 				"ritual": true
 			},
 			"entries": [
-				"You touch a willing beast. For the duration of the spell, you can use your action to see through the beast's eyes and hear what it hears, and continue to do so until you use your action to return to your normal senses. While perceiving through the beast's senses, you gain the benefits of any special senses possessed by that creature, though you are {@condition blinded} and {@condition deafened} to your own surroundings."
-			],
+                "You touch a willing beast. For the duration of the spell, you can use your action to see through the beast's eyes and hear what it hears, and continue to do so until you use your action to return to your normal senses. While perceiving through the beast's senses, you gain the benefits of any special senses possessed by that creature, though you are {@condition blinded} and {@condition deafened} to your own surroundings.",
+                {
+                    "type": "entries",
+                    "name": "Special Duration",
+                    "entries": [
+                        "If you cast this spell with your beastly companion, then you can forgo concentration, maintaining the spell for the full duration."
+                    ]
+                }
+            ],
 			"areaTags": [
 				"ST"
 			]
@@ -2180,7 +2187,7 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "action"
+					"unit": "bonus"
 				}
 			],
 			"range": {
@@ -2203,8 +2210,8 @@
 				}
 			],
 			"entries": [
-				"You extend your hand and trace a sigil of warding in the air. Until the end of your next turn, you have resistance against bludgeoning, piercing, and slashing damage dealt by weapon attacks."
-			],
+                "You create a wall of whirling blades made of magical energy as you extend your hand and trace a sigil of warding in the air. Until the end of your next turn, you have resistance against bludgeoning, piercing, and slashing damage dealt by weapon attacks."
+            ],
 			"damageResist": [
 				"bludgeoning",
 				"piercing",
@@ -2302,10 +2309,10 @@
 				}
 			],
 			"entries": [
-				"Necromantic energy washes over a creature of your choice that you can see within range, draining moisture and vitality from it. The target must make a Constitution saving throw. The target takes {@damage 8d8} necrotic damage on a failed save, or half as much damage on a successful one. This spell has no effect on undead or constructs.",
-				"If you target a plant creature or a magical plant, it makes the saving throw with disadvantage, and the spell deals maximum damage to it.",
-				"If you target a nonmagical plant that isn't a creature, such as a tree or shrub, it doesn't make a saving throw, it simply withers and dies."
-			],
+                "Necromantic energy washes over a creature of your choice that you can see within range, draining moisture and vitality from it. The target must make a Constitution saving throw. The target takes {@damage 8d8} necrotic damage on a failed save, or half as much damage on a successful one. This spell has no effect on undead or constructs.",
+                "If you target a plant creature or a magical plant, it makes the saving throw with disadvantage, and the spell deals maximum damage to it.",
+                "All non-creature plants, magical or not, automatically fails and withers to death."
+            ],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
@@ -2351,7 +2358,8 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "bonus"
+					"unit": "bonus",
+					"condition": "which you take immediately after hitting a target with a Melee weapon or an {@action unarmed attack|PHB|unarmed strike attack}"
 				}
 			],
 			"range": {
@@ -2369,14 +2377,22 @@
 					"duration": {
 						"type": "minute",
 						"amount": 1
-					},
-					"concentration": true
+					}
 				}
 			],
 			"entries": [
-				"The next time you hit a creature with a melee weapon attack during this spell's duration, your weapon flares with bright light, and the attack deals an extra {@damage 3d8} radiant damage to the target. Additionally, the target must succeed on a Constitution saving throw or be {@condition blinded} until the spell ends.",
-				"A creature {@condition blinded} by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, it is no longer {@condition blinded}."
-			],
+                "When you hit with a melee attack you can cause the target to lose sight of everything except an overwhelming blinding light. This attack deals an extra {@damage 3d8} radiant damage. Then the target must succeed on a Constitution saving throw or become {@condition blinded} until the spell ends. The target can repeat this saving throw at the end of each of its turns, ending the effect on a success.",
+                "If your target is a fiend or undead, or is vulnerable to bright light, the bonus radiant damage increases by {@damage 1d8}."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd-level or higher, the radiant damage increases by {@scaledamage 3d8;4d8|3-9|1d8} for each spell slot level above 2nd."
+                    ]
+                }
+            ],
 			"damageInflict": [
 				"radiant"
 			],
@@ -2387,7 +2403,8 @@
 				"constitution"
 			],
 			"miscTags": [
-				"AAD"
+				"AAD",
+				"SCL"
 			]
 		},
 		{
@@ -2396,7 +2413,7 @@
 			"page": 219,
 			"srd": true,
 			"level": 2,
-			"school": "N",
+			"school": "T",
 			"time": [
 				{
 					"number": 1,
@@ -2565,14 +2582,15 @@
 				}
 			],
 			"entries": [
-				"The next time you hit a creature with a weapon attack before this spell ends, the weapon gleams with astral radiance as you strike. The attack deals an extra {@damage 2d6} radiant damage to the target, which becomes visible if it's {@condition invisible}, and the target sheds dim light in a 5-foot radius and can't become {@condition invisible} until the spell ends."
-			],
+                "When you hit with a melee attack you can cause the target to gleam with an otherworldly astral radiance. This attack deals an extra {@damage 2d8} radiant damage. Until the end of the spell, the target sheds dim light out to a 5-foot radius, cannot benefit from the {@condition invisibile} condition, and makes Stealth Checks with disadvantage. Additionally, attack rolls against the target have advantage.",
+                "If your target is a fiend or undead, or if it has the sunlight sensitivity trait, the bonus radiant damage increases by {@damage 1d8}."
+            ],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 3rd level or higher, the extra damage increases by {@scaledamage 2d6|2-9|1d6} for each slot level above 2nd."
+						"When you cast this spell using a spell slot of 3rd level or higher, the extra damage increases by {@scaledamage 2d8|2-9|1d8} for each slot level above 2nd."
 					]
 				}
 			],
@@ -2581,7 +2599,8 @@
 			],
 			"miscTags": [
 				"AAD",
-				"LGT"
+				"LGT",
+				"SCL"
 			]
 		},
 		{
