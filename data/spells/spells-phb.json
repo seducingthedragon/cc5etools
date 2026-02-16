@@ -4653,11 +4653,14 @@
 				"ritual": true
 			},
 			"entries": [
-				"You mentally contact a demigod, the spirit of a long-dead sage, or some other mysterious entity from another plane. Contacting this extraplanar intelligence can strain or even break your mind. When you cast this spell, make a {@dc 15} Intelligence saving throw. On a failure, you take {@damage 6d6} psychic damage and are insane until you finish a long rest. While insane, you can't take actions, can't understand what other creatures say, can't read, and speak only in gibberish. A {@spell greater restoration} spell cast on you ends this effect.",
-				"On a successful save, you can ask the entity up to five questions. You must ask your questions before the spell ends. The DM answers each question with one word, such as \"yes,\" \"no,\" \"maybe,\" \"never,\" \"irrelevant,\" or \"unclear\" (if the entity doesn't know the answer to the question). If a one-word answer would be misleading, the DM might instead offer a short phrase as an answer."
-			],
+                "You mentally contact a demigod, the spirit of a long-dead sage, or some other mysterious entity from another plane. Contacting this extraplanar intelligence can strain or even break your mind. When you cast this spell, make a {@dc 15} Intelligence saving throw. On a failure, you take {@damage 6d6} psychic damage and you have the {@condition incapacitated} condition. A {@spell restoration|PHB|level 5 Restoration} spell cast on you ends this effect.",
+                "On a successful save, you can ask the entity up to five questions. You must ask your questions before the spell ends. The DM answers each question with one word, such as \"yes,\" \"no,\" \"maybe,\" \"never,\" \"irrelevant,\" or \"unclear\" (if the entity doesn't know the answer to the question). If a one-word answer would be misleading, the DM might instead offer a short phrase as an answer."
+            ],
 			"damageInflict": [
 				"psychic"
+			],
+			"conditionInflict": [
+				"incapacitated"
 			],
 			"savingThrow": [
 				"intelligence"
@@ -4696,52 +4699,48 @@
 				}
 			],
 			"entries": [
-				"Your touch inflicts disease. Make a melee spell attack against a creature within your reach. On a hit, the target is {@condition poisoned}.",
-				"At the end of each of the {@condition poisoned} target's turns, the target must make a Constitution saving throw. If the target succeeds on three of these saves, it is no longer {@condition poisoned}, and the spell ends. If the target fails three of these saves, the target is no longer {@condition poisoned}, but choose one of the diseases below. The target is subjected to the chosen disease for the spell's duration.",
-				"Since this spell induces a natural disease in its target, any effect that removes a disease or otherwise ameliorates a disease's effects apply to it.",
-				{
-					"type": "entries",
-					"name": "Blinding Sickness",
-					"entries": [
-						"Pain grips the creature's mind, and its eyes turn milky white. The creature has disadvantage on Wisdom checks and Wisdom saving throws and is {@condition blinded}."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Filth Fever",
-					"entries": [
-						"A raging fever sweeps through the creature's body. The creature has disadvantage on Strength checks, Strength saving throws, and attack rolls that use Strength."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Flesh Rot",
-					"entries": [
-						"The creature's flesh decays. The creature has disadvantage on Charisma checks and vulnerability to all damage."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Mindfire",
-					"entries": [
-						"The creature's mind becomes feverish. The creature has disadvantage on Intelligence checks and Intelligence saving throws, and the creature behaves as if under the effects of the {@spell confusion} spell during combat."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Seizure",
-					"entries": [
-						"The creature is overcome with shaking. The creature has disadvantage on Dexterity checks, Dexterity saving throws, and attack rolls that use Dexterity."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Slimy Doom",
-					"entries": [
-						"The creature begins to bleed uncontrollably. The creature has disadvantage on Constitution checks and Constitution saving throws. In addition, whenever the creature takes damage, it is {@condition stunned} until the end of its next turn."
-					]
-				}
-			],
+                "Your touch inflicts disease. Make a melee spell attack against a creature within your reach. On a hit, the target is {@condition poisoned}.",
+                "At the end of each of the {@condition poisoned} target's turns, the target must make a Constitution saving throw. If the target succeeds on three of these saves, it is no longer {@condition poisoned}, and the spell ends. If the target fails three of these saves, the target is no longer {@condition poisoned}, but becomes infected by a disease below. Roll a {dice d6} to determine which disease the target is infected by. The target is subjected to the chosen disease for the spell's duration.",
+                {
+                    "type": "table",
+                    "caption": "Diseases",
+                    "colLabels": [
+                        "d6",
+                        "Disease and Effect"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "1",
+                            "{@b Blinding Sickness.} Pain grips the creature's mind, and its eyes turn milky white. The creature has disadvantage on Wisdom checks and Wisdom saving throws and is {@condition blinded}."
+                        ],
+                        [
+                            "2",
+                            "{@b Filth Fever.} A raging fever sweeps through the creature's body. The creature has disadvantage on Strength checks, Strength saving throws, and attack rolls that use Strength."
+                        ],
+                        [
+                            "3",
+                            "{@b Flesh Rot.} The creature's flesh decays. The creature has disadvantage on Charisma checks and vulnerability to all damage."
+                        ],
+                        [
+                            "4",
+                            "{@b Mindfire.} The creature's mind becomes feverish. The creature has disadvantage on Intelligence checks and Intelligence saving throws, and the creature behaves as if under the effects of the {@spell Confusion} spell during combat."
+                        ],
+                        [
+                            "5",
+                            "{@b Seizure.} The creature is overcome with shaking. The creature has disadvantage on Dexterity checks, Dexterity saving throws, and attack rolls that use Dexterity."
+                        ],
+                        [
+                            "6",
+                            "{@b Slimy Doom.} The creature begins to bleed uncontrollably. The creature has disadvantage on Constitution checks and Constitution saving throws. In addition, whenever the creature takes damage, it is {@condition stunned} until the end of its next turn."
+                        ]
+                    ]
+                },
+                "Since this spell induces a natural disease in its target, any effect that removes a disease or otherwise ameliorates a disease's effects apply to it."
+            ],
 			"conditionInflict": [
 				"blinded",
 				"stunned",
@@ -4805,7 +4804,7 @@
 			"page": 227,
 			"srd": true,
 			"level": 2,
-			"school": "V",
+			"school": "C",
 			"time": [
 				{
 					"number": 1,
@@ -5092,8 +5091,7 @@
 			"range": {
 				"type": "point",
 				"distance": {
-					"type": "feet",
-					"amount": 5
+					"type": "touch"
 				}
 			},
 			"components": {
@@ -5111,18 +5109,19 @@
 				}
 			],
 			"entries": [
-				"You plant four pieces of nonmagical ammunition\u2014{@item arrow|phb|arrows} or {@item crossbow bolt|phb|crossbow bolts}\u2014in the ground within range and lay magic upon them to protect an area. Until the spell ends, whenever a creature other than you comes within 30 feet of the ammunition for the first time on a turn or ends its turn there, one piece of ammunition flies up to strike it. The creature must succeed on a Dexterity saving throw or take {@damage 1d6} piercing damage. The piece of ammunition is then destroyed. The spell ends when no ammunition remains.",
-				"When you cast this spell, you can designate any creatures you choose, and the spell ignores them."
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 3rd level or higher, the amount of ammunition that can be affected increases by two for each slot level above 2nd."
-					]
-				}
-			],
+                "You plant four pieces of nonmagical ammunition\u2014{@item arrow|phb|arrows} or {@item crossbow bolt|phb|crossbow bolts}\u2014in the ground and lay magic upon them to protect an area. Until the spell ends, whenever a creature other than you comes within 30 feet of the ammunition for the first time on a turn or ends its turn there, one piece of ammunition flies up to strike it. The creature must succeed on a Dexterity saving throw or take {@damage 1d6} magical piercing damage. The piece of ammunition is then consumed by the spell.",
+                "The spell ends early when no ammunition remains or until you remove all remaining arrows yourself. The arrows can only be removed without magic by you.",
+                "When you cast this spell, you can designate any creatures you choose, and the spell ignores them."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the amount of ammunition that can be affected increases by two for each slot level above 2nd."
+                    ]
+                }
+            ],
 			"damageInflict": [
 				"piercing"
 			],

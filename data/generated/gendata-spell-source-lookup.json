@@ -4298,7 +4298,9 @@
             "class": {
                 "PHB": {
                     "Cleric": true,
-                    "Druid": true
+                    "Druid": true,
+                    "Ranger": true,
+                    "Warlock": true
                 }
             },
             "subclass": {
