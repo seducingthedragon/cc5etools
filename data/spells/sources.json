@@ -9194,6 +9194,55 @@
                 }
             ]
         },
+		"Gift": {
+			"classVariant": [
+				{
+					"name": "Bard",
+					"source": "PHB",
+					"definedInSource": "BMT"
+				},
+				{
+					"name": "Cleric",
+					"source": "PHB",
+					"definedInSource": "BMT"
+				},
+				{
+					"name": "Druid",
+					"source": "PHB",
+					"definedInSource": "BMT"
+				},
+				{
+					"name": "Paladin",
+					"source": "PHB",
+					"definedInSource": "BMT"
+				},
+				{
+					"name": "Ranger",
+					"source": "PHB",
+					"definedInSource": "BMT"
+				},
+				{
+					"name": "Sorcerer",
+					"source": "PHB",
+					"definedInSource": "BMT"
+				},
+				{
+					"name": "Warlock",
+					"source": "PHB",
+					"definedInSource": "BMT"
+				},
+				{
+					"name": "Wizard",
+					"source": "PHB",
+					"definedInSource": "BMT"
+				},
+				{
+					"name": "Artificer",
+					"source": "TCE",
+					"definedInSource": "BMT"
+				}
+			]
+		},
 		"Hangover": {
             "classVariant": [
                 {
@@ -9404,6 +9453,45 @@
                 }
             ]
         },
+		"Retrieve": {
+			"classVariant": [
+				{
+					"name": "Bard",
+					"source": "PHB",
+					"definedInSource": "BMT"
+				},
+				{
+					"name": "Cleric",
+					"source": "PHB",
+					"definedInSource": "BMT"
+				},
+				{
+					"name": "Druid",
+					"source": "PHB",
+					"definedInSource": "BMT"
+				},
+				{
+					"name": "Sorcerer",
+					"source": "PHB",
+					"definedInSource": "BMT"
+				},
+				{
+					"name": "Warlock",
+					"source": "PHB",
+					"definedInSource": "BMT"
+				},
+				{
+					"name": "Wizard",
+					"source": "PHB",
+					"definedInSource": "BMT"
+				},
+				{
+					"name": "Artificer",
+					"source": "TCE",
+					"definedInSource": "BMT"
+				}
+			]
+		},
 		"Ride the Lightning": {
             "classVariant": [
                 {
@@ -9644,6 +9732,26 @@
                 }
             ]
         },
+		"Transparency": {
+			"classVariant": [
+				{
+					"name": "Bard",
+					"source": "PHB"
+				},
+				{
+					"name": "Sorcerer",
+					"source": "PHB"
+				},
+				{
+					"name": "Warlock",
+					"source": "PHB"
+				},
+				{
+					"name": "Wizard",
+					"source": "PHB"
+				}
+			]
+		},
 		"Vengeful Blade": {
             "classVariant": [
                 {
