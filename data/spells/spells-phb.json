@@ -4029,29 +4029,28 @@
 				}
 			],
 			"entries": [
-				"You summon fey spirits that take the form of beasts and appear in unoccupied spaces that you can see within range. Choose one of the following options for what appears:",
-				{
-					"type": "list",
-					"items": [
-						"One {@filter beast of challenge rating 2 or lower|bestiary|challenge rating=[&0;&2]|type=beast|miscellaneous=!swarm}",
-						"Two {@filter beasts of challenge rating 1 or lower|bestiary|challenge rating=[&0;&1]|type=beast|miscellaneous=!swarm}",
-						"Four {@filter beasts of challenge rating 1/2 or lower|bestiary|challenge rating=[&0;&1/2]|type=beast|miscellaneous=!swarm}",
-						"Eight {@filter beasts of challenge rating 1/4 or lower|bestiary|challenge rating=[&0;&1/4]|type=beast|miscellaneous=!swarm}"
-					]
-				},
-				"Each beast is also considered fey, and it disappears when it drops to 0 hit points or when the spell ends.",
-				"The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which has its own turns. They obey any verbal commands that you issue to them (no action required by you). If you don't issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions.",
-				"The DM has the creatures' statistics."
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 5th-level slot, three times as many with a 7th-level slot, and four times as many with a 9th-level slot."
-					]
-				}
-			],
+                "You summon beasts from your environment and they appear in unoccupied spaces that you can see within range. Choose one of the following options for what appears:",
+                {
+                    "type": "list",
+                    "items": [
+                        "One {@filter beast of challenge rating 2 or lower|bestiary|challenge rating=[&0;&2]|type=beast|miscellaneous=!swarm}",
+                        "Two {@filter beasts of challenge rating 1 or lower|bestiary|challenge rating=[&0;&1]|type=beast|miscellaneous=!swarm}",
+                        "Four {@filter beasts of challenge rating 1/2 or lower|bestiary|challenge rating=[&0;&1/2]|type=beast|miscellaneous=!swarm}",
+                        "Eight {@filter beasts of challenge rating 1/4 or lower|bestiary|challenge rating=[&0;&1/4]|type=beast|miscellaneous=!swarm}"
+                    ]
+                },
+                "A beast summoned by this spell disappears when it drops to 0 hit points or when the spell ends.",
+                "The summoned creatures are friendly to you and your companions. As a group, they share your initiative, acting on your turn. They obey any verbal commands that you issue to them (no action required by you). If you don't issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice (2xs) as many with a 5th-level slot, three (3xs) times as many with a 7th-level slot, and four (4xs) times as many with a 9th-level slot."
+                    ]
+                }
+            ],
 			"miscTags": [
 				"SGT",
 				"SMN"
@@ -4087,11 +4086,24 @@
 				}
 			],
 			"entries": [
-				"You throw a nonmagical weapon or fire a piece of nonmagical ammunition into the air to create a cone of identical weapons that shoot forward and then disappear. Each creature in a 60-foot cone must succeed on a Dexterity saving throw. A creature takes {@damage 3d8} damage on a failed save, or half as much damage on a successful one. The damage type is the same as that of the weapon or ammunition used as a component."
-			],
+                "You throw a nonmagical weapon or fire a piece of nonmagical ammunition into the air to create a cone of identical weapons that shoot forward and then disappear. Each creature in a 60-foot cone must succeed on a Dexterity saving throw. A creature takes {@damage 3d8} magical damage of the weapon or ammunition on a failed save, or half as much damage on a successful one."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "The damage increases by {@scaledamage 3d8|3-9|1d8} for each spell slot level above 3."
+                    ]
+                }
+            ],
 			"savingThrow": [
 				"dexterity"
 			],
+			"miscTags": [
+                "OBJ",
+				"SCL"
+            ],
 			"areaTags": [
 				"N"
 			]
@@ -4189,10 +4201,13 @@
 				}
 			},
 			"components": {
-				"v": true,
-				"s": true,
-				"m": "burning incense for air, soft clay for earth, sulfur and phosphorus for fire, or water and sand for water"
-			},
+                "v": true,
+                "s": true,
+                "m": {
+					"text": "a gemstone containing a mote of pure elemental air, earth, fire, or water, worth at least 50 gp",
+                "cost": 5000
+                }
+            },
 			"duration": [
 				{
 					"type": "timed",
@@ -4204,20 +4219,44 @@
 				}
 			],
 			"entries": [
-				"You call forth an elemental servant. Choose an area of air, earth, fire, or water that fills a 10-foot cube within range. An {@filter elemental of challenge rating 5 or lower|bestiary|challenge rating=[&0;&5]|type=elemental|miscellaneous=!swarm} appropriate to the area you chose appears in an unoccupied space within 10 feet of it. For example, a {@creature fire elemental} emerges from a bonfire, and an {@creature earth elemental} rises up from the ground. The elemental disappears when it drops to 0 hit points or when the spell ends.",
-				"The elemental is friendly to you and your companions for the duration. Roll initiative for the elemental, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don't issue any commands to the elemental, it defends itself from hostile creatures but otherwise takes no actions.",
-				"If your {@status concentration} is broken, the elemental doesn't disappear. Instead, you lose control of the elemental, it becomes hostile toward you and your companions, and it might attack. An uncontrolled elemental can't be dismissed by you, and it disappears 1 hour after you summoned it.",
-				"The DM has the elemental's statistics."
-			],
-			"entriesHigherLevel": [
+				"Grasping the material component of the spell, you conjure an Elemental that matches the element used to cast this spell. While your concentration lasts, the Elemental is Friendly to you and your allies and obeys all of your commands. For the duration, the Elemental uses the rules below:",
 				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 6th level or higher, the challenge rating increases by 1 for each slot level above 5th."
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Statistics",
+							"entries": [
+								"An {@filter Elemental of CR 5 or lower|bestiary|challenge rating=[&0;&5]|type=elemental|miscellaneous=!swarm} appears in an unoccupied space within range."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Combat",
+							"entries": [
+								"The Elemental shares your initiative and it acts during your turn. You can give it verbal commands (no action required). If the Elemental does not receive a command, or its commands are completed, it will only defend itself."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Control",
+							"entries": [
+								"If your concentration on this spell is broken, the Elemental remains, but is no longer under your control. For the duration of the spell, or until it is reduced to 0 hit points, the Elemental will act according to its alignment, spreading chaos and destruction wherever it can. An uncontrolled elemental can't be dismissed by you, and it disappears 1 hour after you summoned it."
+							]
+						}
 					]
 				}
 			],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 6th level or higher, the challenge rating increases by 1 for each slot level above 5th."
+                    ]
+                }
+            ],
 			"miscTags": [
 				"SMN"
 			]
@@ -4244,7 +4283,8 @@
 			},
 			"components": {
 				"v": true,
-				"s": true
+				"s": true,
+				"m": "ground mushroom, weeds, and herbs mixed with pixie dust"
 			},
 			"duration": [
 				{
@@ -4257,20 +4297,38 @@
 				}
 			],
 			"entries": [
-				"You summon a {@filter fey creature of challenge rating 6 or lower|bestiary|challenge rating=[&0;&6]|type=fey|miscellaneous=!swarm}, or a fey spirit that takes the form of a {@filter beast of challenge rating 6 or lower|bestiary|challenge rating=[&0;&6]|type=beast|miscellaneous=!swarm}. It appears in an unoccupied space that you can see within range. The fey creature disappears when it drops to 0 hit points or when the spell ends.",
-				"The fey creature is friendly to you and your companions for the duration. Roll initiative for the creature, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you), as long as they don't violate its alignment. If you don't issue any commands to the fey creature, it defends itself from hostile creatures but otherwise takes no actions.",
-				"If your {@status concentration} is broken, the fey creature doesn't disappear. Instead, you lose control of the fey creature, it becomes hostile toward you and your companions, and it might attack. An uncontrolled fey creature can't be dismissed by you, and it disappears 1 hour after you summoned it.",
-				"The DM has the fey creature's statistics."
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 7th level or higher, the challenge rating increases by 1 for each slot level above 6th."
-					]
-				}
-			],
+                "After sprinkling the material components in a circle, you cause a Fey creature to appear in an unoccupied space that you can see within range. The fey creature disappears when it drops to 0 hit points or when the spell ends.",
+                {
+                    "type": "entries",
+                    "name": "Statistics",
+                    "entries": [
+                        "When you cast the spell, you summon a {@filter Fey|bestiary|challenge rating=[&0;&6]|type=fey|miscellaneous=!swarm} of CR 6 or lower, coming through the faerie circle."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Combat",
+                    "entries": [
+                        "The Fey shares your initiative and it acts on your turn. You can give it verbal commands (no action required). If the Fey does not receive any commands, or its commands are completed, it moves and defends itself as best it can."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Control",
+                    "entries": [
+                        "If the spell ends because your concentration was broken, the Fey remains, but is no longer under your control. For the duration of the spell, or until reduced to 0 hit points, the Fey acts according to its alignment, potentially becoming hostile towards you. An uncontrolled Fey can't be dismissed by you, and they disappear 1 hour after summoned."
+                    ]
+                }
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 7th level or higher, the challenge rating increases by 1 for each slot level above 6th."
+                    ]
+                }
+            ],
 			"miscTags": [
 				"SGT",
 				"SMN"
@@ -4397,7 +4455,7 @@
 				"type": "point",
 				"distance": {
 					"type": "feet",
-					"amount": 90
+					"amount": 60
 				}
 			},
 			"components": {
@@ -4415,29 +4473,28 @@
 				}
 			],
 			"entries": [
-				"You summon elementals that appear in unoccupied spaces that you can see within range. You choose one the following options for what appears:",
-				{
-					"type": "list",
-					"items": [
-						"One {@filter elemental of challenge rating 2 or lower|bestiary|challenge rating=[&0;&2]|type=elemental|miscellaneous=!swarm}",
-						"Two {@filter elementals of challenge rating 1 or lower|bestiary|challenge rating=[&0;&1]|type=elemental|miscellaneous=!swarm}",
-						"Four {@filter elementals of challenge rating 1/2 or lower|bestiary|challenge rating=[&0;&1/2]|type=elemental|miscellaneous=!swarm}",
-						"Eight {@filter elementals of challenge rating 1/4 or lower|bestiary|challenge rating=[&0;&1/4]|type=elemental|miscellaneous=!swarm}."
-					]
-				},
-				"An elemental summoned by this spell disappears when it drops to 0 hit points or when the spell ends.",
-				"The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which has its own turns. They obey any verbal commands that you issue to them (no action required by you). If you don't issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions.",
-				"The DM has the creatures' statistics."
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 6th-level slot and three times as many with an 8th-level slot."
-					]
-				}
-			],
+                "You summon elementals that appear in unoccupied spaces that you can see within range. You choose one the following options for what appears:",
+                {
+                    "type": "list",
+                    "items": [
+                        "One {@filter elemental of challenge rating 2 or lower|bestiary|challenge rating=[&0;&2]|type=elemental|miscellaneous=!swarm}",
+                        "Two {@filter elementals of challenge rating 1 or lower|bestiary|challenge rating=[&0;&1]|type=elemental|miscellaneous=!swarm}",
+                        "Four {@filter elementals of challenge rating 1/2 or lower|bestiary|challenge rating=[&0;&1/2]|type=elemental|miscellaneous=!swarm}",
+                        "Eight {@filter elementals of challenge rating 1/4 or lower|bestiary|challenge rating=[&0;&1/4]|type=elemental|miscellaneous=!swarm}."
+                    ]
+                },
+                "An elemental summoned by this spell disappears when it drops to 0 hit points or when the spell ends.",
+                "The summoned creatures are friendly to you and your companions. As a group, they share your initiative, acting on your turn. They obey any verbal commands that you issue to them (no action required by you). If you don't issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 6th-level slot and three times as many with an 8th-level slot."
+                    ]
+                }
+            ],
 			"miscTags": [
 				"SGT",
 				"SMN"
@@ -4534,29 +4591,28 @@
 				}
 			],
 			"entries": [
-				"You summon fey creatures that appear in unoccupied spaces that you can see within range. Choose one of the following options for what appears:",
-				{
-					"type": "list",
-					"items": [
-						"One {@filter fey creature of challenge rating 2 or lower|bestiary|challenge rating=[&0;&2]|type=fey|miscellaneous=!swarm}",
-						"Two {@filter fey creatures of challenge rating 1 or lower|bestiary|challenge rating=[&0;&1]|type=fey|miscellaneous=!swarm}",
-						"Four {@filter fey creatures of challenge rating 1/2 or lower|bestiary|challenge rating=[&0;&1/2]|type=fey|miscellaneous=!swarm}",
-						"Eight {@filter fey creatures of challenge rating 1/4 or lower|bestiary|challenge rating=[&0;&1/4]|type=fey|miscellaneous=!swarm}"
-					]
-				},
-				"A summoned creature disappears when it drops to 0 hit points or when the spell ends.",
-				"The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which have their own turns. They obey any verbal commands that you issue to them (no action required by you). If you don't issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions.",
-				"The DM has the creatures' statistics."
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 6th-level slot and three times as many with an 8th-level slot."
-					]
-				}
-			],
+                "You summon fey creatures that appear in unoccupied spaces that you can see within range. Choose one of the following options for what appears:",
+                {
+                    "type": "list",
+                    "items": [
+                        "One {@filter fey creature of challenge rating 2 or lower|bestiary|challenge rating=[&0;&2]|type=fey|miscellaneous=!swarm}",
+                        "Two {@filter fey creatures of challenge rating 1 or lower|bestiary|challenge rating=[&0;&1]|type=fey|miscellaneous=!swarm}",
+                        "Four {@filter fey creatures of challenge rating 1/2 or lower|bestiary|challenge rating=[&0;&1/2]|type=fey|miscellaneous=!swarm}",
+                        "Eight {@filter fey creatures of challenge rating 1/4 or lower|bestiary|challenge rating=[&0;&1/4]|type=fey|miscellaneous=!swarm}"
+                    ]
+                },
+                "A summoned creature disappears when it drops to 0 hit points or when the spell ends.",
+                "The summoned creatures are friendly to you and your companions. As a group, they share your initiative, acting on your turn. They obey any verbal commands that you issue to them (no action required by you). If you don't issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice (2xs) as many with a 6th-level slot and three (3xs) times as many with an 8th-level slot."
+                    ]
+                }
+            ],
 			"miscTags": [
 				"SGT",
 				"SMN"
