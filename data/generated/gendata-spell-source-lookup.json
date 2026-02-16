@@ -25724,6 +25724,49 @@
                 }
             }
         },
+        "at your side": {
+            "classVariant": {
+                "PHB": {
+                    "Bard": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Cleric": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Druid": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Paladin": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Ranger": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Wizard": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    }
+                },
+                "TCE": {
+                    "Artificer": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    }
+                }
+            }
+        },
         "call of the wild": {
             "classVariant": {
                 "PHB": {
@@ -26105,6 +26148,37 @@
                 }
             }
         },
+        "nature storm": {
+            "classVariant": {
+                "PHB": {
+                    "Druid": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Ranger": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Sorcerer": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Warlock": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Wizard": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    }
+                }
+            }
+        },
         "obfuscate object": {
             "classVariant": {
                 "PHB": {
@@ -26161,6 +26235,37 @@
                         ]
                     },
                     "Sorcerer": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    }
+                }
+            }
+        },
+        "resilient friendship": {
+            "classVariant": {
+                "PHB": {
+                    "Bard": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Cleric": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Druid": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Sorcerer": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Wizard": {
                         "definedInSources": [
                             "BMT"
                         ]
@@ -26239,6 +26344,59 @@
                         ]
                     },
                     "Wizard": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    }
+                }
+            }
+        },
+        "spell signature": {
+            "classVariant": {
+                "PHB": {
+                    "Bard": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Cleric": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Druid": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Paladin": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Ranger": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Sorcerer": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Warlock": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Wizard": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    }
+                },
+                "TCE": {
+                    "Artificer": {
                         "definedInSources": [
                             "BMT"
                         ]
@@ -26422,6 +26580,37 @@
                         ]
                     },
                     "Warlock": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Wizard": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    }
+                }
+            }
+        },
+        "whelm weapon": {
+            "classVariant": {
+                "PHB": {
+                    "Bard": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Druid": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Ranger": {
+                        "definedInSources": [
+                            "BMT"
+                        ]
+                    },
+                    "Sorcerer": {
                         "definedInSources": [
                             "BMT"
                         ]

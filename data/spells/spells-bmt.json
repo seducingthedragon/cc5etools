@@ -100,6 +100,56 @@
             ]
         },
         {
+            "name": "At Your Side",
+            "source": "BMT",
+            "page": 50,
+            "level": 2,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "radius",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You and up to three other willing creatures of your choice within range form an arcane bond, which magically pulls you towards each other when moving in a forward direction. For the duration, each target's speed increases by 5 feet, and whenever an affected creature ends its turn, other targets of the spell can use their reaction to move up to half their speed in the direction of another affected creature.",
+                "When you cast this spell, choose one target, which can be yourself, to take the lead. This will be the person that the spell pulls the others towards when moving. It takes a bonus action from the person choosen as the lead to select a different target, affected by this spell, to take point without needing to recast the spell."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd."
+                    ]
+                }
+            ],
+            "miscTags": [
+                "SCT",
+                "UBA"
+            ]
+        },
+        {
         	"name": "Call of the Wild",
         	"source": "BMT",
         	"page": 50,
@@ -872,6 +922,52 @@
 				"OBJ"
 			]
         },
+        {
+            "name": "Nature Storm",
+            "source": "BMT",
+            "page": 50,
+            "level": 3,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "insect legs"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You create a chaotic cloud of any flying insects, swirling leaves, or something similar of your choice in a 20-foot-radius sphere centered on a point you choose within range. The area is {@quickref Vision and Light|PHB|2||heavily obscured}, and any resting smoke or fog in the area is dispersed.",
+                "Creatures of your choice will either be affected or not affected by the spell's effects (your choice). For the duration, the affected area is {@quickref difficult terrain||3}. When a creature attempts to leave the spell's area, it must make a Strength saving throw. On a failed save, it is pulled back to an unoccupied space closest to the center of the sphere."
+            ],
+            "savingThrow": [
+                "strength"
+            ],
+            "miscTags": [
+                "DFT",
+                "OBS"
+            ]
+        },
 		{
             "name": "Obfuscate Object",
             "source": "BMT",
@@ -1060,6 +1156,60 @@
             ]
         },
         {
+            "name": "Resilient Friendship",
+            "source": "BMT",
+            "page": 50,
+            "level": 0,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 5
+                }
+            },
+            "components": {
+                "v": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You magically assist a creature within range, granting it the benefits of the {@action Help} action. If the target you helped successfully accomplishes the task by the start of your next turn, you gain {@dice 1d4} temporary hit points, which last for 1 hour.",
+                "These temporary hit points do not stack with subsequent castings of this spell."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Cantrip Upgrade",
+                    "entries": [
+                        "The number of temporary hit points you gain increases when you reach 5th level ({@dice 1d6}), 11th level ({@dice 1d8}), and 17th level ({@dice 1d10})."
+                    ]
+                }
+            ],
+            "scalingLevelDice": {
+                "scaling": {
+                    "1": "1d4",
+                    "5": "1d6",
+                    "11": "1d8",
+                    "17": "1d10"
+                }
+            },
+            "miscTags": [
+                "ADV",
+                "SCL",
+                "THP"
+            ]
+        },
+        {
             "name": "Ride the Lightning",
             "source": "BMT",
             "page": 50,
@@ -1227,6 +1377,52 @@
             "miscTags": [
                 "SCL",
 				"UBA"
+            ]
+        },
+        {
+            "name": "Spell Signature",
+            "source": "BMT",
+            "page": 50,
+            "level": 2,
+            "school": "D",
+            "time": [
+                {
+                    "number": 10,
+                    "unit": "minute"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a rosewood match"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "meta": {
+                "ritual": true
+            },
+            "entries": [
+                "As you cast the spell you draw out the potent scents trapped within all magic. Choose a magical effect you are aware of that's within range. The effect releases a scent specific to the creature that created it. If you are familiar with the creature, you automatically know that the magical effect was created by them.",
+                "If you are not familiar with the creature, you can make an ability check using your spellcasting ability modifier and add your proficiency bonus to it. Refer to the table below to determine what information you are able to glean from the scent. When succeeding on a DC check, you also learn previous information given from lower DCs.",
+                {
+                    "type": "list",
+                    "items": [
+                        "DC 5—You learn the type of creature that created the magical effect.",
+                        "DC 10—If the creature has a class, you learn what it is.",
+                        "DC 15—You learn if the creature is affiliated with an organization.",
+                        "DC 20—You learn the name of the creature."
+                    ]
+                }
             ]
         },
 		{
@@ -1597,6 +1793,57 @@
             "miscTags": [
                 "AAD",
                 "SCL"
+            ]
+        },
+        {
+            "name": "Whelm Weapon",
+            "source": "BMT",
+            "page": 50,
+            "level": 1,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a drop of seawater"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "Up to three weapons of your choice that you can see within range become enveloped by water. Roll a {@dice d4}; for the duration, any damage dealt by the targeted weapons is reduced by the number you rolled (to a minimum of 1)."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, you can target two additional weapons for each slot level above 1st."
+                    ]
+                }
+            ],
+            "miscTags": [
+                "OBJ",
+                "SGT"
             ]
         }
 	]
