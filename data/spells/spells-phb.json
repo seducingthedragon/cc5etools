@@ -6309,11 +6309,12 @@
 				}
 			],
 			"range": {
-				"type": "point",
-				"distance": {
-					"type": "self"
-				}
-			},
+                "type": "emanation",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
 			"components": {
 				"v": true,
 				"s": true,
@@ -6402,7 +6403,7 @@
                 }
             ],
             "range": {
-                "type": "sphere",
+                "type": "emanation",
                 "distance": {
                     "type": "feet",
                     "amount": 30
@@ -7270,17 +7271,37 @@
 				}
 			],
 			"entries": [
-				"Whispering to the spirits of nature, you create one of the following effects within range:",
-				{
-					"type": "list",
-					"items": [
-						"You create a tiny, harmless sensory effect that predicts what the weather will be at your location for the next 24 hours. The effect might manifest as a golden orb for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This effect persists for 1 round.",
-						"You instantly make a flower blossom, a seed pod open, or a leaf bud bloom.",
-						"You create an instantaneous, harmless sensory effect, such as falling leaves, a puff of wind, the sound of a small animal, or the faint odor of skunk. The effect must fit in a 5-foot cube.",
-						"You instantly light or snuff out a candle, a torch, or a small campfire."
-					]
-				}
-			]
+                "Whispering to the spirits of nature, you can create one of the following effects within range or another effect not listed below that enhances the natural fauna nearby.",
+                {
+                    "type": "entries",
+                    "name": "Weather Sensor",
+                    "entries": [
+                        "You create a Tiny, harmless sensory effect that predicts what the weather will be at your location for the next 24 hours. The effect might manifest as a golden orb for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This effect persists for 1 round."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Bloom",
+                    "entries": [
+                        "You instantly make a flower blossom, a seed pod open, or a leaf bud bloom."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Sensory Effect",
+                    "entries": [
+                        "You create a harmless sensory effect, such as falling leaves, spectral dancing fairies, a gentle breeze, the sound of an animal, or the faint odor of skunk. The effect must fit in a 5-foot cube."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Fire Play",
+                    "entries": [
+                        "You light or snuff out a candle, a torch, or a campfire."
+                    ]
+                }
+            ],
+            "hasFluffImages": true
 		},
 		{
 			"name": "Earthquake",
@@ -15925,20 +15946,50 @@
 				}
 			],
 			"entries": [
-				"This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following magical effects within range:",
-				{
-					"type": "list",
-					"items": [
-						"You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.",
-						"You instantaneously light or snuff out a candle, a torch, or a small campfire.",
-						"You instantaneously clean or soil an object no larger than 1 cubic foot.",
-						"You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.",
-						"You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.",
-						"You create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn."
-					]
-				},
-				"If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action."
-			],
+                "You create a magical effect within range. Choose the effect from the options below. If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time.",
+                {
+                    "type": "entries",
+                    "name": "Sensory Effect",
+                    "entries": [
+                        "You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Fire Play",
+                    "entries": [
+                        "You instantaneously light or snuff out a candle, a torch, or a small campfire."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Clean or Soil",
+                    "entries": [
+                        "You instantaneously clean or soil an object no larger than 1 cubic foot."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Minor Sensation",
+                    "entries": [
+                        "You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Magic Mark",
+                    "entries": [
+                        "You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Minor Creation",
+                    "entries": [
+                        "You create a nonmagical trinket or an illusory image that can fit in your hand. It lasts until the end of your next turn. A trinket can deal no damage and has no monetary worth."
+                    ]
+                }
+            ],
 			"miscTags": [
 				"OBJ"
 			]
@@ -16040,64 +16091,54 @@
 				}
 			],
 			"entries": [
-				"Eight multicolored rays of light flash from your hand. Each ray is a different color and has a different power and purpose. Each creature in a 60-foot cone must make a Dexterity saving throw. For each target, roll a {@dice d8} to determine which color ray affects it.",
-				{
-					"type": "entries",
-					"name": "1-Red",
-					"entries": [
-						"The target takes {@damage 10d6} fire damage on a failed save, or half as much damage on a successful one."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "2-Orange",
-					"entries": [
-						"The target takes {@damage 10d6} acid damage on a failed save, or half as much damage on a successful one."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "3-Yellow",
-					"entries": [
-						"The target takes {@damage 10d6} lightning damage on a failed save, or half as much damage on a successful one."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "4-Green",
-					"entries": [
-						"The target takes {@damage 10d6} poison damage on a failed save, or half as much damage on a successful one."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "5-Blue",
-					"entries": [
-						"The target takes {@damage 10d6} cold damage on a failed save, or half as much damage on a successful one."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "6-Indigo",
-					"entries": [
-						"On a failed save, the target is {@condition restrained}. It must then make a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the spell ends. If it fails its save three times, it permanently turns to stone and is subjected to the {@condition petrified} condition. The successes and failures don't need to be consecutive, keep track of both until the target collects three of a kind."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "7-Violet",
-					"entries": [
-						"On a failed save, the target is {@condition blinded}. It must then make a Wisdom saving throw at the start of your next turn. A successful save ends the blindness. If it fails that save, the creature is transported to another plane of existence of the DM's choosing and is no longer {@condition blinded}. (Typically, a creature that is on a plane that isn't its home plane is banished home, while other creatures are usually cast into the Astral or Ethereal planes.)"
-					]
-				},
-				{
-					"type": "entries",
-					"name": "8-Special",
-					"entries": [
-						"The target is struck by two rays. Roll twice more, rerolling any 8."
-					]
-				}
-			],
+                "Eight multicolored rays of light flash from your hand. Each ray is a different color and has a different power and purpose. Each creature in a 60-foot cone must make a Dexterity saving throw. For each target, roll a {@dice d8} to determine which color ray affects it.",
+                {
+                    "type": "table",
+                    "caption": "Prismatic Rays",
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "colLabels": [
+                        "1d8",
+                        "Ray"
+                    ],
+                    "rows": [
+                        [
+                            "1",
+                            "{@b Red.} {@i Failed Save:} {@damage 10d6} Fire damage. {@i Successful Save:} Half as much damage."
+                        ],
+                        [
+                            "2",
+                            "{@b Orange.} {@i Failed Save:} {@damage 10d6} Acid damage. {@i Successful Save:} Half as much damage."
+                        ],
+                        [
+                            "3",
+                            "{@b Yellow.} {@i Failed Save:} {@damage 10d6} Lightning damage. {@i Successful Save:} Half as much damage."
+                        ],
+                        [
+                            "4",
+                            "{@b Green.} {@i Failed Save:} {@damage 10d6} Poison damage. {@i Successful Save:} Half as much damage."
+                        ],
+                        [
+                            "5",
+                            "{@b Blue.} {@i Failed Save:} {@damage 10d6} Cold damage. {@i Successful Save:} Half as much damage."
+                        ],
+                        [
+                            "6",
+                            "{@b Indigo.} {@i Failed Save:} The target has the {@condition Restrained} condition and makes a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the condition ends. If it fails three times, it has the {@condition Petrified} condition until it is freed by an effect like the {@spell Restoration} spell cast as a level 5 spell. The successes and failures needn't be consecutive; keep track of both until the target collects three of a kind."
+                        ],
+                        [
+                            "7",
+                            "{@b Violet.} {@i Failed Save:} The target has the {@condition Blinded} condition and makes a Wisdom saving throw at the start of your next turn. On a successful save, the condition ends. On a failed save, the creature is transported to another plane of existence of the DM's choosing and is no longer {@condition blinded}. {@i (Typically, a creature that is on a plane that isn't its home plane is banished home, while other creatures are usually cast into the Astral or Ethereal planes. Overall, DM's choice.)}"
+                        ],
+                        [
+                            "8",
+                            "{@b Special.} The target is struck by two rays. Roll twice, rerolling any 8."
+                        ]
+                    ]
+                }
+            ],
 			"damageInflict": [
 				"acid",
 				"cold",
@@ -16157,61 +16198,53 @@
 				}
 			],
 			"entries": [
-				"A shimmering, multicolored plane of light forms a vertical opaque wall\u2014up to 90 feet long, 30 feet high, and 1 inch thick\u2014centered on a point you can see within range. Alternatively, you can shape the wall into a sphere up to 30 feet in diameter centered on a point you choose within range. The wall remains in place for the duration. If you position the wall so that it passes through a space occupied by a creature, the spell fails, and your action and the spell slot are wasted.",
-				"The wall sheds bright light out to a range of 100 feet and dim light for an additional 100 feet. You and creatures you designate at the time you cast the spell can pass through and remain near the wall without harm. If another creature that can see the wall moves to within 20 feet of it or starts its turn there, the creature must succeed on a Constitution saving throw or become {@condition blinded} for 1 minute.",
-				"The wall consists of seven layers, each with a different color. When a creature attempts to reach into or pass through the wall, it does so one layer at a time through all the wall's layers. As it passes or reaches through each layer, the creature must make a Dexterity saving throw or be affected by that layer's properties as described below.",
-				"The wall can be destroyed, also one layer at a time, in order from red to violet, by means specific to each layer. Once a layer is destroyed, it remains so for the duration of the spell. An {@spell antimagic field} has no effect on a prismatic wall.",
-				{
-					"type": "entries",
-					"name": "Red",
-					"entries": [
-						"The creature takes {@damage 10d6} fire damage on a failed save, or half as much damage on a successful one. While this layer is in place, nonmagical ranged attacks can't pass through the wall. The layer can be destroyed by dealing at least 25 cold damage to it."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Orange",
-					"entries": [
-						"The creature takes {@damage 10d6} acid damage on a failed save, or half as much damage on a successful one. While this layer is in place, magical ranged attacks can't pass through the wall. The layer is destroyed by a strong wind."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Yellow",
-					"entries": [
-						"The creature takes {@damage 10d6} lightning damage on a failed save, or half as much damage on a successful one. This layer can be destroyed by dealing at least 60 force damage to it."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Green",
-					"entries": [
-						"The creature takes {@damage 10d6} poison damage on a failed save, or half as much damage on a successful one. A {@spell passwall} spell, or another spell of equal or greater level that can open a portal on a solid surface, destroys this layer."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Blue",
-					"entries": [
-						"The creature takes {@damage 10d6} cold damage on a failed save, or half as much damage on a successful one. This layer can be destroyed by dealing at least 25 fire damage to it."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Indigo",
-					"entries": [
-						"On a failed save, the creature is {@condition restrained}. It must then make a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the spell ends. If it fails its save three times, it permanently turns to stone and is subjected to the {@condition petrified} condition. The successes and failures don't need to be consecutive; keep track of both until the creature collects three of a kind.",
-						"While this layer is in place, spells can't be cast through the wall. The layer is destroyed by bright light shed by a {@spell daylight} spell or a similar spell of equal or higher level."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Violet",
-					"entries": [
-						"On a failed save, the creature is {@condition blinded}. It must then make a Wisdom saving throw at the start of your next turn. A successful save ends the blindness. If it fails that save, the creature is transported to another plane of the DM's choosing and is no longer {@condition blinded}. (Typically, a creature that is on a plane that isn't its home plane is banished home, while other creatures are usually cast into the Astral or Ethereal planes.) This layer is destroyed by a {@spell dispel magic} spell or a similar spell of equal or higher level that can end spells and magical effects."
-					]
-				}
-			],
+                "A shimmering, multicolored plane of light forms a vertical opaque wall\u2014up to 90 feet long, 30 feet high, and 1 inch thick\u2014centered on a point you can see within range. Alternatively, you can shape the wall into a sphere up to 30 feet in diameter centered on a point you choose within range. The wall remains in place for the duration. If you position the wall so that it passes through a space occupied by a creature, the spell fails, and your action and the spell slot are wasted.",
+                "The wall sheds bright light out to a range of 100 feet and dim light for an additional 100 feet. You and creatures you designate at the time you cast the spell can pass through and remain near the wall without harm. If another creature that can see the wall moves to within 20 feet of it or starts its turn there, the creature must succeed on a Constitution saving throw or become {@condition blinded} for 1 minute.",
+                "The wall consists of seven layers, each with a different color. When a creature attempts to reach into or pass through the wall, it does so one layer at a time through all the wall's layers. As it passes or reaches through each layer, the creature must make a Dexterity saving throw or be affected by that layer's properties as described below.",
+                "The wall can be destroyed, also one layer at a time, in order from red to violet, by means specific to each layer. Once a layer is destroyed, it remains so for the duration of the spell. An {@spell Antimagic Field} has no effect on a prismatic wall.",
+                {
+                    "type": "table",
+                    "caption": "Prismatic Layers",
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "colLabels": [
+                        "Order",
+                        "Effects"
+                    ],
+                    "rows": [
+                        [
+                            "1",
+                            "{@b Red.} {@i Failed Save:} {@damage 12d6} Fire damage. {@i Successful Save:} Half as much damage. {@i Additional Effects}: While this layer is in place, nonmagical ranged attacks can't pass through the wall. The layer can be destroyed by dealing at least 25 cold damage to it."
+                        ],
+                        [
+                            "2",
+                            "{@b Orange.} {@i Failed Save:} {@damage 12d6} Acid damage. {@i Successful Save:} Half as much damage. {@i Additional Effects:} While this layer is in place, magical ranged attacks can't pass through the wall. The layer is destroyed by a strong wind (such as the one created by {@spell Gust of Wind})."
+                        ],
+                        [
+                            "3",
+                            "{@b Yellow.} {@i Failed Save:} {@damage 12d6} Lightning damage. {@i Successful Save:} Half as much damage. {@i Additional Effects:} The layer is destroyed if it takes at least 60 Force damage."
+                        ],
+                        [
+                            "4",
+                            "{@b Green.} {@i Failed Save:} {@damage 12d6} Poison damage. {@i Successful Save:} Half as much damage. {@i Additional Effects:} A {@spell Passwall} spell, or another spell of equal or greater level that can open a portal on a solid surface, destroys this layer."
+                        ],
+                        [
+                            "5",
+                            "{@b Blue.} {@i Failed Save:} {@damage 12d6} Cold damage. {@i Successful Save:} Half as much damage. {@i Additional Effects:} The layer is destroyed if it takes at least 25 Fire damage."
+                        ],
+                        [
+                            "6",
+                            "{@b Indigo.} {@i Failed Save:} The target has the {@condition Restrained} condition and makes a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the condition ends. If it fails three times, it has the {@condition Petrified} condition until it is freed by an effect like the {@spell Restoration} spell cast as a level 5 spell. The successes and failures needn't be consecutive; keep track of both until the target collects three of a kind. {@i Additional Effects:} Spells can't be cast through this layer, which is destroyed by bright light shed by the {@spell Daylight} spell."
+                        ],
+                        [
+                            "7",
+                            "{@b Violet.} {@i Failed Save:} The target has the {@condition Blinded|XPHB} condition and makes a Wisdom saving throw at the start of your next turn. On a successful save, the condition ends. On a failed save, the condition ends, and the creature teleports to another plane of existence (Typically, a creature that is on a plane that isn't its home plane is banished home, while other creatures are usually cast into the Astral or Ethereal planes. DM's Choice). {@i Additional Effects:} This layer is destroyed by {@spell Dispel Magic} or a similar spell of equal or higher level that can end spells and magical effects."
+                        ]
+                    ]
+                }
+            ],
 			"damageInflict": [
 				"acid",
 				"cold",
@@ -20223,20 +20256,53 @@
 				}
 			],
 			"entries": [
-				"You manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical effects within range:",
-				{
-					"type": "list",
-					"items": [
-						"Your voice booms up to three times as loud as normal for 1 minute.",
-						"You cause flames to flicker, brighten, dim, or change color for 1 minute.",
-						"You cause harmless tremors in the ground for 1 minute.",
-						"You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers.",
-						"You instantaneously cause an unlocked door or window to fly open or slam shut.",
-						"You alter the appearance of your eyes for 1 minute."
-					]
-				},
-				"If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action."
-			]
+                "You manifest a minor wonder within range. You create one of the effects below within range. If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time.",
+                {
+                    "type": "entries",
+                    "name": "Altered Eyes",
+                    "entries": [
+                        "You alter the appearance of your eyes for 1 minute."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Booming Voice",
+                    "entries": [
+                        "Your voice booms up to three times as loud as normal for 1 minute. For the duration, you have Advantage on Charisma ({@skill Intimidation}) checks."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Fire Play",
+                    "entries": [
+                        "You cause flames to flicker, brighten, dim, or change color for 1 minute."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Invisible Hand",
+                    "entries": [
+                        "You instantaneously cause an unlocked door or window to fly open or slam shut."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Phantom Sound",
+                    "entries": [
+                        "You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Tremors",
+                    "entries": [
+                        "You cause harmless tremors in the ground for 1 minute."
+                    ]
+                }
+            ],
+            "miscTags": [
+                "ADV"
+            ]
 		},
 		{
 			"name": "Thorn Whip",
