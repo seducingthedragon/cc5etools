@@ -6656,7 +6656,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "holy water or powdered silver and iron"
+				"m": "powered silver and iron in holy water"
 			},
 			"duration": [
 				{
@@ -9350,7 +9350,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a pinch of lime, water, and earth"
+				"m": "a cockatrice feather"
 			},
 			"duration": [
 				{
@@ -11039,7 +11039,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a stone, a twig, and a bit of green plant"
+				"m": "a mushroom"
 			},
 			"duration": [
 				{
@@ -12066,7 +12066,7 @@
 			"components": {
 				"s": true,
 				"m": {
-					"text": "a lead-based ink worth at least 10 gp, which the spell consumes",
+					"text": "ink worth 10+ GP, which the spell consumes",
 					"cost": 1000,
 					"consume": true
 				}
@@ -17945,7 +17945,7 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "a powder composed of diamond, emerald, ruby, and sapphire dust worth at least 5,000 gp, which the spell consumes",
+					"text": "gem dust worth 5,000+ GP, which the spell consumes",
 					"cost": 500000,
 					"consume": true
 				}
@@ -19205,7 +19205,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "soft clay, which must be worked into roughly the desired shape of the stone object"
+				"m": "soft clay"
 			},
 			"duration": [
 				{
