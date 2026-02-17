@@ -2269,6 +2269,10 @@
 				{
 					"name": "Ranger",
 					"source": "PHB"
+				},
+				{
+					"name": "Artificer",
+					"source": "TCE"
 				}
 			]
 		},
@@ -2333,6 +2337,10 @@
 		},
 		"Evard's Black Tentacles": {
 			"class": [
+				{
+					"name": "Warlock",
+					"source": "PHB"
+				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -2861,6 +2869,10 @@
 					"source": "PHB"
 				},
 				{
+					"name": "Paladin",
+					"source": "PHB"
+				},
+				{
 					"name": "Ranger",
 					"source": "PHB"
 				},
@@ -3122,11 +3134,19 @@
 		"Guidance": {
 			"class": [
 				{
+					"name": "Bard",
+					"source": "PHB"
+				},
+				{
 					"name": "Cleric",
 					"source": "PHB"
 				},
 				{
 					"name": "Druid",
+					"source": "PHB"
+				},
+				{
+					"name": "Wizard",
 					"source": "PHB"
 				},
 				{
@@ -3178,6 +3198,14 @@
 			"class": [
 				{
 					"name": "Cleric",
+					"source": "PHB"
+				},
+				{
+					"name": "Paladin",
+					"source": "PHB"
+				},
+				{
+					"name": "Warlock",
 					"source": "PHB"
 				}
 			]
@@ -3306,6 +3334,10 @@
 				{
 					"name": "Paladin",
 					"source": "PHB"
+				},
+				{
+					"name": "Artificer",
+					"source": "TCE"
 				}
 			]
 		},
@@ -3623,6 +3655,10 @@
 					"source": "PHB"
 				},
 				{
+					"name": "Ranger",
+					"source": "PHB"
+				},
+				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -3673,6 +3709,10 @@
 				{
 					"name": "Ranger",
 					"source": "PHB"
+				},
+				{
+					"name": "Artificer",
+					"source": "TCE"
 				}
 			]
 		},

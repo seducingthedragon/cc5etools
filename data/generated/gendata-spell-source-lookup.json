@@ -6812,6 +6812,9 @@
             "class": {
                 "PHB": {
                     "Ranger": true
+                },
+                "TCE": {
+                    "Artificer": true
                 }
             },
             "subclass": {
@@ -6948,6 +6951,7 @@
         "evard's black tentacles": {
             "class": {
                 "PHB": {
+                    "Warlock": true,
                     "Wizard": true
                 }
             },
@@ -8407,6 +8411,7 @@
                     "Bard": true,
                     "Cleric": true,
                     "Druid": true,
+                    "Paladin": true,
                     "Ranger": true
                 },
                 "TCE": {
@@ -9209,8 +9214,10 @@
         "guidance": {
             "class": {
                 "PHB": {
+                    "Bard": true,
                     "Cleric": true,
-                    "Druid": true
+                    "Druid": true,
+                    "Wizard": true
                 },
                 "TCE": {
                     "Artificer": true
@@ -9488,7 +9495,9 @@
         "hallow": {
             "class": {
                 "PHB": {
-                    "Cleric": true
+                    "Cleric": true,
+                    "Paladin": true,
+                    "Warlock": true
                 }
             },
             "subclass": {
@@ -9884,6 +9893,9 @@
                 "PHB": {
                     "Bard": true,
                     "Paladin": true
+                },
+                "TCE": {
+                    "Artificer": true
                 }
             },
             "subclass": {
@@ -10966,6 +10978,7 @@
             "class": {
                 "PHB": {
                     "Bard": true,
+                    "Ranger": true,
                     "Wizard": true
                 }
             },
@@ -11234,6 +11247,9 @@
             "class": {
                 "PHB": {
                     "Ranger": true
+                },
+                "TCE": {
+                    "Artificer": true
                 }
             }
         },
