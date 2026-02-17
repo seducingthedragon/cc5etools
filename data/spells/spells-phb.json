@@ -6213,11 +6213,12 @@
 				}
 			],
 			"range": {
-				"type": "point",
-				"distance": {
-					"type": "self"
-				}
-			},
+                "type": "emanation",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
 			"components": {
 				"v": true,
 				"s": true
@@ -6233,7 +6234,7 @@
 				}
 			],
 			"entries": [
-				"For the duration, you know if there is an aberration, celestial, elemental, fey, fiend, or undead within 30 feet of you, as well as where the creature is located. Similarly, you know if there is a place or object within 30 feet of you that has been magically consecrated or desecrated.",
+				"For the duration, you know if there is an aberration, celestial, elemental, fey, fiend, or undead within 30 feet of you, as well as where the creature is located. Similarly, you know if there is a place or object within 30 feet of you that has been magically consecrated or desecrated, such as an active {@spell Hallow} spell with its location.",
 				"The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt."
 			],
 			"affectsCreatureType": [
@@ -6266,11 +6267,12 @@
 				}
 			],
 			"range": {
-				"type": "point",
-				"distance": {
-					"type": "self"
-				}
-			},
+                "type": "emanation",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
 			"components": {
 				"v": true,
 				"s": true
@@ -6460,7 +6462,7 @@
 			"entries": [
 				"You teleport yourself from your current location to any other spot within range. You arrive at exactly the spot desired. It can be a place you can see, one you can visualize, or one you can describe by stating distance and direction, such as \"200 feet straight downward\" or \"upward to the northwest at a 45-degree angle, 300 feet.\"",
 				"You can bring along objects as long as their weight doesn't exceed what you can carry. You can also bring one willing creature of your size or smaller who is carrying gear up to its carrying capacity. The creature must be within 5 feet of you when you cast this spell.",
-				"If you would arrive in a place already occupied by an object or a creature, you and any creature traveling with you each take {@damage 4d6} force damage, and the spell fails to teleport you."
+				"If you would arrive in a place already occupied by an object or a creature, you and any creature traveling with you each take {@damage 4d6} force damage as you both are forced to a nearby unoccupied spot."
 			],
 			"damageInflict": [
 				"force"
@@ -9478,7 +9480,7 @@
 				}
 			],
 			"entries": [
-				"You create a 20-foot-radius sphere of fog centered on a point within range. The sphere spreads around corners, and its area is {@quickref Vision and Light|PHB|2||heavily obscured}. It lasts for the duration or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it."
+				"You create a 20-foot-radius sphere of fog centered on a point within range. The sphere spreads around corners, and its area is {@quickref Vision and Light|PHB|2||heavily obscured}. It lasts for the duration or until a wind of moderate or greater speed (at least 10 miles per hour or one created by {@spell Gust of Wind} disperses it."
 			],
 			"entriesHigherLevel": [
 				{
@@ -11443,13 +11445,14 @@
 			],
 			"entries": [
 				"You bring forth a great feast, including magnificent food and drink. The feast takes 1 hour to consume and disappears at the end of that time, and the beneficial effects don't set in until this hour is over. Up to twelve creatures can partake of the feast.",
-				"A creature that partakes of the feast gains several benefits. The creature is cured of all diseases and poison, becomes immune to poison and being {@condition frightened}, and makes all Wisdom saving throws with advantage. Its hit point maximum also increases by {@dice 2d10}, and it gains the same number of hit points. These benefits last for 24 hours."
+				"A creature that partakes of the feast gains several benefits. The creature is cured of all diseases and poison, becomes immune to the {@condition poisoned} condition and being {@condition frightened}, immune to poison damage, and makes all Wisdom saving throws with advantage. Its hit point maximum also increases by {@dice 2d10}, and it gains the same number of hit points. These benefits last for 24 hours."
 			],
 			"damageImmune": [
 				"poison"
 			],
 			"conditionImmune": [
-				"frightened"
+				"frightened",
+				"poisoned"
 			],
 			"miscTags": [
 				"ADV",
@@ -21828,9 +21831,22 @@
 				}
 			],
 			"entries": [
-				"You and up to five willing creatures within 5 feet of you instantly teleport to a previously designated sanctuary. You and any creatures that teleport with you appear in the nearest unoccupied space to the spot you designated when you prepared your sanctuary (see below). If you cast this spell without first preparing a sanctuary, the spell has no effect.",
-				"You must designate a sanctuary by casting this spell within a location, such as a temple, dedicated to or strongly linked to your deity. If you attempt to cast the spell in this manner in an area that isn't dedicated to your deity, the spell has no effect."
-			],
+                "You and up to five willing creatures within 5 feet of you instantly teleport to a previously designated sanctuary. You and any creatures that teleport with you appear in the nearest unoccupied space to the spot you designated when you prepared your sanctuary.",
+                {
+                    "type": "entries",
+                    "name": "Designating a Sanctuary",
+                    "entries": [
+                        "In order to designate a sanctuary, you must first cast this spell at the location you want to designate, such as a temple. Designating a location will not have any spell effects."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Removing a Sanctuary",
+                    "entries": [
+                        "In order to remove a designation from a sanctuary location, you must cast this spell at the location of your assigned sanctuary. The next time you cast this spell, it will treat that location as your newly assigned sanctuary."
+                    ]
+                }
+            ],
 			"miscTags": [
 				"PS",
 				"TP"
