@@ -18204,6 +18204,7 @@
             "class": {
                 "PHB": {
                     "Bard": true,
+                    "Druid": true,
                     "Warlock": true,
                     "Wizard": true
                 }
