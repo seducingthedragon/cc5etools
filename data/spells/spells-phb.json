@@ -7436,8 +7436,7 @@
 					"duration": {
 						"type": "hour",
 						"amount": 1
-					},
-					"concentration": true
+					}
 				}
 			],
 			"entries": [
@@ -19059,7 +19058,8 @@
 					"duration": {
 						"type": "minute",
 						"amount": 1
-					}
+					},
+					"concentration": true
 				}
 			],
 			"entries": [
