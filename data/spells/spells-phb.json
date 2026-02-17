@@ -5827,7 +5827,7 @@
 				}
 			],
 			"level": 0,
-			"school": "V",
+			"school": "C",
 			"time": [
 				{
 					"number": 1,
@@ -5878,7 +5878,7 @@
 				}
 			],
 			"level": 2,
-			"school": "V",
+			"school": "C",
 			"time": [
 				{
 					"number": 1,
@@ -6581,7 +6581,7 @@
 			"srd": true,
 			"basicRules": true,
 			"level": 6,
-			"school": "T",
+			"school": "V",
 			"time": [
 				{
 					"number": 1,
@@ -10344,7 +10344,7 @@
 			"page": 246,
 			"srd": true,
 			"level": 1,
-			"school": "T",
+			"school": "C",
 			"time": [
 				{
 					"number": 1,
@@ -11163,7 +11163,7 @@
 			"srd": true,
 			"basicRules": true,
 			"level": 6,
-			"school": "V",
+			"school": "A",
 			"time": [
 				{
 					"number": 1,
@@ -11233,7 +11233,7 @@
 				}
 			],
 			"level": 1,
-			"school": "V",
+			"school": "A",
 			"time": [
 				{
 					"number": 1,
@@ -12201,7 +12201,7 @@
 			"page": 253,
 			"srd": true,
 			"level": 8,
-			"school": "C",
+			"school": "V",
 			"time": [
 				{
 					"number": 1,
@@ -13621,7 +13621,7 @@
 			"srd": true,
 			"basicRules": true,
 			"level": 9,
-			"school": "V",
+			"school": "A",
 			"time": [
 				{
 					"number": 1,
@@ -19753,7 +19753,7 @@
 			"page": 280,
 			"srd": true,
 			"level": 5,
-			"school": "T",
+			"school": "V",
 			"time": [
 				{
 					"number": 1,
@@ -19821,7 +19821,7 @@
 			"source": "PHB",
 			"page": 281,
 			"level": 8,
-			"school": "V",
+			"school": "D",
 			"time": [
 				{
 					"number": 1,
@@ -21198,7 +21198,7 @@
 			"srd": true,
 			"basicRules": true,
 			"level": 5,
-			"school": "V",
+			"school": "T",
 			"time": [
 				{
 					"number": 1,
