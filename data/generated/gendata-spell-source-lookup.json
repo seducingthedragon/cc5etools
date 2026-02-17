@@ -13286,6 +13286,7 @@
         "otiluke's resilient sphere": {
             "class": {
                 "PHB": {
+                    "Sorcerer": true,
                     "Wizard": true
                 },
                 "TCE": {
@@ -13524,6 +13525,7 @@
         "phantasmal killer": {
             "class": {
                 "PHB": {
+                    "Warlock": true,
                     "Wizard": true
                 }
             },
@@ -14275,6 +14277,7 @@
         "prismatic wall": {
             "class": {
                 "PHB": {
+                    "Sorcerer": true,
                     "Wizard": true
                 }
             },
@@ -15104,8 +15107,10 @@
         "resistance": {
             "class": {
                 "PHB": {
+                    "Bard": true,
                     "Cleric": true,
-                    "Druid": true
+                    "Druid": true,
+                    "Wizard": true
                 },
                 "TCE": {
                     "Artificer": true
@@ -16460,7 +16465,11 @@
                 "PHB": {
                     "Bard": true,
                     "Sorcerer": true,
+                    "Warlock": true,
                     "Wizard": true
+                },
+                "TCE": {
+                    "Artificer": true
                 }
             },
             "subclass": {
@@ -18637,6 +18646,7 @@
         "wall of force": {
             "class": {
                 "PHB": {
+                    "Sorcerer": true,
                     "Wizard": true
                 }
             },
@@ -19082,6 +19092,9 @@
                     "Sorcerer": true,
                     "Warlock": true,
                     "Wizard": true
+                },
+                "TCE": {
+                    "Artificer": true
                 }
             },
             "subclass": {

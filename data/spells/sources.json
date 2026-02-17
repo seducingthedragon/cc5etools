@@ -4342,6 +4342,10 @@
 		"Otiluke's Resilient Sphere": {
 			"class": [
 				{
+					"name": "Sorcerer",
+					"source": "PHB"
+				},
+				{
 					"name": "Wizard",
 					"source": "PHB"
 				},
@@ -4401,6 +4405,10 @@
 		},
 		"Phantasmal Killer": {
 			"class": [
+				{
+					"name": "Warlock",
+					"source": "PHB"
+				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -4697,6 +4705,10 @@
 		"Prismatic Wall": {
 			"class": [
 				{
+					"name": "Sorcerer",
+					"source": "PHB"
+				},
+				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -4958,11 +4970,19 @@
 		"Resistance": {
 			"class": [
 				{
+					"name": "Bard",
+					"source": "PHB"
+				},
+				{
 					"name": "Cleric",
 					"source": "PHB"
 				},
 				{
 					"name": "Druid",
+					"source": "PHB"
+				},
+				{
+					"name": "Wizard",
 					"source": "PHB"
 				},
 				{
@@ -5321,8 +5341,16 @@
 					"source": "PHB"
 				},
 				{
+					"name": "Warlock",
+					"source": "PHB"
+				},
+				{
 					"name": "Wizard",
 					"source": "PHB"
+				},
+				{
+					"name": "Artificer",
+					"source": "TCE"
 				}
 			]
 		},
@@ -6026,6 +6054,10 @@
 		"Wall of Force": {
 			"class": [
 				{
+					"name": "Sorcerer",
+					"source": "PHB"
+				},
+				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -6206,6 +6238,10 @@
 				{
 					"name": "Wizard",
 					"source": "PHB"
+				},
+				{
+					"name": "Artificer",
+					"source": "TCE"
 				}
 			]
 		},
