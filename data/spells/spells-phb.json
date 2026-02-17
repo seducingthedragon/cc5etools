@@ -8524,7 +8524,7 @@
 				}
 			],
 			"entries": [
-				"Bolstering yourself with a necromantic facsimile of life, you gain {@dice 1d4 + 4} temporary hit points for the duration."
+				"Bolstering yourself with a necromantic facsimile of life, you gain {@dice 2d4 + 4} temporary hit points for the duration."
 			],
 			"entriesHigherLevel": [
 				{
@@ -9169,7 +9169,7 @@
 				}
 			],
 			"entries": [
-				"A vertical column of divine fire roars down from the heavens in a location you specify. Each creature in a 10-foot-radius, 40-foot-high cylinder centered on a point within range must make a Dexterity saving throw. A creature takes {@damage 4d6} fire damage and {@damage 4d6} radiant damage on a failed save, or half as much damage on a successful one."
+				"A vertical column of divine fire roars down from the heavens in a location you specify. Each creature in a 10-foot-radius, 40-foot-high cylinder centered on a point within range must make a Dexterity saving throw. A creature takes {@damage 5d6} fire damage and {@damage 5d6} radiant damage on a failed save, or half as much damage on a successful one."
 			],
 			"entriesHigherLevel": [
 				{
@@ -11866,7 +11866,8 @@
 				}
 			],
 			"entries": [
-				"You choose a creature you can see within range and mystically mark it as your quarry. Until the spell ends, you deal an extra {@damage 1d6} damage to the target whenever you hit it with a weapon attack, and you have advantage on any Wisdom ({@skill Perception}) or Wisdom ({@skill Survival}) check you make to find it. If the target drops to 0 hit points before this spell ends, you can use a bonus action on a subsequent turn of yours to mark a new creature."
+				"You choose a creature you can see within range and mystically mark it as your quarry. Until the spell ends, you deal an extra {@damage 1d6} Force damage to the target whenever you hit it with an attack roll, and you have advantage on any Wisdom ({@skill Perception}) or Wisdom ({@skill Survival}) check you make to find it.", 
+				"If the target drops to 0 hit points before this spell ends, you can use a bonus action on a subsequent turn of yours to mark a new creature."
 			],
 			"entriesHigherLevel": [
 				{
@@ -11877,6 +11878,9 @@
 					]
 				}
 			],
+			"damageInflict": [
+                "force"
+            ],
 			"miscTags": [
 				"AAD",
 				"ADV",
@@ -11968,7 +11972,7 @@
 				}
 			],
 			"entries": [
-				"A hail of rock-hard ice pounds to the ground in a 20-foot-radius, 40-foot-high cylinder centered on a point within range. Each creature in the cylinder must make a Dexterity saving throw. A creature takes {@damage 2d8} bludgeoning damage and {@damage 4d6} cold damage on a failed save, or half as much damage on a successful one.",
+				"A hail of rock-hard ice pounds to the ground in a 20-foot-radius, 40-foot-high cylinder centered on a point within range. Each creature in the cylinder must make a Dexterity saving throw. A creature takes {@damage 2d10} bludgeoning damage and {@damage 4d6} cold damage on a failed save, or half as much damage on a successful one.",
 				"Hailstones turn the storm's area of effect into {@quickref difficult terrain||3} until the end of your next turn."
 			],
 			"entriesHigherLevel": [
@@ -11976,7 +11980,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 5th level or higher, the bludgeoning damage increases by {@scaledamage 2d8|4-9|1d8} for each slot level above 4th."
+						"When you cast this spell using a spell slot of 5th level or higher, the bludgeoning damage increases by {@scaledamage 2d10|4-9|1d10} for each slot level above 4th."
 					]
 				}
 			],
@@ -14495,10 +14499,10 @@
 			"entries": [
 				"You conjure a phantom watchdog in an unoccupied space that you can see within range, where it remains for the duration, until you dismiss it as an action, or until you move more than 100 feet away from it.",
 				"The hound is {@condition invisible} to all creatures except you and can't be harmed. When a Small or larger creature comes within 30 feet of it without first speaking the password that you specify when you cast this spell, the hound starts barking loudly. The hound sees {@condition invisible} creatures and can see into the Ethereal Plane. It ignores illusions.",
-				"At the start of each of your turns, the hound attempts to bite one creature within 5 feet of it that is hostile to you. The hound's attack bonus is equal to your spellcasting ability modifier + your proficiency bonus. On a hit, it deals {@damage 4d8} piercing damage."
+				"At the start of each of your turns, the hound attempts to bite one creature within 5 feet of it that is hostile to you. The hound's attack bonus is equal to your spellcasting ability modifier + your proficiency bonus. On a hit, it deals {@damage 4d8} force damage."
 			],
 			"damageInflict": [
-				"piercing"
+				"force"
 			],
 			"miscTags": [
 				"SGT"
@@ -21659,7 +21663,7 @@
 			],
 			"entries": [
 				"A wall of strong wind rises from the ground at a point you choose within range. You can make the wall up to 50 feet long, 15 feet high, and 1 foot thick. You can shape the wall in any way you choose so long as it makes one continuous path along the ground. The wall lasts for the duration.",
-				"When the wall appears, each creature within its area must make a Strength saving throw. A creature takes {@damage 3d8} bludgeoning damage on a failed save, or half as much damage on a successful one.",
+				"When the wall appears, each creature within its area must make a Strength saving throw. A creature takes {@damage 4d8} bludgeoning damage on a failed save, or half as much damage on a successful one.",
 				"The strong wind keeps fog, smoke, and other gases at bay. Small or smaller flying creatures or objects can't pass through the wall. Loose, lightweight materials brought into the wall fly upward. Arrows, bolts, and other ordinary projectiles launched at targets behind the wall are deflected upward and automatically miss. (Boulders hurled by giants or siege engines, and similar projectiles, are unaffected.) Creatures in {@spell gaseous form} can't pass through it."
 			],
 			"damageInflict": [
