@@ -7933,10 +7933,19 @@
 				}
 			],
 			"entries": [
-				"Squirming, ebony tentacles fill a 20-foot square on ground that you can see within range. For the duration, these tentacles turn the ground in the area into {@quickref difficult terrain||3}.",
-				"When a creature enters the affected area for the first time on a turn or starts its turn there, the creature must succeed on a Dexterity saving throw or take {@damage 3d6} bludgeoning damage and be {@condition restrained} by the tentacles until the spell ends. A creature that starts its turn in the area and is already {@condition restrained} by the tentacles takes {@damage 3d6} bludgeoning damage.",
-				"A creature {@condition restrained} by the tentacles can use its action to make a Strength or Dexterity check (its choice) against your spell save DC. On a success, it frees itself."
-			],
+                "Squirming, ebony tentacles fill a 20-foot square on ground that you can see within range. For the duration, these tentacles turn the ground in the area into {@quickref difficult terrain||3}.",
+                "When a creature enters the affected area for the first time on a turn or starts its turn there, as well as those present when you first cast this spell, the creatures must succeed on a Dexterity saving throw or take {@damage 3d6} bludgeoning damage and be {@condition restrained} by the tentacles until the spell ends. A creature that is already {@condition restrained} by the tentacles immediately takes {@damage 3d6} bludgeoning damage at the start of its turn.",
+                "A creature {@condition restrained} by the tentacles can use its action to make a Strength or Dexterity check (its choice) against your spell save DC. On a success, it frees itself."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 5th level or higher, both instances of damage from this spell increase by {@scaledamage 3d6|4-9|1d6} for each slot level above 4th."
+                    ]
+                }
+            ],
 			"damageInflict": [
 				"bludgeoning"
 			],
@@ -15153,7 +15162,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "ashes from a burned leaf of mistletoe and a sprig of spruce"
+				"m": "ashes from burned mistletoe"
 			},
 			"duration": [
 				{
@@ -15166,8 +15175,32 @@
 				}
 			],
 			"entries": [
-				"A veil of shadows and silence radiates from you, masking you and your companions from detection. For the duration, each creature you choose within 30 feet of you (including you) has a +10 bonus to Dexterity ({@skill Stealth}) checks and can't be tracked except by magical means. A creature that receives this bonus leaves behind no tracks or other traces of its passage."
-			],
+                "A veil of shadows and silence radiates from you, masking you and your companions from detection. Each creature of your choice within 30 feet of you at the time of casting (including yourself), gains a +10 bonus to their Dexterity ({@skill Stealth}) checks and you choose one of the following enhancements below:",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "entries",
+                            "name": "Shadowy Aura",
+                            "entries": [
+                                "For the duration of the spell, you radiate a shadowy aura. Your allies must stay within 30 feet of you to maintain the benefits of the spell. While within this aura, all affected targets can use the {@action Help} action as a bonus action in order to maintain stealthiness while engaging in other activities."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Shadowy Self",
+                            "entries": [
+                                "For the duration of the spell, you summon a shadowy veil to cover all affected creatures individually, instead of emanating an aura. This allows you and your allies to move freely across various spaces without needing to stay within 30 feet of one another. If an affected target stands still for at least one minute, they are considered Lightly Obscured while in Bright Light and Heavily Obscured while in Dim Light when others are trying to perceive them. This does not impact the affected target's vision."
+                            ]
+                        }
+                    ]
+                },
+                "Regardless of which option you choose, you and all creatures targetted by this spell leaves behind no tracks or other traces of its passage and can't be tracked except by magical means."
+            ],
+            "miscTags": [
+                "UBA"
+            ],
 			"areaTags": [
 				"MT"
 			]
@@ -17988,7 +18021,7 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "a jade circlet worth at least 1,500 gp, which you must place on your head before you cast the spell",
+					"text": "a jade circlet or three interwoven circlets of gold, platinum, and lead, worth at least 1,500 gp, which you must place on your head before you cast the spell",
 					"cost": 150000
 				}
 			},
@@ -18003,13 +18036,38 @@
 				}
 			],
 			"entries": [
-				"You assume the form of a different creature for the duration. The new form can be of any creature with a challenge rating equal to your level or lower. The creature can't be a construct or an undead, and you must have seen the sort of creature at least once. You transform into an average example of that creature, one without any class levels or the Spellcasting trait.",
-				"Your game statistics are replaced by the statistics of the chosen creature, though you retain your alignment and Intelligence, Wisdom, and Charisma scores. You also retain all of your skill and saving throw proficiencies, in addition to gaining those of the creature. If the creature has the same proficiency as you and the bonus listed in its statistics is higher than yours, use the creature's bonus in place of yours. You can't use any legendary actions or lair actions of the new form.",
-				"You assume the hit points and Hit Dice of the new form. When you revert to your normal form, you return to the number of hit points you had before you transformed. If you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. As long as the excess damage doesn't reduce your normal form to 0 hit points, you aren't knocked {@condition unconscious}.",
-				"You retain the benefit of any features from your class, race, or other source and can use them, provided that your new form is physically capable of doing so. You can't use any special senses you have (for example, {@sense darkvision}) unless your new form also has that sense. You can only speak if the creature can normally speak.",
-				"When you transform, you choose whether your equipment falls to the ground, merges into the new form, or is worn by it. Worn equipment functions as normal. The DM determines whether it is practical for the new form to wear a piece of equipment, based on the creature's shape and size. Your equipment doesn't change shape or size to match the new form, and any equipment that the new form can't wear must either fall to the ground or merge into your new form. Equipment that merges has no effect in that state.",
-				"During this spell's duration, you can use your action to assume a different form following the same restrictions and rules for the original form, with one exception: if your new form has more hit points than your current one, your hit points remain at their current value."
-			]
+                "You place the material component of this spell on your head and transform into a creature with a challenge rating equal to your level or lower. The creature can't be a construct or an undead, must have seen the sort of creature at least once, and you transform into an average example of that creature.",
+                {
+                    "type": "entries",
+                    "name": "Statistics",
+                    "entries": [
+                        "Your game statistics are replaced by the statistics of the chosen creature, though you retain your alignment, personality, Intelligence, Wisdom, and Charisma scores, and your ability to communicate, if your new form has that ability. If your new form does not, at the time of casting you can choose any number of creatures of your choice within 30 feet of you to communicate with telepathically.",
+                        "You also retain all of your skill and saving throw proficiencies, in addition to gaining those of the creature. If you both share a proficiency, you can use the higher bonus.",
+                        "You cannot use their Legendary Resistances, Legendary Actions, Lair Actions, or their spellcasting trait."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Features",
+                    "entries": [
+                        "You retain your features and can use them so long as the chosen creature is capable of doing so. This includes your class features, racial traits, feats, et cetra. You also retain your own spellcasting feature instead of using the spellcasting feature of your new form. You don't retain special senses (for example, {@sense darkvision}), but use the senses of the creature."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Equipment",
+                    "entries": [
+                        "You choose whether your equipment falls to the ground, merges with your new form, or is worn by it. Your equipment does not change size to fit your new form, and you only retain its benefits if the creature you transform into can wear and use the object."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Shifting",
+                    "entries": [
+                        "While the spell lasts, you can use your action to transform again, taking the shape of another creature of your choice, following the same rules and restrictions above, with one exception: you only gain the max HP of your new form while maintaining your current HP if your new form has more hit points. If your new form's HP is lower than your current HP, any excess HP becomes temporary hit points."
+                    ]
+                }
+            ]
 		},
 		{
 			"name": "Shatter",
