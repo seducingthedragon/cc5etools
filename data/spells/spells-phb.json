@@ -17860,7 +17860,7 @@
 			"page": 274,
 			"srd": true,
 			"level": 3,
-			"school": "V",
+			"school": "D",
 			"time": [
 				{
 					"number": 1,
@@ -17888,9 +17888,10 @@
 				}
 			],
 			"entries": [
-				"You send a short message of twenty-five words or less to a creature with which you are familiar. The creature hears the message in its mind, recognizes you as the sender if it knows you, and can answer in a like manner immediately. The spell enables creatures with Intelligence scores of at least 1 to understand the meaning of your message.",
-				"You can send the message across any distance and even to other planes of existence, but if the target is on a different plane than you, there is a {@chance 5|||Message lost!|Message arrives} chance that the message doesn't arrive."
-			]
+                "You send a short message of twenty-five words or less to a creature with which you are familiar. The creature hears the message in its mind, recognizes you as the sender if it knows you, and can answer in a like manner immediately. The spell enables creatures with Intelligence scores of at least 1 to understand the meaning of your message.",
+                "You can send the message across any distance and even to other planes of existence, but if the target is on a different plane than you, there is a {@chance 5|||Message lost!|Message arrives} chance that the message doesn't arrive.",
+                "Upon receiving your message, a creature can block your ability to reach it again with this spell for 8 hours. If you try to send another message during that time, you learn that you are blocked, and the spell fails."
+            ]
 		},
 		{
 			"name": "Sequester",
@@ -19109,7 +19110,7 @@
 			"page": 278,
 			"srd": true,
 			"level": 3,
-			"school": "C",
+			"school": "V",
 			"time": [
 				{
 					"number": 1,
@@ -19139,10 +19140,10 @@
 				}
 			],
 			"entries": [
-				"You create a 20-foot-radius sphere of yellow, nauseating gas centered on a point within range. The cloud spreads around corners, and its area is {@quickref Vision and Light|PHB|2||heavily obscured}. The cloud lingers in the air for the duration.",
-				"Each creature that is completely within the cloud at the start of its turn must make a Constitution saving throw against poison. On a failed save, the creature spends its action that turn retching and reeling. Creatures that don't need to breathe or are immune to poison automatically succeed on this saving throw.",
-				"A moderate wind (at least 10 miles per hour) disperses the cloud after 4 rounds. A strong wind (at least 20 miles per hour) disperses it after 1 round."
-			],
+                "You create a 20-foot-radius sphere of yellow, nauseating gas centered on a point within range. The cloud spreads around corners, and its area is {@quickref Vision and Light|PHB|2||heavily obscured}. The cloud lingers in the air for the duration.",
+                "Each creature that starts its turn in the Sphere must succeed on a Constitution saving throw or have the {@condition Poisoned} condition until the end of the current turn. While {@condition Poisoned} by this spell, the creature can't take any actions or bonus actions. Creatures that don't need to breathe or are immune to {@condition poisoned|PHB|poison} automatically succeed on this saving throw.",
+                "A moderate wind (at least 10 miles per hour) disperses the cloud after 4 rounds. A strong wind (at least 20 miles per hour), including those from the {@spell Gust of Wind} spell, disperses it after 1 round."
+            ],
 			"savingThrow": [
 				"constitution"
 			],
@@ -19366,16 +19367,15 @@
 					"duration": {
 						"type": "hour",
 						"amount": 8
-					},
-					"concentration": true
+					}
 				}
 			],
 			"entries": [
-				"You suggest a course of activity (limited to a sentence or two) and magically influence a creature you can see within range that can hear and understand you. Creatures that can't be {@condition charmed} are immune to this effect. The suggestion must be worded in such a manner as to make the course of action sound reasonable. Asking the creature to stab itself, throw itself onto a spear, immolate itself, or do some other obviously harmful act ends the spell.",
-				"The target must make a Wisdom saving throw. On a failed save, it pursues the course of action you described to the best of its ability. The suggested course of action can continue for the entire duration. If the suggested activity can be completed in a shorter time, the spell ends when the subject finishes what it was asked to do.",
-				"You can also specify conditions that will trigger a special activity during the duration. For example, you might suggest that a knight give her warhorse to the first beggar she meets. If the condition isn't met before the spell expires, the activity isn't performed.",
-				"If you or any of your companions damage the target, the spell ends."
-			],
+                "You suggest a course of activity (limited to a sentence or two) and magically influence a creature you can see within range that can hear and understand you. Creatures that can't be {@condition charmed} are immune to this effect. The suggestion must be worded in such a manner as to make the course of action sound reasonable. Asking the creature to stab itself, throw itself onto a spear, immolate itself, or do some other obviously harmful act ends the spell.",
+                "The target must make a Wisdom saving throw. On a failed save, it pursues the course of action you described to the best of its ability. The suggested course of action can continue for the entire duration. If the suggested activity can be completed in a shorter time, the spell ends when the subject finishes what it was asked to do.",
+                "You can also specify conditions that will trigger a special activity during the duration. For example, you might suggest that a knight give her warhorse to the first beggar she meets. If the condition isn't met before the spell expires, the activity isn't performed.",
+                "If you or any of your companions damage the target, the spell ends. Additionally, if you cast this spell on a second target before the first activity has been completed, the spell ends with an incompleted activity. The target only realizes that you had attempted to magically influence it when the spell ends in this way."
+            ],
 			"savingThrow": [
 				"wisdom"
 			],
@@ -19687,7 +19687,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "tiny tarts and a feather that is waved in the air"
+				"m": "a tart and a feather"
 			},
 			"duration": [
 				{
@@ -19700,9 +19700,18 @@
 				}
 			],
 			"entries": [
-				"A creature of your choice that you can see within range perceives everything as hilariously funny and falls into fits of laughter if this spell affects it. The target must succeed on a Wisdom saving throw or fall {@condition prone}, becoming {@condition incapacitated} and unable to stand up for the duration. A creature with an Intelligence score of 4 or less isn't affected.",
-				"At the end of each of its turns, and each time it takes damage, the target can make another Wisdom saving throw. The target has advantage on the saving throw if it's triggered by damage. On a success, the spell ends."
-			],
+                "A creature of your choice that you can see within range perceives everything as hilariously funny and falls into fits of laughter if this spell affects it. The target must succeed on a Wisdom saving throw or fall {@condition prone}, becoming {@condition incapacitated} and unable to stand up for the duration. A creature with an Intelligence score of 4 or less isn't affected.",
+                "At the end of each of its turns, and each time it takes damage, the target can make another Wisdom saving throw. The target has advantage on the saving throw if it's triggered by damage. On a success, the spell ends."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "You can target one additional creature for each spell slot level above 1."
+                    ]
+                }
+            ],
 			"conditionInflict": [
 				"incapacitated",
 				"prone"
@@ -20430,9 +20439,9 @@
 				}
 			],
 			"entries": [
-				"You briefly stop the flow of time for everyone but yourself. No time passes for other creatures, while you take {@dice 1d4 + 1} turns in a row, during which you can use actions and move as normal.",
-				"This spell ends if one of the actions you use during this period, or any effects that you create during this period, affects a creature other than you or an object being worn or carried by someone other than you. In addition, the spell ends if you move to a place more than 1,000 feet from the location where you cast it."
-			]
+                "You briefly stop the flow of time for everyone but yourself. No time passes for other creatures, while you take {@dice 1d4 + 1} turns in a row, during which you can use actions and move as normal.",
+                "This spell ends if one of the actions you use during this period, or any magical effects that you create during this period, affects a creature other than you or an object being worn or carried by someone other than you while time has stopped. In addition, the spell ends if you move to a place more than 1,000 feet from the location where you cast it."
+            ]
 		},
 		{
 			"name": "Tongues",
@@ -21140,7 +21149,7 @@
 			"page": 285,
 			"srd": true,
 			"level": 6,
-			"school": "V",
+			"school": "C",
 			"time": [
 				{
 					"number": 1,
@@ -21170,21 +21179,32 @@
 				}
 			],
 			"entries": [
-				"You create a wall of ice on a solid surface within range. You can form it into a hemispherical dome or a sphere with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-foot-square panels. Each panel must be contiguous with another panel. In any form, the wall is 1 foot thick and lasts for the duration.",
-				"If the wall cuts through a creature's space when it appears, the creature within its area is pushed to one side of the wall and must make a Dexterity saving throw. On a failed save, the creature takes {@damage 10d6} cold damage, or half as much damage on a successful save.",
-				"The wall is an object that can be damaged and thus breached. It has AC 12 and 30 hit points per 10-foot section, and it is vulnerable to fire damage. Reducing a 10-foot section of wall to 0 hit points destroys it and leaves behind a sheet of frigid air in the space the wall occupied. A creature moving through the sheet of frigid air for the first time on a turn must make a Constitution saving throw. That creature takes {@damage 5d6} cold damage on a failed save, or half as much damage on a successful one."
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 7th level or higher, the damage the wall deals when it appears increases by {@scaledamage 10d6|6-9|2d6}, and the damage from passing through the sheet of frigid air increases by {@scaledamage 5d6|6-9|1d6}, for each slot level above 6th."
-					]
-				}
-			],
+                "You create a wall of ice on a solid surface within range. You can form it into a hemispherical dome or a sphere with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-foot-square panels. Each panel must be contiguous with another panel. In any form, the wall is 1 foot thick and lasts for the duration.",
+                "If the wall cuts through a creature's space when it appears, the creature within its area is pushed to one side of the wall and must make a Dexterity saving throw. On a failed save, the creature takes {@damage 10d6} cold damage, or half as much damage on a successful save.",
+                {
+                    "type": "entries",
+                    "name": "Wall of Ice Stats",
+                    "entries": [
+                        "The wall is an object that can be damaged and thus breached. It has AC 12, 30 hit points per 10-foot section, and it is vulnerable to fire damage. Additionally, it is immune to cold, poison, and psychic damage. Reducing a 10-foot section of wall to 0 hit points destroys it and leaves behind a sheet of frigid air in the space the wall occupied. A creature moving through the sheet of frigid air for the first time on a turn must make a Constitution saving throw. That creature takes {@damage 5d6} cold damage on a failed save, or half as much damage on a successful one."
+                    ]
+                }
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 7th level or higher, the damage the wall deals when it appears increases by {@scaledamage 10d6|6-9|2d6}, and the damage from passing through the sheet of frigid air increases by {@scaledamage 5d6|6-9|1d6}, for each slot level above 6th."
+                    ]
+                }
+            ],
 			"damageInflict": [
 				"cold"
+			],
+			"damageImmune": [
+				"cold",
+				"poison",
+				"psychic"
 			],
 			"savingThrow": [
 				"dexterity",
