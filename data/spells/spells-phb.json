@@ -11538,7 +11538,7 @@
 				}
 			],
 			"entries": [
-				"A willing creature you touch is imbued with bravery. Until the spell ends, the creature is immune to being {@condition frightened} and gains temporary hit points equal to your spellcasting ability modifier at the start of each of its turns. When the spell ends, the target loses any remaining temporary hit points from this spell."
+				"A willing creature you touch is imbued with bravery. Until the spell ends, the creature is immune to being {@condition frightened} and gains temporary hit points equal to your spellcasting ability modifier at the start of each of its turns, which do stack while the spell is active. When the spell ends, the target loses any remaining temporary hit points from this spell."
 			],
 			"entriesHigherLevel": [
 				{
@@ -11738,17 +11738,17 @@
 				}
 			],
 			"entries": [
-				"Choose a humanoid that you can see within range. The target must succeed on a Wisdom saving throw or be {@condition paralyzed} for the duration. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target."
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 3rd level or higher, you can target one additional humanoid for each slot level above 2nd. The humanoids must be within 30 feet of each other when you target them."
-					]
-				}
-			],
+                "Choose a humanoid that you can see within range. The target must succeed on a Wisdom saving throw or be {@condition paralyzed} for the duration. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional humanoid within range of the spell for each slot level above 2nd."
+                    ]
+                }
+            ],
 			"conditionInflict": [
 				"paralyzed"
 			],
@@ -15779,7 +15779,7 @@
 			"srd": true,
 			"basicRules": true,
 			"level": 9,
-			"school": "E",
+			"school": "N",
 			"time": [
 				{
 					"number": 1,
@@ -15802,7 +15802,10 @@
 				}
 			],
 			"entries": [
-				"You utter a word of power that can compel one creature you can see within range to die instantly. If the creature you choose has 100 hit points or fewer, it dies. Otherwise, the spell has no effect."
+                "You utter a word of power that drains the life out of one creature you can see within range instantly. If the target has 100 Hit Points or fewer, it dies. Otherwise, it takes {@damage 12d12} Necrotic damage."
+            ],
+			"damageInflict": [
+				"necrotic"
 			],
 			"miscTags": [
 				"SGT"
@@ -16327,10 +16330,18 @@
 				}
 			],
 			"entries": [
-				"A flickering flame appears in your hand. The flame remains there for the duration and harms neither you nor your equipment. The flame sheds bright light in a 10-foot radius and dim light for an additional 10 feet. The spell ends if you dismiss it as an action or if you cast it again.",
-				"You can also attack with the flame, although doing so ends the spell. When you cast this spell, or as an action on a later turn, you can hurl the flame at a creature within 30 feet of you. Make a ranged spell attack. On a hit, the target takes {@damage 1d8} fire damage.",
-				"This spell's damage increases by {@damage 1d8} when you reach 5th level ({@damage 2d8}), 11th level ({@damage 3d8}), and 17th level ({@damage 4d8})."
-			],
+                "A flickering flame appears in your hand. The flame remains there for the duration and harms neither you nor your equipment. The flame sheds bright light in a 10-foot radius and dim light for an additional 10 feet. The spell ends if you dismiss it as an action or if you cast it again.",
+                "You can also attack with the flame, although doing so ends the spell. When you cast this spell, or as an action on a later turn, you can hurl the flame at a creature within 30 feet of you for a ranged spell attack or target a creature within 5 feet of you for a melee spell attack. On a hit, the target takes {@damage 1d8} fire damage."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Cantrip Upgrade",
+                    "entries": [
+                        "This spell's damage increases by {@damage 1d8} when you reach 5th level ({@damage 2d8}), 11th level ({@damage 3d8}), and 17th level ({@damage 4d8})."
+                    ]
+                }
+            ],
 			"scalingLevelDice": {
 				"label": "fire damage",
 				"scaling": {
@@ -16344,6 +16355,7 @@
 				"fire"
 			],
 			"spellAttack": [
+				"M",
 				"R"
 			],
 			"miscTags": [
@@ -16733,7 +16745,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "pieces of eggshell from two different kinds of creatures"
+				"m": "two eggs"
 			},
 			"duration": [
 				{
@@ -16748,9 +16760,9 @@
 				"ritual": true
 			},
 			"entries": [
-				"You forge a telepathic link among up to eight willing creatures of your choice within range, psychically linking each creature to all the others for the duration. Creatures with Intelligence scores of 2 or less aren't affected by this spell.",
-				"Until the spell ends, the targets can communicate telepathically through the bond whether or not they have a common language. The communication is possible over any distance, though it can't extend to other planes of existence."
-			],
+                "You forge a telepathic link among up to eight willing creatures of your choice within range, psychically linking each creature to all the others for the duration. Creatures that can't communicate in any languages aren't affected by this spell.",
+                "Until the spell ends, the targets can communicate telepathically through the bond whether or not they have a common language. The communication is possible over any distance, though it can't extend to other planes of existence."
+            ],
 			"areaTags": [
 				"MT"
 			]
@@ -16972,7 +16984,7 @@
 			"page": 271,
 			"srd": true,
 			"level": 5,
-			"school": "T",
+			"school": "N",
 			"time": [
 				{
 					"number": 1,
@@ -17000,167 +17012,63 @@
 				}
 			],
 			"entries": [
-				"You touch a dead humanoid or a piece of a dead humanoid. Provided that the creature has been dead no longer than 10 days, the spell forms a new adult body for it and then calls the soul to enter that body. If the target's soul isn't free or willing to do so, the spell fails.",
-				"The magic fashions a new body for the creature to inhabit, which likely causes the creature's race to change. The DM rolls a {@dice d100} and consults the following table to determine what form the creature takes when restored to life, or the DM chooses a form.",
-				{
-					"type": "table",
-					"caption": "Reincarnate Races",
-					"colLabels": [
-						"{@dice d100}",
-						"Race"
-					],
-					"colStyles": [
-						"col-1 text-center no-wrap",
-						"col-11"
-					],
-					"rows": [
-						[
-							{
-								"type": "cell",
-								"roll": {
-									"min": 1,
-									"max": 4,
-									"pad": true
-								}
-							},
-							"{@race Dragonborn}"
-						],
-						[
-							{
-								"type": "cell",
-								"roll": {
-									"min": 5,
-									"max": 13,
-									"pad": true
-								}
-							},
-							"{@race dwarf (hill)||Dwarf, hill}"
-						],
-						[
-							{
-								"type": "cell",
-								"roll": {
-									"min": 14,
-									"max": 21
-								}
-							},
-							"{@race dwarf (mountain)||Dwarf, mountain}"
-						],
-						[
-							{
-								"type": "cell",
-								"roll": {
-									"min": 22,
-									"max": 25
-								}
-							},
-							"{@race elf (drow)||Elf, dark}"
-						],
-						[
-							{
-								"type": "cell",
-								"roll": {
-									"min": 26,
-									"max": 34
-								}
-							},
-							"{@race elf (high)||Elf, high}"
-						],
-						[
-							{
-								"type": "cell",
-								"roll": {
-									"min": 35,
-									"max": 42
-								}
-							},
-							"{@race elf (wood)||Elf, wood}"
-						],
-						[
-							{
-								"type": "cell",
-								"roll": {
-									"min": 43,
-									"max": 46
-								}
-							},
-							"{@race gnome (forest)||Gnome, forest}"
-						],
-						[
-							{
-								"type": "cell",
-								"roll": {
-									"min": 47,
-									"max": 52
-								}
-							},
-							"{@race gnome (rock)||Gnome, rock}"
-						],
-						[
-							{
-								"type": "cell",
-								"roll": {
-									"min": 53,
-									"max": 56
-								}
-							},
-							"{@race Half-elf}"
-						],
-						[
-							{
-								"type": "cell",
-								"roll": {
-									"min": 57,
-									"max": 60
-								}
-							},
-							"{@race Half-orc}"
-						],
-						[
-							{
-								"type": "cell",
-								"roll": {
-									"min": 61,
-									"max": 68
-								}
-							},
-							"{@race halfling (lightfoot)||Halfling, lightfoot}"
-						],
-						[
-							{
-								"type": "cell",
-								"roll": {
-									"min": 69,
-									"max": 76
-								}
-							},
-							"{@race halfling (stout)||Halfling, stout}"
-						],
-						[
-							{
-								"type": "cell",
-								"roll": {
-									"min": 77,
-									"max": 96
-								}
-							},
-							"{@race Human}"
-						],
-						[
-							{
-								"type": "cell",
-								"roll": {
-									"min": 97,
-									"max": 0,
-									"pad": true
-								}
-							},
-							"{@race Tiefling}"
-						]
-					]
-				},
-				"The reincarnated creature recalls its former life and experiences. It retains the capabilities it had in its original form, except it exchanges its original race for the new one and changes its racial traits accordingly."
-			],
+                "You touch a dead humanoid or a piece of a dead humanoid. Provided that the creature has been dead no longer than 10 days, the spell forms a new adult body for it and then calls the soul to enter that body. If the target's soul isn't free or willing to do so, the spell fails.",
+                "The magic fashions a new body for the creature to inhabit, which likely causes the creature's race to change. The DM rolls a {@dice d10} and consults the following table to determine what form the creature takes when restored to life, or the DM chooses a form. If the race has different forms, your DM will determine which one you are reincarnated as.",
+                {
+                    "type": "table",
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "colLabels": [
+                        "1d10",
+                        "Species"
+                    ],
+                    "rows": [
+                        [
+                            "1",
+                            "Reroll or randomly choose something else."
+                        ],
+                        [
+                            "2",
+                            "{@race Dragonborn}"
+                        ],
+                        [
+                            "3",
+                            "{@race Dwarf}"
+                        ],
+                        [
+                            "4",
+                            "{@race Elf}"
+                        ],
+                        [
+                            "5",
+                            "{@race Gnome}"
+                        ],
+                        [
+                            "6",
+                            "{@race Half-Elf}"
+                        ],
+                        [
+                            "7",
+                            "{@race Half-Orc}"
+                        ],
+                        [
+                            "8",
+                            "{@race Halfling}"
+                        ],
+                        [
+                            "9",
+                            "{@race Human}"
+                        ],
+                        [
+                            "10",
+                            "{@race Tiefling}"
+                        ]
+                    ]
+                },
+                "The reincarnated creature recalls its former life and experiences. It retains the capabilities it had in its original form, except it exchanges its original race for the new one and changes its racial traits accordingly."
+            ],
 			"affectsCreatureType": [
 				"humanoid"
 			],
