@@ -5925,7 +5925,7 @@
 			"page": 230,
 			"srd": true,
 			"level": 2,
-			"school": "T",
+			"school": "D",
 			"time": [
 				{
 					"number": 1,
@@ -5953,7 +5953,7 @@
 				}
 			],
 			"entries": [
-				"You touch a willing creature to grant it the ability to see in the dark. For the duration, that creature has {@sense darkvision} out to a range of 60 feet."
+				"You touch a willing creature to grant it the ability to see in the dark. For the duration, that creature has {@sense darkvision} out to a range of 150 feet."
 			],
 			"areaTags": [
 				"ST"
@@ -8568,7 +8568,7 @@
 			"page": 239,
 			"srd": true,
 			"level": 3,
-			"school": "I",
+			"school": "E",
 			"time": [
 				{
 					"number": 1,
@@ -8585,7 +8585,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a white feather or the heart of a hen"
+				"m": "a white feather"
 			},
 			"duration": [
 				{
@@ -13584,7 +13584,7 @@
 			"srd": true,
 			"basicRules": true,
 			"level": 5,
-			"school": "V",
+			"school": "A",
 			"time": [
 				{
 					"number": 1,
@@ -13608,17 +13608,17 @@
 				}
 			],
 			"entries": [
-				"A wave of healing energy washes out from a point of your choice within range. Choose up to six creatures in a 30-foot-radius sphere centered on that point. Each target regains hit points equal to {@dice 3d8} + your spellcasting ability modifier. This spell has no effect on undead or constructs."
+				"A wave of healing energy washes out from a point of your choice within range. Choose up to six creatures in a 30-foot-radius sphere centered on that point. Each target regains hit points equal to {@dice 5d8} + your spellcasting ability modifier. This spell has no effect on undead or constructs."
 			],
 			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 6th level or higher, the healing increases by {@scaledice 3d8|5-9|1d8} for each slot level above 5th."
-					]
-				}
-			],
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 6th level or higher, the healing increases by {@scaledice 5d8|5-9|1d8} for each slot level above 5th."
+                    ]
+                }
+            ],
 			"affectsCreatureType": [
 				"aberration",
 				"beast",
@@ -13709,7 +13709,7 @@
 				}
 			],
 			"level": 3,
-			"school": "V",
+			"school": "A",
 			"time": [
 				{
 					"number": 1,
@@ -13732,14 +13732,14 @@
 				}
 			],
 			"entries": [
-				"As you call out words of restoration, up to six creatures of your choice that you can see within range regain hit points equal to {@dice 1d4} + your spellcasting ability modifier. This spell has no effect on undead or constructs."
+				"As you call out words of restoration, up to six creatures of your choice that you can see within range regain hit points equal to {@dice 2d4} + your spellcasting ability modifier. This spell has no effect on undead or constructs."
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 4th level or higher, the healing increases by {@scaledice 1d4|3-9|1d4} for each slot level above 3rd."
+						"When you cast this spell using a spell slot of 4th level or higher, the healing increases by {@scaledice 2d4|3-9|2d4} for each slot level above 3rd."
 					]
 				}
 			],
@@ -14982,7 +14982,7 @@
 			"page": 264,
 			"srd": "Resilient Sphere",
 			"level": 4,
-			"school": "V",
+			"school": "A",
 			"time": [
 				{
 					"number": 1,
@@ -14999,7 +14999,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a hemispherical piece of clear crystal and a matching hemispherical piece of gum arabic"
+				"m": "a glass sphere"
 			},
 			"duration": [
 				{
@@ -15704,7 +15704,7 @@
 			"source": "PHB",
 			"page": 266,
 			"level": 9,
-			"school": "V",
+			"school": "A",
 			"time": [
 				{
 					"number": 1,
@@ -15712,11 +15712,12 @@
 				}
 			],
 			"range": {
-				"type": "point",
-				"distance": {
-					"type": "touch"
-				}
-			},
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
 			"components": {
 				"v": true,
 				"s": true
@@ -17480,7 +17481,7 @@
 			"page": 272,
 			"srd": true,
 			"level": 2,
-			"school": "T",
+			"school": "C",
 			"time": [
 				{
 					"number": 1,
@@ -17496,7 +17497,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "powdered corn extract and a twisted loop of parchment"
+				"m": "a segment of rope"
 			},
 			"duration": [
 				{
