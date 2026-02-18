@@ -13577,7 +13577,7 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "a small bit of honeycomb and jade dust worth at least 10 gp, which the spell consumes",
+					"text": "jade dust worth at least 10 gp, which the spell consumes",
 					"cost": 1000,
 					"consume": true
 				}
@@ -13594,10 +13594,10 @@
 				"ritual": true
 			},
 			"entries": [
-				"You implant a message within an object in range, a message that is uttered when a trigger condition is met. Choose an object that you can see and that isn't being worn or carried by another creature. Then speak the message, which must be 25 words or less, though it can be delivered over as long as 10 minutes. Finally, determine the circumstance that will trigger the spell to deliver your message.",
-				"When that circumstance occurs, a magical mouth appears on the object and recites the message in your voice and at the same volume you spoke. If the object you chose has a mouth or something that looks like a mouth (for example, the mouth of a statue), the magical mouth appears there so that the words appear to come from the object's mouth. When you cast this spell, you can have the spell end after it delivers its message, or it can remain and repeat its message whenever the trigger occurs.",
-				"The triggering circumstance can be as general or as detailed as you like, though it must be based on visual or audible conditions that occur within 30 feet of the object. For example, you could instruct the mouth to speak when any creature moves within 30 feet of the object or when a silver bell rings within 30 feet of it."
-			],
+                "You implant a message within an object in range, a message that is uttered when a trigger condition is met. Choose an object that you can see and that isn't being worn or carried by another creature. Then speak the message, which must be 25 words or fewer, though it can be delivered over as long as 10 minutes. Finally, determine the circumstance that will trigger the spell to deliver your message.",
+                "When that trigger occurs, a magical mouth appears on the object and recites the message in your voice and at the same volume you spoke. If the object you chose has a mouth or something that looks like a mouth (for example, the mouth of a statue), the magical mouth appears there, so the words appear to come from the object's mouth. When you cast this spell, you can have the spell end after it delivers its message, or it can remain and repeat its message whenever the trigger occurs.",
+                "The trigger can be as general or as detailed as you like, though it must be based on visual or audible conditions that occur within 30 feet of the object. For example, you could instruct the mouth to speak when any creature moves within 30 feet of the object or when a silver bell rings within 30 feet of it."
+            ],
 			"miscTags": [
 				"OBJ",
 				"SGT"
@@ -14800,7 +14800,7 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "a miniature platinum sword with a grip and pommel of copper and zinc, worth 250 gp",
+					"text": "a miniature platinum sword, worth at least 250 GP",
 					"cost": 25000
 				}
 			},
@@ -14815,9 +14815,10 @@
 				}
 			],
 			"entries": [
-				"You create a sword-shaped plane of force that hovers within range. It lasts for the duration.",
-				"When the sword appears, you make a melee spell attack against a target of your choice within 5 feet of the sword. On a hit, the target takes {@damage 3d10} force damage. Until the spell ends, you can use a bonus action on each of your turns to move the sword up to 20 feet to a spot you can see and repeat this attack against the same target or a different one."
-			],
+                "You create a spectral sword that hovers within range, lasting for the duration of the spell.",
+                "When the sword appears, you make a melee spell attack against a target within 5 feet of the sword. On a hit, the target takes Force damage equal to {@damage 4d12} plus your spellcasting ability modifier.",
+                "On your later turns, you can take a Bonus Action to move the sword up to 30 feet to a spot you can see and repeat the attack against the same target or a different one."
+            ],
 			"damageInflict": [
 				"force"
 			],
@@ -15432,14 +15433,15 @@
 				}
 			],
 			"entries": [
-				"You tap into the nightmares of a creature you can see within range and create an illusory manifestation of its deepest fears, visible only to that creature. The target must make a Wisdom saving throw. On a failed save, the target becomes {@condition frightened} for the duration. At the end of each of the target's turns before the spell ends, the target must succeed on a Wisdom saving throw or take {@damage 4d10} psychic damage. On a successful save, the spell ends."
-			],
+                "You tap into the nightmares of a creature you can see within range and create an illusion of its deepest fears, visible only to that creature. The target makes a Wisdom saving throw. On a failed save, the target takes {@damage 4d10} Psychic damage and the target becomes {@condition frightened} for the duration of the spell. On a successful save, the target takes half as much damage, and the spell immediately ends.",
+                "While the spell is active, the target makes a Wisdom saving throw at the end of each of its turns, taking {@damage 2d10} psychic damage on a failed save. On a successful save, the spell ends."
+            ],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@scaledamage 4d10|4-9|1d10} for each slot level above 4th."
+						"When you cast this spell using a spell slot of 5th level or higher, both the initial damage and subsequent turns damage increases by {@scaledamage 4d10;2d10|4-9|1d10} for each slot level above 4th."
 					]
 				}
 			],
@@ -15671,15 +15673,17 @@
 			"level": 3,
 			"school": "T",
 			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				},
-				{
-					"number": 8,
-					"unit": "hour"
-				}
-			],
+                {
+                    "number": 1,
+                    "unit": "action",
+                    "note": "Overgrowth"
+                },
+                {
+                    "number": 8,
+                    "unit": "hour",
+                    "note": "Enrichment"
+                }
+            ],
 			"range": {
 				"type": "point",
 				"distance": {
@@ -15697,13 +15701,27 @@
 				}
 			],
 			"entries": [
-				"This spell channels vitality into plants within a specific area. There are two possible uses for the spell, granting either immediate or long-term benefits.",
-				"If you cast this spell using 1 action, choose a point within range. All normal plants in a 100-foot radius centered on that point become thick and overgrown. A creature moving through the area must spend 4 feet of movement for every 1 foot it moves.",
-				"You can exclude one or more areas of any size within the spell's area from being affected.",
-				"If you cast this spell over 8 hours, you enrich the land. All plants in a half-mile radius centered on a point within range become enriched for 1 year. The plants yield twice the normal amount of food when harvested."
-			],
+                "This spell channels vitality into plants. The casting time you use determines whether the spell has the Overgrowth or the Enrichment effect below.",
+                {
+                    "type": "entries",
+                    "name": "Overgrowth",
+                    "entries": [
+                        "Choose a point within range. All normal plants in a 100-foot-radius sphere centered on that point become thick and overgrown. A creature moving through that area must spend 4 feet of movement for every 1 foot it moves. You can exclude one or more areas of any size within the spell's area from being affected."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Enrichment",
+                    "entries": [
+                        "All plants in a half-mile radius centered on a point within range become enriched for 365 days. The plants yield twice the normal amount of food when harvested. They can benefit from only one Plant Growth per year."
+                    ]
+                }
+            ],
 			"miscTags": [
 				"DFT"
+			],
+			"areaTags": [
+				"S"
 			]
 		},
 		{
@@ -16006,7 +16024,7 @@
 				}
 			],
 			"level": 2,
-			"school": "V",
+			"school": "A",
 			"time": [
 				{
 					"number": 10,
@@ -16029,7 +16047,7 @@
 				}
 			],
 			"entries": [
-				"Up to six creatures of your choice that you can see within range each regain hit points equal to {@dice 2d8} + your spellcasting ability modifier. This spell has no effect on undead or constructs."
+				"Up to six creatures of your choice who remain within range for the spell's entire casting gain the benefits of a short rest and also regain {@dice 2d8} + your spellcasting ability modifier. An affected creature must finish a long rest before they can gain the benefits of this spell again."
 			],
 			"entriesHigherLevel": [
 				{
@@ -16039,20 +16057,6 @@
 						"When you cast this spell using a spell slot of 3rd level or higher, the healing increases by {@scaledice 2d8|2-9|1d8} for each slot level above 2nd."
 					]
 				}
-			],
-			"affectsCreatureType": [
-				"aberration",
-				"beast",
-				"celestial",
-				"dragon",
-				"elemental",
-				"fey",
-				"fiend",
-				"giant",
-				"humanoid",
-				"monstrosity",
-				"ooze",
-				"plant"
 			],
 			"miscTags": [
 				"HL",
@@ -16935,9 +16939,9 @@
 				}
 			],
 			"entries": [
-				"A black beam of enervating energy springs from your finger toward a creature within range. Make a ranged spell attack against the target. On a hit, the target deals only half damage with weapon attacks that use Strength until the spell ends.",
-				"At the end of each of the target's turns, it can make a Constitution saving throw against the spell. On a success, the spell ends."
-			],
+                "A black beam of enervating energy springs from your finger toward a creature within range, causing the creature to deal only half damage with any attack that uses its Strength.", 
+                "Make a ranged spell attack. On a miss, the reduced damage effect lasts until the start of the target's next turn and the spell immediately ends. On a hit, the reduced damage effect lasts until the spell ends. At the end of each of the target's turn, it makes a Constitution saving throw against your spell save DC. On a success, the spell ends."
+            ],
 			"spellAttack": [
 				"R"
 			],
