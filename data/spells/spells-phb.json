@@ -6893,18 +6893,18 @@
 					"duration": {
 						"type": "minute",
 						"amount": 1
-					},
-					"concentration": true
+					}
 				}
 			],
 			"entries": [
-				"Your prayer empowers you with divine radiance. Until the spell ends, your weapon attacks deal an extra {@damage 1d4} radiant damage on a hit."
-			],
+                "Your prayer empowers one weapon of your choice within 10 feet of you with divine radiance. Until the spell ends, attacks with that weapon deal an extra {@damage 1d4} radiant damage on a hit."
+            ],
 			"damageInflict": [
 				"radiant"
 			],
 			"miscTags": [
-				"AAD"
+				"AAD",
+				"OBJ"
 			]
 		},
 		{
@@ -9884,7 +9884,7 @@
 			},
 			"components": {
 				"s": true,
-				"m": "a small amount of makeup applied to the face as this spell is cast"
+				"m": "glitter"
 			},
 			"duration": [
 				{
@@ -9897,7 +9897,12 @@
 				}
 			],
 			"entries": [
-				"For the duration, you have advantage on all Charisma checks directed at one creature of your choice that isn't hostile toward you. When the spell ends, the creature realizes that you used magic to influence its mood and becomes hostile toward you. A creature prone to violence might attack you. Another creature might seek retribution in other ways (at the DM's discretion), depending on the nature of your interaction with it."
+                "You lace your words with soothing magic at a creature of your choice that can hear and understand you that isn't hostile toward you. You gain advantage on all Charisma checks for the duration of the spell.",
+                "When the spell ends, the target makes a Wisdom saving throw. On a failure, the target thinks you had attempted to influence it magically but failed.",
+                "On a successful save, the creature realizes that you used magic to influence it and may become hostile toward you. The target's hostile actions will be based on its personality, alignment, and other factors at the DM's discretion."
+            ],
+			"savingThrow": [
+				"wisdom"
 			],
 			"miscTags": [
 				"ADV"
@@ -10950,13 +10955,13 @@
 			"source": "PHB",
 			"page": 249,
 			"level": 1,
-			"school": "C",
+			"school": "V",
 			"time": [
-				{
-					"number": 1,
-					"unit": "bonus"
-				}
-			],
+                {
+                    "unit": "special",
+                    "condition": "on hit"
+                }
+            ],
 			"range": {
 				"type": "point",
 				"distance": {
@@ -10967,32 +10972,30 @@
 				"v": true
 			},
 			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "minute",
-						"amount": 1
-					},
-					"concentration": true
-				}
-			],
+                {
+                    "type": "instant"
+                }
+            ],
 			"entries": [
-				"The next time you hit a creature with a ranged weapon attack before the spell ends, this spell creates a rain of thorns that sprouts from your ranged weapon or ammunition. In addition to the normal effect of the attack, the target of the attack and each creature within 5 feet of it must make a Dexterity saving throw. A creature takes {@damage 1d10} piercing damage on a failed save, or half as much damage on a successful one."
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"If you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage 1d10|1-6|1d10} for each slot level above 1st (to a maximum of {@damage 6d10})."
-					]
-				}
-			],
+                "When you hit a creature within range with a ranged weapon attack, the force of the attack sends pieces of your ammunition flying outwards in an explosion of thorns. In addition to the normal effect of the attack, the target of your attack and each creature within 5 feet must make a Dexterity saving throw. Creatures take {@damage 1d10} piercing damage on a failure, or half as much damage on a success."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd-level or higher, the damage increases by {@scaledamage 1d10|1-9|1d10} for each slot level above 1st."
+                    ]
+                }
+            ],
 			"damageInflict": [
 				"piercing"
 			],
 			"savingThrow": [
 				"dexterity"
+			],
+			"miscTags": [
+				"SCL"
 			],
 			"areaTags": [
 				"S"
@@ -15731,7 +15734,7 @@
 			"srd": true,
 			"basicRules": true,
 			"level": 0,
-			"school": "C",
+			"school": "V",
 			"time": [
 				{
 					"number": 1,
@@ -15755,9 +15758,17 @@
 				}
 			],
 			"entries": [
-				"You extend your hand toward a creature you can see within range and project a puff of noxious gas from your palm. The creature must succeed on a Constitution saving throw or take {@damage 1d12} poison damage.",
-				"This spell's damage increases by {@damage 1d12} when you reach 5th level ({@damage 2d12}), 11th level ({@damage 3d12}), and 17th level ({@damage 4d12})."
-			],
+                "You raise your hand and project a toxic mist at a creature you can see within range. Make a ranged spell attack against the target. On hit, the target takes {@dice 1d12} poison damage."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "This spell's damage increases by {@dice 1d12} when you reach 5th level ({@damage 2d12}), 11th level ({@damage 3d12}), and 17th level ({@damage 4d12})."
+                    ]
+                }
+            ],
 			"scalingLevelDice": {
 				"label": "poison damage",
 				"scaling": {
@@ -15770,9 +15781,9 @@
 			"damageInflict": [
 				"poison"
 			],
-			"savingThrow": [
-				"constitution"
-			],
+			"spellAttack": [
+                "R"
+            ],
 			"miscTags": [
 				"SCL",
 				"SGT"
@@ -15782,54 +15793,83 @@
 			]
 		},
 		{
-			"name": "Polymorph",
-			"source": "PHB",
-			"page": 266,
-			"srd": true,
-			"level": 4,
-			"school": "T",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 60
-				}
-			},
-			"components": {
-				"v": true,
-				"s": true,
-				"m": "a caterpillar cocoon"
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "hour",
-						"amount": 1
-					},
-					"concentration": true
-				}
-			],
-			"entries": [
-				"This spell transforms a creature that you can see within range into a new form. An unwilling creature must make a Wisdom saving throw to avoid the effect. The spell has no effect on a shapechanger or a creature with 0 hit points.",
-				"The transformation lasts for the duration, or until the target drops to 0 hit points or dies. The new form can be {@filter any beast|bestiary|type=beast|miscellaneous=!swarm} whose challenge rating is equal to or less than the target's (or the target's level, if it doesn't have a challenge rating). The target's game statistics, including mental ability scores, are replaced by the statistics of the chosen beast. It retains its alignment and personality.",
-				"The target assumes the hit points of its new form. When it reverts to its normal form, the creature returns to the number of hit points it had before it transformed. If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form. As long as the excess damage doesn't reduce the creature's normal form to 0 hit points, it isn't knocked unconscious.",
-				"The creature is limited in the actions it can perform by the nature of its new form, and it can't speak, cast spells, or take any other action that requires hands or speech.",
-				"The target's gear melds into the new form. The creature can't activate, use, wield, or otherwise benefit from any of its equipment."
-			],
+            "name": "Polymorph",
+            "source": "PHB",
+            "page": 266,
+            "level": 4,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "amount": 60,
+                    "type": "feet"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a caterpillar cocoon"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You attempt to transform a creature you can see within range into a {@filter any beast|bestiary|type=beast|miscellaneous=!swarm} using the rules below. An unwilling target makes a Wisdom saving throw to resist this effect. Shapechangers automatically succeed on this saving throw.",
+                {
+                    "type": "entries",
+                    "name": "Form and Stats",
+                    "entries": [
+                        "The new form can be any living Beast you have seen before. Creatures can only be transformed into a {@filter any beast|bestiary|type=beast|miscellaneous=!swarm} with a CR equal to (or lower than) its level or CR.",
+                        "The creature's game statistics are replaced by those of the Beast while retaining its alignment and personality."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Actions and Equipment",
+                    "entries": [
+                        "The creature can only take the actions that would be available to that Beast. It cannot speak, cast spells, or take any actions that require hands or speech.",
+                        "Its clothing, weapons, armor, and objects it is holding meld into the new form. However, it can't activate, use, wield, or otherwise benefit from any of its equipment."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Reverting",
+                    "entries": [
+                        "If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form. As long as the excess damage doesn't reduce the creature's normal form to 0 hit points, it isn't knocked unconscious."
+                    ]
+                }
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell with a slot of 5th-level or higher, you can target one additional creature for each slot level above 4th. You can choose the Beast that you transform each target into individually."
+                    ]
+                }
+            ],
 			"savingThrow": [
 				"wisdom"
 			],
 			"miscTags": [
+				"SCT",
 				"SGT"
 			],
 			"areaTags": [
+				"MT",
 				"ST"
 			]
 		},
@@ -21285,7 +21325,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a pinch of powder made by crushing a clear gemstone"
+				"m": "powder from crushed clear gemstone"
 			},
 			"duration": [
 				{
@@ -21298,8 +21338,36 @@
 				}
 			],
 			"entries": [
-				"An invisible wall of force springs into existence at a point you choose within range. The wall appears in any orientation you choose, as a horizontal or vertical barrier or at an angle. It can be free floating or resting on a solid surface. You can form it into a hemispherical dome or a sphere with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-foot-by-10-foot panels. Each panel must be contiguous with another panel. In any form, the wall is 1/4 inch thick. It lasts for the duration. If the wall cuts through a creature's space when it appears, the creature is pushed to one side of the wall (your choice which side).",
-				"Nothing can physically pass through the wall. It is immune to all damage and can't be dispelled by {@spell dispel magic}. A {@spell disintegrate} spell destroys the wall instantly, however. The wall also extends into the Ethereal Plane, blocking ethereal travel through the wall."
+                "A shimmering opaque wall of force springs into existence at a point you choose within range and lasts for the duration. If it cuts through a creature's space when it appears, the creatures must make a Dexterity saving throw. On a success, it chooses which side of the wall it moves to. On a failure, you choose the side it moves to.",
+                {
+                    "type": "entries",
+                    "name": "Orientation & Shape",
+                    "entries": [
+                        "The wall appears in any orientation you choose, as a horizontal or vertical barrier or an angle. It can be free floating or rest on a solid surface. You can form it into a hemispherical dome, a sphere with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-by-10-foot panels. Each panel must be contiguous with another. In any form, the wall is 1/4 inch thick. Nothing can pass through the wall physically, and anything viewed through it is lightly obscured. The wall extends into the Ethereal Plane, blocking ethereal travel through the wall."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Statistics",
+                    "entries": [
+                        "The wall has 150 hit points and its Armor Class equals your Spell save DC. It is immune to poison, psychic, and non-magical bludgeoning, piercing, and slashing damage, vulnerable to force and magical bludgeoning, piercing, and slashing damage, and resistant to all other damage types. It cannot be dispelled by a {@spell Dispel Magic} spell, but a {@spell Disintegrate} spell destroys the entire wall it instantly."
+                    ]
+                }
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 6th-level or higher, the hit points of the wall created by this spell increase by 25 for each spell slot level above 5th."
+                    ]
+                }
+            ],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SCL"
 			],
 			"areaTags": [
 				"W"
