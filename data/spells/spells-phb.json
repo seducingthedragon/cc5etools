@@ -6144,9 +6144,10 @@
 				}
 			],
 			"entries": [
-				"You create a shadowy door on a flat solid surface that you can see within range. The door is large enough to allow Medium creatures to pass through unhindered. When opened, the door leads to a demiplane that appears to be an empty room 30 feet in each dimension, made of wood or stone. When the spell ends, the door disappears, and any creatures or objects inside the demiplane remain trapped there, as the door also disappears from the other side.",
-				"Each time you cast this spell, you can create a new demiplane, or have the shadowy door connect to a demiplane you created with a previous casting of this spell. Additionally, if you know the nature and contents of a demiplane created by a casting of this spell by another creature, you can have the shadowy door connect to its demiplane instead."
-			],
+                "You create a shadowy door on a flat solid surface that you can see within range. The door is large enough to allow Medium creatures to pass through unhindered. When opened, the door leads to a demiplane that appears to be an empty room 30 feet in each dimension, made of wood or stone.",
+                "When the spell ends, the door vanishes, and any objects inside the demiplane remain there. Any creatures inside also remain unless they opt to be shunted through the door as it vanishes, landing with the {@condition Prone} condition in the unoccupied spaces closest to the door's former space.",
+                "Each time you cast this spell, you can create a new demiplane, or create a new shadowy door to connect to a demiplane you previously created. Additionally, if you know the nature and contents of a demiplane created by a casting of this spell by another creature, you can have the shadowy door connect to its demiplane instead."
+            ],
 			"miscTags": [
 				"OBJ",
 				"PRM",
@@ -7214,7 +7215,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a handful of sand, a dab of ink, and a writing quill plucked from a sleeping bird"
+				"m": "a handful of sand"
 			},
 			"duration": [
 				{
@@ -7226,11 +7227,30 @@
 				}
 			],
 			"entries": [
-				"This spell shapes a creature's dreams. Choose a creature known to you as the target of this spell. The target must be on the same plane of existence as you. Creatures that don't sleep, such as elves, can't be contacted by this spell. You, or a willing creature you touch, enters a trance state, acting as a messenger. While in the trance, the messenger is aware of his or her surroundings, but can't take actions or move.",
-				"If the target is asleep, the messenger appears in the target's dreams and can converse with the target as long as it remains asleep, through the duration of the spell. The messenger can also shape the environment of the dream, creating landscapes, objects, and other images. The messenger can emerge from the trance at any time, ending the effect of the spell early. The target recalls the dream perfectly upon waking. If the target is awake when you cast the spell, the messenger knows it, and can either end the trance (and the spell) or wait for the target to fall asleep, at which point the messenger appears in the target's dreams.",
-				"You can make the messenger appear monstrous and terrifying to the target. If you do, the messenger can deliver a message of no more than ten words and then the target must make a Wisdom saving throw. On a failed save, echoes of the phantasmal monstrosity spawn a nightmare that lasts the duration of the target's sleep and prevents the target from gaining any benefit from that rest. In addition, when the target wakes up, it takes {@damage 3d6} psychic damage.",
-				"If you have a body part, lock of hair, clipping from a nail, or similar portion of the target's body, the target makes its saving throw with disadvantage."
-			],
+                "This spell shapes a creature's dreams. Choose a creature known to you as the target of this spell. The target must be on the same plane of existence as you. You, or a willing creature you touch, enters a trance state, acting as a messenger. While in the trance, the messenger is aware of his or her surroundings, but can't take actions or move.",
+				{
+					"type": "entries",
+					"name": "Sleeping Target.",
+					"entries": [
+						"If the target is asleep, the messenger appears in the target's dreams and can converse with the target as long as it remains asleep, through the duration of the spell. The messenger can also shape the environment of the dream, creating landscapes, objects, and other images. The messenger can emerge from the trance at any time, ending the effect of the spell early. The target recalls the dream perfectly upon waking."
+					]
+				},
+                {
+					"type": "entries",
+					"name": "Conscious Target.",
+					"entries": [
+						"If the target is awake when you cast the spell, the messenger knows it, and can either end the trance (and the spell) or wait for the target to fall asleep, at which point the messenger appears in the target's dreams. Creatures who gain long rest benefits through a deep meditative state, such as Elves, can still receive the message, however they are not impacted by the messenger's phantasmal form described in the next section. This spell has no impact on Constructs or Undead creatures."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Messenger's Phantasmal Form.",
+					"entries": [
+						"You can make the messenger appear monstrous and terrifying to the target. If you do, the messenger can deliver a message of no more than ten words and then the target must make a Wisdom saving throw. On a failed save, echoes of the phantasmal monstrosity spawn a nightmare that lasts the duration of the target's sleep and prevents the target from gaining any benefit from that rest. In addition, when the target wakes up, it takes {@damage 3d6} psychic damage.",
+                		"If you have a body part, lock of hair, clipping from a nail, or similar portion of the target's body, the target makes its saving throw with disadvantage."
+					]
+				}
+            ],
 			"damageInflict": [
 				"psychic"
 			],
@@ -8359,7 +8379,7 @@
 			"page": 238,
 			"srd": true,
 			"level": 6,
-			"school": "N",
+			"school": "E",
 			"time": [
 				{
 					"number": 1,
@@ -8406,7 +8426,7 @@
 					"type": "entries",
 					"name": "Sickened",
 					"entries": [
-						"The target has disadvantage on attack rolls and ability checks. At the end of each of its turns, it can make another Wisdom saving throw. If it succeeds, the effect ends."
+						"The target has the {@condition poisoned} condition. At the end of each of its turns, it can make another Wisdom saving throw. If it succeeds, the effect ends."
 					]
 				}
 			],
@@ -8663,7 +8683,7 @@
 			"source": "PHB",
 			"page": 240,
 			"level": 3,
-			"school": "N",
+			"school": "I",
 			"time": [
 				{
 					"number": 1,
@@ -8694,9 +8714,10 @@
 				"ritual": true
 			},
 			"entries": [
-				"You touch a willing creature and put it into a cataleptic state that is indistinguishable from death.",
-				"For the spell's duration, or until you use an action to touch the target and dismiss the spell, the target appears dead to all outward inspection and to spells used to determine the target's status. The target is {@condition blinded} and {@condition incapacitated}, and its speed drops to 0. The target has resistance to all damage except psychic damage. If the target is diseased or {@condition poisoned} when you cast the spell, or becomes diseased or {@condition poisoned} while under the spell's effect, the disease and poison have no effect until the spell ends."
-			],
+                "You touch a willing creature and put it into a cataleptic state that is indistinguishable from death.",
+                "For the spell's duration, or until you use an action to touch the target and dismiss the spell, the target appears dead to all outward inspection and to spells used to determine the target's status. The target is {@condition blinded} and {@condition incapacitated}, and its speed drops to 0.",
+                "The target also has Resistance to all damage except Psychic damage, and it has Immunity to the {@condition Poisoned} condition as well as diseases. If the target is diseased or {@condition poisoned} when you cast the spell, the disease and poison have no effect until the spell ends."
+            ],
 			"damageResist": [
 				"acid",
 				"bludgeoning",
@@ -10527,13 +10548,13 @@
 					"duration": {
 						"type": "minute",
 						"amount": 1
-					},
-					"concentration": true
+					}
 				}
 			],
 			"entries": [
-				"You or a creature you touch becomes {@condition invisible} until the spell ends. Anything the target is wearing or carrying is {@condition invisible} as long as it is on the target's person."
-			],
+                "You or a creature you touch becomes {@condition invisible} until the spell ends. Anything the target is wearing or carrying is {@condition invisible} as long as it is on the target's person.",
+                "The spell ends early if you cast this on another target while another creature is affected by this spell."
+            ],
 			"conditionInflict": [
 				"invisible"
 			],
