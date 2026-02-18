@@ -11004,7 +11004,7 @@
 			"page": 249,
 			"srd": true,
 			"level": 5,
-			"school": "V",
+			"school": "A",
 			"time": [
 				{
 					"number": 24,
@@ -11035,80 +11035,70 @@
 				}
 			],
 			"entries": [
-				"You touch a point and infuse an area around it with holy (or unholy) power. The area can have a radius up to 60 feet, and the spell fails if the radius includes an area already under the effect a hallow spell. The affected area is subject to the following effects.",
-				"First, celestials, elementals, fey, fiends, and undead can't enter the area, nor can such creatures charm, frighten, or possess creatures within it. Any creature {@condition charmed}, {@condition frightened}, or possessed by such a creature is no longer {@condition charmed}, {@condition frightened}, or possessed upon entering the area. You can exclude one or more of those types of creatures from this effect.",
-				"Second, you can bind an extra effect to the area. Choose the effect from the following list, or choose an effect offered by the DM. Some of these effects apply to creatures in the area; you can designate whether the effect applies to all creatures, creatures that follow a specific deity or leader, or creatures of a specific sort, such as orcs or trolls. When a creature that would be affected enters the spell's area for the first time on a turn or starts its turn there, it can make a Charisma saving throw. On a success, the creature ignores the extra effect until it leaves the area.",
-				{
-					"type": "entries",
-					"name": "Courage",
-					"entries": [
-						"Affected creatures can't be {@condition frightened} while in the area."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Darkness",
-					"entries": [
-						"Darkness fills the area. Normal light, as well as magical light created by spells of a lower level than the slot you used to cast this spell, can't illuminate the area."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Daylight",
-					"entries": [
-						"Bright light fills the area. Magical darkness created by spells of a lower level than the slot you used to cast this spell can't extinguish the light."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Energy Protection",
-					"entries": [
-						"Affected creatures in the area have resistance to one damage type of your choice, except for bludgeoning, piercing, or slashing."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Energy Vulnerability",
-					"entries": [
-						"Affected creatures in the area have vulnerability to one damage type of your choice, except for bludgeoning, piercing, or slashing."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Everlasting Rest",
-					"entries": [
-						"Dead bodies interred in the area can't be turned into undead."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Extradimensional Interference",
-					"entries": [
-						"Affected creatures can't move or travel using teleportation or by extradimensional or interplanar means."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Fear",
-					"entries": [
-						"Affected creatures are {@condition frightened} while in the area."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Silence",
-					"entries": [
-						"No sound can emanate from within the area, and no sound can reach into it."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Tongues",
-					"entries": [
-						"Affected creatures can communicate with any other creature in the area, even if they don't share a common language."
-					]
-				}
-			],
+                "You touch a point and infuse an area around it with holy or unholy power. The area can have a radius up to 60 feet, and the spell fails if the radius includes an area already under the effects of a Hallow spell. The affected area has the following effects.",
+                {
+                    "type": "entries",
+                    "name": "Hallowed Ward",
+                    "entries": [
+                        "Choose any number of these creature types: Aberration, Celestial, Elemental, Fey, Fiend, or Undead. Creatures of the chosen types can't willingly enter the area without making a successful Charisma saving throw against your spell save DC. Any creature that is possessed by or that has the {@condition Charmed} or {@condition Frightened} condition from such creatures isn't possessed, is no longer{@condition Charmed}, {@condition Frightened}, or possessed by them while in the area."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Extra Effect",
+                    "entries": [
+                        "You bind an extra effect to the area that is designated to aid in those seeking hallowed grounds or to punish those who are able to break through your Hallowed Ward. Choose one secondary effect to add to your protected grounds. If you choose a secondary effect that impacts creatures based on their type, it is not required to be the same as your choices from your Hallowed Ward.",
+                        {
+                            "type": "list",
+                            "style": "list-hang-notitle",
+                            "items": [
+                                {
+                                    "type": "item",
+                                    "name": "Courage or Fear",
+                                    "entries": [
+                                        "If you choose {@u Courage}, creatures of any types you choose can't gain the {@condition Frightened} condition while in the area. If you choose {@u Fear}, creatures of any types you choose have the {@condition Frightened} condition while in the area."
+                                    ]
+                                },
+                                {
+                                    "type": "item",
+                                    "name": "Darkness or Daylight",
+                                    "entries": [
+                                        "If you choose {@u Darkness}, normal light, as well as magical light created by spells of a level lower than this spell, can't illuminate the area as dark shadows fill the area. If you choose {@u Daylight}, darkness, as well as magical darkness created by spells of a level lower than this spell, can't extinguish the light as bright sunlight fills the area."
+                                    ]
+                                },
+								{
+                                    "type": "item",
+                                    "name": "Resistance or Vulnerability",
+                                    "entries": [
+                                        "If you choose {@u Resistance}, creatures of any types you choose have Resistance to one damage type of your choice while in the area, excluding nonmagical Bludgeoning, Piercing, or Slashing damage. If you choose {@u Vulnerability}, creatures of any types you choose have Vulnerability to one damage type of your choice while in the area, excluding nonmagical Bludgeoning, Piercing, or Slashing damage."
+                                    ]
+                                },
+								{
+                                    "type": "item",
+                                    "name": "Silence or Tongues",
+                                    "entries": [
+                                        "If you choose {@u Silence}, no sound can emanate from within the area, and no sound can reach into it. If you choose {@u Tongues}, creatures of any types you choose can communicate with any other creature in the area even if they don't share a common language."
+                                    ]
+                                },
+                                {
+                                    "type": "item",
+                                    "name": "Peaceful Rest",
+                                    "entries": [
+                                        "Dead bodies interred in the area can't be turned into Undead."
+                                    ]
+                                },
+                                {
+                                    "type": "item",
+                                    "name": "Extradimensional Interference",
+                                    "entries": [
+                                        "Creatures of any types you choose can't enter or exit the area using teleportation or interplanar travel."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
 			"damageResist": [
 				"acid",
 				"cold",
@@ -11133,11 +11123,19 @@
 				"radiant",
 				"thunder"
 			],
+			"affectsCreatureType": [
+                "aberration",
+                "celestial",
+                "elemental",
+                "fey",
+                "fiend",
+                "undead"
+            ],
 			"savingThrow": [
 				"charisma"
 			],
 			"miscTags": [
-				"LGT",
+				"LGTS",
 				"OBS"
 			]
 		},
@@ -11918,7 +11916,7 @@
 				"type": "point",
 				"distance": {
 					"type": "feet",
-					"amount": 150
+					"amount": 120
 				}
 			},
 			"components": {
@@ -11940,6 +11938,15 @@
 				"You open a gateway to the dark between the stars, a region infested with unknown horrors. A 20-foot-radius sphere of blackness and bitter cold appears, centered on a point within range and lasting for the duration. This void is filled with a cacophony of soft whispers and slurping noises that can be heard up to 30 feet away. No light, magical or otherwise, can illuminate the area, and creatures fully within the area are {@condition blinded}.",
 				"The void creates a warp in the fabric of space, and the area is {@quickref difficult terrain||3}. Any creature that starts its turn in the area takes {@damage 2d6} cold damage. Any creature that ends its turn in the area must succeed on a Dexterity saving throw or take {@damage 2d6} acid damage as milky, otherworldly tentacles rub against it."
 			],
+			"entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, the radius of the spell increases by 5 feet and both the cold and acid damage each increase by {@scaledamage 2d6|3-9|1d6} for each slot level above 3rd."
+                    ]
+                }
+            ],
 			"damageInflict": [
 				"acid",
 				"cold"
@@ -11952,7 +11959,8 @@
 			],
 			"miscTags": [
 				"DFT",
-				"OBS"
+				"OBS",
+				"SCL"
 			],
 			"areaTags": [
 				"S"
@@ -12034,12 +12042,12 @@
 				"type": "point",
 				"distance": {
 					"type": "feet",
-					"amount": 120
+					"amount": 60
 				}
 			},
 			"components": {
 				"s": true,
-				"m": "a glowing stick of incense or a crystal vial filled with phosphorescent material"
+				"m": "a glowing stick of incense"
 			},
 			"duration": [
 				{
@@ -12052,9 +12060,9 @@
 				}
 			],
 			"entries": [
-				"You create a twisting pattern of colors that weaves through the air inside a 30-foot cube within range. The pattern appears for a moment and vanishes. Each creature in the area who sees the pattern must make a Wisdom saving throw. On a failed save, the creature becomes {@condition charmed} for the duration. While {@condition charmed} by this spell, the creature is {@condition incapacitated} and has a speed of 0.",
-				"The spell ends for an affected creature if it takes any damage or if someone else uses an action to shake the creature out of its stupor."
-			],
+                "You create a twisting pattern of colors that weaves through the air inside a 30-foot cube within range. This psychedelic pattern appears for a moment and vanishes. Each creature in the area who sees the pattern must make a Wisdom saving throw. On a failed save, the creature becomes {@condition charmed} for the duration. While charmed by this spell, the creature is {@condition incapacitated} and has a speed of 0.",
+                "As a bonus action on subsequent turns, you can re-emerge the twisting pattern to another spot, up to 30 feet away, and flash it at another group of creatures. An affected creature can repeat this saving throw at the end of each of its turns, ending the effect on a success. The spell also ends for an affected creature if it takes any damage or if someone else uses an action to shake it out of its stupor."
+            ],
 			"conditionInflict": [
 				"charmed",
 				"incapacitated"
@@ -12064,6 +12072,9 @@
 			],
 			"areaTags": [
 				"C"
+			],
+			"miscTags": [
+				"UBA"
 			]
 		},
 		{
@@ -12804,7 +12815,7 @@
 			"page": 255,
 			"srd": "Tiny Hut",
 			"level": 3,
-			"school": "V",
+			"school": "A",
 			"time": [
 				{
 					"number": 1,
@@ -12821,7 +12832,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a small crystal bead"
+				"m": "a pearl cut perfectly in half"
 			},
 			"duration": [
 				{
@@ -12836,10 +12847,17 @@
 				"ritual": true
 			},
 			"entries": [
-				"A 10-foot-radius immobile dome of force springs into existence around and above you and remains stationary for the duration. The spell ends if you leave its area.",
-				"Nine creatures of Medium size or smaller can fit inside the dome with you. The spell fails if its area includes a larger creature or more than nine creatures. Creatures and objects within the dome when you cast this spell can move through it freely. All other creatures and objects are barred from passing through it. Spells and other magical effects can't extend through the dome or be cast through it. The atmosphere inside the space is comfortable and dry, regardless of the weather outside.",
-				"Until the spell ends, you can command the interior to become dimly lit or dark. The dome is opaque from the outside, of any color you choose, but it is transparent from the inside."
-			],
+                "A 10-foot-radius immobile dome of arcane force springs into existence around and above you and remains stationary for the duration. The spell ends if you leave its area.",
+                "Nine creatures of Medium size or smaller can fit inside the dome with you. The spell fails if its area includes any Large creatures or more than nine creatures. Creatures and objects within the dome when you cast this spell can move through it freely. All other creatures and objects cannot pass through it. Spells and other magical effects cannot extend through the dome or be cast through it, however they can still occur within the dome. The atmosphere inside the dome is comfortable and dry, regardless of the weather outside.",
+                "Until the spell ends, you can command the interior to be dimly lit or dark. The dome is opaque and dull in color as to blend in with surroundings. It is transparent from the inside.",
+                {
+                    "type": "entries",
+                    "name": "Tiny Hut Stats",
+                    "entries": [
+                        "The dome has 100 hit points and Armor Class equal to your Spell save DC. It is immune to poison, psychic, and non-magical bludgeoning, piercing, and slashing damage, it is vulnerable to force and all magical bludgeoning, piercing, and slashing damage, and it is resistant to all other damage types. A disintegrate spell destroys it instantly."
+                    ]
+                }
+            ],
 			"areaTags": [
 				"H"
 			]
@@ -12936,9 +12954,9 @@
 				}
 			],
 			"entries": [
-				"You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. Completely covering the object with something opaque blocks the light. The spell ends if you cast it again or dismiss it as an action.",
-				"If you target an object held or worn by a hostile creature, that creature must succeed on a Dexterity saving throw to avoid the spell."
-			],
+                "You touch one Large or smaller object that isn't being worn or carried by someone else. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like.",
+                "This spell does not create sunlight. Covering the object with something opaque blocks the light. The spell ends if you cast it again. If you target an object held or worn by a hostile creature, that creature must make a Dexterity saving throw, causing the spell to fail to take hold on the object on a success."
+            ],
 			"savingThrow": [
 				"dexterity"
 			],
