@@ -971,11 +971,21 @@
 				}
 			],
 			"entries": [
-                "You touch a closed door, window, gate, chest, or other entryway, and it becomes locked for the duration. You and the creatures you designate when you cast this spell can open the object normally. You can also set a password that, when spoken within 5 feet of the object, suppresses this spell for 1 minute. Otherwise, it is impassable until it is broken or the spell is dispelled or suppressed. Casting {@spell knock} on the object suppresses {@spell arcane lock} for 10 minutes.",
+                "You touch a closed door, window, gate, chest, or other entryway, and it becomes locked for the duration. You and the creatures you designate when you cast this spell can open the object normally. You can also set a password that, when spoken within 5 feet of the object, suppresses this spell for 1 minute. Otherwise, it is impassable until it is broken or the spell is dispelled or suppressed. Casting {@spell knock} on the object suppresses this spell for 10 minutes.",
                 "While affected by this spell, the object is more difficult to break or force open; the DC to break it or pick any locks on it increases by 15."
             ],
+			"entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the DC to break or pick a lock with this spell increases by 1, for each level above 2."
+                    ]
+                }
+            ],
 			"miscTags": [
-				"OBJ"
+				"OBJ",
+				"SCL"
 			]
 		},
 		{
@@ -7702,10 +7712,10 @@
 				}
 			],
 			"entries": [
-				"Grasping weeds and vines sprout from the ground in a 20-foot square starting from a point within range. For the duration, these plants turn the ground in the area into {@quickref difficult terrain||3}.",
-				"A creature in the area when you cast the spell must succeed on a Strength saving throw or be {@condition restrained} by the entangling plants until the spell ends. A creature {@condition restrained} by the plants can use its action to make a Strength check against your spell save DC. On a success, it frees itself.",
-				"When the spell ends, the conjured plants wilt away."
-			],
+                "Grasping weeds and vines sprout from the ground in a 20-foot square starting from a point within range. For the duration, these plants turn the ground in the area into {@quickref difficult terrain||3} for everyone except for you.",
+                "A creature in the area when you cast the spell must succeed on a Strength saving throw or be {@condition restrained} by the entangling plants until the spell ends. A creature {@condition restrained} by the plants can use its action to make a Strength check against your spell save DC. On a success, it frees itself.",
+                "When the spell ends, the conjured plants wilt away."
+            ],
 			"conditionInflict": [
 				"restrained"
 			],
@@ -7753,8 +7763,8 @@
 				}
 			],
 			"entries": [
-				"You weave a distracting string of words, causing creatures of your choice that you can see within range and that can hear you to make a Wisdom saving throw. Any creature that can't be {@condition charmed} succeeds on this saving throw automatically, and if you or your companions are fighting a creature, it has advantage on the save. On a failed save, the target has disadvantage on Wisdom ({@skill Perception}) checks made to perceive any creature other than you until the spell ends or until the target can no longer hear you. The spell ends if you are {@condition incapacitated} or can no longer speak."
-			],
+                "You weave a distracting string of words, causing creatures of your choice that you can see within range and that can hear you to make a Wisdom saving throw. Any creature that can't be {@condition charmed} succeeds on this saving throw automatically, and if you or your companions are fighting a creature, it has advantage on the save. On a failed save, a target has a -10 penalty to Wisdom ({@skill Perception}) checks and Passive {@skill Perception} until the spell ends. The spell ends if you are {@condition incapacitated} or can no longer speak."
+            ],
 			"savingThrow": [
 				"wisdom"
 			],
@@ -11187,9 +11197,9 @@
 				}
 			],
 			"entries": [
-				"Choose a willing creature that you can see within range. Until the spell ends, the target's speed is doubled, it gains a +2 bonus to AC, it has advantage on Dexterity saving throws, and it gains an additional action on each of its turns. That action can be used only to take the {@action Attack} (one weapon attack only), {@action Dash}, {@action Disengage}, {@action Hide}, or {@action Use an Object} action.",
-				"When the spell ends, the target can't move or take actions until after its next turn, as a wave of lethargy sweeps over it."
-			],
+                "Choose a willing creature that you can see within range. Until the spell ends, the target's speed is doubled, it gains a +2 bonus to AC, it has advantage on Dexterity saving throws, and it gains an additional action on each of its turns. That action can be used only to take the {@action Attack} (one weapon or {@action unarmed attack|PHB|unarmed} attack only), {@action Dash}, {@action Disengage}, {@action Hide}, or {@action Use an Object} action.",
+                "When the spell ends, the target is {@condition incapacitated} and has a Speed of 0 until the end of its next turn, as a wave of overwhelming lethargy washes over it."
+            ],
 			"miscTags": [
 				"ADV",
 				"MAC",
@@ -12614,13 +12624,23 @@
 				}
 			],
 			"entries": [
-				"Choose an object that you can see within range. The object can be a door, a box, a {@item chest|phb}, a set of {@item manacles|phb}, a padlock, or another object that contains a mundane or magical means that prevents access.",
-				"A target that is held shut by a mundane lock or that is stuck or barred becomes unlocked, unstuck, or unbarred. If the object has multiple locks, only one of them is unlocked.",
-				"If you choose a target that is held shut with {@spell arcane lock}, that spell is suppressed for 10 minutes, during which time the target can be opened and shut normally.",
-				"When you cast the spell, a loud knock, audible from as far away as 300 feet, emanates from the target object."
-			],
+                "Choose an object that you can see within range. The object can be a door, a box, a {@item chest|phb}, a set of {@item manacles|phb}, a padlock, or another object that contains a mundane or magical means that prevents access.",
+                "A target that is held shut by a mundane lock or that is stuck or barred becomes unlocked, unstuck, or unbarred. If the object has multiple locks, only one of them is unlocked.",
+                "If you choose a target that is held shut with {@spell Arcane Lock}, that spell is suppressed for 10 minutes, during which time the target can be opened and shut normally.",
+                "When you cast the spell, a loud knock, audible from as far away as 300 feet, emanates from the target object."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, you can reduce the auditory range of the spell by 50 feet for each slot level above 2."
+                    ]
+                }
+            ],
 			"miscTags": [
 				"OBJ",
+				"SCL",
 				"SGT"
 			]
 		},
@@ -18468,8 +18488,8 @@
 			],
 			"entries": [
 				"Until the spell ends, freezing rain and sleet fall in a 20-foot-tall cylinder with a 40-foot radius centered on a point you choose within range. The area is {@quickref Vision and Light|PHB|2||heavily obscured}, and exposed flames in the area are doused.",
-				"The ground in the area is covered with slick ice, making it {@quickref difficult terrain||3}. When a creature enters the spell's area for the first time on a turn or starts its turn there, it must make a Dexterity saving throw. On a failed save, it falls {@condition prone}.",
-				"If a creature starts its turn in the spell's area and is {@status concentration||concentrating} on a spell, the creature must make a successful Constitution saving throw against your spell save DC or lose {@status concentration}."
+				"The ground in the area is covered with slick ice, making it {@quickref difficult terrain||3}. When a creature enters the spell's area for the first time on a turn or starts its turn there, it must make a Dexterity saving throw. On a failed save, it falls {@condition prone} and if it is {@status concentration||concentrating}, it automatically loses {@status concentration}.",
+				"If a {@status concentration||concentrating} creature succeeds on the Dexterity saving throw, it must make a successful Constitution saving throw against your spell save DC in order to maintain it or risk losing {@status concentration}."
 			],
 			"conditionInflict": [
 				"prone"
@@ -20961,8 +20981,8 @@
 				}
 			],
 			"entries": [
-				"The touch of your shadow-wreathed hand can siphon life force from others to heal your wounds. Make a melee spell attack against a creature within your reach. On a hit, the target takes {@damage 3d6} necrotic damage, and you regain hit points equal to half the amount of necrotic damage dealt. Until the spell ends, you can make the attack again on each of your turns as an action."
-			],
+                "The touch of your shadow-wreathed hand can siphon life force from others to heal your wounds. Make a melee spell attack against a creature within your reach. On a hit, the target takes {@damage 3d6} necrotic damage, and you regain hit points equal to half the amount of necrotic damage dealt. While spell is active, can use your action to target the same creature or a different creature without recasting."
+            ],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
@@ -21468,9 +21488,9 @@
 				"ritual": true
 			},
 			"entries": [
-				"This spell grants the ability to move across any liquid surface\u2014such as water, acid, mud, snow, quicksand, or lava\u2014as if it were harmless solid ground (creatures crossing molten lava can still take damage from the heat). Up to ten willing creatures you can see within range gain this ability for the duration.",
-				"If you target a creature submerged in a liquid, the spell carries the target to the surface of the liquid at a rate of 60 feet per round."
-			],
+                "This spell grants the ability to move across any liquid surface\u2014such as water, acid, mud, snow, quicksand, or lava\u2014as if it were harmless solid ground (creatures crossing molten lava can still take damage from the heat). Up to ten willing creatures you can see within range gain this ability for the duration.",
+                "If you target a creature submerged in a liquid, the spell carries the target to the surface of the liquid at a rate of 60 feet per round. Additionally, an affected target can use a bonus action to pass from the liquid's surface into the liquid itself and vice versa."
+            ],
 			"miscTags": [
 				"SGT"
 			],
