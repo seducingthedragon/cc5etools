@@ -99,7 +99,7 @@
 							"type": "item",
 							"name": "Blindsight",
 							"entries": [
-								"You have {@sense blindsight} with a range of 30 feet. Within that range, you can effectively see anything that isn't behind {@quickref Cover||3||total cover}, even if you're {@condition blinded} or in darkness. Moreover, you can see an {@condition invisible} creature, unless the creature successfully hides from you."
+								"You have {@sense Blindsight} with a range of 30 feet. Within that range, you can effectively see anything that isn't behind {@quickref Cover||3||total cover}, even if you're {@condition blinded} or in darkness. Moreover, you can see an {@condition invisible} creature, unless the creature successfully hides from you."
 							]
 						},
 						{
@@ -125,8 +125,11 @@
 			"savingThrow": [
 				"dexterity"
 			],
+			"areaTags": [
+				"N",
+				"ST"
+			],
 			"miscTags": [
-				"SGT",
 				"UBA"
 			]
 		},
@@ -198,7 +201,18 @@
 				},
 				"As a bonus action on subsequent turns, you can move the field to another creature within 60 feet of the field."
 			],
+			"damageResist": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"poison"
+			],
+			"areaTags": [
+				"ST"
+			],
 			"miscTags": [
+				"SGT",
 				"UBA"
 			]
 		},
@@ -271,6 +285,14 @@
 			"savingThrow": [
 				"dexterity",
 				"wisdom"
+			],
+			"conditionInflict": [
+				"blinded",
+				"charmed",
+				"incapacitated"
+			],
+			"areaTags": [
+				"C"
 			],
 			"miscTags": [
 				"RO",
@@ -381,6 +403,9 @@
 			],
 			"areaTags": [
 				"N"
+			],
+			"miscTags": [
+				"SCL"
 			],
 			"hasFluffImages": true
 		},
