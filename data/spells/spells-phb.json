@@ -20621,46 +20621,52 @@
 			"level": 1,
 			"school": "V",
 			"time": [
-				{
-					"number": 1,
-					"unit": "bonus"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "self"
-				}
-			},
-			"components": {
-				"v": true
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "minute",
-						"amount": 1
-					},
-					"concentration": true
-				}
-			],
+                {
+                    "number": 1,
+                    "unit": "bonus",
+                    "condition": "which you take immediately after hitting a target with a Melee weapon or an {@action unarmed attack||unarmed strike attack}"
+                }
+            ],
+            "range": {
+                "distance": {
+                    "type": "self"
+                },
+                "type": "point"
+            },
+            "components": {
+                "v": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
 			"entries": [
-				"The first time you hit with a melee weapon attack during this spell's duration, your weapon rings with thunder that is audible within 300 feet of you, and the attack deals an extra {@damage 2d6} thunder damage to the target. Additionally, if the target is a creature, it must succeed on a Strength saving throw or be pushed 10 feet away from you and knocked {@condition prone}."
-			],
-			"damageInflict": [
-				"thunder"
-			],
-			"conditionInflict": [
-				"prone"
-			],
-			"savingThrow": [
-				"strength"
-			],
-			"miscTags": [
-				"AAD",
-				"FMV"
-			]
+                "When you hit a target with a melee attack, you can cause the target to feel the force of a thunderous shockwave that's audible out to 300 feet. This attack deals an extra {@damage 1d8} thunder damage, and the target must succeed on a Strength saving throw or be pushed 10 feet away from you in a line and fall {@condition prone}. Large and larger targets have advantage on this saving throw."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd-level or higher, the thunder damage increases by {@scaledamage 1d8|1-9|1d6} for each spell slot level above 1st."
+                    ]
+                }
+            ],
+            "conditionInflict": [
+                "prone"
+            ],
+            "damageInflict": [
+                "thunder"
+            ],
+            "savingThrow": [
+                "strength"
+            ],
+            "miscTags": [
+                "AAD",
+                "FMV",
+                "SCL"
+            ]
 		},
 		{
 			"name": "Thunderwave",
@@ -21111,32 +21117,34 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "action"
+					"unit": "bonus"
 				}
 			],
 			"range": {
-				"type": "point",
+                "type": "point",
 				"distance": {
-					"type": "feet",
-					"amount": 30
-				}
-			},
-			"components": {
-				"s": true
-			},
+                    "type": "self"
+                }
+            },
+            "components": {
+                "s": true,
+                "m": {
+                    "text": "a melee weapon worth at least 1 sp",
+                    "cost": 10
+                }
+            },
 			"duration": [
 				{
 					"type": "timed",
 					"duration": {
 						"type": "round",
 						"amount": 1
-					},
-					"concentration": true
+					}
 				}
 			],
 			"entries": [
-				"You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target's defenses. On your next turn, you gain advantage on your first attack roll against the target, provided that this spell hasn't ended."
-			],
+                "You infuse your weapon with divination magic and point it at one creature you can see granting you a brief insight into the target's defenses. The next time you make a melee attack with this weapon against that target before the start of your next turn, you gain advantage on your that attack roll against the target."
+            ],
 			"miscTags": [
 				"ADV"
 			],
@@ -21329,18 +21337,26 @@
 				}
 			],
 			"entries": [
-				"You unleash a string of insults laced with subtle enchantments at a creature you can see within range. If the target can hear you (though it need not understand you), it must succeed on a Wisdom saving throw or take {@damage 1d4} psychic damage and have disadvantage on the next attack roll it makes before the end of its next turn.",
-				"This spell's damage increases by {@damage 1d4} when you reach 5th level ({@damage 2d4}), 11th level ({@damage 3d4}), and 17th level ({@damage 4d4})."
-			],
-			"scalingLevelDice": {
-				"label": "psychic damage",
-				"scaling": {
-					"1": "1d4",
-					"5": "2d4",
-					"11": "3d4",
-					"17": "4d4"
-				}
-			},
+                "You unleash a string of provoking insults laced with subtle enchantments at a creature you can see within range. The target must succeed on a Wisdom saving throw, or it takes {@damage 1d6} psychic damage and have disadvantage on every attack roll against targets other than you until the start of your next turn."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Cantrip Upgrades",
+                    "entries": [
+                        "This spell's damage increases by 1d6 when you reach 5th ({@damage 2d6}), 11th ({@damage 3d6}), and 17th level ({@damage 4d6})."
+                    ]
+                }
+            ],
+            "scalingLevelDice": {
+                "label": "psychic damage",
+                "scaling": {
+                    "1": "1d6",
+                    "5": "2d6",
+                    "11": "3d6",
+                    "17": "4d6"
+                }
+            },
 			"damageInflict": [
 				"psychic"
 			],
