@@ -299,26 +299,6 @@
 					"source": "PHB"
 				}
 			]
-		},
-		"Galder's Speedy Courier": {
-			"class": [
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB"
-				}
-			]
-		},
-		"Galder's Tower": {
-			"class": [
-				{
-					"name": "Wizard",
-					"source": "PHB"
-				}
-			]
 		}
 	},
 	"PHB": {
