@@ -11872,7 +11872,7 @@
 			"entries": [
 				"You place a curse on a creature that you can see within range. Until the spell ends, you deal an extra {@damage 1d6} necrotic damage to the target whenever you hit it with an attack. Also, choose one ability when you cast the spell. The target has disadvantage on ability checks made with the chosen ability.",
 				"If the target drops to 0 hit points before this spell ends, you can use a bonus action on a subsequent turn of yours to curse a new creature.",
-				"A {@spell remove curse} cast on the target ends this spell early."
+				"A {@spell Remove Curse} cast on the target ends this spell early."
 			],
 			"entriesHigherLevel": [
 				{
@@ -12324,6 +12324,9 @@
 			"savingThrow": [
 				"dexterity"
 			],
+			"miscTags": [
+				"DFT"
+			],
 			"areaTags": [
 				"Y"
 			]
@@ -12514,7 +12517,7 @@
 						"During the casting of the spell, in any of its versions, you can specify a condition that will cause the spell to end and release the target. The condition can be as specific or as elaborate as you choose, but the DM must agree that the condition is reasonable and has a likelihood of coming to pass. The conditions can be based on a creature's name, identity, or deity but otherwise must be based on observable actions or qualities and not based on intangibles such as level, class, or hit points."
 					]
 				},
-				"A {@spell dispel magic} spell can end the spell only if it is cast as a 9th-level spell, targeting either the prison or the special component used to create it.",
+				"A {@spell Dispel Magic} spell can end the spell only if it is cast as a 9th-level spell, targeting either the prison or the special component used to create it.",
 				"You can use a particular special component to create only one prison at a time. If you cast the spell again using the same component, the target of the first casting is immediately freed from its binding."
 			],
 			"conditionInflict": [
@@ -12566,7 +12569,7 @@
 				}
 			],
 			"entries": [
-				"A swirling cloud of smoke shot through with white-hot embers appears in a 20-foot-radius sphere centered on a point within range. The cloud spreads around corners and is {@quickref Vision and Light|PHB|2||heavily obscured}. It lasts for the duration or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it.",
+				"A swirling cloud of smoke shot through with white-hot embers appears in a 20-foot-radius sphere centered on a point within range. The cloud spreads around corners and is {@quickref Vision and Light|PHB|2||heavily obscured}. It lasts for the duration or until a wind of moderate or greater speed (at least 10 miles per hour or from {@spell Gust of Wind}) disperses it.",
 				"When the cloud appears, each creature in it must make a Dexterity saving throw. A creature takes {@damage 10d8} fire damage on a failed save, or half as much damage on a successful one. A creature must also make this saving throw when it enters the spell's area for the first time on a turn or ends its turn there.",
 				"The cloud moves 10 feet directly away from you in a direction that you choose at the start of each of your turns."
 			],
@@ -12920,6 +12923,9 @@
 				"OBJ",
 				"SCL",
 				"SGT"
+			],
+			"areaTags": [
+				"ST"
 			]
 		},
 		{
