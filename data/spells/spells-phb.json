@@ -2556,7 +2556,7 @@
 				}
 			],
 			"entries": [
-				"Your body becomes blurred, shifting and wavering to all who can see you. For the duration, any creature has disadvantage on attack rolls against you. An attacker is immune to this effect if it doesn't rely on sight, as with blindsight, or can see through illusions, as with {@sense truesight}."
+				"Your body becomes blurred, shifting and wavering to all who can see you. For the duration, any creature has disadvantage on attack rolls against you. An attacker is immune to this effect if it doesn't rely on sight, as with {@sense blindsight}, or can see through illusions, as with {@sense truesight}."
 			]
 		},
 		{
@@ -3281,7 +3281,7 @@
 				}
 			],
 			"entries": [
-                "You fill the air with spectral spinning glass daggers in a 5 foot cube that pulse outwards another 5 feet, centered on a point you choose within range. Creatures can make a Wisdom ({@skill Perception}) check against your spell save DC in order to perceive it as a magical cloud, however it's considered to be Lightly Obscured if attempting to perceive the daggers within. A creature takes {@damage 4d4} slashing damage once per turn for one of the following scenarios:",
+                "You fill the air with spectral spinning glass daggers in a 5 foot cube that pulse outwards another 5 feet, centered on a point you choose within range. Creatures can make a Wisdom ({@skill Perception}) check against your spell save DC in order to perceive it as a magical cloud, however it's considered to be {@quickref Vision and Light||2||lightly obscured} if attempting to perceive the daggers within. A creature takes {@damage 4d4} slashing damage once per turn for one of the following scenarios:",
                 {
                     "type": "list",
                     "items": [
@@ -8075,7 +8075,7 @@
 			],
 			"entries": [
 				"You evoke elemental guardian spirits that flit around you in a 15-foot Emanation for the duration. Until the spell ends, any attack you make deals an extra {@damage 3d8} damage when you hit a creature in the Emanation. This damage is Acid, Cold, Fire, or Lightning (your choice when you make the attack).",
-				"In addition, the ground in the Emanation is Difficult Terrain for your enemies."
+				"In addition, the ground in the Emanation is {@quickref difficult terrain||3} to all creatures of your choice."
 			],
 			"entriesHigherLevel": [
 				{
@@ -14445,7 +14445,7 @@
 				"Each time a creature targets you with an attack during the spell's duration, roll a {@dice d20} to determine whether the attack instead targets one of your duplicates.",
 				"If you have three duplicates, you must roll a 6 or higher to change the attack's target to a duplicate. With two duplicates, you must roll an 8 or higher. With one duplicate, you must roll an 11 or higher.",
 				"A duplicate's AC equals 10 + your Dexterity modifier. If an attack hits a duplicate, the duplicate is destroyed. A duplicate can be destroyed only by an attack that hits it. It ignores all other damage and effects. The spell ends when all three duplicates are destroyed.",
-				"A creature is unaffected by this spell if it can't see, if it relies on senses other than sight, such as blindsight, or if it can perceive illusions as false, as with {@sense truesight}."
+				"A creature is unaffected by this spell if it can't see, if it relies on senses other than sight, such as {@sense blindsight}, or if it can perceive illusions as false, as with {@sense truesight}."
 			]
 		},
 		{
@@ -15330,7 +15330,7 @@
                             "type": "entries",
                             "name": "Shadowy Self",
                             "entries": [
-                                "For the duration of the spell, you summon a shadowy veil to cover all affected creatures individually, instead of emanating an aura. This allows you and your allies to move freely across various spaces without needing to stay within 30 feet of one another. If an affected target stands still for at least one minute, they are considered Lightly Obscured while in Bright Light and Heavily Obscured while in Dim Light when others are trying to perceive them. This does not impact the affected target's vision."
+                                "For the duration of the spell, you summon a shadowy veil to cover all affected creatures individually, instead of emanating an aura. This allows you and your allies to move freely across various spaces without needing to stay within 30 feet of one another. If an affected target stands still for at least one minute, they are considered {@quickref Vision and Light||2||lightly obscured} while in Bright Light and {@quickref Vision and Light||2||heavily obscured} while in Dim Light when others are trying to perceive them. This does not impact the affected target's vision."
                             ]
                         }
                     ]
@@ -21472,7 +21472,7 @@
                     "type": "entries",
                     "name": "Orientation & Shape",
                     "entries": [
-                        "The wall appears in any orientation you choose, as a horizontal or vertical barrier or an angle. It can be free floating or rest on a solid surface. You can form it into a hemispherical dome, a sphere with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-by-10-foot panels. Each panel must be contiguous with another. In any form, the wall is 1/4 inch thick. Nothing can pass through the wall physically, and anything viewed through it is lightly obscured. The wall extends into the Ethereal Plane, blocking ethereal travel through the wall."
+                        "The wall appears in any orientation you choose, as a horizontal or vertical barrier or an angle. It can be free floating or rest on a solid surface. You can form it into a hemispherical dome, a sphere with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-by-10-foot panels. Each panel must be contiguous with another. In any form, the wall is 1/4 inch thick. Nothing can pass through the wall physically, and anything viewed through it is {@quickref Vision and Light||2||lightly obscured}. The wall extends into the Ethereal Plane, blocking ethereal travel through the wall."
                     ]
                 },
                 {
@@ -21895,7 +21895,7 @@
 				}
 			],
 			"entries": [
-				"You conjure a mass of thick, sticky webbing at a point of your choice within range. The webs fill a 20-foot cube from that point for the duration. The webs are {@quickref difficult terrain||3} and lightly obscure their area.",
+				"You conjure a mass of thick, sticky webbing at a point of your choice within range. The webs fill a 20-foot cube from that point for the duration. The webs are {@quickref difficult terrain||3} and {@quickref Vision and Light||2||lightly obscured} the area.",
 				"If the webs aren't anchored between two solid masses (such as walls or trees) or layered across a floor, wall, or ceiling, the conjured web collapses on itself, and the spell ends at the start of your next turn. Webs layered over a flat surface have a depth of 5 feet.",
 				"Each creature that starts its turn in the webs or that enters them during its turn must make a Dexterity saving throw. On a failed save, the creature is {@condition restrained} as long as it remains in the webs or until it breaks free.",
 				"A creature {@condition restrained} by the webs can use its action to make a Strength check against your spell save DC. If it succeeds, it is no longer {@condition restrained}.",
