@@ -1,29 +1,5 @@
 {
 	"AAG": {
-		"Air Bubble": {
-			"class": [
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
-				}
-			]
-		},
 		"Create Spelljamming Helm": {
 			"class": [
 				{
