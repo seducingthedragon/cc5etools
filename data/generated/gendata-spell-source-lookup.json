@@ -25811,22 +25811,6 @@
                 }
             }
         },
-        "enhanced plants": {
-            "classVariant": {
-                "PHB": {
-                    "Druid": {
-                        "definedInSources": [
-                            "BMT"
-                        ]
-                    },
-                    "Ranger": {
-                        "definedInSources": [
-                            "BMT"
-                        ]
-                    }
-                }
-            }
-        },
         "feline chaos": {
             "classVariant": {
                 "PHB": {

@@ -9187,20 +9187,6 @@
                 }
             ]
         },
-		"Enhanced Plants": {
-            "classVariant": [
-                {
-                    "name": "Druid",
-                    "source": "PHB",
-                    "definedInSource": "BMT"
-                },
-                {
-                    "name": "Ranger",
-                    "source": "PHB",
-                    "definedInSource": "BMT"
-                }
-            ]
-        },
 		"Feline Chaos": {
             "classVariant": [
                 {

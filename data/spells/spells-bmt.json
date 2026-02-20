@@ -47,6 +47,9 @@
 			"savingThrow": [
 				"wisdom"
 			],
+            "areaTags": [
+                "ST"
+            ],
 			"miscTags": [
 				"SGT"
 			]
@@ -95,7 +98,11 @@
                     ]
                 }
             ],
+            "areaTags": [
+                "MT"
+            ],
             "miscTags": [
+                "OBJ",
                 "SCT"
             ]
         },
@@ -144,6 +151,9 @@
                     ]
                 }
             ],
+            "areaTags": [
+                "MT"
+            ],
             "miscTags": [
                 "SCT",
                 "UBA"
@@ -189,7 +199,7 @@
         		}
         	],
         	"entries": [
-        		"You unleash a primal howl that calls lesser creatures to your command. Each Beast in a 100-foot sphere centered on you when you cast the spell is now {@condition Charmed} by you. Each beast must make a Wisdom saving throw to determine the duration and additional effects of the {@condition Charmed} condition. On a failed save, the {@condition Charmed} condition lasts for the duration of the spell and the target understand your commands, following them to the best of its ability until you issue them a new command, which takes a bonus action on your subsequent turns. On a successful save, the {@condition charmed} condition lasts until the start of your next turn, but you have no additional ability to command it. The howl is audible within 300 feet."
+        		"You unleash a primal howl that calls lesser creatures to your command. Each Beast within 100 feet of you is now {@condition charmed} by you. Each beast must make a Wisdom saving throw to determine the duration and additional effects of the {@condition Charmed} condition. On a failed save, the {@condition Charmed} condition lasts for the duration of the spell and the target understand your commands, following them to the best of its ability until you issue them a new command, which takes a bonus action on your subsequent turns. On a successful save, the {@condition charmed} condition lasts until the start of your next turn, but you have no additional ability to command it. The howl is audible within 300 feet."
         	],
         	"conditionInflict": [
         		"charmed"
@@ -197,6 +207,9 @@
         	"savingThrow": [
         		"wisdom"
         	],
+            "areaTags": [
+                "E"
+            ],
             "miscTags": [
                 "UBA"
             ]
@@ -234,19 +247,34 @@
                 }
             ],
             "entries": [
-                "You jump up to 10 feet to an unoccupied space you can see and deliver a spectral claw attack that deals Slashing or Force damage (you choose when you cast the spell). Make a melee spell attack against a target. On a hit, the target takes {@damage 1d8} damage of the chosen type, and the next attack roll you make against it before the end of your next turn has advantage."
+                "You jump up to 10 feet towards another creature, to an unoccupied space you can see, and deliver a spectral claw attack. Make a melee spell attack against a target. On a hit, the target takes {@damage 1d8} Force Damage and the next attack roll you make against it before the end of your next turn has advantage."
             ],
             "entriesHigherLevel": [
                 {
                     "type": "entries",
                     "name": "Cantrip Upgrade",
                     "entries": [
-                        "The damage increases by {@dice 1d8} when you reach levels 5 ({@dice 2d8}), 11 (38), and 17 ({@dice 4d8})."
+                        "The damage increases by {@dice 1d8} when you reach levels 5 ({@dice 2d8}), 11 ({@dice 3d8}), and 17 ({@dice 4d8})."
                     ]
                 }
             ],
+            "scalingLevelDice": {
+                "label": "force damage",
+                "scaling": {
+                    "1": "1d8",
+                    "5": "2d8",
+                    "11": "3d8",
+                    "17": "4d8"
+                }
+            },
             "spellAttack": [
                 "M"
+            ],
+            "damageInflict": [
+                "force"
+            ],
+            "areaTags": [
+                "ST"
             ],
             "miscTags": [
                 "ADV",
@@ -299,6 +327,9 @@
                 "When you cast this spell, all footprints and fingerprints within a 30-foot emanation originating from you become highlighted and glow faintly for the duration.", 
 				"When you cast the spell, choose any point in time up to 10 days ago. Only footprints and fingerprints left between that time and the present will be highlighted. Each creature that leaves footprints and fingerprints is assigned a unique color, but are not otherwise identified.", 
 				"Any creature that moves or touches objects within the emanation will also leave colorful footprints and fingerprints, which might reveal {@condition invisible} creatures in the area."
+            ],
+            "areaTags": [
+                "E"
             ]
         },
 		{
@@ -342,7 +373,7 @@
             ],
             "entries": [
                 "You conjure a low cobblestone wall along the ground at a point you can see within range. The wall is 18 inches thick and is composed of three 5-foot-long, 3-foot-high segments. Each segment must be contiguous with at least one other segment.",
-                "A Medium creature that hunkers behind the wall has half-cover to three-quarters. A Small creature that hunkers behind it has three-quarters cover to full cover. The wall can be leapt over following standard jump rules, as well as at the discretion of your DM.",
+                "A Medium creature that hunkers behind the wall has {@quickref Cover||3||half cover} to {@quickref Cover||3||three-quarters cover}. A Small creature that hunkers behind it has {@quickref Cover||3||three-quarters cover} to {@quickref Cover||3||total cover}. The wall can be leapt over following standard {@book jump rules|phb|8|Jumping}, with the discretion of your DM.",
                 "Each segment has AC 10 and 30 hit points. Reducing a segment of the wall to 0 hit points causes it to crumble, destroying it. The wall disappears when all the segments are destroyed or the spell ends."
             ],
 			"entriesHigherLevel": [
@@ -354,7 +385,11 @@
                     ]
                 }
             ],
+            "areaTags": [
+                "W"
+            ],
             "miscTags": [
+                "MAC",
                 "SCL",
 				"SGT"
             ]
@@ -399,7 +434,7 @@
                 }
             ],
             "entries": [
-                "You conjure a shadowy road between two points, with at least one point within range, to create a bridge or path. This effect can bridge a chasm or create a smooth path through difficult terrain. The dark path is 10 feet wide and up to 50 feet long. It can support up to 500 pounds of weight at one time. A creature that adds more weight than what the path can support will fall through the path as if it were an illusion."
+                "You conjure a shadowy road between two points, with at least one point within range, to create a bridge or path. This effect can bridge a chasm or create a smooth path through {@quickref difficult terrain||3}. The dark path is 10 feet wide and up to 50 feet long. It can support up to 500 pounds of weight at one time. A creature that adds more weight than what the path can support will fall through the path as if it were an illusion."
             ],
 			"areaTags": [
 				"L"
@@ -434,14 +469,14 @@
                 }
             ],
             "entries": [
-                "A wave of force leaves your palms, targeting a creature within range. The target makes a Constitution saving throw. On a failed save, the creature takes {@damage 2d6} Force damage and has the {@condition Stunned} condition until the end of its next turn. On a successful save, the creature takes half damage only."
+                "A wave of force leaves your palms, targeting a creature within range. The target makes a Constitution saving throw. On a failed save, the creature takes {@damage 2d6} Force damage and is {@condition stunned} until the end of its next turn. On a successful save, the creature takes half damage only."
             ],
             "entriesHigherLevel": [
                 {
                     "type": "entries",
                     "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "One additional creature can be targeted for each spell slot above 2."
+                        "When you cast this spell using a 3rd level spell slot or higher, you can target one additional creature for each spell slot above 2."
                     ]
                 }
             ],
@@ -453,6 +488,9 @@
             ],
             "savingThrow": [
                 "constitution"
+            ],
+            "areaTags": [
+                "ST"
             ],
             "miscTags": [
                 "SCT"
@@ -498,6 +536,9 @@
             "savingThrow": [
                 "wisdom"
             ],
+            "areaTags": [
+                "ST"
+            ],
             "miscTags": [
                 "SGT"
             ]
@@ -538,65 +579,10 @@
             ],
             "entries": [
                 "With a simple gesture, you can put out a single small source of light within range. This spell extinguishes a torch, a candle, a lantern, or a single source from the {@spell Dancing Lights} cantrip, excluding its singular medium humanoid form."
-            ]
-        },
-        {
-            "name": "Enhanced Plants",
-            "source": "BMT",
-            "page": 50,
-            "level": 3,
-            "school": "C",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "action"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "feet",
-                    "amount": 60
-                }
-            },
-            "components": {
-                "v": true,
-                "s": true
-            },
-            "duration": [
-                {
-                    "type": "timed",
-                    "duration": {
-                        "type": "minute",
-                        "amount": 10
-                    },
-                    "concentration": true
-                }
-            ],
-            "entries": [
-                "You conjure animated plants that appear as a {@b Large} mass of vines, stems, shoots, roots, and leaves in an unoccupied space you can see within range. The vegetation lasts for the duration.",
-                "While you're within 5 feet of the plants or sharing a space with them, you are considered to be in a Lightly Obscured area. Other creatures cannot enter the same space as the plants. When you move on your turn, you can also move the plants up to 30 feet to an unoccupied space you can see.",
-                "Whenever the plants move within 5 feet of a creature you can see, and whenever a creature you can see enters a space within 5 feet of the plants or ends its turn there, you can force that creature to make a Dexterity saving throw. On a failed save, the creature takes {@damage 3d6} Slashing damage. A creature makes this save only once per turn."
-            ],
-            "entriesHigherLevel": [
-                {
-                    "type": "entries",
-                    "name": "Using a Higher-Level Spell Slot",
-                    "entries": [
-                        "The damage increases by {@dice 1d6} for each spell slot level above 3."
-                    ]
-                }
-            ],
-            "damageInflict": [
-                "slashing"
-            ],
-            "savingThrow": [
-                "dexterity"
             ],
             "miscTags": [
-                "OBS",
-                "SGT",
-                "SMN"
+                "OBJ",
+                "SGT"
             ]
         },
 		{
@@ -637,7 +623,7 @@
                 }
             ],
             "entries": [
-                "Each target must succeed on a Dexterity saving throw or be affected by this spell for the duration. An affected target takes {@damage 4d6} Slashing damage at the start of each of their turns, and they have Disadvantage on all ability checks and attack rolls. If they attempt to move, they must make a Constitution saving throw or gain the {@condition Prone} condition, taking another {@damage 2d6} Slashing damage from the startled cats. At the end of their turn an affected creature makes another Dexterity saving throw, ending the spell on itself on a success."
+                "You summon a protective swarm of cats in a 15-foot radius sphere, centered on a point within range. Each target must succeed on a Dexterity saving throw or be affected by this spell for the duration. An affected target takes {@damage 4d6} Slashing damage at the start of each of their turns, and they have Disadvantage on all ability checks and attack rolls. If they attempt to move, they must make a Constitution saving throw or gain the {@condition Prone} condition, taking another {@damage 2d6} Slashing damage from the startled cats. At the end of their turn an affected creature makes another Dexterity saving throw, ending the spell on itself on a success."
             ],
             "entriesHigherLevel": [
                 {
@@ -654,6 +640,9 @@
             "savingThrow": [
                 "constitution",
                 "dexterity"
+            ],
+            "areaTags": [
+                "S"
             ]
         },
         {
@@ -690,6 +679,9 @@
 			"damageInflict": [
 				"necrotic"
 			],
+            "areaTags": [
+                "ST"
+            ],
 			"miscTags": [
 				"HL",
 				"SGT"
@@ -730,7 +722,7 @@
                 }
             ],
             "entries": [
-                "You target one creature within range to become enveloped by a drunken aura that quickly washes away, leaving an intense hangover. The target makes a Constitution saving throw. On a failed save, the creature takes {@damage 3d8} Psychic damage and has the {@condition Poisoned} condition until the end of your next turn. On a successful save, the target takes half as much damage only. The target has Disadvantage on Constitution saving throws it makes to maintain {@status Concentration} as a result of this damage."
+                "You target one creature within range to become enveloped by an illusory drunken aura that quickly washes away, leaving an intense mental hangover. The target makes a Constitution saving throw. On a failed save, the creature takes {@damage 3d8} Psychic damage and has the {@condition Poisoned} condition until the end of your next turn. On a successful save, the target takes half as much damage only. The target has Disadvantage on Constitution saving throws it makes to maintain {@status Concentration} as a result of this damage."
             ],
             "entriesHigherLevel": [
                 {
@@ -749,6 +741,9 @@
             ],
             "savingThrow": [
                 "constitution"
+            ],
+            "areaTags": [
+                "ST"
             ]
         },
 		{
@@ -790,14 +785,14 @@
             ],
             "entries": [
                 "You hum a soothing melody and discard a bit of bear fur, which induces a soporific healing state in the next creature you touch. The target regains {@dice 2d6} plus your spellcasting modifier in hit points and is in a state of {@condition unconscious} rest for the duration of the spell. If the creature is unwilling, it must succeed on a Constitution saving throw or is {@condition charmed} and impacted by this spell.",
-                "Each creature affected by this spell falls {@condition unconscious} until the spell ends, the hibernating creature takes damage, or someone uses an action to shake or slap the hibernating creature awake. Undead and creatures immune to being {@condition charmed} aren't affected by this spell, however, those who enter a meditative restful state as their long rest, such as elves, can be affected by this spell."
+                "The spell ends early if the hibernating creature takes damage or someone uses an action to shake or slap the hibernating creature awake. Undead and creatures immune to being {@condition charmed} aren't affected by this spell, however, those who enter a meditative restful state as their long rest, such as elves, can be affected by this spell."
             ],
             "entriesHigherLevel": [
                 {
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "If cast using 3rd-level or higher spell slot, you may touch one willing creature per level to induce hibernation."
+                        "If cast using 3rd-level or higher spell slot, you may touch one additional willing creature per level to induce hibernation."
                     ]
                 }
             ],
@@ -807,6 +802,9 @@
             ],
             "savingThrow": [
                 "constitution"
+            ],
+            "areaTags": [
+                "ST"
             ],
             "miscTags": [
                 "HL"
@@ -867,6 +865,9 @@
             "spellAttack": [
                 "R"
             ],
+            "areaTags": [
+                "ST"
+            ],
             "miscTags": [
                 "SCL"
             ],
@@ -907,14 +908,19 @@
                 }
             ],
             "entries": [
-                "When you cast this spell, you call the masses to your attention and choose any number of creatures within range that can see you. Each chosen creature makes a Wisdom saving throw. Targets have Advantage if you or your allies are fighting it. On a failed save, the target has the {@condition Charmed} condition until the spell ends or until you or your allies damage it. The {@condition Charmed} creature is Friendly to you and your allies. While {@condition Charmed}, it must use its action to make melee attacks against the nearest creature (other than you or your allies) or use its turn to move toward the nearest target.",
-                "At the end of each of its turns, the target repeats the save, ending the spell on itself on a success."
+                "When you cast this spell, you call the masses to your attention and choose any number of creatures within range that can see you. Each chosen creature makes a Wisdom saving throw. Targets have Advantage if you or your allies are fighting it. On a failed save, the target has the {@condition Charmed} condition until the spell ends or until you or your allies damage it. The {@condition Charmed} creature is Friendly to you and your allies. While {@condition Charmed}, it must use its action to make melee attacks against the nearest creature (other than you or your allies) or use its turn to move toward the nearest target."
             ],
             "conditionInflict": [
                 "charmed"
             ],
             "savingThrow": [
                 "wisdom"
+            ],
+            "areaTags": [
+                "E"
+            ],
+            "miscTags": [
+                "SGT"
             ]
         },
 		{
@@ -927,7 +933,7 @@
                 }
             ],
             "school": "C",
-			"level": 2,
+			"level": 1,
             "time": [
                 {
                     "number": 1,
@@ -949,13 +955,15 @@
                 {
                     "type": "timed",
                     "duration": {
-                        "type": "hour",
-                        "amount": 1
-                    }
+                        "type": "minute",
+                        "amount": 10
+                    },
+                    "concentration": true
                 }
             ],
             "entries": [
-                "You touch one ranged weapon with the {@itemProperty LD|PHB|Loading} or {@itemProperty RLD|DMG|Reload} property. It becomes enchanted and reload itself automatically, ignoring the {@itemProperty LD|PHB|Loading} or {@itemProperty RLD|DMG|Reload} property for the duration. When the weapon's ammunition is depleted, ammunition you are carrying teleports into the weapon."
+                "You touch one ranged weapon with the {@itemProperty LD|PHB|Loading} or {@itemProperty RLD|DMG|Reload} property. It becomes enchanted and reload itself automatically, ignoring the {@itemProperty LD|PHB|Loading} or {@itemProperty RLD|DMG|Reload} property for the duration. When the weapon's ammunition is depleted, ammunition you are carrying teleports into the weapon. All damage dealt by the enhanted weapon is considered magical.",
+                "The spell ends early when you expend all of your ammunition."
             ],
 			"miscTags": [
 				"OBJ"
@@ -1002,8 +1010,12 @@
             "savingThrow": [
                 "strength"
             ],
+            "areaTags": [
+                "S"
+            ],
             "miscTags": [
                 "DFT",
+                "FMV",
                 "OBS"
             ]
         },
@@ -1053,13 +1065,14 @@
                     "type": "entries",
                     "name": "Cantrip Upgrade",
                     "entries": [
-                        "You can affect two objects when you reach 5th level, three objects at 11th level, and four objects at 17th level."
+                        "When you cast this spell, you can affect two objects when you reach 5th level, three objects at 11th level, and four objects at 17th level."
                     ]
                 }
             ],
             "miscTags": [
                 "ADV",
-                "SCL"
+                "OBJ",
+                "SCT"
             ]
         },
         {
@@ -1102,6 +1115,9 @@
             ],
             "savingThrow": [
                 "constitution"
+            ],
+            "areaTags": [
+                "E"
             ]
         },
         {
@@ -1138,7 +1154,7 @@
                 }
             ],
             "entries": [
-                "When you cast this spell, grant a creature in range a portion of the power of the elementals. For the duration, the creature can speak and understand Primordial and gains additional benefits based on the element you choose when you cast the spell:",
+                "When you cast this spell, you grant a creature in range a portion of the power of the elementals. For the duration, the creature can speak and understand Primordial and gains additional benefits based on the element you choose when you cast the spell:",
                 {
                     "type": "list",
                     "style": "list-hang-notitle",
@@ -1161,7 +1177,7 @@
                             "type": "item",
                             "name": "Earth",
                             "entries": [
-                                "The target has Advantage on saving throws against being moved or knocked {@condition Prone}. In addition, it has Tremorsense with a range of 30 feet."
+                                "The target has Advantage on saving throws against being moved or knocked {@condition Prone}. In addition, it has {@sense tremorsense|MM} with a range of 30 feet."
                             ]
                         },
                         {
@@ -1181,17 +1197,20 @@
                     ]
                 }
             ],
-            "miscTags": [
-                "ADV",
-                "HL",
-                "UBA"
-            ],
             "damageResist": [
                 "acid",
                 "cold",
                 "fire",
                 "lightning",
                 "thunder"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "ADV",
+                "HL",
+                "UBA"
             ]
         },
         {
@@ -1242,6 +1261,9 @@
                     "17": "1d10"
                 }
             },
+            "areaTags": [
+                "ST"
+            ],
             "miscTags": [
                 "ADV",
                 "SCL",
@@ -1278,8 +1300,12 @@
 			"entries": [
 				"You cause an object within range that isn't being worn or carried to instantly fly to your open hand. The object must weigh no more than 10 pounds or the spell fails."
 			],
+            "areaTags": [
+                "ST"
+            ],
 			"miscTags": [
-				"OBJ"
+				"FMV",
+                "OBJ"
 			]
 		},
         {
@@ -1327,6 +1353,12 @@
             ],
             "savingThrow": [
                 "dexterity"
+            ],
+            "areaTags": [
+                "L"
+            ],
+            "miscTags": [
+                "TP"
             ],
             "hasFluffImages": true
         },
@@ -1380,6 +1412,9 @@
 					]
 				}
 			],
+            "areaTags": [
+                "E"
+            ],
             "miscTags": [
                 "SCL"
             ]
@@ -1424,7 +1459,7 @@
                 }
             ],
             "entries": [
-                "You animate the shadow of a creature within range, causing it to attack that creature. As part of the bonus action to cast this spell, as well as a bonus action on subsequent rounds while the spell is active, you can make a melee spell attack against the creature, using its own shadow. On a hit, the target takes {@damage 2d8} psychic damage and must make a successful Intelligence saving throw or be {@condition incapacitated} until the start of your next turn."
+                "You animate the shadow of a creature within range, causing it to attack that creature. As part of the bonus action to cast this spell, as well as a bonus action on subsequent rounds while the spell is active, you can make a melee spell attack against the creature, using its own shadow. On a hit, the target takes {@damage 2d8} Psychic damage and must make a successful Intelligence saving throw or be {@condition incapacitated} until the start of your next turn."
             ],
             "entriesHigherLevel": [
                 {
@@ -1485,8 +1520,8 @@
                 "ritual": true
             },
             "entries": [
-                "As you cast the spell you draw out the potent scents trapped within all magic. Choose a magical effect you are aware of that's within range. The effect releases a scent specific to the creature that created it. If you are familiar with the creature, you automatically know that the magical effect was created by them.",
-                "If you are not familiar with the creature, you can make an ability check using your spellcasting ability modifier and add your proficiency bonus to it. Refer to the table below to determine what information you are able to glean from the scent. When succeeding on a DC check, you also learn previous information given from lower DCs.",
+                "As you cast the spell you draw out the potent scents trapped within all magic. Choose a magical effect you are aware of that's within range. The effect releases a scent specific to the creature that created it. If you are familiar with the creature, based on any step in the list below, you automatically know that information.",
+                "If you are not familiar with the creature, you can make an {@skill Arcana} or {@skill History} check (your choice) using your Spellcasting Ability, adding your proficiency bonus if you are proficient in the skill. Refer to the table below to determine what information you are able to glean from the scent. When succeeding on a DC check, you also learn previous information given from lower DCs.",
                 {
                     "type": "list",
                     "items": [
@@ -1496,6 +1531,9 @@
                         "DC 20—You learn the name of the creature."
                     ]
                 }
+            ],
+            "miscTags": [
+                "SGT"
             ]
         },
 		{
@@ -1651,7 +1689,10 @@
 			],
 			"savingThrow": [
 				"dexterity"
-			]
+			],
+            "areaTags": [
+                "N"
+            ]
 		},
         {
             "name": "Summon Plant",
@@ -1848,6 +1889,9 @@
 			],
             "conditionInflict": [
                 "invisible"
+            ],
+            "areaTags": [
+                "ST"
             ]
 		},
 		{
@@ -1900,6 +1944,9 @@
             ],
             "damageInflict": [
                 "necrotic"
+            ],
+            "areaTags": [
+                "ST"
             ],
             "miscTags": [
                 "AAD",
