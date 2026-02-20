@@ -119,7 +119,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "emanation",
                 "distance": {
                     "type": "feet",
                     "amount": 30
