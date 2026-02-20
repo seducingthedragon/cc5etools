@@ -5144,7 +5144,10 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "four or more arrows or bolts"
+				"m": {
+					"text": "four or more arrows or bolts",
+					"consume": "optional"
+				}
 			},
 			"duration": [
 				{
@@ -5249,7 +5252,11 @@
             "components": {
                 "v": true,
                 "s": true,
-                "m": "high quality materials worth at least 200 gold per level of the spell, all of which are consumed"
+				"m": {
+					"text": "high quality materials worth at least 200 gold per level of the spell, all of which are consumed",
+					"cost": 20000,
+					"consume": true
+				}
             },
             "duration": [
                 {
@@ -6057,12 +6064,12 @@
 				}
 			],
 			"entries": [
-				"A 60-foot-radius sphere of light spreads out from a point you choose within range. The sphere is bright light and sheds dim light for an additional 60 feet.",
+				"A 60-foot-radius sphere of sunlight spreads out from a point you choose within range. The sphere is bright light and sheds dim light for an additional 60 feet.",
 				"If you chose a point on an object you are holding or one that isn't being worn or carried, the light shines from the object and moves with it. Completely covering the affected object with an opaque object, such as a bowl or a helm, blocks the light.",
 				"If any of this spell's area overlaps with an area of darkness created by a spell of 3rd level or lower, the spell that created the darkness is dispelled."
 			],
 			"miscTags": [
-				"LGT",
+				"LGTS",
 				"OBJ"
 			],
 			"areaTags": [
@@ -6215,6 +6222,7 @@
 			"miscTags": [
 				"OBJ",
 				"PRM",
+				"PS",
 				"SGT"
 			]
 		},
@@ -6231,7 +6239,7 @@
 				}
 			],
 			"range": {
-				"type": "radius",
+				"type": "emanation",
 				"distance": {
 					"type": "feet",
 					"amount": 30
@@ -6309,6 +6317,12 @@
 				"fey",
 				"fiend",
 				"undead"
+			],
+			"areaTags": [
+				"E"
+			],
+			"miscTags": [
+				"SGT"
 			]
 		},
 		{
@@ -6358,6 +6372,12 @@
 			"entries": [
 				"For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its {@book school of magic|PHB|10|The Schools of Magic}, if any.",
 				"The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt."
+			],
+			"areaTags": [
+				"E"
+			],
+			"miscTags": [
+				"SGT"
 			]
 		},
 		{
@@ -6401,6 +6421,12 @@
 			"entries": [
 				"For the duration, you can sense the presence and location of poisons, poisonous creatures, and diseases within 30 feet of you. You also identify the kind of poison, poisonous creature, or disease in each case.",
 				"The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt."
+			],
+			"areaTags": [
+				"E"
+			],
+			"miscTags": [
+				"SGT"
 			]
 		},
 		{
@@ -6417,9 +6443,10 @@
 				}
 			],
 			"range": {
-				"type": "point",
+				"type": "emanation",
 				"distance": {
-					"type": "self"
+					"type": "feet",
+					"amount": 30
 				}
 			},
 			"components": {
@@ -6452,6 +6479,9 @@
 			],
 			"miscTags": [
 				"SGT"
+			],
+			"areaTags": [
+				"E"
 			]
 		},
 		{
@@ -6489,12 +6519,15 @@
                 }
             ],
             "entries": [
-                "You sense the presence of any trap within range as well as visible locations. A trap, for the purpose of this spell, includes anything that would inflict a sudden or unexpected effect you consider harmful or undesirable, which was specifically intended as such by its creator. Thus, the spell would locate an area affected by the {@spell alarm} spell, a {@spell glyph of warding}, a mechanical pit trap, or other trap-related aspects.",
+                "You sense the presence of any trap within range as well as visible locations. A trap, for the purpose of this spell, includes anything that would inflict a sudden or unexpected effect you consider harmful or undesirable, which was specifically intended as such by its creator. Thus, the spell would locate an area affected by the {@spell Alarm} spell, a {@spell Glyph of Warding}, a mechanical pit trap, or other trap-related aspects.",
                 "The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt. This allows you to locate triggering mechanisms and other visible parts of a trap but not concealed parts."
             ],
             "miscTags": [
                 "SGT"
-            ]
+            ],
+			"areaTags": [
+				"E"
+			]
         },
 		{
 			"name": "Dimension Door",
@@ -6536,6 +6569,10 @@
 			"miscTags": [
 				"TP"
 			],
+			"areaTags": [
+				"MT",
+				"ST"
+			],
 			"hasFluffImages": true
 		},
 		{
@@ -6551,7 +6588,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "emanation",
                 "distance": {
                     "amount": 30,
                     "type": "feet"
@@ -6582,7 +6619,7 @@
                 }
             ],
             "areaTags": [
-                "S"
+                "E"
             ],
             "conditionInflict": [
                 "deafened"
@@ -6640,6 +6677,9 @@
 			],
 			"miscTags": [
 				"SGT"
+			],
+			"areaTags": [
+				"ST"
 			]
 		},
 		{
@@ -6674,9 +6714,9 @@
 				}
 			],
 			"entries": [
-				"A thin green ray springs from your pointing finger to a target that you can see within range. The target can be a creature, an object, or a creation of magical force, such as the wall created by {@spell wall of force}.",
+				"A thin green ray springs from your pointing finger to a target that you can see within range. The target can be a creature, an object, or a creation of magical force, such as the wall created by {@spell Wall of Force}.",
 				"A creature targeted by this spell must make a Dexterity saving throw. On a failed save, the target takes {@damage 10d6 + 40} force damage. The target is disintegrated if this damage leaves it with 0 hit points.",
-				"A disintegrated creature and everything it is wearing and carrying, except magic items, are reduced to a pile of fine gray dust. The creature can be restored to life only by means of a {@spell true resurrection} or a {@spell wish} spell.",
+				"A disintegrated creature and everything it is wearing and carrying, except magic items, are reduced to a pile of fine gray dust. The creature can be restored to life only by means of a {@spell True Resurrection} or a {@spell Wish} spell.",
 				"This spell automatically disintegrates a Large or smaller nonmagical object or a creation of magical force. If the target is a Huge or larger object or creation of force, this spell disintegrates a 10-foot-cube portion of it. A magic item is unaffected by this spell."
 			],
 			"entriesHigherLevel": [
@@ -6975,7 +7015,7 @@
 				}
 			],
 			"range": {
-				"type": "point",
+				"type": "emanation",
 				"distance": {
 					"type": "feet",
 					"amount": 30
@@ -7000,7 +7040,7 @@
 						"20 hit points or fewer: killed instantly"
 					]
 				},
-				"Regardless of its current hit points, a celestial, an elemental, a fey, or a fiend that fails its save is forced back to its plane of origin (if it isn't there already) and can't return to your current plane for 24 hours by any means short of a {@spell wish} spell."
+				"Regardless of its current hit points, a celestial, an elemental, a fey, or a fiend that fails its save is forced back to its plane of origin (if it isn't there already) and can't return to your current plane for 24 hours by any means short of a {@spell Wish} spell."
 			],
 			"conditionInflict": [
 				"blinded",
@@ -7014,6 +7054,7 @@
 				"SGT"
 			],
 			"areaTags": [
+				"E",
 				"MT"
 			]
 		},
@@ -7385,6 +7426,9 @@
                     ]
                 }
             ],
+			"areaTags": [
+				"C"
+			],
             "hasFluffImages": true
 		},
 		{
@@ -7496,9 +7540,17 @@
 				}
 			],
 			"entries": [
-				"A beam of crackling energy streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d10} force damage.",
-				"The spell creates more than one beam when you reach higher levels: two beams at 5th level, three beams at 11th level, and four beams at 17th level. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam."
+				"A beam of crackling energy streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d10} force damage."
 			],
+			"entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Cantrip Upgrade",
+                    "entries": [
+                        "The spell creates more than one beam when you reach higher levels: two beams at 5th level, three beams at 11th level, and four beams at 17th level. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam."
+                    ]
+                }
+            ],
 			"damageInflict": [
 				"force"
 			],
@@ -7705,12 +7757,11 @@
 					"duration": {
 						"type": "minute",
 						"amount": 1
-					},
-					"concentration": true
+					}
 				}
 			],
 			"entries": [
-                "When you hit a creature with a weapon attack, you can cause the point of impact to explode with a writhing mass of thorny vines. The target must succeed on a Strength saving throw or be {@condition restrained} by the vines until the spell ends. Creatures that are Large or larger have advantage on this saving throw.",
+                "When you hit a creature with a weapon attack, you can cause the point of impact to explode with a writhing mass of thorny vines. The target takes weapon damage and must succeed on a Strength saving throw or be {@condition restrained} by the vines until the spell ends. Creatures that are Large or larger have advantage on this saving throw.",
                 "The {@condition restrained} creature takes {@damage 1d6} piercing damage at the start of each of its turns. The restrained creature, or another creature within 5 feet, can use its action to make a Strength check against your Spell save DC, freeing it on a success."
             ],
 			"entriesHigherLevel": [
@@ -7738,7 +7789,7 @@
                 "ST"
             ],
 			"miscTags": [
-                "SCL"
+				"SCL"
             ]
 		},
 		{
@@ -7791,6 +7842,9 @@
 			],
 			"areaTags": [
 				"Q"
+			],
+			"miscTags": [
+				"DFT"
 			]
 		},
 		{
@@ -7807,7 +7861,7 @@
 				}
 			],
 			"range": {
-				"type": "point",
+				"type": "emanation",
 				"distance": {
 					"type": "feet",
 					"amount": 60
@@ -7827,7 +7881,7 @@
 				}
 			],
 			"entries": [
-                "You weave a distracting string of words, causing creatures of your choice that you can see within range and that can hear you to make a Wisdom saving throw. Any creature that can't be {@condition charmed} succeeds on this saving throw automatically, and if you or your companions are fighting a creature, it has advantage on the save. On a failed save, a target has a -10 penalty to Wisdom ({@skill Perception}) checks and Passive {@skill Perception} until the spell ends. The spell ends if you are {@condition incapacitated} or can no longer speak."
+                "You weave a distracting string of words, causing creatures of your choice that you can see within range and that can hear you to make a Wisdom saving throw. Any creature that can't be {@condition charmed} (is immune to the charmed condition) automatically succeeds on this saving throw, and if you or your companions are fighting a creature, it has advantage on the save. On a failed save, a target has a -10 penalty to Wisdom ({@skill Perception}) checks and Passive {@skill Perception} until the spell ends. The spell ends if you are {@condition incapacitated} or can no longer speak."
             ],
 			"savingThrow": [
 				"wisdom"
@@ -7836,6 +7890,7 @@
 				"SGT"
 			],
 			"areaTags": [
+				"E",
 				"MT"
 			]
 		},
@@ -7875,7 +7930,7 @@
             ],
             "entries": [
                 "You hurl a bolt of pure spirit at a creature within range. Make a ranged spell attack against your target. On hit, it takes {@damage 2d6} radiant damage and for the duration, and both you and the target has a speed of 0 while you maintain concentration to hold the target in place.",
-                "As an action on its turn, the creature can make a Strength saving throw against your Spell save DC, ending the spell on a success. If you target another creature with an attack or cast an effect that does not center on the target of this spell, the target had advantage on their Strength saving throw to end the effect."
+                "As an action on its turn, the creature can make a Strength saving throw against your Spell save DC, ending the spell on a success. If you target another creature with an attack or cast a spell that does not center on the target of this spell, the target had advantage on their Strength saving throw to end the effect."
             ],
             "entriesHigherLevel": [
                 {
@@ -7932,8 +7987,7 @@
 					"type": "timed",
 					"duration": {
 						"type": "hour",
-						"amount": 8,
-						"upTo": true
+						"amount": 8
 					}
 				}
 			],
@@ -7955,6 +8009,9 @@
 			],
 			"damageInflict": [
 				"force"
+			],
+			"areaTags": [
+				"ST"
 			],
 			"miscTags": [
 				"PS",
@@ -8024,6 +8081,7 @@
 				"dexterity"
 			],
 			"miscTags": [
+				"DFT",
 				"SGT"
 			],
 			"areaTags": [
@@ -8066,7 +8124,7 @@
 				}
 			],
 			"entries": [
-				"You evoke the essense of a Large pack of spectral, intangible animals in an unoccupied space you can see within range. The pack lasts for the duration, and you choose the spirits' beastly form.",
+				"You evoke the essense of a Large pack of spectral, intangible animals, filling a 10-foot cube, in an unoccupied space you can see within range. The pack lasts for the duration, and you choose the spirits' beastly form.",
 				"You have Advantage on Strength saving throws while you're within 5 feet of the pack, and when you move on your turn, you can also move the pack up to 30 feet to an unoccupied space you can see.",
 				"Whenever the pack moves within 10 feet of a creature you can see and whenever a creature you can see enters a space within 10 feet of the pack or ends its turn there, you can force that creature to make a Dexterity saving throw. On a failed save, the creature takes {@damage 3d10} Slashing damage and its speed is reduced by 10 feet. On a successful save, the target takes half damage only. A creature makes this save only once per turn."
 			],
@@ -8151,7 +8209,7 @@
 				"DFT"
 			],
 			"areaTags": [
-				"S"
+				"E"
 			]
 		},
         {
@@ -8189,8 +8247,8 @@
 				}
 			],
 			"entries": [
-				"You evoke elemental energy that takes the shape of a Large, intangible spirit which appears in an unoccupied space within range. Choose the spirit's element, which determines its damage type: air (Lightning), earth (Thunder), fire (Fire), or water (Cold). The spirit lasts for the duration.",
-				"Whenever a creature you can see enters the spirit's space or starts its turn within 5 feet of the spirit, you can force that creature to make a Dexterity saving throw if the spirit has no creature {@condition Restrained}. On failed save, the target takes {@damage 8d8} damage of the spirit's type, and the target has the {@condition Restrained} condition until the spell ends. At the start of each of its turns, the {@condition Restrained} target repeats the save. On a failed save, the target takes {@damage 4d8} damage of the spirit's type. On a successful save, the target isn't {@condition Restrained} by the spirit.",
+				"You evoke elemental energy that takes the shape of a Large, intangible spirit which appears 10-foot cube in an unoccupied space within range. Choose the spirit's element, which determines its damage type: air (Lightning), earth (Thunder), fire (Fire), or water (Cold). The spirit lasts for the duration.",
+				"Whenever a creature you can see enters the spirit's space or starts its turn within 5 feet of the spirit, you can force that creature to make a Dexterity saving throw if the spirit has no creature {@condition restrained}. On failed save, the target takes {@damage 8d8} damage of the spirit's type, and the target has the {@condition Restrained} condition until the spell ends. At the start of each of its turns, the {@condition restrained} target repeats the save. On a failed save, the target takes {@damage 4d8} damage of the spirit's type. On a successful save, the target isn't {@condition restrained} by the spirit.",
 				"Until the spell ends, when you move on your turn, you can also move the elemental spirit up to 30 feet as long as it is not restraining any creature. Additionally, as a Bonus Action on your turn, you can change its appearance to a different element type, which changes the damage dealt to its related type."
 			],
 			"entriesHigherLevel": [
@@ -8217,6 +8275,9 @@
 			"miscTags": [
 				"SGT",
 				"UBA"
+			],
+			"areaTags": [
+				"C"
 			]
 		},
 		{
@@ -8274,6 +8335,9 @@
 			"miscTags": [
 				"SGT",
 				"UBA"
+			],
+			"areaTags": [
+				"Q"
 			]
 		},
 		{
@@ -8328,6 +8392,9 @@
 			],
 			"savingThrow": [
 				"wisdom"
+			],
+			"areaTags": [
+				"E"
 			],
 			"miscTags": [
 				"SGT",
@@ -8452,6 +8519,9 @@
 			"entries": [
 				"This spell allows you to move at an incredible pace. When you cast this spell, and then as a bonus action on each of your turns until the spell ends, you can take the {@action Dash} action."
 			],
+			"areaTags": [
+				"ST"
+			],
 			"miscTags": [
 				"UBA"
 			]
@@ -8515,6 +8585,7 @@
 			],
 			"conditionInflict": [
 				"frightened",
+				"poisoned",
 				"unconscious"
 			],
 			"savingThrow": [
@@ -8565,6 +8636,9 @@
 				"OBJ",
 				"PRM",
 				"SGT"
+			],
+			"areaTags": [
+				"C"
 			]
 		},
 		{
@@ -8602,7 +8676,7 @@
 				}
 			],
 			"entries": [
-				"Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 10-foot radius.",
+				"Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast must make a Dexterity saving throw or is also outlined in the colorful light. For the duration, objects and affected creatures shed dim light in a 10-foot radius.",
 				"Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can't benefit from being {@condition invisible}."
 			],
 			"savingThrow": [
@@ -9100,9 +9174,17 @@
 				}
 			],
 			"entries": [
-				"You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d10} fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried.",
-				"This spell's damage increases by {@damage 1d10} when you reach 5th level ({@damage 2d10}), 11th level ({@damage 3d10}), and 17th level ({@damage 4d10})."
+				"You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d10} fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried."
 			],
+			"entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Cantrip Upgrade",
+                    "entries": [
+                        "This spell's damage increases by {@damage 1d10} when you reach 5th level ({@damage 2d10}), 11th level ({@damage 3d10}), and 17th level ({@damage 4d10})."
+                    ]
+                }
+            ],
 			"scalingLevelDice": {
 				"label": "fire damage",
 				"scaling": {
@@ -9155,8 +9237,9 @@
 					"type": "timed",
 					"duration": {
 						"type": "minute",
-						"amount": 10
-					}
+						"amount": 1
+					},
+					"concentration": true
 				}
 			],
 			"entries": [
@@ -9376,8 +9459,8 @@
             ],
             "entries": [
                 "As a bonus action, you can evoke a whip of pure flame in a free hand. It lasts for the duration and sheds bright light out to a 10-foot radius. If you let go of the whip, it disappears, however you can evoke the Flame Whip again using a bonus action without expending a spell slot.",
-                "Whenever you take the {@action attack} action, you can make a melee spell attack with your Flame Whip against one target within 10 feet that you can see. On hit, it takes fire damage equal to {@dice 1d10} + your spellcasting modifier. If the target is Large or smaller, you can instantly grapple it with the whip. How you grapple the target is at your DM's discretion, as it may be just a limb, wrapped around your target's core, or something else.",
-                "You cannot attack with the Whip while it is grappling a creature, however a grappled creature takes {@dice 1d10} fire damage at the start of its turns and can use its action to make a Strength or Dexterity Saving Throw against your spell save DC, escaping on a success."
+                "Whenever you take the {@action attack} action, you can make a melee spell attack with your Flame Whip against one target within 10 feet that you can see. On hit, it takes fire damage equal to {@dice 1d10} + your spellcasting modifier. If the target is no more than 1 size larger than you or smaller, you instantly grapple it with the flame whip.",
+                "You cannot attack with the whip while it is grappling a creature, however a grappled creature takes {@dice 1d10} fire damage at the start of its turns and can make a Strength or Dexterity saving throw as an action on its turn in order to escape."
             ],
             "entriesHigherLevel": [
                 {
@@ -9687,8 +9770,8 @@
 				"ritual": true
 			},
 			"entries": [
-				"You create a ward against magical travel that protects up to 40,000 square feet of floor space to a height of 30 feet above the floor. For the duration, creatures can't teleport into the area or use portals, such as those created by the {@spell gate} spell, to enter the area. The spell proofs the area against planar travel, and therefore prevents creatures from accessing the area by way of the Astral Plane, Ethereal Plane, Feywild, Shadowfell, or the {@spell plane shift} spell.",
-				"In addition, the spell damages types of creatures that you choose when you cast it. Choose one or more of the following: celestials, elementals, fey, fiends, and undead. When a chosen creature enters the spell's area for the first time on a turn or starts its turn there, the creature takes {@damage 5d10} radiant or necrotic damage (your choice when you cast this spell).",
+				"You create a ward against magical travel that protects up to 40,000 square feet of floor space to a height of 30 feet above the floor. For the duration, creatures can't teleport into the area or use portals, such as those created by the {@spell gate} spell, to enter the area. The spell proofs the area against planar travel, and therefore prevents creatures from accessing the area by way of the Astral Plane, Ethereal Plane, Feywild, Shadowfell, or the {@spell Plane Shift} spell.",
+				"In addition, the spell damages types of creatures that you choose when you cast it. Choose one or more of the following: Celestials, Elementals, Fey, Fiends, and Undead. When a chosen creature enters the spell's area for the first time on a turn or starts its turn there, the creature takes {@damage 5d10} radiant or necrotic damage (your choice when you cast this spell).",
 				"When you cast this spell, you can designate a password. A creature that speaks the password as it enters the area takes no damage from the spell.",
 				"The spell's area can't overlap with the area of another forbiddance spell. If you cast forbiddance every day for 30 days in the same location, the spell lasts until it is dispelled, and the material components are consumed on the last casting."
 			],
@@ -9706,6 +9789,9 @@
 			"miscTags": [
 				"PIR",
 				"PRM"
+			],
+			"areaTags": [
+				"C"
 			]
 		},
 		{
@@ -9766,7 +9852,7 @@
                     "type": "entries",
                     "name": "Statistics",
                     "entries": [
-                        "The cage's Armor Class equals your Spell save DC and it has 200 hit points. It is immune to poison, psychic, and non-magical bludgeoning, piercing, and slashing damage, vulnerable to force damage, and resistant to all other damage types. It cannot be dispelled by a {@spell dispel magic} spell."
+                        "The cage's Armor Class equals your Spell save DC and it has 200 hit points. It is immune to poison, psychic, and non-magical bludgeoning, piercing, and slashing damage, vulnerable to force damage, and resistant to all other damage types. It cannot be dispelled by a {@spell Dispel Magic} spell."
                     ]
                 }
             ],
@@ -9846,7 +9932,7 @@
             "range": {
                 "type": "point",
                 "distance": {
-                    "type": "touch"
+                    "type": "self"
                 }
             },
             "components": {
@@ -9938,7 +10024,7 @@
 				"restrained"
 			],
 			"miscTags": [
-				"SCL"
+				"SCT"
 			],
 			"areaTags": [
 				"ST"
@@ -10042,6 +10128,11 @@
             "conditionImmune": [
                 "prone"
             ],
+			"damageResist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
             "miscTags": [
                 "ADV",
                 "SCT"
@@ -10099,6 +10190,9 @@
 				"PS",
 				"SGT",
 				"TP"
+			],
+			"areaTags": [
+				"R"
 			]
 		},
 		{
@@ -10136,7 +10230,7 @@
 			"entries": [
 				"You place a magical command on a creature that you can see within range, forcing it to carry out some service or refrain from some action or course of activity as you decide. If the creature can understand you, it must succeed on a Wisdom saving throw or become {@condition charmed} by you for the duration. While the creature is {@condition charmed} by you, it takes {@damage 5d10} psychic damage each time it acts in a manner directly counter to your instructions, but no more than once each day. A creature that can't understand you is unaffected by the spell.",
 				"You can issue any command you choose, short of an activity that would result in certain death. Should you issue a suicidal command, the spell ends.",
-				"You can end the spell early by using an action to dismiss it. A {@spell remove curse}, {@spell greater restoration}, or {@spell wish} spell also ends it."
+				"You can end the spell early by using an action to dismiss it. A {@spell Remove Curse}, {@spell restoration||level 5 Restoration}, or {@spell Wish} spell also ends it."
 			],
 			"entriesHigherLevel": [
 				{
@@ -10202,7 +10296,7 @@
 			},
 			"entries": [
 				"You touch a corpse or other remains. For the duration, the target is protected from decay and can't become undead.",
-				"The spell also effectively extends the time limit on raising the target from the dead, since days spent under the influence of this spell don't count against the time limit of spells such as {@spell raise dead}."
+				"The spell also effectively extends the time limit on raising the target from the dead, since days spent under the influence of this spell don't count against the time limit of spells such as {@spell Raise Dead}."
 			]
 		},
 		{
@@ -10370,7 +10464,7 @@
                 }
             ],
             "entries": [
-                "You project a beam of twinkling lights at a creature or object within range. Make a ranged spell attack against the target. On a hit, it takes {@damage 1d8} radiant damage. Until a creature uses an action to remove the glitter, a target hit by this spell emits bright light in a 5-foot radius and has disadvantage on any Dexterity ({@skill Stealth}) checks it makes to {@condition hidden||hide} or conceal itself."
+                "You project a beam of twinkling lights at a creature or object within range. Make a ranged spell attack against the target. On a hit, it takes {@damage 1d8} radiant damage. Until the end of its next turn, a target hit by this spell emits bright light in a 5-foot radius and has disadvantage on any Dexterity ({@skill Stealth}) checks it makes to {@condition hidden||hide} or conceal itself."
             ],
             "entriesHigherLevel": [
                 {
@@ -10381,6 +10475,17 @@
                     ]
                 }
             ],
+			"scalingLevelDice": {
+                "scaling": {
+                    "1": "1d8",
+                    "5": "2d8",
+                    "11": "3d8",
+                    "17": "4d8"
+                }
+            },
+			"spellAttack": [
+                "R"
+            ],
             "areaTags": [
                 "ST"
             ],
@@ -10390,17 +10495,6 @@
             "miscTags": [
                 "LGT",
                 "SCL"
-            ],
-            "scalingLevelDice": {
-                "scaling": {
-                    "1": "1d8",
-                    "5": "2d8",
-                    "11": "3d8",
-                    "17": "4d8"
-                }
-            },
-            "spellAttack": [
-                "R"
             ]
         },
 		{
@@ -10418,7 +10512,7 @@
 				}
 			],
 			"range": {
-				"type": "radius",
+				"type": "emanation",
 				"distance": {
 					"type": "feet",
 					"amount": 10
@@ -10456,7 +10550,7 @@
 				}
 			],
 			"areaTags": [
-				"S"
+				"E"
 			]
 		},
 		{
@@ -10548,7 +10642,7 @@
 				"wisdom"
 			],
 			"areaTags": [
-				"S"
+				"R"
 			]
 		},
 		{
@@ -10794,6 +10888,9 @@
 			"miscTags": [
 				"SGT"
 			],
+			"areaTags": [
+				"Q"
+			],
 			"hasFluffImages": true
 		},
 		{
@@ -10847,14 +10944,14 @@
 					"type": "entries",
 					"name": "Doors",
 					"entries": [
-						"All doors in the warded area are magically locked, as if sealed by an {@spell arcane lock} spell. In addition, you can cover up to ten doors with an illusion (equivalent to the illusory object function of the {@spell minor illusion} spell) to make them appear as plain sections of wall."
+						"All doors in the warded area are magically locked, as if sealed by an {@spell Arcane Lock} spell. In addition, you can cover up to ten doors with an illusion (equivalent to the illusory object function of the {@spell Minor Illusion} spell) to make them appear as plain sections of wall."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Stairs",
 					"entries": [
-						"Webs fill all stairs in the warded area from top to bottom, as the {@spell web} spell. These strands regrow in 10 minutes if they are burned or torn away while guards and wards lasts."
+						"Webs fill all stairs in the warded area from top to bottom, as the {@spell Web} spell. These strands regrow in 10 minutes if they are burned or torn away while guards and wards lasts."
 					]
 				},
 				{
@@ -10865,16 +10962,16 @@
 						{
 							"type": "list",
 							"items": [
-								"Place {@spell dancing lights} in four corridors. You can designate a simple program that the lights repeat as long as guards and wards lasts.",
-								"Place {@spell magic mouth} in two locations.",
-								"Place {@spell stinking cloud} in two locations. The vapors appear in the places you designate; they return within 10 minutes if dispersed by wind while guards and wards lasts.",
-								"Place a constant {@spell gust of wind} in one corridor or room.",
-								"Place a {@spell suggestion} in one location. You select an area of up to 5 feet square, and any creature that enters or passes through the area receives the suggestion mentally."
+								"Place {@spell Dancing Lights} in four corridors. You can designate a simple program that the lights repeat as long as guards and wards lasts.",
+								"Place {@spell Magic Mouth} in two locations.",
+								"Place {@spell Stinking Cloud} in two locations. The vapors appear in the places you designate; they return within 10 minutes if dispersed by wind while guards and wards lasts.",
+								"Place a constant {@spell Gust of Wind} in one corridor or room.",
+								"Place a {@spell Suggestion} in one location. You select an area of up to 5 feet square, and any creature that enters or passes through the area receives the suggestion mentally."
 							]
 						}
 					]
 				},
-				"The whole warded area radiates magic. A {@spell dispel magic} cast on a specific effect, if successful, removes only that effect.",
+				"The whole warded area radiates magic. A {@spell Dispel Magic} cast on a specific effect, if successful, removes only that effect.",
 				"You can create a permanently guarded and warded structure by casting this spell there every day for one year."
 			],
 			"miscTags": [
@@ -10922,7 +11019,7 @@
                 }
             ],
 			"entries": [
-                "You touch another creature and infuse it with otherworldly knowledge of a skill of your choice. For the duration, it gains a {@dice 1d4} bonus to any ability checks it makes with that skill.",
+                "You touch another creature and infuse it with otherworldly knowledge of a skill of your choice and gains a bonus of {@dice 1d4} to that skill check.",
                 "If you are proficient in the skill, this bonus becomes {@dice 1d6}."
             ],
 			"areaTags": [
@@ -17497,7 +17594,8 @@
             },
             "components": {
                 "v": true,
-                "s": true
+                "s": true,
+				"m": "special, see information on casting this spell at a higher level spell slot"
             },
             "duration": [
                 {
