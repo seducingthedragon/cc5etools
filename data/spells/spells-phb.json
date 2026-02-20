@@ -233,6 +233,9 @@
 				"bludgeoning",
 				"piercing",
 				"slashing"
+			],
+			"areaTags": [
+				"ST"
 			]
 		},
 		{
@@ -418,6 +421,7 @@
                 }
             ],
 			"miscTags": [
+				"MAC",
 				"SGT"
 			],
 			"areaTags": [
@@ -473,6 +477,7 @@
 			],
 			"miscTags": [
 				"PRM",
+				"SCT",
 				"SMN",
 				"UBA"
 			]
@@ -617,7 +622,7 @@
 				"plant"
 			],
 			"areaTags": [
-				"S"
+				"E"
 			]
 		},
 		{
@@ -656,20 +661,20 @@
 				}
 			],
 			"entries": [
-                "A 10-foot-radius invisible sphere of antimagic surrounds the spot or creature you touch (including yourself). This area is divorced from the magical energy that suffuses the multiverse. Within the sphere, spells can't be cast, summoned creatures disappear, and even magic items become mundane. Until the spell ends, the sphere moves with you, centered on you.",
+                "A 10-foot-radius invisible sphere of antimagic surrounds the spot or creature you touch (including yourself). This area is divorced from the magical energy that suffuses the multiverse. Within the sphere, spells can't be cast, summoned creatures disappear, and even magic items become mundane. Until the spell ends, when this spell is cast on a creature, the sphere moves with the target of the spell.",
                 "Spells and other magical effects, except those created by an artifact or a deity, are suppressed in the sphere and can't protrude into it. A slot expended to cast a suppressed spell is consumed. While an effect is suppressed, it doesn't function, but the time it spends suppressed counts against its duration.",
                 {
                     "type": "entries",
                     "name": "Targeted Effects",
                     "entries": [
-                        "Spells and other magical effects, such as {@spell magic missile} and {@spell charm person}, that target a creature or an object in the sphere have no effect on that target."
+                        "Spells and other magical effects, such as {@spell Magic Missile} and {@spell Charm Person}, that target a creature or an object in the sphere have no effect on that target."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Areas of Magic",
                     "entries": [
-                        "The area of another spell or magical effect, such as {@spell fireball}, can't extend into the sphere. If the sphere overlaps an area of magic, the part of the area that is covered by the sphere is suppressed. For example, the flames created by a wall of fire are suppressed within the sphere, creating a gap in the wall if the overlap is large enough."
+                        "The area of another spell or magical effect, such as {@spell Fireball}, can't extend into the sphere. If the sphere overlaps an area of magic, the part of the area that is covered by the sphere is suppressed. For example, the flames created by a wall of fire are suppressed within the sphere, creating a gap in the wall if the overlap is large enough."
                     ]
                 },
                 {
@@ -691,7 +696,7 @@
                     "type": "entries",
                     "name": "Magical Travel",
                     "entries": [
-                        "Teleportation and planar travel fail to work in the sphere, whether the sphere is the destination or the departure point for such magical travel. A portal to another location, world, or plane of existence, as well as an opening to an extradimensional space such as that created by the rope trick spell, temporarily closes while in the sphere."
+                        "Teleportation and planar travel fail to work in the sphere, whether the sphere is the destination or the departure point for such magical travel. A portal to another location, world, or plane of existence, as well as an opening to an extradimensional space such as that created by the {@spell Rope Trick} spell, temporarily closes while in the sphere."
                     ]
                 },
                 {
@@ -705,7 +710,7 @@
                     "type": "entries",
                     "name": "Dispel Magic",
                     "entries": [
-                        "Spells and magical effects such as {@spell dispel magic} have no effect on the sphere. Likewise, the spheres created by different {@spell antimagic field} spells don't nullify each other."
+                        "Spells and magical effects such as {@spell Dispel Magic} have no effect on the sphere. Likewise, the spheres created by different {@spell Antimagic Field} spells don't nullify each other."
                     ]
                 }
             ],
@@ -713,7 +718,7 @@
 				"OBJ"
 			],
 			"areaTags": [
-				"S"
+				"E"
 			]
 		},
 		{
@@ -756,7 +761,7 @@
 					"type": "entries",
 					"name": "Antipathy",
 					"entries": [
-						"The enchantment causes creatures of the kind you designated to feel an intense urge to leave the area and avoid the target. When such a creature can see the target or comes within 60 feet of it, the creature must succeed on a Wisdom saving throw or become {@condition frightened}. The creature remains {@condition frightened} while it can see the target or is within 60 feet of it. While {@condition frightened} by the target, the creature must use its movement to move to the nearest safe spot from which it can't see the target. If the creature moves more than 60 feet from the target and can't see it, the creature is no longer {@condition frightened}, but the creature becomes {@condition frightened} again if it regains sight of the target or moves within 60 feet of it."
+						"The enchantment causes creatures of the kind you designated to feel an intense urge to leave the area and avoid the target. When such a creature can see the target or comes within 60 feet of it, the creature must succeed on a Wisdom saving throw or become {@condition Frightened}. The creature remains {@condition Frightened} while it can see the target or is within 60 feet of it. While {@condition Frightened} by the target, the creature must use its movement to move to the nearest safe spot from which it can't see the target. If the creature moves more than 60 feet from the target and can't see it, the creature is no longer {@condition Frightened}, but the creature becomes {@condition Frightened} again if it regains sight of the target or moves within 60 feet of it."
 					]
 				},
 				{
@@ -971,7 +976,7 @@
 				}
 			],
 			"entries": [
-                "You touch a closed door, window, gate, chest, or other entryway, and it becomes locked for the duration. You and the creatures you designate when you cast this spell can open the object normally. You can also set a password that, when spoken within 5 feet of the object, suppresses this spell for 1 minute. Otherwise, it is impassable until it is broken or the spell is dispelled or suppressed. Casting {@spell knock} on the object suppresses this spell for 10 minutes.",
+                "You touch a closed door, window, gate, chest, or other entryway, and it becomes locked for the duration. You and the creatures you designate when you cast this spell can open the object normally. You can also set a password that, when spoken within 5 feet of the object, suppresses this spell for 1 minute. Otherwise, it is impassable until it is broken or the spell is dispelled or suppressed. Casting {@spell Knock} on the object suppresses this spell for 10 minutes.",
                 "While affected by this spell, the object is more difficult to break or force open; the DC to break it or pick any locks on it increases by 15."
             ],
 			"entriesHigherLevel": [
@@ -1280,7 +1285,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "emanation",
                 "distance": {
                     "type": "feet",
                     "amount": 10
@@ -1307,12 +1312,12 @@
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "When you cast this spell using a spell slot of 3rd-level or higher, a creature that fails its save takes an additional {@scaledamage 2d8|2-9|1d8} cold damage and has its speed reduced by an additional 10 feet for each spell level above 2nd."
+                        "When you cast this spell using a spell slot of 3rd-level or higher, a creature that fails its save takes an additional {@scaledamage 2d8|2-9|1d8} cold damage for each spell level above 2nd."
                     ]
                 }
             ],
             "areaTags": [
-                "S"
+                "E"
             ],
             "damageInflict": [
                 "cold"
@@ -1337,7 +1342,7 @@
 				}
 			],
 			"range": {
-				"type": "radius",
+				"type": "emanation",
 				"distance": {
 					"type": "feet",
 					"amount": 30
@@ -1366,7 +1371,7 @@
 				"HL"
 			],
 			"areaTags": [
-				"S"
+				"E"
 			]
 		},
 		{
@@ -1382,7 +1387,7 @@
 				}
 			],
 			"range": {
-				"type": "radius",
+				"type": "emanation",
 				"distance": {
 					"type": "feet",
 					"amount": 30
@@ -1411,7 +1416,7 @@
 				"ADV"
 			],
 			"areaTags": [
-				"S"
+				"E"
 			]
 		},
 		{
@@ -1427,7 +1432,7 @@
 				}
 			],
 			"range": {
-				"type": "radius",
+				"type": "emanation",
 				"distance": {
 					"type": "feet",
 					"amount": 30
@@ -1454,7 +1459,7 @@
 				"UBA"
 			],
 			"areaTags": [
-				"S"
+				"E"
 			]
 		},
 		{
@@ -1548,7 +1553,7 @@
                     "type": "entries",
                     "name": "Statistics",
                     "entries": [
-                        "Each targeted plants use the {@creature Awakened Plant|llspell} stat block. It uses your Spell save DC, the slot spent on this spell (Spell Slot), your Spell Attack Modifier, and Proficiency Bonus (PB) in several places. The Plant is destroyed at 0 hit points.",
+                        "Each targeted plants use the {@creature Awakened Plant|PHB} stat block. It uses your Spell save DC, the slot spent on this spell (Spell Slot), your Spell Attack Modifier, and Proficiency Bonus (PB) in several places. The Plant is destroyed at 0 hit points.",
                         "If your concentration is broken before the end of the spell, any and all remaining Awaken Plants reverts to its original state, taking root in its space."
                     ]
                 },
@@ -1713,8 +1718,12 @@
 			"conditionInflict": [
 				"incapacitated"
 			],
+			"areaTags": [
+				"ST"
+			],
 			"miscTags": [
-				"AAD"
+				"AAD",
+				"PS"
 			]
 		},
 		{
@@ -1773,6 +1782,7 @@
 				"charisma"
 			],
 			"miscTags": [
+				"PS",
 				"SCT",
 				"SGT"
 			],
@@ -1958,7 +1968,7 @@
                 "You blast the mind of a creature that you can see within range, attempting to shatter its intellect and personality. The target takes {@damage 4d6} psychic damage and must make an Intelligence saving throw.",
                 "On a failed save, the creature's Intelligence and Charisma scores become 1. The creature can't cast spells, activate magic items, understand language, or communicate in any intelligible way. The creature can, however, identify its friends, follow them, and even protect them.",
                 "At the end of every 30 days, the creature can repeat its saving throw against this spell. If it succeeds on its saving throw, the spell ends.",
-                "The spell can also be ended by {@spell greater restoration}, {@spell heal}, or {@spell wish}."
+                "The spell can also be ended by {@spell Restoration||level 5 Restoration}, {@spell Heal}, or {@spell Wish} spell."
             ],
             "damageInflict": [
                 "psychic"
@@ -2017,7 +2027,7 @@
 						"While the target is cursed, your attacks and spells deal an extra {@damage 1d8} necrotic damage to the target."
 					]
 				},
-				"A {@spell remove curse} spell ends this effect. At the DM's option, you may choose an alternative curse effect, but it should be no more powerful than those described above. The DM has final say on such a curse's effect."
+				"A {@spell Remove Curse} spell ends this effect. At the DM's option, you may choose an alternative curse effect, but it should be no more powerful than those described above. The DM has final say on such a curse's effect."
 			],
 			"entriesHigherLevel": [
 				{
@@ -2129,6 +2139,7 @@
 				"strength"
 			],
 			"miscTags": [
+				"ADV",
 				"DFT",
 				"FMV",
 				"OBJ",
@@ -2185,6 +2196,7 @@
 				"DFT"
 			],
 			"areaTags": [
+				"R",
 				"W"
 			]
 		},
@@ -2220,7 +2232,7 @@
 				}
 			],
 			"entries": [
-                "You create a wall of whirling blades made of magical energy as you extend your hand and trace a sigil of warding in the air. Until the end of your next turn, you have resistance against bludgeoning, piercing, and slashing damage dealt by weapon attacks."
+                "You create a barrier of whirling blades made of magical energy as you extend your hand and trace a sigil of warding in the air. Until the end of your next turn, you have resistance against bludgeoning, piercing, and slashing damage dealt by weapon attacks."
             ],
 			"damageResist": [
 				"bludgeoning",
@@ -2320,8 +2332,7 @@
 			],
 			"entries": [
                 "Necromantic energy washes over a creature of your choice that you can see within range, draining moisture and vitality from it. The target must make a Constitution saving throw. The target takes {@damage 8d8} necrotic damage on a failed save, or half as much damage on a successful one. This spell has no effect on undead or constructs.",
-                "If you target a plant creature or a magical plant, it makes the saving throw with disadvantage, and the spell deals maximum damage to it.",
-                "All non-creature plants, magical or not, automatically fails and withers to death."
+                "If you target a plant creature or a magical plant, it makes the saving throw with disadvantage, and the spell deals maximum damage to it. All non-creature plants in the space, magical or not, automatically fails and withers to death."
             ],
 			"entriesHigherLevel": [
 				{
@@ -2411,6 +2422,9 @@
 			],
 			"savingThrow": [
 				"constitution"
+			],
+			"areaTags": [
+				"ST"
 			],
 			"miscTags": [
 				"AAD",
@@ -2512,7 +2526,11 @@
 				"Roll a {@dice d20} at the end of each of your turns for the duration of the spell. On a roll of 11 or higher, you vanish from your current plane of existence and appear in the Ethereal Plane (the spell fails and the casting is wasted if you were already on that plane). At the start of your next turn, and when the spell ends if you are on the Ethereal Plane, you return to an unoccupied space of your choice that you can see within 10 feet of the space you vanished from. If no unoccupied space is available within that range, you appear in the nearest unoccupied space (chosen at random if more than one space is equally near). You can dismiss this spell as an action.",
 				"While on the Ethereal Plane, you can see and hear the plane you originated from, which is cast in shades of gray, and you can't see anything there more than 60 feet away. You can only affect and be affected by other creatures on the Ethereal Plane. Creatures that aren't there can't perceive you or interact with you, unless they have the ability to do so."
 			],
+			"areaTags": [
+				"ST"
+			],
 			"miscTags": [
+				"PS",
 				"SGT"
 			]
 		},
@@ -2557,6 +2575,9 @@
 			],
 			"entries": [
 				"Your body becomes blurred, shifting and wavering to all who can see you. For the duration, any creature has disadvantage on attack rolls against you. An attacker is immune to this effect if it doesn't rely on sight, as with {@sense blindsight}, or can see through illusions, as with {@sense truesight}."
+			],
+			"areaTags": [
+				"ST"
 			]
 		},
 		{
@@ -2569,7 +2590,8 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "bonus"
+					"unit": "bonus",
+					"condition": "which you take immediately after hitting a target with a Melee weapon or an {@action unarmed attack|PHB|unarmed strike attack}"
 				}
 			],
 			"range": {
@@ -2592,7 +2614,7 @@
 				}
 			],
 			"entries": [
-                "When you hit with a melee attack you can cause the target to gleam with an otherworldly astral radiance. This attack deals an extra {@damage 2d8} radiant damage. Until the end of the spell, the target sheds dim light out to a 5-foot radius, cannot benefit from the {@condition invisibile} condition, and makes Stealth Checks with disadvantage. Additionally, attack rolls against the target have advantage.",
+                "When you hit with a melee attack, you can cause the target to gleam with an otherworldly astral radiance. This attack deals an extra {@damage 2d8} radiant damage. Until the end of the spell, the target sheds dim light out to a 5-foot radius, cannot benefit from the {@condition invisibile} condition, and makes Stealth Checks with disadvantage. Additionally, attack rolls against the target have advantage.",
                 "If your target is a fiend or undead, or if it has the sunlight sensitivity trait, the bonus radiant damage increases by {@damage 1d8}."
             ],
 			"entriesHigherLevel": [
@@ -2606,6 +2628,9 @@
 			],
 			"damageInflict": [
 				"radiant"
+			],
+			"areaTags": [
+				"ST"
 			],
 			"miscTags": [
 				"AAD",
@@ -2906,7 +2931,7 @@
 				}
 			],
 			"entries": [
-				"You attempt to charm a humanoid you can see within range. It must make a Wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is {@condition charmed} by you until the spell ends or until you or your companions do anything harmful to it. The {@condition charmed} creature regards you as a friendly acquaintance. When the spell ends, the creature knows it was {@condition charmed} by you."
+				"You attempt to charm a humanoid you can see within range. It must make a Wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is {@condition charmed} by you until the spell ends or until you or your companions do anything harmful to it. The {@condition charmed} creature regards you as a friendly acquaintance. When the spell ends, the creature does not know it was {@condition charmed} by you."
 			],
 			"entriesHigherLevel": [
 				{
@@ -3158,7 +3183,7 @@
 				"ADV"
 			],
 			"areaTags": [
-				"S"
+				"E"
 			]
 		},
 		{
@@ -3290,7 +3315,7 @@
                         "starting or ending its turn within 5ft of the spell"
                     ]
                 },
-                "On your subsequent turns, you can take a bonus action to move or teleport the dagger cloud up to 30 feet."
+                "On your subsequent turns, you can take a bonus action to move the dagger cloud up to 30 feet."
             ],
 			"entriesHigherLevel": [
 				{
@@ -3618,7 +3643,10 @@
                     ]
                 },
                 "For example, you could determine the location of a powerful monster in the area, the locations of bodies of water, and the locations of any towns."
-            ]
+            ],
+			"areaTags": [
+				"E"
+			]
 		},
 		{
 			"name": "Compelled Duel",
@@ -3728,7 +3756,7 @@
 				}
 			],
 			"range": {
-				"type": "point",
+				"type": "emanation",
 				"distance": {
 					"type": "feet",
 					"amount": 30
@@ -4268,6 +4296,7 @@
                 }
             ],
 			"miscTags": [
+				"SGT",
 				"SMN"
 			]
 		},
@@ -4562,7 +4591,8 @@
                 "Y"
             ],
             "miscTags": [
-                "SCL"
+                "OBJ",
+				"SCL"
             ]
         },
 		{
@@ -4762,6 +4792,9 @@
 			"savingThrow": [
 				"constitution"
 			],
+			"miscTags": [
+				"RO"
+			],
 			"areaTags": [
 				"ST"
 			]
@@ -4803,7 +4836,7 @@
 				}
 			],
 			"entries": [
-				"Choose a spell of 5th level or lower that you can cast, that has a casting time of 1 action, and that can target you. You cast that spell\u2014called the contingent spell\u2014as part of casting contingency, expending spell slots for both, but the contingent spell doesn't come into effect. Instead, it takes effect when a certain circumstance occurs. You describe that circumstance when you cast the two spells. For example, a contingency cast with {@spell water breathing} might stipulate that {@spell water breathing} comes into effect when you are engulfed in water or a similar liquid.",
+				"Choose a spell of 5th level or lower that you can cast, that has a casting time of 1 action, and that can target you. You cast that spell\u2014called the contingent spell\u2014as part of casting contingency, expending spell slots for both, but the contingent spell doesn't come into effect. Instead, it takes effect when a certain circumstance occurs. You describe that circumstance when you cast the two spells. For example, a contingency cast with {@spell Water Breathing} might stipulate that {@spell Water Breathing} comes into effect when you are engulfed in water or a similar liquid.",
 				"The contingent spell takes effect immediately after the circumstance is met for the first time, whether or not you want it to, and then contingency ends.",
 				"The contingent spell takes effect only on you, even if it can normally target others. You can use only one contingency spell at a time. If you cast this spell again, the effect of another contingency spell on you ends. Also, contingency ends on you if its material component is ever not on your person."
 			]
@@ -4849,7 +4882,8 @@
 			],
 			"miscTags": [
 				"LGT",
-				"OBJ"
+				"OBJ",
+				"PRM"
 			]
 		},
 		{
@@ -5084,6 +5118,9 @@
 						]
 					]
 				}
+			],
+			"miscTags": [
+				"SGT"
 			]
 		},
 		{
@@ -5140,6 +5177,9 @@
 			],
 			"areaTags": [
 				"S"
+			],
+			"miscTags": [
+				"OBJ"
 			]
 		},
 		{
@@ -5217,36 +5257,41 @@
                 }
             ],
             "entries": [
-                "Using a set of artisan's tools with which you are proficient, you set to work creating a creation of arcane power. Once the spell is complete, the material components are transformed into a {@creature Golem Servant}, which uses the rules below:",
+                "Using a set of artisan's tools with which you are proficient, you set to work creating a creation of arcane power. Once the spell is complete, the material components are transformed into a {@creature Golem Servant|PHB}, which uses the rules below:",
                 {
                     "type": "entries",
                     "name": "Statistics",
                     "entries": [
-                        "The Golem Servant uses the stat block below. It uses your Spellcasting Ability, the Spell Slot spent to cast this spell, your Spell Attack Modifier, and Proficiency Bonus (PB) in several places throughout the stat block. You choose if your Golem is Medium or Large sized, and its appearance reflects the materials you used in its creation."
+                        "The {@creature Golem Servant|PHB} uses the stat block below. It uses your Spellcasting Ability, the Spell Slot spent to cast this spell, your Spell Attack Modifier, and Proficiency Bonus (PB) in several places throughout the stat block. You choose if your Golem is Medium or Large sized, and its appearance reflects the materials you used in its creation."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Control",
                     "entries": [
-                        "Your Golem has no mind of its own and obeys you absolutely. In combat, it shares your initiative and acts during your turn. However, unless you give it a command, the Golem Servant remains in its space and will only act in self defense. If you are within 500 feet of your Golem, you can use a bonus action to Telepathically issue it a command, determining how it will act on its turn or to set a general course of action for it (ie: 'defend this creature') until you give it another command."
+                        "Your {@creature Golem Servant|PHB} has no mind of its own and obeys you absolutely. In combat, it shares your initiative and acts during your turn. However, unless you give it a command, the {@creature Golem Servant|PHB} remains in its space and will only act in self defense. If you are within 500 feet of your {@creature Golem Servant|PHB}, you can use a bonus action to Telepathically issue it a command, determining how it will act on its turn or to set a general course of action for it (ie: 'defend this creature') until you give it another command."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Magical Nature",
                     "entries": [
-                        "The Golem cannot benefit from healing spells, nor short or long rests. The only way for it to regain hit points is for a creature to touch it and spend one spell slot. It then regains hit points equal to 10 times the slot's level."
+                        "The {@creature Golem Servant|PHB} cannot benefit from healing spells, nor short or long rests. The only way for it to regain hit points is for a creature to touch it and spend one spell slot. It then regains hit points equal to 10 times the slot's level."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Creator's Bond",
                     "entries": [
-                        "While the Golem lives, you cannot regain the spell slot you expended to create it, and casting this spell again instantly destroys any previous Golem Servants."
+                        "While the Golem lives, you cannot regain the spell slot you expended to create it, and casting this spell again instantly destroys any previous {@creature Golem Servant|PHB|Golden Servants}."
                     ]
                 }
-            ]
+            ],
+			"miscTags": [
+				"SGT",
+				"SMN",
+				"UBA"
+			]
         },
 		{
 			"name": "Create Food and Water",
@@ -5279,6 +5324,9 @@
 			],
 			"entries": [
 				"You create 45 pounds of food and 30 gallons of water on the ground or in containers within range, enough to sustain up to fifteen humanoids or five steeds for 24 hours. The food is bland but nourishing, and spoils if uneaten after 24 hours. The water is clean and doesn't go bad."
+			],
+			"miscTags": [
+				"PRM"
 			]
 		},
 		{
@@ -5304,7 +5352,7 @@
                 "s": true,
                 "m": {
 					"text": "the corpses of the appropriate Beasts and blood of the spellcaster, both of which are consumed",
-					"consumed": true
+					"consume": true
 				}
             },
             "duration": [
@@ -5370,6 +5418,7 @@
             ],
             "miscTags": [
                 "PRM",
+				"SCT",
                 "SMN",
                 "UBA"
             ],
@@ -5518,6 +5567,10 @@
                 "beast",
                 "humanoid"
             ],
+			"miscTags": [
+				"SGT",
+				"SMN"
+			],
             "areaTags": [
                 "ST"
             ]
@@ -5574,6 +5627,7 @@
 			],
 			"miscTags": [
 				"PRM",
+				"SCT",
 				"SMN",
 				"UBA"
 			]
@@ -5724,7 +5778,7 @@
 				}
 			],
 			"range": {
-				"type": "radius",
+				"type": "emanation",
 				"distance": {
 					"type": "feet",
 					"amount": 30
@@ -5753,7 +5807,7 @@
 				"AAD"
 			],
 			"areaTags": [
-				"S"
+				"E"
 			]
 		},
 		{
