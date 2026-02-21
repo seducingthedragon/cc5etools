@@ -4908,6 +4908,229 @@
 			"hasFluffImages": true
 		},
 		{
+			"name": "Plant Spirit",
+			"source": "BMT",
+			"page": 50,
+			"summonedBySpell": "Summon Plant|BMY",
+			"summonedBySpellLevel": 2,
+			"size": [
+				"M",
+				"L"
+			],
+			"type": "Plant",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"special": "11 + the spell's level"
+				}
+			],
+			"hp": {
+				"special": "20 (Blooming and Thorny Only) or 30 (Oaken Only) + 10 for each spell level above 2"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": {
+					"number": 30,
+					"condition": "(Blooming and Thorny Only)"
+				}
+			},
+			"str": 16,
+			"dex": 13,
+			"con": 19,
+			"int": 4,
+			"wis": 12,
+			"cha": 10,
+			"senses": [
+				"Tremorsense 30 ft. (Blind beyond this radius)"
+			],
+			"passive": 11,
+			"conditionImmune": [
+				"blinded",
+				"deafened",
+				"exhaustion",
+				"stunned"
+			],
+			"languages": [
+				"understands the languages you know"
+			],
+			"pbNote": "equals your Proficiency Bonus",
+			"trait": [
+				{
+					"name": "Sylvan Regeneration",
+					"entries": [
+						"The spirit regains 1 Hit Point at the start of its turn if it has at least 1 Hit Point and is in direct sunlight."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The plant makes a number of attacks equal to half this spell's level (rounded down)."
+					]
+				},
+				{
+					"name": "Petal Burst (Blooming Only)",
+					"entries": [
+						"The plant causes a burst of petals to fill the air within a 10-foot Emanation. The area is {@quickref Vision and Light|PHB|2||heavily obscured} for 1 minute."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}{@damage 1d8 + 3 + summonSpellLevel} Bludgeoning or Piercing damage (Thorny Only)."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Oaken Shield (Oaken Only)",
+					"entries": [
+						"When a creature within 5 feet of the plant takes damage from an attack, the plant takes the damage instead."
+					]
+				},
+				{
+					"name": "Prickly Protection (Thorny Only)",
+					"entries": [
+						"When a creature within 5 feet of the plant attacks it, the plant makes a Slam attack with Advantage against the creature."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/GrimHollowPG24/Creature/Plant%20Spirit.webp"
+			},
+			"senseTags": [
+				"T"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"_versions": [
+				{
+					"name": "Plant Spirit (Blooming)",
+					"source": "BMT",
+					"_mod": {
+						"action": [
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Petal Burst (Blooming Only)",
+									"with": "Petal Burst"
+								}
+							}
+						],
+						"reaction": [
+							{
+								"mode": "removeArr",
+								"names": "Oaken Shield (Oaken Only)",
+								"force": true
+							},
+							{
+								"mode": "removeArr",
+								"names": "Prickly Protection (Thorny Only)",
+								"force": true
+							}
+						]
+					},
+					"size": [
+						"M"
+					],
+					"hp": {
+						"special": "20 + 10 for each spell level above 2"
+					},
+					"speed": {
+						"walk": 30,
+						"climb": 30
+					}
+				},
+				{
+					"name": "Plant Spirit (Oaken)",
+					"source": "BMT",
+					"_mod": {
+						"action": [
+							{
+								"mode": "removeArr",
+								"names": "Petal Burst (Blooming Only)",
+								"force": true
+							}
+						],
+						"reaction": [
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Oaken Shield (Oaken Only)",
+									"with": "Oaken Shield"
+								}
+							},
+							{
+								"mode": "removeArr",
+								"names": "Prickly Protection (Thorny Only)",
+								"force": true
+							}
+						]
+					},
+					"size": [
+						"L"
+					],
+					"hp": {
+						"special": "30 + 10 for each spell level above 2"
+					},
+					"speed": {
+						"walk": 30
+					}
+				},
+				{
+					"name": "Plant Spirit (Thorny)",
+					"source": "BMT",
+					"_mod": {
+						"action": [
+							{
+								"mode": "removeArr",
+								"names": "Petal Burst (Blooming Only)",
+								"force": true
+							}
+						],
+						"reaction": [
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Prickly Protection (Thorny Only)",
+									"with": "Prickly Protection"
+								}
+							},
+							{
+								"mode": "removeArr",
+								"names": "Oaken Shield (Oaken Only)",
+								"force": true
+							}
+						]
+					},
+					"size": [
+						"M"
+					],
+					"hp": {
+						"special": "20 + 10 for each spell level above 2"
+					},
+					"speed": {
+						"walk": 30,
+						"climb": 30
+					}
+				}
+			]
+		},
+		{
 			"name": "Quadrone Detention Drone",
 			"group": null,
 			"source": "BMT",
@@ -5296,6 +5519,218 @@
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
+		},
+		{
+			"name": "Sea Serpent Spirit",
+			"source": "BMT",
+			"page": 50,
+			"summonedBySpell": "Summon Sea Spirit|BMT",
+			"summonedBySpellLevel": 3,
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"special": "11 + the spell's level"
+				}
+			],
+			"hp": {
+				"special": "30 + 10 for each spell level above 3"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": {
+					"number": 40,
+					"condition": "(Scaled Wings only)"
+				},
+				"swim": 60
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 13,
+			"int": 4,
+			"wis": 10,
+			"cha": 10,
+			"senses": [
+				"Darkvision 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				"cold"
+			],
+			"conditionImmune": [
+				"prone"
+			],
+			"languages": [
+				"understands the languages you know"
+			],
+			"pbNote": "equals your Proficiency Bonus",
+			"trait": [
+				{
+					"name": "Flyby (Scaled Wings only)",
+					"entries": [
+						"The sea serpent doesn't provoke opportunity attacks when it flies out of an enemy's reach."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The sea serpent makes a number of attacks equal to half this spell's level (rounded down)."
+					]
+				},
+				{
+					"name": "Allure (Glowing Lantern only)",
+					"entries": [
+						"The sea serpent causes a lantern hanging from one of its fins to glow eerily. {@actSave wis} DC equals your spell save DC, each creature in a 30-foot Emanation originating from the sea serpent. {@actSaveFail} The target is {@condition Charmed} by the sea serpent until the start of its next turn. Creatures have Advantage on the saving throw if the sea serpent has dealt damage to them already this turn, and the {@condition Charmed} condition ends immediately if the sea serpent deals damage to a creature {@condition Charmed} by this ability."
+					]
+				},
+				{
+					"name": "Inhale (Enormous Mouth only)",
+					"entries": [
+						"{@actSave str} DC equals your spell save DC, each creature in a 15-foot Cone. {@actSaveFail} {@damage 1d6 + summonSpellLevel} Psychic damage and the creature is pulled 5 feet straight toward it or, if the creature is already within 5 feet of the sea serpent, it takes an additional {@damage 2d6} Piercing damage. {@actSaveSuccess} Half damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}{@damage 1d6 + 3 + summonSpellLevel} Piercing damage and the creature has the {@condition Grappled} condition (escape DC equals your spell save DC). The {@condition Grappled} condition ends if the sea serpent bites a different creature."
+					]
+				},
+				{
+					"name": "Thrash",
+					"entries": [
+						"{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 10 ft. {@h}{@damage 1d10 + 3 + summonSpellLevel} Bludgeoning damage and the target is pushed 5 feet away from the sea serpent."
+					]
+				}
+			],
+			"traitTags": [
+				"Flyby"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"Y"
+			],
+			"miscTags": [
+				"MA",
+				"RCH"
+			],
+			"conditionInflict": [
+				"charmed",
+				"grappled"
+			],
+			"savingThrowForced": [
+				"strength",
+				"wisdom"
+			],
+			"_versions": [
+				{
+					"name": "Sea Serpent Spirit (Enormous Mouth)",
+					"source": "BMT",
+					"_mod": {
+						"trait": [
+							{
+								"mode": "removeArr",
+								"names": "Flyby (Scaled Wings only)",
+								"force": true
+							}
+						],
+						"action": [
+							{
+								"mode": "removeArr",
+								"names": "Allure (Glowing Lantern only)",
+								"force": true
+							},
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Inhale (Enormous Mouth only)",
+									"with": "Inhale"
+								}
+							}
+						]
+					},
+					"speed": {
+						"walk": 30,
+						"swim": 60
+					}
+				},
+				{
+					"name": "Sea Serpent Spirit (Glowing Lantern)",
+					"source": "BMT",
+					"_mod": {
+						"trait": [
+							{
+								"mode": "removeArr",
+								"names": "Flyby (Scaled Wings only)",
+								"force": true
+							}
+						],
+						"action": [
+							{
+								"mode": "removeArr",
+								"names": "Inhale (Enormous Mouth only)",
+								"force": true
+							},
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Allure (Glowing Lantern only)",
+									"with": "Allure"
+								}
+							}
+						]
+					},
+					"speed": {
+						"walk": 30,
+						"swim": 60
+					}
+				},
+				{
+					"name": "Sea Serpent Spirit (Scaled Wings)",
+					"source": "BMT",
+					"_mod": {
+						"trait": [
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Flyby (Scaled Wings only)",
+									"with": "Flyby"
+								}
+							}
+						],
+						"action": [
+							{
+								"mode": "removeArr",
+								"names": "Allure (Glowing Lantern only)",
+								"force": true
+							},
+							{
+								"mode": "removeArr",
+								"names": "Inhale (Enormous Mouth only)",
+								"force": true
+							}
+						]
+					},
+					"speed": {
+						"walk": 30,
+						"fly": 40,
+						"swim": 60
+					}
+				}
+			]
 		},
 		{
 			"name": "Sir Jared",
