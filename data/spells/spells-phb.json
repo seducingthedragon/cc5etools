@@ -20639,6 +20639,9 @@
 				"PIR",
 				"PRM",
 				"TP"
+			],
+			"areaTags": [
+				"R"
 			]
 		},
 		{
@@ -20711,8 +20714,12 @@
                 "lightning"
             ],
             "miscTags": [
-                "SCL"
-            ]
+                "OBJ",
+				"SCL"
+            ],
+			"areaTags": [
+				"ST"
+			]
         },
 		{
 			"name": "Tenser's Floating Disk",
@@ -20758,6 +20765,9 @@
 			],
 			"miscTags": [
 				"SGT"
+			],
+			"areaTags": [
+				"R"
 			]
 		},
 		{
@@ -20847,7 +20857,10 @@
             ],
             "miscTags": [
                 "ADV"
-            ]
+            ],
+			"areaTags": [
+				"ST"
+			]
 		},
 		{
 			"name": "Thorn Whip",
@@ -20879,9 +20892,17 @@
 				}
 			],
 			"entries": [
-				"You create a long, vine-like whip covered in thorns that lashes out at your command toward a creature in range. Make a melee spell attack against the target. If the attack hits, the creature takes {@damage 1d6} piercing damage, and if the creature is Large or smaller, you pull the creature up to 10 feet closer to you.",
-				"This spell's damage increases by {@damage 1d6} when you reach 5th level ({@damage 2d6}), 11th level ({@damage 3d6}), and 17th level ({@damage 4d6})."
+				"You create a long, vine-like whip covered in thorns that lashes out at your command toward a creature in range. Make a melee spell attack against the target. If the attack hits, the creature takes {@damage 1d6} piercing damage, and if the creature is Large or smaller, you pull the creature up to 10 feet closer to you."
 			],
+			"entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Cantrip Upgrade",
+                    "entries": [
+                        "This spell's damage increases by {@damage 1d6} when you reach 5th level ({@damage 2d6}), 11th level ({@damage 3d6}), and 17th level ({@damage 4d6})."
+                    ]
+                }
+            ],
 			"scalingLevelDice": {
 				"label": "piercing damage",
 				"scaling": {
@@ -20957,7 +20978,10 @@
                 "AAD",
                 "FMV",
                 "SCL"
-            ]
+            ],
+			"areaTags": [
+				"ST"
+			]
 		},
 		{
 			"name": "Thunderwave",
@@ -21053,7 +21077,13 @@
 			"entries": [
                 "You briefly stop the flow of time for everyone but yourself. No time passes for other creatures, while you take {@dice 1d4 + 1} turns in a row, during which you can use actions and move as normal.",
                 "This spell ends if one of the actions you use during this period, or any magical effects that you create during this period, affects a creature other than you or an object being worn or carried by someone other than you while time has stopped. In addition, the spell ends if you move to a place more than 1,000 feet from the location where you cast it."
-            ]
+            ],
+			"miscTags": [
+				"OBJ"
+			],
+			"areaTags": [
+				"ST"
+			]
 		},
 		{
 			"name": "Tongues",
@@ -21135,21 +21165,21 @@
                     ]
                 }
             ],
-            "areaTags": [
-                "L"
-            ],
             "conditionInflict": [
                 "prone"
             ],
             "damageInflict": [
                 "cold"
             ],
-            "miscTags": [
-                "FMV",
-                "SCL"
-            ],
             "savingThrow": [
                 "strength"
+            ],
+			"areaTags": [
+                "L"
+            ],
+			"miscTags": [
+                "FMV",
+                "SCL"
             ]
         },
 		{
@@ -21396,6 +21426,9 @@
 			],
 			"entries": [
 				"This spell gives the willing creature you touch the ability to see things as they actually are. For the duration, the creature has {@sense truesight}, notices secret doors hidden by magic, and can see into the Ethereal Plane, all out to a range of 120 feet."
+			],
+			"areaTags": [
+				"ST"
 			]
 		},
 		{
@@ -21437,7 +21470,8 @@
                 "You infuse your weapon with divination magic and point it at one creature you can see granting you a brief insight into the target's defenses. The next time you make a melee attack with this weapon against that target before the start of your next turn, you gain advantage on your that attack roll against the target."
             ],
 			"miscTags": [
-				"ADV"
+				"ADV",
+				"OBJ"
 			],
 			"areaTags": [
 				"ST"
@@ -21787,6 +21821,7 @@
 				"dexterity"
 			],
 			"miscTags": [
+				"OBS",
 				"SCL"
 			],
 			"areaTags": [
@@ -21861,6 +21896,7 @@
 				"constitution"
 			],
 			"areaTags": [
+				"H",
 				"W"
 			]
 		},
@@ -22205,7 +22241,8 @@
 				"strength"
 			],
 			"miscTags": [
-				"DFT"
+				"DFT",
+				"OBS"
 			],
 			"areaTags": [
 				"C"
@@ -22356,7 +22393,7 @@
 			"entries": [
 				"A wall of strong wind rises from the ground at a point you choose within range. You can make the wall up to 50 feet long, 15 feet high, and 1 foot thick. You can shape the wall in any way you choose so long as it makes one continuous path along the ground. The wall lasts for the duration.",
 				"When the wall appears, each creature within its area must make a Strength saving throw. A creature takes {@damage 4d8} bludgeoning damage on a failed save, or half as much damage on a successful one.",
-				"The strong wind keeps fog, smoke, and other gases at bay. Small or smaller flying creatures or objects can't pass through the wall. Loose, lightweight materials brought into the wall fly upward. Arrows, bolts, and other ordinary projectiles launched at targets behind the wall are deflected upward and automatically miss. (Boulders hurled by giants or siege engines, and similar projectiles, are unaffected.) Creatures in {@spell gaseous form} can't pass through it."
+				"The strong wind keeps fog, smoke, and other gases at bay. Small or smaller flying creatures or objects can't pass through the wall. Loose, lightweight materials brought into the wall fly upward. Arrows, bolts, and other ordinary projectiles launched at targets behind the wall are deflected upward and automatically miss. (Boulders hurled by giants or siege engines, and similar projectiles, are unaffected.) Creatures in {@spell Gaseous Form} can't pass through it."
 			],
 			"damageInflict": [
 				"bludgeoning"
@@ -22605,7 +22642,10 @@
             "miscTags": [
                 "AAD",
                 "SCL"
-            ]
+            ],
+			"areaTags": [
+				"ST"
+			]
 		},
 		{
             "name": "Yolande's Regal Presence",
@@ -22658,7 +22698,7 @@
                 "SGT"
             ],
             "areaTags": [
-                "S"
+                "E"
             ],
             "hasFluffImages": true
         },
