@@ -5525,7 +5525,7 @@
 			"source": "BMT",
 			"page": 50,
 			"summonedBySpell": "Summon Sea Spirit|BMT",
-			"summonedBySpellLevel": 3,
+			"summonedBySpellLevel": 4,
 			"size": [
 				"L"
 			],
@@ -5539,7 +5539,7 @@
 				}
 			],
 			"hp": {
-				"special": "30 + 10 for each spell level above 3"
+				"special": "30 + 10 for each spell level above 4"
 			},
 			"speed": {
 				"walk": 30,
