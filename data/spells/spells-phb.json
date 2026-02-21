@@ -15527,10 +15527,13 @@
                 "Regardless of which option you choose, you and all creatures targetted by this spell leaves behind no tracks or other traces of its passage and can't be tracked except by magical means."
             ],
             "miscTags": [
-                "UBA"
+                "OBS",
+				"UBA"
             ],
 			"areaTags": [
-				"MT"
+				"E",
+				"MT",
+				"S"
 			]
 		},
 		{
@@ -15953,7 +15956,7 @@
                     "type": "entries",
                     "name": "Overgrowth",
                     "entries": [
-                        "Choose a point within range. All normal plants in a 100-foot-radius sphere centered on that point become thick and overgrown. A creature moving through that area must spend 4 feet of movement for every 1 foot it moves. You can exclude one or more areas of any size within the spell's area from being affected."
+                        "Choose a point within range. All normal plants in a 100-foot-radius sphere centered on that point become thick and overgrown. A creature moving through that area must spend 4 feet of movement for every 1 foot it moves as it is extremely {@quickref difficult terrain||3}. You can exclude one or more areas of any size within the spell's area from being affected."
                     ]
                 },
                 {
@@ -16130,7 +16133,7 @@
                 }
             ],
             "range": {
-                "type": "point",
+                "type": "emanation",
                 "distance": {
                     "type": "feet",
                     "amount": 60
@@ -16152,7 +16155,8 @@
                 "THP"
             ],
             "areaTags": [
-                "MT"
+                "E",
+				"MT"
             ]
         },
 		{
@@ -16170,8 +16174,7 @@
 			"range": {
                 "type": "point",
                 "distance": {
-                    "type": "feet",
-                    "amount": 60
+                    "type": "touch"
                 }
             },
 			"components": {
@@ -16237,7 +16240,7 @@
 				}
 			],
 			"entries": [
-                "You utter a word of power that drains the life out of one creature you can see within range instantly. If the target has 100 Hit Points or fewer, it dies. Otherwise, it takes {@damage 12d12} Necrotic damage."
+                "You utter a word of power that drains the life out of one creature you can see within range instantly. If the target has 100 Hit Points or fewer, it dies. Otherwise, it takes {@damage 10d10} Necrotic damage."
             ],
 			"damageInflict": [
 				"necrotic"
@@ -16438,6 +16441,9 @@
             ],
 			"miscTags": [
 				"OBJ"
+			],
+			"areaTags": [
+				"Q"
 			]
 		},
 		{
@@ -16572,7 +16578,7 @@
                         ],
                         [
                             "6",
-                            "{@b Indigo.} {@i Failed Save:} The target has the {@condition Restrained} condition and makes a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the condition ends. If it fails three times, it has the {@condition Petrified} condition until it is freed by an effect like the {@spell Restoration} spell cast as a level 5 spell. The successes and failures needn't be consecutive; keep track of both until the target collects three of a kind."
+                            "{@b Indigo.} {@i Failed Save:} The target has the {@condition Restrained} condition and makes a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the condition ends. If it fails three times, it has the {@condition Petrified} condition until it is freed by an effect like a {@spell Restoration||level 5 Restoration spell}. The successes and failures needn't be consecutive; keep track of both until the target collects three of a kind."
                         ],
                         [
                             "7",
@@ -16603,7 +16609,8 @@
 				"wisdom"
 			],
 			"miscTags": [
-				"PRM"
+				"PRM",
+				"RO"
 			],
 			"areaTags": [
 				"N"
@@ -16682,11 +16689,11 @@
                         ],
                         [
                             "6",
-                            "{@b Indigo.} {@i Failed Save:} The target has the {@condition Restrained} condition and makes a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the condition ends. If it fails three times, it has the {@condition Petrified} condition until it is freed by an effect like the {@spell Restoration} spell cast as a level 5 spell. The successes and failures needn't be consecutive; keep track of both until the target collects three of a kind. {@i Additional Effects:} Spells can't be cast through this layer, which is destroyed by bright light shed by the {@spell Daylight} spell."
+                            "{@b Indigo.} {@i Failed Save:} The target has the {@condition Restrained} condition and makes a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the condition ends. If it fails three times, it has the {@condition Petrified} condition until it is freed by an effect like a {@spell Restoration||level 5 Restoration spell}. The successes and failures needn't be consecutive; keep track of both until the target collects three of a kind. {@i Additional Effects:} Spells can't be cast through this layer, which is destroyed by bright light shed by the {@spell Daylight} spell."
                         ],
                         [
                             "7",
-                            "{@b Violet.} {@i Failed Save:} The target has the {@condition Blinded|XPHB} condition and makes a Wisdom saving throw at the start of your next turn. On a successful save, the condition ends. On a failed save, the condition ends, and the creature teleports to another plane of existence (Typically, a creature that is on a plane that isn't its home plane is banished home, while other creatures are usually cast into the Astral or Ethereal planes. DM's Choice). {@i Additional Effects:} This layer is destroyed by {@spell Dispel Magic} or a similar spell of equal or higher level that can end spells and magical effects."
+                            "{@b Violet.} {@i Failed Save:} The target has the {@condition Blinded} condition and makes a Wisdom saving throw at the start of your next turn. On a successful save, the condition ends. On a failed save, the condition ends, and the creature teleports to another plane of existence (Typically, a creature that is on a plane that isn't its home plane is banished home, while other creatures are usually cast into the Astral or Ethereal planes. DM's Choice). {@i Additional Effects:} This layer is destroyed by {@spell Dispel Magic} or a similar spell of equal or higher level that can end spells and magical effects."
                         ]
                     ]
                 }
@@ -16831,6 +16838,12 @@
 			],
 			"abilityCheck": [
 				"intelligence"
+			],
+			"miscTags": [
+				"PRM"
+			],
+			"areaTags": [
+				"C"
 			]
 		},
 		{
@@ -16887,6 +16900,9 @@
 			"miscTags": [
 				"SGT",
 				"UBA"
+			],
+			"areaTags": [
+				"ST"
 			]
 		},
 		{
@@ -17082,6 +17098,9 @@
 			],
 			"areaTags": [
 				"S"
+			],
+			"miscTags": [
+				"OBJ"
 			]
 		},
 		{
@@ -17141,6 +17160,9 @@
 			],
 			"miscTags": [
 				"HL"
+			],
+			"areaTags": [
+				"ST"
 			]
 		},
 		{
@@ -17273,9 +17295,17 @@
 				}
 			],
 			"entries": [
-				"A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes {@damage 1d8} cold damage, and its speed is reduced by 10 feet until the start of your next turn.",
-				"The spell's damage increases by {@damage 1d8} when you reach 5th level ({@damage 2d8}), 11th level ({@damage 3d8}), and 17th level ({@damage 4d8})."
+				"A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes {@damage 1d8} cold damage, and its speed is reduced by 10 feet until the start of your next turn."
 			],
+			"entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Cantrip Upgrade",
+                    "entries": [
+                        "The spell's damage increases by {@damage 1d8} when you reach 5th level ({@damage 2d8}), 11th level ({@damage 3d8}), and 17th level ({@damage 4d8})."
+                    ]
+                }
+            ],
 			"scalingLevelDice": {
 				"label": "cold damage",
 				"scaling": {
@@ -17496,6 +17526,9 @@
 			"miscTags": [
 				"HL",
 				"RO"
+			],
+			"areaTags": [
+				"ST"
 			]
 		},
 		{
@@ -17641,7 +17674,7 @@
                 }
             ],
             "entries": [
-                "You touch a willing creature and instantly end one disease or one of the following conditions currently afflicting it: {@condition blinded}, {@condition deafened}, {@condition frightened}, {@condition paralyzed}, or {@condition poisoned}."
+                "You touch a willing creature and instantly end one disease or one of the following conditions currently afflicting it: {@condition Blinded}, {@condition Deafened}, {@condition Frightened}, {@condition Paralyzed}, or {@condition Poisoned}."
             ],
             "entriesHigherLevel": [
                 {
@@ -17749,6 +17782,9 @@
 			],
 			"miscTags": [
 				"HL"
+			],
+			"areaTags": [
+				"ST"
 			]
 		},
 		{
@@ -17889,6 +17925,10 @@
 				"The extradimensional space can be reached by climbing to the top of the rope. The space can hold as many as eight Medium or smaller creatures. The rope can be pulled into the space, making the rope disappear from view outside the space.",
 				"Attacks and spells can't cross through the entrance into or out of the extradimensional space, but those inside can see out of it as if through a 3-foot-by-5-foot window centered on the rope.",
 				"Anything inside the extradimensional space drops out when the spell ends."
+			],
+			"miscTags": [
+				"OBJ",
+				"PS"
 			]
 		},
 		{
@@ -17928,9 +17968,17 @@
 				}
 			],
 			"entries": [
-				"Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take {@damage 1d8} radiant damage. The target gains no benefit from cover for this saving throw.",
-				"The spell's damage increases by {@damage 1d8} when you reach 5th level ({@damage 2d8}), 11th level ({@damage 3d8}), and 17th level ({@damage 4d8})."
+				"Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take {@damage 1d8} radiant damage. The target gains no benefit from cover for this saving throw."
 			],
+			"entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Cantrip Upgrade",
+                    "entries": [
+                        "The spell's damage increases by {@damage 1d8} when you reach 5th level ({@damage 2d8}), 11th level ({@damage 3d8}), and 17th level ({@damage 4d8})."
+                    ]
+                }
+            ],
 			"scalingLevelDice": {
 				"label": "radiant damage",
 				"scaling": {
@@ -17997,7 +18045,7 @@
 				}
 			],
 			"entries": [
-				"You ward a creature within range against attack. Until the spell ends, any creature who targets the warded creature with an attack or a harmful spell must first make a Wisdom saving throw. On a failed save, the creature must choose a new target or lose the attack or spell. This spell doesn't protect the warded creature from area effects, such as the explosion of a {@spell fireball}.",
+				"You ward a creature within range against attack. Until the spell ends, any creature who targets the warded creature with an attack or a harmful spell must first make a Wisdom saving throw. On a failed save, the creature must choose a new target or lose the attack or spell. This spell doesn't protect the warded creature from area effects, such as the explosion of a {@spell Fireball}.",
 				"If the warded creature makes an attack, casts a spell that affects an enemy, or deals damage to another creature, this spell ends."
 			],
 			"savingThrow": [
@@ -18157,6 +18205,9 @@
 			],
 			"savingThrow": [
 				"wisdom"
+			],
+			"areaTags": [
+				"ST"
 			]
 		},
 		{
@@ -18212,6 +18263,9 @@
 			"miscTags": [
 				"AAD",
 				"SCL"
+			],
+			"areaTags": [
+				"ST"
 			]
 		},
 		{
@@ -18249,6 +18303,9 @@
 			],
 			"entries": [
 				"For the duration, you see {@condition invisible} creatures and objects as if they were visible, and you can see into the Ethereal Plane. Ethereal creatures and objects appear ghostly and translucent."
+			],
+			"areaTags": [
+				"ST"
 			]
 		},
 		{
@@ -18340,7 +18397,10 @@
                 "You send a short message of twenty-five words or less to a creature with which you are familiar. The creature hears the message in its mind, recognizes you as the sender if it knows you, and can answer in a like manner immediately. The spell enables creatures with Intelligence scores of at least 1 to understand the meaning of your message.",
                 "You can send the message across any distance and even to other planes of existence, but if the target is on a different plane than you, there is a {@chance 5|||Message lost!|Message arrives} chance that the message doesn't arrive.",
                 "Upon receiving your message, a creature can block your ability to reach it again with this spell for 8 hours. If you try to send another message during that time, you learn that you are blocked, and the spell fails."
-            ]
+            ],
+			"areaTags": [
+				"ST"
+			]
 		},
 		{
 			"name": "Sequester",
@@ -18463,7 +18523,10 @@
                         "While the spell lasts, you can use your action to transform again, taking the shape of another creature of your choice, following the same rules and restrictions above, with one exception: you only gain the max HP of your new form while maintaining your current HP if your new form has more hit points. If your new form's HP is lower than your current HP, any excess HP becomes temporary hit points."
                     ]
                 }
-            ]
+            ],
+			"areaTags": [
+				"ST"
+			]
 		},
 		{
 			"name": "Shatter",
@@ -18563,7 +18626,7 @@
 				}
 			],
 			"entries": [
-                "A shimmering barrier of magical force appears to protect you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from {@spell magic missile}."
+                "A shimmering barrier of magical force appears to protect you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from {@spell Magic Missile}."
             ],
             "entriesHigherLevel": [
                 {
@@ -18689,7 +18752,11 @@
             },
 			"miscTags": [
 				"AAD",
+				"OBJ",
 				"SCL"
+			],
+			"areaTags": [
+				"ST"
 			]
 		},
 		{
@@ -18728,9 +18795,17 @@
 				}
 			],
 			"entries": [
-				"Lightning springs from your hand to deliver a shock to a creature you try to touch. Make a melee spell attack against the target. You have advantage on the attack roll if the target is wearing armor made of metal. On a hit, the target takes {@damage 1d8} lightning damage, and it can't take reactions until the start of its next turn.",
-				"The spell's damage increases by {@damage 1d8} when you reach 5th level ({@damage 2d8}), 11th level ({@damage 3d8}), and 17th level ({@damage 4d8})."
+				"Lightning springs from your hand to deliver a shock to a creature you try to touch. Make a melee spell attack against the target. You have advantage on the attack roll if the target is wearing armor made of metal. On a hit, the target takes {@damage 1d8} lightning damage, and it can't take reactions until the start of its next turn."
 			],
+			"entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Cantrip Upgrade",
+                    "entries": [
+                        "The spell's damage increases by {@damage 1d8} when you reach 5th level ({@damage 2d8}), 11th level ({@damage 3d8}), and 17th level ({@damage 4d8})."
+                    ]
+                }
+            ],
 			"scalingLevelDice": {
 				"label": "lightning damage",
 				"scaling": {
@@ -18856,6 +18931,9 @@
 			],
 			"abilityCheck": [
 				"intelligence"
+			],
+			"areaTags": [
+				"C"
 			]
 		},
 		{
@@ -19182,6 +19260,9 @@
 			],
 			"affectsCreatureType": [
 				"beast"
+			],
+			"areaTags": [
+				"ST"
 			]
 		},
 		{
@@ -19237,6 +19318,9 @@
 				"monstrosity",
 				"ooze",
 				"plant"
+			],
+			"areaTags": [
+				"ST"
 			]
 		},
 		{
@@ -19277,7 +19361,10 @@
 				"You can also turn {@quickref difficult terrain||3} caused by plant growth (such as thickets and undergrowth) into ordinary terrain that lasts for the duration. Or you can turn ordinary terrain where plants are present into {@quickref difficult terrain||3} that lasts for the duration, causing vines and branches to hinder pursuers, for example.",
 				"Plants might be able to perform other tasks on your behalf, at the DM's discretion. The spell doesn't enable plants to uproot themselves and move about, but they can freely move branches, tendrils, and stalks.",
 				"If a plant creature is in the area, you can communicate with it as if you shared a common language, but you gain no magical ability to influence it.",
-				"This spell can cause the plants created by the {@spell entangle} spell to release a {@condition restrained} creature."
+				"This spell can cause the plants created by the {@spell Entangle} spell to release a {@condition restrained} creature."
+			],
+			"miscTags": [
+				"DFT"
 			]
 		},
 		{
@@ -19323,6 +19410,9 @@
 			],
 			"entries": [
 				"Until the spell ends, one willing creature you touch gains the ability to move up, down, and across vertical surfaces and upside down along ceilings, while leaving its hands free. The target also gains a climbing speed equal to its walking speed."
+			],
+			"areaTags": [
+				"ST"
 			]
 		},
 		{
@@ -19398,7 +19488,7 @@
 				}
 			],
 			"range": {
-				"type": "radius",
+				"type": "emanation",
 				"distance": {
 					"type": "feet",
 					"amount": 15
@@ -19443,7 +19533,7 @@
 				"SGT"
 			],
 			"areaTags": [
-				"S"
+				"E"
 			]
 		},
 		{
@@ -19550,6 +19640,7 @@
 				"M"
 			],
 			"miscTags": [
+				"AAD",
 				"UBA"
 			],
 			"areaTags": [
@@ -19609,6 +19700,9 @@
 			"miscTags": [
 				"AAD",
 				"SCL"
+			],
+			"areaTags": [
+				"ST"
 			]
 		},
 		{
@@ -19695,6 +19789,9 @@
 			],
 			"miscTags": [
 				"OBJ"
+			],
+			"areaTags": [
+				"ST"
 			]
 		},
 		{
@@ -19809,7 +19906,7 @@
 					"type": "entries",
 					"name": "Round 5\u201310",
 					"entries": [
-						"Gusts and freezing rain assail the area under the cloud. The area becomes {@quickref difficult terrain||3} and is {@quickref Vision and Light|PHB|2||heavily obscured}. Each creature there takes {@damage 1d6} cold damage. Ranged weapon attacks in the area are impossible. The wind and rain count as a severe distraction for the purposes of maintaining {@status concentration} on spells. Finally, gusts of strong wind (ranging from 20 to 50 miles per hour) automatically disperse fog, mists, and similar phenomena in the area, whether mundane or magical."
+						"Gusts and freezing rain assail the area under the cloud. The area becomes {@quickref difficult terrain||3} and is {@quickref Vision and Light|PHB|2||heavily obscured}. Each creature there takes {@damage 1d6} cold damage. Ranged weapon attacks in the area are impossible. The wind and rain count as a severe distraction for the purposes of maintaining {@status concentration} on spells. Finally, gusts of strong wind (ranging from 20 to 50 miles per hour, including {@spell Gust of Wind}) automatically disperse fog, mists, and similar phenomena in the area, whether mundane or magical."
 					]
 				}
 			],
@@ -19929,7 +20026,7 @@
 				}
 			],
 			"entries": [
-				"A beam of brilliant light flashes out from your hand in a 5-foot-wide, 60-foot-long line. Each creature in the line must make a Constitution saving throw. On a failed save, a creature takes {@damage 6d8} radiant damage and is {@condition blinded} until your next turn. On a successful save, it takes half as much damage and isn't {@condition blinded} by this spell. Undead and oozes have disadvantage on this saving throw.",
+				"A beam of brilliant sunlight flashes out from your hand in a 5-foot-wide, 60-foot-long line. Each creature in the line must make a Constitution saving throw. On a failed save, a creature takes {@damage 6d8} radiant damage and is {@condition blinded} until your next turn. On a successful save, it takes half as much damage and isn't {@condition blinded} by this spell. Undead and oozes have disadvantage on this saving throw.",
 				"You can create a new line of radiance as your action on any turn until the spell ends.",
 				"For the duration, a mote of brilliant radiance shines in your hand. It sheds bright light in a 30-foot radius and dim light for an additional 30 feet. This light is sunlight."
 			],
@@ -19983,7 +20080,7 @@
 			"entries": [
 				"Brilliant sunlight flashes in a 60-foot radius centered on a point you choose within range. Each creature in that light must make a Constitution saving throw. On a failed save, a creature takes {@damage 12d6} radiant damage and is {@condition blinded} for 1 minute. On a successful save, it takes half as much damage and isn't {@condition blinded} by this spell. Undead and oozes have disadvantage on this saving throw.",
 				"A creature {@condition blinded} by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, it is no longer {@condition blinded}.",
-				"This spell dispels any darkness in its area that was created by a spell."
+				"This spell dispels any darkness in its area that was created by a spell, such as {@spell Darkness}."
 			],
 			"damageInflict": [
 				"radiant"
@@ -20041,9 +20138,13 @@
                 "When you make such a ranged attack, you gain a +1 bonus to your attack and damage roll, and your quiver magically replaces the ammunition you used with another copy of that ammunition. Pieces of ammunition created by this spell disintegrate when the spell ends. If the quiver leaves your possession, the spell ends."
             ],
             "miscTags": [
-                "OBJ",
+                "AAD",
+				"OBJ",
                 "UBA"
-            ]
+            ],
+			"areaTags": [
+				"ST"
+			]
         },
 		{
 			"name": "Symbol",
