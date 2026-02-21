@@ -5227,7 +5227,7 @@
 				{
 					"name": "Incorporeal Movement",
 					"entries": [
-						"The spirit can move through other creatures and objects as if they were difficult terrain. If it ends its turn inside an object, it is shunted to the nearest unoccupied space and takes {@damage 1d10} force damage for every 5 feet shunted."
+						"The spirit can move through other creatures and objects as if they were {@quickref difficult terrain||3}. If it ends its turn inside an object, it is shunted to the nearest unoccupied space and takes {@damage 1d10} force damage for every 5 feet shunted."
 					]
 				}
 			],
@@ -5241,7 +5241,7 @@
 				{
 					"name": "Reaping Scythe",
 					"entries": [
-						"{@atk mw} your spell attack modifier to hit (with advantage), reach 5 ft., the creature haunted by Haunt Creature. {@h}{@damage 1d8 + 3 + summonSpellLevel} necrotic damage."
+						"{@atk mw} {@hitYourSpellAttack Bonus equals your spell attack modifier} (with advantage), reach 5 ft., the creature haunted by Haunt Creature. {@h}{@damage 1d8 + 3 + summonSpellLevel} necrotic damage."
 					]
 				}
 			],
