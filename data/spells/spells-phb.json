@@ -3934,7 +3934,7 @@
                     "type": "entries",
                     "name": "Statistics",
                     "entries": [
-                        "When you cast the spell, you summon an {@filter Aberration|bestiary|type=Aberration|challenge rating=[&0;&4]} of CR 4 or lower, coming through the torn rift."
+                        "When you cast the spell, you summon a {@filter CR 5 or lower Aberration|bestiary|source=|Challenge Rating=[&0;&5]|type=aberration|tag=!swarm|miscellaneous=!adventure npc;!reprinted;!swarm} coming through the torn rift."
                     ]
                 },
                 {
