@@ -221,7 +221,8 @@
 				}
 			],
 			"entries": [
-				"You establish a telepathic link with one beast you touch that is friendly to you or {@condition charmed} by you. The spell fails if the beast's Intelligence score is 4 or higher. Until the spell ends, the link is active while you and the beast are within line of sight of each other. Through the link, the beast can understand your telepathic messages to it, and it can telepathically communicate simple emotions and concepts back to you. While the link is active, the beast gains advantage on attack rolls against any creature within 5 feet of you that you can see.",
+				"You establish a telepathic link with one beast you touch that is friendly to you or {@condition charmed} by you. The spell fails if the beast's Intelligence score is 4 or higher.",
+				"Until the spell ends, the link is active while you and the beast are within line of sight of each other. Through the link, the beast can understand your telepathic messages to it, and it can telepathically communicate simple emotions and concepts back to you. While the link is active, the beast gains advantage on attack rolls against any creature within 5 feet of you that you can see.",
 				{
 					"type": "entries",
 					"name": "Companion Exception",
@@ -279,7 +280,8 @@
 				}
 			],
 			"entries": [
-				"You cause up to six pillars of stone to burst from places on the ground that you can see within range. Each pillar is a cylinder that has a diameter of 5 feet and a height of up to 30 feet. The ground where a pillar appears must be wide enough for its diameter, and you can target the ground under a creature if that creature is Medium or smaller. Each pillar has AC 5 and 30 hit points. When reduced to 0 hit points, a pillar crumbles into rubble, which creates an area of {@quickref difficult terrain||3} with a 10-foot radius that lasts until the rubble is cleared. Each 5-foot-diameter portion of the area requires at least 1 minute to clear by hand.",
+				"You cause up to six pillars of stone to burst from places on the ground that you can see within range. Each pillar is a cylinder that has a diameter of 5 feet and a height of up to 30 feet. The ground where a pillar appears must be wide enough for its diameter, and you can target the ground under a creature if that creature is Medium or smaller.",
+				"Each pillar has AC 5 and 30 hit points. When reduced to 0 hit points, a pillar crumbles into rubble, which creates an area of {@quickref difficult terrain||3} with a 10-foot radius that lasts until the rubble is cleared. Each 5-foot-diameter portion of the area requires at least 1 minute to clear by hand.",
 				"If a pillar is created under a creature, that creature must succeed on a Dexterity saving throw or be lifted by the pillar. A creature can choose to fail the save.",
 				"If a pillar is prevented from reaching its full height because of a ceiling or other obstacle, a creature on the pillar takes {@damage 6d6} bludgeoning damage and is {@condition restrained}, pinched between the pillar and the obstacle. The {@condition restrained} creature can use an action to make a Strength or Dexterity check (the creature's choice) against the spell's save DC. On a success, the creature is no longer {@condition restrained} and must either move off the pillar or fall off it."
 			],
@@ -538,45 +540,51 @@
 			"entries": [
 				"You perform a special religious ceremony that is infused with magic. When you cast the spell, choose one of the following rites, the target of which must be within 10 feet of you throughout the casting.",
 				{
-					"type": "entries",
-					"name": "Atonement",
-					"entries": [
-						"You touch one willing creature whose alignment has changed, and you make a {@dc 20} Wisdom ({@skill Insight}) check. On a successful check, you restore the target to its original alignment."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Bless Water",
-					"entries": [
-						"You touch one {@item vial|phb} of water and cause it to become {@item Holy Water (flask)|phb|holy water}."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Coming of Age",
-					"entries": [
-						"You touch one humanoid who is a young adult. For the next 24 hours, whenever the target makes an ability check, it can roll a {@dice d4} and add the number rolled to the ability check. A creature can benefit from this rite only once."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Dedication",
-					"entries": [
-						"You touch one humanoid who wishes to be dedicated to your god's service. For the next 24 hours, whenever the target makes a saving throw, it can roll a {@dice d4} and add the number rolled to the save. A creature can benefit from this rite only once."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Funeral Rite",
-					"entries": [
-						"You touch one corpse, and for the next 7 days, the target can't become undead by any means short of a {@spell Wish} spell."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Wedding",
-					"entries": [
-						"You touch adult humanoids willing to be bonded together in marriage. For the next 7 days, each target gains a +2 bonus to AC while they are within 30 feet of each other. A creature can benefit from this rite again only if widowed."
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Atonement",
+							"entries": [
+								"You touch one willing creature whose alignment has changed, and you make a {@dc 20} Wisdom ({@skill Insight}) check. On a successful check, you restore the target to its original alignment."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Bless Water",
+							"entries": [
+								"You touch one {@item vial|phb} of water and cause it to become {@item Holy Water (flask)|phb|holy water}."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Coming of Age",
+							"entries": [
+								"You touch one humanoid who is a young adult. For the next 24 hours, whenever the target makes an ability check, it can roll a {@dice d4} and add the number rolled to the ability check. A creature can benefit from this rite only once."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Dedication",
+							"entries": [
+								"You touch one humanoid who wishes to be dedicated to your god's service. For the next 24 hours, whenever the target makes a saving throw, it can roll a {@dice d4} and add the number rolled to the save. A creature can benefit from this rite only once."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Funeral Rite",
+							"entries": [
+								"You touch one corpse, and for the next 7 days, the target can't become undead by any means short of a {@spell Wish} spell."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Wedding",
+							"entries": [
+								"You touch adult humanoids willing to be bonded together in marriage. For the next 7 days, each target gains a +2 bonus to AC while they are within 30 feet of each other. A creature can benefit from this rite again only if widowed."
+							]
+						}
 					]
 				}
 			],
@@ -1124,24 +1132,30 @@
 			"entries": [
 				"You take control of the air in a 100-foot cube that you can see within range. Choose one of the following effects when you cast the spell. The effect lasts for the spell's duration, unless you use your action on a later turn to switch to a different effect. You can also use your action to temporarily halt the effect or to restart one you've halted.",
 				{
-					"type": "entries",
-					"name": "Gusts",
-					"entries": [
-						"A wind picks up within the cube, continually blowing in a horizontal direction you designate. You choose the intensity of the wind: calm, moderate, or strong. If the wind is moderate or strong, ranged weapon attacks that pass through it or that are made against targets within the cube have disadvantage on their attack rolls. If the wind is strong, any creature moving against the wind must spend 1 extra foot of movement for each foot moved."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Downdraft",
-					"entries": [
-						"You cause a sustained blast of strong wind to blow downward from the top of the cube. Ranged weapon attacks that pass through the cube or that are made against targets within it have disadvantage on their attack rolls. A creature must make a Strength saving throw if it flies into the cube for the first time on a turn or starts its turn there flying. On a failed save, the creature is knocked {@condition prone}."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Updraft",
-					"entries": [
-						"You cause a sustained updraft within the cube, rising upward from the cube's bottom side. Creatures that end a fall within the cube take only half damage from the fall. When a creature in the cube makes a vertical jump, the creature can jump up to 10 feet higher than normal."
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Gusts",
+							"entries": [
+								"A wind picks up within the cube, continually blowing in a horizontal direction you designate. You choose the intensity of the wind: calm, moderate, or strong. If the wind is moderate or strong, ranged weapon attacks that pass through it or that are made against targets within the cube have disadvantage on their attack rolls. If the wind is strong, any creature moving against the wind must spend 1 extra foot of movement for each foot moved, due to its {@quickref difficult terrain||3}."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Downdraft",
+							"entries": [
+								"You cause a sustained blast of strong wind to blow downward from the top of the cube. Ranged weapon attacks that pass through the cube or that are made against targets within it have disadvantage on their attack rolls. A creature must make a Strength saving throw if it flies into the cube for the first time on a turn or starts its turn there flying. On a failed save, the creature is knocked {@condition prone}."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Updraft",
+							"entries": [
+								"You cause a sustained updraft within the cube, rising upward from the cube's bottom side. Creatures that end a fall within the cube take only half damage from the fall. When a creature in the cube makes a vertical jump, the creature can jump up to 10 feet higher than normal."
+							]
+						}
 					]
 				}
 			],
@@ -1152,6 +1166,7 @@
 				"strength"
 			],
 			"miscTags": [
+				"DFT",
 				"FMV",
 				"SGT"
 			],
@@ -1272,27 +1287,39 @@
 			"entries": [
 				"While speaking an intricate incantation, you spill your blood onto the sapphire and place it at the heart of the clay, taking {@damage 2d4} piercing damage that can't be reduced in any way, as you shape the clay and transform them into a special construct called a {@creature Homunculus}.",
 				{
-                    "type": "entries",
-                    "name": "Statistics",
-                    "entries": [
-                        "The {@creature Homunculus} uses the stat block in the Monster Manual. Additionally, its Hit Point Maximum is increased by the damage you took to bring this creature to life."
-                    ]
-                },
-				{
-                    "type": "entries",
-                    "name": "Control",
-                    "entries": [
-                        "Your {@creature homunculus} is absolutely loyal to you as its creator. While your {@creature homunculus} will act independently of you, it will obey your commands to the best of its ability. In combat, it shares your initiative and your turn."
-                    ]
-                },
-				{
-                    "type": "entries",
-                    "name": "Lifeblood Bond",
-                    "entries": [
-                        "While your {@creature homunculus} lives, you cannot regain the maximum hit points spent as you are bonded to your creation. Due to this bond, if you should die, the {@creature homunculus} dies instantly. As long as you have your {@creature homunculus} through this spell, the reduction to your hit point maximum cannot be removed by any other means except by the death, destruction, or dispelling of your {@creature homunculus}. If you cast {@spell Create Homunculus|XGE|this spell} while your homunculus lives, the spell will fail, with all resources consumed and damage still dealt.",
-                        "Your {@creature homunculus} cannot benefit from healing spells, potions, or rests. As long as you are on the same plane of existance, anytime you regain hit points from any source, you can forgo any number of those hit points in order to heal your {@creature homunculus} instead."
-                    ]
-                }
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+                			"type": "item",
+                			"name": "Statitstics",
+                			"entries": [
+                				"The {@creature Homunculus} uses the stat block in thMonster Manual. Additionally, its Hit Point Maximum iincreased by the damage you took to bring this creaturto life."
+                			]
+                		},
+						{
+                			"type": "item",
+                			"name": "Control",
+                			"entries": [
+                				"Your {@creature homunculus} is absolutely loyal to yoas its creator. While your {@creature homunculus} wilact independently of you, it will obey your commands tthe best of its ability. In combat, it shares youinitiative and your turn."
+                			]
+                		},
+						{
+                			"type": "item",
+                			"name": "Lifeblood Bond",
+                			"entries": [
+                				"While your {@creature homunculus} lives, you cannoregain the maximum hit points spent as you are bondeto your creation. Due to this bond, if you should diethe {@creature homunculus} dies instantly. As long ayou have your {@creature homunculus} through thispell, the reduction to your hit point maximum cannobe removed by any other means except by the deathdestruction, or dispelling of your {@creaturhomunculus}. If you cast {@spell Create Homunculus|XGthis spell} while your homunculus lives, the spell wilfail, with all resources consumed and damage stildealt."
+                			]
+                		},
+						{
+                			"type": "item",
+                			"name": "Healing your Homunculus",
+                			"entries": [
+                				"Your {@creature homunculus} cannot benefit frohealing spells, potions, or rests. As long as you aron the same plane of existance, anytime you regain hipoints from any source, you can forgo any number othose hit points in order to heal your {@creature homunculus} instead."
+                			]
+                		}
+					]
+				}
 			],
 			"miscTags": [
 				"PRM",
@@ -1392,7 +1419,7 @@
 				}
 			],
 			"entries": [
-				"Threads of dark power leap from your fingers to pierce up to five Small or Medium corpses you can see within range. Each corpse immediately stands up and becomes undead. You decide whether it is a {@creature zombie} or a {@creature skeleton} (the statistics for {@creature zombie||zombies} and {@creature skeleton||skeletons} are in the Monster Manual), and it gains a bonus to its attack and damage rolls equal to your spellcasting ability modifier.",
+				"Threads of dark power leap from your fingers to pierce up to five Small or Medium corpses you can see within range. Each corpse immediately stands up and becomes undead. You decide whether it is a {@creature zombie} or a {@creature skeleton} from the Monster Manual, and it gains a bonus to its attack and damage rolls equal to your spellcasting ability modifier.",
 				"You can use a bonus action to mentally command the creatures you make with this spell, issuing the same command to all of them. To receive the command, a creature must be within 60 feet of you. You decide what action the creatures will take and where they will move during their next turn, or you can issue a general command, such as to guard a chamber or passageway against your foes. If you issue no commands, the creatures do nothing except defend themselves against hostile creatures. Once given an order, the creatures continue to follow it until their task is complete.",
 				"The creatures are under your control until the spell ends, after which they become inanimate once more."
 			],
@@ -1570,42 +1597,50 @@
 				"The spell creates the following effects within the area. When you cast this spell, you can specify creatures as friends who are immune to the effects. You can also specify a password that, when spoken aloud, makes the speaker immune to these effects.",
 				"The entire warded area radiates magic. A {@spell Dispel Magic} cast on the area, if successful, removes only one of the following effects, not the entire area. That spell's caster chooses which effect to end. Only when all its effects are gone is this spell dispelled.",
 				{
-					"type": "entries",
-					"name": "Solid Fog",
-					"entries": [
-						"You can fill any number of 5-foot squares on the ground with thick fog, making them {@quickref Vision and Light|PHB|2||heavily obscured}. The fog reaches 10 feet high. In addition, every foot of movement through the fog costs 2 extra feet. To a creature immune to this effect, the fog obscures nothing and looks like soft mist, with motes of green light floating in the air."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Grasping Undergrowth",
-					"entries": [
-						"You can fill any number of 5-foot squares on the ground that aren't filled with fog with grasping weeds and vines, as if they were affected by an {@spell Entangle} spell. To a creature immune to this effect, the weeds and vines feel soft and reshape themselves to serve as temporary seats or beds."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Grove Guardians",
-					"entries": [
-						"You can animate up to four trees in the area, causing them to uproot themselves from the ground. These trees have the same statistics as an {@creature awakened tree}, which appears in the Monster Manual, except they can't speak, and their bark is covered with druidic symbols. If any creature not immune to this effect enters the warded area, the grove guardians fight until they have driven off or slain the intruders. The grove guardians also obey your spoken commands (no action required by you) that you issue while in the area. If you don't give them commands and no intruders are present, the grove guardians do nothing. The grove guardians can't leave the warded area. When the spell ends, the magic animating them disappears, and the trees take root again if possible."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Additional Spell Effect",
-					"entries": [
-						"You can place your choice of one of the following magical effects within the warded area:",
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
 						{
-							"type": "list",
-							"items": [
-								"A constant {@spell Gust of Wind} in two locations of your choice",
-								"{@spell Spike Growth} in one location of your choice",
-								"{@spell Wind Wall} in two locations of your choice"
+							"type": "item",
+							"name": "Solid Fog",
+							"entries": [
+								"You can fill any number of 5-foot squares on the ground with thick fog, making them {@quickref Vision and Light|PHB|2||heavily obscured}. The fog reaches 10 feet high. In addition, every foot of movement through the fog costs 2 extra feet. To a creature immune to this effect, the fog obscures nothing and looks like soft mist, with motes of green light floating in the air."
 							]
 						},
-						"To a creature immune to this effect, the winds are a fragrant, gentle breeze, and the area of {@spell Spike Growth} is harmless."
+						{
+							"type": "item",
+							"name": "Grasping Undergrowth",
+							"entries": [
+								"You can fill any number of 5-foot squares on the ground that aren't filled with fog with grasping weeds and vines, as if they were affected by an {@spell Entangle} spell. To a creature immune to this effect, the weeds and vines feel soft and reshape themselves to serve as temporary seats or beds."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Grove Guardians",
+							"entries": [
+								"You can animate up to four trees in the area, causing them to uproot themselves from the ground. These trees have the same statistics as an {@creature awakened tree}, which appears in the Monster Manual, except they can't speak, and their bark is covered with druidic symbols.",
+								"If any creature not immune to this effect enters the warded area, the grove guardians fight until they have driven off or slain the intruders. The grove guardians also obey your spoken commands (no action required by you) that you issue while in the area.",
+								"If you don't give them commands and no intruders are present, the grove guardians do nothing. The grove guardians can't leave the warded area. When the spell ends, the magic animating them disappears, and the trees take root again if possible."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Additional Spell Effect",
+							"entries": [
+								"You can place your choice of one of the following magical effects within the warded area:",
+								{
+									"type": "list",
+									"items": [
+										"A constant {@spell Gust of Wind} in two locations of your choice",
+										"{@spell Spike Growth} in one location of your choice",
+										"{@spell Wind Wall} in two locations of your choice"
+									]
+								},
+								"To a creature immune to this effect, the winds are a fragrant, gentle breeze, and the area of {@spell Spike Growth} is harmless."
+							]
+						}
 					]
-				}				
+				}			
 			],
 			"miscTags": [
 				"OBS",
