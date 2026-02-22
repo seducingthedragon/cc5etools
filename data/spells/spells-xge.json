@@ -5466,10 +5466,22 @@
 				}
 			],
 			"entries": [
-				"A shimmering wall of bright light appears at a point you choose within range. The wall appears in any orientation you choose: horizontally, vertically, or diagonally. It can be free floating, or it can rest on a solid surface. The wall can be up to 60 feet long, 10 feet high, and 5 feet thick. The wall blocks line of sight, but creatures and objects can pass through it. It emits bright light out to 120 feet and dim light for an additional 120 feet.",
-				"When the wall appears, each creature in its area must make a Constitution saving throw. On a failed save, a creature takes {@damage 4d8} radiant damage, and it is {@condition blinded} for 1 minute. On a successful save, it takes half as much damage and isn't {@condition blinded}. A {@condition blinded} creature can make a Constitution saving throw at the end of each of its turns, ending the effect on itself on a success.",
-				"A creature that ends its turn in the wall's area takes {@damage 4d8} radiant damage.",
-				"Until the spell ends, you can use an action to launch a beam of radiance from the wall at one creature you can see within 60 feet of it. Make a ranged spell attack. On a hit, the target takes {@damage 4d8} radiant damage. Whether you hit or miss, reduce the length of the wall by 10 feet. If the wall's length drops to 0 feet, the spell ends."
+				"A shimmering wall of bright light appears at a point you choose within range.",
+				{
+					"type": "entries",
+					"name": "Orientation",
+					"entries": [
+						"The wall appears in any orientation you choose: horizontally, vertically, or diagonally. It can be free floating, or it can rest on a solid surface. The wall can be up to 60 feet long, 10 feet high, and 5 feet thick. The wall blocks line of sight, but creatures and objects can pass through it. It emits bright light out to 120 feet and dim light for an additional 120 feet."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Blinding Radiance",
+					"entries": [
+						"When the wall appears, each creature in its area must make a Constitution saving throw. On a failed save, a creature takes {@damage 4d8} radiant damage, and it is {@condition blinded} for 1 minute. On a successful save, it takes half as much damage and isn't {@condition blinded}. A {@condition blinded} creature can make a Constitution saving throw at the end of each of its turns, ending the effect on itself on a success. A creature that ends its turn in the wall's area takes {@damage 4d8} radiant damage.",
+						"Until the spell ends, you can use an action to launch a beam of radiance from the wall at one creature you can see within 60 feet of it. Make a ranged spell attack. On a hit, the target takes {@damage 4d8} radiant damage. Whether you hit or miss, reduce the length of the wall by 10 feet. If the wall's length drops to 0 feet, the spell ends."
+					]
+				}
 			],
 			"entriesHigherLevel": [
 				{
@@ -5542,12 +5554,13 @@
 				}
 			],
 			"entries": [
-				"You create a wall of swirling sand on the ground at a point you can see within range. You can make the wall up to 30 feet long, 10 feet high, and 10 feet thick, and it vanishes when the spell ends. It blocks line of sight but not movement. A creature is {@condition blinded} while in the wall's space and must spend 3 feet of movement for every 1 foot it moves there."
+				"You create a wall of swirling sand on the ground at a point you can see within range. You can make the wall up to 30 feet long, 10 feet high, and 10 feet thick, and it vanishes when the spell ends. It blocks line of sight but not movement. The wall's space causes a creature's vision to be {@quickref Vision and Light|PHB|2||heavily obscured}, resulting in the creature being {@condition blinded} while in the wall's space. Additionally, a creature must spend 3 feet of movement for every 1 foot it moves there, due to its harsh {@quickref difficult terrain||3}."
 			],
 			"conditionInflict": [
 				"blinded"
 			],
 			"miscTags": [
+				"DFT",
 				"OBS",
 				"SGT"
 			],
@@ -5603,8 +5616,19 @@
 				}
 			],
 			"entries": [
-				"You create a wall of water on the ground at a point you can see within range. You can make the wall up to 30 feet long, 10 feet high, and 1 foot thick, or you can make a ringed wall up to 20 feet in diameter, 20 feet high, and 1 foot thick. The wall vanishes when the spell ends. The wall's space is {@quickref difficult terrain||3}.",
-				"Any ranged weapon attack that enters the wall's space has disadvantage on the attack roll, and fire damage is halved if the fire effect passes through the wall to reach its target. Spells that deal cold damage that pass through the wall cause the area of the wall they pass through to freeze solid (at least a 5-foot-square section is frozen). Each 5-foot-square frozen section has AC 5 and 15 hit points. Reducing a frozen section to 0 hit points destroys it. When a section is destroyed, the wall's water doesn't fill it."
+				"You create a wall of water on the ground at a point you can see within range. Each creature present the wall of water lands on must make a Dexterity saving throw or be pushed 5 feet back and knocked {@condition prone}.",
+				"When you summon the wall, you can make the wall up to 30 feet long, 10 feet high, and 1 foot thick, or you can make a ringed wall up to 20 feet in diameter, 20 feet high, and 1 foot thick. The wall vanishes when the spell ends. The wall's space is {@quickref difficult terrain||3}.",
+				"Any ranged weapon attack that enters the wall's space has disadvantage on the attack roll, and fire damage is halved if the fire effect passes through the wall to reach its target.", 
+				"Spells that deal cold damage that pass through the wall cause the area of the wall they pass through to freeze solid (at least a 5-foot-square section is frozen). Each 5-foot-square frozen section has AC 5 and 15 hit points. Reducing a frozen section to 0 hit points destroys it. When a section is destroyed, the wall's water doesn't fill it."
+			],
+			"damageResist": [
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"conditionInflict": [
+				"prone"
 			],
 			"miscTags": [
 				"DFT",
