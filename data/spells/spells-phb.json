@@ -12178,15 +12178,15 @@
 				}
 			],
 			"entries": [
-				"You evoke elemental guardian spirits that flit around you in a 15-foot Emanation for the duration. Until the spell ends, any attack you make deals an extra {@damage 3d8} damage when you hit a creature in the Emanation. This damage is Acid, Cold, Fire, or Lightning (your choice when you make the attack).",
-				"In addition, the ground in the Emanation is {@quickref difficult terrain||3} to all creatures of your choice."
+				"You invoke elemental energy to infuse their fury with your energy. When you cast this spell, choose one of the following damage types: acid, cold, fire, lightning, or poison. Until the spell ends, any attack you make deals an extra {@damage 4d8} of your choosen damage type to targets within your emanation and an extra {@damage 2d8} of your choosen damage type to targets outside of your emanation.",
+				"In addition, the ground within your emanation is {@quickref difficult terrain||3} to all creatures of your choice."
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The damage increases by {@scaledamage 3d8|4-9|1d8} for each spell slot level above 4."
+						"The damage increases by {@scaledamage 4d8;2d8|4-9|1d8} for each spell slot level above 4."
 					]
 				}
 			],
@@ -12194,7 +12194,8 @@
 				"acid",
 				"cold",
 				"fire",
-				"lightning"
+				"lightning",
+				"poison"
 			],
 			"miscTags": [
 				"AAD",
