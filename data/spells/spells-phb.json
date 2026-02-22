@@ -7857,67 +7857,6 @@
 			]
 		},
 		{
-			"name": "Evoke Elemental Guardians",
-			"source": "PHB",
-			"page": 238,
-			"srd": true,
-			"level": 4,
-			"school": "V",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "emanation",
-				"distance": {
-					"type": "feet",
-					"amount": 15
-				}
-			},
-			"components": {
-				"v": true,
-				"s": true
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "minute",
-						"amount": 10
-					},
-					"concentration": true
-				}
-			],
-			"entries": [
-				"You evoke elemental guardian spirits that flit around you in a 15-foot Emanation for the duration. Until the spell ends, any attack you make deals an extra {@damage 3d8} damage when you hit a creature in the Emanation. This damage is Acid, Cold, Fire, or Lightning (your choice when you make the attack).",
-				"In addition, the ground in the Emanation is {@quickref difficult terrain||3} to all creatures of your choice."
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
-					"entries": [
-						"The damage increases by {@scaledamage 3d8|4-9|1d8} for each spell slot level above 4."
-					]
-				}
-			],
-			"damageInflict": [
-				"acid",
-				"cold",
-				"fire",
-				"lightning"
-			],
-			"miscTags": [
-				"AAD",
-				"DFT"
-			],
-			"areaTags": [
-				"E"
-			]
-		},
-		{
 			"name": "Expeditious Retreat",
 			"source": "PHB",
 			"page": 238,
@@ -12202,6 +12141,67 @@
 			],
 			"areaTags": [
 				"ST"
+			]
+		},
+				{
+			"name": "Invoke Elemental Fury",
+			"source": "PHB",
+			"page": 254,
+			"srd": true,
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "emanation",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You evoke elemental guardian spirits that flit around you in a 15-foot Emanation for the duration. Until the spell ends, any attack you make deals an extra {@damage 3d8} damage when you hit a creature in the Emanation. This damage is Acid, Cold, Fire, or Lightning (your choice when you make the attack).",
+				"In addition, the ground in the Emanation is {@quickref difficult terrain||3} to all creatures of your choice."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The damage increases by {@scaledamage 3d8|4-9|1d8} for each spell slot level above 4."
+					]
+				}
+			],
+			"damageInflict": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning"
+			],
+			"miscTags": [
+				"AAD",
+				"DFT"
+			],
+			"areaTags": [
+				"E"
 			]
 		},
 		{

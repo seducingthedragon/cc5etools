@@ -2303,22 +2303,6 @@
 				}
 			]
 		},
-		"Evoke Elemental Guardians": {
-			"class": [
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB"
-				}
-			]
-		},
 		"Expeditious Retreat": {
 			"class": [
 				{
@@ -3449,6 +3433,22 @@
 				{
 					"name": "Artificer",
 					"source": "TCE"
+				}
+			]
+		},
+		"Invoke Elemental Fury": {
+			"class": [
+				{
+					"name": "Druid",
+					"source": "PHB"
+				},
+				{
+					"name": "Ranger",
+					"source": "PHB"
+				},
+				{
+					"name": "Wizard",
+					"source": "PHB"
 				}
 			]
 		},
