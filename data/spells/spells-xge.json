@@ -1263,7 +1263,10 @@
 			},
 			"duration": [
 				{
-					"type": "instant"
+					"type": "permanent",
+					"ends": [
+						"dispel"
+					]
 				}
 			],
 			"entries": [
@@ -1279,14 +1282,14 @@
                     "type": "entries",
                     "name": "Control",
                     "entries": [
-                        "Your {@creature homunculus} is absolutely loyal to you as its creator. It acts independently of you and will obey your commands to the best of its ability. In combat, it shares your initiative and your turn."
+                        "Your {@creature homunculus} is absolutely loyal to you as its creator. While your {@creature homunculus} will act independently of you, it will obey your commands to the best of its ability. In combat, it shares your initiative and your turn."
                     ]
                 },
 				{
                     "type": "entries",
                     "name": "Lifeblood Bond",
                     "entries": [
-                        "While your {@creature homunculus} lives, you cannot regain the maximum hit points spent as you are bonded to your creation. Due to this bond, if you should die, the {@creature homunculus} dies instantly. As long as you have your {@creature homunculus} through this spell, the reduction to your hit point maximum cannot be removed by any other means except by the death of your {@creature homunculus}. If you cast {@spell Create Homunculus|XGE|this spell} while your homunculus lives, the spell will fail, with all resources consumed, and damage still dealt.",
+                        "While your {@creature homunculus} lives, you cannot regain the maximum hit points spent as you are bonded to your creation. Due to this bond, if you should die, the {@creature homunculus} dies instantly. As long as you have your {@creature homunculus} through this spell, the reduction to your hit point maximum cannot be removed by any other means except by the death, destruction, or dispelling of your {@creature homunculus}. If you cast {@spell Create Homunculus|XGE|this spell} while your homunculus lives, the spell will fail, with all resources consumed and damage still dealt.",
                         "Your {@creature homunculus} cannot benefit from healing spells, potions, or rests. As long as you are on the same plane of existance, anytime you regain hit points from any source, you can forgo any number of those hit points in order to heal your {@creature homunculus} instead."
                     ]
                 }
