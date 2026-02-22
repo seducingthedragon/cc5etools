@@ -4255,17 +4255,23 @@
 			"entries": [
 				"Choose an area of nonmagical flame that you can see and that fits within a 5-foot cube within range. You can extinguish the fire in that area, and you create either fireworks or smoke when you do so.",
 				{
-					"type": "entries",
-					"name": "Fireworks",
-					"entries": [
-						"The target explodes with a dazzling display of colors. Each creature within 10 feet of the target must succeed on a Constitution saving throw or become {@condition blinded} until the end of your next turn."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Smoke",
-					"entries": [
-						"Thick black smoke spreads out from the target in a 20-foot radius, moving around corners. The area of the smoke is {@quickref Vision and Light|PHB|2||heavily obscured}. The smoke persists for 1 minute or until a strong wind disperses it."
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Fireworks",
+							"entries": [
+								"The target explodes with a dazzling display of colors. Each creature within 10 feet of the target must succeed on a Constitution saving throw or become {@condition blinded} until the end of your next turn."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Smoke",
+							"entries": [
+								"Thick black smoke spreads out from the target in a 20-foot radius, moving around corners. The area of the smoke is {@quickref Vision and Light|PHB|2||heavily obscured}. The smoke persists for 1 minute or until a strong wind disperses it."
+							]
+						}
 					]
 				}
 			],
@@ -4792,31 +4798,37 @@
 			"entries": [
 				"This spell snatches the soul of a humanoid as it dies and traps it inside the tiny cage you use for the material component. A stolen soul remains inside the cage until the spell ends or until you destroy the cage, which ends the spell. While you have a soul inside the cage, you can exploit it in any of the ways described below. You can use a trapped soul up to six times. Once you exploit a soul for the sixth time, it is released, and the spell ends. While a soul is trapped, the dead humanoid it came from can't be revived.",
 				{
-					"type": "entries",
-					"name": "Steal Life",
-					"entries": [
-						"You can use a bonus action to drain vigor from the soul and regain {@dice 2d8} hit points."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Query Soul",
-					"entries": [
-						"You ask the soul a question (no action required) and receive a brief telepathic answer, which you can understand regardless of the language used. The soul knows only what it knew in life, but it must answer you truthfully and to the best of its ability. The answer is no more than a sentence or two and might be cryptic."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Borrow Experience",
-					"entries": [
-						"You can use a bonus action to bolster yourself with the soul's life experience, making your next attack roll, ability check, or saving throw with advantage. If you don't use this benefit before the start of your next turn, it is lost."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Eyes of the Dead",
-					"entries": [
-						"You can use an action to name a place the humanoid saw in life, which creates an invisible sensor somewhere in that place if it is on the plane of existence you're currently on. The sensor remains for as long as you concentrate, up to 10 minutes (as if you were {@status concentration||concentrating} on a spell). You receive visual and auditory information from the sensor as if you were in its space using your senses."
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "entries",
+							"name": "Steal Life",
+							"entries": [
+								"You can use a bonus action to drain vigor from the soul and regain {@dice 2d8} hit points."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Query Soul",
+							"entries": [
+								"You ask the soul a question (no action required) and receive a brief telepathic answer, which you can understand regardless of the language used. The soul knows only what it knew in life, but it must answer you truthfully and to the best of its ability. The answer is no more than a sentence or two and might be cryptic."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Borrow Experience",
+							"entries": [
+								"You can use a bonus action to bolster yourself with the soul's life experience, making your next attack roll, ability check, or saving throw with advantage. If you don't use this benefit before the start of your next turn, it is lost."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Eyes of the Dead",
+							"entries": [
+								"You can use an action to name a place the humanoid saw in life, which creates an invisible sensor somewhere in that place if it is on the plane of existence you're currently on. The sensor remains for as long as you concentrate, up to 10 minutes (as if you were {@status concentration||concentrating} on a spell). You receive visual and auditory information from the sensor as if you were in its space using your senses."
+							]
+						}
 					]
 				},
 				"A creature that can see the sensor (such as one using {@spell See Invisibility} or {@sense truesight}) sees a translucent image of the tormented humanoid whose soul you caged."
@@ -5032,14 +5044,44 @@
 				}
 			],
 			"entries": [
-				"You cause a temple to shimmer into existence on ground you can see within range. The temple must fit within an unoccupied cube of space, up to 120 feet on each side. The temple remains until the spell ends. It is dedicated to whatever god, pantheon, or philosophy is represented by the holy symbol used in the casting.",
-				"You make all decisions about the temple's appearance. The interior is enclosed by a floor, walls, and a roof, with one door granting access to the interior and as many windows as you wish. Only you and any creatures you designate when you cast the spell can open or close the door.",
-				"The temple's interior is an open space with an idol or altar at one end. You decide whether the temple is illuminated and whether that illumination is bright light or dim light. The smell of burning incense fills the air within, and the temperature is mild.",
-				"The temple opposes types of creatures you choose when you cast this spell. Choose one or more of the following: celestials, elementals, fey, fiends, or undead. If a creature of the chosen type attempts to enter the temple, that creature must make a Charisma saving throw. On a failed save, it can't enter the temple for 24 hours. Even if the creature can enter the temple, the magic there hinders it; whenever it makes an attack roll, an ability check, or a saving throw inside the temple, it must roll a {@dice d4} and subtract the number rolled from the {@dice d20} roll.",
-				"In addition, the sensors created by divination spells can't appear inside the temple, and creatures within can't be targeted by divination spells.",
-				"Finally, whenever any creature in the temple regains hit points from a spell of 1st level or higher, the creature regains additional hit points equal to your Wisdom modifier (minimum 1 hit point).",
-				"The temple is made from opaque magical force that extends into the Ethereal Plane, thus blocking ethereal travel into the temple's interior. Nothing can physically pass through the temple's exterior. It can't be dispelled by {@spell Dispel Magic}, and {@spell Antimagic field} has no effect on it. A {@spell Disintegrate} spell destroys the temple instantly.",
-				"Casting this spell on the same spot every day for a year makes this effect permanent."
+				"You cause a temple to shimmer into existence on ground you can see within range. The temple remains until the spell ends. It is dedicated to whatever god, pantheon, or philosophy is represented by the holy symbol used in the casting.",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "The Temple",
+							"entries": [
+								"The temple must fit within an unoccupied cube of space, up to 120 feet on each side. You make all decisions about the temple's appearance. The interior is enclosed by a floor, walls, and a roof, with one door granting access to the interior and as many windows as you wish. Only you and any creatures you designate when you cast the spell can open or close the door.",
+								"The temple's interior is an open space with an idol or altar at one end. You decide whether the temple is illuminated and whether that illumination is bright light or dim light. The smell of burning incense fills the air within, and the temperature is mild."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Abjuring Creatures",
+							"entries": [
+								"The temple opposes types of creatures you choose when you cast this spell. Choose one or more of the following: celestials, elementals, fey, fiends, or undead. If a creature of the chosen type attempts to enter the temple, that creature must make a Charisma saving throw. On a failed save, it can't enter the temple for 24 hours. Even if the creature can enter the temple, the magic there hinders it; whenever it makes an attack roll, an ability check, or a saving throw inside the temple, it must roll a {@dice d4} and subtract the number rolled from the {@dice d20} roll.",
+								"In addition, the sensors created by divination spells can't appear inside the temple, and creatures within can't be targeted by divination spells."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Healing Others",
+							"entries": [
+								"Whenever any creature in the temple regains hit points from a spell of 1st level or higher, the creature regains additional hit points equal to your Wisdom modifier (minimum 1 hit point)."
+							]
+						},
+						{
+							"type": "item",
+							"name": "The Temple's Force",
+							"entries": [
+								"The temple is made from opaque magical force that extends into the Ethereal Plane, thus blocking ethereal travel into the temple's interior. Nothing can physically pass through the temple's exterior. It can't be dispelled by {@spell Dispel Magic}, and {@spell Antimagic field} has no effect on it. A {@spell Disintegrate} spell destroys the temple instantly.",
+								"Casting this spell on the same spot every day for a year makes this effect permanent."
+							]
+						}
+					]
+				}
 			],
 			"savingThrow": [
 				"charisma"
@@ -5326,9 +5368,8 @@
 				}
 			],
 			"entries": [
-				"You touch one Tiny, nonmagical object that isn't attached to another object or a surface and isn't being carried by another creature. The target animates and sprouts little arms and legs, becoming a creature under your control until the spell ends or the creature drops to 0 hit points. See the {@creature tiny servant|xge|stat block} for its statistics.",
-				"As a bonus action, you can mentally command the creature if it is within 120 feet of you. (If you control multiple creatures with this spell, you can command any or all of them at the same time, issuing the same command to each one.) You decide what action the creature will take and where it will move during its next turn, or you can issue a simple, general command, such as to fetch a key, stand watch, or stack some books. If you issue no commands, the servant does nothing other than defend itself against hostile creatures. Once given an order, the servant continues to follow that order until its task is complete.",
-				"When the creature drops to 0 hit points, it reverts to its original form, and any remaining damage carries over to that form."
+				"You touch one Tiny, nonmagical object that isn't attached to another object or a surface and isn't being carried by another creature. The target animates and sprouts little arms and legs, becoming a creature under your control until the spell ends or the creature drops to 0 hit points. See the {@creature tiny servant|xge|Tiny Servant stat block} for its statistics. When the creature drops to 0 hit points, it reverts to its original form, and any remaining damage carries over to that form.",
+				"As a bonus action, you can mentally command the creature if it is within 120 feet of you. (If you control multiple creatures with this spell, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a simple, general command, such as to fetch a key, stand watch, or stack some books. If you issue no commands, the servant does nothing other than defend itself against hostile creatures. Once given an order, the servant continues to follow that order until its task is complete."
 			],
 			"entriesHigherLevel": [
 				{
