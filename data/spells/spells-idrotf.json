@@ -40,57 +40,6 @@
 			"areaTags": [
 				"ST"
 			]
-		},
-		{
-			"name": "Frost Fingers",
-			"source": "IDRotF",
-			"page": 318,
-			"level": 1,
-			"school": "V",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "cone",
-				"distance": {
-					"type": "feet",
-					"amount": 15
-				}
-			},
-			"components": {
-				"v": true,
-				"s": true
-			},
-			"duration": [
-				{
-					"type": "instant"
-				}
-			],
-			"entries": [
-				"Freezing cold blasts from your fingertips in a 15-foot cone. Each creature in that area must make a Constitution saving throw, taking {@damage 2d8} cold damage on a failed save, or half as much damage on a successful one.",
-				"The cold freezes nonmagical liquids in the area that aren't being worn or carried."
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@damage 1d8} for each slot level above 1st."
-					]
-				}
-			],
-			"damageInflict": [
-				"cold"
-			],
-			"savingThrow": [
-				"constitution"
-			],
-			"areaTags": [
-				"N"
-			]
 		}
 	]
 }
