@@ -98,8 +98,14 @@
             ],
             "entries": [
                 "You attempt to turn one creature that you can see within range into wood. The creature makes a Constitution saving throw. On a failed save, it has the {@condition Restrained} condition as its flesh begins to harden into bark. On a successful save, its speed is 0 until the start of your next turn.",
-                "A creature {@condition Restrained} by this spell makes a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the condition ends. If it fails three times, it is turned into a tree and has the {@condition Petrified} condition. The successes and failures needn't be consecutive; keep track of both until the target collects three of a kind.",
-                "If the transformed creature is burned, chopped down, or otherwise destroyed while {@condition Petrified}, the creature is slain.",
+				{
+					"type": "entries",
+					"name": "Restrained to Petrification",
+					"entries": [
+						"A creature {@condition Restrained} by this spell makes a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the condition ends. If it fails three times, it is turned into a tree and has the {@condition Petrified} condition. The successes and failures needn't be consecutive; keep track of both until the target collects three of a kind.",
+                		"If the transformed creature is burned, chopped down, or otherwise destroyed while {@condition Petrified}, the creature is slain."
+					]
+				},
                 "A creature remains transformed unless the effect is reversed within one year with a {@spell Restoration|PHB|level 5 Restoration}, {@spell Wish}, or similar magical effects. If the creature spends 1 year and 1 day as a tree, the transformation becomes permanent, and nothing can return the creature to its original form."
             ],
             "conditionInflict": [
@@ -114,6 +120,7 @@
 			],
             "miscTags": [
                 "PRM",
+				"SCL",
                 "SGT"
             ]
         },
@@ -338,8 +345,14 @@
 			],
 			"entries": [
 				"You and up to eight willing creatures within range fall {@condition unconscious} for the spell's duration and experience visions of another world on the Material Plane, such as Oerth, Toril, Krynn, or Eberron. If the spell reaches its full duration, the visions conclude with each of you encountering and pulling back a mysterious blue curtain. The spell then ends with you mentally and physically transported to the world that was in the visions.",
-				"To cast this spell, you must have a magic item that originated on the world you wish to reach, and you must be aware of the world's existence, even if you don't know the world's name. Your destination in the other world is a safe location within 1 mile of where the magic item was created. Alternatively, you can cast the spell if one of the affected creatures was born on the other world, which causes your destination to be a safe location within 1 mile of where that creature was born.",
-				"The spell ends early on a creature if that creature takes any damage, and the creature isn't transported. If you take any damage, the spell ends for you and all the other creatures, with none of you being transported."
+				{
+					"type": "entries",
+					"name": "Casting this Spell",
+					"entries": [
+						"To cast this spell, you must have a magic item that originated on the world you wish to reach, and you must be aware of the world's existence, even if you don't know the world's name. Your destination in the other world is a safe location within 1 mile of where the magic item was created. Alternatively, you can cast the spell if one of the affected creatures was born on the other world, which causes your destination to be a safe location within 1 mile of where that creature was born.",
+						"The spell ends early on a creature if that creature takes any damage, and the creature isn't transported. If you take any damage, the spell ends for you and all the other creatures, with none of you being transported."
+					]
+				}
 			],
 			"conditionInflict": [
 				"unconscious"
@@ -397,9 +410,30 @@
                 }
             ],
             "entries": [
-                "You summon a Small {@creature air elemental} to a spot within range. The air elemental is formless, nearly transparent, immune to all damage, and cannot interact with other creatures or objects. It carries an open, empty chest whose interior dimensions are 3 feet on each side. While the spell lasts, you can deposit as many items inside the chest as will fit. You can then name a living creature you have met and seen at least once before, or any creature for which you possess a body part, lock of hair, clipping from a nail, or similar portion of the creature's body.",
-                "As soon as the lid of the chest is closed, the elemental and the chest disappear, then reappear adjacent to the target creature. If the target creature is on another plane, or if it is proofed against magical detection or location, the contents of the chest reappear on the ground at your feet.",
-                "The target creature is made aware of the chest's contents before it chooses whether or not to open it, and knows how much of the spell's duration remains in which it can retrieve them. No other creature can open the chest and retrieve its contents. When the spell expires or when all the contents of the chest have been removed, the elemental and the chest disappear. The elemental also disappears if the target creature orders it to return the items to you. When the elemental disappears, any items not taken from the chest reappear on the ground at your feet."
+                "You summon a Small {@creature air elemental} to a spot within range, carrying a chest designed to fill with items to send to another individual. The air elemental is formless, nearly transparent, immune to all damage, and cannot interact with other creatures or objects.",
+				{
+					"type": "entries",
+					"name": "The Courier's Chest",
+					"entries": [
+						"The courier carries an open, empty chest interior with dimensions that's 3 feet on each side. While the spell lasts, you can deposit as many items inside the chest as will fit."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Delivered Courier",
+					"entries": [
+						"After filling the chest, you name a living creature you have met and seen at least once before, or any creature for which you possess a body part, lock of hair, clipping from a nail, or similar portion of the creature's body. This creature is the individual you send the courier to deliver the contents of the chest to. As soon as the lid of the chest is closed, the elemental and the chest disappear, then reappear adjacent to the target creature."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "The End of the Spell",
+					"entries": [
+						"The target creature is made aware of the chest's contents before it chooses whether or not to open it, and knows how much of the spell's duration remains in which it can retrieve them. No other creature can open the chest and retrieve its contents.",
+						"When the spell expires or when all the contents of the chest have been removed, the elemental and the chest disappear. The elemental also disappears if the target creature orders it to return the items to you. The spell ends early if the target creature is on another plane, or if it is proofed against magical detection or location.",
+						"Regardless of how the spell ends, any items still in the chest when it does, reappears on the ground at your feet."
+					]
+				}
             ],
             "entriesHigherLevel": [
                 {
@@ -829,7 +863,8 @@
                 }
             ],
             "entries": [
-                "A momentary bubble of iridescent energy shimmers in the air between you and the caster of the triggering spell. The spell is redirected to a creature of your choice that you can see within 60 feet. If the spell is 5th level or lower, you are no longer a target of the spell and the chosen creature is instead. If the spell is 6th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a successful check, you are no longer a target of the spell and the chosen creature is instead. On a failed check, you remain the target of the triggering spell."
+                "A momentary bubble of iridescent energy shimmers in the air between you and the caster of the triggering spell. The spell is redirected to a creature of your choice that you can see within 60 feet.",
+				"If the spell is 5th level or lower, you are no longer a target of the spell and the chosen creature is instead. If the spell is 6th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a successful check, you are no longer a target of the spell and the chosen creature is instead. On a failed check, you remain the target of the triggering spell."
             ],
             "miscTags": [
                 "SGT"
@@ -1659,7 +1694,8 @@
             ],
             "entries": [
                 "You conjure a claw-footed cauldron filled with bubbling liquid. The cauldron appears in an unoccupied space on the ground within 5 feet of you and lasts for the duration. The cauldron can't be moved and disappears when the spell ends, along with the bubbling liquid inside it.",
-                "The liquid in the cauldron duplicates the properties of a Common or an Uncommon potion of your choice (such as a {@item Potion of Healing}). As a Bonus Action, you or an ally can reach into the cauldron and withdraw one potion of that kind. The potion is contained in a vial that disappears when the potion is consumed. The cauldron can produce a number of these potions equal to your spellcasting ability modifier (minimum 1). When the last of these potions is withdrawn from the cauldron, the cauldron disappears, and the spell ends.",
+                "The liquid in the cauldron duplicates the properties of a Common or an Uncommon potion of your choice (such as a {@item Potion of Healing}). As a Bonus Action, you or an ally can reach into the cauldron and withdraw one potion of that kind. The potion is contained in a vial that disappears when the potion is consumed.",
+				"The cauldron can produce a number of these potions equal to your spellcasting ability modifier (minimum 1). When the last of these potions is withdrawn from the cauldron, the cauldron disappears, and the spell ends.",
                 "Potions obtained from the cauldron that aren't consumed disappear when you cast this spell again."
             ],
             "miscTags": [
