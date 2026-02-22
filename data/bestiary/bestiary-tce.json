@@ -584,7 +584,7 @@
 				{
 					"name": "Maul",
 					"entries": [
-						"{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one target. {@h}{@damage 1d8 + 4 + summonSpellLevel} piercing damage."
+						"{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one target. {@h}{@damage 1d8 + 4 + summonSpellLevel} piercing damage. Additionally, the target's speed is reduced by 10 feet until the end of its next turn. A target can only suffer this speed reduction once per turn. "
 					]
 				}
 			],
