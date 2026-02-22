@@ -1,16 +1,10 @@
 {
 	"monster": [
 		{
-			"name": "Animated Object",
+			"name": "Animated Object (Huge)",
 			"source": "PHB",
 			"page": 213,
-			"summonedBySpell": "Animate Objects|PHB",
-			"summonedBySpellLevel": 2,
 			"size": [
-				"T",
-				"S",
-				"M",
-				"L",
 				"H"
 			],
 			"type": "construct",
@@ -19,40 +13,35 @@
 			],
 			"ac": [
 				{
-					"special": "12 + 1 per spell level"
+					"ac": 10,
+					"from": [
+						"natural armor"
+					]
 				}
 			],
 			"hp": {
-				"special": "10 (Small or smaller), 20 (Medium), 30 (Large,) 40 (Huge) + 5 for each spell level above 2nd"
+				"special": "80"
 			},
 			"speed": {
 				"walk": 30
 			},
-			"str": 16,
-			"dex": 10,
+			"str": 18,
+			"dex": 6,
 			"con": 10,
 			"int": 3,
 			"wis": 3,
 			"cha": 1,
 			"senses": [
-				"Blindsight 30 ft. (blind beyond this radius)"
+				"blindsight 30 ft. (blind beyond this radius)"
 			],
-			"languages": [
-				"telepathy 500 feet (works only with you)"
-			],
-			"pbNote": "equals your Proficiency Bonus",
+			"passive": 6,
 			"trait": [
 				{
 					"name": "Animated",
 					"entries": [
 						"If the object lacks legs or other appendages it can use for locomotion, it instead has a flying speed of 30 feet and can hover. If the object is securely attached to a surface or larger object, such as a chain bolted to a wall, its speed is 0.",
-						"When the animated object drops to 0 hit points, it reverts to its original object form, and any remaining damage carries over to its original object form."
-					]
-				},
-				{
-					"name": "False Appearance",
-					"entries": [
-						"While the Animated Object remains motionless, it is indistinguishable from a normal object."
+						"When the animated object drops to 0 hit points, it reverts to its original object form, and any remaining damage carries over to its original object form.",
+						"The DM might rule that a specific objects slam attack inflicts slashing or piercing damage based on its form."
 					]
 				}
 			],
@@ -60,110 +49,276 @@
 				{
 					"name": "Slam",
 					"entries": [
-						"{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}{@damage 2d4 + summonSpellLevel}, {@damage 2d6 + summonSpellLevel} (Medium), {@damage 2d10 + summonSpellLevel} (Large), or {@damage 2d12 + summonSpellLevel} (Huge) force damage."
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d12 + 4}) bludgeoning damage."
 					]
 				}
 			],
 			"senseTags": [
 				"B"
 			],
+			"damageTags": [
+				"B"
+			],
 			"miscTags": [
-				"MA"
+				"MW"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Animated Object (Large)",
+			"source": "PHB",
+			"page": 213,
+			"size": [
+				"L"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 10,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "50"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 10,
+			"int": 3,
+			"wis": 3,
+			"cha": 1,
+			"senses": [
+				"blindsight 30 ft. (blind beyond this radius)"
+			],
+			"passive": 6,
+			"trait": [
+				{
+					"name": "Animated",
+					"entries": [
+						"If the object lacks legs or other appendages it can use for locomotion, it instead has a flying speed of 30 feet and can hover. If the object is securely attached to a surface or larger object, such as a chain bolted to a wall, its speed is 0.",
+						"When the animated object drops to 0 hit points, it reverts to its original object form, and any remaining damage carries over to its original object form.",
+						"The DM might rule that a specific objects slam attack inflicts slashing or piercing damage based on its form."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d10 + 2}) bludgeoning damage."
+					]
+				}
+			],
+			"senseTags": [
+				"B"
 			],
 			"damageTags": [
-                "O"
+				"B"
 			],
-			"languageTags": [
-                "TP"
+			"miscTags": [
+				"MW"
 			],
-			"traitTags": [
-				"False Appearance"
+			"hasToken": true
+		},
+		{
+			"name": "Animated Object (Medium)",
+			"source": "PHB",
+			"page": 213,
+			"size": [
+				"M"
 			],
-			"hasToken": true,
-			"hasFluffImages": true,
-			"_versions": [
-                {
-					"name": "Animated Object (Huge)",
-					"source": "PHB",
-					"_mod": {
-						"action": [
-							{
-                                "name": "Slam",
-                                "entries": [
-                                    "{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}{@damage 2d12 + summonSpellLevel} force damage."
-                                ]
-                            }
-						]
-					},
-					"size": [
-						"H"
-					],
-					"hp": {
-                        "special": "40 + 5 for each spell level above 2nd"
-					}
-				},
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
 				{
-					"name": "Animated Object (Large)",
-					"source": "PHB",
-					"_mod": {
-						"action": [
-							{
-                                "name": "Slam",
-                                "entries": [
-                                    "{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}{@damage 2d10 + summonSpellLevel} force damage."
-                                ]
-                            }
-						]
-					},
-					"size": [
-						"L"
-					],
-					"hp": {
-                        "special": "30 + 5 for each spell level above 2nd"
-					}
-				},
-				{
-					"name": "Animated Object (Medium)",
-					"source": "PHB",
-					"_mod": {
-						"action": [
-							{
-                                "name": "Slam",
-                                "entries": [
-                                    "{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}{@damage 2d6 + summonSpellLevel} force damage."
-                                ]
-                            }
-						]
-					},
-					"size": [
-						"M"
-					],
-					"hp": {
-                        "special": "20 + 5 for each spell level above 2nd"
-					}
-				},
-				{
-					"name": "Animated Object (Small or Smaller)",
-					"source": "PHB",
-					"_mod": {
-						"action": [
-							{
-                                "name": "Slam",
-                                "entries": [
-                                    "{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}{@damage 2d4 + summonSpellLevel} force damage."
-                                ]
-                            }
-						]
-					},
-					"size": [
-						"T",
-						"S"
-					],
-					"hp": {
-                        "special": "10 + 5 for each spell level above 2nd"
-					}
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
 				}
-			]
+			],
+			"hp": {
+				"special": "40"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 12,
+			"con": 10,
+			"int": 3,
+			"wis": 3,
+			"cha": 1,
+			"senses": [
+				"blindsight 30 ft. (blind beyond this radius)"
+			],
+			"passive": 6,
+			"trait": [
+				{
+					"name": "Animated",
+					"entries": [
+						"If the object lacks legs or other appendages it can use for locomotion, it instead has a flying speed of 30 feet and can hover. If the object is securely attached to a surface or larger object, such as a chain bolted to a wall, its speed is 0.",
+						"When the animated object drops to 0 hit points, it reverts to its original object form, and any remaining damage carries over to its original object form.",
+						"The DM might rule that a specific objects slam attack inflicts slashing or piercing damage based on its form."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d6 + 1}) bludgeoning damage."
+					]
+				}
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Animated Object (Small)",
+			"source": "PHB",
+			"page": 213,
+			"size": [
+				"S"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "25"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 6,
+			"dex": 14,
+			"con": 10,
+			"int": 3,
+			"wis": 3,
+			"cha": 1,
+			"senses": [
+				"blindsight 30 ft. (blind beyond this radius)"
+			],
+			"passive": 6,
+			"trait": [
+				{
+					"name": "Animated",
+					"entries": [
+						"If the object lacks legs or other appendages it can use for locomotion, it instead has a flying speed of 30 feet and can hover. If the object is securely attached to a surface or larger object, such as a chain bolted to a wall, its speed is 0.",
+						"When the animated object drops to 0 hit points, it reverts to its original object form, and any remaining damage carries over to its original object form.",
+						"The DM might rule that a specific objects slam attack inflicts slashing or piercing damage based on its form."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) bludgeoning damage."
+					]
+				}
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Animated Object (Tiny)",
+			"source": "PHB",
+			"page": 213,
+			"size": [
+				"T"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "20"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 4,
+			"dex": 18,
+			"con": 10,
+			"int": 3,
+			"wis": 3,
+			"cha": 1,
+			"senses": [
+				"blindsight 30 ft. (blind beyond this radius)"
+			],
+			"passive": 6,
+			"trait": [
+				{
+					"name": "Animated",
+					"entries": [
+						"If the object lacks legs or other appendages it can use for locomotion, it instead has a flying speed of 30 feet and can hover. If the object is securely attached to a surface or larger object, such as a chain bolted to a wall, its speed is 0.",
+						"When the animated object drops to 0 hit points, it reverts to its original object form, and any remaining damage carries over to its original object form.",
+						"The DM might rule that a specific objects slam attack inflicts slashing or piercing damage based on its form."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d4 + 4}) bludgeoning damage."
+					]
+				}
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true
 		},
 		{
 			"name": "Awakened Plant",
