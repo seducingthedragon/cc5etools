@@ -166,17 +166,23 @@
 			"entries": [
 				"You set an alarm against unwanted intrusion. Choose a door, a window, or an area within range that is no larger than a 20-foot cube. Until the spell ends, an alarm alerts you whenever a Tiny or larger creature touches or enters the warded area. When you cast the spell, you can designate creatures that won't set off the alarm. You also choose whether the alarm is mental or audible.",
 				{
-					"type": "entries",
-					"name": "Mental Alarm",
-					"entries": [
-						"A mental alarm alerts you with a ping in your mind if you are within 1 mile of the warded area. This ping awakens you if you are sleeping."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Audible Alarm",
-					"entries": [
-						"An audible alarm produces the sound of a hand bell for 10 seconds within 60 feet."
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Audible Alarm",
+							"entries": [
+								"The alarm produces the sound of a handbell for 10 seconds within 60 feet of the warded area."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Mental Alarm",
+							"entries": [
+								"You are alerted by a mental ping if you are within 1 mile of the warded area. This ping awakens you if you're asleep."
+							]
+						}
 					]
 				}
 			],
@@ -220,24 +226,30 @@
 			"entries": [
 				"You assume a different form. When you cast the spell, choose one of the following options, the effects of which last for the duration of the spell. While the spell lasts, you can end one option as an action to gain the benefits of a different one.",
 				{
-					"type": "entries",
-					"name": "Aquatic Adaptation",
-					"entries": [
-						"You adapt your body to an aquatic environment, sprouting gills and growing webbing between your fingers. You can breathe underwater and gain a swimming speed equal to your walking speed."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Change Appearance",
-					"entries": [
-						"You transform your appearance. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and distinguishing characteristics, if any. You can make yourself appear as a member of another race, though none of your statistics change. You also can't appear as a creature of a different size than you, and your basic shape stays the same; if you're bipedal, you can't use this spell to become quadrupedal, for instance. At any time for the duration of the spell, you can use your action to change your appearance in this way again."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Natural Weapons",
-					"entries": [
-						"You grow claws, fangs, spines, horns, or a different natural weapon of your choice. Your unarmed strikes deal {@damage 1d6} bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes. Finally, the natural weapon is magic and you have a +1 bonus to the attack and damage rolls you make using it."
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Aquatic Adaptation",
+							"entries": [
+								"You adapt your body to an aquatic environment, sprouting gills and growing webbing between your fingers. You can breathe underwater and gain a swimming speed equal to your walking speed."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Change Appearance",
+							"entries": [
+								"You transform your appearance. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and distinguishing characteristics, if any. You can make yourself appear as a member of another race, though none of your statistics change. You also can't appear as a creature of a different size than you, and your basic shape stays the same; if you're bipedal, you can't use this spell to become quadrupedal, for instance. At any time for the duration of the spell, you can use your action to change your appearance in this way again."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Natural Weapons",
+							"entries": [
+								"You grow claws, fangs, spines, horns, or a different natural weapon of your choice. Your unarmed strikes deal {@damage 1d6} bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes. Finally, the natural weapon is magic and you have a +1 bonus to the attack and damage rolls you make using it."
+							]
+						}
 					]
 				}
 			],
@@ -351,15 +363,16 @@
 				"ritual": true
 			},
 			"entries": [
-				"By means of this spell, you use an animal to deliver a message. Choose a Tiny beast you can see within range, such as a squirrel, a blue jay, or a bat. You specify a location, which you must have visited, and a recipient who matches a general description, such as \"a man or woman dressed in the uniform of the town guard\" or \"a red-haired dwarf wearing a pointed hat.\" You also speak a message of up to twenty-five words. The target beast travels for the duration of the spell toward the specified location, covering about 50 miles per 24 hours for a flying messenger, or 25 miles for other animals.",
-				"When the messenger arrives, it delivers your message to the creature that you described, replicating the sound of your voice. The messenger speaks only to a creature matching the description you gave. If the messenger doesn't reach its destination before the spell ends, the message is lost, and the beast makes its way back to where you cast this spell."
+				"By means of this spell, you use an animal to deliver a message. Choose a Tiny beast you can see within range, such as a squirrel, a blue jay, or a bat. You specify a location, which you must have visited, and a recipient who matches a general description, such as \"a man or woman dressed in the uniform of the town guard\" or \"a red-haired dwarf wearing a pointed hat.\" You also speak a message of twenty-five words or less.",
+				"The target beast travels for the duration of the spell toward the specified location, covering about 25 miles per 24 hours or 50 miles if the Beast can fly.",
+				"When the messenger arrives, it delivers your message to the creature that you described, replicating the sound of your voice. The messenger speaks only to a creature matching the description you gave. If the messenger doesn't reach its destination before the spell ends, the message is lost. Additionally, the receiver does not have the ability, with this spell, to send a message back the way that the {@spell Message||Message Cantrip} or {@spell Sending||Sending spell} works."
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"If you cast this spell using a spell slot of 3rd level or higher, the duration of the spell increases by 48 hours for each slot level above 2nd."
+						"If you cast this spell using a spell slot of 3rd level or higher, the duration of the spell increases by 48 hours for each slot level above 2nd. Additionally, when casting this spell using any spell slot of 3rd level of higher, you can specify the conditions in which the message is delivered, such as \"confirm privacy\", which must be confirmed by the receiver before the message is relayed."
 					]
 				}
 			],
@@ -472,8 +485,20 @@
 			],
 			"entries": [
 				"This spell creates an undead servant. Choose a pile of bones or a corpse of a Medium or Small humanoid within range. Your spell imbues the target with a foul mimicry of life, raising it as an undead creature. The target becomes a {@creature skeleton} if you chose bones or a {@creature zombie} if you chose a corpse (the DM has the creature's game statistics).",
-				"On each of your turns, you can use a bonus action to mentally command any creature you made with this spell if the creature is within 60 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.",
-				"The creature is under your control for 24 hours, after which it stops obeying any command you've given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature again before the current 24-hour period ends. This use of the spell reasserts your control over up to four creatures you have animated with this spell, rather than animating a new one."
+				{
+					"type": "entries",
+					"name": "Command",
+					"entries": [
+						"On each of your turns, you can use a bonus action to mentally command any creature you made with this spell if the creature is within 60 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete."
+					]
+				},
+				{
+					"types": "entries",
+					"name": "Extending Control",
+					"entries": [
+						"The creature is under your control for 24 hours, after which it stops obeying any command you've given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature again before the current 24-hour period ends. This use of the spell reasserts your control over up to four creatures you have animated with this spell, rather than animating a new one."
+					]
+				}
 			],
 			"entriesHigherLevel": [
 				{
@@ -541,8 +566,7 @@
 						"{@creature Animated Object (Huge)|PHB}"
 					]
 				},
-				"As a bonus action, you can mentally command any animated object, and any number of animated objects, you made with this spell as long as the animated objects are within 120 feet of you. You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the animated object only defend itself against hostile creatures with the {@action Dodge} action. Once given an order, the creature continues to follow it until its task is complete or another command is given.",
-				"If you command any number of animated objects to take the {@action Attack} action, they make one slam attack as noted on their animated stat block. The DM might rule that specific objects inflict slashing or piercing damage, instead of bludgeoning, based on its form."
+				"As a bonus action, you can mentally command any animated object, and any number of animated objects, you made with this spell as long as the animated objects are within 120 feet of you. You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the animated object only defend itself against hostile creatures with the {@action Dodge} action. Once given an order, the creature continues to follow it until its task is complete or another command is given."
 			],
 			"entriesHigherLevel": [
 				{
@@ -603,8 +627,7 @@
 			],
 			"entries": [
 				"A shimmering barrier extends out from you in a 10-foot radius and moves with you, remaining centered on you and hedging out creatures other than undead and constructs. The barrier lasts for the duration.",
-				"The barrier prevents an affected creature from passing or reaching through. An affected creature can cast spells or make attacks with ranged or reach weapons through the barrier.",
-				"If you move so that an affected creature is forced to pass through the barrier, the spell ends."
+				"The barrier prevents an affected creature from passing or reaching through. An affected creature can cast spells or make attacks with ranged or reach weapons through the barrier. If you move so that an affected creature is forced to pass through the barrier, the spell ends."
 			],
 			"affectsCreatureType": [
 				"aberration",
@@ -1115,7 +1138,7 @@
 				}
 			],
 			"entries": [
-                "You invoke the power of Hadar, the Dark Hunger. Tendrils of dark energy erupt and batter all creatures within 10 feet of you. Each creature in that area must make a Strength saving throw. On a failed save, a target takes {@damage 2d6} necrotic damage, has the {@condition Restrained} condition, and can't take reactions while until the end of its next turn. On a successful save, the creature takes half damage, but suffers no other effect."
+                "You invoke the power of Hadar, the Dark Hunger. Tendrils of dark energy erupt and batter all creatures within 10 feet of you. Each creature in that area must make a Strength saving throw. On a failed save, a target takes {@damage 2d6} necrotic damage, is {@condition restrained}, and can't take reactions while until the end of its next turn. On a successful save, the creature takes half damage, but suffers no other effect."
             ],
 			"entriesHigherLevel": [
 				{
@@ -1190,7 +1213,7 @@
 					"name": "Ending the Spell",
 					"entries": [
 						"The spell ends for you and your companions when you use your action to dismiss it. When the spell ends, the affected creature returns to its physical body, and it awakens.",
-						"The spell might also end early for you or one of your companions. A successful {@spell dispel magic} spell used against an astral or physical body ends the spell for that creature. If a creature's original body or its astral form drops to 0 hit points, the spell ends for that creature. If the spell ends and the silver cord is intact, the cord pulls the creature's astral form back to its body, ending its state of suspended animation."
+						"The spell might also end early for you or one of your companions. A successful {@spell Dispel Magic} spell used against an astral or physical body ends the spell for that creature. If a creature's original body or its astral form drops to 0 hit points, the spell ends for that creature. If the spell ends and the silver cord is intact, the cord pulls the creature's astral form back to its body, ending its state of suspended animation."
 				
 					]
 				},
@@ -1509,7 +1532,8 @@
 				}
 			],
 			"entries": [
-                "You spend the casting time tracing magical pathways within a precious gemstone, and then touch the target. The target must be either a {@filter Beast|bestiary|type=beast|intelligence=[0;3]|miscellaneous=!swarm} or {@filter Plant|bestiary|type=plant|intelligence=[0;3]|miscellaneous=!swarm} creature with an Intelligence of 3 or less or a natural plant that isn't a creature. The target gains an Intelligence of 10 and the ability to speak one language you know. If the target is a natural plant, it becomes a Plant creature and gains the ability to move its limbs, roots, vines, creepers, and so forth, and it gains senses similar to a human's. The DM chooses statistics appropriate for the awakened Plant, such as the statistics for the {@creature Awakened Shrub} or {@creature Awakened Tree} in the {@book Monster Manual|MM}.",
+                "You spend the casting time tracing magical pathways within a precious gemstone, and then touch the target. The target must be either a {@filter Beast|bestiary|type=beast|intelligence=[0;3]|miscellaneous=!swarm} or {@filter Plant|bestiary|type=plant|intelligence=[0;3]|miscellaneous=!swarm} creature with an Intelligence of 3 or less or a natural plant that isn't a creature.",
+				"The target gains an Intelligence of 10 and the ability to speak one language you know. If the target is a natural plant, it becomes a Plant creature and gains the ability to move its limbs, roots, vines, creepers, and so forth, and it gains senses similar to a human's. The DM chooses statistics appropriate for the awakened Plant, such as the statistics for the {@creature Awakened Shrub} or {@creature Awakened Tree} in the {@book Monster Manual|MM}.",
                 "The awakened target has the {@condition Charmed} condition for 30 days or until you or your allies deal damage to it. When that condition ends, the awakened creature chooses its attitude toward you, based on your treatment of it."
             ],
 			"conditionInflict": [

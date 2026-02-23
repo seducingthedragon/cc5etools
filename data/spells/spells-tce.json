@@ -100,13 +100,20 @@
                 "You attempt to turn one creature that you can see within range into wood. The creature makes a Constitution saving throw. On a failed save, it has the {@condition Restrained} condition as its flesh begins to harden into bark. On a successful save, its speed is 0 until the start of your next turn.",
 				{
 					"type": "entries",
-					"name": "Restrained to Petrification",
+					"name": "Petrification Process",
 					"entries": [
 						"A creature {@condition Restrained} by this spell makes a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the condition ends. If it fails three times, it is turned into a tree and has the {@condition Petrified} condition. The successes and failures needn't be consecutive; keep track of both until the target collects three of a kind.",
-                		"If the transformed creature is burned, chopped down, or otherwise destroyed while {@condition Petrified}, the creature is slain."
+                		"{@b Consequence.} If the transformed creature is burned, chopped down, or otherwise destroyed while {@condition Petrified}, the creature is slain."
 					]
 				},
-                "A creature remains transformed unless the effect is reversed within one year with a {@spell Restoration|PHB|level 5 Restoration}, {@spell Wish}, or similar magical effects. If the creature spends 1 year and 1 day as a tree, the transformation becomes permanent, and nothing can return the creature to its original form."
+				{
+					"type": "entries",
+					"name": "Reversing Petrification",
+					"entries": [
+						"A creature remains transformed unless the effect is reversed within one year with a {@spell Restoration|PHB|level 5 Restoration}, {@spell Wish}, or similar magical effects. If the creature spends 1 year and 1 day as a tree, the transformation becomes permanent, and nothing can return the creature to its original form."
+					]
+				}
+                
             ],
             "conditionInflict": [
                 "petrified",
