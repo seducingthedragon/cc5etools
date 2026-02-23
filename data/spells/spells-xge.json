@@ -860,7 +860,7 @@
 							"name": "Statistics",
 							"entries": [
 								"When you conjure this powerful fiend, it appears in an unoccupied space of your choice you can see within range. The fiend must be a {@filter CR 5 or lower Demonic Fiend|bestiary|Challenge Rating=[&0;&5]|type=fiend|tag=!swarm;demon|miscellaneous=!swarm}.",
-								"If you happen to have the {@b true name} of a powerful Fiend, even if it is not a Demon, you can use that name as part of your material component to summon that specific being. If it belongs to a fiend whose CR is higher than 5, it will be forced to take the appearance and stat block of a CR 5 or lower Demon of your choice."
+								"If you happen to have the {@b true name} of a powerful Demon,, you can use that name as part of your material component to summon that specific being. If it belongs to a fiend whose CR is higher than 5, it will be forced to take the appearance and stat block of a CR 5 or lower Demon of your choice."
 							]
 						},
 						{
@@ -1301,21 +1301,21 @@
                 			"type": "item",
                 			"name": "Control",
                 			"entries": [
-                				"Your {@creature homunculus} is absolutely loyal to yoas its creator. While your {@creature homunculus} wilact independently of you, it will obey your commands tthe best of its ability. In combat, it shares youinitiative and your turn."
+                				"Your {@creature homunculus} is absolutely loyal to you as its creator. While your {@creature homunculus} will act independently of you, it will obey your commands to the best of its ability. In combat, it shares your initiative and your turn."
                 			]
                 		},
 						{
                 			"type": "item",
                 			"name": "Lifeblood Bond",
                 			"entries": [
-                				"While your {@creature homunculus} lives, you cannoregain the maximum hit points spent as you are bondeto your creation. Due to this bond, if you should diethe {@creature homunculus} dies instantly. As long ayou have your {@creature homunculus} through thispell, the reduction to your hit point maximum cannobe removed by any other means except by the deathdestruction, or dispelling of your {@creaturhomunculus}. If you cast {@spell Create Homunculus|XGthis spell} while your homunculus lives, the spell wilfail, with all resources consumed and damage stildealt."
+                				"While your {@creature homunculus} lives, you cannot regain the maximum hit points spent as you are bonded to your creation. Due to this bond, if you should die, the {@creature homunculus} dies instantly. As long as you have your {@creature homunculus} through this spell, the reduction to your hit point maximum cannot be removed by any other means except by the death, destruction, or dispelling of your {@creature homunculus}. If you cast {@spell Create Homunculus|XGE|this spell} while your homunculus lives, the spell will fail, all resources consumed, and damage still dealt."
                 			]
                 		},
 						{
                 			"type": "item",
                 			"name": "Healing your Homunculus",
                 			"entries": [
-                				"Your {@creature homunculus} cannot benefit frohealing spells, potions, or rests. As long as you aron the same plane of existance, anytime you regain hipoints from any source, you can forgo any number othose hit points in order to heal your {@creature homunculus} instead."
+                				"Your {@creature homunculus} cannot benefit from healing spells, potions, or rests. As long as you are on the same plane of existance, anytime you regain hit points from any source, you can forgo any number of those hit points in order to heal your {@creature homunculus} instead."
                 			]
                 		}
 					]

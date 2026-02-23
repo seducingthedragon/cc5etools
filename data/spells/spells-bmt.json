@@ -384,7 +384,7 @@
 			"entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "Using a Higher-Level Spell Slot",
+                    "name": "At Higher Levels",
                     "entries": [
                         "When casting this spell using a 2nd level spell slot or higher, you can choose between either adding one additional wall segment per spell slot level above 1, or increasing each segments' hit points by 5 per spell slot level above 1."
                     ]

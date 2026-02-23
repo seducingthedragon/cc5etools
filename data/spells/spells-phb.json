@@ -2753,7 +2753,7 @@
                             "type": "item",
                             "name": "Immunity",
                             "entries": [
-                                "The creature has Immunity to the {@condition Charmed} and {@condition Frightened} conditions until the spell ends. If the creature was already {@condition Charmed} or {@condition Frightened}, those conditions are suppressed for the duration."
+                                "The creature has Immunity to the {@condition Charmed} and {@condition Frightened} conditions until the spell ends. If the creature was already {@condition charmed} or {@condition frightened}, those conditions are suppressed for the duration."
                             ]
                         },
                         {
@@ -4149,7 +4149,7 @@
                 		    "type": "item",
                 		    "name": "Statistics",
                 		    "entries": [
-                		        "You summon a {@filter celestial of challenge rating 4 or lower|bestiary|challenge rating=[&0;&4]|type=celestial|miscellaneous=!swarm}, which appears in an unoccupied space that you can see within range. The celestial disappears when it drops to 0 hit points or when the spell ends."
+                		        "You summon a {@filter CR 4 or lower Celestial|bestiary|challenge rating=[&0;&4]|type=celestial|miscellaneous=!swarm}, which appears in an unoccupied space that you can see within range. The celestial disappears when it drops to 0 hit points or when the spell ends."
                 		    ]
                 		},
                 		{
@@ -4174,7 +4174,7 @@
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "When you cast this spell using an 8th-level spell slot, you summon a {@filter celestial of challenge rating 5 or lower|bestiary|challenge rating=[&0;&5]|type=celestial|miscellaneous=!swarm}."
+                        "When you cast this spell using an 8th-level spell slot, you can summon a {@filter CR 5 or lower Celestial|bestiary|challenge rating=[&0;&5]|type=celestial|miscellaneous=!swarm}."
                     ]
                 }
             ],
@@ -4310,7 +4310,7 @@
                 		    "type": "item",
                 		    "name": "Statistics",
                 		    "entries": [
-                		        "When you cast the spell, you summon a {@filter Fey|bestiary|challenge rating=[&0;&6]|type=fey|miscellaneous=!swarm} of CR 6 or lower, coming through the faerie circle."
+                		        "When you cast the spell, you summon a {@filter CR 6 or lower Fey|bestiary|challenge rating=[&0;&6]|type=fey|miscellaneous=!swarm}, coming through the faerie circle."
                 		    ]
                 		},
                 		{
@@ -4904,9 +4904,8 @@
 					"type": "entries",
 					"name": "Flood",
 					"entries": [
-						"You cause the water level of all standing water in the area to rise by as much as 20 feet. If the area includes a shore, the flooding water spills over onto dry land.",
-						"If you choose an area in a large body of water, you instead create a 20-foot tall wave that travels from one side of the area to the other and then crashes down. Any Huge or smaller vehicles in the wave's path are carried with it to the other side. Any Huge or smaller vehicles struck by the wave have a {@chance 25|||Capsizes!|No effect} chance of capsizing.",
-						"The water level remains elevated until the spell ends or you choose a different effect. If this effect produced a wave, the wave repeats on the start of your next turn while the flood effect lasts."
+						"You cause the water level of all standing water in the area to rise by as much as 20 feet. If the area includes a shore, the flooding water spills over onto dry land. If you choose an area in a large body of water, you instead create a 20-foot tall wave that travels from one side of the area to the other and then crashes down.",
+						"{@b Effect.} Any Huge or smaller vehicles in the wave's path are carried with it to the other side. Any Huge or smaller vehicles struck by the wave have a {@chance 25|||Capsizes!|No effect} chance of capsizing. The water level remains elevated until the spell ends or you choose a different effect. If this effect produced a wave, the wave repeats on the start of your next turn while the flood effect lasts."
 					]
 				},
 				{
@@ -4927,9 +4926,10 @@
 					"type": "entries",
 					"name": "Whirlpool",
 					"entries": [
-						"This effect requires a body of water at least 50 feet square and 25 feet deep. You cause a whirlpool to form in the center of the area. The whirlpool forms a vortex that is 5 feet wide at the base, up to 50 feet wide at the top, and 25 feet tall. Any creature or object in the water and within 25 feet of the vortex is pulled 10 feet toward it. A creature can swim away from the vortex by making a Strength ({@skill Athletics}) check against your spell save DC.",
-						"When a creature enters the vortex for the first time on a turn or starts its turn there, it must make a Strength saving throw. On a failed save, the creature takes {@damage 2d8} bludgeoning damage and is caught in the vortex until the spell ends. On a successful save, the creature takes half damage, and isn't caught in the vortex. A creature caught in the vortex can use its action to try to swim away from the vortex as described above, but has disadvantage on the Strength ({@skill Athletics}) check to do so.",
-						"The first time each turn that an object enters the vortex, the object takes {@damage 2d8} bludgeoning damage; this damage occurs each round it remains in the vortex."
+						"This effect requires a body of water at least 50 feet square and 25 feet deep. You cause a whirlpool to form in the center of the area. The whirlpool forms a vortex that is 5 feet wide at the base, up to 50 feet wide at the top, and 25 feet tall.",
+						"{@b Initial Response.} Any creature or object in the water and within 25 feet of the vortex is pulled 10 feet toward it. A creature can swim away from the vortex by making a Strength ({@skill Athletics}) check against your spell save DC.",
+						"{@b Subsequent Rounds.} When a creature enters the vortex for the first time on a turn or starts its turn there, it must make a Strength saving throw. On a failed save, the creature takes {@damage 2d8} bludgeoning damage and is caught in the vortex until the spell ends. On a successful save, the creature takes half damage, and isn't caught in the vortex. A creature caught in the vortex can use its action to try to swim away from the vortex as described above, but has disadvantage on the Strength ({@skill Athletics}) check to do so.",
+						"{@b For Objects.} The first time each turn that an object enters the vortex, the object takes {@damage 2d8} bludgeoning damage; this damage occurs each round it remains in the vortex."
 					]
 				}
 			],
@@ -4987,8 +4987,20 @@
 			],
 			"entries": [
 				"You take control of the weather within 5 miles of you for the duration. You must be outdoors to cast this spell. Moving to a place where you don't have a clear path to the sky ends the spell early.",
-				"When you cast the spell, you change the current weather conditions, which are determined by the DM based on the climate and season. You can change precipitation, temperature, and wind. It takes {@dice 1d4 × 10} minutes for the new conditions to take effect. Once they do so, you can change the conditions again. When the spell ends, the weather gradually returns to normal.",
-				"When you change the weather conditions, find a current condition on the following tables and change its stage by one, up or down. When changing the wind, you can change its direction.",
+				{
+					"type": "entries",
+					"name": "At Spell Casting",
+					"entries": [
+						"When you cast the spell, you change the current weather conditions, which are determined by the DM based on the climate and season. You can change precipitation, temperature, and wind. It takes {@dice 1d4 × 10} minutes for the new conditions to take effect. Once they do so, you can change the conditions again. When the spell ends, the weather gradually returns to normal."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Changing Weather Pattern",
+					"entries": [
+						"When you change the weather conditions, find a current condition on the following tables and change its stage by one, up or down. When changing the wind, you can change its direction."
+					]
+				},
 				{
 					"type": "table",
 					"caption": "Precipitation",
@@ -5434,8 +5446,20 @@
 			],
 			"entries": [
 				"You can cast this spell only at night. Choose up to three corpses of Medium or Small humanoids within range. Each corpse becomes a {@creature ghoul} under your control. (The DM has game statistics for these creatures.)",
-				"As a bonus action on each of your turns, you can mentally command any creature you animated with this spell if the creature is within 120 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.",
-				"The creature is under your control for 24 hours, after which it stops obeying any command you have given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature before the current 24-hour period ends. This use of the spell reasserts your control over up to three creatures you have animated with this spell, rather than animating new ones."
+				{
+					"type": "entries",
+					"name": "Commanding Undead",
+					"entries": [
+						"As a bonus action on each of your turns, you can mentally command any creature you animated with this spell if the creature is within 120 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Controlling Undead",
+					"entries": [
+						"The creature is under your control for 24 hours, after which it stops obeying any command you have given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature before the current 24-hour period ends. This use of the spell reasserts your control over up to three creatures you have animated with this spell, rather than animating new ones."
+					]
+				}
 			],
 			"entriesHigherLevel": [
 				{
