@@ -177,21 +177,21 @@
 					"style": "list-hang-notitle",
 					"items": [
 						{
-							"type": "item",
+							"type": "entries",
 							"name": "Cover",
 							"entries": [
 								"The creature has {@quickref Cover||3||half cover}."
 							]
 						},
 						{
-							"type": "item",
+							"type": "entries",
 							"name": "Damage Resistance",
 							"entries": [
 								"The creature has resistance to acid, cold, fire, lightning, and poison damage."
 							]
 						},
 						{
-							"type": "item",
+							"type": "entries",
 							"name": "Evasion",
 							"entries": [
 								"If the creature is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the creature instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."

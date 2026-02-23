@@ -630,7 +630,7 @@
             ],
             "entries": [
                 "You summon a protective swarm of cats in a 15-foot radius sphere, centered on a point within range. Each target must succeed on a Dexterity saving throw or be affected by this spell for the duration.",
-                "An affected target takes {@damage 4d6} Slashing damage at the start of each of their turns, and they have Disadvantage on all ability checks and attack rolls. If they attempt to move, they must make a Constitution saving throw or gain the {@condition Prone} condition, taking another {@damage 2d6} Slashing damage from the startled cats.",
+                "An affected target takes {@damage 4d6} Slashing damage at the start of each of their turns, and they have Disadvantage on all ability checks and attack rolls. If they attempt to move, they must make a Constitution saving throw or fall{@condition prone}, taking another {@damage 2d6} Slashing damage from the startled cats.",
                 "At the end of their turn an affected creature makes another Dexterity saving throw, ending the spell on itself on a success."
             ],
             "entriesHigherLevel": [
