@@ -165,8 +165,20 @@
 			},
 			"entries": [
 				"You set an alarm against unwanted intrusion. Choose a door, a window, or an area within range that is no larger than a 20-foot cube. Until the spell ends, an alarm alerts you whenever a Tiny or larger creature touches or enters the warded area. When you cast the spell, you can designate creatures that won't set off the alarm. You also choose whether the alarm is mental or audible.",
-				"A mental alarm alerts you with a ping in your mind if you are within 1 mile of the warded area. This ping awakens you if you are sleeping.",
-				"An audible alarm produces the sound of a hand bell for 10 seconds within 60 feet."
+				{
+					"type": "entries",
+					"name": "Mental Alarm",
+					"entries": [
+						"A mental alarm alerts you with a ping in your mind if you are within 1 mile of the warded area. This ping awakens you if you are sleeping."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Audible Alarm",
+					"entries": [
+						"An audible alarm produces the sound of a hand bell for 10 seconds within 60 feet."
+					]
+				}
 			],
 			"areaTags": [
 				"C"
@@ -1163,11 +1175,25 @@
 				}
 			],
 			"entries": [
-				"You and up to eight willing creatures within range project your astral bodies into the Astral Plane (the spell fails and the casting is wasted if you are already on that plane). The material body you leave behind is {@condition unconscious} and in a state of suspended animation, it doesn't need food or air and doesn't age.",
-				"Your astral body resembles your mortal form in almost every way, replicating your game statistics and possessions. The principal difference is the addition of a silvery cord that extends from between your shoulder blades and trails behind you, fading to invisibility after 1 foot. This cord is your tether to your material body. As long as the tether remains intact, you can find your way home. If the cord is cut-something that can happen only when an effect specifically states that it does-your soul and body are separated, killing you instantly.",
-				"Your astral form can freely travel through the Astral Plane and can pass through portals there leading to any other plane. If you enter a new plane or return to the plane you were on when casting this spell, your body and possessions are transported along the silver cord, allowing you to re-enter your body as you enter the new plane. Your astral form is a separate incarnation. Any damage or other effects that apply to it have no effect on your physical body, nor do they persist when you return to it.",
-				"The spell ends for you and your companions when you use your action to dismiss it. When the spell ends, the affected creature returns to its physical body, and it awakens.",
-				"The spell might also end early for you or one of your companions. A successful {@spell dispel magic} spell used against an astral or physical body ends the spell for that creature. If a creature's original body or its astral form drops to 0 hit points, the spell ends for that creature. If the spell ends and the silver cord is intact, the cord pulls the creature's astral form back to its body, ending its state of suspended animation.",
+				"You and up to eight willing creatures within range project your astral bodies into the Astral Plane (the spell fails and the casting is wasted if you are already on that plane). The material body you leave behind is {@condition unconscious} and in a state of suspended animation, it doesn't need food or air and doesn't age. The duration of this spell is dependent on each individual target.",
+				{
+					"type": "entries",
+					"name": "Astral Body and Form",
+					"entries": [
+						"Your astral body resembles your mortal form in almost every way, replicating your game statistics and possessions. The principal difference is the addition of a silvery cord that extends from between your shoulder blades and trails behind you, fading to invisibility after 1 foot. This cord is your tether to your material body. As long as the tether remains intact, you can find your way home. If the cord is cut-something that can happen only when an effect specifically states that it does-your soul and body are separated, killing you instantly.",
+						"Your astral form can freely travel through the Astral Plane and can pass through portals there leading to any other plane. If you enter a new plane or return to the plane you were on when casting this spell, your body and possessions are transported along the silver cord, allowing you to re-enter your body as you enter the new plane. Your astral form is a separate incarnation. Any damage or other effects that apply to it have no effect on your physical body, nor do they persist when you return to it."
+				
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ending the Spell",
+					"entries": [
+						"The spell ends for you and your companions when you use your action to dismiss it. When the spell ends, the affected creature returns to its physical body, and it awakens.",
+						"The spell might also end early for you or one of your companions. A successful {@spell dispel magic} spell used against an astral or physical body ends the spell for that creature. If a creature's original body or its astral form drops to 0 hit points, the spell ends for that creature. If the spell ends and the silver cord is intact, the cord pulls the creature's astral form back to its body, ending its state of suspended animation."
+				
+					]
+				},
 				"If you are returned to your body prematurely, your companions remain in their astral forms and must find their own way back to their bodies, usually by dropping to 0 hit points."
 			],
 			"conditionInflict": [
@@ -1973,31 +1999,37 @@
 				"The hand is an object that has AC 20 and hit points equal to your hit point maximum. If it drops to 0 hit points, the spell ends. It has a Strength of 26 ({@d20 8}) and a Dexterity of 10 ({@d20 0}). The hand doesn't fill its space.",
 				"When you cast the spell and as a bonus action on your subsequent turns, you can move the hand up to 60 feet and then cause one of the following effects with it.",
 				{
-					"type": "entries",
-					"name": "Clenched Fist",
-					"entries": [
-						"The hand strikes one creature or object within 5 feet of it. Make a melee spell attack for the hand using your game statistics. On a hit, the target takes {@damage 4d8} force damage."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Forceful Hand",
-					"entries": [
-						"The hand attempts to push a creature within 5 feet of it in a direction you choose. Make a check with the hand's Strength contested by the Strength ({@skill Athletics}) check of the target. If the target is Medium or smaller, you have advantage on the check. If you succeed, the hand pushes the target up to 5 feet plus a number of feet equal to five times your spellcasting ability modifier. The hand moves with the target to remain within 5 feet of it."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Grasping Hand",
-					"entries": [
-						"The hand attempts to grapple a Huge or smaller creature within 5 feet of it. You use the hand's Strength score to resolve the grapple. If the target is Medium or smaller, you have advantage on the check. While the hand is grappling the target, you can use a bonus action to have the hand crush it. When you do so, the target takes bludgeoning damage equal to {@damage 2d6} + your spellcasting ability modifier."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Interposing Hand",
-					"entries": [
-						"The hand interposes itself between you and a creature you choose until you give the hand a different command. The hand moves to stay between you and the target, providing you with {@quickref Cover||3||half cover} against the target. The target can't move through the hand's space if its Strength score is less than or equal to the hand's Strength score. If its Strength score is higher than the hand's Strength score, the target can move toward you through the hand's space, but that space is {@quickref difficult terrain||3} for the target."
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Clenched Fist",
+							"entries": [
+								"The hand strikes one creature or object within 5 feet of it. Make a melee spell attack for the hand using your game statistics. On a hit, the target takes {@damage 4d8} force damage."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Forceful Hand",
+							"entries": [
+								"The hand attempts to push a creature within 5 feet of it in a direction you choose. Make a check with the hand's Strength contested by the Strength ({@skill Athletics}) check of the target. If the target is Medium or smaller, you have advantage on the check. If you succeed, the hand pushes the target up to 5 feet plus a number of feet equal to five times your spellcasting ability modifier. The hand moves with the target to remain within 5 feet of it."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Grasping Hand",
+							"entries": [
+								"The hand attempts to grapple a Huge or smaller creature within 5 feet of it. You use the hand's Strength score to resolve the grapple. If the target is Medium or smaller, you have advantage on the check. While the hand is grappling the target, you can use a bonus action to have the hand crush it. When you do so, the target takes bludgeoning damage equal to {@damage 2d6} + your spellcasting ability modifier."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Interposing Hand",
+							"entries": [
+								"The hand interposes itself between you and a creature you choose until you give the hand a different command. The hand moves to stay between you and the target, providing you with {@quickref Cover||3||half cover} against the target. The target can't move through the hand's space if its Strength score is less than or equal to the hand's Strength score. If its Strength score is higher than the hand's Strength score, the target can move toward you through the hand's space, but that space is {@quickref difficult terrain||3} for the target."
+							]
+						}
 					]
 				}
 			],
@@ -2405,7 +2437,8 @@
 				}
 			],
 			"entries": [
-				"Roll a {@dice d20} at the end of each of your turns for the duration of the spell. On a roll of 11 or higher, you vanish from your current plane of existence and appear in the Ethereal Plane (the spell fails and the casting is wasted if you were already on that plane). At the start of your next turn, and when the spell ends if you are on the Ethereal Plane, you return to an unoccupied space of your choice that you can see within 10 feet of the space you vanished from. If no unoccupied space is available within that range, you appear in the nearest unoccupied space (chosen at random if more than one space is equally near). You can dismiss this spell as an action.",
+				"Roll a {@dice d20} at the end of each of your turns for the duration of the spell. On a roll of 11 or higher, you vanish from your current plane of existence and appear in the Ethereal Plane (the spell fails and the casting is wasted if you were already on that plane).",
+				"At the start of your next turn, and when the spell ends if you are on the Ethereal Plane, you return to an unoccupied space of your choice that you can see within 10 feet of the space you vanished from. If no unoccupied space is available within that range, you appear in the nearest unoccupied space (chosen at random if more than one space is equally near). You can dismiss this spell as an action.",
 				"While on the Ethereal Plane, you can see and hear the plane you originated from, which is cast in shades of gray, and you can't see anything there more than 60 feet away. You can only affect and be affected by other creatures on the Ethereal Plane. Creatures that aren't there can't perceive you or interact with you, unless they have the ability to do so."
 			],
 			"areaTags": [
@@ -3109,7 +3142,7 @@
 			"entries": [
 				"You create an invisible sensor within range in a location familiar to you (a place you have visited or seen before) or in an obvious location that is unfamiliar to you (such as behind a door, around a corner, or in a grove of trees). The sensor remains in place for the duration, and it can't be attacked or otherwise interacted with.",
 				"When you cast the spell, you choose seeing or hearing. You can use the chosen sense through the sensor as if you were in its space. As your action, you can switch between seeing and hearing.",
-				"A creature that can see the sensor (such as a creature benefiting from {@spell see invisibility} or {@sense truesight}) sees a luminous, intangible orb about the size of your fist."
+				"A creature that can see the sensor (such as a creature benefiting from {@spell See Invisibility} or {@sense truesight}) sees a luminous, intangible orb about the size of your fist."
 			]
 		},
 		{
@@ -3360,38 +3393,44 @@
 				"You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. The spell has no effect if the target is undead, if it doesn't understand your language, or if your command is directly harmful to it.",
 				"Some typical commands and their effects follow. You might issue a command other than one described here. If you do so, the DM determines how the target behaves. If the target can't follow your command, the spell ends.",
 				{
-					"type": "entries",
-					"name": "Approach",
-					"entries": [
-						"The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Drop",
-					"entries": [
-						"The target drops whatever it is holding and then ends its turn."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Flee",
-					"entries": [
-						"The target spends its turn moving away from you by the fastest available means."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Grovel",
-					"entries": [
-						"The target falls {@condition prone} and then ends its turn."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Halt",
-					"entries": [
-						"The target doesn't move and takes no actions. A flying creature stays aloft, provided that it is able to do so. If it must move to stay aloft, it flies the minimum distance needed to remain in the air."
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Approach",
+							"entries": [
+								"The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Drop",
+							"entries": [
+								"The target drops whatever it is holding and then ends its turn."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Flee",
+							"entries": [
+								"The target spends its turn moving away from you by the fastest available means."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Grovel",
+							"entries": [
+								"The target falls {@condition prone} and then ends its turn."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Halt",
+							"entries": [
+								"The target doesn't move and takes no actions. A flying creature stays aloft, provided that it is able to do so. If it must move to stay aloft, it flies the minimum distance needed to remain in the air."
+							]
+						}
 					]
 				}
 			],
@@ -3659,7 +3698,8 @@
 				}
 			],
 			"entries": [
-				"Creatures of your choice that you can see within range and that can hear you must make a Wisdom saving throw. A target automatically succeeds on this saving throw if it can't be {@condition charmed}. On a failed save, a target is affected by this spell. Until the spell ends, you can use a bonus action on each of your turns to designate a direction that is horizontal to you. Each affected target must use as much of its movement as possible to move in that direction on its next turn. It can take its action before it moves. After moving in this way, it can make another Wisdom saving throw to try to end the effect.",
+				"Creatures of your choice that you can see within range and that can hear you must make a Wisdom saving throw. A target automatically succeeds on this saving throw if it can't be {@condition charmed}. On a failed save, a target is affected by this spell. Until the spell ends, you can use a bonus action on each of your turns to designate a direction that is horizontal to you.",
+				"Each affected target must use as much of its movement as possible to move in that direction on its next turn. It can take its action before it moves. After moving in this way, it can make another Wisdom saving throw to try to end the effect.",
 				"A target isn't compelled to move into an obviously deadly hazard, such as a fire or pit, but it will provoke opportunity attacks to move in the designated direction."
 			],
 			"savingThrow": [
@@ -3879,26 +3919,32 @@
             "entries": [
                 "You grasp the material component of this spell, tearing a rift in reality, causing an Aberration to appear in range. For the duration, the Aberration uses the rules below:",
                 {
-                    "type": "entries",
-                    "name": "Statistics",
-                    "entries": [
-                        "When you cast the spell, you summon a {@filter CR 5 or lower Aberration|bestiary|source=|Challenge Rating=[&0;&5]|type=aberration|tag=!swarm|miscellaneous=!adventure npc;!reprinted;!swarm} coming through the torn rift."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Combat",
-                    "entries": [
-                        "The Aberration shares your initiative and acts on your turn. You can give it verbal orders (no action required). If the Aberration does not receive any orders, or its orders are completed, it moves and defends itself with prejudice."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Control",
-                    "entries": [
-                        "If the spell ends because your concentration was broken, the Aberration remains, but is no longer under your control. For the duration of the spell, or until it is reduced to 0 hit points, the Aberration acts according to its alignment, potentially becoming hostile towards you. An uncontrolled Aberration can't be dismissed by you, and they disappear 1 hour after summoned."
-                    ]
-                }
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+                		    "type": "item",
+                		    "name": "Statistics",
+                		    "entries": [
+                		        "When you cast the spell, you summon a {@filter CR 5 or lower Aberration|bestiary|source=|Challenge Rating=[&0;&5]|type=aberration|tag=!swarm|miscellaneous=!adventure npc;!reprinted;!swarm} coming through the torn rift."
+                		    ]
+                		},
+                		{
+                		    "type": "item",
+                		    "name": "Combat",
+                		    "entries": [
+                		        "The Aberration shares your initiative and acts on your turn. You can give it verbal orders (no action required). If the Aberration does not receive any orders, or its orders are completed, it moves and defends itself with prejudice."
+                		    ]
+                		},
+                		{
+                		    "type": "item",
+                		    "name": "Control",
+                		    "entries": [
+                		        "If the spell ends because your concentration was broken, the Aberration remains, but is no longer under your control. For the duration of the spell, or until it is reduced to 0 hit points, the Aberration acts according to its alignment, potentially becoming hostile towards you. An uncontrolled Aberration can't be dismissed by you, and they disappear 1 hour after summoned."
+                		    ]
+                		}
+					]
+				}
             ],
             "entriesHigherLevel": [
                 {
@@ -4065,26 +4111,32 @@
             "entries": [
                 "You conjure a Celestial to your aid when you cast this spell. While your concentration lasts, it is Friendly to you and your allies and obeys your commands. For the duration, the Celestial follows the rules below:",
                 {
-                    "type": "entries",
-                    "name": "Statistics",
-                    "entries": [
-                        "You summon a {@filter celestial of challenge rating 4 or lower|bestiary|challenge rating=[&0;&4]|type=celestial|miscellaneous=!swarm}, which appears in an unoccupied space that you can see within range. The celestial disappears when it drops to 0 hit points or when the spell ends."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Combat",
-                    "entries": [
-                        "In combat, this Celestial shares your initiative and acts on your turn. You can give it verbal commands (no action required). If the Celestial does not receive any commands, or if its commands are completed, it defend itself with prejudice."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Control",
-                    "entries": [
-                        "If the spell ends because your concentration was broken, the Celestial remains, but is no longer under your control. For the duration of the spell, or until it is reduced to 0 hit points, the Celestial acts according to its alignment, potentially becoming hostile towards you. An uncontrolled Celestial can't be dismissed by you, and they disappear 1 hour after summoned."
-                    ]
-                }
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+                		    "type": "item",
+                		    "name": "Statistics",
+                		    "entries": [
+                		        "You summon a {@filter celestial of challenge rating 4 or lower|bestiary|challenge rating=[&0;&4]|type=celestial|miscellaneous=!swarm}, which appears in an unoccupied space that you can see within range. The celestial disappears when it drops to 0 hit points or when the spell ends."
+                		    ]
+                		},
+                		{
+                		    "type": "item",
+                		    "name": "Combat",
+                		    "entries": [
+                		        "In combat, this Celestial shares your initiative and acts on your turn. You can give it verbal commands (no action required). If the Celestial does not receive any commands, or if its commands are completed, it defend itself with prejudice."
+                		    ]
+                		},
+                		{
+                		    "type": "item",
+                		    "name": "Control",
+                		    "entries": [
+                		        "If the spell ends because your concentration was broken, the Celestial remains, but is no longer under your control. For the duration of the spell, or until it is reduced to 0 hit points, the Celestial acts according to its alignment, potentially becoming hostile towards you. An uncontrolled Celestial can't be dismissed by you, and they disappear 1 hour after summoned."
+                		    ]
+                		}
+					]
+				}
             ],
             "entriesHigherLevel": [
                 {
@@ -4220,26 +4272,32 @@
 			"entries": [
                 "After sprinkling the material components in a circle, you cause a Fey creature to appear in an unoccupied space that you can see within range. The fey creature disappears when it drops to 0 hit points or when the spell ends.",
                 {
-                    "type": "entries",
-                    "name": "Statistics",
-                    "entries": [
-                        "When you cast the spell, you summon a {@filter Fey|bestiary|challenge rating=[&0;&6]|type=fey|miscellaneous=!swarm} of CR 6 or lower, coming through the faerie circle."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Combat",
-                    "entries": [
-                        "The Fey shares your initiative and it acts on your turn. You can give it verbal commands (no action required). If the Fey does not receive any commands, or its commands are completed, it moves and defends itself as best it can."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Control",
-                    "entries": [
-                        "If the spell ends because your concentration was broken, the Fey remains, but is no longer under your control. For the duration of the spell, or until reduced to 0 hit points, the Fey acts according to its alignment, potentially becoming hostile towards you. An uncontrolled Fey can't be dismissed by you, and they disappear 1 hour after summoned."
-                    ]
-                }
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+                		    "type": "item",
+                		    "name": "Statistics",
+                		    "entries": [
+                		        "When you cast the spell, you summon a {@filter Fey|bestiary|challenge rating=[&0;&6]|type=fey|miscellaneous=!swarm} of CR 6 or lower, coming through the faerie circle."
+                		    ]
+                		},
+                		{
+                		    "type": "item",
+                		    "name": "Combat",
+                		    "entries": [
+                		        "The Fey shares your initiative and it acts on your turn. You can give it verbal commands (no action required). If the Fey does not receive any commands, or its commands are completed, it moves and defends itself as best it can."
+                		    ]
+                		},
+                		{
+                		    "type": "item",
+                		    "name": "Control",
+                		    "entries": [
+                		        "If the spell ends because your concentration was broken, the Fey remains, but is no longer under your control. For the duration of the spell, or until reduced to 0 hit points, the Fey acts according to its alignment, potentially becoming hostile towards you. An uncontrolled Fey can't be dismissed by you, and they disappear 1 hour after summoned."
+                		    ]
+                		}
+					]
+				}
             ],
             "entriesHigherLevel": [
                 {
@@ -4295,26 +4353,32 @@
             "entries": [
                 "Grasping the material component of this spell, you conjure a portion of a Giants's essence to your aid. While your concentration lasts, it is Friendly to you and your allies and obeys your commands. For the duration, this titanic essence uses the rules below:",
                 {
-                    "type": "entries",
-                    "name": "Statistics",
-                    "entries": [
-                        "The titanic essence manifests a {@creature Hill Giant}. It appears in an unoccupied space of your choice within range."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Combat",
-                    "entries": [
-                        "In combat, this Giant shares your initiative and acts on your turn. You can give it verbal commands (no action required). If the Giant does not receive any commands, or if its commands are completed, it defend itself with prejudice."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Control",
-                    "entries": [
-                        "If the spell ends because your concentration was broken, the Giant remains, but is no longer under your control. For the duration of the spell, or until it is reduced to 0 hit points, the Giant acts according to its alignment, potentially becoming hostile towards you. An uncontrolled Giant can't be dismissed by you, and they disappear 1 hour after summoned."
-                    ]
-                }
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+                		    "type": "item",
+                		    "name": "Statistics",
+                		    "entries": [
+                		        "The titanic essence manifests a {@creature Hill Giant}. It appears in an unoccupied space of your choice within range."
+                		    ]
+                		},
+                		{
+                		    "type": "item",
+                		    "name": "Combat",
+                		    "entries": [
+                		        "In combat, this Giant shares your initiative and acts on your turn. You can give it verbal commands (no action required). If the Giant does not receive any commands, or if its commands are completed, it defend itself with prejudice."
+                		    ]
+                		},
+                		{
+                		    "type": "item",
+                		    "name": "Control",
+                		    "entries": [
+                		        "If the spell ends because your concentration was broken, the Giant remains, but is no longer under your control. For the duration of the spell, or until it is reduced to 0 hit points, the Giant acts according to its alignment, potentially becoming hostile towards you. An uncontrolled Giant can't be dismissed by you, and they disappear 1 hour after summoned."
+                		    ]
+                		}
+					]
+				}
             ],
             "entriesHigherLevel": [
                 {
@@ -5182,17 +5246,23 @@
 			"entries": [
 				"You either create or destroy water.",
 				{
-					"type": "entries",
-					"name": "Create Water",
-					"entries": [
-						"You create up to 10 gallons of clean water within range in an open container. Alternatively, the water falls as rain in a 30-foot cube within range, extinguishing exposed flames in the area."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Destroy Water",
-					"entries": [
-						"You destroy up to 10 gallons of water in an open container within range. Alternatively, you destroy fog in a 30-foot cube within range."
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Create Water",
+							"entries": [
+								"You create up to 10 gallons of clean water within range in an open container. Alternatively, the water falls as rain in a 30-foot cube within range, extinguishing exposed flames in the area."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Destroy Water",
+							"entries": [
+								"You destroy up to 10 gallons of water in an open container within range. Alternatively, you destroy fog in a 30-foot cube within range."
+							]
+						}
 					]
 				}
 			],
