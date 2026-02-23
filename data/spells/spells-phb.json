@@ -7251,35 +7251,48 @@
 				}
 			],
 			"entries": [
-                "Whispering to the spirits of nature, you can create one of the following effects within range or another effect not listed below that enhances the natural fauna nearby.",
+                "Whispering to the spirits of nature, you can create one of the following effects within range.",
                 {
-                    "type": "entries",
-                    "name": "Weather Sensor",
-                    "entries": [
-                        "You create a Tiny, harmless sensory effect that predicts what the weather will be at your location for the next 24 hours. The effect might manifest as a golden orb for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This effect persists for 1 round."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Bloom",
-                    "entries": [
-                        "You instantly make a flower blossom, a seed pod open, or a leaf bud bloom."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Sensory Effect",
-                    "entries": [
-                        "You create a harmless sensory effect, such as falling leaves, spectral dancing fairies, a gentle breeze, the sound of an animal, or the faint odor of skunk. The effect must fit in a 5-foot cube."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Fire Play",
-                    "entries": [
-                        "You light or snuff out a candle, a torch, or a campfire."
-                    ]
-                }
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+                		{
+                		    "type": "item",
+                		    "name": "Bloom",
+                		    "entries": [
+                		        "You instantly make a flower blossom, a seed pod open, or a leaf bud bloom."
+                		    ]
+                		},
+                		{
+                		    "type": "item",
+                		    "name": "Fire Play",
+                		    "entries": [
+                		        "You light or snuff out a candle, a torch, or a campfire."
+                		    ]
+                		},
+						{
+                		    "type": "item",
+                		    "name": "Sensory Effect",
+                		    "entries": [
+                		        "You create a harmless sensory effect, such as falling leaves, spectral dancing fairies, a gentle breeze, the sound of an animal, or the faint odor of skunk. The effect must fit in a 5-foot cube."
+                		    ]
+                		},
+						{
+                		    "type": "item",
+                		    "name": "Weather Sensor",
+                		    "entries": [
+                		        "You create a Tiny, harmless sensory effect that predicts what the weather will be at your location for the next 24 hours. The effect might manifest as a golden orb for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This effect persists for 1 round."
+                		    ]
+                		},
+						{
+							"type": "item",
+							"name": "Additional Effects",
+							"entries": [
+								"You create any additional harmless effect within range on nonmagical fauna that is not listed above."
+							]
+						}
+					]
+				}
             ],
 			"areaTags": [
 				"C"
@@ -14136,9 +14149,33 @@
 			],
 			"entries": [
 				"You create a sound or an image of an object within range that lasts for the duration. The illusion also ends if you dismiss it as an action or cast this spell again.",
-				"If you create a sound, its volume can range from a whisper to a scream. It can be your voice, someone else's voice, a lion's roar, a beating of drums, or any other sound you choose. The sound continues unabated throughout the duration, or you can make discrete sounds at different times before the spell ends.",
-				"If you create an image of an object\u2014such as a chair, muddy footprints, or a small chest\u2014it must be no larger than a 5-foot cube. The image can't create sound, light, smell, or any other sensory effect. Physical interaction with the image reveals it to be an illusion, because things can pass through it.",
-				"If a creature uses its action to examine the sound or image, the creature can determine that it is an illusion with a successful Intelligence ({@skill Investigation}) check against your spell save DC. If a creature discerns the illusion for what it is, the illusion becomes faint to the creature."
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Auditory Illusion",
+							"entries":[
+								"If you create a sound, its volume can range from a whisper to a scream. It can be your voice, someone else's voice, a lion's roar, a beating of drums, or any other sound you choose. The sound continues unabated throughout the duration, or you can make discrete sounds at different times before the spell ends."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Visual Illusion",
+							"entries":[
+								"If you create an image of an object\u2014such as a chair, muddy footprints, or a small chest\u2014it must be no larger than a 5-foot cube. The image can't create sound, light, smell, or any other sensory effect. Physical interaction with the image reveals it to be an illusion, because things can pass through it."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Investigating your Illusion",
+					"entries": [
+						"If a creature uses its action to examine the sound or image, the creature can determine that it is an illusion with a successful Intelligence ({@skill Investigation}) check against your spell save DC. If a creature discerns the illusion for what it is, the illusion becomes faint to the creature."
+					]
+				}
 			],
 			"abilityCheck": [
 				"intelligence"
@@ -15621,7 +15658,7 @@
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "At Higher Levels",
+                    "name": "Cantrip Upgrade",
                     "entries": [
                         "This spell's damage increases by {@dice 1d12} when you reach 5th level ({@damage 2d12}), 11th level ({@damage 3d12}), and 17th level ({@damage 4d12})."
                     ]
@@ -16008,47 +16045,53 @@
 			"entries": [
                 "You create a magical effect within range. Choose the effect from the options below. If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time.",
                 {
-                    "type": "entries",
-                    "name": "Sensory Effect",
-                    "entries": [
-                        "You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Fire Play",
-                    "entries": [
-                        "You instantaneously light or snuff out a candle, a torch, or a small campfire."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Clean or Soil",
-                    "entries": [
-                        "You instantaneously clean or soil an object no larger than 1 cubic foot."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Minor Sensation",
-                    "entries": [
-                        "You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Magic Mark",
-                    "entries": [
-                        "You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Minor Creation",
-                    "entries": [
-                        "You create a nonmagical trinket or an illusory image that can fit in your hand. It lasts until the end of your next turn. A trinket can deal no damage and has no monetary worth."
-                    ]
-                }
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+                		{
+                		    "type": "entries",
+                		    "name": "Clean or Soil",
+                		    "entries": [
+                		        "You instantaneously clean or soil an object no larger than 1 cubic foot."
+                		    ]
+                		},
+						{
+                		    "type": "entries",
+                		    "name": "Fire Play",
+                		    "entries": [
+                		        "You instantaneously light or snuff out a candle, a torch, or a small campfire."
+                		    ]
+                		},
+                		{
+                		    "type": "entries",
+                		    "name": "Magic Mark",
+                		    "entries": [
+                		        "You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour."
+                		    ]
+                		},
+                		{
+                		    "type": "entries",
+                		    "name": "Minor Creation",
+                		    "entries": [
+                		        "You create a nonmagical trinket or an illusory image that can fit in your hand. It lasts until the end of your next turn. A trinket can deal no damage and has no monetary worth."
+                		    ]
+                		},
+						{
+                		    "type": "entries",
+                		    "name": "Minor Sensation",
+                		    "entries": [
+                		        "You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour."
+                		    ]
+                		},
+						{
+                		    "type": "entries",
+                		    "name": "Sensory Effect",
+                		    "entries": [
+                		        "You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor."
+                		    ]
+                		}
+					]
+				}
             ],
 			"miscTags": [
 				"OBJ"
@@ -20424,47 +20467,53 @@
 			"entries": [
                 "You manifest a minor wonder within range. You create one of the effects below within range. If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time.",
                 {
-                    "type": "entries",
-                    "name": "Altered Eyes",
-                    "entries": [
-                        "You alter the appearance of your eyes for 1 minute."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Booming Voice",
-                    "entries": [
-                        "Your voice booms up to three times as loud as normal for 1 minute. For the duration, you have Advantage on Charisma ({@skill Intimidation}) checks."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Fire Play",
-                    "entries": [
-                        "You cause flames to flicker, brighten, dim, or change color for 1 minute."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Invisible Hand",
-                    "entries": [
-                        "You instantaneously cause an unlocked door or window to fly open or slam shut."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Phantom Sound",
-                    "entries": [
-                        "You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Tremors",
-                    "entries": [
-                        "You cause harmless tremors in the ground for 1 minute."
-                    ]
-                }
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+                		    "type": "entries",
+                		    "name": "Altered Eyes",
+                		    "entries": [
+                		        "You alter the appearance of your eyes for 1 minute."
+                		    ]
+                		},
+                		{
+                		    "type": "entries",
+                		    "name": "Booming Voice",
+                		    "entries": [
+                		        "Your voice booms up to three times as loud as normal for 1 minute. For the duration, you have Advantage on Charisma ({@skill Intimidation}) checks."
+                		    ]
+                		},
+                		{
+                		    "type": "entries",
+                		    "name": "Fire Play",
+                		    "entries": [
+                		        "You cause flames to flicker, brighten, dim, or change color for 1 minute."
+                		    ]
+                		},
+                		{
+                		    "type": "entries",
+                		    "name": "Invisible Hand",
+                		    "entries": [
+                		        "You instantaneously cause an unlocked door or window to fly open or slam shut."
+                		    ]
+                		},
+                		{
+                		    "type": "entries",
+                		    "name": "Phantom Sound",
+                		    "entries": [
+                		        "You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers."
+                		    ]
+                		},
+                		{
+                		    "type": "entries",
+                		    "name": "Tremors",
+                		    "entries": [
+                		        "You cause harmless tremors in the ground for 1 minute."
+                		    ]
+                		}
+					]
+				}
             ],
             "miscTags": [
                 "ADV"
