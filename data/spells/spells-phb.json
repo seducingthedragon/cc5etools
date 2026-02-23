@@ -5941,7 +5941,8 @@
 				}
 			],
 			"entries": [
-				"A beam of yellow light flashes from your pointing finger, then condenses to linger at a chosen point within range as a glowing bead for the duration. When the spell ends, either because your {@status concentration} is broken or because you decide to end it, the bead blossoms with a low roar into an explosion of flame that spreads around corners. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A creature takes fire damage equal to the total accumulated damage on a failed save, or half as much damage on a successful one.",
+				"A beam of yellow light flashes from your pointing finger, then condenses to linger at a chosen point within range as a glowing bead for the duration. When the spell ends, either because your {@status concentration} is broken or because you decide to end it, the bead blossoms with a low roar into an explosion of flame that spreads around corners.",
+				"Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A creature takes fire damage equal to the total accumulated damage on a failed save, or half as much damage on a successful one.",
 				"The spell's base damage is {@damage 12d6}. If at the end of your turn the bead has not yet detonated, the damage increases by {@damage 1d6}.",
 				"If the glowing bead is touched before the interval has expired, the creature touching it must make a Dexterity saving throw. On a failed save, the spell ends immediately, causing the bead to erupt in flame. On a successful save, the creature can throw the bead up to 40 feet. When it strikes a creature or a solid object, the spell ends, and the bead explodes.",
 				"The fire damages objects in the area and ignites flammable objects that aren't being worn or carried."
@@ -6251,11 +6252,28 @@
 				}
 			],
 			"entries": [
-				"For the duration, you can read the thoughts of certain creatures. When you cast the spell and as your action on each turn until the spell ends, you can focus your mind on any one creature that you can see within 30 feet of you. If the creature you choose has an Intelligence of 3 or lower or doesn't speak any language, the creature is unaffected.",
-				"You initially learn the surface thoughts of the creature\u2014what is most on its mind in that moment. As an action, you can either shift your attention to another creature's thoughts or attempt to probe deeper into the same creature's mind. If you probe deeper, the target must make a Wisdom saving throw. If it fails, you gain insight into its reasoning (if any), its emotional state, and something that looms large in its mind (such as something it worries over, loves, or hates). If it succeeds, the spell ends. Either way, the target knows that you are probing into its mind, and unless you shift your attention to another creature's thoughts, the creature can use its action on its turn to make an Intelligence check contested by your Intelligence check; if it succeeds, the spell ends.",
-				"Questions verbally directed at the target creature naturally shape the course of its thoughts, so this spell is particularly effective as part of an interrogation.",
-				"You can also use this spell to detect the presence of thinking creatures you can't see. When you cast the spell or as your action during the duration, you can search for thoughts within 30 feet of you. The spell can penetrate barriers, but 2 feet of rock, 2 inches of any metal other than lead, or a thin sheet of lead blocks you. You can't detect a creature with an Intelligence of 3 or lower or one that doesn't speak any language.",
-				"Once you detect the presence of a creature in this way, you can read its thoughts for the rest of the duration as described above, even if you can't see it, but it must still be within range."
+				"For the duration, you can read the thoughts of certain creatures. When you cast the spell and as your action on each turn until the spell ends, you can focus your mind on any one creature that you can see within 30 feet of you. The spell can penetrate barriers, but 2 feet of rock, 2 inches of any metal other than lead, or a thin sheet of lead blocks you. You can't detect a creature with an Intelligence of 3 or lower or one that doesn't speak any language and isn't telepathic.",
+				{
+					"type": "entries",
+					"name": "Surface Thoughts",
+					"entries": [
+						"You initially learn the surface thoughts of the creature\u2014what is most on its mind in that moment. Questions verbally directed at the target creature naturally shape the course of its thoughts, so this spell is particularly effective as part of an interrogation."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Deeper Thoughts",
+					"entries": [
+						"As an action, you can attempt to probe deeper into the same creature's mind. If you probe deeper, the target makes a Wisdom saving throw. On a failed save, you discern the target's reasoning, emotions, and something that looms large in its mind (such as a worry, love, or hate). On a successful save, the spell ends. Either way, the target knows that you are probing into its mind, and until you shift your attention away from the target's mind, the target can take an action on its turn to make an Intelligence ({@skill Arcana}) check against your spell save DC, ending the spell on a success."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sensing Invisible Creatures",
+					"entries": [
+						"You can also use this spell to detect the presence of thinking creatures you can't see. When you cast the spell or as your action during the duration, you can search for thoughts within 30 feet of you. Once you detect the presence of a creature in this way, you can read its thoughts for the rest of the duration as described above, even if you can't see it, but it must still be within range."
+					]
+				}
 			],
 			"savingThrow": [
 				"wisdom"
@@ -6879,10 +6897,27 @@
 				}
 			],
 			"entries": [
-				"You attempt to beguile a beast that you can see within range. It must succeed on a Wisdom saving throw or be {@condition charmed} by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw.",
-				"While the beast is {@condition charmed}, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as \"Attack that creature,\" \"Run over there,\" or \"Fetch that object.\" If the creature completes the order and doesn't receive further direction from you, it defends and preserves itself to the best of its ability.",
-				"You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn't do anything that you don't allow it to do. During this time, you can also cause the creature to use a reaction, but this requires you to use your own reaction as well.",
-				"Each time the target takes damage, it makes a new Wisdom saving throw against the spell. If the saving throw succeeds, the spell ends."
+				"You attempt to beguile a beast that you can see within range. It must succeed on a Wisdom saving throw or be {@condition charmed} by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw. Each time the target takes damage, it makes a new Wisdom saving throw against the spell. If the saving throw succeeds, the spell ends.",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Telepathic Link",
+							"entries": [
+								"While the beast is {@condition charmed}, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as \"Attack that creature,\" \"Run over there,\" or \"Fetch that object.\" If the creature completes the order and doesn't receive further direction from you, it defends and preserves itself to the best of its ability."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Full Control",
+							"entries": [
+								"You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn't do anything that you don't allow it to do. During this time, you can also cause the creature to use a reaction, but this requires you to use your own reaction as well."
+							]
+						}
+					]
+				}
 			],
 			"entriesHigherLevel": [
 				{
@@ -6945,10 +6980,27 @@
 				}
 			],
 			"entries": [
-				"You attempt to beguile a creature that you can see within range. It must succeed on a Wisdom saving throw or be {@condition charmed} by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw.",
-				"While the creature is {@condition charmed}, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as \"Attack that creature,\" \"Run over there,\" or \"Fetch that object.\" If the creature completes the order and doesn't receive further direction from you, it defends and preserves itself to the best of its ability.",
-				"You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn't do anything that you don't allow it to do. During this time, you can also cause the creature to use a reaction, but this requires you to use your own reaction as well.",
-				"Each time the target takes damage, it makes a new Wisdom saving throw against the spell. If the saving throw succeeds, the spell ends."
+				"You attempt to beguile a creature that you can see within range. It must succeed on a Wisdom saving throw or be {@condition charmed} by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw. Each time the target takes damage, it makes a new Wisdom saving throw against the spell. If the saving throw succeeds, the spell ends.",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Telepathic Link",
+							"entries": [
+								"While the creature is {@condition charmed}, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as \"Attack that creature,\" \"Run over there,\" or \"Fetch that object.\" If the creature completes the order and doesn't receive further direction from you, it defends and preserves itself to the best of its ability."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Full Control",
+							"entries": [
+								"You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn't do anything that you don't allow it to do. During this time, you can also cause the creature to use a reaction, but this requires you to use your own reaction as well."
+							]
+						}
+					]
+				}
 			],
 			"entriesHigherLevel": [
 				{
@@ -7008,10 +7060,27 @@
 				}
 			],
 			"entries": [
-				"You attempt to beguile a humanoid that you can see within range. It must succeed on a Wisdom saving throw or be {@condition charmed} by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw.",
-				"While the target is {@condition charmed}, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as \"Attack that creature,\" \"Run over there,\" or \"Fetch that object.\" If the creature completes the order and doesn't receive further direction from you, it defends and preserves itself to the best of its ability.",
-				"You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn't do anything that you don't allow it to do. During this time you can also cause the creature to use a reaction, but this requires you to use your own reaction as well.",
-				"Each time the target takes damage, it makes a new Wisdom saving throw against the spell. If the saving throw succeeds, the spell ends."
+				"You attempt to beguile a humanoid that you can see within range. It must succeed on a Wisdom saving throw or be {@condition charmed} by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw. Each time the target takes damage, it makes a new Wisdom saving throw against the spell. If the saving throw succeeds, the spell ends.",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Telepathic Link",
+							"entries": [
+								"While the target is {@condition charmed}, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as \"Attack that creature,\" \"Run over there,\" or \"Fetch that object.\" If the creature completes the order and doesn't receive further direction from you, it defends and preserves itself to the best of its ability."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Full Control",
+							"entries": [
+								"You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn't do anything that you don't allow it to do. During this time, you can also cause the creature to use a reaction, but this requires you to use your own reaction as well."
+							]
+						}
+					]
+				}
 			],
 			"entriesHigherLevel": [
 				{
@@ -7387,45 +7456,51 @@
 			"entries": [
 				"You touch a creature and bestow upon it a magical enhancement. Choose one of the following effects; the target gains that effect until the spell ends.",
 				{
-					"type": "entries",
-					"name": "Bear's Endurance",
-					"entries": [
-						"The target has advantage on Constitution checks. It also gains {@dice 2d6} temporary hit points, which are lost when the spell ends."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Bull's Strength",
-					"entries": [
-						"The target has advantage on Strength checks, and his or her carrying capacity doubles."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Cat's Grace",
-					"entries": [
-						"The target has advantage on Dexterity checks. It also doesn't take damage from falling 20 feet or less if it isn't {@condition incapacitated}."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Eagle's Splendor",
-					"entries": [
-						"The target has advantage on Charisma checks."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Fox's Cunning",
-					"entries": [
-						"The target has advantage on Intelligence checks."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Owl's Wisdom",
-					"entries": [
-						"The target has advantage on Wisdom checks."
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Bear's Endurance",
+							"entries": [
+								"The target has advantage on Constitution checks. It also gains {@dice 2d6} temporary hit points, which are lost when the spell ends."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Bull's Strength",
+							"entries": [
+								"The target has advantage on Strength checks, and his or her carrying capacity doubles."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Cat's Grace",
+							"entries": [
+								"The target has advantage on Dexterity checks. It also doesn't take damage from falling 20 feet or less if it isn't {@condition incapacitated}."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Eagle's Splendor",
+							"entries": [
+								"The target has advantage on Charisma checks."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Fox's Cunning",
+							"entries": [
+								"The target has advantage on Intelligence checks."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Owl's Wisdom",
+							"entries": [
+								"The target has advantage on Wisdom checks."
+							]
+						}
 					]
 				}
 			],
@@ -7779,9 +7854,27 @@
 			],
 			"entries": [
 				"You step into the border regions of the Ethereal Plane, in the area where it overlaps with your current plane. You remain in the Border Ethereal for the duration or until you use your action to dismiss the spell. During this time, you can move in any direction. If you move up or down, every foot of movement costs an extra foot. You can see and hear the plane you originated from, but everything there looks gray, and you can't see anything more than 60 feet away.",
-				"While on the Ethereal Plane, you can only affect and be affected by other creatures on that plane. Creatures that aren't on the Ethereal Plane can't perceive you and can't interact with you, unless a special ability or magic has given them the ability to do so.",
-				"You ignore all objects and effects that aren't on the Ethereal Plane, allowing you to move through objects you perceive on the plane you originated from.",
-				"When the spell ends, you immediately return to the plane you originated from in the spot you currently occupy. If you occupy the same spot as a solid object or creature when this happens, you are immediately shunted to the nearest unoccupied space that you can occupy and take force damage equal to twice the number of feet you are moved.",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Ethereal Plane",
+							"entries": [
+								"While on the Ethereal Plane, you can only affect and be affected by other creatures on that plane. Creatures that aren't on the Ethereal Plane can't perceive you and can't interact with you, unless a special ability or magic has given them the ability to do so.",
+								"You ignore all objects and effects that aren't on the Ethereal Plane, allowing you to move through objects you perceive on the plane you originated from."
+							]
+						},
+						{
+							"type": "item",
+							"name": "End of Spell",
+							"entries": [
+								"When the spell ends, you immediately return to the plane you originated from in the spot you currently occupy. If you occupy the same spot as a solid object or creature when this happens, you are immediately shunted to the nearest unoccupied space that you can occupy and take force damage equal to twice the number of feet you are moved."
+							]
+						}
+					]
+				},
 				"This spell has no effect if you cast it while you are on the Ethereal Plane or a plane that doesn't border it, such as one of the Outer Planes."
 			],
 			"entriesHigherLevel": [
@@ -8392,29 +8485,36 @@
 				}
 			],
 			"entries": [
-                "You conjure a spirit in an unoccupied space within range that assumes the form of a supernaturally intelligent, strong, and loyal steed, which is instantly bonded to you. The Steed takes on the form of a Medium or Large quadrupedal (four-legged) {@filter beasts of challenge rating 1/2 or lower|bestiary|challenge rating=[&0;&1/2]|type=beast|miscellaneous=!swarm} of CR ½ or lower without a flying speed or you can summon an {@creature Otherworldly Steed|PHB}. Some recommended steeds are a {@creature warhorse}, a {@creature pony}, a {@creature camel}, an {@creature elk}, or a {@creature mastiff}..",
+                "You conjure a spirit in an unoccupied space within range that assumes the form of a supernaturally intelligent, strong, and loyal steed, which is instantly bonded to you.",
                 {
-                    "type": "entries",
-                    "name": "Statistics",
-                    "entries": [
-                        "Your Steed uses the stat block of the creature you chose for it, but its creature type changes to reflect your alignment: Celestial (good), Fey (neutral), or Fiend (evil). The Steed's Intelligence score becomes 6 (if it was lower), and it can understand one language that you speak."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Control",
-                    "entries": [
-                        "You control your Steed and decide how it acts, both in and out of combat In combat, it shares your initiative and acts during your turn. While riding it, you can make any spell you cast that targets only you also target your Steed."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Care for Steed",
-                    "entries": [
-                        "While you and your Steed are within 1 mile of one another, you can use a special form of Telepathy to communicate.",
-                        "If your Steed is reduced to 0 hit points it disappears. You can also use a bonus action to dismiss your Steed, causing it to disappear. Should you cast this spell again you can choose to either conjure the same Steed, and it reappears in range at its maximum hit points, or to conjure a new Steed, releasing your previous Steed from its bond in the process."
-                    ]
-                }
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+                		    "type": "item",
+                		    "name": "Statistics",
+                		    "entries": [
+                		        "The Steed takes on the form of a Medium or Large quadrupedal (four-legged) {@filter beasts of challenge rating 1/2 or lower|bestiary|challenge rating=[&0;&1/2]|type=beast|miscellaneous=!swarm} of CR ½ or lower without a flying speed or you can summon an {@creature Otherworldly Steed|PHB}. Some recommended steeds are a {@creature warhorse}, a {@creature pony}, a {@creature camel}, an {@creature elk}, or a {@creature mastiff}.",
+								"Your Steed uses the stat block of the creature you chose for it, but its creature type changes to reflect your alignment: Celestial (good), Fey (neutral), or Fiend (evil). The Steed's Intelligence score becomes 6 (if it was lower), and it can understand one language that you speak."
+                		    ]
+                		},
+                		{
+                		    "type": "item",
+                		    "name": "Control",
+                		    "entries": [
+                		        "You control your Steed and decide how it acts, both in and out of combat In combat, it shares your initiative and acts during your turn. While riding it, you can make any spell you cast that targets only you also target your Steed."
+                		    ]
+                		},
+                		{
+                		    "type": "item",
+                		    "name": "Care for Steed",
+                		    "entries": [
+                		        "While you and your Steed are within 1 mile of one another, you can use a special form of Telepathy to communicate.",
+                		        "If your Steed is reduced to 0 hit points it disappears. You can also use a bonus action to dismiss your Steed, causing it to disappear. Should you cast this spell again you can choose to either conjure the same Steed, and it reappears in range at its maximum hit points, or to conjure a new Steed, releasing your previous Steed from its bond in the process."
+                		    ]
+                		}
+					]
+				}
             ],
             "entriesHigherLevel": [
                 {
@@ -8989,9 +9089,21 @@
 			],
 			"entries": [
 				"You attempt to turn one creature that you can see within range into stone. If the target's body is made of flesh, the creature must make a Constitution saving throw. On a failed save, it is {@condition restrained} as its flesh begins to harden. On a successful save, the creature isn't affected.",
-				"A creature {@condition restrained} by this spell must make another Constitution saving throw at the end of each of its turns. If it successfully saves against this spell three times, the spell ends. If it fails its saves three times, it is turned to stone and subjected to the {@condition petrified} condition for the duration. The successes and failures don't need to be consecutive; keep track of both until the target collects three of a kind.",
-				"If the creature is physically broken while {@condition petrified}, it suffers from similar deformities if it reverts to its original state.",
-				"If you maintain your {@status concentration} on this spell for the entire possible duration, the creature is turned to stone until the effect is removed."
+				{
+					"type": "entries",
+					"name": "Petrification Process",
+					"entries": [
+						"A creature {@condition restrained} by this spell must make another Constitution saving throw at the end of each of its turns. If it successfully saves against this spell three times, the spell ends. If it fails its saves three times, it is turned to stone and subjected to the {@condition petrified} condition for the duration. The successes and failures don't need to be consecutive; keep track of both until the target collects three of a kind."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Consequences",
+					"entries": [
+						"If the creature is physically broken while {@condition petrified}, it suffers from similar deformities if it reverts to its original state.",
+						"If you maintain your {@status concentration} on this spell for the entire possible duration, the creature is turned to stone until the effect is removed."
+					]
+				}
 			],
 			"conditionInflict": [
 				"petrified",
@@ -9162,7 +9274,7 @@
 				"ritual": true
 			},
 			"entries": [
-				"You create a ward against magical travel that protects up to 40,000 square feet of floor space to a height of 30 feet above the floor. For the duration, creatures can't teleport into the area or use portals, such as those created by the {@spell gate} spell, to enter the area. The spell proofs the area against planar travel, and therefore prevents creatures from accessing the area by way of the Astral Plane, Ethereal Plane, Feywild, Shadowfell, or the {@spell Plane Shift} spell.",
+				"You create a ward against magical travel that protects up to 40,000 square feet of floor space to a height of 30 feet above the floor. For the duration, creatures can't teleport into the area or use portals, such as those created by the {@spell Gate} spell, to enter the area. The spell proofs the area against planar travel, and therefore prevents creatures from accessing the area by way of the Astral Plane, Ethereal Plane, Feywild, Shadowfell, or the {@spell Plane Shift} spell.",
 				"In addition, the spell damages types of creatures that you choose when you cast it. Choose one or more of the following: Celestials, Elementals, Fey, Fiends, and Undead. When a chosen creature enters the spell's area for the first time on a turn or starts its turn there, the creature takes {@damage 5d10} radiant or necrotic damage (your choice when you cast this spell).",
 				"When you cast this spell, you can designate a password. A creature that speaks the password as it enters the area takes no damage from the spell.",
 				"The spell's area can't overlap with the area of another forbiddance spell. If you cast forbiddance every day for 30 days in the same location, the spell lasts until it is dispelled, and the material components are consumed on the last casting."
@@ -9226,27 +9338,33 @@
 			"entries": [
                 "A shimmering, immobile, cube-shaped prison composed of magical force springs into existence around an area of your choice within range. You choose whether this magic prison is shaped like a cage with bars or a solid box.",
                 {
-                    "type": "entries",
-                    "name": "Shape",
-                    "entries": [
-                        "If you choose cage, it can be up to 20 feet on a side and made from 1/2-inch diameter bars spaced 1/2 inch apart. If you choose box, it can be up to 10 feet on a side, creating a solid barrier that prevents any matter from passing through it and blocking any spells cast into or out of the area. The cage extends into the Ethereal Plane, blocking ethereal travel."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Creatures Inside",
-                    "entries": [
-                        "When you cast the spell, any creatures that are completely inside the area of the cage are trapped. Any creatures partially within the area, or too large to fit are pushed away until they are completely outside of the cage.",
-                        "A creature inside the cage cannot leave it by non-magical means. If the creature tries to use teleportation or interplanar travel to leave the cage, it must first make a Charisma saving throw in order to escape. Regardless of a fail or success on the saving throw, any effect or spell resources are expended in the attempt to escape."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Statistics",
-                    "entries": [
-                        "The cage's Armor Class equals your Spell save DC and it has 200 hit points. It is immune to poison, psychic, and non-magical bludgeoning, piercing, and slashing damage, vulnerable to force damage, and resistant to all other damage types. It cannot be dispelled by a {@spell Dispel Magic} spell."
-                    ]
-                }
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+                		    "type": "item",
+                		    "name": "Shape",
+                		    "entries": [
+                		        "If you choose cage, it can be up to 20 feet on a side and made from 1/2-inch diameter bars spaced 1/2 inch apart. If you choose box, it can be up to 10 feet on a side, creating a solid barrier that prevents any matter from passing through it and blocking any spells cast into or out of the area. The cage extends into the Ethereal Plane, blocking ethereal travel."
+                		    ]
+                		},
+                		{
+                		    "type": "item",
+                		    "name": "Creatures Inside",
+                		    "entries": [
+                		        "When you cast the spell, any creatures that are completely inside the area of the cage are trapped. Any creatures partially within the area, or too large to fit are pushed away until they are completely outside of the cage.",
+                		        "A creature inside the cage cannot leave it by non-magical means. If the creature tries to use teleportation or interplanar travel to leave the cage, it must first make a Charisma saving throw in order to escape. Regardless of a fail or success on the saving throw, any effect or spell resources are expended in the attempt to escape."
+                		    ]
+                		},
+                		{
+                		    "type": "item",
+                		    "name": "Statistics",
+                		    "entries": [
+                		        "The cage's Armor Class equals your Spell save DC and it has 200 hit points. It is immune to poison, psychic, and non-magical bludgeoning, piercing, and slashing damage, vulnerable to force damage, and resistant to all other damage types. It cannot be dispelled by a {@spell Dispel Magic} spell."
+                		    ]
+                		}
+					]
+				}
             ],
             "entriesHigherLevel": [
                 {
@@ -9620,7 +9738,8 @@
 				}
 			],
 			"entries": [
-				"You place a magical command on a creature that you can see within range, forcing it to carry out some service or refrain from some action or course of activity as you decide. If the creature can understand you, it must succeed on a Wisdom saving throw or become {@condition charmed} by you for the duration. While the creature is {@condition charmed} by you, it takes {@damage 5d10} psychic damage each time it acts in a manner directly counter to your instructions, but no more than once each day. A creature that can't understand you is unaffected by the spell.",
+				"You place a magical command on a creature that you can see within range, forcing it to carry out some service or refrain from some action or course of activity as you decide. If the creature can understand you, it must succeed on a Wisdom saving throw or become {@condition charmed} by you for the duration.",
+				"While the creature is {@condition charmed} by you, it takes {@damage 5d10} psychic damage each time it acts in a manner directly counter to your instructions, but no more than once each day. A creature that can't understand you is unaffected by the spell.",
 				"You can issue any command you choose, short of an activity that would result in certain death. Should you issue a suicidal command, the spell ends.",
 				"You can end the spell early by using an action to dismiss it. A {@spell Remove Curse}, {@spell restoration||level 5 Restoration}, or {@spell Wish} spell also ends it."
 			],
@@ -9861,7 +9980,7 @@
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "At Higher Levels",
+                    "name": "Cantrip Upgrade",
                     "entries": [
                         "The damage of this spell increases by 1d8 at 5th ({@damage 2d8}), 11th ({@damage 3d8}), and 17th level ({@damage 4d8})."
                     ]
@@ -9983,32 +10102,44 @@
 				}
 			],
 			"entries": [
-                "You inscribe a glyph that later unleashes a magical effect. You inscribe it either on a surface (such as a table or a section of floor) or within an object that can be closed (such as a book or chest) to conceal the glyph. The glyph can cover an area no larger than 10 feet in diameter. If the surface or object is moved more than 10 feet from where you cast this spell, the glyph is broken, and the spell ends without being triggered.",
-                "The glyph is nearly imperceptible and requires a successful Wisdom ({@skill Perception}) or a successful Intelligence ({@skill Investigation}) check against your spell save DC to notice.",
-                "When you inscribe the glyph, you set its trigger and choose whether it's an explosive rune or a spell glyph, as explained below.",
+                "You inscribe a glyph that later unleashes a magical effect. You inscribe it either on a surface (such as a table or a section of floor) or within an object that can be closed (such as a book or chest) to conceal the glyph.",
                 {
-                    "type": "entries",
-                    "name": "Set the Trigger",
-                    "entries": [
-                        "You decide what triggers the glyph when you cast the spell. For glyphs inscribed on a surface, common triggers include touching or stepping on the glyph, removing another object covering it, or approaching within a certain distance of it. For glyphs inscribed within an object, common triggers include opening that object or seeing the glyph. Once a glyph is triggered, this spell ends.",
-                        "You can refine the trigger so that only creatures of certain types activate it (for example, the glyph could be set to affect Aberrations). You can also set conditions for creatures that don't trigger the glyph, such as those who say a certain password."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Explosive Rune",
-                    "entries": [
-                        "When triggered, the glyph erupts with magical energy in a 20-foot-radius Sphere centered on the glyph. Each creature in the area makes a Dexterity saving throw. A creature takes {@damage 5d8} Acid, Cold, Fire, Lightning, or Thunder damage (your choice when you create the glyph) on a failed save or half as much damage on a successful one."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Spell Glyph",
-                    "entries": [
-                        "You can store a prepared spell of level 3 or lower in the glyph by casting it as part of creating the glyph. The spell must target a single creature or an area. The spell being stored has no immediate effect when cast in this way.",
-                        "When the glyph is triggered, the stored spell takes effect. If the spell has a target, it targets the creature that triggered the glyph. If the spell affects an area, the area is centered on that creature. If the spell summons Hostile creatures or creates harmful objects or traps, they appear as close as possible to the intruder and attack it. If the spell requires {@status Concentration}, it lasts until the end of its full duration."
-                    ]
-                }
+					"type": "entries",
+					"name": "Glyph Mechanics",
+					"entries": [
+						"The glyph can cover an area no larger than 10 feet in diameter. If the surface or object is moved more than 10 feet from where you cast this spell, the glyph is broken, and the spell ends without being triggered. The glyph is nearly imperceptible and requires a successful Wisdom ({@skill Perception}) or a successful Intelligence ({@skill Investigation}) check against your spell save DC to notice.",
+                		"When you inscribe the glyph, you set its trigger and choose whether it's an explosive rune or a spell glyph, as explained below."
+					]
+				},
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+                		    "type": "item",
+                		    "name": "Set the Trigger",
+                		    "entries": [
+                		        "You decide what triggers the glyph when you cast the spell. For glyphs inscribed on a surface, common triggers include touching or stepping on the glyph, removing another object covering it, or approaching within a certain distance of it. For glyphs inscribed within an object, common triggers include opening that object or seeing the glyph. Once a glyph is triggered, this spell ends.",
+                		        "You can refine the trigger so that only creatures of certain types activate it (for example, the glyph could be set to affect Aberrations). You can also set conditions for creatures that don't trigger the glyph, such as those who say a certain password."
+                		    ]
+                		},
+                		{
+                		    "type": "item",
+                		    "name": "Explosive Rune",
+                		    "entries": [
+                		        "When triggered, the glyph erupts with magical energy in a 20-foot-radius Sphere centered on the glyph. Each creature in the area makes a Dexterity saving throw. A creature takes {@damage 5d8} Acid, Cold, Fire, Lightning, or Thunder damage (your choice when you create the glyph) on a failed save or half as much damage on a successful one."
+                		    ]
+                		},
+                		{
+                		    "type": "item",
+                		    "name": "Spell Glyph",
+                		    "entries": [
+                		        "You can store a prepared spell of level 3 or lower in the glyph by casting it as part of creating the glyph. The spell must target a single creature or an area. The spell being stored has no immediate effect when cast in this way. When the glyph is triggered, the stored spell takes effect.",
+								"If the spell has a target, it targets the creature that triggered the glyph. If the spell affects an area, the area is centered on that creature. If the spell summons Hostile creatures or creates harmful objects or traps, they appear as close as possible to the intruder and attack it. If the spell requires {@status Concentration}, it lasts until the end of its full duration."
+                		    ]
+                		}
+					]
+				}
             ],
 			"entriesHigherLevel": [
 				{
