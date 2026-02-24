@@ -18746,8 +18746,8 @@
 				}
 			],
 			"entries": [
-                "Each creature of your choice in a 20-foot-radius Sphere centered on a point within range must succeed on a Wisdom saving throw or have the {@condition Incapacitated} condition until the end of its next turn, at which point it must repeat the save. If the target fails the second save, the target has the {@condition Unconscious} condition, as they fall asleep for the duration of the spell. The spell ends on a target if it takes damage or someone within 5 feet of it takes an action to shake it out of the spell's effect.",
-                "Creatures that don't sleep, such as elves, or that have Immunity to the {@condition Exhaustion} condition automatically succeed on saves against this spell."
+                "Each creature of your choice in a 20-foot-radius Sphere centered on a point within range must succeed on a Wisdom saving throw or have the {@condition Incapacitated} condition until the end of its next turn, at which point it must repeat the save. If the target fails the second save, the target falls {@condition unconscious}, as they fall asleep for the duration of the spell. The spell ends on a target if it takes damage or someone within 5 feet of it takes an action to shake it out of the spell's effect.",
+                "Creatures that don't sleep, such as elves, or that have Immunity to the {@condition Exhaustion} condition, are only impacted by the first save of this spell and automatically succeed on the second save."
             ],
 			"conditionInflict": [
 				"incapacitated",
@@ -19510,7 +19510,7 @@
 			],
 			"entries": [
                 "You create a 20-foot-radius sphere of yellow, nauseating gas centered on a point within range. The cloud spreads around corners, and its area is {@quickref Vision and Light|PHB|2||heavily obscured}. The cloud lingers in the air for the duration.",
-                "Each creature that starts its turn in the Sphere must succeed on a Constitution saving throw or have the {@condition Poisoned} condition until the end of the current turn. While {@condition Poisoned} by this spell, the creature can't take any actions or bonus actions. Creatures that don't need to breathe or are immune to {@condition poisoned|PHB|poison} automatically succeed on this saving throw.",
+                "Each creature that starts its turn in the Sphere must succeed on a Constitution saving throw or is {@condition poisoned} until the end of the current turn. While {@condition poisoned} by this spell, the creature can't take any actions or bonus actions. Creatures that don't need to breathe or are immune to {@condition poisoned|PHB|poison} automatically succeed on this saving throw.",
                 "A moderate wind (at least 10 miles per hour) disperses the cloud after 4 rounds. A strong wind (at least 20 miles per hour), including those from the {@spell Gust of Wind} spell, disperses it after 1 round."
             ],
 			"savingThrow": [
@@ -19648,7 +19648,7 @@
 			],
 			"entries": [
 				"A churning storm cloud forms, centered on a point you can see and spreading to a radius of 360 feet. Lightning flashes in the area, thunder booms, and strong winds roar. Each creature under the cloud (no more than 5,000 feet beneath the cloud) when it appears must make a Constitution saving throw. On a failed save, a creature takes {@damage 2d6} thunder damage and becomes {@condition deafened} for 5 minutes.",
-				"Each round you maintain {@status concentration} on this spell, the storm produces different effects on your turn.",
+				"Each subsequent round you maintain {@status concentration} on this spell, the storm produces different effects on your turn.",
 				{
 					"type": "entries",
 					"name": "Round 2",
@@ -19896,14 +19896,32 @@
                     "duration": {
                         "amount": 1,
                         "type": "minute"
-                    },
-                    "concentration": true
+                    }
                 }
             ],
             "entries": [
-                "You transmute your quiver so it produces an endless supply of magical ammunition, which seems to leap into your hand when you reach for it.",
-                "On each of your turns until the spell ends, you can use a bonus action (including the bonus action used to cast this spell), as well as each {@action attack} action you have, to make two attacks with a ranged weapon that uses ammunition from this quiver.",
-                "When you make such a ranged attack, you gain a +1 bonus to your attack and damage roll, and your quiver magically replaces the ammunition you used with another copy of that ammunition. Pieces of ammunition created by this spell disintegrate when the spell ends. If the quiver leaves your possession, the spell ends."
+                "You transmute your ammunition case so it produces an endless supply of magical ammunition, which seems to leap into your hand when you hold your ranged weapon without any ammunition in the other. You gain the following benefits.",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "entries",
+							"name": "Enhanced Ammunition",
+							"entries": [
+								"On a hit, your ammunition deals force damage, instead of its normal weapon damage, and you deal an additional {@damage 2d4 + 1} force damage on a hit."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Bonus Attack",
+							"entries": [
+								"On each of your turns until the spell ends, you can use a bonus action, including the one used to cast this spell, to make two ranged weapon attacks using this spell's ammunition."
+							]
+						}
+					]
+				},
+				"Pieces of ammunition created by this spell disintegrate when the spell ends. If the quiver leaves your possession, the spell ends."
             ],
             "miscTags": [
                 "AAD",
@@ -19986,7 +20004,7 @@
                 		    "type": "item",
                 		    "name": "Fear",
                 		    "entries": [
-                		        "Each target must succeed on a Wisdom saving throw or have the {@condition Frightened} condition for 1 minute. While {@condition Frightened}, the target must move at least 30 feet away from the glyph on each of its turns, if able."
+                		        "Each target must succeed on a Wisdom saving throw or have the {@condition Frightened} condition for 1 minute. While {@condition frightened}, the target must move at least 30 feet away from the glyph on each of its turns, if able."
                 		    ]
                 		},
                 		{

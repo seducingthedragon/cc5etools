@@ -971,7 +971,7 @@
                 }
             ],
             "entries": [
-                "You touch one ranged weapon with the {@itemProperty LD|PHB|Loading} or {@itemProperty RLD|DMG|Reload} property. It becomes enchanted and reload itself automatically, ignoring the {@itemProperty LD|PHB|Loading} or {@itemProperty RLD|DMG|Reload} property for the duration. When the weapon's ammunition is depleted, ammunition you are carrying teleports into the weapon. All damage dealt by the enhanted weapon is considered magical.",
+                "You touch one ranged weapon with the {@itemProperty LD|PHB|Loading} or {@itemProperty RLD|DMG|Reload} property as well as its ammunition case, pairing them together. It becomes enchanted and reload itself automatically with its paired ammunition, ignoring the {@itemProperty LD|PHB|Loading} or {@itemProperty RLD|DMG|Reload} property for the duration. When the weapon's ammunition is depleted, ammunition you are carrying teleports into the weapon. All damage dealt by the enhanted weapon is considered magical.",
                 "The spell ends early when you expend all of your ammunition."
             ],
 			"miscTags": [
@@ -1532,7 +1532,7 @@
             },
             "entries": [
                 "As you cast the spell you draw out the potent scents trapped within all magic. Choose a magical effect you are aware of that's within range. The effect releases a scent specific to the creature that created it. If you are familiar with the creature, based on any step in the list below, you automatically know that information.",
-                "If you are not familiar with the creature, you can make an {@skill Arcana} or {@skill History} check (your choice) using your Spellcasting Ability, adding your proficiency bonus if you are proficient in the skill. Refer to the table below to determine what information you are able to glean from the scent. When succeeding on a DC check, you also learn previous information given from lower DCs.",
+                "If you are not familiar with the creature, you can make an {@skill Arcana} or {@skill History} check (your choice) using your Spellcasting Ability, adding your proficiency bonus if you are proficient in the skill. Refer to the table below to determine what information you are able to glean from the scent, which can be modified at your DM's discretion.",
                 {
                     "type": "list",
                     "items": [
@@ -1636,7 +1636,8 @@
                 }
             ],
             "entries": [
-                "You invite spirits to take their revenge upon a target. A creature you can see within range must make a Charisma saving throw. On a failed save, the target takes {@damage 8d8} Psychic damage and has the {@condition Frightened} condition until the spell ends. On a successful save, the creature takes half as much damage only."
+                "You invite spirits to take their revenge upon a target. A creature you can see within range must make a Charisma saving throw. On a failed save, the target takes {@damage 8d8} Psychic damage and is {@condition frightened} of you until the spell ends. On a successful save, the creature takes half as much damage only.",
+                "A {@condition frightened} target can make a Charisma saving throw at the end of each of their turns, ending the effect on a success, as long as you are not in line of sight."
             ],
             "damageInflict": [
                 "psychic"
