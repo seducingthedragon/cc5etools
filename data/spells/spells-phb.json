@@ -21533,19 +21533,26 @@
 			"entries": [
 				"You summon a bold inferno wall of flames on a solid surface at a point within range, lasting while the spell is active. If it cuts through a creature's space when it appears, they risk fire damage.",
 				{
-                    "type": "entries",
-                    "name": "Orientation & Shape",
-                    "entries": [
-                        "The wall appears in two ways. You can make the wall up to 60 feet long, 20 feet high, and 1 foot thick, or a ringed wall up to 20 feet in diameter and 1 foot thick. Anything viewed through the wall is {@quickref Vision and Light||2||lightly obscured}."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Fire Damage",
-                    "entries": [
-                        "When the wall appears, each creature within its area must make a Dexterity saving throw. On a failed save, a creature takes {@damage 5d8} fire damage and you choose what side of the wall the creature lands on. On a save, the creature takes half as much damage and they choose what side they land on. One side of the wall, selected by you when you cast this spell, deals {@damage 5d8} fire damage to each creature that ends its turn within 10 feet of that side or inside the wall. A creature takes the same damage when it enters the wall for the first time on a turn or ends its turn there. Nearing the wall or entering it from the other side deals no damage."
-                    ]
-                }
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+                		    "type": "entries",
+                		    "name": "Orientation & Shape",
+                		    "entries": [
+                		        "The wall appears in two ways. You can make the wall up to 60 feet long, 20 feet high, and 1 foot thick, or a ringed wall up to 20 feet in diameter and 1 foot thick. Anything viewed through the wall is {@quickref Vision and Light||2||lightly obscured}."
+                		    ]
+                		},
+                		{
+                		    "type": "entries",
+                		    "name": "Fire Damage",
+                		    "entries": [
+                		        "When the wall appears, each creature within its area must make a Dexterity saving throw. On a failed save, a creature takes {@damage 5d8} fire damage and you choose what side of the wall the creature lands on. On a save, the creature takes half as much damage and they choose what side they land on.",
+								"One side of the wall, selected by you when you cast this spell, deals {@damage 5d8} fire damage to each creature that ends its turn within 10 feet of that side or inside the wall. A creature takes the same damage when it enters the wall for the first time on a turn or ends its turn there. Nearing the wall or entering it from the other side deals no damage."
+                		    ]
+                		}
+					]
+				}
 			],
 			"entriesHigherLevel": [
 				{
@@ -21604,19 +21611,26 @@
 			"entries": [
                 "A glistening {@condition invisible} wall of force springs into existence at a point you choose within range and lasts for the duration. If it cuts through a creature's space when it appears, the creatures must make a Dexterity saving throw. On a success, it chooses which side of the wall it moves to. On a failure, you choose the side it moves to.",
                 {
-                    "type": "entries",
-                    "name": "Orientation & Shape",
-                    "entries": [
-                        "The wall appears in any orientation you choose, as a horizontal or vertical barrier or an angle. It can be free floating or rest on a solid surface. You can form it into a hemispherical dome or a sphere up to 20 feet in diameter, or you can shape a flat surface made up of ten 10-by-10-foot panels. Each panel must be contiguous with another. In any form, the wall is 1/4 inch thick. Nothing can pass through the wall physically, and anything viewed through it is {@quickref Vision and Light||2||lightly obscured}. The wall extends into the Ethereal Plane, blocking ethereal travel through the wall."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Wall Stats",
-                    "entries": [
-                        "The wall has 150 hit points and its Armor Class equals your Spell save DC. It is immune to poison, psychic, and non-magical bludgeoning, piercing, and slashing damage. It is vulnerable to force and magical bludgeoning, piercing, and slashing damage. It is resistant to all other damage types. It cannot be dispelled by a {@spell Dispel Magic} spell, but a {@spell Disintegrate} spell destroys the entire wall it instantly."
-                    ]
-                }
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+                		    "type": "entries",
+                		    "name": "Orientation & Shape",
+                		    "entries": [
+                		        "The wall appears in any orientation you choose, as a horizontal or vertical barrier or an angle. It can be free floating or rest on a solid surface. You can form it into a hemispherical dome or a sphere up to 20 feet in diameter, or you can shape a flat surface made up of ten 10-by-10-foot panels. Each panel must be contiguous with another.",
+								"In any form, the wall is 1/4 inch thick. Nothing can pass through the wall physically, and anything viewed through it is {@quickref Vision and Light||2||lightly obscured}. The wall extends into the Ethereal Plane, blocking ethereal travel through the wall."
+                		    ]
+                		},
+                		{
+                		    "type": "entries",
+                		    "name": "Wall Stats",
+                		    "entries": [
+                		        "The wall has 150 hit points and its Armor Class equals your Spell save DC. It is immune to poison, psychic, and non-magical bludgeoning, piercing, and slashing damage. It is vulnerable to force and magical bludgeoning, piercing, and slashing damage. It is resistant to all other damage types. It cannot be dispelled by a {@spell Dispel Magic} spell, but a {@spell Disintegrate} spell destroys the entire wall it instantly."
+                		    ]
+                		}
+					]
+				}
             ],
             "entriesHigherLevel": [
                 {
@@ -21696,21 +21710,28 @@
 				}
 			],
 			"entries": [
-                "You conjur a shimmery icey cold wall of ice on a solid surface within range. If the wall cuts through a creature's space when it appears, the creature within its area is pushed to one side of the wall and must make a Dexterity saving throw. On a failed save, the creature takes {@damage 10d6} cold damage and you choose which side of the wall the creature lands on. On a successful save, the creature takes half as much damage and they choose what side they land on.",
+                "You conjure a shimmery icey cold wall of ice on a solid surface within range. If the wall cuts through a creature's space when it appears, the creature within its area is pushed to one side of the wall and must make a Dexterity saving throw. On a failed save, the creature takes {@damage 10d6} cold damage and you choose which side of the wall the creature lands on. On a successful save, the creature takes half as much damage and they choose what side they land on.",
                 {
-					"type": "entries",
-					"name": "Dome, Sphere, or Panels",
-					"entries": [
-						"When you cast this spell, you can choose what form the wall takes. You can form it into a hemispherical dome or a sphere with 20 feet in diameter and 20 feet high, or you can shape a flat surface made up of ten 10-foot-square panels. Each panel must be contiguous with another panel. In any form, the wall is 1 foot thick and lasts for the duration."
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "entries",
+							"name": "Dome, Sphere, or Panels",
+							"entries": [
+								"When you cast this spell, you can choose what form the wall takes. You can form it into a hemispherical dome or a sphere with 20 feet in diameter and 20 feet high, or you can shape a flat surface made up of ten 10-foot-square panels. Each panel must be contiguous with another panel. In any form, the wall is 1 foot thick and lasts for the duration."
+							]
+						},
+						{
+                		    "type": "entries",
+                		    "name": "Wall of Ice Stats",
+                		    "entries": [
+                		        "The wall is an object that can be damaged and thus breached. It has AC 12, 30 hit points per 10-foot section, and it is vulnerable to fire damage. Additionally, it is immune to cold, poison, and psychic damage. Reducing a 10-foot section of wall to 0 hit points destroys it and leaves behind a sheet of frigid air in the space the wall occupied.",
+								"A creature moving through the sheet of frigid air for the first time on a turn must make a Constitution saving throw. That creature takes {@damage 5d6} cold damage on a failed save, or half as much damage on a successful one."
+                		    ]
+                		}
 					]
-				},
-				{
-                    "type": "entries",
-                    "name": "Wall of Ice Stats",
-                    "entries": [
-                        "The wall is an object that can be damaged and thus breached. It has AC 12, 30 hit points per 10-foot section, and it is vulnerable to fire damage. Additionally, it is immune to cold, poison, and psychic damage. Reducing a 10-foot section of wall to 0 hit points destroys it and leaves behind a sheet of frigid air in the space the wall occupied. A creature moving through the sheet of frigid air for the first time on a turn must make a Constitution saving throw. That creature takes {@damage 5d6} cold damage on a failed save, or half as much damage on a successful one."
-                    ]
-                }
+				}
             ],
             "entriesHigherLevel": [
                 {
@@ -21780,20 +21801,26 @@
 			"entries": [
 				"A nonmagical wall of solid stone springs into existence at a point you choose within range. If the wall cuts through a creature's space when it appears, the creature is pushed to one side of the wall (your choice). If a creature would be surrounded on all sides by the wall (or the wall and another solid surface), that creature can make a Dexterity saving throw. On a success, it can use its reaction to move up to its speed so that it is no longer enclosed by the wall.",
 				{
-					"type": "entries",
-					"name": "Stone Wall Size",
-					"entries": [
-						"When you cast this spell, you determine the wall's orientation. Typically, the wall is 6 inches thick and is composed of ten 10-foot-by-10-foot panels. Each panel must be contiguous with at least one other panel. Alternatively, you can create 10-foot-by-20-foot panels that are only 3 inches thick.",
-						"The wall can have any shape you desire, though it can't occupy the same space as a creature or object. The wall doesn't need to be vertical or rest on any firm foundation. It must, however, merge with and be solidly supported by existing stone. Thus, you can use this spell to bridge a chasm or create a ramp.",
-						"If you create a span greater than 20 feet in length, you must halve the size of each panel to create supports. You can crudely shape the wall to create crenellations, battlements, and so on."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Wall Stats",
-					"entries": [
-						"The wall is an object made of stone that can be damaged and thus breached. Each panel has AC 15 and 30 hit points per inch of thickness. Reducing a panel to 0 hit points destroys it and might cause connected panels to collapse at the DM's discretion.",
-						"If you maintain your {@status concentration} on this spell for its whole duration, the wall becomes permanent and can't be dispelled. Otherwise, the wall disappears when the spell ends."
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "entries",
+							"name": "Stone Wall Size",
+							"entries": [
+								"When you cast this spell, you determine the wall's orientation. Typically, the wall is 6 inches thick and is composed of ten 10-foot-by-10-foot panels. Each panel must be contiguous with at least one other panel. Alternatively, you can create 10-foot-by-20-foot panels that are only 3 inches thick.",
+								"The wall can have any shape you desire, though it can't occupy the same space as a creature or object. The wall doesn't need to be vertical or rest on any firm foundation. It must, however, merge with and be solidly supported by existing stone. Thus, you can use this spell to bridge a chasm or create a ramp.",
+								"If you create a span greater than 20 feet in length, you must halve the size of each panel to create supports. You can crudely shape the wall to create crenellations, battlements, and so on."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Wall Stats",
+							"entries": [
+								"The wall is an object made of stone that can be damaged and thus breached. Each panel has AC 15 and 30 hit points per inch of thickness. Reducing a panel to 0 hit points destroys it and might cause connected panels to collapse at the DM's discretion.",
+								"If you maintain your {@status concentration} on this spell for its whole duration, the wall becomes permanent and can't be dispelled. Otherwise, the wall disappears when the spell ends."
+							]
+						}
 					]
 				}
 			],
@@ -21846,26 +21873,32 @@
 			"entries": [
                 "You conjure a wall of thick plant growth bristling with thorns hard as iron.",
                 {
-                    "type": "entries",
-                    "name": "Orientation and Shape",
-                    "entries": [
-                        "When it appears, the wall can be up to 60 feet long, 10 feet high, and 5 feet thick. Or, it forms a 20-foot diameter circle, 20 feet high and 5 feet thick. Both forms block line of sight as it appears in range on a solid surface."
-                    ]
-                },
-				{
-                    "type": "entries",
-                    "name": "At Wall Summoning",
-                    "entries": [
-                        "When it appears, creatures within it must make a Dexterity saving throw. On a failure, they take {@damage 6d8} piercing damage and remain within the wall with the {@condition restrained} condition. On a successful save, they take half as much damage and move to an adjacent space not within the area of the wall. On subsequent turns, the target can use their action to make a Strength ({@skill Athletics}) check to break the {@condition restrained} condition."
-                    ]
-                },
-				{
-                    "type": "entries",
-                    "name": "Moving Through",
-                    "entries": [
-                        "Any creature can painfully move through the wall, but it must spend 5 feet of movement for every 1 foot it moves within it. The first time a creature enters the wall or begins its turn in it, it must make a Dexterity saving throw. It takes {@damage 6d8} slashing damage on a failure, half on a success."
-                    ]
-                }
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+                		    "type": "entries",
+                		    "name": "Orientation and Shape",
+                		    "entries": [
+                		        "When it appears, the wall can be up to 60 feet long, 10 feet high, and 5 feet thick. Or, it forms a 20-foot diameter circle, 20 feet high and 5 feet thick. Both forms block line of sight as it appears in range on a solid surface."
+                		    ]
+                		},
+						{
+                		    "type": "entries",
+                		    "name": "At Wall Summoning",
+                		    "entries": [
+                		        "When it appears, creatures within it must make a Dexterity saving throw. On a failure, they take {@damage 6d8} piercing damage and remain within the wall with the {@condition restrained} condition. On a successful save, they take half as much damage and move to an adjacent space not within the area of the wall. On subsequent turns, the target can use their action to make a Strength ({@skill Athletics}) check to break the {@condition restrained} condition."
+                		    ]
+                		},
+						{
+                		    "type": "entries",
+                		    "name": "Moving Through",
+                		    "entries": [
+                		        "Any creature can painfully move through the wall, but it must spend 5 feet of movement for every 1 foot it moves within it. The first time a creature enters the wall or begins its turn in it, it must make a Dexterity saving throw. It takes {@damage 6d8} slashing damage on a failure, half on a success."
+                		    ]
+                		}
+					]
+				}
             ],
             "entriesHigherLevel": [
                 {
@@ -22253,7 +22286,7 @@
 			"entries": [
 				"A wall of strong wind rises from the ground at a point you choose within range. You can make the wall up to 50 feet long, 15 feet high, and 1 foot thick. You can shape the wall in any way you choose so long as it makes one continuous path along the ground. The wall lasts for the duration.",
 				"When the wall appears, each creature within its area must make a Strength saving throw. A creature takes {@damage 4d8} bludgeoning damage on a failed save, or half as much damage on a successful one.",
-				"The strong wind keeps fog, smoke, and other gases at bay. Small or smaller flying creatures or objects can't pass through the wall. Loose, lightweight materials brought into the wall fly upward. Arrows, bolts, and other ordinary projectiles launched at targets behind the wall are deflected upward and automatically miss. (Boulders hurled by giants or siege engines, and similar projectiles, are unaffected.) Creatures in {@spell Gaseous Form} can't pass through it."
+				"The strong wind keeps fog, smoke, and other gases at bay. Small or smaller flying creatures or objects can't pass through the wall. Loose, lightweight materials brought into the wall fly upward. Arrows, bolts, and other ordinary projectiles launched at targets behind the wall are deflected upward and automatically miss. Boulders hurled by giants or siege engines, and similar projectiles, are unaffected. Creatures in {@spell Gaseous Form} can't pass through it."
 			],
 			"damageInflict": [
 				"bludgeoning"
@@ -22542,7 +22575,7 @@
                 }
             ],
             "entries": [
-                "You surround yourself with unearthly majesty in a 10-foot Emanation. Whenever the Emanation enters the space of a creature you can see and whenever a creature you can see enters the Emanation or ends its turn there, you can force that creature to make a Wisdom saving throw. On a failed save, the target takes {@damage 4d6} Psychic damage and has the {@condition Prone} condition, and you can push it up to 10 feet away. On a successful save, the target takes half as much damage only. A creature makes this save only once per turn."
+                "You surround yourself with unearthly majesty in a 10-foot Emanation. Whenever the Emanation enters the space of a creature you can see and whenever a creature you can see enters the Emanation or ends its turn there, you can force that creature to make a Wisdom saving throw. On a failed save, the target takes {@damage 4d6} Psychic damage, is pushed back 10 feet, and falls {@condition prone}. On a successful save, the target takes half as much damage only. A creature makes this save only once per turn."
             ],
             "damageInflict": [
                 "psychic"
