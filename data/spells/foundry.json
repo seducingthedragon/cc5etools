@@ -117,6 +117,38 @@
 			"migrationVersion": 3
 		},
 		{
+			"name": "Animate Objects",
+			"source": "PHB",
+			"activities": [
+				{
+					"type": "summon",
+					"profiles": [
+						{
+							"name": "Huge",
+							"uuid": "@creature[animated object (huge)|phb]"
+						},
+						{
+							"name": "Large",
+							"uuid": "@creature[animated object (large)|phb]"
+						},
+						{
+							"name": "Medium",
+							"uuid": "@creature[animated object (medium)|phb]"
+						},
+						{
+							"name": "Small",
+							"uuid": "@creature[animated object (small)|phb]"
+						},
+						{
+							"name": "Tiny",
+							"uuid": "@creature[animated object (tiny)|phb]"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
 			"name": "Armor of Agathys",
 			"source": "PHB",
 			"activities": [
