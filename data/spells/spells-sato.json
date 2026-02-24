@@ -37,7 +37,7 @@
 				}
 			],
 			"entries": [
-				"You fortify the fabric of the planes in a 30-foot cube you can see within range. Within that area, portals close and can't be opened for the duration. Spells and other effects that allow planar travel or open portals, such as {@spell gate} or {@spell plane shift}, fail if used to enter or leave the area. The cube is stationary."
+				"You fortify the fabric of the planes in a 30-foot cube you can see within range. Within that area, portals close and can't be opened for the duration. Spells and other effects that allow planar travel or open portals, such as {@spell Gate} or {@spell Plane Shift}, fail if used to enter or leave the area. The cube is stationary."
 			],
 			"entriesHigherLevel": [
 				{

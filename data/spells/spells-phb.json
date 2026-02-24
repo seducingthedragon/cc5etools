@@ -10536,8 +10536,7 @@
 			],
 			"entries": [
 				"You create a ward that protects up to 2,500 square feet of floor space (an area 50 feet square, or one hundred 5-foot squares or twenty-five 10-foot squares). The warded area can be up to 20 feet tall, and shaped as you desire. You can ward several stories of a stronghold by dividing the area among them, as long as you can walk into each contiguous area while you are casting the spell.",
-				"When you cast this spell, you can specify individuals that are unaffected by any or all of the effects that you choose. You can also specify a password that, when spoken aloud, makes the speaker immune to these effects.",
-				"Guards and wards creates the following effects within the warded area.",
+				"When you cast this spell, you can specify individuals that are unaffected by any or all of the effects that you choose. You can also specify a password that, when spoken aloud, makes the speaker immune to these effects. This spell creates any of the following effects within the warded area.",
 				{
 					"type": "entries",
 					"name": "Corridors",
@@ -10841,7 +10840,7 @@
                     "type": "entries",
                     "name": "Hallowed Ward",
                     "entries": [
-                        "Choose any number of these creature types: Aberration, Celestial, Elemental, Fey, Fiend, or Undead. Creatures of the chosen types can't willingly enter the area without making a successful Charisma saving throw against your spell save DC. Any creature that is possessed by or that has the {@condition Charmed} or {@condition Frightened} condition from such creatures isn't possessed, is no longer{@condition Charmed}, {@condition Frightened}, or possessed by them while in the area."
+                        "Choose any number of these creature types: Aberration, Celestial, Elemental, Fey, Fiend, or Undead. Creatures of the chosen types can't willingly enter the area without making a successful Charisma saving throw against your spell save DC. Any creature that is possessed by or that has the {@condition Charmed} or {@condition Frightened} condition from such creatures isn't possessed, is no longer {@condition Charmed}, {@condition Frightened}, or possessed by them while in the area."
                     ]
                 },
                 {
@@ -12077,53 +12076,59 @@
 				"You create a magical restraint to hold a creature that you can see within range. The target must succeed on a Wisdom saving throw or be bound by the spell; if it succeeds, it is immune to this spell if you cast it again. While affected by this spell, the creature doesn't need to breathe, eat, or drink, and it doesn't age. Divination spells can't locate or perceive the target.",
 				"When you cast the spell, you choose one of the following forms of imprisonment.",
 				{
-					"type": "entries",
-					"name": "Burial",
-					"entries": [
-						"The target is entombed far beneath the earth in a sphere of magical force that is just large enough to contain the target. Nothing can pass through the sphere, nor can any creature teleport or use planar travel to get into or out of it."
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Burial",
+							"entries": [
+								"{@i The special component for this version of the spell is a small mithral orb.}",
+								"The target is entombed far beneath the earth in a sphere of magical force that is just large enough to contain the target. Nothing can pass through the sphere, nor can any creature teleport or use planar travel to get into or out of it."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Chaining",
+							"entries": [
+								"{@i The special component for this version of the spell is a fine chain of precious metal.}",
+								"Heavy chains, firmly rooted in the ground, hold the target in place. The target is {@condition restrained} until the spell ends, and it can't move or be moved by any means until then."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Hedged Prison",
+							"entries": [
+								"{@i The special component for this version of the spell is a miniature representation of the prison made from jade.}",
+								"The spell transports the target into a tiny demiplane that is warded against teleportation and planar travel. The demiplane can be a labyrinth, a cage, a tower, or any similar confined structure or area of your choice."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Minimus Containment",
+							"entries": [
+								"{@i The special component for this version of the spell is a large, transparent gemstone, such as a corundum, diamond, or ruby.}",
+								"The target shrinks to a height of 1 inch and is imprisoned inside a gemstone or similar object. Light can pass through the gemstone normally (allowing the target to see out and other creatures to see in), but nothing else can pass through, even by means of teleportation or planar travel. The gemstone can't be cut or broken while the spell remains in effect."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Slumber",
+							"entries": [
+								"{@i The special component for this version of the spell consists of rare soporific herbs.}",
+								"The target falls asleep, (@condition unconscious), and can't be awoken. Those who cannot sleep but are not immune to the (@condition Unconscious) condition can still be imprisoned this way."
+							]
+						}
 					]
 				},
-				"The special component for this version of the spell is a small mithral orb.",
-				{
-					"type": "entries",
-					"name": "Chaining",
-					"entries": [
-						"Heavy chains, firmly rooted in the ground, hold the target in place. The target is {@condition restrained} until the spell ends, and it can't move or be moved by any means until then."
-					]
-				},
-				"The special component for this version of the spell is a fine chain of precious metal.",
-				{
-					"type": "entries",
-					"name": "Hedged Prison",
-					"entries": [
-						"The spell transports the target into a tiny demiplane that is warded against teleportation and planar travel. The demiplane can be a labyrinth, a cage, a tower, or any similar confined structure or area of your choice."
-					]
-				},
-				"The special component for this version of the spell is a miniature representation of the prison made from jade.",
-				{
-					"type": "entries",
-					"name": "Minimus Containment",
-					"entries": [
-						"The target shrinks to a height of 1 inch and is imprisoned inside a gemstone or similar object. Light can pass through the gemstone normally (allowing the target to see out and other creatures to see in), but nothing else can pass through, even by means of teleportation or planar travel. The gemstone can't be cut or broken while the spell remains in effect."
-					]
-				},
-				"The special component for this version of the spell is a large, transparent gemstone, such as a corundum, diamond, or ruby.",
-				{
-					"type": "entries",
-					"name": "Slumber",
-					"entries": [
-						"The target falls asleep and can't be awoken."
-					]
-				},
-				"The special component for this version of the spell consists of rare soporific herbs.",
 				{
 					"type": "entries",
 					"name": "Ending the Spell",
 					"entries": [
-						"During the casting of the spell, in any of its versions, you can specify a condition that will cause the spell to end and release the target. The condition can be as specific or as elaborate as you choose, but the DM must agree that the condition is reasonable and has a likelihood of coming to pass. The conditions can be based on a creature's name, identity, or deity but otherwise must be based on observable actions or qualities and not based on intangibles such as level, class, or hit points."
+						"During the casting of the spell, in any of its versions, you can specify a condition that will cause the spell to end and release the target. The condition can be as specific or as elaborate as you choose, but the DM must agree that the condition is reasonable and has a likelihood of coming to pass. The conditions can be based on a creature's name, identity, or deity but otherwise must be based on observable actions or qualities and not based on intangibles such as level, class, or hit points.",
+						"A {@spell Dispel Magic} spell can end the spell only if it is cast as a 9th-level spell, targeting either the prison or the special component used to create it."
 					]
 				},
-				"A {@spell Dispel Magic} spell can end the spell only if it is cast as a 9th-level spell, targeting either the prison or the special component used to create it.",
 				"You can use a particular special component to create only one prison at a time. If you cast the spell again using the same component, the target of the first casting is immediately freed from its binding."
 			],
 			"conditionInflict": [
@@ -12472,7 +12477,7 @@
                 }
             ],
             "entries": [
-                "You unleash a storm of flashing light and raging thunder in a 10-foot-radius, 40-foot-high Cylinder centered on a point you can see within range. While in this area, creatures have the {@condition Blinded} and {@condition Deafened} conditions, and they can't cast spells with a Verbal component.",
+                "You unleash a storm of flashing light and raging thunder in a 10-foot-radius, 40-foot-high Cylinder centered on a point you can see within range. While in this area, the area is {@quickref Vision and Light|PHB|2||heavily obscured} causing creatures to be {@condition blinded}. Additionally, creatures in the area are {@condition deafened} and they can't cast spells with verbal components.",
                 "When the storm appears, each creature in it makes a Constitution saving throw, taking {@damage 2d10} Radiant damage and {@damage 2d10} Thunder damage on a failed save or half as much damage on a successful one. A creature also makes this save when it enters the spell's area for the first time on a turn or ends its turn there. A creature makes this save only once per turn."
             ],
             "entriesHigherLevel": [

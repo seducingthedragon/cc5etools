@@ -917,7 +917,7 @@
             ],
             "entries": [
                 "When you cast this spell, you call the masses to your attention and choose any number of creatures within range that can see you. Each chosen creature makes a Wisdom saving throw. Targets have Advantage if you or your allies are fighting it.",
-                "On a failed save, the target has the {@condition Charmed} condition until the spell ends or until you or your allies damage it. The {@condition Charmed} creature is Friendly to you and your allies. While {@condition Charmed}, it must use its action to make melee attacks against the nearest creature (other than you or your allies) or use its turn to move toward the nearest target."
+                "On a failed save, the target is {@condition charmed} until the spell ends or until you or your allies damage it. The {@condition Charmed} creature is Friendly to you and your allies. While {@condition charmed}, it must use its action to make melee attacks against the nearest creature (other than you or your allies) or use its turn to move toward the nearest target."
             ],
             "conditionInflict": [
                 "charmed"

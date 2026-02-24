@@ -3026,14 +3026,14 @@
 					"style": "list-hang-notitle",
 					"items": [
 						{
-							"type": "item",
+							"type": "entries",
 							"name": "The Devil's Response",
 							"entries": [
 								"The devil is unfriendly toward you, your companions, and anyone else present. Roll initiative for the devil, which has its own turns. It is under the Dungeon Master's control and acts according to its nature on each of its turns, which might result in its attacking you if it thinks it can prevail, or trying to tempt you to undertake an evil act in exchange for limited service. The DM has the creature's statistics."
 							]
 						},
 						{
-							"type": "item",
+							"type": "entries",
 							"name": "Command Attempts",
 							"entries": [
 								"On each of your turns, you can try to issue a verbal command to the devil (no action required by you). It obeys the command if the likely outcome is in accordance with its desires, especially if the result would draw you toward evil. Otherwise, you must make a Charisma ({@skill Deception}, {@skill Intimidation}, or {@skill Persuasion}) check contested by its Wisdom ({@skill Insight}) check. You make the check with advantage if you say the devil's true name.",
@@ -3041,14 +3041,14 @@
 							]
 						},
 						{
-							"type": "item",
+							"type": "entries",
 							"name": "Losing Concentration",
 							"entries": [
 								"If your {@status concentration} ends before the spell reaches its full duration, the devil doesn't disappear if it has become immune to your verbal commands. Instead, it acts in whatever manner it chooses for {@dice 3d6} minutes, and then it disappears."
 							]
 						},
 						{
-							"type": "item",
+							"type": "entries",
 							"name": "The Devil's Talisman",
 							"entries": [
 								"If you possess an individual devil's talisman, you can summon that devil if it is of the appropriate challenge rating plus 1, and it obeys all your commands, with no Charisma checks required."
@@ -3178,35 +3178,41 @@
 			"entries": [
 				"When you cast this spell, choose one of the following elements below (flame, ice, stone, or wind). You are transformed by your choosen element and gain its listed benefits until the end of the spell.",
 				{
-					"type": "entries",
-					"name": "Flame",
-					"entries": [
-						"You are immune to fire damage and have resistance to cold damage. Any creature that moves within 5 feet of you for the first time on a turn or ends its turn there takes {@damage 1d10} fire damage. You also shed bright light in a 30-foot radius and dim light for an additional 30 feet for the spell's duration as you are wrapped in flames that are harmless to you.",
-						"{@b Line of Fire Action.} You can use your action to create a line of fire 15 feet long and 5 feet wide extending from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes {@damage 4d8} fire damage on a failed save, or half as much damage on a successful one."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Ice",
-					"entries": [
-						"You are immune to cold damage and have resistance to fire damage. The ground in a 10-foot radius around you is icy and is {@quickref difficult terrain||3} for creatures other than you. The radius moves with you. You can move across {@quickref difficult terrain||3} created by ice or snow without spending extra movement.",
-						"{@b Icey Cone Action.} You can use your action to create a 15-foot cone of freezing wind extending from your outstretched hand in a direction you choose. Each creature in the cone must make a Constitution saving throw. A creature takes {@damage 4d6} cold damage on a failed save, or half as much damage on a successful one. A creature that fails its save against this effect has its speed halved until the start of your next turn."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Stone",
-					"entries": [
-						"You have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks. You can also move across {@quickref difficult terrain||3} made of earth or stone without spending extra movement and you can move through solid earth or stone as if it was air and without destabilizing it, however you can't end your movement there. If you do so, you are ejected to the nearest unoccupied space, this spell ends, and you are {@condition stunned} until the end of your next turn.",
-						"{@b Circular Quake Action.} You can use your action to create a small earthquake on the ground in a 15-foot radius centered on you. Other creatures on that ground must succeed on a Dexterity saving throw or be knocked {@condition prone}."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Wind",
-					"entries": [
-						"Ranged weapon attacks made against you have disadvantage on the attack roll. You gain a fly speed of 60 feet and if you're flying when the spell ends, then you are under the effects of the spell {@spell Feather Fall} until you land.",
-						"{@b Whirling Cube Action.} You can use your action to create a 15-foot cube of swirling wind centered on a point you can see within 60 feet of you. Each creature in that area must make a Constitution saving throw, taking {@damage 2d10} bludgeoning damage on a failed save, or half as much damage on a successful one. If a Large or smaller creature fails the save, that creature is also pushed up to 10 feet away from the center of the cube. This cube has no effect on you."
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "entries",
+							"name": "Flame",
+							"entries": [
+								"You are immune to fire damage and have resistance to cold damage. Any creature that moves within 5 feet of you for the first time on a turn or ends its turn there takes {@damage 1d10} fire damage. You also shed bright light in a 30-foot radius and dim light for an additional 30 feet for the spell's duration as you are wrapped in flames that are harmless to you.",
+								"{@b Line of Fire Action.} You can use your action to create a line of fire 15 feet long and 5 feet wide extending from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes {@damage 4d8} fire damage on a failed save, or half as much damage on a successful one."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Ice",
+							"entries": [
+								"You are immune to cold damage and have resistance to fire damage. The ground in a 10-foot radius around you is icy and is {@quickref difficult terrain||3} for creatures other than you. The radius moves with you. You can move across {@quickref difficult terrain||3} created by ice or snow without spending extra movement.",
+								"{@b Icey Cone Action.} You can use your action to create a 15-foot cone of freezing wind extending from your outstretched hand in a direction you choose. Each creature in the cone must make a Constitution saving throw. A creature takes {@damage 4d6} cold damage on a failed save, or half as much damage on a successful one. A creature that fails its save against this effect has its speed halved until the start of your next turn."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Stone",
+							"entries": [
+								"You have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks. You can also move across {@quickref difficult terrain||3} made of earth or stone without spending extra movement and you can move through solid earth or stone as if it was air and without destabilizing it, however you can't end your movement there. If you do so, you are ejected to the nearest unoccupied space, this spell ends, and you are {@condition stunned} until the end of your next turn.",
+								"{@b Circular Quake Action.} You can use your action to create a small earthquake on the ground in a 15-foot radius centered on you. Other creatures on that ground must succeed on a Dexterity saving throw or be knocked {@condition prone}."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Wind",
+							"entries": [
+								"Ranged weapon attacks made against you have disadvantage on the attack roll. You gain a fly speed of 60 feet and if you're flying when the spell ends, then you are under the effects of the spell {@spell Feather Fall} until you land.",
+								"{@b Whirling Cube Action.} You can use your action to create a 15-foot cube of swirling wind centered on a point you can see within 60 feet of you. Each creature in that area must make a Constitution saving throw, taking {@damage 2d10} bludgeoning damage on a failed save, or half as much damage on a successful one. If a Large or smaller creature fails the save, that creature is also pushed up to 10 feet away from the center of the cube. This cube has no effect on you."
+							]
+						}
 					]
 				}
 			],
