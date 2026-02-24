@@ -198,30 +198,7 @@
 				}
 			],
 			"migrationVersion": 3
-		},
-		{
-			"name": "Flame Blade",
-			"source": "PHB",
-			"activities": [
-				{
-					"type": "damage",
-					"damage": {
-						"parts": [
-							{
-								"custom": {
-									"enabled": true,
-									"formula": "(floor((@item.level) / 2) + 2)d6"
-								},
-								"types": [
-									"fire"
-								]
-							}
-						]
-					}
-				}
-			],
-			"migrationVersion": 3
-		},
+		},	
 		{
 			"name": "Green-Flame Blade",
 			"source": "TCE",
@@ -360,6 +337,33 @@
 								},
 								"types": [
 									"acid"
+								]
+							}
+						]
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"name": "Primordial Blade",
+			"source": "PHB",
+			"activities": [
+				{
+					"type": "damage",
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "(floor((@item.level) / 2) + 3)d6"
+								},
+								"types": [
+									"acid",
+									"cold",
+									"fire",
+									"lightning",
+									"poison"
 								]
 							}
 						]
@@ -555,7 +559,7 @@
 			"migrationVersion": 3
 		},
 		{
-			"name": "Summon Draconic Spirit",
+			"name": "Summon Dragon Spirit",
 			"source": "FTD",
 			"activities": [
 				{

@@ -231,7 +231,7 @@
             ],
             "entries": [
                 "As a bonus action, you wreathe the melee weapon used in the casting of this spell with thunderous magic. Until the start of your next turn, your weapon attacks deal thunder damage in place of the weapon's normal damage type.",
-                "When you deal thunder damage with this spell, you can envelop your target in thunderous energy until the start of your next turn. If you have the {@u Extra Attack} feature or you make multiple weapon attacks on different creatures, only one of them will become enveloped. If the target willingly moves 5 feet or more before then, this thunderous energy explodes and it takes {@damage 1d6} thunder damage, then the energy dissipates."
+                "When you deal thunder damage with this spell, you can envelop your target in thunderous energy until the start of your next turn. If you have the {@u Extra Attack} feature or you make multiple weapon attacks on different creatures, only one of them will become enveloped. If the target willingly moves 5 feet or more before then, this thunderous energy explodes and it takes {@damage 1d8} thunder damage, then the energy dissipates."
             ],
             "entriesHigherLevel": [
                 {
@@ -782,7 +782,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "point",
                 "distance": {
                     "type": "feet",
                     "amount": 15
