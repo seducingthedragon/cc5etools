@@ -1164,7 +1164,7 @@
                 }
             ],
             "entries": [
-                "When you cast this spell, you grant a creature in range a portion of the power of the elementals. For the duration, the creature can speak and understand Primordial and gains additional benefits based on the element you choose when you cast the spell:",
+                "When you cast this spell, you grant a creature in range a portion of the power of the elementals. For the duration, the creature can speak and understand Primordial and gains one additional benefit below of your choice:",
                 {
                     "type": "list",
                     "style": "list-hang-notitle",
@@ -1178,7 +1178,7 @@
                         },
                         {
                             "type": "item",
-                            "name": "Coldfire",
+                            "name": "Coldflames",
                             "entries": [
                                 "The target has Resistance to Cold damage. In addition, it can use a Bonus Action to expend a Hit Point Dice, regaining a number of Hit Points equal to the numbered rolled plus its Constitution modifier. When the target takes Fire damage, it can't use this Bonus Action on its next turn."
                             ]
@@ -1352,7 +1352,7 @@
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "Using a Higher-Level Spell Slot",
+                    "name": "At Higher Levels",
                     "entries": [
                         "The damage increases by {@dice 1d6} for each spell slot level above 4. In addition, the maximum length of the line increases 10 feet for each spell slot level above 4."
                     ]

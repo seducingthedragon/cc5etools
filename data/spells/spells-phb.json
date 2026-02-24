@@ -15231,14 +15231,14 @@
                     "style": "list-hang-notitle",
                     "items": [
                         {
-                            "type": "entries",
+                            "type": "item",
                             "name": "Shadowy Aura",
                             "entries": [
                                 "For the duration of the spell, you radiate a shadowy aura. Your allies must stay within 30 feet of you to maintain the benefits of the spell. While within this aura, all affected targets can use the {@action Help} action as a bonus action in order to maintain stealthiness while engaging in other activities."
                             ]
                         },
                         {
-                            "type": "entries",
+                            "type": "item",
                             "name": "Shadowy Self",
                             "entries": [
                                 "For the duration of the spell, you summon a shadowy veil to cover all affected creatures individually, instead of emanating an aura. This allows you and your allies to move freely across various spaces without needing to stay within 30 feet of one another. If an affected target stands still for at least one minute, they are considered {@quickref Vision and Light||2||lightly obscured} while in Bright Light and {@quickref Vision and Light||2||heavily obscured} while in Dim Light when others are trying to perceive them. This does not impact the affected target's vision."
@@ -15557,7 +15557,7 @@
 				}
 			],
 			"entries": [
-				"With this spell, you attempt to bind a {@filter celestial|bestiary|type=celestial|miscellaneous=!swarm}, an {@filter elemental|bestiary|type=elemental|miscellaneous=!swarm}, a {@filter fey|bestiary|type=fey|miscellaneous=!swarm}, or a {@filter fiend|bestiary|type=fiend|miscellaneous=!swarm} to your service. The creature must be within range for the entire casting of the spell. (Typically, the creature is first summoned into the center of an inverted {@spell magic circle} in order to keep it trapped while this spell is cast.) At the completion of the casting, the target must make a Charisma saving throw. On a failed save, it is bound to serve you for the duration. If the creature was summoned or created by another spell, that spell's duration is extended to match the duration of this spell.",
+				"With this spell, you attempt to bind a {@filter celestial|bestiary|type=celestial|miscellaneous=!swarm}, an {@filter elemental|bestiary|type=elemental|miscellaneous=!swarm}, a {@filter fey|bestiary|type=fey|miscellaneous=!swarm}, or a {@filter fiend|bestiary|type=fiend|miscellaneous=!swarm} to your service. The creature must be within range for the entire casting of the spell. (Typically, the creature is first summoned into the center of an inverted {@spell Magic Circle} in order to keep it trapped while this spell is cast.) At the completion of the casting, the target must make a Charisma saving throw. On a failed save, it is bound to serve you for the duration. If the creature was summoned or created by another spell, that spell's duration is extended to match the duration of this spell.",
 				"A bound creature must follow your instructions to the best of its ability. You might command the creature to accompany you on an adventure, to guard a location, or to deliver a message. The creature obeys the letter of your instructions, but if the creature is hostile to you, it strives to twist your words to achieve its own objectives. If the creature carries out your instructions completely before the spell ends, it travels to you to report this fact if you are on the same plane of existence. If you are on a different plane of existence, it returns to the place where you bound it and remains there until the spell ends."
 			],
 			"entriesHigherLevel": [
@@ -15675,24 +15675,31 @@
 			"entries": [
                 "This spell channels vitality into plants. The casting time you use determines whether the spell has the Overgrowth or the Enrichment effect below.",
                 {
-                    "type": "entries",
-                    "name": "Overgrowth",
-                    "entries": [
-                        "Choose a point within range. All normal plants in a 100-foot-radius sphere centered on that point become thick and overgrown. A creature moving through that area must spend 4 feet of movement for every 1 foot it moves as it is extremely {@quickref difficult terrain||3}. You can exclude one or more areas of any size within the spell's area from being affected."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Enrichment",
-                    "entries": [
-                        "All plants in a half-mile radius centered on a point within range become enriched for 365 days. The plants yield twice the normal amount of food when harvested. They can benefit from only one Plant Growth per year."
-                    ]
-                }
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+                		    "type": "entries",
+                		    "name": "Overgrowth",
+                		    "entries": [
+                		        "Choose a point within range. All normal plants in a 100-foot-radius sphere centered on that point become thick and overgrown. A creature moving through that area must spend 4 feet of movement for every 1 foot it moves as it is extremely {@quickref difficult terrain||3}. You can exclude one or more areas of any size within the spell's area from being affected."
+                		    ]
+                		},
+                		{
+                		    "type": "entries",
+                		    "name": "Enrichment",
+                		    "entries": [
+                		        "All plants in a half-mile radius centered on a point within range become enriched for 365 days. The plants yield twice the normal amount of food when harvested. They can benefit from only one Plant Growth per year."
+                		    ]
+                		}
+					]
+				}
             ],
 			"miscTags": [
 				"DFT"
 			],
 			"areaTags": [
+				"R",
 				"S"
 			]
 		},
@@ -16371,18 +16378,29 @@
 			},
 			"duration": [
 				{
-					"type": "timed",
-					"duration": {
-						"type": "minute",
-						"amount": 10
-					}
+					"type": "permanent",
+					"ends": [
+						"dispel"
+					]
 				}
 			],
 			"entries": [
-                "A shimmering, multicolored plane of light forms a vertical opaque wall\u2014up to 90 feet long, 30 feet high, and 1 inch thick\u2014centered on a point you can see within range. Alternatively, you can shape the wall into a sphere up to 30 feet in diameter centered on a point you choose within range. The wall remains in place for the duration. If you position the wall so that it passes through a space occupied by a creature, the spell fails, and your action and the spell slot are wasted.",
-                "The wall sheds bright light out to a range of 100 feet and dim light for an additional 100 feet. You and creatures you designate at the time you cast the spell can pass through and remain near the wall without harm. If another creature that can see the wall moves to within 20 feet of it or starts its turn there, the creature must succeed on a Constitution saving throw or become {@condition blinded} for 1 minute.",
-                "The wall consists of seven layers, each with a different color. When a creature attempts to reach into or pass through the wall, it does so one layer at a time through all the wall's layers. As it passes or reaches through each layer, the creature must make a Dexterity saving throw or be affected by that layer's properties as described below.",
-                "The wall can be destroyed, also one layer at a time, in order from red to violet, by means specific to each layer. Once a layer is destroyed, it remains so for the duration of the spell. An {@spell Antimagic Field} has no effect on a prismatic wall.",
+                "A shimmering, multicolored permanent plane of light forms a vertical opaque wall\u2014up to 90 feet long, 30 feet high, and 1 inch thick\u2014centered on a point you can see within range. Alternatively, you can shape the wall into a sphere up to 30 feet in diameter centered on a point you choose within range. The wall remains in place for the duration. If you position the wall so that it passes through a space occupied by a creature, the spell fails, and your action and the spell slot are wasted.",
+				{
+					"type": "entries",
+					"name": "Bright Wall",
+					"entries": [
+						"The wall sheds bright light out to a range of 100 feet and dim light for an additional 100 feet. You and creatures you designate at the time you cast the spell can pass through and remain near the wall without harm. If another creature that can see the wall moves to within 20 feet of it or starts its turn there, the creature must succeed on a Constitution saving throw or become {@condition blinded} for 1 minute."
+					]
+				},
+				{
+					"types": "entries",
+					"name": "Layers",
+					"entries": [
+						"The wall consists of seven layers, each with a different color. In order for a creature to get to the other side of the wall, a creature must attempt to reach into, pass through, or destroy the wall, layer by layer. The table below describes each layers effects and destruction needs, as well as what happens when a creature fails or succeeds a Dexterity saving throw, which is necessary for a creature to reach into or pass through a specific wall layer.",
+						"An {@spell Antimagic Field} has no effect on a prismatic wall and teleportation spells and effects automatically fail, including {@spell Dimension Door}. Additionally, this wall can only be dispelled by the you. A {@spell Dispel Magic||9th level Dispel Magic} cast by someone else targeting this spell works on the Violet layer only, failing if targeting any other layer. Once a layer is destroyed, it remains so for the duration of the spell."
+					]
+				},
                 {
                     "type": "table",
                     "caption": "Prismatic Layers",
@@ -16397,31 +16415,31 @@
                     "rows": [
                         [
                             "1",
-                            "{@b Red.} {@i Failed Save:} {@damage 12d6} Fire damage. {@i Successful Save:} Half as much damage. {@i Additional Effects}: While this layer is in place, nonmagical ranged attacks can't pass through the wall. The layer can be destroyed by dealing at least 25 cold damage to it."
+                            "{@b Red.} {@i Failed Save:} {@damage 12d6} Fire damage. {@i Successful Save:} Half as much damage. {@i Additional Effects}: While this layer is in place, nonmagical ranged attacks can't pass through the wall. {@i Destroying this layer:} The layer can be destroyed by dealing at least 25 cold damage to it."
                         ],
                         [
                             "2",
-                            "{@b Orange.} {@i Failed Save:} {@damage 12d6} Acid damage. {@i Successful Save:} Half as much damage. {@i Additional Effects:} While this layer is in place, magical ranged attacks can't pass through the wall. The layer is destroyed by a strong wind (such as the one created by {@spell Gust of Wind})."
+                            "{@b Orange.} {@i Failed Save:} {@damage 12d6} Acid damage. {@i Successful Save:} Half as much damage. {@i Additional Effects:} While this layer is in place, magical ranged attacks can't pass through the wall. {@i Destroying this layer:} The layer is destroyed by a strong wind (such as the one created by {@spell Gust of Wind})."
                         ],
                         [
                             "3",
-                            "{@b Yellow.} {@i Failed Save:} {@damage 12d6} Lightning damage. {@i Successful Save:} Half as much damage. {@i Additional Effects:} The layer is destroyed if it takes at least 60 Force damage."
+                            "{@b Yellow.} {@i Failed Save:} {@damage 12d6} Lightning damage. {@i Successful Save:} Half as much damage. {@i Destroying this layer:} The layer is destroyed if it takes at least 60 Force damage."
                         ],
                         [
                             "4",
-                            "{@b Green.} {@i Failed Save:} {@damage 12d6} Poison damage. {@i Successful Save:} Half as much damage. {@i Additional Effects:} A {@spell Passwall} spell, or another spell of equal or greater level that can open a portal on a solid surface, destroys this layer."
+                            "{@b Green.} {@i Failed Save:} {@damage 12d6} Poison damage. {@i Successful Save:} Half as much damage. {@i Destroying this layer:} A {@spell Passwall} spell, or another spell of equal or greater level that can open a portal on a solid surface, causes this layer to become unstable and destroys it. You do not gain any additional benefits of that spell."
                         ],
                         [
                             "5",
-                            "{@b Blue.} {@i Failed Save:} {@damage 12d6} Cold damage. {@i Successful Save:} Half as much damage. {@i Additional Effects:} The layer is destroyed if it takes at least 25 Fire damage."
+                            "{@b Blue.} {@i Failed Save:} {@damage 12d6} Cold damage. {@i Successful Save:} Half as much damage. {@i Destroying this layer:} The layer is destroyed if it takes at least 25 Fire damage."
                         ],
                         [
                             "6",
-                            "{@b Indigo.} {@i Failed Save:} The target has the {@condition Restrained} condition and makes a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the condition ends. If it fails three times, it has the {@condition Petrified} condition until it is freed by an effect like a {@spell Restoration||level 5 Restoration spell}. The successes and failures needn't be consecutive; keep track of both until the target collects three of a kind. {@i Additional Effects:} Spells can't be cast through this layer, which is destroyed by bright light shed by the {@spell Daylight} spell."
+                            "{@b Indigo.} {@i Failed Save:} The target has the {@condition Restrained} condition and makes a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the condition ends. If it fails three times, it has the {@condition Petrified} condition until it is freed by an effect like a {@spell Restoration||level 5 Restoration spell}. The successes and failures needn't be consecutive; keep track of both until the target collects three of a kind. {@i Destroying this layer:} This layer is vulnerable to bright sunlight and is destroyed by the {@spell Daylight} spell."
                         ],
                         [
                             "7",
-                            "{@b Violet.} {@i Failed Save:} The target has the {@condition Blinded} condition and makes a Wisdom saving throw at the start of your next turn. On a successful save, the condition ends. On a failed save, the condition ends, and the creature teleports to another plane of existence (Typically, a creature that is on a plane that isn't its home plane is banished home, while other creatures are usually cast into the Astral or Ethereal planes. DM's Choice). {@i Additional Effects:} This layer is destroyed by {@spell Dispel Magic} or a similar spell of equal or higher level that can end spells and magical effects."
+                            "{@b Violet.} {@i Failed Save:} The target has the {@condition Blinded} condition and makes a Wisdom saving throw at the start of your next turn. On a successful save, the condition ends. On a failed save, the condition ends, and the creature teleports to another plane of existence (Typically, a creature that is on a plane that isn't its home plane is banished home, while other creatures are usually cast into the Astral or Ethereal planes. DM's Choice). {@i Destroying this layer:} This layer is destroyed by {@spell Dispel Magic||a level 9 Dispel Magic} or a similar spell of equal or higher level that can end spells and magical effects."
                         ]
                     ]
                 }
@@ -16450,6 +16468,7 @@
 				"SGT"
 			],
 			"areaTags": [
+				"S",
 				"W"
 			]
 		},
@@ -16560,9 +16579,27 @@
 			],
 			"entries": [
 				"You create an illusion of an object, a creature, or some other visible phenomenon within range that activates when a specific condition occurs. The illusion is imperceptible until then. It must be no larger than a 30-foot cube, and you decide when you cast the spell how the illusion behaves and what sounds it makes. This scripted performance can last up to 5 minutes.",
-				"When the condition you specify occurs, the illusion springs into existence and performs in the manner you described. Once the illusion finishes performing, it disappears and remains dormant for 10 minutes. After this time, the illusion can be activated again.",
-				"The triggering condition can be as general or as detailed as you like, though it must be based on visual or audible conditions that occur within 30 feet of the area. For example, you could create an illusion of yourself to appear and warn off others who attempt to open a trapped door, or you could set the illusion to trigger only when a creature says the correct word or phrase.",
-				"Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful Intelligence ({@skill Investigation}) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and any noise it makes sounds hollow to the creature."
+				{
+					"type": "entries",
+					"name": "Triggering the Illusion",
+					"entries": [
+						"The triggering condition can be as general or as detailed as you like, though it must be based on visual or audible conditions that occur within 30 feet of the area. For example, you could create an illusion of yourself to appear and warn off others who attempt to open a trapped door, or you could set the illusion to trigger only when a creature says the correct word or phrase."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Performed Illusion",
+					"entries": [
+						"When the condition you specify occurs, the illusion springs into existence and performs in the manner you described. Once the illusion finishes performing, it disappears and remains dormant for 10 minutes. After this time, the illusion can be activated again."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Examining the Illusion",
+					"entries": [
+						"Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful Intelligence ({@skill Investigation}) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and any noise it makes sounds hollow to the creature."
+					]
+				}
 			],
 			"abilityCheck": [
 				"intelligence"
@@ -16674,7 +16711,7 @@
 				}
 			],
 			"entries": [
-				"For the duration, the willing creature you touch has resistance to one damage type of your choice: acid, cold, fire, lightning, or thunder."
+				"For the duration, the willing creature you touch has resistance to one of the following damage types of your choice: acid, cold, fire, lightning, or thunder."
 			],
 			"damageResist": [
 				"acid",
@@ -17394,7 +17431,10 @@
             "components": {
                 "v": true,
                 "s": true,
-				"m": "special, see information on casting this spell at a higher level spell slot"
+				"m": {
+					"text": "special, see information on casting this spell at a higher level spell slot",
+					"cost": 10000
+				}
             },
             "duration": [
                 {

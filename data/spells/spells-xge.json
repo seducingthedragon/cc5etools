@@ -4260,7 +4260,7 @@
 				}
 			],
 			"entries": [
-				"Choose an area of nonmagical flame that you can see and that fits within a 5-foot cube within range. You can extinguish the fire in that area, and you create either fireworks or smoke when you do so.",
+				"Choose an area of nonmagical flame that you can see and that fits within a 5-foot cube within range. You can extinguish the fire in that area, and you create either {@b fireworks} or {@b smoke} when you do so.",
 				{
 					"type": "list",
 					"style": "list-hang-notitle",
@@ -4276,7 +4276,7 @@
 							"type": "item",
 							"name": "Smoke",
 							"entries": [
-								"Thick black smoke spreads out from the target in a 20-foot radius, moving around corners. The area of the smoke is {@quickref Vision and Light|PHB|2||heavily obscured}. The smoke persists for 1 minute or until a strong wind disperses it."
+								"Thick black smoke spreads out from the target in a 20-foot radius, moving around corners. The area of the smoke is {@quickref Vision and Light|PHB|2||heavily obscured}. The smoke persists for 1 minute or until a strong wind disperses it (such as those created by {@spell Gust of Wind})."
 							]
 						}
 					]
