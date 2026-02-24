@@ -214,6 +214,22 @@
 				}
 			],
 			"migrationVersion": 3
+		},
+		{
+			"name": "Find Steed",
+			"source": "PHB",
+			"activities": [
+				{
+					"type": "summon",
+					"profiles": [
+						{
+							"name": "Otherworldly Steed",
+							"uuid": "@creature[otherworldly steed|phb]"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3
 		},	
 		{
 			"name": "Green-Flame Blade",
@@ -834,6 +850,38 @@
 						"attacks": true,
 						"proficiency": true,
 						"saves": true
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"name": "Tempestuous Blade",
+			"source": "PHB",
+			"activities": [
+				{
+					"type": "damage",
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						},
+						"template": {
+							"units": ""
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "(floor(((@details.level + @attributes.spell.level) + 1) / 6))d8[on hit]"
+								},
+								"types": [
+									"lightning"
+								]
+							}
+						]
 					}
 				}
 			],
