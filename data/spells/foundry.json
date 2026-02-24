@@ -198,6 +198,22 @@
 				}
 			],
 			"migrationVersion": 3
+		},
+		{
+			"name": "Create Homunculus",
+			"source": "XGE",
+			"activities": [
+				{
+					"type": "summon",
+					"profiles": [
+						{
+							"name": "Homunculus",
+							"uuid": "@creature[homunculus|mm]"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3
 		},	
 		{
 			"name": "Green-Flame Blade",
