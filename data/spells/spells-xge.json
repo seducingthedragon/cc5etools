@@ -3739,7 +3739,8 @@
 				}
 			],
 			"entries": [
-				"You attempt to bind a creature within an illusory cell that only it perceives. One creature you can see within range must make an Intelligence saving throw. The target succeeds automatically if it is immune to being {@condition charmed}. On a successful save, the target takes {@damage 5d10} psychic damage, and the spell ends. On a failed save, the target takes {@damage 5d10} psychic damage, and you make the area immediately around the target's space appear dangerous to it in some way. You might cause the target to perceive itself as being surrounded by fire, floating razors, or hideous maws filled with dripping teeth. Whatever form the illusion takes, the target can't see or hear anything beyond it and is {@condition restrained} for the spell's duration. If the target is moved out of the illusion, makes a melee attack through it, or reaches any part of its body through it, the target takes {@damage 10d10} psychic damage, and the spell ends."
+				"You attempt to bind a creature within an illusory cell that only it perceives. One creature you can see within range must make an Intelligence saving throw. The target succeeds automatically if it is immune to being {@condition charmed}. On a successful save, the target takes {@damage 5d10} psychic damage, and the spell ends. On a failed save, the target takes {@damage 5d10} psychic damage, and you make the area immediately around the target's space appear dangerous to it in some way.",
+				"You might cause the target to perceive itself as being surrounded by fire, floating razors, or hideous maws filled with dripping teeth. Whatever form the illusion takes, the target can't see or hear anything beyond it and is {@condition restrained} for the spell's duration. If the target is moved out of the illusion, makes a melee attack through it, or reaches any part of its body through it, the target takes {@damage 10d10} psychic damage, and the spell ends."
 			],
 			"damageInflict": [
 				"psychic"
@@ -3804,14 +3805,14 @@
 					"style": "list-hang-notitle",
 					"items": [
 						{
-							"type": "item",
+							"type": "entries",
 							"name": "The Exterior",
 							"entries": [
 								"The fortress has four turrets with square bases, each one 20 feet on a side and 30 feet tall, with one turret on each corner. The turrets are connected to each other by stone walls that are each 80 feet long, creating an enclosed area. Each wall is 1 foot thick and is composed of panels that are 10 feet wide and 20 feet tall. Each panel is contiguous with two other panels or one other panel and a turret. You can place up to four stone doors in the fortress's outer wall."
 							]
 						},
 						{
-							"type": "item",
+							"type": "entries",
 							"name": "Interior Keep",
 							"entries": [
 								"A small keep stands inside the enclosed area. The keep has a square base that is 50 feet on each side, and it has three floors with 10-foot-high ceilings. Each of the floors can be divided into as many rooms as you like, provided each room is at least 5 feet on each side. The floors of the keep are connected by stone staircases, its walls are 6 inches thick, and interior rooms can have stone doors or open archways as you choose.",
@@ -3820,14 +3821,14 @@
 							]
 						},
 						{
-							"type": "item",
+							"type": "entries",
 							"name": "Fortress Stats",
 							"entries": [
 								"The walls, turrets, and keep are all made of stone that can be damaged. Each 10-foot-by-10-foot section of stone has AC 15 and 30 hit points per inch of thickness. It is immune to poison and psychic damage. Reducing a section of stone to 0 hit points destroys it and might cause connected sections to buckle and collapse at the DM's discretion."
 							]
 						},
 						{
-							"type": "item",
+							"type": "entries",
 							"name": "To Make Permanent",
 							"entries": [
 								"After 7 days or when you cast this spell somewhere else, the fortress harmlessly crumbles and sinks back into the ground, leaving any creatures that were inside it safely on the ground.",
