@@ -117,6 +117,26 @@
 			"migrationVersion": 3
 		},
 		{
+			"name": "Animate Dead",
+			"source": "PHB",
+			"activities": [
+				{
+					"type": "summon",
+					"profiles": [
+						{
+							"name": "Skeleton",
+							"uuid": "@creature[skeleton|mm]"
+						},
+						{
+							"name": "Zombie",
+							"uuid": "@creature[zombie|mm]"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
 			"name": "Animate Objects",
 			"source": "PHB",
 			"activities": [
@@ -232,6 +252,42 @@
 			"migrationVersion": 3
 		},
 		{
+			"name": "Conjure Giant",
+			"source": "PHB",
+			"activities": [
+				{
+					"type": "summon",
+					"profiles": [
+						{
+							"name": "Hill Giant",
+							"uuid": "@creature[hill giant|mm]"
+						},
+						{
+							"name": "Stone Giant",
+							"uuid": "@creature[stone giant|mm]"
+						},
+						{
+							"name": "Frost Giant",
+							"uuid": "@creature[frost giant|mm]"
+						},
+						{
+							"name": "Cloud Giant",
+							"uuid": "@creature[cloud giant|mm]"
+						},
+						{
+							"name": "Fire Giant",
+							"uuid": "@creature[fire giant|mm]"
+						},
+						{
+							"name": "Storm Giant",
+							"uuid": "@creature[storm giant|mm]"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
 			"name": "Create Homunculus",
 			"source": "XGE",
 			"activities": [
@@ -248,6 +304,70 @@
 			"migrationVersion": 3
 		},
 		{
+			"name": "Create Undead",
+			"source": "PHB",
+			"activities": [
+				{
+					"type": "summon",
+					"profiles": [
+						{
+							"name": "Ghoul",
+							"uuid": "@creature[ghoul|mm]"
+						},
+						{
+							"name": "Ghast",
+							"uuid": "@creature[ghast|mm]"
+						},
+						{
+							"name": "Wight",
+							"uuid": "@creature[wight|mm]"
+						},
+						{
+							"name": "Mummy",
+							"uuid": "@creature[mummy|mm]"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"name": "Danse Macabre",
+			"source": "XGE",
+			"activities": [
+				{
+					"type": "summon",
+					"profiles": [
+						{
+							"name": "Skeleton",
+							"uuid": "@creature[skeleton|mm]"
+						},
+						{
+							"name": "Zombie",
+							"uuid": "@creature[zombie|mm]"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"name": "Druid Grove",
+			"source": "XGE",
+			"activities": [
+				{
+					"type": "summon",
+					"profiles": [
+						{
+							"name": "Awakened Tree",
+							"uuid": "@creature[awakened tree|mm]"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
 			"name": "Find Steed",
 			"source": "PHB",
 			"activities": [
@@ -257,6 +377,34 @@
 						{
 							"name": "Otherworldly Steed",
 							"uuid": "@creature[otherworldly steed|phb]"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"name": "Giant Insect",
+			"source": "PHB",
+			"activities": [
+				{
+					"type": "summon",
+					"profiles": [
+						{
+							"name": "Giant Centipede",
+							"uuid": "@creature[giant centipede|mm]"
+						},
+						{
+							"name": "Giant Scorpion",
+							"uuid": "@creature[giant scorpion|mm]"
+						},
+						{
+							"name": "Giant Spider",
+							"uuid": "@creature[giant spider|mm]"
+						},
+						{
+							"name": "Giant Wasp",
+							"uuid": "@creature[giant wasp|mm]"
 						}
 					]
 				}
@@ -405,6 +553,22 @@
 							}
 						]
 					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"name": "Phantom Steed",
+			"source": "PHB",
+			"activities": [
+				{
+					"type": "summon",
+					"profiles": [
+						{
+							"name": "Phantom Steed",
+							"uuid": "@creature[riding horse|mm]"
+						}
+					]
 				}
 			],
 			"migrationVersion": 3
@@ -915,6 +1079,22 @@
 							}
 						]
 					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"name": "Tiny Servant",
+			"source": "XGE",
+			"activities": [
+				{
+					"type": "summon",
+					"profiles": [
+						{
+							"name": "Tiny Servant",
+							"uuid": "@creature[tiny servant|xge]"
+						}
+					]
 				}
 			],
 			"migrationVersion": 3
