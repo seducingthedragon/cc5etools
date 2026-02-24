@@ -689,6 +689,74 @@
 			"migrationVersion": 3
 		},
 		{
+			"name": "Summon Plant",
+			"source": "BMT",
+			"activities": [
+				{
+					"type": "summon",
+					"profiles": [
+						{
+							"name": "Blooming",
+							"uuid": "@creature[plant spirit (blooming)|bmt]"
+						},
+						{
+							"name": "Oaken",
+							"uuid": "@creature[plant spirit (oaken)|bmt]"
+						},
+						{
+							"name": "Thorny",
+							"uuid": "@creature[plant spirit (thorny)|bmt]"
+						}
+					],
+					"bonuses": {
+						"ac": "@item.level",
+						"hp": "(@item.level - 2) * 10",
+						"attackDamage": "@item.level"
+					},
+					"match": {
+						"proficiency": true,
+						"attacks": true,
+						"saves": true
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"name": "Summon Sea Serpent",
+			"source": "BMT",
+			"activities": [
+				{
+					"type": "summon",
+					"profiles": [
+						{
+							"name": "Enormous Mouth",
+							"uuid": "@creature[sea serpent spirit (enormous mouth)|bmt]"
+						},
+						{
+							"name": "Glowing Lantern",
+							"uuid": "@creature[sea serpent spirit (glowing lantern)|bmt]"
+						},
+						{
+							"name": "Scaled Wings",
+							"uuid": "@creature[sea serpent spirit (scaled wings)|bmt]"
+						}
+					],
+					"bonuses": {
+						"ac": "@item.level",
+						"hp": "(@item.level - 4) * 10",
+						"attackDamage": "@item.level"
+					},
+					"match": {
+						"proficiency": true,
+						"attacks": true,
+						"saves": true
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
 			"name": "Summon Shadowspawn",
 			"source": "TCE",
 			"activities": [

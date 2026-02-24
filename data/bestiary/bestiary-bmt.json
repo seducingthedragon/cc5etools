@@ -4911,7 +4911,7 @@
 			"name": "Plant Spirit",
 			"source": "BMT",
 			"page": 50,
-			"summonedBySpell": "Summon Plant|BMY",
+			"summonedBySpell": "Summon Plant|BMT",
 			"summonedBySpellLevel": 2,
 			"size": [
 				"M",
@@ -5524,7 +5524,7 @@
 			"name": "Sea Serpent Spirit",
 			"source": "BMT",
 			"page": 50,
-			"summonedBySpell": "Summon Sea Spirit|BMT",
+			"summonedBySpell": "Summon Sea Serpent|BMT",
 			"summonedBySpellLevel": 4,
 			"size": [
 				"L"
