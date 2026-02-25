@@ -714,6 +714,137 @@
 		},
 		{
 			"name": "Astral Elf",
+			"source": "AAG",
+			"page": 10,
+			"reprintedAs": [
+				"Astral Elf|MPMM"
+			],
+			"lineage": "VRGR",
+			"creatureTypes": [
+				"humanoid"
+			],
+			"creatureTypeTags": [
+				"elf"
+			],
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"age": {
+				"max": 750
+			},
+			"darkvision": 60,
+			"traitTags": [
+				"Improved Resting",
+				"Tool Proficiency",
+				"Weapon Proficiency"
+			],
+			"skillProficiencies": [
+				{
+					"perception": true
+				}
+			],
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"dancing lights#c"
+						]
+					},
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					}
+				},
+				{
+					"known": {
+						"1": [
+							"light#c"
+						]
+					},
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					}
+				},
+				{
+					"known": {
+						"1": [
+							"sacred flame#c"
+						]
+					},
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Creature Type",
+					"entries": [
+						"You are a Humanoid. You are also considered an elf for any prerequisite or effect that requires you to be an elf."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Astral Fire",
+					"entries": [
+						"You know one of the following cantrips of your choice: {@spell dancing lights}, {@spell light}, or {@spell sacred flame}. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you select this race)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of yourself as if it were bright light, and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fey Ancestry",
+					"entries": [
+						"You have advantage on saving throws you make to avoid or end the {@condition charmed} condition on yourself."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Keen Senses",
+					"entries": [
+						"You have proficiency in the {@skill Perception} skill."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Starlight Step",
+					"entries": [
+						"As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Astral Trance",
+					"entries": [
+						"You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you remain conscious.",
+						"Whenever you finish this trance, you gain proficiency in one skill of your choice and with one weapon or tool of your choice, selected from the {@book Player's Handbook|PHB}. You mystically acquire these proficiencies by drawing them from shared elven memory and the experiences of entities on the Astral Plane, and you retain them until you finish your next long rest."
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Astral Elf",
 			"source": "MPMM",
 			"page": 7,
 			"otherSources": [
@@ -853,145 +984,11 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Astral Elf",
-			"source": "AAG",
-			"page": 10,
-			"reprintedAs": [
-				"Astral Elf|MPMM"
-			],
-			"lineage": "VRGR",
-			"creatureTypes": [
-				"humanoid"
-			],
-			"creatureTypeTags": [
-				"elf"
-			],
-			"size": [
-				"M"
-			],
-			"speed": 30,
-			"age": {
-				"max": 750
-			},
-			"darkvision": 60,
-			"traitTags": [
-				"Improved Resting",
-				"Tool Proficiency",
-				"Weapon Proficiency"
-			],
-			"skillProficiencies": [
-				{
-					"perception": true
-				}
-			],
-			"additionalSpells": [
-				{
-					"known": {
-						"1": [
-							"dancing lights#c"
-						]
-					},
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					}
-				},
-				{
-					"known": {
-						"1": [
-							"light#c"
-						]
-					},
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					}
-				},
-				{
-					"known": {
-						"1": [
-							"sacred flame#c"
-						]
-					},
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					}
-				}
-			],
-			"entries": [
-				{
-					"type": "entries",
-					"name": "Creature Type",
-					"entries": [
-						"You are a Humanoid. You are also considered an elf for any prerequisite or effect that requires you to be an elf."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Astral Fire",
-					"entries": [
-						"You know one of the following cantrips of your choice: {@spell dancing lights}, {@spell light}, or {@spell sacred flame}. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you select this race)."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Darkvision",
-					"entries": [
-						"You can see in dim light within 60 feet of yourself as if it were bright light, and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Fey Ancestry",
-					"entries": [
-						"You have advantage on saving throws you make to avoid or end the {@condition charmed} condition on yourself."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Keen Senses",
-					"entries": [
-						"You have proficiency in the {@skill Perception} skill."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Starlight Step",
-					"entries": [
-						"As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Astral Trance",
-					"entries": [
-						"You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you remain conscious.",
-						"Whenever you finish this trance, you gain proficiency in one skill of your choice and with one weapon or tool of your choice, selected from the {@book Player's Handbook|PHB}. You mystically acquire these proficiencies by drawing them from shared elven memory and the experiences of entities on the Astral Plane, and you retain them until you finish your next long rest."
-					]
-				}
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
-		},
-		{
 			"name": "Autognome",
-			"source": "MPMM",
-			"page": 8,
-			"otherSources": [
-				{
-					"source": "AAG",
-					"page": 10
-				}
+			"source": "AAG",
+			"page": 11,
+			"reprintedAs": [
+				"Autognome|MPMM"
 			],
 			"lineage": "VRGR",
 			"creatureTypes": [
@@ -1070,13 +1067,16 @@
 			],
 			"hasFluff": true,
 			"hasFluffImages": true
-		},
+		},		
 		{
 			"name": "Autognome",
-			"source": "AAG",
-			"page": 11,
-			"reprintedAs": [
-				"Autognome|MPMM"
+			"source": "MPMM",
+			"page": 8,
+			"otherSources": [
+				{
+					"source": "AAG",
+					"page": 10
+				}
 			],
 			"lineage": "VRGR",
 			"creatureTypes": [
@@ -5800,15 +5800,12 @@
 		},
 		{
 			"name": "Hadozee",
-			"source": "MPMM",
-			"page": 21,
-			"otherSources": [
-				{
-					"source": "AAG",
-					"page": 13
-				}
+			"source": "AAG",
+			"page": 13,
+			"reprintedAs": [
+				"Hadozee|MPMM"
 			],
-			"lineage": "MPMM",
+			"lineage": "VRGR",
 			"size": [
 				"S",
 				"M"
@@ -5853,9 +5850,15 @@
 		},
 		{
 			"name": "Hadozee",
-			"source": "AAG",
-			"page": 13,
-			"lineage": "VRGR",
+			"source": "MPMM",
+			"page": 21,
+			"otherSources": [
+				{
+					"source": "AAG",
+					"page": 13
+				}
+			],
+			"lineage": "MPMM",
 			"size": [
 				"S",
 				"M"
@@ -7130,15 +7133,12 @@
 		},
 		{
 			"name": "Kender",
-			"source": "MPMM",
-			"page": 24,
-			"otherSources": [
-				{
-					"source": "DSotDQ",
-					"page": 27
-				}
+			"source": "DSotDQ",
+			"page": 27,
+			"reprintedAs": [
+				"Kender|MPMM"
 			],
-			"lineage": "MPMM",
+			"lineage": "VRGR",
 			"size": [
 				"S"
 			],
@@ -7185,9 +7185,15 @@
 		},
 		{
 			"name": "Kender",
-			"source": "DSotDQ",
-			"page": 27,
-			"lineage": "VRGR",
+			"source": "MPMM",
+			"page": 24,
+			"otherSources": [
+				{
+					"source": "DSotDQ",
+					"page": 27
+				}
+			],
+			"lineage": "MPMM",
 			"size": [
 				"S"
 			],
@@ -8001,19 +8007,21 @@
 		},
 		{
 			"name": "Leonin",
-			"source": "MPMM",
-			"page": 25,
-			"otherSources": [
-				{
-					"source": "MOT",
-					"page": 20
-				}
+			"source": "MOT",
+			"page": 20,
+			"reprintedAs": [
+				"Leonin|MPMM"
 			],
 			"size": [
 				"M"
 			],
 			"speed": 35,
-			"lineage": "VRGR",
+			"ability": [
+				{
+					"str": 1,
+					"con": 2
+				}
+			],
 			"heightAndWeight": {
 				"baseHeight": 66,
 				"heightMod": "2d10",
@@ -8109,18 +8117,19 @@
 		},
 		{
 			"name": "Leonin",
-			"source": "MOT",
-			"page": 20,
+			"source": "MPMM",
+			"page": 25,
+			"otherSources": [
+				{
+					"source": "MOT",
+					"page": 20
+				}
+			],
 			"size": [
 				"M"
 			],
 			"speed": 35,
-			"ability": [
-				{
-					"str": 1,
-					"con": 2
-				}
-			],
+			"lineage": "VRGR",
 			"heightAndWeight": {
 				"baseHeight": 66,
 				"heightMod": "2d10",
@@ -9780,13 +9789,10 @@
 		},
 		{
 			"name": "Plasmoid",
-			"source": "MPMM",
-			"page": 28,
-			"otherSources": [
-				{
-					"source": "AAG",
-					"page": 14
-				}
+			"source": "AAG",
+			"page": 14,
+			"reprintedAs": [
+				"Plasmoid|MPMM"
 			],
 			"lineage": "VRGR",
 			"creatureTypes": [
@@ -9859,8 +9865,14 @@
 		},
 		{
 			"name": "Plasmoid",
-			"source": "AAG",
-			"page": 14,
+			"source": "MPMM",
+			"page": 28,
+			"otherSources": [
+				{
+					"source": "AAG",
+					"page": 14
+				}
+			],
 			"lineage": "VRGR",
 			"creatureTypes": [
 				"ooze"
@@ -11113,13 +11125,10 @@
 		},
 		{
 			"name": "Thri-kreen",
-			"source": "MPMM",
-			"page": 33,
-			"otherSources": [
-				{
-					"source": "AAG",
-					"page": 15
-				}
+			"source": "AAG",
+			"page": 15,
+			"reprintedAs": [
+				"Thri-kreen|MPMM"
 			],
 			"lineage": "VRGR",
 			"creatureTypes": [
@@ -11192,8 +11201,14 @@
 		},
 		{
 			"name": "Thri-kreen",
-			"source": "AAG",
-			"page": 15,
+			"source": "MPMM",
+			"page": 33,
+			"otherSources": [
+				{
+					"source": "AAG",
+					"page": 15
+				}
+			],
 			"lineage": "VRGR",
 			"creatureTypes": [
 				"monstrosity"
