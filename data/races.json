@@ -716,6 +716,12 @@
 			"name": "Astral Elf",
 			"source": "MPMM",
 			"page": 7,
+			"otherSources": [
+				{
+					"source": "AAG",
+					"page": 10
+				}
+			],
 			"lineage": "VRGR",
 			"creatureTypes": [
 				"humanoid"
@@ -981,6 +987,12 @@
 			"name": "Autognome",
 			"source": "MPMM",
 			"page": 8,
+			"otherSources": [
+				{
+					"source": "AAG",
+					"page": 10
+				}
+			],
 			"lineage": "VRGR",
 			"creatureTypes": [
 				"construct"
@@ -1403,6 +1415,12 @@
 			"name": "Bugbear",
 			"source": "MPMM",
 			"page": 8,
+			"otherSources": [
+			{
+					"source": "VGM",
+					"page": 119
+				}
+			],
 			"lineage": "VRGR",
 			"creatureTypes": [
 				"humanoid"
@@ -2383,6 +2401,12 @@
 			"name": "Dhampyr",
 			"source": "MPMM",
 			"page": 12,
+			"otherSources": [
+				{
+					"source": "VRGR",
+					"page": 16
+				}
+			],
 			"lineage": "MPMM",
 			"size": [
 				"S",
@@ -5663,6 +5687,12 @@
 			"name": "Hadozee",
 			"source": "MPMM",
 			"page": 21,
+			"otherSources": [
+				{
+					"source": "AAG",
+					"page": 13
+				}
+			],
 			"lineage": "MPMM",
 			"size": [
 				"S",
@@ -6987,6 +7017,12 @@
 			"name": "Kender",
 			"source": "MPMM",
 			"page": 24,
+			"otherSources": [
+				{
+					"source": "DSotDQ",
+					"page": 27
+				}
+			],
 			"lineage": "MPMM",
 			"size": [
 				"S"
@@ -16283,6 +16319,12 @@
 			"raceName": "Halfling",
 			"raceSource": "PHB",
 			"page": 28,
+			"otherSources": [
+				{
+					"source": "SCAG",
+					"page": 110
+				}
+			],
 			"ability": [
 				{
 					"wis": 1
@@ -16354,6 +16396,12 @@
 			"raceName": "Halfling",
 			"raceSource": "PHB",
 			"page": 28,
+			"otherSources": [
+				{
+					"source": "EGW",
+					"page": 164
+				}
+			],
 			"ability": [
 				{
 					"wis": 1
