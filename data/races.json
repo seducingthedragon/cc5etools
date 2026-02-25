@@ -2380,6 +2380,80 @@
 			"hasFluffImages": true
 		},
 		{
+			"name": "Dhampyr",
+			"source": "MPMM",
+			"page": 12,
+			"lineage": "MPMM",
+			"size": [
+				"S",
+				"M"
+			],
+			"speed": {
+				"walk": 35,
+				"climb": true
+			},
+			"darkvision": 60,
+			"traitTags": [
+				"Natural Weapon"
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"You are Medium or Small. You choose the size when you gain this lineage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ancestral Legacy",
+					"entries": [
+						"If you replace a race with this lineage, you can keep the following elements of that race: any skill proficiencies you gained from it and any climbing, flying, or swimming speed you gained from it.",
+						"If you don't keep any of those elements or you choose this lineage at character creation, you gain proficiency in two skills of your choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness as shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Deathless Nature",
+					"entries": [
+						"You don't need to breathe."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spider Climb",
+					"entries": [
+						"You have a climbing speed equal to your walking speed. In addition, at 3rd level, you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Vampiric Bite",
+					"entries": [
+						"Your fanged bite is a natural weapon, which counts as a simple melee weapon with which you are proficient. You add your Constitution modifier, instead of your Strength modifier, to the attack and damage rolls when you attack with this bite. It deals {@damage 1d4} piercing damage on a hit. While you are missing half or more of your hit points, you have advantage on attack rolls you make with this bite.",
+						"When you attack with this bite and hit a creature that isn't a Construct or an Undead, you can empower yourself in one of the following ways of your choice:",
+						{
+							"type": "list",
+							"items": [
+								"You regain hit points equal to the piercing damage dealt by the bite.",
+								"You gain a bonus to the next ability check or attack roll you make; the bonus equals the piercing damage dealt by the bite"
+							]
+						},
+						"You can empower yourself with this bite a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
 			"name": "Dragonborn",
 			"source": "PHB",
 			"page": 32,
@@ -5587,6 +5661,53 @@
 		},
 		{
 			"name": "Hadozee",
+			"source": "MPMM",
+			"page": 21,
+			"lineage": "MPMM",
+			"size": [
+				"S",
+				"M"
+			],
+			"speed": {
+				"walk": 30,
+				"climb": true
+			},
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"You are Medium or Small. You choose the size when you select this race."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Dexterous Feet",
+					"entries": [
+						"As a bonus action, you can use your feet to manipulate an object, open or close a door or container, or pick up or set down a Tiny object."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Glide",
+					"entries": [
+						"When you fall at least 10 feet above the ground, you can use your reaction to extend your skin membranes to glide horizontally a number of feet equal to your walking speed, and you take 0 damage from the fall. You determine the direction of the glide."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Hadozee Dodge",
+					"entries": [
+						"The magic that runs in your veins heightens your natural defenses. When you take damage, you can use your reaction to roll a {@dice d6}. Add your proficiency bonus to the number rolled, and reduce the damage you take by an amount equal to that total (minimum of 0 damage).",
+						"You can use this trait a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest."
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Hadozee",
 			"source": "AAG",
 			"page": 13,
 			"lineage": "VRGR",
@@ -6857,6 +6978,55 @@
 						"You can speak, read, and write Common, Quori, and one other language of your choice."
 					],
 					"type": "entries"
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Kender",
+			"source": "MPMM",
+			"page": 24,
+			"lineage": "MPMM",
+			"size": [
+				"S"
+			],
+			"speed": 30,
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"insight",
+							"investigation",
+							"sleight of hand",
+							"stealth",
+							"survival"
+						]
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Fearless",
+					"entries": [
+						"You have advantage on saving throws you make to avoid or end the {@condition frightened} condition on yourself. When you fail a saving throw to avoid or end the {@condition frightened} condition on yourself, you can choose to succeed instead. Once you succeed on a saving throw in this way, you can't do so again until you finish a long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Kender Curiosity",
+					"entries": [
+						"Thanks to the mystical origin of your people, you gain proficiency with one of the following skills of your choice: {@skill Insight}, {@skill Investigation}, {@skill Sleight of Hand}, {@skill Stealth}, or {@skill Survival}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Taunt",
+					"entries": [
+						"You have an extraordinary ability to fluster creatures. As a bonus action, you can unleash a string of provoking words at a creature within 60 feet of yourself that can hear and understand you. The target must succeed on a Wisdom saving throw, or it has disadvantage on attack rolls against targets other than you until the start of your next turn. The DC equals 8 + your proficiency bonus + your Intelligence, Wisdom, or Charisma modifier (choose when you select this race).",
+						"You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					]
 				}
 			],
 			"hasFluff": true,
@@ -16109,6 +16279,29 @@
 		},
 		{
 			"name": "Ghostwise",
+			"source": "PHB",
+			"raceName": "Halfling",
+			"raceSource": "PHB",
+			"page": 28,
+			"ability": [
+				{
+					"wis": 1
+				}
+			],
+			"entries": [
+				{
+					"name": "Silent Speech",
+					"entries": [
+						"You can speak telepathically to any creature within 30 feet of you. The creature understands you only if the two of you share a language. You can speak telepathically in this way to one creature at a time."
+					],
+					"type": "entries"
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Ghostwise",
 			"source": "SCAG",
 			"raceName": "Halfling",
 			"raceSource": "PHB",
@@ -16150,6 +16343,62 @@
 						"You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you."
 					],
 					"type": "entries"
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Lotusden",
+			"source": "PHB",
+			"raceName": "Halfling",
+			"raceSource": "PHB",
+			"page": 28,
+			"ability": [
+				{
+					"wis": 1
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"3": {
+							"daily": {
+								"1": [
+									"entangle"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"spike growth"
+								]
+							}
+						}
+					},
+					"ability": "wis",
+					"known": {
+						"1": [
+							"druidcraft#c"
+						]
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Child of the Wood",
+					"entries": [
+						"You know the {@spell druidcraft} cantrip. When you reach 3rd level, you can cast the {@spell entangle} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell spike growth} spell once with this trait and regain the ability to do so when you finish a long rest. Casting these spells with this trait doesn't require material components. Wisdom is your spellcasting ability for these spells."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Timberwalk",
+					"entries": [
+						"Ability checks made to track you have disadvantage, and you can move across {@quickref difficult terrain||3} made of nonmagical plants and undergrowth without expending extra movement."
+					]
 				}
 			],
 			"hasFluff": true,
