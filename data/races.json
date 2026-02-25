@@ -727,6 +727,12 @@
 				"M"
 			],
 			"speed": 30,
+			"heightAndWeight": {
+				"baseHeight": 54,
+				"heightMod": "2d10",
+				"baseWeight": 90,
+				"weightMod": "1d4"
+			},
 			"age": {
 				"max": 750
 			},
@@ -2548,6 +2554,16 @@
 				"M"
 			],
 			"speed": 30,
+			"heightAndWeight": {
+				"baseHeight": 66,
+				"heightMod": "2d8",
+				"baseWeight": 175,
+				"weightMod": "2d6"
+			},
+			"age": {
+				"mature": 15,
+				"max": 80
+			},
 			"resist": [
 				{
 					"choose": {
@@ -2724,6 +2740,16 @@
 				"M"
 			],
 			"speed": 30,
+			"heightAndWeight": {
+				"baseHeight": 66,
+				"heightMod": "2d8",
+				"baseWeight": 175,
+				"weightMod": "2d6"
+			},
+			"age": {
+				"mature": 15,
+				"max": 80
+			},
 			"resist": [
 				{
 					"choose": {
@@ -2907,6 +2933,16 @@
 				"M"
 			],
 			"speed": 30,
+			"heightAndWeight": {
+				"baseHeight": 66,
+				"heightMod": "2d8",
+				"baseWeight": 175,
+				"weightMod": "2d6"
+			},
+			"age": {
+				"mature": 15,
+				"max": 80
+			},
 			"resist": [
 				{
 					"choose": {
@@ -3109,6 +3145,12 @@
 				"M"
 			],
 			"speed": 30,
+			"heightAndWeight": {
+				"baseHeight": 44,
+				"heightMod": "2d4",
+				"baseWeight": 115,
+				"weightMod": "2d6"
+			},
 			"age": {
 				"max": 350
 			},
@@ -3420,6 +3462,12 @@
 				"M"
 			],
 			"speed": 30,
+			"heightAndWeight": {
+				"baseHeight": 54,
+				"heightMod": "2d12",
+				"baseWeight": 90,
+				"weightMod": "1d4"
+			},
 			"age": {
 				"max": 750
 			},
@@ -5199,6 +5247,16 @@
 				"M"
 			],
 			"speed": 30,
+			"heightAndWeight": {
+				"baseHeight": 74,
+				"heightMod": "2d10",
+				"baseWeight": 200,
+				"weightMod": "2d6"
+			},
+			"age": {
+				"mature": 20,
+				"max": 100
+			},
 			"traitTags": [
 				"Powerful Build"
 			],
@@ -5211,6 +5269,13 @@
 				"cold"
 			],
 			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Goliaths have lifespans comparable to humans. They enter adulthood in their late teens and usually live less than a century."
+					]
+				},
 				{
 					"type": "entries",
 					"name": "Little Giant",
@@ -8978,11 +9043,28 @@
 				"M"
 			],
 			"speed": 30,
+			"heightAndWeight": {
+				"baseHeight": 64,
+				"heightMod": "2d8",
+				"baseWeight": 175,
+				"weightMod": "2d6"
+			},
+			"age": {
+				"mature": 12,
+				"max": 50
+			},
 			"darkvision": 60,
 			"traitTags": [
 				"Powerful Build"
 			],
 			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Orcs reach adulthood at age 12 and live up to 50 years."
+					]
+				},
 				{
 					"type": "entries",
 					"name": "Adrenaline Rush",
@@ -9620,6 +9702,12 @@
 				"walk": 30,
 				"swim": true
 			},
+			"heightAndWeight": {
+				"baseHeight": 54,
+				"heightMod": "2d8",
+				"baseWeight": 90,
+				"weightMod": "1d4"
+			},
 			"age": {
 				"max": 750
 			},
@@ -9715,6 +9803,12 @@
 				"M"
 			],
 			"speed": 30,
+			"heightAndWeight": {
+				"baseHeight": 56,
+				"heightMod": "2d8",
+				"baseWeight": 90,
+				"weightMod": "1d4"
+			},
 			"age": {
 				"max": 750
 			},
