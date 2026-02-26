@@ -904,12 +904,51 @@
 					"page": 10
 				}
 			],
-			"lineage": "VRGR",
 			"creatureTypes": [
 				"humanoid"
 			],
 			"creatureTypeTags": [
 				"elf"
+			],
+			"lineage": true,
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
 			],
 			"size": [
 				"M"
@@ -933,6 +972,12 @@
 			"skillProficiencies": [
 				{
 					"perception": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"any": 1
 				}
 			],
 			"additionalSpells": [
@@ -1028,6 +1073,13 @@
 					"entries": [
 						"You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you remain conscious.",
 						"Whenever you finish this trance, you gain proficiency in one skill of your choice and with one weapon or tool of your choice, selected from the {@book Player's Handbook|PHB}. You mystically acquire these proficiencies by drawing them from shared elven memory and the experiences of entities on the Astral Plane, and you retain them until you finish your next long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
 					]
 				}
 			],
@@ -1129,9 +1181,47 @@
 					"page": 10
 				}
 			],
-			"lineage": "VRGR",
 			"creatureTypes": [
 				"construct"
+			],
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
 			],
 			"size": [
 				"S"
@@ -1140,6 +1230,12 @@
 			"traitTags": [
 				"Improved Resting",
 				"Natural Armor"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"any": 1
+				}
 			],
 			"toolProficiencies": [
 				{
@@ -1201,6 +1297,13 @@
 					"name": "Specialized Design",
 					"entries": [
 						"You gain two tool proficiencies of your choice, selected from the {@book Player's Handbook|PHB}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
 					]
 				}
 			],
@@ -1472,12 +1575,51 @@
 					"page": 119
 				}
 			],
-			"lineage": "VRGR",
 			"creatureTypes": [
 				"humanoid"
 			],
 			"creatureTypeTags": [
 				"goblinoid"
+			],
+			"lineage": true,
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
 			],
 			"size": [
 				"M"
@@ -1492,6 +1634,12 @@
 			"darkvision": 60,
 			"traitTags": [
 				"Powerful Build"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"any": 1
+				}
 			],
 			"skillProficiencies": [
 				{
@@ -1553,6 +1701,13 @@
 					"name": "Surprise Attack",
 					"entries": [
 						"If you hit a creature with an attack roll, the creature takes an extra {@damage 2d6} damage if it hasn't taken a turn yet in the current combat."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
 					]
 				}
 			],
@@ -1909,9 +2064,47 @@
 			"name": "Centaur",
 			"source": "MPMM",
 			"page": 9,
-			"lineage": "VRGR",
 			"creatureTypes": [
 				"fey"
+			],
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
 			],
 			"size": [
 				"M"
@@ -1927,6 +2120,12 @@
 				"baseWeight": 600,
 				"weightMod": "2d12"
 			},
+			"languageProficiencies": [
+				{
+					"common": true,
+					"any": 1
+				}
+			],
 			"skillProficiencies": [
 				{
 					"choose": {
@@ -1981,6 +2180,13 @@
 					"name": "Natural Affinity",
 					"entries": [
 						"Your fey connection to nature gives you an intuitive connection to the natural world and the animals within it. You therefore have proficiency in one of the following skills of your choice: {@skill Animal Handling}, {@skill Medicine}, {@skill Nature}, or {@skill Survival}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
 					]
 				}
 			],
@@ -2094,9 +2300,47 @@
 			"name": "Changeling",
 			"source": "MPMM",
 			"page": 10,
-			"lineage": "VRGR",
 			"creatureTypes": [
 				"fey"
+			],
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
 			],
 			"size": [
 				"S",
@@ -2109,6 +2353,12 @@
 				"weightMod": "2d4"
 			},
 			"speed": 30,
+			"languageProficiencies": [
+				{
+					"common": true,
+					"any": 1
+				}
+			],
 			"skillProficiencies": [
 				{
 					"choose": {
@@ -2158,6 +2408,13 @@
 					"entries": [
 						"As an action, you change your appearance and your voice. You determine the specifics of the changes, including your coloration, hair length, and sex. You can also adjust your height between Medium and Small. You can make yourself appear as a member of another race, though none of your game statistics change. You can't duplicate the appearance of an individual you've never seen, and you must adopt a form that has the same basic arrangement of limbs that you have. Your clothing and equipment aren't changed by this trait.",
 						"You stay in the new form until you use an action to revert to your true form or until you die."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
 					]
 				}
 			],
