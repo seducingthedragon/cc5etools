@@ -259,6 +259,16 @@
 			]
 		},
 		{
+			"name": "Common Sign Language",
+			"source": "PHB",
+			"page": 123,
+			"type": "standard",
+			"typicalSpeakers": [
+				"{@filter humans|bestiary|type=humanoid}"
+			],
+			"script": "Common"
+		},
+		{
 			"name": "Common Trade Pidgin",
 			"source": "PSX",
 			"page": 6,
@@ -409,7 +419,7 @@
 					"page": 32
 				}
 			],
-			"type": "exotic",
+			"type": "standard",
 			"typicalSpeakers": [
 				"{@filter dragons|bestiary|type=dragon}",
 				"{@race dragonborn}"
