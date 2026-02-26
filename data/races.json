@@ -10755,7 +10755,45 @@
 			"name": "Orc",
 			"source": "MPMM",
 			"page": 28,
-			"lineage": "VRGR",
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
 			"size": [
 				"M"
 			],
@@ -10773,6 +10811,12 @@
 			"darkvision": 60,
 			"traitTags": [
 				"Powerful Build"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"any": 1
+				}
 			],
 			"entries": [
 				{
@@ -10809,6 +10853,13 @@
 					"name": "Relentless Endurance",
 					"entries": [
 						"When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. Once you use this trait, you can't do so again until you finish a long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
 					]
 				}
 			],
@@ -11152,9 +11203,47 @@
 					"page": 14
 				}
 			],
-			"lineage": "VRGR",
 			"creatureTypes": [
 				"ooze"
+			],
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
 			],
 			"size": [
 				"S",
@@ -11165,6 +11254,12 @@
 			"resist": [
 				"acid",
 				"poison"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"any": 1
+				}
 			],
 			"entries": [
 				{
@@ -11215,6 +11310,13 @@
 					"entries": [
 						"As an action, you can reshape your body to give yourself a head, one or two arms, one or two legs, and makeshift hands and feet, or you can revert to a limbless blob. While you have a humanlike shape, you can wear clothing and armor made for a Humanoid of your size.",
 						"As a bonus action, you can extrude a pseudopod that is up to 6 inches wide and 10 feet long or reabsorb it into your body. As part of the same bonus action, you can use this pseudopod to manipulate an object, open or close a door or container, or pick up or set down a Tiny object. The pseudopod contains no sensory organs and can't attack, activate magic items, or lift more than 10 pounds."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
 					]
 				}
 			],
@@ -11403,7 +11505,45 @@
 			"name": "Satyr",
 			"source": "MPMM",
 			"page": 29,
-			"lineage": "VRGR",
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
 			"creatureTypes": [
 				"fey"
 			],
@@ -11424,6 +11564,12 @@
 			"traitTags": [
 				"Magic Resistance",
 				"Natural Weapon"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"any": 1
+				}
 			],
 			"skillProficiencies": [
 				{
@@ -11478,6 +11624,13 @@
 					"entries": [
 						"As an embodiment of revelry, you have proficiency in the {@skill Performance} and {@skill Persuasion} skills, and you have proficiency with one {@item musical instrument|PHB} of your choice."
 					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
+					]
 				}
 			],
 			"hasFluff": true,
@@ -11487,7 +11640,46 @@
 			"name": "Sea Elf",
 			"source": "MPMM",
 			"page": 30,
-			"lineage": "VRGR",
+			"lineage": true,
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
 			"creatureTypes": [
 				"humanoid"
 			],
@@ -11516,6 +11708,12 @@
 				"Improved Resting",
 				"Tool Proficiency",
 				"Weapon Proficiency"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"any": 1
+				}
 			],
 			"skillProficiencies": [
 				{
@@ -11582,6 +11780,13 @@
 						"You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness.",
 						"Whenever you finish this trance, you can gain two proficiencies that you don't have, each one with a {@book weapon|phb|5|weapons} or a {@book tool|phb|5|tools} of your choice selected from the Player's Handbook. You mystically acquire these proficiencies by drawing them from shared elven memory, and you retain them until you finish your next long rest."
 					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
+					]
 				}
 			],
 			"hasFluff": true,
@@ -11591,7 +11796,46 @@
 			"name": "Shadar-Kai",
 			"source": "MPMM",
 			"page": 31,
-			"lineage": "VRGR",
+			"lineage": true,
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
 			"creatureTypes": [
 				"humanoid"
 			],
@@ -11616,6 +11860,12 @@
 				"Improved Resting",
 				"Tool Proficiency",
 				"Weapon Proficiency"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"any": 1
+				}
 			],
 			"skillProficiencies": [
 				{
@@ -11675,6 +11925,13 @@
 					"entries": [
 						"You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness.",
 						"Whenever you finish this trance, you can gain two proficiencies that you don't have, each one with a {@book weapon|phb|5|weapons} or a {@book tool|phb|5|tools} of your choice selected from the Player's Handbook. You mystically acquire these proficiencies by drawing them from shared elven memory, and you retain them until you finish your next long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
 					]
 				}
 			],
@@ -11767,7 +12024,46 @@
 			"name": "Shifter",
 			"source": "MPMM",
 			"page": 32,
-			"lineage": "VRGR",
+			"lineage": true,
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
 			"size": [
 				"M"
 			],
@@ -11783,6 +12079,12 @@
 			},
 			"speed": 30,
 			"darkvision": 60,
+			"languageProficiencies": [
+				{
+					"common": true,
+					"any": 1
+				}
+			],
 			"skillProficiencies": [
 				{
 					"choose": {
@@ -11849,6 +12151,13 @@
 							],
 							"style": "list-hang-notitle"
 						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
 					]
 				}
 			],
