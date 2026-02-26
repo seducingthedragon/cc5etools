@@ -12518,7 +12518,45 @@
 			"name": "Tabaxi",
 			"source": "MPMM",
 			"page": 33,
-			"lineage": "VRGR",
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
 			"size": [
 				"S",
 				"M"
@@ -12540,6 +12578,12 @@
 			"darkvision": 60,
 			"traitTags": [
 				"Natural Weapon"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"any": 1
+				}
 			],
 			"skillProficiencies": [
 				{
@@ -12595,6 +12639,13 @@
 					"name": "Feline Agility",
 					"entries": [
 						"Your reflexes and agility allow you to move with a burst of speed. When you move on your turn in combat, you can double your speed until the end of the turn. Once you use this trait, you can't use it again until you move 0 feet on one of your turns."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
 					]
 				}
 			],
@@ -12797,7 +12848,45 @@
 					"page": 15
 				}
 			],
-			"lineage": "VRGR",
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
 			"creatureTypes": [
 				"monstrosity"
 			],
@@ -12810,6 +12899,11 @@
 			"traitTags": [
 				"Improved Resting",
 				"Natural Armor"
+			],
+			"languageProficiencies": [
+				{
+					"other": true
+				}
 			],
 			"entries": [
 				{
@@ -12985,7 +13079,45 @@
 			"name": "Tortle",
 			"source": "MPMM",
 			"page": 34,
-			"lineage": "VRGR",
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
 			"size": [
 				"S",
 				"M"
@@ -12994,6 +13126,12 @@
 			"traitTags": [
 				"Natural Armor",
 				"Natural Weapon"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"any": 1
+				}
 			],
 			"skillProficiencies": [
 				{
@@ -13050,6 +13188,13 @@
 					"name": "Shell Defense",
 					"entries": [
 						"You can withdraw into your shell as an action. Until you emerge, you gain a +4 bonus to your AC, and you have advantage on Strength and Constitution saving throws. While in your shell, you are {@condition prone}, your speed is 0 and can't increase, you have disadvantage on Dexterity saving throws, you can't take reactions, and the only action you can take is a bonus action to emerge from your shell."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
 					]
 				}
 			],
@@ -13204,7 +13349,45 @@
 			"name": "Triton",
 			"source": "MPMM",
 			"page": 35,
-			"lineage": "VRGR",
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
 			"size": [
 				"M"
 			],
@@ -13228,6 +13411,12 @@
 			],
 			"resist": [
 				"cold"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"any": 1
+				}
 			],
 			"additionalSpells": [
 				{
@@ -13312,6 +13501,13 @@
 					"name": "Guardian of the Depths",
 					"entries": [
 						"Adapted to the frigid ocean depths, you have resistance to cold damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
 					]
 				}
 			],
@@ -14029,7 +14225,46 @@
 			"name": "Yuan-Ti",
 			"source": "MPMM",
 			"page": 36,
-			"lineage": "VRGR",
+			"lineage": true,
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
 			"size": [
 				"S",
 				"M"
@@ -14051,6 +14286,12 @@
 			],
 			"resist": [
 				"poison"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"any": 1
+				}
 			],
 			"additionalSpells": [
 				{
@@ -14122,6 +14363,13 @@
 					"entries": [
 						"You know the {@spell poison spray} cantrip. You can cast {@spell animal friendship} an unlimited number of times with this trait, but you can target only snakes with it. Starting at 3rd level, you can also cast {@spell suggestion} with this trait. Once you cast it, you can't do so again until you finish a long rest. You can also cast it using any spell slots you have of 2nd level or higher.",
 						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
 					]
 				}
 			],
