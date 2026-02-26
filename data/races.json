@@ -2407,7 +2407,7 @@
 					"page": 16
 				}
 			],
-			"lineage": "MPMM",
+			"lineage": "VRGR",
 			"size": [
 				"S",
 				"M"
@@ -2506,6 +2506,7 @@
 					"draconic": true
 				}
 			],
+			"darkvision": 60,
 			"resist": [
 				{
 					"choose": {
@@ -2533,9 +2534,9 @@
 				},
 				{
 					"type": "entries",
-					"name": "Size",
+					"name": "Darkvision",
 					"entries": [
-						"Dragonborn are taller and heavier than humans, standing well over 6 feet tall and averaging almost 250 pounds. Your size is Medium."
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
 					]
 				},
 				{
@@ -2608,8 +2609,7 @@
 								]
 							]
 						}
-					],
-					"type": "entries"
+					]
 				},
 				{
 					"name": "Breath Weapon",
@@ -2617,22 +2617,19 @@
 						"You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation.",
 						"When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes {@damage 2d6} damage on a failed save, and half as much damage on a successful one. The damage increases to {@damage 3d6} at 6th level, {@damage 4d6} at 11th level, and {@damage 5d6} at 16th level.",
 						"After you use your breath weapon, you can't use it again until you complete a short or long rest."
-					],
-					"type": "entries"
+					]
 				},
 				{
 					"name": "Damage Resistance",
 					"entries": [
 						"You have resistance to the damage type associated with your draconic ancestry."
-					],
-					"type": "entries"
+					]
 				},
 				{
 					"name": "Languages",
 					"entries": [
 						"You can speak, read, and write Common and Draconic. Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants."
-					],
-					"type": "entries"
+					]
 				}
 			],
 			"hasFluff": true,
@@ -2809,6 +2806,7 @@
 				"mature": 15,
 				"max": 80
 			},
+			"darkvision": 60,
 			"resist": [
 				{
 					"choose": {
@@ -2823,6 +2821,20 @@
 				}
 			],
 			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Young dragonborn grow quickly. They walk hours after hatching, attain the size and development of a 10-year-old human child by the age of 3, and reach adulthood by 15. They live to be around 80."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					]
+				},
 				{
 					"type": "entries",
 					"name": "Chromatic Ancestry",
@@ -3000,9 +3012,24 @@
 				"mature": 15,
 				"max": 80
 			},
+			"traitTags": [
+				"Uncommon Race"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"draconic": true
+				}
+			],
 			"darkvision": 60,
-			"resist": null,
 			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Young dragonborn grow quickly. They walk hours after hatching, attain the size and development of a 10-year-old human child by the age of 3, and reach adulthood by 15. They live to be around 80."
+					]
+				},
 				{
 					"type": "entries",
 					"name": "Darkvision",
@@ -3015,10 +3042,7 @@
 					"name": "Forceful Presence",
 					"entries": [
 						"You can use your understanding of creative diplomacy or intimidation to guide a conversation in your favor. When you make a Charisma ({@skill Intimidation} or {@skill Persuasion}) check, you can do so with advantage. Once you use this trait, you can't do so again until you finish a short or long rest."
-					],
-					"data": {
-						"overwrite": "Damage Resistance"
-					}
+					]
 				},
 				{
 					"name": "Draconic Ancestry",
@@ -3090,17 +3114,23 @@
 								]
 							]
 						}
-					],
-					"type": "entries",
-					"data": {
-						"overwrite": "Draconic Ancestry"
-					}
+					]
+				},
+				{
+					"name": "Breath Weapon",
+					"entries": [
+						"You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation.",
+						"When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes {@damage 2d6} damage on a failed save, and half as much damage on a successful one. The damage increases to {@damage 3d6} at 6th level, {@damage 4d6} at 11th level, and {@damage 5d6} at 16th level.",
+						"After you use your breath weapon, you can't use it again until you complete a short or long rest."
+					]
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Draconic. Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants."
+					]
 				}
 			],
-			"overwrite": {
-				"ability": true,
-				"traitTags": true
-			},
 			"hasFluff": true,
 			"hasFluffImages": true,
 			"_versions": [
@@ -3234,6 +3264,7 @@
 				"mature": 15,
 				"max": 80
 			},
+			"darkvision": 60,
 			"resist": [
 				{
 					"choose": {
@@ -3248,6 +3279,20 @@
 				}
 			],
 			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Young dragonborn grow quickly. They walk hours after hatching, attain the size and development of a 10-year-old human child by the age of 3, and reach adulthood by 15. They live to be around 80."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					]
+				},
 				{
 					"type": "entries",
 					"name": "Gem Ancestry",
@@ -3427,6 +3472,7 @@
 				"mature": 15,
 				"max": 80
 			},
+			"darkvision": 60,
 			"resist": [
 				{
 					"choose": {
@@ -3440,6 +3486,20 @@
 				}
 			],
 			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Young dragonborn grow quickly. They walk hours after hatching, attain the size and development of a 10-year-old human child by the age of 3, and reach adulthood by 15. They live to be around 80."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					]
+				},
 				{
 					"type": "entries",
 					"name": "Metallic Ancestry",
@@ -3638,9 +3698,24 @@
 				"mature": 15,
 				"max": 80
 			},
+			"traitTags": [
+				"Uncommon Race"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"draconic": true
+				}
+			],
 			"darkvision": 60,
-			"resist": null,
 			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Young dragonborn grow quickly. They walk hours after hatching, attain the size and development of a 10-year-old human child by the age of 3, and reach adulthood by 15. They live to be around 80."
+					]
+				},
 				{
 					"type": "entries",
 					"name": "Darkvision",
@@ -3728,17 +3803,29 @@
 								]
 							]
 						}
-					],
-					"type": "entries",
-					"data": {
-						"overwrite": "Draconic Ancestry"
-					}
+					]
+				},
+				{
+					"name": "Breath Weapon",
+					"entries": [
+						"You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation.",
+						"When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes {@damage 2d6} damage on a failed save, and half as much damage on a successful one. The damage increases to {@damage 3d6} at 6th level, {@damage 4d6} at 11th level, and {@damage 5d6} at 16th level.",
+						"After you use your breath weapon, you can't use it again until you complete a short or long rest."
+					]
+				},
+				{
+					"name": "Damage Resistance",
+					"entries": [
+						"You have resistance to the damage type associated with your draconic ancestry."
+					]
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Draconic. Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants."
+					]
 				}
 			],
-			"overwrite": {
-				"ability": true,
-				"traitTags": true
-			},
 			"hasFluff": true,
 			"hasFluffImages": true,
 			"_versions": [
