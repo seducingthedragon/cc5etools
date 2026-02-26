@@ -370,7 +370,46 @@
 			"name": "Aasimar",
 			"source": "MPMM",
 			"page": 7,
-			"lineage": "VRGR",
+			"lineage": true,
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
 			"size": [
 				"S",
 				"M"
@@ -383,6 +422,12 @@
 			"resist": [
 				"necrotic",
 				"radiant"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"any": 1
+				}
 			],
 			"additionalSpells": [
 				{
@@ -462,6 +507,13 @@
 							],
 							"style": "list-hang-notitle"
 						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
 					]
 				}
 			],
@@ -2523,12 +2575,51 @@
 			"name": "Deep Gnome",
 			"source": "MPMM",
 			"page": 11,
-			"lineage": "VRGR",
 			"creatureTypes": [
 				"humanoid"
 			],
 			"creatureTypeTags": [
 				"gnome"
+			],
+			"lineage": true,
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
 			],
 			"size": [
 				"S"
@@ -2540,6 +2631,12 @@
 			"darkvision": 120,
 			"traitTags": [
 				"Magic Resistance"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"any": 1
+				}
 			],
 			"additionalSpells": [
 				{
@@ -2603,6 +2700,13 @@
 					"name": "Svirfneblin Camouflage",
 					"entries": [
 						"When you make a Dexterity ({@skill Stealth}) check, you can make the check with advantage. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
 					]
 				}
 			],
@@ -2818,8 +2922,8 @@
 			},
 			"entries": [
 				{
-					"name": "Age",
 					"type": "entries",
+					"name": "Age",
 					"entries": [
 						"Young dragonborn grow quickly. They walk hours after hatching, attain the size and development of a 10-year-old human child by the age of 3, and reach adulthood by 15. They live to be around 80."
 					]
@@ -3564,12 +3668,51 @@
 			"name": "Duergar",
 			"source": "MPMM",
 			"page": 12,
-			"lineage": "VRGR",
 			"creatureTypes": [
 				"humanoid"
 			],
 			"creatureTypeTags": [
 				"dwarf"
+			],
+			"lineage": true,
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
 			],
 			"size": [
 				"M"
@@ -3587,6 +3730,12 @@
 			"darkvision": 120,
 			"resist": [
 				"poison"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"any": 1
+				}
 			],
 			"additionalSpells": [
 				{
@@ -3650,6 +3799,13 @@
 					"name": "Psionic Fortitude",
 					"entries": [
 						"You have advantage on saving throws you make to avoid or end the {@condition charmed} or {@condition stunned} condition on yourself."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
 					]
 				}
 			],
@@ -3881,12 +4037,51 @@
 			"name": "Eladrin",
 			"source": "MPMM",
 			"page": 13,
-			"lineage": "VRGR",
 			"creatureTypes": [
 				"humanoid"
 			],
 			"creatureTypeTags": [
 				"elf"
+			],
+			"lineage": true,
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
 			],
 			"size": [
 				"M"
@@ -3906,6 +4101,12 @@
 				"Improved Resting",
 				"Tool Proficiency",
 				"Weapon Proficiency"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"any": 1
+				}
 			],
 			"skillProficiencies": [
 				{
@@ -3982,6 +4183,13 @@
 					"entries": [
 						"You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness.",
 						"Whenever you finish this trance, you can change your season, and you can gain two proficiencies that you don't have, each one with a {@book weapon|phb|5|weapons} or a {@book tool|phb|5|tools} of your choice selected from the Player's Handbook. You mystically acquire these proficiencies by drawing them from shared elven memory, and you retain them until you finish your next long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
 					]
 				}
 			],
@@ -4285,9 +4493,47 @@
 			"name": "Fairy",
 			"source": "MPMM",
 			"page": 14,
-			"lineage": "VRGR",
 			"creatureTypes": [
 				"fey"
+			],
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
 			],
 			"size": [
 				"S"
@@ -4296,6 +4542,12 @@
 				"walk": 30,
 				"fly": true
 			},
+			"languageProficiencies": [
+				{
+					"common": true,
+					"any": 1
+				}
+			],
 			"additionalSpells": [
 				{
 					"innate": {
@@ -4349,6 +4601,13 @@
 					"name": "Flight",
 					"entries": [
 						"Because of your wings, you have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
 					]
 				}
 			],
@@ -4437,7 +4696,45 @@
 			"name": "Firbolg",
 			"source": "MPMM",
 			"page": 15,
-			"lineage": "VRGR",
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
 			"size": [
 				"M"
 			],
@@ -4454,6 +4751,12 @@
 				"baseWeight": 175,
 				"weightMod": "2d6"
 			},
+			"languageProficiencies": [
+				{
+					"common": true,
+					"any": 1
+				}
+			],
 			"additionalSpells": [
 				{
 					"ability": {
@@ -4506,6 +4809,13 @@
 					"name": "Speech of Beast and Leaf",
 					"entries": [
 						"You have the ability to communicate in a limited manner with Beasts, Plants, and vegetation. They can understand the meaning of your words, though you have no special ability to understand them in return. You have advantage on all Charisma checks you make to influence them."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
 					]
 				}
 			],
