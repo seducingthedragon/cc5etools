@@ -6798,7 +6798,45 @@
 					"page": 13
 				}
 			],
-			"lineage": "VRGR",
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
 			"size": [
 				"S",
 				"M"
@@ -6807,6 +6845,12 @@
 				"walk": 30,
 				"climb": true
 			},
+			"languageProficiencies": [
+				{
+					"common": true,
+					"any": 1
+				}
+			],
 			"entries": [
 				{
 					"type": "entries",
@@ -6835,6 +6879,13 @@
 					"entries": [
 						"The magic that runs in your veins heightens your natural defenses. When you take damage, you can use your reaction to roll a {@dice d6}. Add your proficiency bonus to the number rolled, and reduce the damage you take by an amount equal to that total (minimum of 0 damage).",
 						"You can use this trait a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
 					]
 				}
 			],
@@ -7119,12 +7170,56 @@
 			"name": "Harengon",
 			"source": "MPMM",
 			"page": 22,
-			"lineage": "VRGR",
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
 			"size": [
 				"S",
 				"M"
 			],
 			"speed": 30,
+			"languageProficiencies": [
+				{
+					"common": true,
+					"any": 1
+				}
+			],
 			"skillProficiencies": [
 				{
 					"perception": true
@@ -7164,6 +7259,13 @@
 					"name": "Rabbit Hop",
 					"entries": [
 						"As a bonus action, you can jump a number of feet equal to five times your proficiency bonus, without provoking opportunity attacks. You can use this trait only if your speed is greater than 0. You can use it a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
 					]
 				}
 			],
@@ -7421,12 +7523,50 @@
 			"name": "Hobgoblin",
 			"source": "MPMM",
 			"page": 23,
-			"lineage": "VRGR",
 			"creatureTypes": [
 				"humanoid"
 			],
 			"creatureTypeTags": [
 				"goblinoid"
+			],
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
 			],
 			"size": [
 				"M"
@@ -7443,6 +7583,12 @@
 			},
 			"speed": 30,
 			"darkvision": 60,
+			"languageProficiencies": [
+				{
+					"common": true,
+					"any": 1
+				}
+			],
 			"entries": [
 				{
 					"name": "Age",
@@ -7506,6 +7652,13 @@
 					"name": "Fortune from the Many",
 					"entries": [
 						"If you miss with an attack roll or fail an ability check or a saving throw, you can draw on your bonds of reciprocity to gain a bonus to the roll equal to the number of allies you can see within 30 feet of you (maximum bonus of +3). You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
 					]
 				}
 			],
@@ -8127,11 +8280,56 @@
 					"page": 27
 				}
 			],
-			"lineage": "VRGR",
+			"lineage": true,
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
 			"size": [
 				"S"
 			],
 			"speed": 30,
+			"languageProficiencies": [
+				{
+					"common": true,
+					"any": 1
+				}
+			],
 			"skillProficiencies": [
 				{
 					"choose": {
@@ -8166,6 +8364,13 @@
 					"entries": [
 						"You have an extraordinary ability to fluster creatures. As a bonus action, you can unleash a string of provoking words at a creature within 60 feet of yourself that can hear and understand you. The target must succeed on a Wisdom saving throw, or it has disadvantage on attack rolls against targets other than you until the start of your next turn. The DC equals 8 + your proficiency bonus + your Intelligence, Wisdom, or Charisma modifier (choose when you select this race).",
 						"You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
 					]
 				}
 			],
@@ -9059,11 +9264,49 @@
 					"page": 20
 				}
 			],
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
 			"size": [
 				"M"
 			],
 			"speed": 35,
-			"lineage": "VRGR",
 			"heightAndWeight": {
 				"baseHeight": 66,
 				"heightMod": "2d10",
@@ -9211,7 +9454,45 @@
 			"name": "Lizardfolk",
 			"source": "MPMM",
 			"page": 26,
-			"lineage": "VRGR",
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
 			"size": [
 				"M"
 			],
@@ -9232,6 +9513,12 @@
 			"traitTags": [
 				"Natural Armor",
 				"Natural Weapon"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"any": 1
+				}
 			],
 			"skillProficiencies": [
 				{
@@ -9296,6 +9583,13 @@
 					"name": "Nature's Intuition",
 					"entries": [
 						"Thanks to your mystical connection to nature, you gain proficiency with two of the following skills of your choice: {@skill Animal Handling}, {@skill Medicine}, {@skill Nature}, {@skill Perception}, {@skill Stealth}, or {@skill Survival}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
 					]
 				}
 			],
@@ -9917,7 +10211,45 @@
 			"name": "Minotaur",
 			"source": "MPMM",
 			"page": 27,
-			"lineage": "VRGR",
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
 			"size": [
 				"M"
 			],
@@ -9935,6 +10267,12 @@
 				"mature": 17,
 				"max": 150
 			},
+			"languageProficiencies": [
+				{
+					"common": true,
+					"any": 1
+				}
+			],
 			"entries": [
 				{
 					"name": "Age",
@@ -9969,6 +10307,13 @@
 					"name": "Labyrinthine Recall",
 					"entries": [
 						"You always know which direction is north, and you have advantage on any Wisdom ({@skill Survival}) check you make to navigate or track."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
 					]
 				}
 			],
