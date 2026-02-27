@@ -2664,6 +2664,11 @@
 							"wis",
 							"cha"
 						]
+					},
+					"known": {
+						"1": [
+							"prestidigitation#c"
+						]
 					}
 				}
 			],
@@ -2672,7 +2677,7 @@
 					"type": "entries",
 					"name": "Creature Type",
 					"entries": [
-						"You are a Humanoid. You are also considered a gnome for any prerequisite or effect that requires you to be a gnome."
+						"You are a Humanoid. You are also considered a {@race Gnome} for any prerequisite or effect that requires you to be a {@race Gnome}."
 					]
 				},
 				{
@@ -2686,7 +2691,7 @@
 					"type": "entries",
 					"name": "Gift of the Svirfneblin",
 					"entries": [
-						"Starting at 3rd level, you can cast the {@spell disguise self} spell with this trait. Starting at 5th level, you can also cast the {@spell nondetection} spell with it, without requiring a material component. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these using spell slots you have of the appropriate level.",
+						"You know the {@spell Prestidigitation} cantrip. Starting at 3rd level, you can cast the {@spell Disguise Self} spell with this trait, once per long rest without a spell slot. Starting at 5th level, you can also cast the {@spell Nondetection} spell once per long rest without a spell slot. These spells are always prepared for you and you can cast them without requiring a material component. You can also cast these using spell slots you have of the appropriate level.",
 						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
 					]
 				},
@@ -3785,6 +3790,11 @@
 							"wis",
 							"cha"
 						]
+					},
+					"known": {
+						"1": [
+							"thaumaturgy#c"
+						]
 					}
 				}
 			],
@@ -3793,7 +3803,7 @@
 					"type": "entries",
 					"name": "Creature Type",
 					"entries": [
-						"You are a Humanoid. You are also considered a {@race Dwarf} for any prerequisite or effect that requires you to be a dwarf."
+						"You are a Humanoid. You are also considered a {@race Dwarf} for any prerequisite or effect that requires you to be a {@race Dwarf}."
 					]
 				},
 				{
@@ -3835,7 +3845,7 @@
 					"type": "entries",
 					"name": "Duergar Magic",
 					"entries": [
-						"Starting at 3rd level, you can cast the {@spell Enlarge/Reduce} spell on yourself with this trait, without requiring a material component. Starting at 5th level, you can also cast the {@spell Invisibility} spell on yourself with this trait, without requiring a material component. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level.",
+						"You know the {@spell Thaumaturgy} cantrip. Starting at 3rd level, you can cast the {@spell Enlarge/Reduce} spell on yourself with this trait, once per long rest without a spell slot. Starting at 5th level, you can also cast the {@spell Invisibility} spell on yourself with this trait, once per long rest without a spell slot. These spells are always prepared for you and you can cast them without requiring a material component. You can also cast these spells using spell slots you have of the appropriate level.",
 						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
 					]
 				},
