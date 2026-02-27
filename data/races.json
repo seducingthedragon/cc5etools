@@ -5662,11 +5662,7 @@
 				"S"
 			],
 			"speed": 25,
-			"ability": [
-				{
-					"int": 2
-				}
-			],
+			"lineage": true,
 			"heightAndWeight": {
 				"baseHeight": 35,
 				"heightMod": "2d4",
@@ -17665,6 +17661,7 @@
 			],
 			"ability": [
 				{
+					"int": 2,
 					"dex": 1
 				}
 			],
@@ -17760,6 +17757,7 @@
 			],
 			"ability": [
 				{
+					"int": 2,
 					"dex": 1
 				}
 			],
@@ -17847,12 +17845,52 @@
 			"page": 37,
 			"ability": [
 				{
-					"dex": 1
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
 				}
 			],
 			"additionalSpells": [
 				{
-					"ability": "int",
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
 					"known": {
 						"1": [
 							"minor illusion#c"
@@ -17862,18 +17900,18 @@
 			],
 			"entries": [
 				{
+					"type": "entries",
 					"name": "Natural Illusionist",
 					"entries": [
-						"You know the {@spell minor illusion} cantrip. Intelligence is your spellcasting ability for it."
-					],
-					"type": "entries"
+						"You know the {@spell Minor Illusion} cantrip. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you select this race)."
+					]
 				},
 				{
+					"type": "entries",
 					"name": "Speak with Small Beasts",
 					"entries": [
 						"Through sounds and gestures, you can communicate simple ideas with Small or smaller beasts. Forest gnomes love animals and often keep squirrels, badgers, rabbits, moles, woodpeckers, and other creatures as beloved pets."
-					],
-					"type": "entries"
+					]
 				}
 			],
 			"hasFluff": true,
@@ -17887,6 +17925,7 @@
 			"page": 47,
 			"ability": [
 				{
+					"int": 2,
 					"cha": 1
 				}
 			],
@@ -17954,7 +17993,7 @@
 					"type": "entries",
 					"name": "Scribe's Insight",
 					"entries": [
-						"You know the {@spell message} cantrip. You can also cast {@spell comprehend languages} once with this trait, and you regain the ability to cast it when you finish a short or long rest. Starting at 3rd level, you can cast the {@spell magic mouth} spell with this trait, and you regain the ability to cast it when you finish a long rest. Intelligence is your spellcasting ability for these spells."
+						"You know the {@spell Message} cantrip. You can also cast {@spell Comprehend Languages} once with this trait, and you regain the ability to cast it when you finish a short or long rest. Starting at 3rd level, you can cast the {@spell Magic Mouth} spell with this trait, and you regain the ability to cast it when you finish a long rest. Intelligence is your spellcasting ability for these spells."
 					]
 				},
 				{
@@ -17976,23 +18015,23 @@
 							"rows": [
 								[
 									"1st",
-									"{@spell comprehend languages}, {@spell illusory script}"
+									"{@spell Comprehend Languages}, {@spell Illusory Script}"
 								],
 								[
 									"2nd",
-									"{@spell animal messenger}, {@spell silence}"
+									"{@spell Animal Messenger}, {@spell Silence}"
 								],
 								[
 									"3rd",
-									"{@spell sending}, {@spell tongues}"
+									"{@spell Sending}, {@spell Tongues}"
 								],
 								[
 									"4th",
-									"{@spell arcane eye}, {@spell confusion}"
+									"{@spell Arcane Eye}, {@spell Confusion}"
 								],
 								[
 									"5th",
-									"{@spell dream}"
+									"{@spell Dream}"
 								]
 							]
 						}
@@ -18009,7 +18048,41 @@
 			"srd": true,
 			"ability": [
 				{
-					"con": 1
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
 				}
 			],
 			"toolProficiencies": [
@@ -18017,42 +18090,71 @@
 					"tinker's tools": true
 				}
 			],
+			"additionalSpells": [
+				{
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": [
+							"mending#c"
+						]
+					}
+				}
+			],
 			"entries": [
 				{
+					"type": "entries",
 					"name": "Artificer's Lore",
 					"entries": [
 						"Whenever you make an Intelligence ({@skill History}) check related to magic items, alchemical objects, or technological devices, you can add twice your proficiency bonus, instead of any proficiency bonus you normally apply."
-					],
-					"type": "entries"
+					]
 				},
 				{
+					"type": "entries",
+					"name": "Tinkerer's Care",
+					"entries": [
+						"You know the {@spell Mending} cantrip. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you select this race)."
+					]
+				},
+				{
+					"type": "entries",
 					"name": "Tinker",
 					"entries": [
-						"You have proficiency with artisan's tools ({@item tinker's tools|phb}). Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up to three such devices active at a time.",
+						"You have proficiency with {@item Tinker's Tools|phb}. Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up to three such devices active at a time.",
 						"When you create a device, choose one of the following options:",
 						{
-							"type": "entries",
-							"name": "Clockwork Toy",
-							"entries": [
-								"This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in a random direction. It makes noises as appropriate to the creature it represents."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Fire Starter",
-							"entries": [
-								"The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Music Box",
-							"entries": [
-								"When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed."
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "entries",
+									"name": "Clockwork Toy",
+									"entries": [
+										"This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in a random direction. It makes noises as appropriate to the creature it represents."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Fire Starter",
+									"entries": [
+										"The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Music Box",
+									"entries": [
+										"When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed."
+									]
+								}
 							]
 						}
-					],
-					"type": "entries"
+					]
 				}
 			],
 			"hasFluff": true,
