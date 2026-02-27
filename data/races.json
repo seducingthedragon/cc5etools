@@ -11891,7 +11891,7 @@
 					"type": "entries",
 					"name": "Sea Magic",
 					"entries": [
-						"You know the {@spell Shape Water|XGE} cantrip. Starting at level 3, you can cast {@spell Torrent} once per long rest. At level 5, you can cast {@spell Blur} once per long rest. You always have these spells prepared and you can cast them without any material components. You can also cast these spells using spell slots you have of the appropriate level.",
+						"You know the {@spell Shape Water|XGE} cantrip. Starting at level 3, you can cast {@spell Torrent} once per long rest without using a spell slot. At level 5, you can cast {@spell Blur} once per long rest without using a spell slot. You always have these spells prepared and you can cast them without any material components. You can also cast these spells using spell slots you have of the appropriate level.",
 						"Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you select this race)."
 					]
 				},
