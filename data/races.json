@@ -16106,10 +16106,6 @@
 		},
 		{
 			"name": "High",
-			"alias": [
-				"Golden Elf",
-				"Silver Elf"
-			],
 			"source": "PHB",
 			"raceName": "Elf",
 			"raceSource": "PHB",
@@ -16162,6 +16158,9 @@
 				"baseWeight": 90,
 				"weightMod": "1d4"
 			},
+			"traitTags": [
+				"Skill Bonus Dice"
+			],
 			"languageProficiencies": [
 				{
 					"common": true,
@@ -16201,48 +16200,161 @@
 							"wis",
 							"cha"
 						]
-					},
-					"known": {
-						"1": {
-							"_": [
-								{
-									"choose": "level=0|class=Wizard"
-								}
-							]
-						}
 					}
 				}
 			],
 			"entries": [
 				{
-					"name": "Elf Weapon Training",
+					"type": "entries",
+					"name": "Elven Weapon Training",
 					"entries": [
 						"You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
-					],
-					"type": "entries"
+					]
 				},
 				{
-					"name": "High Elven Magic",
-					"entries": [
-						"You know one {@filter cantrip of your choice from the wizard spell list|spells|level=0|class=Wizard}. When you finish a long rest, you can replace the cantrip with a different {@filter cantrip of your choice from the wizard spell list|spells|level=0|class=Wizard}.",
-						"Starting at level 3, you can cast {@spell Detect Magic} once per long rest without using a spell slot. At level 5, you can cast {@spell Levitate} once per long rest without using a spell slot. You always have these spells prepared and you can cast them without any material components. You can also cast these spells using spell slots you have of the appropriate level.",
-						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race)."
-					],
-					"type": "entries"
-				},
-				{
+					"type": "entries",
 					"name": "Extra Language",
 					"entries": [
-						"You can speak, read, and write one extra language of your choosing."
-					],
-					"type": "entries"
+						"Due to your extensive studies or time among non-elven communities, you can speak, read, and write one additional {@filter standard language|languages|source=|type=standard} of your choosing."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "High Elven Magic",
+					"entries": [
+						"Starting at level 3, you can cast {@spell Detect Magic} once per long rest without using a spell slot. At level 5, you can cast {@spell Levitate} once per long rest without using a spell slot. You always have these spells prepared and you can cast them without any material components. You can also cast these spells using spell slots you have of the appropriate level.",
+						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "High Elven Variation",
+					"entries": [
+						"In various places, High Elves are commonly split into two separate subgroups, often referred to as \"Sun Elves\" and \"Moon Elves\", as representations of the primary elven god {@deity Corellon Larethian|nonhuman|PHB|Corellon} and his wife {@deity Sehanine Moonbow|nonhuman|PHB|Sehanine}. When you select this race, choose either Sun or Moon, to gain additional racial benefits:",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Golden Sun Elf",
+									"entries": [
+										"When you choose High Sun Elf, you gain the following benefits:",
+										{
+											"type": "list",
+											"items": [
+												"You know one {@filter cantrip of your choice from the wizard spell list|spells|level=0|class=Wizard}. You use the spellcasting ability you chose for your High Elven Magic trait.",
+												"Choose one of the following skills: {@skill Arcana}, {@skill History}, {@skill Nature}, or {@skill Religion}. When you make an Intelligence check using your chosen skill, you can roll a {@dice 1d4} and add the number rolled to the ability check."
+											]
+										}
+									]
+								},
+								{
+									"type": "item",
+									"name": "Silvery Moon Elf",
+									"entries": [
+										"When you choose High Moon Elf, you gain the following benefits:",
+										{
+											"type": "list",
+											"items": [
+												"You know one {@filter cantrip of your choice from the bard spell list|spells|level=0|class=Bard}. You use the spellcasting ability you chose for your High Elven Magic trait.",
+												"Choose one of the following skills: {@skill Deception}, {@skill Intimidation}, {@skill Performance}, or {@skill Persuasion}. When you make a Charisma check using your chosen skill, you can roll a {@dice 1d4} and add the number rolled to the ability check."
+											]
+										}
+									]
+								}
+							]
+						}
+					]
 				}
 			],
 			"overwrite": {
 				"languageProficiencies": true
 			},
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"_versions": [
+				{
+					"name": "High Sun Elf",
+					"alias": [
+						"Golden Elf"
+					],
+					"source": "PHB",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "High Elven Variation",
+							"items": {
+								"name": "Golden Sun Elf",
+								"type": "entries",
+								"entries": [
+									"As a High Sun Elf, you gain the following benefits:",
+									{
+										"type": "list",
+										"items": [
+											"You know one {@filter cantrip of your choice from the wizard spell list|spells|level=0|class=Wizard}. You use the spellcasting ability you chose for your High Elven Magic trait.",
+											"Choose one of the following skills: {@skill Arcana}, {@skill History}, {@skill Nature}, or {@skill Religion}. When you make an Intelligence check using your chosen skill, you can roll a {@dice 1d4} and add the number rolled to the ability check."
+										]
+									}
+								]
+							}
+						}
+					},
+					"additionalSpells": [
+						{
+							"known": {
+								"1": {
+									"_": [
+										{
+											"choose": "level=0|class=Wizard"
+										}
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "High Moon Elf",
+					"alias": [
+						"Silver Elf"
+					],
+					"source": "PHB",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "High Elven Variation",
+							"items": {
+								"name": "Silvery Moon Elf",
+								"type": "entries",
+								"entries": [
+									"As a High Moon Elf, you gain the following benefits:",
+									{
+										"type": "list",
+										"items": [
+											"You know one {@filter cantrip of your choice from the bard spell list|spells|level=0|class=Bard}. You use the spellcasting ability you chose for your High Elven Magic trait.",
+											"Choose one of the following skills: {@skill Deception}, {@skill Intimidation}, {@skill Performance}, or {@skill Persuasion}. When you make a Charisma check using your chosen skill, you can roll a {@dice 1d4} and add the number rolled to the ability check."
+										]
+									}
+								]
+							}
+						}
+					},
+					"additionalSpells": [
+						{
+							"known": {
+								"1": {
+									"_": [
+										{
+											"choose": "level=0|class=Bard"
+										}
+									]
+								}
+							}
+						}
+					]
+				}
+			]
 		},
 		{
 			"name": "Mark of Shadow",
