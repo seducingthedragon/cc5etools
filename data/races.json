@@ -7017,9 +7017,6 @@
 				"max": 180
 			},
 			"darkvision": 60,
-			"traitTags": [
-				"Uncommon Race"
-			],
 			"languageProficiencies": [
 				{
 					"common": true,
@@ -7037,13 +7034,6 @@
 					"name": "Age",
 					"entries": [
 						"Half-elves mature at the same rate humans do and reach adulthood around the age of 20. They live much longer than humans, however, often exceeding 180 years."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Half-elves are about the same size as humans, ranging from 5 to 6 feet tall. Your size is Medium."
 					]
 				},
 				{
@@ -11717,8 +11707,6 @@
 		{
 			"name": "Sea Elf",
 			"source": "MPMM",
-			"raceName": "Elf",
-			"raceSource": "PHB",
 			"page": 30,
 			"lineage": true,
 			"ability": [
@@ -11830,7 +11818,7 @@
 					},
 					"known": {
 						"1": [
-							"shapewater|xge#c"
+							"shape water|xge#c"
 						]
 					}
 				}
@@ -16243,7 +16231,7 @@
 										{
 											"type": "list",
 											"items": [
-												"You know one {@filter cantrip of your choice from the wizard spell list|spells|level=0|class=Wizard}. You use the spellcasting ability you chose for your High Elven Magic trait.",
+												"You know one cantrip from the {@filter wizard spell list|spells|source=|level=0|class=wizard|components & miscellaneous=}. After a long rest, you can replace it with another {@filter wizard cantrip|spells|source=|level=0|class=wizard|components & miscellaneous=}. You use the spellcasting ability you chose for your High Elven Magic trait.",
 												"Choose one of the following skills: {@skill Arcana}, {@skill History}, {@skill Nature}, or {@skill Religion}. When you make an Intelligence check using your chosen skill, you can roll a {@dice 1d4} and add the number rolled to the ability check."
 											]
 										}
@@ -16257,7 +16245,7 @@
 										{
 											"type": "list",
 											"items": [
-												"You know one {@filter cantrip of your choice from the bard spell list|spells|level=0|class=Bard}. You use the spellcasting ability you chose for your High Elven Magic trait.",
+												"You know one cantrip from the {@filter bard spell list|spells|source=|level=0|class=bard|components & miscellaneous=}. After a long rest, you can replace it with another {@filter bardic cantrip|spells|source=|level=0|class=bard|components & miscellaneous=}. You use the spellcasting ability you chose for your High Elven Magic trait.",
 												"Choose one of the following skills: {@skill Deception}, {@skill Intimidation}, {@skill Performance}, or {@skill Persuasion}. When you make a Charisma check using your chosen skill, you can roll a {@dice 1d4} and add the number rolled to the ability check."
 											]
 										}
@@ -16292,7 +16280,7 @@
 									{
 										"type": "list",
 										"items": [
-											"You know one {@filter cantrip of your choice from the wizard spell list|spells|level=0|class=Wizard}. You use the spellcasting ability you chose for your High Elven Magic trait.",
+											"You know one cantrip from the {@filter wizard spell list|spells|source=|level=0|class=wizard|components & miscellaneous=}. After a long rest, you can replace it with another {@filter wizard cantrip|spells|source=|level=0|class=wizard|components & miscellaneous=}. You use the spellcasting ability you chose for your High Elven Magic trait.",
 											"Choose one of the following skills: {@skill Arcana}, {@skill History}, {@skill Nature}, or {@skill Religion}. When you make an Intelligence check using your chosen skill, you can roll a {@dice 1d4} and add the number rolled to the ability check."
 										]
 									}
@@ -16332,7 +16320,7 @@
 									{
 										"type": "list",
 										"items": [
-											"You know one {@filter cantrip of your choice from the bard spell list|spells|level=0|class=Bard}. You use the spellcasting ability you chose for your High Elven Magic trait.",
+											"You know one cantrip from the {@filter bard spell list|spells|source=|level=0|class=bard|components & miscellaneous=}. After a long rest, you can replace it with another {@filter bardic cantrip|spells|source=|level=0|class=bard|components & miscellaneous=}. You use the spellcasting ability you chose for your High Elven Magic trait.",
 											"Choose one of the following skills: {@skill Deception}, {@skill Intimidation}, {@skill Performance}, or {@skill Persuasion}. When you make a Charisma check using your chosen skill, you can roll a {@dice 1d4} and add the number rolled to the ability check."
 										]
 									}
@@ -16786,9 +16774,13 @@
 						]
 					},
 					"known": {
-						"1": [
-							"druidcraft#c"
-						]
+						"1": {
+							"_": [
+								{
+									"choose": "level=0|class=Druid"
+								}
+							]
+						}
 					}
 				}
 			],
@@ -16797,7 +16789,8 @@
 					"type": "entries",
 					"name": "Primeval Magic",
 					"entries": [
-						"You know the {@spell Druidcraft} cantrip. Starting at level 3, you can cast {@spell Longstrider} once per long rest without using a spell slot. At level 5, you can cast {@spell Animal Messenger} once per long rest without using a spell slot. You always have these spells prepared and you can cast them without any material components. You can also cast these spells using spell slots you have of the appropriate level.",
+						"You know one cantrip of your choice from the {@filter druid spell list|spells|source=|level=0|class=druid|components & miscellaneous=}. After a long rest, you can replace it with another {@filter druidic cantrip|spells|source=|level=0|class=druid|components & miscellaneous=}.",
+						"Starting at level 3, you can cast {@spell Longstrider} once per long rest without using a spell slot. At level 5, you can cast {@spell Animal Messenger} once per long rest without using a spell slot. You always have these spells prepared and you can cast them without any material components. You can also cast these spells using spell slots you have of the appropriate level.",
 						"Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you select this race)."
 					]
 				},
@@ -18437,6 +18430,9 @@
 					}
 				}
 			],
+			"traitTags": [
+				"Uncommon Race"
+			],
 			"skillProficiencies": [
 				{
 					"any": 2
@@ -18455,11 +18451,206 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Sea Elf Ancestry",
+			"name": "Drow Ancestry",
 			"source": "MPMM",
 			"raceName": "Half-Elf",
 			"raceSource": "PHB",
-			"page": 14,
+			"page": 13,
+			"otherSources": [
+				{
+					"source": "SCAG",
+					"page": 116
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"traitTags": [
+				"Uncommon Race"
+			],
+			"skillProficiencies": [
+				{
+					"any": 2
+				}
+			],
+			"weaponProficiencies": [
+				{
+					"rapier|phb": true,
+					"shortsword|phb": true,
+					"hand crossbow|phb": true
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": {
+							"_": [
+								{
+									"choose": "level=0|class=Sorcerer"
+								}
+							]
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Skill Versatility",
+					"entries": [
+						"You gain proficiency in two skills of your choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Drow Descendant (Choose 1)",
+					"entries": [
+						"As a descendant of a Drow, you gain one of the following traits of your choice:",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Close Quarters Weapon Training",
+									"entries": [
+										"You have proficiency with {@item rapier|phb|rapiers}, {@item shortsword|phb|shortswords}, and {@item hand crossbow|phb|hand crossbows}."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Drow Cantrip",
+									"entries": [
+										"You know one cantrip of your choice from the {@filter sorcerer spell list|spells|source=|level=0|class=sorcerer|components & miscellaneous=}. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (chose when you select this race)."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Superior Darkvision",
+									"entries": [
+										"Your darkvision extends farthur than others. You gain an additional 60 feet to your darkvision, for a total of 120 feet."
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"_versions": [
+				{
+					"name": "Drow Ancestry; Close Quarters Weapon Training",
+					"source": "MPMM",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "Drow Descendant (Choose 1)",
+							"items": {
+								"name": "Drow Descendant; Close Quarters Weapon Training",
+								"type": "entries",
+								"entries": [
+									"You have proficiency with {@item rapier|phb|rapiers}, {@item shortsword|phb|shortswords}, and {@item hand crossbow|phb|hand crossbows}."
+								]
+							}
+						}
+					},
+					"additionalSpells": null
+				},
+				{
+					"name": "Drow Ancestry; Drow Cantrip",
+					"source": "MPMM",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "Drow Descendant (Choose 1)",
+							"items": {
+								"name": "Drow Descendant; Drow Cantrip",
+								"type": "entries",
+								"entries": [
+									"You know one cantrip of your choice from the {@filter sorcerer spell list|spells|source=|level=0|class=sorcerer|components & miscellaneous=}. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (chose when you select this race)."
+								]
+							}
+						}
+					}
+				},
+				{
+					"name": "Drow Ancestry; Superior Darkvision",
+					"source": "MPMM",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "Drow Descendant (Choose 1)",
+							"items": {
+								"name": "Drow Descendant; Superior Darkvision",
+								"type": "entries",
+								"entries": [
+									"Your darkvision extends farthur than others. You gain an additional 60 feet to your darkvision, for a total of 120 feet."
+								]
+							}
+						}
+					},
+					"darkvision": 120,
+					"traitTags": [
+						"Superior Darkvision"
+					],
+					"additionalSpells": null
+				}
+			]
+		},
+		{
+			"name": "Moon Elf Ancestry",
+			"source": "MPMM",
+			"raceName": "Half-Elf",
+			"raceSource": "PHB",
+			"page": 13,
+			"otherSources": [
+				{
+					"source": "SCAG",
+					"page": 116
+				}
+			],
 			"ability": [
 				{
 					"choose": {
@@ -18504,12 +18695,236 @@
 					"any": 2
 				}
 			],
+			"weaponProficiencies": [
+				{
+					"longsword|phb": true,
+					"shortsword|phb": true,
+					"shortbow|phb": true,
+					"longbow|phb": true
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": {
+							"_": [
+								{
+									"choose": "level=0|class=Bard"
+								}
+							]
+						}
+					}
+				}
+			],
 			"entries": [
 				{
 					"type": "entries",
 					"name": "Skill Versatility",
 					"entries": [
 						"You gain proficiency in two skills of your choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Moon Elf Descendant (Choose 1)",
+					"entries": [
+						"As a descendant of a Moon Elf, you gain one of the following traits of your choice:",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Elven Weapon Training",
+									"entries": [
+										"You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Moon Elf Cantrip",
+									"entries": [
+										"You know one cantrip of your choice from the {@filter bard spell list|spells|source=|level=0|class=bard|components & miscellaneous=}. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (chose when you select this race)."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Socially Adept",
+									"entries": [
+										"Choose one of the following skills: {@skill Deception}, {@skill Intimidation}, {@skill Performance}, or {@skill Persuasion}. When you make a Charisma check using your chosen skill, you can roll a {@dice 1d4} and add the number rolled to the ability check."
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"_versions": [
+				{
+					"name": "Moon Elf Ancestry; Elven Weapon Training",
+					"source": "MPMM",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "Moon Elf Descendant (Choose 1)",
+							"items": {
+								"name": "Moon Elf Descendant; Elven Weapon Training",
+								"type": "entries",
+								"entries": [
+									"You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
+								]
+							}
+						}
+					},
+					"additionalSpells": null
+				},
+				{
+					"name": "Moon Elf Ancestry; Moon Elf Cantrip",
+					"source": "MPMM",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "Moon Elf Descendant (Choose 1)",
+							"items": {
+								"name": "Moon Elf Descendant; Moon Elf Cantrip",
+								"type": "entries",
+								"entries": [
+									"You know one cantrip of your choice from the {@filter bard spell list|spells|source=|level=0|class=bard|components & miscellaneous=}. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (chose when you select this race)."
+								]
+							}
+						}
+					},
+					"weaponProficiencies": null
+				},
+				{
+					"name": "Moon Elf Ancestry; Socially Adept",
+					"source": "MPMM",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "Moon Elf Descendant (Choose 1)",
+							"items": {
+								"name": "Moon Elf Descendant; Socially Adept",
+								"type": "entries",
+								"entries": [
+									"Choose one of the following skills: {@skill Deception}, {@skill Intimidation}, {@skill Performance}, or {@skill Persuasion}. When you make a Charisma check using your chosen skill, you can roll a {@dice 1d4} and add the number rolled to the ability check."
+								]
+							}
+						}
+					},
+					"traitTags": [
+						"Skill Bonus Dice"
+					],
+					"weaponProficiencies": null,
+					"additionalSpells": null
+				}
+			]
+		},
+		{
+			"name": "Sea Elf Ancestry",
+			"source": "MPMM",
+			"raceName": "Half-Elf",
+			"raceSource": "PHB",
+			"page": 14,
+			"otherSources": [
+				{
+					"source": "SCAG",
+					"page": 116
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"traitTags": [
+				"Amphibious",
+				"Uncommon Race"
+			],
+			"skillProficiencies": [
+				{
+					"any": 2
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": [
+							"shape water|xge#c"
+						]
+					}
+				}
+			],
+			"weaponProficiencies": [
+				{
+					"spear|phb": true,
+					"trident|phb": true,
+					"light crossbow|phb": true,
+					"net|phb": true
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Skill Versatility",
+					"entries": [
+						"You gain proficiency in two skills of your choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Friend of the Sea",
+					"entries": [
+						"Using gestures and sounds, you can communicate simple ideas with any beast that has an innate swimming speed, however you are unable to understand them without additional supports. Additionally, you are amphibious, which allows you to breathe air and under water.",
+						"You also know the {@spell Shape Water|XGE} cantrip. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you select this race)."
 					]
 				},
 				{
@@ -18521,13 +18936,6 @@
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
-								{
-									"type": "item",
-									"name": "Friend of the Sea",
-									"entries": [
-										"Using gestures and sounds, you can communicate simple ideas with any beast that has an innate swimming speed. Additionally, you are amphibious, which allows you to breathe air and under water."
-									]
-								},
 								{
 									"type": "item",
 									"name": "Sea Combat Training",
@@ -18549,26 +18957,6 @@
 			],
 			"_versions": [
 				{
-					"name": "Sea Elf Ancestry; Friend of the Sea",
-					"source": "MPMM",
-					"_mod": {
-						"entries": {
-							"mode": "replaceArr",
-							"replace": "Sea Elf Descendant (Choose 1)",
-							"items": {
-								"name": "Sea Elf Descendant; Friend of the Sea",
-								"type": "entries",
-								"entries": [
-									"Using gestures and sounds, you can communicate simple ideas with any beast that has an innate swimming speed. Additionally, you are amphibious, which allows you to breathe air and under water."
-								]
-							}
-						}
-					},
-					"traitTags": [
-						"Amphibious"
-					]
-				},
-				{
 					"name": "Sea Elf Ancestry; Sea Combat Training",
 					"source": "MPMM",
 					"_mod": {
@@ -18583,15 +18971,7 @@
 								]
 							}
 						}
-					},
-					"weaponProficiencies": [
-						{
-							"spear|phb": true,
-							"trident|phb": true,
-							"light crossbow|phb": true,
-							"net|phb": true
-						}
-					]
+					}
 				},
 				{
 					"name": "Sea Elf Ancestry; Swim Speed",
@@ -18610,9 +18990,200 @@
 						}
 					},
 					"speed": {
-						"walk": 30,
 						"swim": 30
+					},
+					"weaponProficiencies": null
+				}
+			]
+		},
+		{
+			"name": "Sun Elf Ancestry",
+			"source": "MPMM",
+			"raceName": "Half-Elf",
+			"raceSource": "PHB",
+			"page": 14,
+			"otherSources": [
+				{
+					"source": "SCAG",
+					"page": 116
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
 					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"traitTags": [
+				"Uncommon Race"
+			],
+			"skillProficiencies": [
+				{
+					"any": 2
+				}
+			],
+			"weaponProficiencies": [
+				{
+					"longsword|phb": true,
+					"shortsword|phb": true,
+					"shortbow|phb": true,
+					"longbow|phb": true
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": {
+							"_": [
+								{
+									"choose": "level=0|class=Wizard"
+								}
+							]
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Skill Versatility",
+					"entries": [
+						"You gain proficiency in two skills of your choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sun Elf Descendant (Choose 1)",
+					"entries": [
+						"As a descendant of a Sun Elf, you gain one of the following traits of your choice:",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Elven Weapon Training",
+									"entries": [
+										"You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Intellectual Studies",
+									"entries": [
+										"Choose one of the following skills: {@skill Arcana}, {@skill History}, {@skill Nature}, or {@skill Religion}. When you make an Intelligence check using your chosen skill, you can roll a {@dice 1d4} and add the number rolled to the ability check."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Sun Elf Cantrip",
+									"entries": [
+										"You know one cantrip of your choice from the {@filter wizard spell list|spells|source=|level=0|class=wizard|components & miscellaneous=}. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (chose when you select this race)."
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"_versions": [
+				{
+					"name": "Sun Elf Ancestry; Elven Weapon Training",
+					"source": "MPMM",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "Sun Elf Descendant (Choose 1)",
+							"items": {
+								"name": "Sun Elf Descendant; Elven Weapon Training",
+								"type": "entries",
+								"entries": [
+									"You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
+								]
+							}
+						}
+					},
+					"additionalSpells": null
+				},
+				{
+					"name": "Sun Elf Ancestry; Intellectual Studies",
+					"source": "MPMM",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "Sun Elf Descendant (Choose 1)",
+							"items": {
+								"name": "Sun Elf Descendant; Intellectual Studies",
+								"type": "entries",
+								"entries": [
+									"Choose one of the following skills: {@skill Arcana}, {@skill History}, {@skill Nature}, or {@skill Religion}. When you make an Intelligence check using your chosen skill, you can roll a {@dice 1d4} and add the number rolled to the ability check."
+								]
+							}
+						}
+					},
+					"traitTags": [
+						"Skill Bonus Dice"
+					],
+					"weaponProficiencies": null,
+					"additionalSpells": null
+				},
+				{
+					"name": "Sun Elf Ancestry; Sun Elf Cantrips",
+					"source": "MPMM",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "Sun Elf Descendant (Choose 1)",
+							"items": {
+								"name": "Sun Elf Descendant; Sun Elf Cantrips",
+								"type": "entries",
+								"entries": [
+									"You know one cantrip of your choice from the {@filter wizard spell list|spells|source=|level=0|class=wizard|components & miscellaneous=}. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (chose when you select this race)."
+								]
+							}
+						}
+					},
+					"weaponProficiencies": null
 				}
 			]
 		},
@@ -18715,6 +19286,9 @@
 			"raceName": "Half-Elf",
 			"raceSource": "PHB",
 			"page": 116,
+			"reprintedAs": [
+				"Half-Elf (Drow Ancestry)|MPMM"
+			],
 			"ability": [
 				{
 					"cha": 2,
@@ -19078,6 +19652,10 @@
 		{
 			"name": "Variant; Moon Elf or Sun Elf Descent",
 			"source": "SCAG",
+			"reprintedAs": [
+				"Half-Elf (Moon Elf Ancestry)|MPMM",
+				"Half-Elf (Sun Elf Ancestry)|MPMM"
+			],
 			"raceName": "Half-Elf",
 			"raceSource": "PHB",
 			"page": 116,
@@ -19129,25 +19707,25 @@
 					"name": "Variant Feature (Choose 1)",
 					"entries": [
 						{
+							"type": "entries",
 							"name": "Skill Versatility",
 							"entries": [
 								"You gain proficiency in two skills of your choice."
-							],
-							"type": "entries"
+							]
 						},
 						{
+							"type": "entries",
 							"name": "Elf Weapon Training",
 							"entries": [
 								"You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
-							],
-							"type": "entries"
+							]
 						},
 						{
+							"type": "entries",
 							"name": "Cantrip",
 							"entries": [
 								"You know one cantrip of your choice from the {@filter wizard spell list|spells|class=wizard|level=0}. Intelligence is your spellcasting ability for it."
-							],
-							"type": "entries"
+							]
 						}
 					]
 				}
@@ -19369,6 +19947,12 @@
 			"raceName": "Half-Elf",
 			"raceSource": "PHB",
 			"page": 14,
+			"otherSources": [
+				{
+					"source": "SCAG",
+					"page": 116
+				}
+			],
 			"ability": [
 				{
 					"choose": {
@@ -19413,19 +19997,40 @@
 					"any": 2
 				}
 			],
+			"weaponProficiencies": [
+				{
+					"longsword|phb": true,
+					"shortsword|phb": true,
+					"shortbow|phb": true,
+					"longbow|phb": true
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": {
+							"_": [
+								{
+									"choose": "level=0|class=Druid"
+								}
+							]
+						}
+					}
+				}
+			],
 			"entries": [
 				{
 					"type": "entries",
 					"name": "Skill Versatility",
 					"entries": [
 						"You gain proficiency in two skills of your choice."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Mask of the Wild",
-					"entries": [
-						"You can attempt to {@action hide} even when you are only {@quickref Vision and Light||2||lightly obscured} by foliage, heavy rain, falling snow, mist, and other natural phenomena."
 					]
 				},
 				{
@@ -19453,10 +20058,9 @@
 								},
 								{
 									"type": "item",
-									"name": "Primeval Magic",
+									"name": "Wood Elf Cantrip",
 									"entries": [
-										"You know the {@spell Druidcraft} cantrip. Starting at level 3, you can cast {@spell Longstrider} once per long rest without using a spell slot. At level 5, you can cast {@spell Animal Messenger} once per long rest without using a spell slot. You always have these spells prepared and you can cast them without any material components. You can also cast these spells using spell slots you have of the appropriate level.",
-										"Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you select this race)."
+										"You know one cantrip of your choice from the {@filter druid spell list|spells|source=|level=0|class=druid|components & miscellaneous=}. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (chose when you select this race)."
 									]
 								}
 							]
@@ -19481,14 +20085,7 @@
 							}
 						}
 					},
-					"weaponProficiencies": [
-						{
-							"longsword|phb": true,
-							"shortsword|phb": true,
-							"shortbow|phb": true,
-							"longbow|phb": true
-						}
-					]
+					"additionalSpells": null
 				},
 				{
 					"name": "Wood Elf Ancestry; Fleet of Foot",
@@ -19506,57 +20103,27 @@
 							}
 						}
 					},
-					"speed": 35
+					"speed": 35,
+					"additionalSpells": null,
+					"weaponProficiencies": null
 				},
 				{
-					"name": "Wood Elf Ancestry; Primeval Magic",
+					"name": "Wood Elf Ancestry; Wood Elf Cantrip",
 					"source": "MPMM",
 					"_mod": {
 						"entries": {
 							"mode": "replaceArr",
 							"replace": "Wood Elf Descendant (Choose 1)",
 							"items": {
-								"name": "Wood Elf Descendant; Primeval Magic",
+								"name": "Wood Elf Descendant; Wood Elf Cantrip",
 								"type": "entries",
 								"entries": [
-									"You know the {@spell Druidcraft} cantrip. Starting at level 3, you can cast {@spell Longstrider} once per long rest without using a spell slot. At level 5, you can cast {@spell Animal Messenger} once per long rest without using a spell slot. You always have these spells prepared and you can cast them without any material components. You can also cast these spells using spell slots you have of the appropriate level.",
-									"Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you select this race)."
+									"You know one cantrip of your choice from the {@filter druid spell list|spells|source=|level=0|class=druid|components & miscellaneous=}. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (chose when you select this race)."
 								]
 							}
 						}
 					},
-					"additionalSpells": [
-						{
-							"innate": {
-								"3": {
-									"daily": {
-										"1": [
-											"longstrider"
-										]
-									}
-								},
-								"5": {
-									"daily": {
-										"1": [
-											"animal messenger"
-										]
-									}
-								}
-							},
-							"ability": {
-								"choose": [
-									"int",
-									"wis",
-									"cha"
-								]
-							},
-							"known": {
-								"1": [
-									"druidcraft#c"
-								]
-							}
-						}
-					]
+					"weaponProficiencies": null
 				}
 			]
 		},
