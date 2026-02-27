@@ -16691,7 +16691,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Elf Weapon Training",
+					"name": "Elven Weapon Training",
 					"entries": [
 						"You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
 					]
@@ -19327,6 +19327,13 @@
 							"items": [
 								{
 									"type": "item",
+									"name": "Elven Weapon Training",
+									"entries": [
+										"You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
+									]
+								},
+								{
+									"type": "item",
 									"name": "Fleet of Foot",
 									"entries": [
 										"Your base walking speed increases to 35 feet."
@@ -19339,13 +19346,6 @@
 										"You know the {@spell Druidcraft} cantrip. Starting at level 3, you can cast {@spell Longstrider} once per long rest without using a spell slot. At level 5, you can cast {@spell Animal Messenger} once per long rest without using a spell slot. You always have these spells prepared and you can cast them without any material components. You can also cast these spells using spell slots you have of the appropriate level.",
 										"Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you select this race)."
 									]
-								},
-								{
-									"type": "item",
-									"name": "Wooded Combat Training",
-									"entries": [
-										"You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
-									]
 								}
 							]
 						}
@@ -19353,6 +19353,31 @@
 				}
 			],
 			"_versions": [
+				{
+					"name": "Wood Elf Ancestry; Elven Weapon Training",
+					"source": "MPMM",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "Wood Elf Descendant (Choose 1)",
+							"items": {
+								"name": "Wood Elf Descendant; Elven Weapon Training",
+								"type": "entries",
+								"entries": [
+									"You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
+								]
+							}
+						}
+					},
+					"weaponProficiencies": [
+						{
+							"longsword|phb": true,
+							"shortsword|phb": true,
+							"shortbow|phb": true,
+							"longbow|phb": true
+						}
+					]
+				},
 				{
 					"name": "Wood Elf Ancestry; Fleet of Foot",
 					"source": "MPMM",
@@ -19418,31 +19443,6 @@
 									"druidcraft#c"
 								]
 							}
-						}
-					]
-				},
-				{
-					"name": "Wood Elf Ancestry; Wooded Combat Training",
-					"source": "MPMM",
-					"_mod": {
-						"entries": {
-							"mode": "replaceArr",
-							"replace": "Wood Elf Descendant (Choose 1)",
-							"items": {
-								"name": "Wood Elf Descendant; Wooded Combat Training",
-								"type": "entries",
-								"entries": [
-									"You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
-								]
-							}
-						}
-					},
-					"weaponProficiencies": [
-						{
-							"longsword|phb": true,
-							"shortsword|phb": true,
-							"shortbow|phb": true,
-							"longbow|phb": true
 						}
 					]
 				}
