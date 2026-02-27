@@ -7162,12 +7162,8 @@
 			"size": [
 				"S"
 			],
-			"speed": 25,
-			"ability": [
-				{
-					"dex": 2
-				}
-			],
+			"speed": 30,
+			"lineage": true,
 			"heightAndWeight": {
 				"baseHeight": 31,
 				"heightMod": "2d4",
@@ -7193,13 +7189,6 @@
 					"type": "entries",
 					"entries": [
 						"A halfling reaches adulthood at the age of 20 and generally lives into the middle of his or her second century."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Halflings average about 3 feet tall and weigh about 40 pounds. Your size is Small."
 					]
 				},
 				{
@@ -8348,6 +8337,9 @@
 					"page": 27
 				}
 			],
+			"creatureTypeTags": [
+				"halfling"
+			],
 			"lineage": true,
 			"ability": [
 				{
@@ -8412,6 +8404,13 @@
 				}
 			],
 			"entries": [
+				{
+					"type": "entries",
+					"name": "Creature Type",
+					"entries": [
+						"You are a Humanoid. You are also considered a {@race Halfling} for any prerequisite or effect that requires you to be a {@race Halfling}."
+					]
+				},
 				{
 					"type": "entries",
 					"name": "Fearless",
@@ -18832,7 +18831,7 @@
 			"source": "MPMM",
 			"raceName": "Half-Elf",
 			"raceSource": "PHB",
-			"page": 14,
+			"page": 13,
 			"otherSources": [
 				{
 					"source": "SCAG",
@@ -19001,7 +19000,7 @@
 			"source": "MPMM",
 			"raceName": "Half-Elf",
 			"raceSource": "PHB",
-			"page": 14,
+			"page": 13,
 			"otherSources": [
 				{
 					"source": "SCAG",
@@ -19946,7 +19945,7 @@
 			"source": "MPMM",
 			"raceName": "Half-Elf",
 			"raceSource": "PHB",
-			"page": 14,
+			"page": 13,
 			"otherSources": [
 				{
 					"source": "SCAG",
@@ -20328,10 +20327,10 @@
 		},
 		{
 			"name": "Ghostwise",
-			"source": "PHB",
+			"source": "MPMM",
 			"raceName": "Halfling",
 			"raceSource": "PHB",
-			"page": 28,
+			"page": 13,
 			"otherSources": [
 				{
 					"source": "SCAG",
@@ -20340,7 +20339,41 @@
 			],
 			"ability": [
 				{
-					"wis": 1
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
 				}
 			],
 			"entries": [
@@ -20361,8 +20394,12 @@
 			"raceName": "Halfling",
 			"raceSource": "PHB",
 			"page": 110,
+			"reprintedAs": [
+				"Halfling (Ghostwise)|MPMM"
+			],
 			"ability": [
 				{
+					"dex": 2,
 					"wis": 1
 				}
 			],
@@ -20388,7 +20425,41 @@
 			"basicRules": true,
 			"ability": [
 				{
-					"cha": 1
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
 				}
 			],
 			"entries": [
@@ -20405,10 +20476,10 @@
 		},
 		{
 			"name": "Lotusden",
-			"source": "PHB",
+			"source": "MPMM",
 			"raceName": "Halfling",
 			"raceSource": "PHB",
-			"page": 28,
+			"page": 13,
 			"otherSources": [
 				{
 					"source": "EGW",
@@ -20417,7 +20488,41 @@
 			],
 			"ability": [
 				{
-					"wis": 1
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
 				}
 			],
 			"additionalSpells": [
@@ -20471,8 +20576,12 @@
 			"raceName": "Halfling",
 			"raceSource": "PHB",
 			"page": 164,
+			"reprintedAs": [
+				"Halfling (Lotusden)|MPMM"
+			],
 			"ability": [
 				{
+					"dex": 2,
 					"wis": 1
 				}
 			],
@@ -20507,7 +20616,7 @@
 					"type": "entries",
 					"name": "Child of the Wood",
 					"entries": [
-						"You know the {@spell druidcraft} cantrip. When you reach 3rd level, you can cast the {@spell entangle} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell spike growth} spell once with this trait and regain the ability to do so when you finish a long rest. Casting these spells with this trait doesn't require material components. Wisdom is your spellcasting ability for these spells."
+						"You know the {@spell Druidcraft} cantrip. When you reach 3rd level, you can cast the {@spell Entangle} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell Spike Growth} spell once with this trait and regain the ability to do so when you finish a long rest. Casting these spells with this trait doesn't require material components. Wisdom is your spellcasting ability for these spells."
 					]
 				},
 				{
@@ -20529,6 +20638,7 @@
 			"page": 43,
 			"ability": [
 				{
+					"dex": 2,
 					"wis": 1
 				}
 			],
@@ -20546,7 +20656,7 @@
 						"3": {
 							"daily": {
 								"1": [
-									"lesser restoration"
+									"restoration"
 								]
 							}
 						}
@@ -20557,7 +20667,7 @@
 							"healing word"
 						],
 						"s2": [
-							"lesser restoration",
+							"restoration",
 							"prayer of healing"
 						],
 						"s3": [
@@ -20569,7 +20679,7 @@
 							"aura of life"
 						],
 						"s5": [
-							"greater restoration"
+							"mass cure wounds"
 						]
 					},
 					"ability": "wis"
@@ -20587,7 +20697,7 @@
 					"type": "entries",
 					"name": "Healing Touch",
 					"entries": [
-						"You can cast the {@spell cure wounds} spell with this trait. Starting at 3rd level, you can also cast {@spell lesser restoration} with it. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a long rest. Wisdom is your spellcasting ability for these spells."
+						"You can cast the {@spell Cure Wounds} spell with this trait. Starting at 3rd level, you can also cast {@spell Restoration} with it. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a long rest. Wisdom is your spellcasting ability for these spells."
 					]
 				},
 				{
@@ -20609,23 +20719,23 @@
 							"rows": [
 								[
 									"1st",
-									"{@spell cure wounds}, {@spell healing word}"
+									"{@spell Cure Wounds}, {@spell Healing Word}"
 								],
 								[
 									"2nd",
-									"{@spell lesser restoration}, {@spell prayer of healing}"
+									"{@spell Restoration}, {@spell Prayer of Healing}"
 								],
 								[
 									"3rd",
-									"{@spell aura of vitality}, {@spell mass healing word}"
+									"{@spell Aura of Vitality}, {@spell Mass Healing Word}"
 								],
 								[
 									"4th",
-									"{@spell aura of purity}, {@spell aura of life}"
+									"{@spell Aura of Purity}, {@spell Aura of Life}"
 								],
 								[
 									"5th",
-									"{@spell greater restoration}"
+									"{@spell Mass Cure Wounds}"
 								]
 							]
 						}
@@ -20641,6 +20751,7 @@
 			"page": 44,
 			"ability": [
 				{
+					"dex": 2,
 					"cha": 1
 				}
 			],
@@ -20694,7 +20805,7 @@
 					"type": "entries",
 					"name": "Innkeeper's Magic",
 					"entries": [
-						"You know the {@spell prestidigitation} cantrip. You can also cast the {@spell purify food and drink} and {@spell unseen servant} spells with this trait. Once you cast either spell with this trait, you can't cast that spell with it again until you finish long rest. Charisma is your spellcasting ability for these spells."
+						"You know the {@spell Prestidigitation} cantrip. You can also cast the {@spell Purify Food and Drink} and {@spell Unseen Servant} spells with this trait. Once you cast either spell with this trait, you can't cast that spell with it again until you finish long rest. Charisma is your spellcasting ability for these spells."
 					]
 				},
 				{
@@ -20716,23 +20827,23 @@
 							"rows": [
 								[
 									"1st",
-									"{@spell goodberry}, {@spell sleep}"
+									"{@spell Goodberry}, {@spell Sleep}"
 								],
 								[
 									"2nd",
-									"{@spell aid}, {@spell calm emotions}"
+									"{@spell Aid}, {@spell Calm Emotions}"
 								],
 								[
 									"3rd",
-									"{@spell create food and water}, {@spell Leomund's tiny hut}"
+									"{@spell Create Food and Water}, {@spell Leomund's Tiny Hut}"
 								],
 								[
 									"4th",
-									"{@spell aura of purity}, {@spell Mordenkainen's private sanctum}"
+									"{@spell Aura of Purity}, {@spell Mordenkainen's Private Sanctum}"
 								],
 								[
 									"5th",
-									"{@spell hallow}"
+									"{@spell Hallow}"
 								]
 							]
 						}
@@ -20749,7 +20860,41 @@
 			"basicRules": true,
 			"ability": [
 				{
-					"con": 1
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
 				}
 			],
 			"resist": [
