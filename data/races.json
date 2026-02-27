@@ -16007,7 +16007,7 @@
 				{
 					"name": "Drow Magic",
 					"entries": [
-						"You know the {@spell Dancing Lights} cantrip. When you reach 3rd level, you can cast the {@spell Faerie Fire} spell once per long rest. When you reach 5th level, you can also cast the {@spell Darkness} spell once per long. You always have these spells prepared and you can cast them without any material components.",
+						"You know the {@spell Dancing Lights} cantrip. When you reach 3rd level, you can cast the {@spell Faerie Fire} spell once per long rest without using a spell slot. When you reach 5th level, you can also cast the {@spell Darkness} spell once per long rest without using a spell slot. You always have these spells prepared and you can cast them without any material components. You can also cast these spells using spell slots you have of the appropriate level.",
 						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race)."
 					],
 					"type": "entries"
@@ -16255,7 +16255,7 @@
 					"name": "High Elven Magic",
 					"entries": [
 						"You know one {@filter cantrip of your choice from the wizard spell list|spells|level=0|class=Wizard}. When you finish a long rest, you can replace the cantrip with a different {@filter cantrip of your choice from the wizard spell list|spells|level=0|class=Wizard}.",
-						"Starting at level 3, you can cast {@spell Detect Magic} once per long rest. At level 5, you can cast {@spell Levitate} once per long rest. You always have these spells prepared and you can cast them without any material components.",
+						"Starting at level 3, you can cast {@spell Detect Magic} once per long rest without using a spell slot. At level 5, you can cast {@spell Levitate} once per long rest without using a spell slot. You always have these spells prepared and you can cast them without any material components. You can also cast these spells using spell slots you have of the appropriate level.",
 						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race)."
 					],
 					"type": "entries"
@@ -16715,7 +16715,7 @@
 					"type": "entries",
 					"name": "Primeval Magic",
 					"entries": [
-						"You know the {@spell Druidcraft} cantrip. Starting at level 3, you can cast {@spell Longstrider} once per long rest. At level 5, you can cast {@spell Animal Messenger} once per long rest. You always have these spells prepared and you can cast them without any material components.  You can also cast these spells using spell slots you have of the appropriate level.",
+						"You know the {@spell Druidcraft} cantrip. Starting at level 3, you can cast {@spell Longstrider} once per long rest without using a spell slot. At level 5, you can cast {@spell Animal Messenger} once per long rest without using a spell slot. You always have these spells prepared and you can cast them without any material components. You can also cast these spells using spell slots you have of the appropriate level.",
 						"Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you select this race)."
 					]
 				},
@@ -16737,7 +16737,7 @@
 					"type": "entries",
 					"name": "Mask of the Wild",
 					"entries": [
-						"You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+						"You can attempt to {@action hide} even when you are only {@quickref Vision and Light||2||lightly obscured} by foliage, heavy rain, falling snow, mist, and other natural phenomena."
 					]
 				}
 			],
