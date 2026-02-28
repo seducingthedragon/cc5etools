@@ -6515,6 +6515,12 @@
                 }
             },
             "race": {
+                "PHB": {
+                    "Elf (Wood)": {
+                        "baseName": "Elf",
+                        "baseSource": "PHB"
+                    }
+                },
                 "PSK": {
                     "Elf (Kaladesh; Vahadar)": {
                         "baseName": "Elf (Kaladesh)",
@@ -6523,6 +6529,10 @@
                 },
                 "MPMM": {
                     "Fairy": true,
+                    "Half-Elf (Wood Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Halfling (Lotusden)": {
                         "baseName": "Halfling",
                         "baseSource": "PHB"
@@ -9126,11 +9136,19 @@
                     "Elf (High)": {
                         "baseName": "Elf",
                         "baseSource": "PHB"
+                    },
+                    "Elf (Wood)": {
+                        "baseName": "Elf",
+                        "baseSource": "PHB"
                     }
                 },
                 "MPMM": {
                     "Eladrin": true,
                     "Half-Elf (Moon Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
+                    "Half-Elf (Wood Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     }
@@ -12271,6 +12289,10 @@
                         "baseName": "Elf",
                         "baseSource": "PHB"
                     },
+                    "Elf (Wood)": {
+                        "baseName": "Elf",
+                        "baseSource": "PHB"
+                    },
                     "Gnome (Rock)": {
                         "baseName": "Gnome",
                         "baseSource": "PHB"
@@ -12296,6 +12318,10 @@
                 },
                 "MPMM": {
                     "Half-Elf (Moon Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
+                    "Half-Elf (Wood Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
@@ -13760,6 +13786,10 @@
                     "Elf (High)": {
                         "baseName": "Elf",
                         "baseSource": "PHB"
+                    },
+                    "Elf (Wood)": {
+                        "baseName": "Elf",
+                        "baseSource": "PHB"
                     }
                 },
                 "PSK": {
@@ -13775,6 +13805,10 @@
                     }
                 },
                 "MPMM": {
+                    "Half-Elf (Wood Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Kobold": true,
                     "Yuan-Ti": true
                 },
@@ -14275,6 +14309,12 @@
                 }
             },
             "race": {
+                "PHB": {
+                    "Elf (Wood)": {
+                        "baseName": "Elf",
+                        "baseSource": "PHB"
+                    }
+                },
                 "PSK": {
                     "Elf (Kaladesh; Vahadar)": {
                         "baseName": "Elf (Kaladesh)",
@@ -14289,6 +14329,10 @@
                 },
                 "MPMM": {
                     "Eladrin": true,
+                    "Half-Elf (Wood Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Genasi (Fire)": {
                         "baseName": "Genasi",
                         "baseSource": "MPMM"
@@ -15099,10 +15143,18 @@
                     "Elf (High)": {
                         "baseName": "Elf",
                         "baseSource": "PHB"
+                    },
+                    "Elf (Wood)": {
+                        "baseName": "Elf",
+                        "baseSource": "PHB"
                     }
                 },
                 "MPMM": {
                     "Half-Elf (Moon Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
+                    "Half-Elf (Wood Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     }
@@ -16147,6 +16199,18 @@
                 }
             },
             "race": {
+                "PHB": {
+                    "Elf (Wood)": {
+                        "baseName": "Elf",
+                        "baseSource": "PHB"
+                    }
+                },
+                "MPMM": {
+                    "Half-Elf (Wood Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    }
+                },
                 "PSK": {
                     "Elf (Kaladesh; Vahadar)": {
                         "baseName": "Elf (Kaladesh)",
@@ -17917,6 +17981,18 @@
                 }
             },
             "race": {
+                "PHB": {
+                    "Elf (Wood)": {
+                        "baseName": "Elf",
+                        "baseSource": "PHB"
+                    }
+                },
+                "MPMM": {
+                    "Half-Elf (Wood Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    }
+                },
                 "PSK": {
                     "Elf (Kaladesh; Vahadar)": {
                         "baseName": "Elf (Kaladesh)",
@@ -19887,6 +19963,38 @@
                         ]
                     }
                 }
+            },
+            "race": {
+                "PHB": {
+                    "Elf (Wood)": {
+                        "baseName": "Elf",
+                        "baseSource": "PHB"
+                    }
+                },
+                "MPMM": {
+                    "Half-Elf (Wood Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    }
+                },
+                "PSK": {
+                    "Elf (Kaladesh; Vahadar)": {
+                        "baseName": "Elf (Kaladesh)",
+                        "baseSource": "PSK"
+                    }
+                },
+                "PSX": {
+                    "Merfolk (Ixalan; Green)": {
+                        "baseName": "Merfolk",
+                        "baseSource": "PSZ"
+                    }
+                },
+                "PSZ": {
+                    "Merfolk (Zendikar; Emeria Creed)": {
+                        "baseName": "Merfolk",
+                        "baseSource": "PSZ"
+                    }
+                }
             }
         },
         "intellect fortress": {
@@ -21778,6 +21886,10 @@
                     "Elf (High)": {
                         "baseName": "Elf",
                         "baseSource": "PHB"
+                    },
+                    "Elf (Wood)": {
+                        "baseName": "Elf",
+                        "baseSource": "PHB"
                     }
                 },
                 "PSK": {
@@ -21793,6 +21905,10 @@
                     }
                 },
                 "MPMM": {
+                    "Half-Elf (Wood Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Kobold": true
                 },
                 "PSX": {
@@ -21950,6 +22066,10 @@
                     "Elf (High)": {
                         "baseName": "Elf",
                         "baseSource": "PHB"
+                    },
+                    "Elf (Wood)": {
+                        "baseName": "Elf",
+                        "baseSource": "PHB"
                     }
                 },
                 "PSK": {
@@ -21965,6 +22085,10 @@
                     }
                 },
                 "MPMM": {
+                    "Half-Elf (Wood Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Kobold": true
                 },
                 "PSX": {
@@ -22413,6 +22537,10 @@
                     "Elf (High)": {
                         "baseName": "Elf",
                         "baseSource": "PHB"
+                    },
+                    "Elf (Wood)": {
+                        "baseName": "Elf",
+                        "baseSource": "PHB"
                     }
                 },
                 "PSK": {
@@ -22428,6 +22556,10 @@
                     }
                 },
                 "MPMM": {
+                    "Half-Elf (Wood Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Kobold": true
                 },
                 "PSX": {
@@ -22883,6 +23015,10 @@
                     "Elf (High)": {
                         "baseName": "Elf",
                         "baseSource": "PHB"
+                    },
+                    "Elf (Wood)": {
+                        "baseName": "Elf",
+                        "baseSource": "PHB"
                     }
                 },
                 "PSK": {
@@ -22898,6 +23034,10 @@
                     }
                 },
                 "MPMM": {
+                    "Half-Elf (Wood Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Kobold": true
                 },
                 "PSX": {
@@ -23035,6 +23175,10 @@
                     "Elf (High)": {
                         "baseName": "Elf",
                         "baseSource": "PHB"
+                    },
+                    "Elf (Wood)": {
+                        "baseName": "Elf",
+                        "baseSource": "PHB"
                     }
                 },
                 "PSK": {
@@ -23056,6 +23200,10 @@
                     }
                 },
                 "MPMM": {
+                    "Half-Elf (Wood Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Kobold": true
                 },
                 "PSX": {
@@ -23332,6 +23480,10 @@
                     "Elf (High)": {
                         "baseName": "Elf",
                         "baseSource": "PHB"
+                    },
+                    "Elf (Wood)": {
+                        "baseName": "Elf",
+                        "baseSource": "PHB"
                     }
                 },
                 "PSK": {
@@ -23347,6 +23499,10 @@
                     }
                 },
                 "MPMM": {
+                    "Half-Elf (Wood Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Kobold": true
                 },
                 "PSX": {
@@ -23583,6 +23739,18 @@
                 }
             },
             "race": {
+                "PHB": {
+                    "Elf (Wood)": {
+                        "baseName": "Elf",
+                        "baseSource": "PHB"
+                    }
+                },
+                "MPMM": {
+                    "Half-Elf (Wood Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    }
+                },
                 "PSK": {
                     "Elf (Kaladesh; Vahadar)": {
                         "baseName": "Elf (Kaladesh)",
@@ -23903,6 +24071,10 @@
                     "Elf (High)": {
                         "baseName": "Elf",
                         "baseSource": "PHB"
+                    },
+                    "Elf (Wood)": {
+                        "baseName": "Elf",
+                        "baseSource": "PHB"
                     }
                 },
                 "PSK": {
@@ -23918,6 +24090,10 @@
                     }
                 },
                 "MPMM": {
+                    "Half-Elf (Wood Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Kobold": true
                 },
                 "PSX": {
@@ -24049,6 +24225,18 @@
                 }
             },
             "race": {
+                "PHB": {
+                    "Elf (Wood)": {
+                        "baseName": "Elf",
+                        "baseSource": "PHB"
+                    }
+                },
+                "MPMM": {
+                    "Half-Elf (Wood Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    }
+                },
                 "PSK": {
                     "Elf (Kaladesh; Vahadar)": {
                         "baseName": "Elf (Kaladesh)",
@@ -24352,6 +24540,10 @@
                     "Elf (High)": {
                         "baseName": "Elf",
                         "baseSource": "PHB"
+                    },
+                    "Elf (Wood)": {
+                        "baseName": "Elf",
+                        "baseSource": "PHB"
                     }
                 },
                 "PSK": {
@@ -24374,6 +24566,10 @@
                 },
                 "MPMM": {
                     "Half-Elf (Sea Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
+                    "Half-Elf (Wood Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
@@ -24917,6 +25113,10 @@
                     "Elf (High)": {
                         "baseName": "Elf",
                         "baseSource": "PHB"
+                    },
+                    "Elf (Wood)": {
+                        "baseName": "Elf",
+                        "baseSource": "PHB"
                     }
                 },
                 "PSK": {
@@ -24933,6 +25133,10 @@
                 },
                 "MPMM": {
                     "Half-Elf (Moon Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
+                    "Half-Elf (Wood Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
@@ -25673,16 +25877,34 @@
                     "Elf (High)": {
                         "baseName": "Elf",
                         "baseSource": "PHB"
+                    },
+                    "Elf (Wood)": {
+                        "baseName": "Elf",
+                        "baseSource": "PHB"
                     }
                 },
                 "MPMM": {
                     "Half-Elf (Moon Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
+                    },
+                    "Half-Elf (Wood Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    }
+                },
+                "PSX": {
+                    "Merfolk (Ixalan; Green)": {
+                        "baseName": "Merfolk",
+                        "baseSource": "PSZ"
                     }
                 },
                 "PSZ": {
                     "Merfolk (Zendikar; Cosi Creed)": {
+                        "baseName": "Merfolk",
+                        "baseSource": "PSZ"
+                    },
+                    "Merfolk (Zendikar; Emeria Creed)": {
                         "baseName": "Merfolk",
                         "baseSource": "PSZ"
                     }
@@ -25870,6 +26092,10 @@
                     "Elf (High)": {
                         "baseName": "Elf",
                         "baseSource": "PHB"
+                    },
+                    "Elf (Wood)": {
+                        "baseName": "Elf",
+                        "baseSource": "PHB"
                     }
                 },
                 "MPMM": {
@@ -25877,10 +26103,30 @@
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
+                    "Half-Elf (Wood Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Shadar-Kai": true
+                },
+                "PSK": {
+                    "Elf (Kaladesh; Vahadar)": {
+                        "baseName": "Elf (Kaladesh)",
+                        "baseSource": "PSK"
+                    }
+                },
+                "PSX": {
+                    "Merfolk (Ixalan; Green)": {
+                        "baseName": "Merfolk",
+                        "baseSource": "PSZ"
+                    }
                 },
                 "PSZ": {
                     "Merfolk (Zendikar; Cosi Creed)": {
+                        "baseName": "Merfolk",
+                        "baseSource": "PSZ"
+                    },
+                    "Merfolk (Zendikar; Emeria Creed)": {
                         "baseName": "Merfolk",
                         "baseSource": "PSZ"
                     }
@@ -26226,16 +26472,40 @@
                     "Elf (High)": {
                         "baseName": "Elf",
                         "baseSource": "PHB"
+                    },
+                    "Elf (Wood)": {
+                        "baseName": "Elf",
+                        "baseSource": "PHB"
                     }
                 },
                 "MPMM": {
                     "Half-Elf (Moon Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
+                    },
+                    "Half-Elf (Wood Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    }
+                },
+                "PSK": {
+                    "Elf (Kaladesh; Vahadar)": {
+                        "baseName": "Elf (Kaladesh)",
+                        "baseSource": "PSK"
+                    }
+                },
+                "PSX": {
+                    "Merfolk (Ixalan; Green)": {
+                        "baseName": "Merfolk",
+                        "baseSource": "PSZ"
                     }
                 },
                 "PSZ": {
                     "Merfolk (Zendikar; Cosi Creed)": {
+                        "baseName": "Merfolk",
+                        "baseSource": "PSZ"
+                    },
+                    "Merfolk (Zendikar; Emeria Creed)": {
                         "baseName": "Merfolk",
                         "baseSource": "PSZ"
                     }
@@ -26289,16 +26559,40 @@
                     "Elf (High)": {
                         "baseName": "Elf",
                         "baseSource": "PHB"
+                    },
+                    "Elf (Wood)": {
+                        "baseName": "Elf",
+                        "baseSource": "PHB"
                     }
                 },
                 "MPMM": {
                     "Half-Elf (Moon Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
+                    },
+                    "Half-Elf (Wood Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    }
+                },
+                "PSK": {
+                    "Elf (Kaladesh; Vahadar)": {
+                        "baseName": "Elf (Kaladesh)",
+                        "baseSource": "PSK"
+                    }
+                },
+                "PSX": {
+                    "Merfolk (Ixalan; Green)": {
+                        "baseName": "Merfolk",
+                        "baseSource": "PSZ"
                     }
                 },
                 "PSZ": {
                     "Merfolk (Zendikar; Cosi Creed)": {
+                        "baseName": "Merfolk",
+                        "baseSource": "PSZ"
+                    },
+                    "Merfolk (Zendikar; Emeria Creed)": {
                         "baseName": "Merfolk",
                         "baseSource": "PSZ"
                     }
