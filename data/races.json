@@ -15957,9 +15957,13 @@
 						]
 					},
 					"known": {
-						"1": [
-							"dancing lights#c"
-						]
+						"1": {
+							"_": [
+								{
+									"choose": "level=0|class=Sorcerer"
+								}
+							]
+						}
 					}
 				}
 			],
@@ -15977,7 +15981,8 @@
 				{
 					"name": "Drow Magic",
 					"entries": [
-						"You know the {@spell Dancing Lights} cantrip. When you reach 3rd level, you can cast the {@spell Faerie Fire} spell once per long rest without using a spell slot. When you reach 5th level, you can also cast the {@spell Darkness} spell once per long rest without using a spell slot. You always have these spells prepared and you can cast them without any material components. You can also cast these spells using spell slots you have of the appropriate level.",
+						"You know one cantrip from the {@filter sorcerer spell list|spells|source=|level=0|class=sorcerer|components & miscellaneous=}. After a long rest, you can replace it with another {@filter sorcerer cantrip|spells|source=|level=0|class=sorcerer|components & miscellaneous=}.",
+						"When you reach 3rd level, you can cast the {@spell Faerie Fire} spell once per long rest without using a spell slot. When you reach 5th level, you can also cast the {@spell Darkness} spell once per long rest without using a spell slot. You always have these spells prepared and you can cast them without any material components. You can also cast these spells using spell slots you have of the appropriate level.",
 						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race)."
 					],
 					"type": "entries"
