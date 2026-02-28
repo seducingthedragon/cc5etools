@@ -15697,6 +15697,26 @@
 			],
 			"additionalSpells": [
 				{
+					"ability": "int",
+					"innate": {
+						"1": {
+							"daily": {
+								"1": [
+									"alarm",
+									"mage armor"
+								]
+							}
+						},
+						"3": {
+							"daily": {
+								"1": [
+									"arcane lock"
+								]
+							}
+						}
+					}
+				},
+				{
 					"expanded": {
 						"s1": [
 							"alarm",
@@ -15716,13 +15736,6 @@
 						],
 						"s5": [
 							"antilife shell"
-						]
-					},
-					"ability": "int",
-					"known": {
-						"1": [
-							"alarm",
-							"mage armor"
 						]
 					}
 				}
@@ -16361,6 +16374,12 @@
 			],
 			"additionalSpells": [
 				{
+					"ability": "cha",
+					"known": {
+						"1": [
+							"minor illusion#c"
+						]
+					},
 					"innate": {
 						"3": {
 							"daily": {
@@ -16369,7 +16388,9 @@
 								]
 							}
 						}
-					},
+					}
+				},
+				{
 					"expanded": {
 						"s1": [
 							"disguise self",
@@ -16389,12 +16410,6 @@
 						],
 						"s5": [
 							"mislead"
-						]
-					},
-					"ability": "cha",
-					"known": {
-						"1": [
-							"minor illusion#c"
 						]
 					}
 				}
@@ -18014,6 +18029,12 @@
 			],
 			"additionalSpells": [
 				{
+					"ability": "int",
+					"known": {
+						"1": [
+							"message#c"
+						]
+					},
 					"innate": {
 						"1": {
 							"rest": {
@@ -18029,7 +18050,9 @@
 								]
 							}
 						}
-					},
+					}
+				},
+				{
 					"expanded": {
 						"s1": [
 							"comprehend languages",
@@ -18049,12 +18072,6 @@
 						],
 						"s5": [
 							"dream"
-						]
-					},
-					"ability": "int",
-					"known": {
-						"1": [
-							"message#c"
 						]
 					}
 				}
@@ -19422,11 +19439,16 @@
 			],
 			"additionalSpells": [
 				{
+					"ability": "int",
 					"innate": {
-						"1": [
-							"detect magic",
-							"detect poison and disease"
-						],
+						"1": {
+							"daily": {
+								"1": [
+									"detect magic",
+									"detect poison and disease"
+								]
+							}
+						},
 						"3": {
 							"daily": {
 								"1": [
@@ -19434,7 +19456,9 @@
 								]
 							}
 						}
-					},
+					}
+				},
+				{
 					"expanded": {
 						"s1": [
 							"detect evil and good",
@@ -19455,8 +19479,7 @@
 						"s5": [
 							"legend lore"
 						]
-					},
-					"ability": "int"
+					}
 				}
 			],
 			"entries": [
@@ -19544,6 +19567,23 @@
 			],
 			"additionalSpells": [
 				{
+					"ability": "cha",
+					"known": {
+						"1": [
+							"gust|xge#c"
+						]
+					},
+					"innate": {
+						"3": {
+							"daily": {
+								"1": [
+									"gust of wind"
+								]
+							}
+						}
+					}
+				},
+				{
 					"expanded": {
 						"s1": [
 							"feather fall",
@@ -19564,21 +19604,6 @@
 						"s5": [
 							"conjure elemental"
 						]
-					},
-					"ability": "cha",
-					"known": {
-						"1": [
-							"gust|xge#c"
-						]
-					},
-					"innate": {
-						"3": {
-							"daily": {
-								"1": [
-									"gust of wind"
-								]
-							}
-						}
 					}
 				}
 			],
@@ -20202,10 +20227,15 @@
 			},
 			"additionalSpells": [
 				{
+					"ability": "wis",
 					"innate": {
-						"1": [
-							"hunter's mark"
-						],
+						"1": {
+							"daily": {
+								"1": [
+									"hunter's mark"
+								]
+							}
+						},
 						"3": {
 							"daily": {
 								"1": [
@@ -20213,7 +20243,9 @@
 								]
 							}
 						}
-					},
+					}
+				},
+				{
 					"expanded": {
 						"s1": [
 							"faerie fire",
@@ -20234,8 +20266,7 @@
 						"s5": [
 							"commune with nature"
 						]
-					},
-					"ability": "wis"
+					}
 				}
 			],
 			"entries": [
@@ -20649,10 +20680,15 @@
 			],
 			"additionalSpells": [
 				{
+					"ability": "wis",
 					"innate": {
-						"1": [
-							"cure wounds"
-						],
+						"1": {
+							"daily": {
+								"1": [
+									"cure wounds"
+								]
+							}
+						},
 						"3": {
 							"daily": {
 								"1": [
@@ -20660,7 +20696,9 @@
 								]
 							}
 						}
-					},
+					}
+				},
+				{
 					"expanded": {
 						"s1": [
 							"cure wounds",
@@ -20681,8 +20719,7 @@
 						"s5": [
 							"mass cure wounds"
 						]
-					},
-					"ability": "wis"
+					}
 				}
 			],
 			"entries": [
@@ -20762,6 +20799,24 @@
 			],
 			"additionalSpells": [
 				{
+					"ability": "cha",
+					"known": {
+						"1": [
+							"prestidigitation#c"
+						]
+					},
+					"innate": {
+						"1": {
+							"daily": {
+								"1": [
+									"purify food and drink",
+									"unseen servant"
+								]
+							}
+						}
+					}
+				},
+				{
 					"expanded": {
 						"s1": [
 							"goodberry",
@@ -20781,14 +20836,6 @@
 						],
 						"s5": [
 							"hallow"
-						]
-					},
-					"ability": "cha",
-					"known": {
-						"1": [
-							"prestidigitation#c",
-							"purify food and drink",
-							"unseen servant"
 						]
 					}
 				}
@@ -21055,6 +21102,19 @@
 			],
 			"additionalSpells": [
 				{
+					"ability": "wis",
+					"known": {
+						"1": {
+							"rest": {
+								"1": [
+									"animal friendship",
+									"speak with animals"
+								]
+							}
+						}
+					}
+				},
+				{
 					"expanded": {
 						"s1": [
 							"animal friendship",
@@ -21075,17 +21135,6 @@
 						"s5": [
 							"awaken"
 						]
-					},
-					"ability": "wis",
-					"known": {
-						"1": {
-							"rest": {
-								"1": [
-									"animal friendship",
-									"speak with animals"
-								]
-							}
-						}
 					}
 				}
 			],
@@ -21187,6 +21236,23 @@
 			],
 			"additionalSpells": [
 				{
+					"ability": "int",
+					"known": {
+						"1": [
+							"mending#c"
+						]
+					},
+					"innate": {
+						"1": {
+							"daily": {
+								"1": [
+									"magic weapon"
+								]
+							}
+						}
+					}
+				},
+				{
 					"expanded": {
 						"s1": [
 							"identify",
@@ -21206,13 +21272,6 @@
 						],
 						"s5": [
 							"creation"
-						]
-					},
-					"ability": "int",
-					"known": {
-						"1": [
-							"mending#c",
-							"magic weapon"
 						]
 					}
 				}
@@ -21309,6 +21368,18 @@
 			],
 			"additionalSpells": [
 				{
+					"ability": "dex",
+					"innate": {
+						"1": {
+							"daily": {
+								"1": [
+									"misty step"
+								]
+							}
+						}
+					}
+				},
+				{
 					"expanded": {
 						"s1": [
 							"expeditious retreat",
@@ -21328,12 +21399,6 @@
 						],
 						"s5": [
 							"teleportation circle"
-						]
-					},
-					"ability": "dex",
-					"known": {
-						"1": [
-							"misty step"
 						]
 					}
 				}
@@ -21421,6 +21486,18 @@
 			],
 			"additionalSpells": [
 				{
+					"ability": "wis",
+					"innate": {
+						"1": {	
+							"daily": {
+								"1": [
+									"shield"
+								]
+							}
+						}
+					}
+				},
+				{
 					"expanded": {
 						"s1": [
 							"compelled duel",
@@ -21440,12 +21517,6 @@
 						],
 						"s5": [
 							"bigby's hand"
-						]
-					},
-					"ability": "wis",
-					"known": {
-						"1": [
-							"shield"
 						]
 					}
 				}
@@ -21589,10 +21660,15 @@
 			],
 			"additionalSpells": [
 				{
+					"ability": "wis",
 					"innate": {
-						"1": [
-							"hunter's mark"
-						],
+						"1": {
+							"daily": {
+								"1": [
+									"hunter's mark"
+								]
+							}
+						},
 						"3": {
 							"daily": {
 								"1": [
@@ -21600,7 +21676,9 @@
 								]
 							}
 						}
-					},
+					}
+				},
+				{
 					"expanded": {
 						"s1": [
 							"faerie fire",
@@ -21615,14 +21693,13 @@
 							"speak with plants"
 						],
 						"s4": [
-							"divination",
-							"arcane eye"
+							"arcane eye",
+							"divination"
 						],
 						"s5": [
 							"commune with nature"
 						]
-					},
-					"ability": "wis"
+					}
 				}
 			],
 			"entries": [
