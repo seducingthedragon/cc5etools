@@ -9089,6 +9089,9 @@
                 }
             },
             "race": {
+                "MPMM": {
+                    "Eladrin": true
+                },
                 "PSK": {
                     "Elf (Kaladesh; Vahadar)": {
                         "baseName": "Elf (Kaladesh)",
