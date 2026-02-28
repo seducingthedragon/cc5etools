@@ -11894,6 +11894,14 @@
                         }
                     }
                 }
+            },
+            "race": {
+                "ERLW": {
+                    "Halfling (Mark of Healing)": {
+                        "baseName": "Halfling",
+                        "baseSource": "PHB"
+                    }
+                }
             }
         },
         "mass heal": {
@@ -12207,6 +12215,10 @@
                     "Elf (High)": {
                         "baseName": "Elf",
                         "baseSource": "PHB"
+                    },
+                    "Gnome (Rock)": {
+                        "baseName": "Gnome",
+                        "baseSource": "PHB"
                     }
                 },
                 "PSK": {
@@ -12498,6 +12510,7 @@
                     }
                 },
                 "MPMM": {
+                    "Eladrin": true,
                     "Kobold": true
                 },
                 "PSX": {
