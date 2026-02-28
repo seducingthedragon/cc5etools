@@ -922,6 +922,12 @@
                 }
             },
             "race": {
+                "PHB": {
+                    "Elf (Wood)": {
+                        "baseName": "Elf",
+                        "baseSource": "PHB"
+                    }
+                },
                 "ERLW": {
                     "Gnome (Mark of Scribing)": {
                         "baseName": "Gnome",
@@ -1206,6 +1212,14 @@
                     },
                     "Half-Elf (Variant; Mark of Detection)": {
                         "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
+                    "Half-Orc (Variant; Mark of Finding)": {
+                        "baseName": "Half-Orc",
+                        "baseSource": "PHB"
+                    },
+                    "Human (Variant; Mark of Finding)": {
+                        "baseName": "Human",
                         "baseSource": "PHB"
                     }
                 }
