@@ -1863,7 +1863,7 @@
 				{
 					"name": "Surprise Attack",
 					"entries": [
-						"If you surprise a creature and hit it with an attack on your first turn in combat, the attack deals an extra {@damage 2d6} damage to it. You can use this trait only once per combat."
+						"If you hit a {@status surprise||surprised} creature with an attack on your first turn in combat, the attack deals an extra {@damage 2d6} damage to it. You can use this trait only once per combat."
 					],
 					"type": "entries"
 				},
@@ -8475,7 +8475,7 @@
 				{
 					"name": "Ambusher",
 					"entries": [
-						"In the first round of a combat, you have advantage on attack rolls against any creature who is {@status surprised}."
+						"In the first round of a combat, you have advantage on attack rolls against any creature who is {@status surprise||surprised}."
 					],
 					"type": "entries"
 				},
@@ -19570,6 +19570,15 @@
 						"1": [
 							"gust|xge#c"
 						]
+					},
+					"innate": {
+						"3": {
+							"daily": {
+								"1": [
+									"gust of wind"
+								]
+							}
+						}
 					}
 				}
 			],
@@ -20219,8 +20228,8 @@
 							"speak with plants"
 						],
 						"s4": [
-							"divination",
-							"arcane eye"
+							"arcane eye",
+							"divination"
 						],
 						"s5": [
 							"commune with nature"
