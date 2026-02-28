@@ -301,7 +301,7 @@
 						"3": {
 							"daily": {
 								"1": [
-									"lesser restoration"
+									"restoration"
 								]
 							}
 						},
@@ -353,7 +353,7 @@
 				{
 					"name": "Celestial Legacy",
 					"entries": [
-						"You know the {@spell light} cantrip. Once you reach 3rd level, you can cast the {@spell lesser restoration} spell once with this trait, and you regain the ability to do so when you finish a long rest. Once you reach 5th level, you can cast the {@spell daylight} spell once with this trait, and you regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+						"You know the {@spell Light} cantrip. Once you reach 3rd level, you can cast the {@spell Restoration} spell once with this trait, and you regain the ability to do so when you finish a long rest. Once you reach 5th level, you can cast the {@spell Daylight} spell once with this trait, and you regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
 					],
 					"type": "entries"
 				},
@@ -1328,8 +1328,8 @@
 					"type": "entries",
 					"name": "Healing Machine",
 					"entries": [
-						"If the {@spell mending} spell is cast on you, you can spend a Hit Die, roll it, and regain a number of hit points equal to the roll plus your Constitution modifier (minimum of 1 hit point).",
-						"In addition, your creator designed you to benefit from several spells that preserve life but that normally don't affect Constructs: {@spell cure wounds}, {@spell healing word}, {@spell mass cure wounds}, {@spell mass healing word}, and {@spell spare the dying}."
+						"If the {@spell Mending} spell is cast on you, you can spend a Hit Die, roll it, and regain a number of hit points equal to the roll plus your Constitution modifier (minimum of 1 hit point).",
+						"In addition, your creator designed you to benefit from several spells that preserve life but that normally don't affect Constructs: {@spell Cure Wounds}, {@spell Healing Word}, {@spell Mass Cure Wounds}, {@spell Mass Healing Word}, and {@spell Spare the Dying}."
 					]
 				},
 				{
@@ -5450,8 +5450,8 @@
 					"type": "entries",
 					"name": "Githyanki Psionics",
 					"entries": [
-						"You know the {@spell mage hand} cantrip, and the hand is {@condition invisible} when you cast the cantrip with this trait.",
-						"Starting at 3rd level, you can cast the {@spell jump} spell with this trait. Starting at 5th level, you can also cast {@spell misty step} with it. Once you cast {@spell jump} or {@spell misty step} with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.",
+						"You know the {@spell Mage Hand} cantrip, and the hand is {@condition invisible} when you cast the cantrip with this trait.",
+						"Starting at 3rd level, you can cast the {@spell Jump} spell with this trait. Starting at 5th level, you can also cast {@spell Misty Step} with it. Once you cast {@spell Jump} or {@spell Misty Step} with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.",
 						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race). None of these spells require spell components when you cast them with this trait."
 					]
 				},
@@ -5580,8 +5580,8 @@
 					"type": "entries",
 					"name": "Githzerai Psionics",
 					"entries": [
-						"You know the {@spell mage hand} cantrip, and the hand is {@condition invisible} when you cast the cantrip with this trait.",
-						"Starting at 3rd level, you can cast the {@spell shield} spell with this trait. Starting at 5th level, you can also cast the {@spell detect thoughts} spell with it. Once you cast {@spell shield} or {@spell detect thoughts} spell with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.",
+						"You know the {@spell Mage Hand} cantrip, and the hand is {@condition invisible} when you cast the cantrip with this trait.",
+						"Starting at 3rd level, you can cast the {@spell Shield} spell with this trait. Starting at 5th level, you can also cast the {@spell Detect Thoughts} spell with it. Once you cast {@spell Shield} or {@spell Detect Thoughts} spell with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.",
 						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race). None of these spells require spell components when you cast them with this trait."
 					]
 				},
@@ -8261,7 +8261,7 @@
 					"type": "entries",
 					"name": "Severed from Dreams",
 					"entries": [
-						"Kalashtar sleep, but they don't connect to the plane of dreams as other creatures do. Instead, their minds draw from the memories of their otherworldly spirit while they sleep. As such, you are immune to spells and other magical effects that require you to dream, like {@spell dream}, but not to spells and other magical effects that put you to sleep, like {@spell sleep}."
+						"Kalashtar sleep, but they don't connect to the plane of dreams as other creatures do. Instead, their minds draw from the memories of their otherworldly spirit while they sleep. As such, you are immune to spells and other magical effects that require you to dream, like {@spell Dream}, but not to spells and other magical effects that put you to sleep, like {@spell Sleep}."
 					]
 				},
 				{
@@ -11988,7 +11988,7 @@
 				{
 					"known": {
 						"1": [
-							"douse light#c"
+							"douse light|bmt#c"
 						]
 					},
 					"ability": {
@@ -12002,7 +12002,7 @@
 				{
 					"known": {
 						"1": [
-							"obfuscate object#c"
+							"obfuscate object|bmt#c"
 						]
 					},
 					"ability": {
@@ -13221,7 +13221,7 @@
 				{
 					"name": "Infernal Legacy",
 					"entries": [
-						"You know the {@spell thaumaturgy} cantrip. Once you reach 3rd level, you can cast the {@spell hellish rebuke} spell as a 2nd-level spell with this trait; you regain the ability to cast it when you finish a long rest. Once you reach 5th level, you can also cast the {@spell darkness} spell once per day with this trait; you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
+						"You know the {@spell Thaumaturgy} cantrip. Once you reach 3rd level, you can cast the {@spell Hellish Rebuke} spell as a 2nd-level spell with this trait; you regain the ability to cast it when you finish a long rest. Once you reach 5th level, you can also cast the {@spell Darkness} spell once per day with this trait; you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
 					],
 					"type": "entries"
 				},
@@ -13639,7 +13639,7 @@
 					"type": "entries",
 					"name": "Control Air and Water",
 					"entries": [
-						"You can cast {@spell fog cloud} with this trait. Starting at 3rd level, you can cast the {@spell gust of wind} spell with this trait. Starting at 5th level, you can also cast the {@spell water walk} spell with it. Once you cast any of these spells with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.",
+						"You can cast {@spell Fog Cloud} with this trait. Starting at 3rd level, you can cast the {@spell Gust of Wind} spell with this trait. Starting at 5th level, you can also cast the {@spell Water Walk} spell with it. Once you cast any of these spells with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.",
 						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
 					]
 				},
@@ -13783,7 +13783,7 @@
 				{
 					"name": "Control Air and Water",
 					"entries": [
-						"A child of the sea, you can call on the magic of elemental air and water. You can cast {@spell fog cloud} with this trait. Starting at 3rd level, you can cast {@spell gust of wind} with it, and starting at 5th level, you can also cast {@spell wall of water|xge} with it. Once you cast a spell with this trait, you can't cast that spell with it again until you finish a long rest. Charisma is your spellcasting ability for these spells."
+						"A child of the sea, you can call on the magic of elemental air and water. You can cast {@spell Fog Cloud} with this trait. Starting at 3rd level, you can cast {@spell Gust of Wind} with it, and starting at 5th level, you can also cast {@spell Wall of Water|xge} with it. Once you cast a spell with this trait, you can't cast that spell with it again until you finish a long rest. Charisma is your spellcasting ability for these spells."
 					],
 					"type": "entries"
 				},
@@ -14522,7 +14522,7 @@
 					"type": "entries",
 					"name": "Serpentine Spellcasting",
 					"entries": [
-						"You know the {@spell poison spray} cantrip. You can cast {@spell animal friendship} an unlimited number of times with this trait, but you can target only snakes with it. Starting at 3rd level, you can also cast {@spell suggestion} with this trait. Once you cast it, you can't do so again until you finish a long rest. You can also cast it using any spell slots you have of 2nd level or higher.",
+						"You know the {@spell Poison Spray} cantrip. You can cast {@spell Animal Friendship} an unlimited number of times with this trait, but you can target only snakes with it. Starting at 3rd level, you can also cast {@spell Suggestion} with this trait. Once you cast it, you can't do so again until you finish a long rest. You can also cast it using any spell slots you have of 2nd level or higher.",
 						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
 					]
 				},
@@ -14629,7 +14629,7 @@
 				{
 					"name": "Innate Spellcasting",
 					"entries": [
-						"You know the {@spell poison spray} cantrip. You can cast {@spell animal friendship} an unlimited number of times with this trait, but you can target only snakes with it. Starting at 3rd level, you can also cast {@spell suggestion} with this trait. Once you cast it, you can't do so again until you finish a long rest. Charisma is your spellcasting ability for these spells."
+						"You know the {@spell Poison Spray} cantrip. You can cast {@spell Animal Friendship} an unlimited number of times with this trait, but you can target only snakes with it. Starting at 3rd level, you can also cast {@spell Suggestion} with this trait. Once you cast it, you can't do so again until you finish a long rest. Charisma is your spellcasting ability for these spells."
 					],
 					"type": "entries"
 				},
@@ -17346,7 +17346,7 @@
 					"type": "entries",
 					"name": "Mingle with the Wind",
 					"entries": [
-						"You know the {@spell shocking grasp} cantrip. Starting at 3rd level, you can cast the {@spell feather fall} spell with this trait, without requiring a material component. Starting 5th level, you can also cast the {@spell levitate} spell with this trait, without requiring a material component. Once you cast {@spell feather fall} or {@spell levitate} with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.",
+						"You know the {@spell Shocking Grasp} cantrip. Starting at 3rd level, you can cast the {@spell Feather Fall} spell with this trait, without requiring a material component. Starting 5th level, you can also cast the {@spell Levitate} spell with this trait, without requiring a material component. Once you cast {@spell Feather Fall} or {@spell Levitate} with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.",
 						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
 					]
 				}
@@ -17393,8 +17393,8 @@
 					"type": "entries",
 					"name": "Merge with Stone",
 					"entries": [
-						"You know the {@spell blade ward} cantrip. You can cast it as normal, and you can also cast it as a bonus action a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest.",
-						"Starting at 5th level, you can cast the {@spell pass without trace} spell with this trait, without requiring a material component. Once you cast that spell with this trait, you can't do so again until you finish a long rest. You can also cast it using any spell slots you have of 2nd level or higher.",
+						"You know the {@spell Blade Ward} cantrip. You can cast it as normal, and you can also cast it as a bonus action a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest.",
+						"Starting at 5th level, you can cast the {@spell Pass Without Trace} spell with this trait, without requiring a material component. Once you cast that spell with this trait, you can't do so again until you finish a long rest. You can also cast it using any spell slots you have of 2nd level or higher.",
 						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
 					]
 				}
@@ -17424,7 +17424,7 @@
 						"5": {
 							"daily": {
 								"1": [
-									"flame blade"
+									"primordial blade"
 								]
 							}
 						}
@@ -17455,7 +17455,7 @@
 					"type": "entries",
 					"name": "Reach to the Blaze",
 					"entries": [
-						"You know the {@spell produce flame} cantrip. Starting at 3rd level, you can cast the {@spell burning hands} spell with this trait. Starting at 5th level, you can also cast the {@spell flame blade} spell with this trait, without a material component. Once you cast {@spell burning hands} or {@spell flame blade} with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.",
+						"You know the {@spell Produce Flame} cantrip. Starting at 3rd level, you can cast the {@spell Burning Hands} spell with this trait. Starting at 5th level, you can also cast the {@spell Primordial Blade} spell, dealing only Fire damage, with this trait, without a material component. Once you cast {@spell Burning Hands} or {@spell Primordial Blade} with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.",
 						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
 					]
 				}
@@ -17537,7 +17537,7 @@
 					"type": "entries",
 					"name": "Call to the Wave",
 					"entries": [
-						"You know the {@spell acid splash} cantrip. Starting at 3rd level, you can cast the {@spell create or destroy water} spell with this trait. Starting at 5th level, you can also cast the {@spell water walk} spell with this trait, without requiring a material component. Once you cast {@spell create or destroy water} or {@spell water walk} with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.",
+						"You know the {@spell Acid Splash} cantrip. Starting at 3rd level, you can cast the {@spell Create or Destroy Water} spell with this trait. Starting at 5th level, you can also cast the {@spell Water Walk} spell with this trait, without requiring a material component. Once you cast {@spell Create or Destroy Water} or {@spell Water Walk} with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.",
 						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
 					]
 				}
@@ -19544,15 +19544,6 @@
 			],
 			"additionalSpells": [
 				{
-					"innate": {
-						"3": {
-							"daily": {
-								"1": [
-									"thunderwave"
-								]
-							}
-						}
-					},
 					"expanded": {
 						"s1": [
 							"feather fall",
@@ -19602,7 +19593,7 @@
 					"type": "entries",
 					"name": "Headwinds",
 					"entries": [
-						"You know the {@spell Gust|XGE} cantrip. Starting at 3rd level, you can cast the {@spell Thunderwave} spell once with this trait, and you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
+						"You know the {@spell Gust|XGE} cantrip. Starting at 3rd level, you can cast the {@spell Gust of Wind} spell once with this trait, and you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
 					]
 				},
 				{
@@ -20220,7 +20211,7 @@
 							"longstrider"
 						],
 						"s2": [
-							"locate animals or plants",
+							"locate creature",
 							"locate object"
 						],
 						"s3": [
@@ -20229,7 +20220,7 @@
 						],
 						"s4": [
 							"divination",
-							"locate creature"
+							"arcane eye"
 						],
 						"s5": [
 							"commune with nature"
@@ -20263,7 +20254,7 @@
 					"type": "entries",
 					"name": "Finder's Magic",
 					"entries": [
-						"You can cast the {@spell hunter's mark} spell with this trait. Starting at 3rd level, you can also cast the {@spell locate object} spell with it. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a long rest. Wisdom is your spellcasting ability for these spells."
+						"You can cast the {@spell Hunter's Mark} spell with this trait. Starting at 3rd level, you can also cast the {@spell Locate Object} spell with it. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a long rest. Wisdom is your spellcasting ability for these spells."
 					],
 					"data": {
 						"overwrite": "Relentless Endurance"
@@ -20298,23 +20289,23 @@
 							"rows": [
 								[
 									"1st",
-									"{@spell faerie fire}, {@spell longstrider}"
+									"{@spell Faerie Fire}, {@spell Longstrider}"
 								],
 								[
 									"2nd",
-									"{@spell locate animals or plants}, {@spell locate object}"
+									"{@spell Locate Creature}, {@spell Locate Object}"
 								],
 								[
 									"3rd",
-									"{@spell clairvoyance}, {@spell speak with plants}"
+									"{@spell Clairvoyance}, {@spell Speak with Plants}"
 								],
 								[
 									"4th",
-									"{@spell divination}, {@spell locate creature}"
+									"{@spell Arcane Eye}, {@spell Divination}"
 								],
 								[
 									"5th",
-									"{@spell commune with nature}"
+									"{@spell Commune with Nature}"
 								]
 							]
 						}
@@ -20556,7 +20547,7 @@
 					"type": "entries",
 					"name": "Child of the Wood",
 					"entries": [
-						"You know the {@spell druidcraft} cantrip. When you reach 3rd level, you can cast the {@spell entangle} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell spike growth} spell once with this trait and regain the ability to do so when you finish a long rest. Casting these spells with this trait doesn't require material components. Wisdom is your spellcasting ability for these spells."
+						"You know the {@spell Druidcraft} cantrip. When you reach 3rd level, you can cast the {@spell Entangle} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell Spike Growth} spell once with this trait and regain the ability to do so when you finish a long rest. Casting these spells with this trait doesn't require material components. Wisdom is your spellcasting ability for these spells."
 					]
 				},
 				{
@@ -21101,14 +21092,14 @@
 					"type": "entries",
 					"name": "Primal Connection",
 					"entries": [
-						"You can cast the {@spell animal friendship} and {@spell speak with animals} spells with this trait, requiring no material component. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a short or long rest. Wisdom is your spellcasting ability for these spells."
+						"You can cast the {@spell Animal Friendship} and {@spell Speak with Animals} spells with this trait, requiring no material component. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a short or long rest. Wisdom is your spellcasting ability for these spells."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "The Bigger They Are",
 					"entries": [
-						"Starting at 3rd level, you can target a beast or monstrosity when you cast {@spell animal friendship} or {@spell speak with animals}, provided the creature's Intelligence score is 3 or lower."
+						"Starting at 3rd level, you can target a beast or monstrosity when you cast {@spell Animal Friendship} or {@spell Speak with Animals}, provided the creature's Intelligence score is 3 or lower."
 					]
 				},
 				{
@@ -21130,23 +21121,23 @@
 							"rows": [
 								[
 									"1st",
-									"{@spell animal friendship}, {@spell speak with animals}"
+									"{@spell Animal Friendship}, {@spell Speak with Animals}"
 								],
 								[
 									"2nd",
-									"{@spell beast sense}, {@spell calm emotions}"
+									"{@spell Beast Sense}, {@spell Calm Emotions}"
 								],
 								[
 									"3rd",
-									"{@spell beacon of hope}, {@spell conjure animals}"
+									"{@spell Beacon of Hope}, {@spell Conjure Animals}"
 								],
 								[
 									"4th",
-									"{@spell aura of life}, {@spell dominate beast}"
+									"{@spell Aura of Life}, {@spell Dominate Beast}"
 								],
 								[
 									"5th",
-									"{@spell awaken}"
+									"{@spell Awaken}"
 								]
 							]
 						}
@@ -21198,7 +21189,7 @@
 						],
 						"s3": [
 							"conjure barrage",
-							"elemental weapon"
+							"flame arrows|xge"
 						],
 						"s4": [
 							"fabricate",
@@ -21236,7 +21227,7 @@
 					"type": "entries",
 					"name": "Spellsmith",
 					"entries": [
-						"You know the {@spell mending} cantrip. You can also cast the {@spell magic weapon} spell with this trait. When you do so, the spell lasts for 1 hour and doesn't require {@status concentration}. Once you cast the spell with this trait, you can't do so again until you finish a long rest. Intelligence is your spellcasting ability for these spells."
+						"You know the {@spell Mending} cantrip. You can also cast the {@spell Magic Weapon} spell with this trait. Once you cast the spell with this trait, you can't do so again until you finish a long rest. Intelligence is your spellcasting ability for these spells."
 					]
 				},
 				{
@@ -21258,23 +21249,23 @@
 							"rows": [
 								[
 									"1st",
-									"{@spell identify}, {@spell Tenser's floating disk}"
+									"{@spell Identify}, {@spell Tenser's Floating Disk}"
 								],
 								[
 									"2nd",
-									"{@spell continual flame}, {@spell magic weapon}"
+									"{@spell Continual Flame}, {@spell Magic Weapon}"
 								],
 								[
 									"3rd",
-									"{@spell conjure barrage}, {@spell elemental weapon}"
+									"{@spell Conjure Barrage}, {@spell Flame Arrows|XGE}"
 								],
 								[
 									"4th",
-									"{@spell fabricate}, {@spell stone shape}"
+									"{@spell Fabricate}, {@spell Stone Shape}"
 								],
 								[
 									"5th",
-									"{@spell creation}"
+									"{@spell Creation}"
 								]
 							]
 						}
@@ -21357,7 +21348,7 @@
 					"type": "entries",
 					"name": "Magical Passage",
 					"entries": [
-						"You can cast the {@spell misty step} spell once with this trait, and you regain the ability to cast it when you finish a long rest. Dexterity is your spellcasting ability for this spell."
+						"You can cast the {@spell Misty Step} spell once with this trait, and you regain the ability to cast it when you finish a long rest. Dexterity is your spellcasting ability for this spell."
 					]
 				},
 				{
@@ -21379,23 +21370,23 @@
 							"rows": [
 								[
 									"1st",
-									"{@spell expeditious retreat}, {@spell jump}"
+									"{@spell Expeditious Retreat}, {@spell Jump}"
 								],
 								[
 									"2nd",
-									"{@spell misty step}, {@spell pass without trace}"
+									"{@spell Misty Step}, {@spell Pass Without Trace}"
 								],
 								[
 									"3rd",
-									"{@spell blink}, {@spell phantom steed}"
+									"{@spell Blink}, {@spell Phantom Steed}"
 								],
 								[
 									"4th",
-									"{@spell dimension door}, {@spell freedom of movement}"
+									"{@spell Dimension Door}, {@spell Freedom of Movement}"
 								],
 								[
 									"5th",
-									"{@spell teleportation circle}"
+									"{@spell Teleportation Circle}"
 								]
 							]
 						}
@@ -21462,7 +21453,7 @@
 					"type": "entries",
 					"name": "Guardian's Shield",
 					"entries": [
-						"You can cast the {@spell shield} spell once with this trait, and you regain the ability to cast it after you finish a long rest. Wisdom is your spellcasting ability for this spell."
+						"You can cast the {@spell Shield} spell once with this trait, and you regain the ability to cast it after you finish a long rest. Wisdom is your spellcasting ability for this spell."
 					]
 				},
 				{
@@ -21491,23 +21482,23 @@
 							"rows": [
 								[
 									"1st",
-									"{@spell compelled duel}, {@spell shield of faith}"
+									"{@spell Compelled Duel}, {@spell Shield of Faith}"
 								],
 								[
 									"2nd",
-									"{@spell warding bond}, {@spell zone of truth}"
+									"{@spell Warding Bond}, {@spell Zone of Truth}"
 								],
 								[
 									"3rd",
-									"{@spell counterspell}, {@spell protection from energy}"
+									"{@spell Counterspell}, {@spell Protection from Energy}"
 								],
 								[
 									"4th",
-									"{@spell death ward}, {@spell guardian of faith}"
+									"{@spell Death Ward}, {@spell Guardian of Faith}"
 								],
 								[
 									"5th",
-									"{@spell Bigby's hand}"
+									"{@spell Bigby's Hand}"
 								]
 							]
 						}
@@ -21607,7 +21598,7 @@
 							"longstrider"
 						],
 						"s2": [
-							"locate animals or plants",
+							"locate creature",
 							"locate object"
 						],
 						"s3": [
@@ -21616,7 +21607,7 @@
 						],
 						"s4": [
 							"divination",
-							"locate creature"
+							"arcane eye"
 						],
 						"s5": [
 							"commune with nature"
@@ -21644,7 +21635,7 @@
 					"type": "entries",
 					"name": "Finder's Magic",
 					"entries": [
-						"You can cast the {@spell hunter's mark} spell with this trait. Starting at 3rd level, you can also cast the {@spell locate object} spell with it. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a long rest. Wisdom is your spellcasting ability for these spells."
+						"You can cast the {@spell Hunter's Mark} spell with this trait. Starting at 3rd level, you can also cast the {@spell Locate Object} spell with it. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a long rest. Wisdom is your spellcasting ability for these spells."
 					]
 				},
 				{
@@ -21676,23 +21667,23 @@
 							"rows": [
 								[
 									"1st",
-									"{@spell faerie fire}, {@spell longstrider}"
+									"{@spell Faerie Fire}, {@spell Longstrider}"
 								],
 								[
 									"2nd",
-									"{@spell locate animals or plants}, {@spell locate object}"
+									"{@spell Locate Creature}, {@spell Locate Object}"
 								],
 								[
 									"3rd",
-									"{@spell clairvoyance}, {@spell speak with plants}"
+									"{@spell Clairvoyance}, {@spell Speak with Plants}"
 								],
 								[
 									"4th",
-									"{@spell divination}, {@spell locate creature}"
+									"{@spell Arcane Eye}, {@spell Divination}"
 								],
 								[
 									"5th",
-									"{@spell commune with nature}"
+									"{@spell Commune with Nature}"
 								]
 							]
 						}
@@ -22343,7 +22334,7 @@
 				{
 					"name": "Legacy of Maladomini",
 					"entries": [
-						"You know the {@spell thaumaturgy} cantrip. When you reach 3rd level, you can cast the {@spell ray of sickness} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell crown of madness} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+						"You know the {@spell Thaumaturgy} cantrip. When you reach 3rd level, you can cast the {@spell Ray of Sickness} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell Crown of Madness} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
 					],
 					"type": "entries",
 					"data": {
@@ -22396,7 +22387,7 @@
 				{
 					"name": "Legacy of Dis",
 					"entries": [
-						"You know the {@spell thaumaturgy} cantrip. When you reach 3rd level, you can cast the {@spell disguise self} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell detect thoughts} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+						"You know the {@spell Thaumaturgy} cantrip. When you reach 3rd level, you can cast the {@spell Disguise Self} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell Detect Thoughts} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
 					],
 					"type": "entries",
 					"data": {
@@ -22452,7 +22443,7 @@
 				{
 					"name": "Legacy of Phlegethos",
 					"entries": [
-						"You know the {@spell friends} cantrip. When you reach 3rd level, you can cast the {@spell charm person} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell suggestion} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+						"You know the {@spell Friends} cantrip. When you reach 3rd level, you can cast the {@spell Charm Person} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell Suggestion} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
 					],
 					"type": "entries",
 					"data": {
@@ -22508,7 +22499,7 @@
 				{
 					"name": "Legacy of Malbolge",
 					"entries": [
-						"You know the {@spell minor illusion} cantrip. When you reach 3rd level, you can cast the {@spell disguise self} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell invisibility} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+						"You know the {@spell Minor Illusion} cantrip. When you reach 3rd level, you can cast the {@spell Disguise Self} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell Invisibility} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
 					],
 					"type": "entries",
 					"data": {
@@ -22564,7 +22555,7 @@
 				{
 					"name": "Legacy of Stygia",
 					"entries": [
-						"You know the {@spell ray of frost} cantrip. When you reach 3rd level, you can cast the {@spell armor of Agathys} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell darkness} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+						"You know the {@spell Ray of Frost} cantrip. When you reach 3rd level, you can cast the {@spell Armor of Agathys} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell Darkness} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
 					],
 					"type": "entries",
 					"data": {
@@ -22614,7 +22605,7 @@
 				{
 					"name": "Legacy of Minauros",
 					"entries": [
-						"You know the {@spell mage hand} cantrip. When you reach 3rd level, you can cast the {@spell Tenser's floating disk} spell once with this trait and regain the ability to do so when you finish a short or long rest. When you reach 5th level, you can cast the {@spell arcane lock} spell once with this trait, requiring no material component, and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+						"You know the {@spell Mage Hand} cantrip. When you reach 3rd level, you can cast the {@spell Tenser's Floating Disk} spell once with this trait and regain the ability to do so when you finish a short or long rest. When you reach 5th level, you can cast the {@spell Arcane Lock} spell once with this trait, requiring no material component, and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
 					],
 					"type": "entries",
 					"data": {
@@ -22644,7 +22635,7 @@
 						"5": {
 							"daily": {
 								"1": [
-									"flame blade"
+									"primordial blade"
 								]
 							}
 						}
@@ -22661,7 +22652,7 @@
 				{
 					"name": "Legacy of Cania",
 					"entries": [
-						"You know the {@spell mage hand} cantrip. When you reach 3rd level, you can cast the {@spell burning hands} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell flame blade} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+						"You know the {@spell Mage Hand} cantrip. When you reach 3rd level, you can cast the {@spell Burning Hands} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell Primordial Blade} spell, dealing only Fire damage, once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
 					],
 					"type": "entries",
 					"data": {
@@ -22729,7 +22720,7 @@
 					"type": "entries",
 					"name": "Devil's Tongue",
 					"entries": [
-						"You know the {@spell vicious mockery} cantrip. When you reach 3rd level, you can cast the {@spell charm person} spell as a 2nd-level spell once with this trait. When you reach 5th level, you can cast the {@spell enthrall} spell once with this trait. You must finish a long rest to cast these spells once again with this trait. Charisma is your spellcasting ability for them. This trait replaces the Infernal Legacy trait."
+						"You know the {@spell Vicious Mockery} cantrip. When you reach 3rd level, you can cast the {@spell Charm Person} spell as a 2nd-level spell once with this trait. When you reach 5th level, you can cast the {@spell Enthrall} spell once with this trait. You must finish a long rest to cast these spells once again with this trait. Charisma is your spellcasting ability for them. This trait replaces the Infernal Legacy trait."
 					],
 					"data": {
 						"overwrite": "Infernal Legacy"
@@ -22799,7 +22790,7 @@
 					"type": "entries",
 					"name": "Hellfire",
 					"entries": [
-						"You know the {@spell thaumaturgy} cantrip. Once you reach 3rd level, you can cast the {@spell burning hands} spell once per day as a 2nd-level spell; you must finish a long rest in order to cast the spell again using this trait. Once you reach 5th level, you can also cast the {@spell darkness} spell; you must finish a long rest in order to cast the spell again using this trait. Charisma is your spellcasting ability for these spells."
+						"You know the {@spell Thaumaturgy} cantrip. Once you reach 3rd level, you can cast the {@spell Burning hands} spell once per day as a 2nd-level spell; you must finish a long rest in order to cast the spell again using this trait. Once you reach 5th level, you can also cast the {@spell Darkness} spell; you must finish a long rest in order to cast the spell again using this trait. Charisma is your spellcasting ability for these spells."
 					],
 					"data": {
 						"overwrite": "Infernal Legacy"
@@ -22967,7 +22958,7 @@
 				{
 					"name": "Legacy of Avernus",
 					"entries": [
-						"You know the {@spell thaumaturgy} cantrip. When you reach 3rd level, you can cast the {@spell searing smite} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell branding smite} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+						"You know the {@spell Thaumaturgy} cantrip. When you reach 3rd level, you can cast the {@spell Searing Smite} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell Branding Smite} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
 					],
 					"type": "entries",
 					"data": {
