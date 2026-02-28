@@ -2659,6 +2659,9 @@
                 }
             },
             "race": {
+                "MPMM": {
+                    "Sea Elf": true
+                },
                 "DMG": {
                     "Gnome (Deep)": true
                 }
