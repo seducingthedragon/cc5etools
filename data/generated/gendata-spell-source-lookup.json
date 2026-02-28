@@ -6809,6 +6809,12 @@
                 }
             },
             "race": {
+                "MPMM": {
+                    "Halfling (Lotusden)": {
+                        "baseName": "Halfling",
+                        "baseSource": "PHB"
+                    }
+                },
                 "EGW": {
                     "Halfling (Lotusden)": {
                         "baseName": "Halfling",
