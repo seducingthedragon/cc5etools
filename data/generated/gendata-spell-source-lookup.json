@@ -17736,6 +17736,9 @@
                         "baseSource": "PHB"
                     }
                 },
+                "MPMM": {
+                    "Duergar": true
+                },
                 "MTF": {
                     "Tiefling (Asmodeus)": {
                         "baseName": "Tiefling",
@@ -18035,6 +18038,11 @@
                 "PHB": {
                     "Druid": true,
                     "Sorcerer": true
+                }
+            },
+            "race": {
+                "MPMM": {
+                    "Sea Elf": true
                 }
             }
         },
