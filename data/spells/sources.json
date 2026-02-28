@@ -2877,7 +2877,11 @@
                 {
                     "name": "Bard",
                     "source": "PHB"
-                }
+                },
+				{
+					"name": "Sorcerer",
+					"source": "PHB"
+				}
             ]
         },
 		"Globe of Invulnerability": {

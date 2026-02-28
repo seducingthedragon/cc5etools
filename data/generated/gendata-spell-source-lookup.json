@@ -2277,6 +2277,10 @@
                         "baseName": "Genasi",
                         "baseSource": "MPMM"
                     },
+                    "Half-Elf (Moon Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Kobold": true
                 },
                 "SCAG": {
@@ -4987,6 +4991,10 @@
                 },
                 "MPMM": {
                     "Astral Elf": true,
+                    "Half-Elf (Moon Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Kobold": true
                 },
                 "PSX": {
@@ -8362,6 +8370,10 @@
                 },
                 "MPMM": {
                     "Eladrin": true,
+                    "Half-Elf (Moon Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Kobold": true
                 },
                 "PSX": {
@@ -8633,7 +8645,28 @@
         "glitterbeam": {
             "class": {
                 "PHB": {
-                    "Bard": true
+                    "Bard": true,
+                    "Sorcerer": true
+                }
+            },
+            "race": {
+                "PHB": {
+                    "Elf (High)": {
+                        "baseName": "Elf",
+                        "baseSource": "PHB"
+                    }
+                },
+                "MPMM": {
+                    "Half-Elf (Moon Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    }
+                },
+                "PSZ": {
+                    "Merfolk (Zendikar; Cosi Creed)": {
+                        "baseName": "Merfolk",
+                        "baseSource": "PSZ"
+                    }
                 }
             }
         },
@@ -9089,8 +9122,18 @@
                 }
             },
             "race": {
+                "PHB": {
+                    "Elf (High)": {
+                        "baseName": "Elf",
+                        "baseSource": "PHB"
+                    }
+                },
                 "MPMM": {
-                    "Eladrin": true
+                    "Eladrin": true,
+                    "Half-Elf (Moon Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    }
                 },
                 "PSK": {
                     "Elf (Kaladesh; Vahadar)": {
@@ -9105,6 +9148,10 @@
                     }
                 },
                 "PSZ": {
+                    "Merfolk (Zendikar; Cosi Creed)": {
+                        "baseName": "Merfolk",
+                        "baseSource": "PSZ"
+                    },
                     "Merfolk (Zendikar; Emeria Creed)": {
                         "baseName": "Merfolk",
                         "baseSource": "PSZ"
@@ -11010,6 +11057,10 @@
                 "MPMM": {
                     "Aasimar": true,
                     "Astral Elf": true,
+                    "Half-Elf (Moon Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Kobold": true
                 },
                 "VGM": {
@@ -11508,6 +11559,10 @@
                 "MPMM": {
                     "Githyanki": true,
                     "Githzerai": true,
+                    "Half-Elf (Moon Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Kobold": true
                 },
                 "SCAG": {
@@ -12240,6 +12295,10 @@
                     }
                 },
                 "MPMM": {
+                    "Half-Elf (Moon Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Kobold": true
                 },
                 "PSX": {
@@ -12357,6 +12416,10 @@
                     }
                 },
                 "MPMM": {
+                    "Half-Elf (Moon Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Kobold": true
                 },
                 "PSX": {
@@ -12511,6 +12574,10 @@
                 },
                 "MPMM": {
                     "Eladrin": true,
+                    "Half-Elf (Moon Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Kobold": true
                 },
                 "PSX": {
@@ -14005,6 +14072,10 @@
                 },
                 "MPMM": {
                     "Deep Gnome": true,
+                    "Half-Elf (Moon Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Kobold": true
                 },
                 "PSX": {
@@ -15024,6 +15095,18 @@
                 }
             },
             "race": {
+                "PHB": {
+                    "Elf (High)": {
+                        "baseName": "Elf",
+                        "baseSource": "PHB"
+                    }
+                },
+                "MPMM": {
+                    "Half-Elf (Moon Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    }
+                },
                 "PSK": {
                     "Elf (Kaladesh; Vahadar)": {
                         "baseName": "Elf (Kaladesh)",
@@ -15037,6 +15120,10 @@
                     }
                 },
                 "PSZ": {
+                    "Merfolk (Zendikar; Cosi Creed)": {
+                        "baseName": "Merfolk",
+                        "baseSource": "PSZ"
+                    },
                     "Merfolk (Zendikar; Emeria Creed)": {
                         "baseName": "Merfolk",
                         "baseSource": "PSZ"
@@ -18226,6 +18313,10 @@
                     }
                 },
                 "MPMM": {
+                    "Half-Elf (Moon Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Kobold": true
                 },
                 "PSX": {
@@ -18415,6 +18506,18 @@
                 }
             },
             "race": {
+                "PHB": {
+                    "Elf (High)": {
+                        "baseName": "Elf",
+                        "baseSource": "PHB"
+                    }
+                },
+                "MPMM": {
+                    "Half-Elf (Moon Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    }
+                },
                 "PSZ": {
                     "Merfolk (Zendikar; Cosi Creed)": {
                         "baseName": "Merfolk",
@@ -24829,6 +24932,10 @@
                     }
                 },
                 "MPMM": {
+                    "Half-Elf (Moon Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Kobold": true
                 },
                 "PSX": {
@@ -25560,6 +25667,26 @@
                         ]
                     }
                 }
+            },
+            "race": {
+                "PHB": {
+                    "Elf (High)": {
+                        "baseName": "Elf",
+                        "baseSource": "PHB"
+                    }
+                },
+                "MPMM": {
+                    "Half-Elf (Moon Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    }
+                },
+                "PSZ": {
+                    "Merfolk (Zendikar; Cosi Creed)": {
+                        "baseName": "Merfolk",
+                        "baseSource": "PSZ"
+                    }
+                }
             }
         },
         "clue": {
@@ -25739,8 +25866,24 @@
                 }
             },
             "race": {
+                 "PHB": {
+                    "Elf (High)": {
+                        "baseName": "Elf",
+                        "baseSource": "PHB"
+                    }
+                },
                 "MPMM": {
+                    "Half-Elf (Moon Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Shadar-Kai": true
+                },
+                "PSZ": {
+                    "Merfolk (Zendikar; Cosi Creed)": {
+                        "baseName": "Merfolk",
+                        "baseSource": "PSZ"
+                    }
                 }
             }
         },
@@ -25985,8 +26128,24 @@
                 }
             },
             "race": {
+                "PHB": {
+                    "Elf (High)": {
+                        "baseName": "Elf",
+                        "baseSource": "PHB"
+                    }
+                },
                 "MPMM": {
+                    "Half-Elf (Moon Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Shadar-Kai": true
+                },
+                "PSZ": {
+                    "Merfolk (Zendikar; Cosi Creed)": {
+                        "baseName": "Merfolk",
+                        "baseSource": "PSZ"
+                    }
                 }
             }
         },
@@ -26061,6 +26220,26 @@
                         ]
                     }
                 }
+            },
+            "race": {
+                "PHB": {
+                    "Elf (High)": {
+                        "baseName": "Elf",
+                        "baseSource": "PHB"
+                    }
+                },
+                "MPMM": {
+                    "Half-Elf (Moon Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    }
+                },
+                "PSZ": {
+                    "Merfolk (Zendikar; Cosi Creed)": {
+                        "baseName": "Merfolk",
+                        "baseSource": "PSZ"
+                    }
+                }
             }
         },
         "retrieve": {
@@ -26102,6 +26281,26 @@
                         "definedInSources": [
                             "BMT"
                         ]
+                    }
+                }
+            },
+            "race": {
+                "PHB": {
+                    "Elf (High)": {
+                        "baseName": "Elf",
+                        "baseSource": "PHB"
+                    }
+                },
+                "MPMM": {
+                    "Half-Elf (Moon Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    }
+                },
+                "PSZ": {
+                    "Merfolk (Zendikar; Cosi Creed)": {
+                        "baseName": "Merfolk",
+                        "baseSource": "PSZ"
                     }
                 }
             }
