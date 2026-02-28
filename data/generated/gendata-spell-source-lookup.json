@@ -25649,6 +25649,11 @@
                         ]
                     }
                 }
+            },
+            "race": {
+                "MPMM": {
+                    "Shadar-Kai": true
+                }
             }
         },
         "feline chaos": {
@@ -25889,6 +25894,11 @@
                             "BMT"
                         ]
                     }
+                }
+            },
+            "race": {
+                "MPMM": {
+                    "Shadar-Kai": true
                 }
             }
         },
