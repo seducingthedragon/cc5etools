@@ -10887,6 +10887,12 @@
                 }
             },
             "race": {
+                "PHB": {
+                    "Elf (High)": {
+                        "baseName": "Elf",
+                        "baseSource": "PHB"
+                    }
+                },
                 "EEPC": {
                     "Genasi (Air)": {
                         "baseName": "Genasi",
@@ -11003,6 +11009,7 @@
                 },
                 "MPMM": {
                     "Aasimar": true,
+                    "Astral Elf": true,
                     "Kobold": true
                 },
                 "VGM": {
@@ -11322,6 +11329,12 @@
                 }
             },
             "race": {
+                "PHB": {
+                    "Elf (Wood)": {
+                        "baseName": "Elf",
+                        "baseSource": "PHB"
+                    }
+                },
                 "ERLW": {
                     "Half-Orc (Variant; Mark of Finding)": {
                         "baseName": "Half-Orc",
