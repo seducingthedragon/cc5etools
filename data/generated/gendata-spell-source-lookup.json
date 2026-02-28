@@ -22448,6 +22448,14 @@
                         }
                     }
                 }
+            },
+            "race": {
+                "ERLW": {
+                    "Human (Mark of Making)": {
+                        "baseName": "Human",
+                        "baseSource": "PHB"
+                    }
+                }
             }
         },
         "freedom of the waves": {
@@ -24187,7 +24195,12 @@
                     }
                 },
                 "MPMM": {
-                    "Kobold": true
+                    "Half-Elf (Sea Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
+                    "Kobold": true,
+                    "Sea Elf": true
                 },
                 "PSX": {
                     "Merfolk (Ixalan; Blue)": {
