@@ -15347,6 +15347,9 @@
                 }
             },
             "race": {
+                "MPMM": {
+                    "Astral Elf": true
+                },
                 "AAG": {
                     "Astral Elf": true
                 }
@@ -16609,6 +16612,11 @@
                         ]
                     }
                 }
+            },
+            "race": {
+                "MPMM": {
+                    "Shadar-Kai": true
+                }
             }
         },
         "speak with animals": {
@@ -16909,6 +16917,12 @@
                 }
             },
             "race": {
+                "MPMM": {
+                    "Halfling (Lotusden)": {
+                        "baseName": "Halfling",
+                        "baseSource": "PHB"
+                    }
+                },
                 "EGW": {
                     "Halfling (Lotusden)": {
                         "baseName": "Halfling",
