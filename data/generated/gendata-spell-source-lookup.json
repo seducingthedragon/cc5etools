@@ -4582,13 +4582,6 @@
                 }
             }
         },
-        "create monstrosity": {
-            "class": {
-                "PHB": {
-                    "Wizard": true
-                }
-            }
-        },
         "create or destroy water": {
             "class": {
                 "PHB": {
