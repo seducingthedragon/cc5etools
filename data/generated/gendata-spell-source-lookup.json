@@ -8361,6 +8361,7 @@
                     }
                 },
                 "MPMM": {
+                    "Eladrin": true,
                     "Kobold": true
                 },
                 "PSX": {
@@ -14042,12 +14043,6 @@
                 }
             },
             "race": {
-                "ERLW": {
-                    "Human (Mark of Making)": {
-                        "baseName": "Human",
-                        "baseSource": "PHB"
-                    }
-                },
                 "MPMM": {
                     "Genasi (Fire)": {
                         "baseName": "Genasi",
