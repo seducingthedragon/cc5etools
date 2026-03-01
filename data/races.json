@@ -197,7 +197,8 @@
 				"fly": true
 			},
 			"traitTags": [
-				"Natural Weapon"
+				"Natural Weapon",
+				"Uncommon Race"
 			],
 			"languageProficiencies": [
 				{
@@ -295,6 +296,9 @@
 				"type": "internal",
 				"path": "races/aasimar.mp3"
 			},
+			"traitTags": [
+				"NPC Race"
+			],
 			"additionalSpells": [
 				{
 					"innate": {
@@ -431,6 +435,9 @@
 			"resist": [
 				"necrotic",
 				"radiant"
+			],
+			"traitTags": [
+				"Uncommon Race"
 			],
 			"languageProficiencies": [
 				{
@@ -1248,7 +1255,9 @@
 			"speed": 30,
 			"traitTags": [
 				"Improved Resting",
-				"Natural Armor"
+				"Natural Armor",
+				"Skill Bonus Dice",
+				"Uncommon Race"
 			],
 			"languageProficiencies": [
 				{
@@ -1652,6 +1661,7 @@
 			"speed": 30,
 			"darkvision": 60,
 			"traitTags": [
+				"Monstrous Race",
 				"Powerful Build"
 			],
 			"languageProficiencies": [
@@ -2131,7 +2141,8 @@
 			"speed": 40,
 			"traitTags": [
 				"Natural Weapon",
-				"Powerful Build"
+				"Powerful Build",
+				"Uncommon Race"
 			],
 			"heightAndWeight": {
 				"baseHeight": 72,
@@ -2378,6 +2389,9 @@
 					"any": 1
 				}
 			],
+			"traitTags": [
+				"Uncommon Race"
+			],
 			"skillProficiencies": [
 				{
 					"choose": {
@@ -2597,7 +2611,8 @@
 			},
 			"darkvision": 120,
 			"traitTags": [
-				"Magic Resistance"
+				"Magic Resistance",
+				"Uncommon Race"
 			],
 			"languageProficiencies": [
 				{
@@ -2780,7 +2795,8 @@
 			},
 			"darkvision": 60,
 			"traitTags": [
-				"Natural Weapon"
+				"Natural Weapon",
+				"Uncommon Race"
 			],
 			"languageProficiencies": [
 				{
@@ -3026,6 +3042,9 @@
 				"mature": 15,
 				"max": 80
 			},
+			"traitTags": [
+				"Uncommon Race"
+			],
 			"darkvision": 60,
 			"resist": [
 				{
@@ -3227,6 +3246,9 @@
 				"mature": 15,
 				"max": 80
 			},
+			"traitTags": [
+				"Uncommon Race"
+			],
 			"darkvision": 60,
 			"resist": [
 				{
@@ -3435,6 +3457,9 @@
 				"mature": 15,
 				"max": 80
 			},
+			"traitTags": [
+				"Uncommon Race"
+			],
 			"darkvision": 60,
 			"resist": [
 				{
@@ -3729,7 +3754,7 @@
 				}
 			],
 			"traitTags": [
-				"Skill Bonus Dice"
+				"Uncommon Race"
 			],
 			"additionalSpells": [
 				{
@@ -4102,6 +4127,7 @@
 			"traitTags": [
 				"Improved Resting",
 				"Tool Proficiency",
+				"Uncommon Race",
 				"Weapon Proficiency"
 			],
 			"languageProficiencies": [
@@ -4615,6 +4641,9 @@
 				"walk": 30,
 				"fly": true
 			},
+			"traitTags": [
+				"Uncommon Race"
+			],
 			"languageProficiencies": [
 				{
 					"common": true,
@@ -4665,7 +4694,7 @@
 					"type": "entries",
 					"name": "Fairy Magic",
 					"entries": [
-						"You know the {@spell druidcraft} cantrip. Starting at 3rd level, you can cast the {@spell faerie fire} spell with this trait. Starting at 5th level, you can also cast the {@spell enlarge/reduce} spell with this trait. Once you cast {@spell faerie fire} or {@spell enlarge/reduce} with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.",
+						"You know the {@spell Druidcraft} cantrip. Starting at 3rd level, you can cast the {@spell Faerie Fire} spell with this trait. Starting at 5th level, you can also cast the {@spell Enlarge/Reduce} spell with this trait. Once you cast {@spell Faerie Fire} or {@spell Enlarge/Reduce} with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.",
 						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
 					]
 				},
@@ -4816,7 +4845,8 @@
 				"max": 500
 			},
 			"traitTags": [
-				"Powerful Build"
+				"Powerful Build",
+				"Uncommon Race"
 			],
 			"heightAndWeight": {
 				"baseHeight": 74,
@@ -5149,6 +5179,9 @@
 				"baseWeight": 110,
 				"weightMod": "2d4"
 			},
+			"traitTags": [
+				"Uncommon Race"
+			],
 			"darkvision": 60,
 			"languageProficiencies": [
 				{
@@ -5343,21 +5376,14 @@
 			},
 			"speed": 30,
 			"traitTags": [
+				"Skill Proficiency",
+				"Tool Proficiency",
+				"Uncommon Race",
 				"Weapon Proficiency"
 			],
 			"languageProficiencies": [
 				{
 					"common": true,
-					"any": 1
-				}
-			],
-			"skillProficiencies": [
-				{
-					"any": 1
-				}
-			],
-			"toolProficiencies": [
-				{
 					"any": 1
 				}
 			],
@@ -5495,6 +5521,9 @@
 				"baseWeight": 90,
 				"weightMod": "1d4"
 			},
+			"traitTags": [
+				"Uncommon Race"
+			],
 			"languageProficiencies": [
 				{
 					"common": true,
@@ -5638,9 +5667,6 @@
 				"max": 500
 			},
 			"darkvision": 60,
-			"traitTags": [
-				"Uncommon Race"
-			],
 			"languageProficiencies": [
 				{
 					"common": true,
@@ -5993,6 +6019,9 @@
 					"any": 1
 				}
 			],
+			"traitTags": [
+				"Uncommon Race"
+			],
 			"entries": [
 				{
 					"name": "Age",
@@ -6313,7 +6342,8 @@
 				"max": 100
 			},
 			"traitTags": [
-				"Powerful Build"
+				"Powerful Build",
+				"Uncommon Race"
 			],
 			"languageProficiencies": [
 				{
@@ -6600,7 +6630,8 @@
 				"max": 50
 			},
 			"traitTags": [
-				"Amphibious"
+				"Amphibious",
+				"Uncommon Race"
 			],
 			"skillProficiencies": [
 				{
@@ -6920,6 +6951,9 @@
 					"any": 1
 				}
 			],
+			"traitTags": [
+				"Uncommon Race"
+			],
 			"entries": [
 				{
 					"type": "entries",
@@ -7080,39 +7114,39 @@
 					]
 				},
 				{
+					"type": "entries",
 					"name": "Darkvision",
 					"entries": [
 						"Thanks to your orc blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
-					],
-					"type": "entries"
+					]
 				},
 				{
+					"type": "entries",
 					"name": "Menacing",
 					"entries": [
 						"You gain proficiency in the {@skill Intimidation} skill."
-					],
-					"type": "entries"
+					]
 				},
 				{
+					"type": "entries",
 					"name": "Relentless Endurance",
 					"entries": [
 						"When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest."
-					],
-					"type": "entries"
+					]
 				},
 				{
+					"type": "entries",
 					"name": "Savage Attacks",
 					"entries": [
 						"When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit."
-					],
-					"type": "entries"
+					]
 				},
 				{
+					"type": "entries",
 					"name": "Languages",
 					"entries": [
 						"You can speak, read, and write Common and Orc. Orc is a harsh, grating language with hard consonants. It has no script of its own but is written in the Dwarvish script."
-					],
-					"type": "entries"
+					]
 				}
 			],
 			"hasFluff": true,
@@ -7157,32 +7191,32 @@
 					]
 				},
 				{
+					"type": "entries",
 					"name": "Lucky",
 					"entries": [
 						"When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll."
-					],
-					"type": "entries"
+					]
 				},
 				{
+					"type": "entries",
 					"name": "Brave",
 					"entries": [
 						"You have advantage on saving throws against being {@condition frightened}."
-					],
-					"type": "entries"
+					]
 				},
 				{
+					"type": "entries",
 					"name": "Halfling Nimbleness",
 					"entries": [
 						"You can move through the space of any creature that is of a size larger than yours."
-					],
-					"type": "entries"
+					]
 				},
 				{
+					"type": "entries",
 					"name": "Languages",
 					"entries": [
 						"You can speak, read, and write Common and Halfling. The Halfling language isn't secret, but halflings are loath to share it with others. They write very little, so they don't have a rich body of literature. Their oral tradition, however, is very strong. Almost all halflings speak Common to converse with the people in whose lands they dwell or through which they are traveling."
-					],
-					"type": "entries"
+					]
 				}
 			],
 			"hasFluff": true,
@@ -7246,6 +7280,9 @@
 				{
 					"perception": true
 				}
+			],
+			"traitTags": [
+				"Uncommon Race"
 			],
 			"entries": [
 				{
@@ -7603,6 +7640,9 @@
 				"mature": 20,
 				"max": 100
 			},
+			"traitTags": [
+				"Uncommon Race"
+			],
 			"speed": 30,
 			"darkvision": 60,
 			"languageProficiencies": [
@@ -7644,8 +7684,7 @@
 					"type": "entries",
 					"name": "Fey Gift",
 					"entries": [
-						"You can use this trait to take the {@action Help} action as a bonus action, and you can do so a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest.",
-						"Starting at 3rd level, choose one of the options below each time you take the {@action Help} action with this trait:",
+						"You can use this trait to take the {@action Help} action as a bonus action, and you can do so a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest. Starting at 3rd level, choose one of the options below each time you take the {@action Help} action with this trait:",
 						{
 							"type": "list",
 							"items": [
@@ -8368,6 +8407,9 @@
 					}
 				}
 			],
+			"traitTags": [
+				"Uncommon Race"
+			],
 			"entries": [
 				{
 					"type": "entries",
@@ -8484,6 +8526,9 @@
 				{
 					"any": 2
 				}
+			],
+			"traitTags": [
+				"Uncommon Race"
 			],
 			"entries": [
 				{
@@ -8814,6 +8859,9 @@
 					}
 				}
 			],
+			"traitTags": [
+				"Uncommon Race"
+			],
 			"entries": [
 				{
 					"name": "Age",
@@ -8843,6 +8891,7 @@
 						"Kobold's connections to dragons can manifest in unpredictable ways in an individual kobold. Choose one of the following legacy options for your kobold.",
 						{
 							"type": "list",
+							"style": "list-hang-notitle",
 							"items": [
 								{
 									"type": "item",
@@ -8859,8 +8908,7 @@
 									"name": "Draconic Sorcery",
 									"entry": "You know one {@filter cantrip of your choice from the sorcerer spell list|spells|level=0|class=Sorcerer}. Intelligence, Wisdom, or Charisma is your spellcasting ability for that cantrip (choose when you select this race)."
 								}
-							],
-							"style": "list-hang-notitle"
+							]
 						}
 					]
 				}
@@ -9351,7 +9399,8 @@
 			},
 			"darkvision": 60,
 			"traitTags": [
-				"Natural Weapon"
+				"Natural Weapon",
+				"Uncommon Race"
 			],
 			"skillProficiencies": [
 				{
@@ -9544,7 +9593,8 @@
 			},
 			"traitTags": [
 				"Natural Armor",
-				"Natural Weapon"
+				"Natural Weapon",
+				"Uncommon Race"
 			],
 			"languageProficiencies": [
 				{
@@ -10287,7 +10337,8 @@
 			],
 			"speed": 30,
 			"traitTags": [
-				"Natural Weapon"
+				"Natural Weapon",
+				"Uncommon Race"
 			],
 			"heightAndWeight": {
 				"baseHeight": 64,
@@ -10842,6 +10893,7 @@
 			},
 			"darkvision": 60,
 			"traitTags": [
+				"Monstrous Race",
 				"Powerful Build"
 			],
 			"languageProficiencies": [
@@ -11293,6 +11345,9 @@
 					"any": 1
 				}
 			],
+			"traitTags": [
+				"Uncommon Race"
+			],
 			"entries": [
 				{
 					"type": "entries",
@@ -11595,7 +11650,8 @@
 			"speed": 35,
 			"traitTags": [
 				"Magic Resistance",
-				"Natural Weapon"
+				"Natural Weapon",
+				"Uncommon Race"
 			],
 			"languageProficiencies": [
 				{
@@ -11739,6 +11795,7 @@
 				"Amphibious",
 				"Improved Resting",
 				"Tool Proficiency",
+				"Uncommon Race",
 				"Weapon Proficiency"
 			],
 			"languageProficiencies": [
@@ -11933,6 +11990,7 @@
 			"traitTags": [
 				"Improved Resting",
 				"Tool Proficiency",
+				"Uncommon Race",
 				"Weapon Proficiency"
 			],
 			"languageProficiencies": [
@@ -12223,6 +12281,9 @@
 					}
 				}
 			],
+			"traitTags": [
+				"Uncommon Race"
+			],
 			"entries": [
 				{
 					"type": "entries",
@@ -12253,6 +12314,7 @@
 						"Whenever you shift, you gain an additional benefit based on one of the following options (choose when you select this race):",
 						{
 							"type": "list",
+							"style": "list-hang-notitle",
 							"items": [
 								{
 									"type": "item",
@@ -12274,8 +12336,7 @@
 									"name": "Wildhunt",
 									"entry": "While shifted, you have advantage on Wisdom checks, and no creature within 30 feet of you can make an attack roll with advantage against you unless you're {@condition incapacitated}."
 								}
-							],
-							"style": "list-hang-notitle"
+							]
 						}
 					]
 				},
@@ -12703,7 +12764,8 @@
 			},
 			"darkvision": 60,
 			"traitTags": [
-				"Natural Weapon"
+				"Natural Weapon",
+				"Uncommon Race"
 			],
 			"languageProficiencies": [
 				{
@@ -13024,6 +13086,7 @@
 			"darkvision": 60,
 			"traitTags": [
 				"Improved Resting",
+				"Monstrous Race",
 				"Natural Armor"
 			],
 			"languageProficiencies": [
@@ -13252,7 +13315,8 @@
 			"speed": 30,
 			"traitTags": [
 				"Natural Armor",
-				"Natural Weapon"
+				"Natural Weapon",
+				"Uncommon Race"
 			],
 			"languageProficiencies": [
 				{
@@ -13534,7 +13598,8 @@
 			},
 			"darkvision": 60,
 			"traitTags": [
-				"Amphibious"
+				"Amphibious",
+				"Uncommon Race"
 			],
 			"resist": [
 				"cold"
@@ -14409,7 +14474,8 @@
 			"speed": 30,
 			"darkvision": 60,
 			"traitTags": [
-				"Magic Resistance"
+				"Magic Resistance",
+				"Uncommon Race"
 			],
 			"resist": [
 				"poison"
@@ -15131,10 +15197,6 @@
 					}
 				}
 			],
-			"overwrite": {
-				"ability": true,
-				"traitTags": true
-			},
 			"hasFluff": true,
 			"hasFluffImages": true,
 			"_versions": [
@@ -15350,10 +15412,6 @@
 					}
 				}
 			],
-			"overwrite": {
-				"ability": true,
-				"traitTags": true
-			},
 			"hasFluff": true,
 			"hasFluffImages": true,
 			"_versions": [
@@ -15523,24 +15581,24 @@
 			],
 			"entries": [
 				{
+					"type": "entries",
 					"name": "Superior Darkvision",
 					"entries": [
 						"Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
 					],
 					"data": {
 						"overwrite": "Darkvision"
-					},
-					"type": "entries"
+					}
 				},
 				{
+					"type": "entries",
 					"name": "Duergar Resilience",
 					"entries": [
 						"You have advantage on saving throws against poison, and you have resistance against poison damage. You also have advantage on saving throws against illusions and against being {@condition charmed} or {@condition paralyzed}."
 					],
 					"data": {
 						"overwrite": "Dwarven Resilience"
-					},
-					"type": "entries"
+					}
 				},
 				{
 					"name": "Languages",
@@ -15897,6 +15955,9 @@
 					"hand crossbow|phb": true
 				}
 			],
+			"traitTags": [
+				"Uncommon Race"
+			],
 			"additionalSpells": [
 				{
 					"innate": {
@@ -15935,30 +15996,30 @@
 			],
 			"entries": [
 				{
+					"type": "entries",
 					"name": "Superior Darkvision",
 					"entries": [
 						"Accustomed to the depths of the Underdark, you have superior vision in dark and dim conditions. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
 					],
 					"data": {
 						"overwrite": "Darkvision"
-					},
-					"type": "entries"
+					}
 				},
 				{
+					"type": "entries",
 					"name": "Drow Magic",
 					"entries": [
 						"You know one cantrip from the {@filter sorcerer spell list|spells|source=|level=0|class=sorcerer|components & miscellaneous=}. After a long rest, you can replace it with another {@filter sorcerer cantrip|spells|source=|level=0|class=sorcerer|components & miscellaneous=}.",
 						"When you reach 3rd level, you can cast the {@spell Faerie Fire} spell once per long rest without using a spell slot. When you reach 5th level, you can also cast the {@spell Darkness} spell once per long rest without using a spell slot. You always have these spells prepared and you can cast them without any material components. You can also cast these spells using spell slots you have of the appropriate level.",
 						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race)."
-					],
-					"type": "entries"
+					]
 				},
 				{
+					"type": "entries",
 					"name": "Drow Weapon Training",
 					"entries": [
 						"You have proficiency with {@item rapier|phb|rapiers}, {@item shortsword|phb|shortswords}, and {@item hand crossbow|phb|hand crossbows}."
-					],
-					"type": "entries"
+					]
 				}
 			],
 			"hasFluff": true
@@ -15974,6 +16035,9 @@
 					"dex": 2,
 					"int": 1
 				}
+			],
+			"traitTags": [
+				"NPC Race"
 			],
 			"weaponProficiencies": [
 				{
@@ -16271,6 +16335,9 @@
 							}
 						}
 					},
+					"traitTags": [
+						"Uncommon Race"
+					],
 					"additionalSpells": [
 						{
 							"known": {
@@ -16732,6 +16799,9 @@
 					"shortbow|phb": true,
 					"longbow|phb": true
 				}
+			],
+			"traitTags": [
+				"Uncommon Race"
 			],
 			"additionalSpells": [
 				{
@@ -19987,6 +20057,9 @@
 					}
 				}
 			],
+			"traitTags": [
+				"Uncommon Race"
+			],
 			"skillProficiencies": [
 				{
 					"any": 2
@@ -20377,6 +20450,9 @@
 						}
 					}
 				}
+			],
+			"traitTags": [
+				"Uncommon Race"
 			],
 			"entries": [
 				{
