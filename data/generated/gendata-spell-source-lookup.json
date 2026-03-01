@@ -622,6 +622,10 @@
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
+                    "Half-Elf (Sun Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Kobold": true
                 },
                 "SCAG": {
@@ -2297,6 +2301,10 @@
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
+                    "Half-Elf (Sun Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Kobold": true
                 },
                 "SCAG": {
@@ -3146,6 +3154,10 @@
                 },
                 "MPMM": {
                     "Half-Elf (Drow Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
+                    "Half-Elf (Sun Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
@@ -5020,6 +5032,10 @@
                         "baseSource": "PHB"
                     },
                     "Half-Elf (Moon Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
+                    "Half-Elf (Sun Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
@@ -7652,6 +7668,10 @@
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
+                    "Half-Elf (Sun Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Kobold": true
                 },
                 "PSX": {
@@ -8428,6 +8448,10 @@
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
+                    "Half-Elf (Sun Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Kobold": true
                 },
                 "PSX": {
@@ -9198,6 +9222,10 @@
                 "MPMM": {
                     "Eladrin": true,
                     "Half-Elf (Moon Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
+                    "Half-Elf (Sun Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
@@ -11136,6 +11164,10 @@
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
+                    "Half-Elf (Sun Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Kobold": true
                 },
                 "VGM": {
@@ -11647,6 +11679,10 @@
                         "baseSource": "PHB"
                     },
                     "Half-Elf (Moon Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
+                    "Half-Elf (Sun Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
@@ -12398,6 +12434,10 @@
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
+                    "Half-Elf (Sun Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Half-Elf (Wood Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -12528,6 +12568,10 @@
                         "baseSource": "PHB"
                     },
                     "Half-Elf (Moon Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
+                    "Half-Elf (Sun Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
@@ -12694,6 +12738,10 @@
                         "baseSource": "PHB"
                     },
                     "Half-Elf (Moon Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
+                    "Half-Elf (Sun Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
@@ -13906,6 +13954,10 @@
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
+                    "Half-Elf (Sun Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Half-Elf (Wood Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -14216,6 +14268,10 @@
                         "baseSource": "PHB"
                     },
                     "Half-Elf (Moon Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
+                    "Half-Elf (Sun Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
@@ -15003,6 +15059,10 @@
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
+                    "Half-Elf (Sun Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Kobold": true
                 },
                 "PSX": {
@@ -15268,6 +15328,10 @@
                 },
                 "MPMM": {
                     "Half-Elf (Moon Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
+                    "Half-Elf (Sun Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
@@ -16429,6 +16493,10 @@
                         "baseSource": "MPMM"
                     },
                     "Half-Elf (Drow Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
+                    "Half-Elf (Sun Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
@@ -17891,6 +17959,10 @@
                     "Elf (Drow)": {
                         "baseName": "Elf",
                         "baseSource": "PHB"
+                    },
+                    "Elf (High)": {
+                        "baseName": "Elf",
+                        "baseSource": "PHB"
                     }
                 },
                 "MPMM": {
@@ -17898,7 +17970,29 @@
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
+                    "Half-Elf (Sun Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Kobold": true
+                },
+                "SCAG": {
+                    "Half-Elf (Variant; Moon Elf or Sun Elf Descent)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    }
+                },
+                "PSX": {
+                    "Merfolk (Ixalan; Blue)": {
+                        "baseName": "Merfolk",
+                        "baseSource": "PSZ"
+                    }
+                },
+                "PSZ": {
+                    "Merfolk (Zendikar; Ula Creed)": {
+                        "baseName": "Merfolk",
+                        "baseSource": "PSZ"
+                    }
                 }
             }
         },
@@ -18538,6 +18632,10 @@
                         "baseSource": "PHB"
                     },
                     "Half-Elf (Moon Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
+                    "Half-Elf (Sun Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
@@ -19792,6 +19890,10 @@
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
+                    "Half-Elf (Sun Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Kobold": true
                 },
                 "PSX": {
@@ -20090,6 +20192,10 @@
                 },
                 "MPMM": {
                     "Half-Elf (Drow Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
+                    "Half-Elf (Sun Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
@@ -20393,6 +20499,10 @@
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
+                    "Half-Elf (Sun Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Kobold": true
                 },
                 "PSX": {
@@ -20520,6 +20630,10 @@
                 },
                 "MPMM": {
                     "Half-Elf (Drow Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
+                    "Half-Elf (Sun Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
@@ -21112,6 +21226,10 @@
                 },
                 "MPMM": {
                     "Half-Elf (Drow Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
+                    "Half-Elf (Sun Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
@@ -22101,6 +22219,10 @@
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
+                    "Half-Elf (Sun Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Half-Elf (Wood Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -22286,6 +22408,10 @@
                 },
                 "MPMM": {
                     "Half-Elf (Drow Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
+                    "Half-Elf (Sun Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
@@ -22765,6 +22891,10 @@
                 },
                 "MPMM": {
                     "Half-Elf (Drow Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
+                    "Half-Elf (Sun Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
@@ -23254,6 +23384,10 @@
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
+                    "Half-Elf (Sun Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Half-Elf (Wood Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -23425,6 +23559,10 @@
                 },
                 "MPMM": {
                     "Half-Elf (Drow Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
+                    "Half-Elf (Sun Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
@@ -23732,6 +23870,10 @@
                 },
                 "MPMM": {
                     "Half-Elf (Drow Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
+                    "Half-Elf (Sun Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
@@ -24334,6 +24476,10 @@
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
+                    "Half-Elf (Sun Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Half-Elf (Wood Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -24818,6 +24964,10 @@
                         "baseSource": "PHB"
                     },
                     "Half-Elf (Sea Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
+                    "Half-Elf (Sun Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
@@ -25396,6 +25546,10 @@
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
+                    "Half-Elf (Sun Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Half-Elf (Wood Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -25589,6 +25743,12 @@
                 "PHB": {
                     "Elf (High)": {
                         "baseName": "Elf",
+                        "baseSource": "PHB"
+                    }
+                },
+                "MPMM": {
+                    "Half-Elf (Sun Elf Ancestry)": {
+                        "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     }
                 },
@@ -26156,13 +26316,27 @@
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
+                    "Half-Elf (Sun Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Half-Elf (Wood Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
                     "Kobold": true
                 },
+                "SCAG": {
+                    "Half-Elf (Variant; Moon Elf or Sun Elf Descent)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    }
+                },
                 "PSX": {
+                    "Merfolk (Ixalan; Blue)": {
+                        "baseName": "Merfolk",
+                        "baseSource": "PSZ"
+                    },
                     "Merfolk (Ixalan; Green)": {
                         "baseName": "Merfolk",
                         "baseSource": "PSZ"
@@ -26174,6 +26348,10 @@
                         "baseSource": "PSZ"
                     },
                     "Merfolk (Zendikar; Emeria Creed)": {
+                        "baseName": "Merfolk",
+                        "baseSource": "PSZ"
+                    },
+                    "Merfolk (Zendikar; Ula Creed)": {
                         "baseName": "Merfolk",
                         "baseSource": "PSZ"
                     }
@@ -26380,12 +26558,22 @@
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
+                    "Half-Elf (Sun Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Half-Elf (Wood Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
                     "Kobold": true,
                     "Shadar-Kai": true
+                },
+                "SCAG": {
+                    "Half-Elf (Variant; Moon Elf or Sun Elf Descent)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    }
                 },
                 "PSK": {
                     "Elf (Kaladesh; Vahadar)": {
@@ -26394,6 +26582,10 @@
                     }
                 },
                 "PSX": {
+                    "Merfolk (Ixalan; Blue)": {
+                        "baseName": "Merfolk",
+                        "baseSource": "PSZ"
+                    },
                     "Merfolk (Ixalan; Green)": {
                         "baseName": "Merfolk",
                         "baseSource": "PSZ"
@@ -26405,6 +26597,10 @@
                         "baseSource": "PSZ"
                     },
                     "Merfolk (Zendikar; Emeria Creed)": {
+                        "baseName": "Merfolk",
+                        "baseSource": "PSZ"
+                    },
+                    "Merfolk (Zendikar; Ula Creed)": {
                         "baseName": "Merfolk",
                         "baseSource": "PSZ"
                     }
@@ -26778,11 +26974,21 @@
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
+                    "Half-Elf (Sun Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Half-Elf (Wood Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
                     "Kobold": true
+                },
+                "SCAG": {
+                    "Half-Elf (Variant; Moon Elf or Sun Elf Descent)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    }
                 },
                 "PSK": {
                     "Elf (Kaladesh; Vahadar)": {
@@ -26791,6 +26997,10 @@
                     }
                 },
                 "PSX": {
+                    "Merfolk (Ixalan; Blue)": {
+                        "baseName": "Merfolk",
+                        "baseSource": "PSZ"
+                    },
                     "Merfolk (Ixalan; Green)": {
                         "baseName": "Merfolk",
                         "baseSource": "PSZ"
@@ -26802,6 +27012,10 @@
                         "baseSource": "PSZ"
                     },
                     "Merfolk (Zendikar; Emeria Creed)": {
+                        "baseName": "Merfolk",
+                        "baseSource": "PSZ"
+                    },
+                    "Merfolk (Zendikar; Ula Creed)": {
                         "baseName": "Merfolk",
                         "baseSource": "PSZ"
                     }
@@ -26874,11 +27088,21 @@
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
+                    "Half-Elf (Sun Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Half-Elf (Wood Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
                     "Kobold": true
+                },
+                "SCAG": {
+                    "Half-Elf (Variant; Moon Elf or Sun Elf Descent)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    }
                 },
                 "PSK": {
                     "Elf (Kaladesh; Vahadar)": {
@@ -26887,6 +27111,10 @@
                     }
                 },
                 "PSX": {
+                    "Merfolk (Ixalan; Blue)": {
+                        "baseName": "Merfolk",
+                        "baseSource": "PSZ"
+                    },
                     "Merfolk (Ixalan; Green)": {
                         "baseName": "Merfolk",
                         "baseSource": "PSZ"
@@ -26898,6 +27126,10 @@
                         "baseSource": "PSZ"
                     },
                     "Merfolk (Zendikar; Emeria Creed)": {
+                        "baseName": "Merfolk",
+                        "baseSource": "PSZ"
+                    },
+                    "Merfolk (Zendikar; Ula Creed)": {
                         "baseName": "Merfolk",
                         "baseSource": "PSZ"
                     }
@@ -27253,6 +27485,10 @@
                     "Elf (Drow)": {
                         "baseName": "Elf",
                         "baseSource": "PHB"
+                    },
+                    "Elf (High)": {
+                        "baseName": "Elf",
+                        "baseSource": "PHB"
                     }
                 },
                 "MPMM": {
@@ -27260,7 +27496,29 @@
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
+                    "Half-Elf (Sun Elf Ancestry)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    },
                     "Kobold": true
+                },
+                "SCAG": {
+                    "Half-Elf (Variant; Moon Elf or Sun Elf Descent)": {
+                        "baseName": "Half-Elf",
+                        "baseSource": "PHB"
+                    }
+                },
+                "PSX": {
+                    "Merfolk (Ixalan; Blue)": {
+                        "baseName": "Merfolk",
+                        "baseSource": "PSZ"
+                    }
+                },
+                "PSZ": {
+                    "Merfolk (Zendikar; Ula Creed)": {
+                        "baseName": "Merfolk",
+                        "baseSource": "PSZ"
+                    }
                 }
             }
         },
