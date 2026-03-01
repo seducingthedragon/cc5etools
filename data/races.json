@@ -4233,6 +4233,29 @@
 				},
 				{
 					"type": "entries",
+					"name": "Keen Senses",
+					"entries": [
+						"You have proficiency in the {@skill Perception} skill."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fey Trance",
+					"entries": [
+						"You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness. While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice.",
+						"Whenever you finish this trance, you can change your season, and you can gain two proficiencies that you don't have, that are {@book weapons|phb|5|weapons} or {@book tools|phb|5|tools} (including one of each) of your choice selected from the {@book Player's Handbook|PHB}. You mystically acquire these proficiencies by drawing them from shared elven memory, and you retain them until you finish your next long rest.",
+						"{@note If you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed.}"
+					]
+				},
+				{
+					"type": "entries",
 					"name": "Seasonal Magic",
 					"entries": [
 						"You know a cantrip based off of your season as seen listed below. You choose your spellcasting ability for these spells between Intelligence, Wisdom, or Charisma.",
@@ -4279,29 +4302,6 @@
 								}
 							]
 						}
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Keen Senses",
-					"entries": [
-						"You have proficiency in the {@skill Perception} skill."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Fey Trance",
-					"entries": [
-						"You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness. While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice.",
-						"Whenever you finish this trance, you can change your season, and you can gain two proficiencies that you don't have, that are {@book weapons|phb|5|weapons} or {@book tools|phb|5|tools} (including one of each) of your choice selected from the {@book Player's Handbook|PHB}. You mystically acquire these proficiencies by drawing them from shared elven memory, and you retain them until you finish your next long rest.",
-						"{@note If you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed.}"
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Languages",
-					"entries": [
-						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
 					]
 				}
 			],
@@ -12038,21 +12038,6 @@
 				},
 				{
 					"type": "entries",
-					"name": "Blessing of the Raven Queen",
-					"entries": [
-						"As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
-						"Starting at 3rd level, you also gain resistance to all damage when you teleport using this trait. The resistance lasts until the start of your next turn. During that time, you appear ghostly and translucent."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Shadow Magic",
-					"entries": [
-						"You know one of the following cantrips of your choice: {@spell Douse Light|BMT}, {@spell Obfuscate Object|BMT}, or {@spell Spare the Dying}. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you select this race). After a long rest, you can swap your known cantrip for another one from this list."
-					]
-				},
-				{
-					"type": "entries",
 					"name": "Darkvision",
 					"entries": [
 						"You can see in dim light within 120 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
@@ -12081,7 +12066,14 @@
 				},
 				{
 					"type": "entries",
-					"name": "Trance",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fey Trance",
 					"entries": [
 						"You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness. While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice.",
 						"Whenever you finish this trance, you can gain two proficiencies that you don't have, that are {@book weapons|phb|5|weapons} or {@book tools|phb|5|tools} (including one of each) of your choice selected from the {@book Player's Handbook|PHB}. You mystically acquire these proficiencies by drawing them from shared elven memory, and you retain them until you finish your next long rest.",
@@ -12090,9 +12082,17 @@
 				},
 				{
 					"type": "entries",
-					"name": "Languages",
+					"name": "Shadow Magic",
 					"entries": [
-						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
+						"You know one of the following cantrips of your choice: {@spell Douse Light|BMT}, {@spell Obfuscate Object|BMT}, or {@spell Spare the Dying}. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you select this race). After a long rest, you can swap your known cantrip for another one from this list."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Blessing of the Raven Queen",
+					"entries": [
+						"As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+						"Starting at 3rd level, you also gain resistance to all damage when you teleport using this trait. The resistance lasts until the start of your next turn. During that time, you appear ghostly and translucent."
 					]
 				}
 			],
