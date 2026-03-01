@@ -411,9 +411,18 @@
 				}
 			],
 			"size": [
-				"S",
 				"M"
 			],
+			"heightAndWeight": {
+				"baseHeight": 56,
+				"heightMod": "2d10",
+				"baseWeight": 110,
+				"weightMod": "2d4"
+			},
+			"age": {
+				"mature": 20,
+				"max": 160
+			},
 			"speed": 30,
 			"age": {
 				"max": 180
@@ -426,7 +435,8 @@
 			"languageProficiencies": [
 				{
 					"common": true,
-					"any": 1
+					"celestial": true,
+					"anyStandard": 1
 				}
 			],
 			"additionalSpells": [
@@ -442,17 +452,26 @@
 						"1": [
 							"light#c"
 						]
+					},
+					"innate": {
+						"3": {
+							"daily": {
+								"1": [
+									"ceremony|xge"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"invisibility"
+								]
+							}
+						}
 					}
 				}
 			],
 			"entries": [
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"You are Medium or Small. You choose the size when you select this race."
-					]
-				},
 				{
 					"type": "entries",
 					"name": "Celestial Resistance",
@@ -471,23 +490,31 @@
 					"type": "entries",
 					"name": "Healing Hands",
 					"entries": [
-						"As an action, you can touch a creature and roll a number of d4s equal to your proficiency bonus. The creature regains a number of hit points equal to the total rolled. Once you use this trait, you can't use it again until you finish a long rest."
+						"As an action, you can touch a creature and roll a number of d4s equal to your proficiency bonus. The creature regains a number of hit points equal to the total rolled. Once you use this trait, you can't use it again until you finish a short or long rest."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Light Bearer",
 					"entries": [
-						"You know the {@spell Light} cantrip. Charisma is your spellcasting ability for it."
+						"You know the {@spell Light} cantrip. Starting at level 3, you can cast {@spell Ceremony|XGE} once per long rest. When you reach level 5, you can cast {@spell Invisibility} once per long rest. You always have these spells prepared and you can cast them without any material components. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you select this race)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Heavenly Wings",
+					"entries": [
+						"You can summon a pair of luminous, special wings that temporarily sprout from your back. For 1 minute, you have a flying speed equal to your walking speed. You can summon your wings a number of times equal to your proficiency bonus per long rest."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Celestial Revelation",
 					"entries": [
-						"When you reach 3rd level, choose one of the revelation options below. Thereafter, you can use a bonus action to unleash the celestial energy within yourself, gaining the benefits of that revelation. Your transformation lasts for 1 minute or until you end it as a bonus action. Once you transform using your revelation below, you can't use it again until you finish a long rest.",
+						"When you reach 3rd level, you can use a bonus action to unleash the celestial energy within yourself, gaining the benefits of one of the revelations listed below (choose the option each time you transform). Your transformation lasts for 1 minute or until you end it (no action required). Once you transform using a revelation, you can't use it again until you finish a long rest.",
 						{
 							"type": "list",
+							"style": "list-hang-notitle",
 							"items": [
 								{
 									"type": "item",
@@ -498,14 +525,8 @@
 									"type": "item",
 									"name": "Radiant Consumption",
 									"entry": "Searing light temporarily radiates from your eyes and mouth. For the duration, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes radiant damage equal to your proficiency bonus. Until the transformation ends, once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus."
-								},
-								{
-									"type": "item",
-									"name": "Radiant Soul",
-									"entry": "Two luminous, spectral wings sprout from your back temporarily. Until the transformation ends, you have a flying speed equal to your walking speed, and once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus."
 								}
-							],
-							"style": "list-hang-notitle"
+							]
 						}
 					]
 				},
@@ -513,68 +534,12 @@
 					"type": "entries",
 					"name": "Languages",
 					"entries": [
-						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
+						"You can speak, read, and write Common, Celestial, and one other {@filter standard language|languages|source=|type=standard} of your choice."
 					]
 				}
 			],
 			"hasFluff": true,
-			"hasFluffImages": true,
-			"_versions": [
-				{
-					"name": "Aasimar; Necrotic Shroud",
-					"source": "MPMM",
-					"_mod": {
-						"entries": {
-							"mode": "replaceArr",
-							"replace": "Celestial Revelation",
-							"items": {
-								"name": "Celestial Revelation (Necrotic Shroud)",
-								"type": "entries",
-								"entries": [
-									"When you reach 3rd level, you can use a bonus action to transform yourself. Your transformation lasts for 1 minute or until you end it as a bonus action. Once you transform using your revelation, you can't use it again until you finish a long rest.",
-									"Your eyes briefly become pools of darkness, and ghostly, flightless wings sprout from your back temporarily. Creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw ({@dc 8} + your proficiency bonus + your Charisma modifier) or become {@condition frightened} of you until the end of your next turn. Until the transformation ends, once on each of your turns, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus."
-								]
-							}
-						}
-					}
-				},
-				{
-					"name": "Aasimar; Radiant Consumption",
-					"source": "MPMM",
-					"_mod": {
-						"entries": {
-							"mode": "replaceArr",
-							"replace": "Celestial Revelation",
-							"items": {
-								"name": "Celestial Revelation (Radiant Consumption)",
-								"type": "entries",
-								"entries": [
-									"When you reach 3rd level, you can use a bonus action to transform yourself. Your transformation lasts for 1 minute or until you end it as a bonus action. Once you transform using your revelation, you can't use it again until you finish a long rest.",
-									"Searing light temporarily radiates from your eyes and mouth. For the duration, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes radiant damage equal to your proficiency bonus. Until the transformation ends, once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus."
-								]
-							}
-						}
-					}
-				},
-				{
-					"name": "Aasimar; Radiant Soul",
-					"source": "MPMM",
-					"_mod": {
-						"entries": {
-							"mode": "replaceArr",
-							"replace": "Celestial Revelation",
-							"items": {
-								"name": "Celestial Revelation (Radiant Soul)",
-								"type": "entries",
-								"entries": [
-									"When you reach 3rd level, you can use a bonus action to transform yourself. Your transformation lasts for 1 minute or until you end it as a bonus action. Once you transform using your revelation, you can't use it again until you finish a long rest.",
-									"Two luminous, spectral wings sprout from your back temporarily. Until the transformation ends, you have a flying speed equal to your walking speed, and once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus."
-								]
-							}
-						}
-					}
-				}
-			]
+			"hasFluffImages": true
 		},
 		{
 			"name": "Aasimar",
@@ -7054,7 +7019,7 @@
 					"type": "entries",
 					"name": "Languages",
 					"entries": [
-						"You can speak, read, and write Common, Elvish, and one extra language of your choice."
+						"You can speak, read, and write Common, Elvish, and one other {@filter standard language|languages|source=|type=standard} of your choice."
 					]
 				}
 			],
@@ -7873,7 +7838,7 @@
 				{
 					"name": "Languages",
 					"entries": [
-						"You can speak, read, and write Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Orc curses, Elvish musical expressions, Dwarvish military phrases, and so on."
+						"You can speak, read, and write Common and one other {@filter standard language|languages|source=|type=standard} language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Orc curses, Elvish musical expressions, Dwarvish military phrases, and so on."
 					],
 					"type": "entries"
 				}
@@ -13153,11 +13118,13 @@
 			"languageProficiencies": [
 				{
 					"common": true,
-					"infernal": true
+					"infernal": true,
+					"anyStandard": 1
 				}
 			],
 			"resist": [
-				"fire"
+				"fire",
+				"necrotic"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -13181,7 +13148,13 @@
 							}
 						}
 					},
-					"ability": "cha",
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
 					"known": {
 						"1": [
 							"thaumaturgy#c"
@@ -13198,13 +13171,6 @@
 					]
 				},
 				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Tieflings are about the same size and build as humans. Your size is Medium."
-					]
-				},
-				{
 					"name": "Darkvision",
 					"entries": [
 						"Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
@@ -13214,21 +13180,21 @@
 				{
 					"name": "Hellish Resistance",
 					"entries": [
-						"You have resistance to fire damage."
+						"You have resistance to fire and necrotic damage."
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Infernal Legacy",
 					"entries": [
-						"You know the {@spell Thaumaturgy} cantrip. Once you reach 3rd level, you can cast the {@spell Hellish Rebuke} spell as a 2nd-level spell with this trait; you regain the ability to cast it when you finish a long rest. Once you reach 5th level, you can also cast the {@spell Darkness} spell once per day with this trait; you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
+						"You know the {@spell Thaumaturgy} cantrip. Once you reach 3rd level, you can cast the {@spell Hellish Rebuke} spell as a 2nd-level spell with this trait; you regain the ability to cast it when you finish a long rest. Once you reach 5th level, you can also cast the {@spell Darkness} spell once per day with this trait; you regain the ability to cast it when you finish a long rest. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells."
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages",
 					"entries": [
-						"You can speak, read, and write Common and Infernal."
+						"You can speak, read, and write Common, Infernal, and one other {@filter standard language|languages|source=|type=standard} of your choice."
 					],
 					"type": "entries"
 				}
@@ -14375,7 +14341,7 @@
 					"type": "entries",
 					"name": "Languages",
 					"entries": [
-						"You can speak, read, and write Common and one other language of your choice."
+						"You can speak, read, and write Common and one other {@filter standard language|languages|source=|type=standard} of your choice."
 					]
 				}
 			],

@@ -682,7 +682,7 @@
 				}
 			],
 			"entries": [
-				"Choose a creature you can see within range. You take {@damage 1d20} necrotic damage, and the target regains hit points equal to the amount of damage you took."
+				"Choose a creature you can see within range. You take {@damage 1d10} necrotic damage, and the target regains hit points equal to the amount of damage you took."
 			],
 			"damageInflict": [
 				"necrotic"
