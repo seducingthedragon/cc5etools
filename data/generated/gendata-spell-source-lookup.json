@@ -1309,6 +1309,9 @@
                         "baseSource": "PHB"
                     }
                 },
+                "MPMM": {
+                    "Tiefling (Greedsome)": true
+                },
                 "MTF": {
                     "Tiefling (Mammon)": {
                         "baseName": "Tiefling",
@@ -1847,6 +1850,11 @@
                             "EI"
                         ]
                     }
+                }
+            },
+            "race": {
+                "MPMM": {
+                    "Tiefling (Slothful)": true
                 }
             }
         },
@@ -3039,6 +3047,9 @@
                 }
             },
             "race": {
+                "MPMM": {
+                    "Tiefling (Lustful)": true
+                },
                 "MTF": {
                     "Tiefling (Fierna)": {
                         "baseName": "Tiefling",
@@ -3161,7 +3172,8 @@
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
-                    "Kobold": true
+                    "Kobold": true,
+                    "Tiefling (Resentful)": true
                 },
                 "PSX": {
                     "Merfolk (Ixalan; Blue)": {
@@ -3625,6 +3637,11 @@
                 },
                 "MOT": {
                     "Klothys's Devotee": true
+                }
+            },
+            "race": {
+                "MPMM": {
+                    "Tiefling (Prideful)": true
                 }
             }
         },
@@ -5143,6 +5160,9 @@
                         "baseName": "Elf (Zendikar)",
                         "baseSource": "PSZ"
                     }
+                },
+                "MPMM": {
+                    "Tiefling (Prideful)": true
                 },
                 "SCAG": {
                     "Half-Elf (Variant; Drow Descent)": {
@@ -6904,6 +6924,9 @@
                 }
             },
             "race": {
+                "MPMM": {
+                    "Tiefling (Lustful)": true
+                },
                 "SCAG": {
                     "Tiefling (Variant; Devil's Tongue)": {
                         "baseName": "Tiefling",
@@ -7672,7 +7695,8 @@
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
-                    "Kobold": true
+                    "Kobold": true,
+                    "Tiefling (Envious)": true
                 },
                 "PSX": {
                     "Merfolk (Ixalan; Blue)": {
@@ -7945,6 +7969,11 @@
                     "Druid": true,
                     "Sorcerer": true,
                     "Wizard": true
+                }
+            },
+            "race": {
+                "MPMM": {
+                    "Tiefling (Wrathful)": true
                 }
             }
         },
@@ -8452,7 +8481,8 @@
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
-                    "Kobold": true
+                    "Kobold": true,
+                    "Tiefling (Lustful)": true
                 },
                 "PSX": {
                     "Merfolk (Ixalan; Blue)": {
@@ -9770,6 +9800,9 @@
                         "baseSource": "PHB"
                     }
                 },
+                "MPMM": {
+                    "Tiefling (Envious)": true
+                },
                 "SCAG": {
                     "Tiefling (Variant; Infernal Legacy)": {
                         "baseName": "Tiefling",
@@ -10067,6 +10100,11 @@
             "reward": {
                 "GGR": {
                     "Azorius Charm": true
+                }
+            },
+            "race": {
+                "MPMM": {
+                    "Tiefling (Slothful)": true
                 }
             }
         },
@@ -10636,7 +10674,7 @@
             },
             "race": {
                 "MPMM": {
-                    "Duergar": true
+                    "Duergar": true,
                 },
                 "MTF": {
                     "Dwarf (Duergar)": {
@@ -14164,6 +14202,9 @@
                         "baseName": "Halfling",
                         "baseSource": "PHB"
                     }
+                },
+                "MPMM": {
+                    "Aasimar": true
                 }
             }
         },
@@ -14347,7 +14388,8 @@
                     "Genasi (Fire)": {
                         "baseName": "Genasi",
                         "baseSource": "MPMM"
-                    }
+                    },
+                    "Tiefling (Envious)": true
                 },
                 "MTF": {
                     "Tiefling (Mephistopheles)": {
@@ -15063,7 +15105,8 @@
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
-                    "Kobold": true
+                    "Kobold": true,
+                    "Tiefling (Slothful)": true
                 },
                 "PSX": {
                     "Merfolk (Ixalan; Blue)": {
@@ -15168,6 +15211,9 @@
                         "baseName": "Tiefling",
                         "baseSource": "PHB"
                     }
+                },
+                "MPMM": {
+                    "Tiefling (Gluttonous)": true
                 }
             },
             "reward": {
@@ -15816,6 +15862,11 @@
                 "GGR": {
                     "Boros Legionnaire": true
                 }
+            },
+            "race": {
+                "MPMM": {
+                    "Tiefling (Resentful)": true
+                }
             }
         },
         "scrying": {
@@ -15910,6 +15961,9 @@
                 }
             },
             "race": {
+                "MPMM": {
+                    "Tiefling (Resentful)": true
+                },
                 "MTF": {
                     "Tiefling (Zariel)": {
                         "baseName": "Tiefling",
@@ -18048,6 +18102,9 @@
                         "baseSource": "PHB"
                     }
                 },
+                "MPMM": {
+                    "Tiefling (Greedsome)": true
+                },
                 "MTF": {
                     "Tiefling (Mammon)": {
                         "baseName": "Tiefling",
@@ -18122,7 +18179,8 @@
                     }
                 },
                 "MPMM": {
-                    "Duergar": true
+                    "Duergar": true,
+                    "Tiefling (Prideful)": true
                 },
                 "MTF": {
                     "Tiefling (Asmodeus)": {
@@ -18838,7 +18896,8 @@
                     "Half-Elf (Moon Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
-                    }
+                    },
+                    "Tiefling (Vain)": true
                 },
                 "PSZ": {
                     "Merfolk (Zendikar; Cosi Creed)": {
@@ -19452,6 +19511,11 @@
                             }
                         }
                     }
+                }
+            },
+            "race": {
+                "MPMM": {
+                    "Tiefling (Wrathful)": true
                 }
             }
         },
@@ -26710,6 +26774,11 @@
                         ]
                     }
                 }
+            },
+            "race": {
+                "MPMM": {
+                    "Tiefling (Gluttonous)": true
+                }
             }
         },
         "hibernation": {
@@ -26868,7 +26937,8 @@
                         "baseSource": "PHB"
                     },
                     "Kobold": true,
-                    "Shadar-Kai": true
+                    "Shadar-Kai": true,
+                    "Tiefling (Greedsome)": true
                 },
                 "PSZ": {
                     "Merfolk (Zendikar; Cosi Creed)": {
@@ -27096,7 +27166,8 @@
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
-                    "Kobold": true
+                    "Kobold": true,
+                    "Tiefling (Gluttonous)": true
                 },
                 "SCAG": {
                     "Half-Elf (Variant; Moon Elf or Sun Elf Descent)": {
@@ -27191,6 +27262,11 @@
                         ]
                     }
                 }
+            },
+            "race": {
+                "MPMM": {
+                    "Tiefling (Vain)": true
+                }
             }
         },
         "shadow puppets": {
@@ -27211,6 +27287,11 @@
                             "BMT"
                         ]
                     }
+                }
+            },
+            "race": {
+                "MPMM": {
+                    "Tiefling (Vain)": true
                 }
             }
         },
@@ -27500,7 +27581,8 @@
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
-                    "Kobold": true
+                    "Kobold": true,
+                    "Tiefling (Wrathful)": true
                 },
                 "SCAG": {
                     "Half-Elf (Variant; Moon Elf or Sun Elf Descent)": {
