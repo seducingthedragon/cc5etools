@@ -19037,9 +19037,16 @@
 				},
 				{
 					"type": "entries",
+					"name": "Control Air",
+					"entries": [
+						"You have the ability to mold, shape, control, etc., air within a 5-foot cube of space in any manner that's harmless, including moving it into a neighboring 5-foot cube."
+					]
+				},
+				{
+					"type": "entries",
 					"name": "Mingle with the Wind",
 					"entries": [
-						"You know the {@spell Shocking Grasp} cantrip. Starting at 3rd level, you can cast the {@spell Feather Fall} spell with this trait, without requiring a material component. Starting 5th level, you can also cast the {@spell Levitate} spell with this trait, without requiring a material component. Once you cast {@spell Feather Fall} or {@spell Levitate} with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.",
+						"You know the {@spell Shocking Grasp} cantrip. Starting at 3rd level, you can cast the {@spell Feather Fall} spell with this trait, without requiring a material component once per long rest. Starting 5th level, you can also cast the {@spell Levitate} spell with this trait, without requiring a material component once per long rest.",
 						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
 					]
 				}
@@ -19056,9 +19063,20 @@
 			"additionalSpells": [
 				{
 					"innate": {
-						"5": [
-							"pass without trace"
-						]
+						"3": {
+							"daily": {
+								"1": [
+									"earth tremor|xge"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"pass without trace"
+								]
+							}
+						}
 					},
 					"ability": {
 						"choose": [
@@ -19084,10 +19102,16 @@
 				},
 				{
 					"type": "entries",
+					"name": "Control Earth",
+					"entries": [
+						"You have the ability to mold, shape, control, etc., the dirt and ground within a 5-foot cube of space in any manner that's harmless, including moving it into a neighboring 5-foot cube."
+					]
+				},
+				{
+					"type": "entries",
 					"name": "Merge with Stone",
 					"entries": [
-						"You know the {@spell Blade Ward} cantrip. You can cast it as normal, and you can also cast it as a bonus action a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest.",
-						"Starting at 5th level, you can cast the {@spell Pass Without Trace} spell with this trait, without requiring a material component. Once you cast that spell with this trait, you can't do so again until you finish a long rest. You can also cast it using any spell slots you have of 2nd level or higher.",
+						"You know the {@spell Blade Ward} cantrip. Starting at 3rd level, you can cast {@spell Earth Tremor|XGE} with this trait, once per long rest. Starting at 5th level, you can cast the {@spell Pass Without Trace} spell with this trait, without requiring a material component once per long rest.",
 						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
 					]
 				}
@@ -19146,9 +19170,16 @@
 				},
 				{
 					"type": "entries",
+					"name": "Control Fire",
+					"entries": [
+						"You have the ability to mold, shape, control, etc., fire within a 5-foot cube of space in any manner that's harmless, including moving it into a neighboring 5-foot cube."
+					]
+				},
+				{
+					"type": "entries",
 					"name": "Reach to the Blaze",
 					"entries": [
-						"You know the {@spell Produce Flame} cantrip. Starting at 3rd level, you can cast the {@spell Burning Hands} spell with this trait. Starting at 5th level, you can also cast the {@spell Primordial Blade} spell, dealing only Fire damage, with this trait, without a material component. Once you cast {@spell Burning Hands} or {@spell Primordial Blade} with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.",
+						"You know the {@spell Produce Flame} cantrip. Starting at 3rd level, you can cast the {@spell Burning Hands} spell with this trait once per long rest. Starting at 5th level, you can also cast the {@spell Primordial Blade} spell, dealing only Fire damage, with this trait, without a material component once per long rest.",
 						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
 					]
 				}
@@ -19228,9 +19259,16 @@
 				},
 				{
 					"type": "entries",
+					"name": "Control Water",
+					"entries": [
+						"You have the ability to mold, shape, control, etc., water within a 5-foot cube of space in any manner that's harmless, including moving it into a neighboring 5-foot cube."
+					]
+				},
+				{
+					"type": "entries",
 					"name": "Call to the Wave",
 					"entries": [
-						"You know the {@spell Acid Splash} cantrip. Starting at 3rd level, you can cast the {@spell Create or Destroy Water} spell with this trait. Starting at 5th level, you can also cast the {@spell Water Walk} spell with this trait, without requiring a material component. Once you cast {@spell Create or Destroy Water} or {@spell Water Walk} with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.",
+						"You know the {@spell Acid Splash} cantrip. Starting at 3rd level, you can cast the {@spell Create or Destroy Water} spell with this trait once per long rest. Starting at 5th level, you can also cast the {@spell Water Walk} spell with this trait, without requiring a material component once per long rest.",
 						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
 					]
 				}
