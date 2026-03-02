@@ -1986,8 +1986,7 @@
             },
             "components": {
                 "v": true,
-                "s": true,
-                "m": "a drop of seawater"
+                "s": true
             },
             "duration": [
                 {
@@ -2000,7 +1999,7 @@
                 }
             ],
             "entries": [
-                "Up to three weapons of your choice that you can see within range become enveloped by water. Roll a {@dice d4}; for the duration, any damage dealt by the targeted weapons is reduced by the number you rolled (to a minimum of 1)."
+                "Up to three weapons of your choice that you can see within range become enveloped by a forcefield flavor of your choice. Roll a {@dice d6}; for the duration, any damage dealt by the targeted weapons is reduced by the number you rolled (to a minimum of 1)."
             ],
             "entriesHigherLevel": [
                 {

@@ -471,7 +471,7 @@
 						"5": {
 							"daily": {
 								"1": [
-									"invisibility"
+									"prayer of healing"
 								]
 							}
 						}
@@ -479,6 +479,13 @@
 				}
 			],
 			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Aasimar mature at the same rate as humans, but they can live up to 180 years."
+					]
+				},
 				{
 					"type": "entries",
 					"name": "Celestial Resistance",
@@ -497,28 +504,28 @@
 					"type": "entries",
 					"name": "Healing Hands",
 					"entries": [
-						"As an action, you can touch a creature and roll a number of d4s equal to your proficiency bonus. The creature regains a number of hit points equal to the total rolled. Once you use this trait, you can't use it again until you finish a short or long rest."
+						"As an action, you can touch a creature and roll a number of {@dice 2d4;3d4;4d4;5d4;6d4|d4s} equal to your proficiency bonus. The creature regains a number of hit points equal to the total rolled. Once you use this trait, you can't use it again until you finish a short or long rest."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Light Bearer",
+					"name": "Angelic Legacy",
 					"entries": [
-						"You know the {@spell Light} cantrip. Starting at level 3, you can cast {@spell Ceremony|XGE} once per long rest. When you reach level 5, you can cast {@spell Invisibility} once per long rest. You always have these spells prepared and you can cast them without any material components. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you select this race)."
+						"You know the {@spell Light} cantrip. Starting at level 3, you can cast {@spell Ceremony|XGE} once per long rest. When you reach level 5, you can cast {@spell Prayer of Healing} once per long rest. You always have these spells prepared and you can cast them without any material components. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you select this race)."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Heavenly Wings",
 					"entries": [
-						"You can summon a pair of luminous, special wings that temporarily sprout from your back. For 1 minute, you have a flying speed equal to your walking speed. You can summon your wings a number of times equal to your proficiency bonus per long rest."
+						"You can summon a pair of luminous, spectral wings that temporarily sprout from your back. For 1 minute, you have a flying speed equal to your walking speed. You can summon your wings a number of times equal to your proficiency bonus per long rest."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Celestial Revelation",
 					"entries": [
-						"When you reach 3rd level, you can use a bonus action to unleash the celestial energy within yourself, gaining the benefits of one of the revelations listed below (choose the option each time you transform). Your transformation lasts for 1 minute or until you end it (no action required). Once you transform using a revelation, you can't use it again until you finish a long rest.",
+						"When you reach 3rd level, you can use a bonus action to unleash the celestial energy within yourself, gaining the benefits of one of the revelations listed below (choose the option each time you transform). Your transformation lasts for 1 minute or until you end it (no action required). You can use this trait once per long rest.",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
@@ -1196,7 +1203,7 @@
 			],
 			"hasFluff": true,
 			"hasFluffImages": true
-		},		
+		},
 		{
 			"name": "Autognome",
 			"source": "MPMM",
@@ -1598,7 +1605,7 @@
 			"source": "MPMM",
 			"page": 8,
 			"otherSources": [
-			{
+				{
 					"source": "VGM",
 					"page": 119
 				}
@@ -13221,6 +13228,561 @@
 			"hasFluffImages": true
 		},
 		{
+			"name": "Tiefling (Gluttonous)",
+			"source": "MPMM",
+			"page": 34,
+			"ability": [
+                {
+                    "choose": {
+                        "weighted": {
+                            "from": [
+                                "str",
+                                "dex",
+                                "con",
+                                "int",
+                                "wis",
+                                "cha"
+                            ],
+                            "weights": [
+                                2,
+                                1
+                            ]
+                        }
+                    }
+                },
+                {
+                    "choose": {
+                        "weighted": {
+                            "from": [
+                                "str",
+                                "dex",
+                                "con",
+                                "int",
+                                "wis",
+                                "cha"
+                            ],
+                            "weights": [
+                                1,
+                                1,
+                                1
+                            ]
+                        }
+                    }
+                }
+            ],
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"heightAndWeight": {
+				"baseHeight": 57,
+				"heightMod": "2d8",
+				"baseWeight": 110,
+				"weightMod": "2d4"
+			},
+			"age": {
+				"mature": 20,
+				"max": 100
+			},
+			"darkvision": 60,
+			"traitTags": [
+				"Uncommon Race"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"infernal": true,
+					"anyStandard": 1
+				}
+			],
+			"resist": [
+				"fire",
+				"necrotic"
+			],
+			"soundClip": {
+				"type": "internal",
+				"path": "races/tiefling.mp3"
+			},
+			"additionalSpells": [
+				{
+					"innate": {
+						"3": {
+							"daily": {
+								"1": [
+									"ray of sickness#2"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"hangover|bmt"
+								]
+							}
+						}
+					},
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": [
+							"thaumaturgy#c"
+						]
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Tieflings mature at the same rate as humans but live a few years longer."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fiendish Resistance",
+					"entries": [
+						"You have resistance to fire and necrotic damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Siphoning Hands",
+					"entries": [
+						"When you use your action to successfully deal necrotic damage, roll a number of {@dice 2d4;3d4;4d4;5d4;6d4|d4s} equal to your proficiency bonus. You gain a number of temporary hit points equal to the total rolled. Once you use this trait, you can't use it again until you finish a short or long rest. The temporary hit points last until the start of your next short or long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Gluttonous Legacy",
+					"entries": [
+						"You know the {@spell Thaumaturgy} cantrip. Once you reach 3rd level, you can cast the {@spell Ray of Sickness} spell as a 2nd-level spell with this trait; you regain the ability to cast it when you finish a long rest. Once you reach 5th level, you can also cast the {@spell Hangover|BMT} spell once per long rest with this trait without any material components. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Hellish Wings",
+					"entries": [
+						"You can summon a pair of fiery dark, spectral wings that temporarily sprout from your back. For 1 minute, you have a flying speed equal to your walking speed. You can summon your wings a number of times equal to your proficiency bonus per long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Gluttonous Revelation",
+					"entries": [
+						"When you reach 3rd level, you can use a bonus action to unleash the fiendish energy within yourself, gaining the benefits of one of the revelations listed below (choose the option each time you transform). Your transformation lasts for 1 minute or until you end it (no action required). You can use this trait once per long rest.",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Vile Death",
+									"entry": "{@i Visual Fluff.} Your eyes briefly become pools of sickly darkness, and putrid, flightless wings sprout from your back temporarily. {@i Area of Effect.} Immediately after you transform, creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw ({@dc 8} + your proficiency bonus + your Charisma modifier) or become {@condition poisoned} until the end of your next turn. {@i Bonus Damage.} Once per turn, until the transformation ends, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a magical effect. The extra damage equals your Proficiency Bonus."
+								},
+								{
+									"type": "item",
+									"name": "Fiery Fury",
+									"entry": "{@i Visual Fluff.} Searing red light temporarily radiates from your eyes and mouth. {@i Area of Effect.} For the duration, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes fire damage equal to your proficiency bonus. {@i Bonus Damage.} Until the transformation ends, once on each of your turns, you can deal extra fire damage to one target when you deal damage to it with an attack or a magical effect. The extra damage equals your Proficiency Bonus."
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common, Infernal, and one other {@filter standard language|languages|source=|type=standard} of your choice."
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Tiefling (Prideful)",
+			"source": "MPMM",
+			"page": 34,
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"heightAndWeight": {
+				"baseHeight": 57,
+				"heightMod": "2d8",
+				"baseWeight": 110,
+				"weightMod": "2d4"
+			},
+			"age": {
+				"mature": 20,
+				"max": 100
+			},
+			"darkvision": 60,
+			"traitTags": [
+				"Uncommon Race"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"infernal": true,
+					"anyStandard": 1
+				}
+			],
+			"resist": [
+				"fire",
+				"necrotic"
+			],
+			"soundClip": {
+				"type": "internal",
+				"path": "races/tiefling.mp3"
+			},
+			"additionalSpells": [
+				{
+					"innate": {
+						"3": {
+							"daily": {
+								"1": [
+									"hellish rebuke#2"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"darkness"
+								]
+							}
+						}
+					},
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": [
+							"thaumaturgy#c"
+						]
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Tieflings mature at the same rate as humans but live a few years longer."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fiendish Resistance",
+					"entries": [
+						"You have resistance to fire and necrotic damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Siphoning Hands",
+					"entries": [
+						"When you use your action to successfully deal necrotic damage, roll a number of {@dice 2d4;3d4;4d4;5d4;6d4|d4s} equal to your proficiency bonus. You gain a number of temporary hit points equal to the total rolled. Once you use this trait, you can't use it again until you finish a short or long rest. The temporary hit points last until the start of your next short or long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Prideful Legacy",
+					"entries": [
+						"You know the {@spell Thaumaturgy} cantrip. Once you reach 3rd level, you can cast the {@spell Hellish Rebuke} spell as a 2nd-level spell with this trait; you regain the ability to cast it when you finish a long rest. Once you reach 5th level, you can also cast the {@spell Darkness} spell once per day with this trait; you regain the ability to cast it when you finish a long rest. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Hellish Wings",
+					"entries": [
+						"You can summon a pair of fiery dark, spectral wings that temporarily sprout from your back. For 1 minute, you have a flying speed equal to your walking speed. You can summon your wings a number of times equal to your proficiency bonus per long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Prideful Revelation",
+					"entries": [
+						"When you reach 3rd level, you can use a bonus action to unleash the fiendish energy within yourself, gaining the benefits of one of the revelations listed below (choose the option each time you transform). Your transformation lasts for 1 minute or until you end it (no action required). You can use this trait once per long rest.",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Commanding Charm",
+									"entry": "{@i Visual Fluff.} Your eyes briefly become pools of darkness, and ghostly, flightless wings sprout from your back temporarily. {@i Area of Effect.} Immediately after you transform, creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw ({@dc 8} + your proficiency bonus + your Charisma modifier) or become {@condition charmed} by you until the end of your next turn. Before the end of your turn, you can issue one command that all {@condition charmed} targets must follow on their next turn. The command cannot involve harming itself or the condition will immediately end. {@i Bonus Damage.} Once per turn, until the transformation ends, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a magical effect. The extra damage equals your Proficiency Bonus."
+								},
+								{
+									"type": "item",
+									"name": "Fiery Fury",
+									"entry": "{@i Visual Fluff.} Searing red light temporarily radiates from your eyes and mouth as a ring of fire eminates 10 feet from you. {@i Area of Effect.} For the duration, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes fire damage equal to your proficiency bonus. {@i Bonus Damage.} Until the transformation ends, once on each of your turns, you can deal extra fire damage to one target when you deal damage to it with an attack or a magical effect. The extra damage equals your Proficiency Bonus."
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common, Infernal, and one other {@filter standard language|languages|source=|type=standard} of your choice."
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Tiefling (Slothful)",
+			"source": "MPMM",
+			"page": 34,
+			"ability": [
+                {
+                    "choose": {
+                        "weighted": {
+                            "from": [
+                                "str",
+                                "dex",
+                                "con",
+                                "int",
+                                "wis",
+                                "cha"
+                            ],
+                            "weights": [
+                                2,
+                                1
+                            ]
+                        }
+                    }
+                },
+                {
+                    "choose": {
+                        "weighted": {
+                            "from": [
+                                "str",
+                                "dex",
+                                "con",
+                                "int",
+                                "wis",
+                                "cha"
+                            ],
+                            "weights": [
+                                1,
+                                1,
+                                1
+                            ]
+                        }
+                    }
+                }
+            ],
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"heightAndWeight": {
+				"baseHeight": 57,
+				"heightMod": "2d8",
+				"baseWeight": 110,
+				"weightMod": "2d4"
+			},
+			"age": {
+				"mature": 20,
+				"max": 100
+			},
+			"darkvision": 60,
+			"traitTags": [
+				"Uncommon Race"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"infernal": true,
+					"anyStandard": 1
+				}
+			],
+			"resist": [
+				"fire",
+				"necrotic"
+			],
+			"soundClip": {
+				"type": "internal",
+				"path": "races/tiefling.mp3"
+			},
+			"additionalSpells": [
+				{
+					"innate": {
+						"3": {
+							"daily": {
+								"1": [
+									"bane#2"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"detect thoughts"
+								]
+							}
+						}
+					},
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": [
+							"mind sliver|tce#c"
+						]
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Tieflings mature at the same rate as humans but live a few years longer."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fiendish Resistance",
+					"entries": [
+						"You have resistance to fire and necrotic damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Siphoning Hands",
+					"entries": [
+						"When you use your action to successfully deal necrotic damage, roll a number of {@dice 2d4;3d4;4d4;5d4;6d4|d4s} equal to your proficiency bonus. You gain a number of temporary hit points equal to the total rolled. Once you use this trait, you can't use it again until you finish a short or long rest. The temporary hit points last until the start of your next short or long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Slothful Legacy",
+					"entries": [
+						"You know the {@spell Mind Sliver|TCE} cantrip. Once you reach 3rd level, you can cast the {@spell Bane} spell as a 2nd-level spell with this trait and without using material components; you regain the ability to cast it when you finish a long rest. Once you reach 5th level, you can also cast the {@spell Hold Person} spell once per long rest without any material components. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Hellish Wings",
+					"entries": [
+						"You can summon a pair of fiery dark, spectral wings that temporarily sprout from your back. For 1 minute, you have a flying speed equal to your walking speed. You can summon your wings a number of times equal to your proficiency bonus per long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Slothful Revelation",
+					"entries": [
+						"When you reach 3rd level, you can use a bonus action to unleash the fiendish energy within yourself, gaining the benefits of one of the revelations listed below (choose the option each time you transform). Your transformation lasts for 1 minute or until you end it (no action required). You can use this trait once per long rest.",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Sluggish Fall",
+									"entry": "{@i Visual Fluff.} Your eyes briefly become spiralling pools of darkness, and hypnotic, flightless wings sprout from your back temporarily. {@i Area of Effect.} Immediately after you transform, creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw ({@dc 8} + your proficiency bonus + your Charisma modifier) or become {@condition incapacitated} to you until the end of their next turn, at which point they need to repeat the save. On a second failed save, the target takes {@condition exhaustion||one level of Exhaustion} and falls {@condition Prone}. {@i Bonus Damage.} Once per turn, until the transformation ends, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a magical effect. The extra damage equals your Proficiency Bonus."
+								},
+								{
+									"type": "item",
+									"name": "Fiery Fury",
+									"entry": "{@i Visual Fluff.} Searing red light temporarily radiates from your eyes and mouth. {@i Area of Effect.} For the duration, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes fire damage equal to your proficiency bonus. {@i Bonus Damage.} Until the transformation ends, once on each of your turns, you can deal extra fire damage to one target when you deal damage to it with an attack or a magical effect. The extra damage equals your Proficiency Bonus."
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common, Infernal, and one other {@filter standard language|languages|source=|type=standard} of your choice."
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
 			"name": "Tortle",
 			"source": "MPMM",
 			"page": 34,
@@ -21490,7 +22052,7 @@
 				{
 					"ability": "wis",
 					"innate": {
-						"1": {	
+						"1": {
 							"daily": {
 								"1": [
 									"shield"
@@ -22375,44 +22937,44 @@
 			"page": 42,
 			"srd": true,
 			"ability": [
-                {
-                    "choose": {
-                        "weighted": {
-                            "from": [
-                                "str",
-                                "dex",
-                                "con",
-                                "int",
-                                "wis",
-                                "cha"
-                            ],
-                            "weights": [
-                                2,
-                                1
-                            ]
-                        }
-                    }
-                },
-                {
-                    "choose": {
-                        "weighted": {
-                            "from": [
-                                "str",
-                                "dex",
-                                "con",
-                                "int",
-                                "wis",
-                                "cha"
-                            ],
-                            "weights": [
-                                1,
-                                1,
-                                1
-                            ]
-                        }
-                    }
-                }
-            ],
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
 			"additionalSpells": [
 				{
 					"innate": {
@@ -22445,8 +23007,8 @@
 					}
 				}
 			],
-            "entries": [
-                {
+			"entries": [
+				{
 					"type": "entries",
 					"name": "Infernal Legacy",
 					"entries": [
@@ -22483,7 +23045,7 @@
 						}
 					]
 				}
-            ],
+			],
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -22493,6 +23055,9 @@
 			"raceName": "Tiefling",
 			"raceSource": "PHB",
 			"page": 21,
+			"reprintedAs": [
+				"Tiefling (Prideful)|MPMM"
+			],
 			"ability": [
 				{
 					"cha": 2,
@@ -22531,15 +23096,15 @@
 					}
 				}
 			],
-            "entries": [
-                {
+			"entries": [
+				{
 					"type": "entries",
 					"name": "Legacy of Asmodeus",
 					"entries": [
 						"You know the {@spell Thaumaturgy} cantrip. Once you reach 3rd level, you can cast the {@spell Hellish Rebuke} spell as a 2nd-level spell with this trait; you regain the ability to cast it when you finish a long rest. Once you reach 5th level, you can also cast the {@spell Darkness} spell once per day with this trait; you regain the ability to cast it when you finish a long rest. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells."
 					]
 				}
-            ],
+			],
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -22549,6 +23114,9 @@
 			"raceName": "Tiefling",
 			"raceSource": "PHB",
 			"page": 21,
+			"reprintedAs": [
+				"Tiefling (Gluttonous)|MPMM"
+			],
 			"ability": [
 				{
 					"cha": 2,
@@ -22599,6 +23167,9 @@
 			"raceName": "Tiefling",
 			"raceSource": "PHB",
 			"page": 21,
+			"reprintedAs": [
+				"Tiefling (Slothful)|MPMM"
+			],
 			"ability": [
 				{
 					"cha": 2,
@@ -23069,16 +23640,16 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Infernal Legacy",
+					"name": "Appearance",
 					"entries": [
-						"You know the {@spell Thaumaturgy} cantrip. Once you reach 3rd level, you can cast the {@spell Hellish Rebuke} spell as a 2nd-level spell with this trait; you regain the ability to cast it when you finish a long rest. Once you reach 5th level, you can also cast the {@spell Darkness} spell once per day with this trait; you regain the ability to cast it when you finish a long rest. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells."
+						"Your tiefling might not look like other tieflings. Rather than having the physical characteristics described in the Player's Handbook, choose {@dice 1d4+1} of the following features: small horns; fangs or sharp teeth; a forked tongue; catlike eyes; six fingers on each hand; goatlike legs; cloven hoofs; a forked tail; leathery or scaly skin; red or dark blue skin; cast no shadow or reflection; exude a smell of brimstone."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Appearance",
+					"name": "Infernal Legacy",
 					"entries": [
-						"Your tiefling might not look like other tieflings. Rather than having the physical characteristics described in the Player's Handbook, choose {@dice 1d4+1} of the following features: small horns; fangs or sharp teeth; a forked tongue; catlike eyes; six fingers on each hand; goatlike legs; cloven hoofs; a forked tail; leathery or scaly skin; red or dark blue skin; cast no shadow or reflection; exude a smell of brimstone."
+						"You know the {@spell Thaumaturgy} cantrip. Once you reach 3rd level, you can cast the {@spell Hellish Rebuke} spell as a 2nd-level spell with this trait; you regain the ability to cast it when you finish a long rest. Once you reach 5th level, you can also cast the {@spell Darkness} spell once per day with this trait; you regain the ability to cast it when you finish a long rest. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells."
 					]
 				}
 			],
