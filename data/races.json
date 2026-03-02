@@ -13228,6 +13228,191 @@
 			"hasFluffImages": true
 		},
 		{
+			"name": "Tiefling (Envious)",
+			"source": "MPMM",
+			"page": 34,
+			"ability": [
+                {
+                    "choose": {
+                        "weighted": {
+                            "from": [
+                                "str",
+                                "dex",
+                                "con",
+                                "int",
+                                "wis",
+                                "cha"
+                            ],
+                            "weights": [
+                                2,
+                                1
+                            ]
+                        }
+                    }
+                },
+                {
+                    "choose": {
+                        "weighted": {
+                            "from": [
+                                "str",
+                                "dex",
+                                "con",
+                                "int",
+                                "wis",
+                                "cha"
+                            ],
+                            "weights": [
+                                1,
+                                1,
+                                1
+                            ]
+                        }
+                    }
+                }
+            ],
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"heightAndWeight": {
+				"baseHeight": 57,
+				"heightMod": "2d8",
+				"baseWeight": 110,
+				"weightMod": "2d4"
+			},
+			"age": {
+				"mature": 20,
+				"max": 100
+			},
+			"darkvision": 60,
+			"traitTags": [
+				"Uncommon Race"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"infernal": true,
+					"anyStandard": 1
+				}
+			],
+			"resist": [
+				"fire",
+				"necrotic"
+			],
+			"soundClip": {
+				"type": "internal",
+				"path": "races/tiefling.mp3"
+			},
+			"additionalSpells": [
+				{
+					"innate": {
+						"3": {
+							"daily": {
+								"1": [
+									"hellish rebuke#2"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"primordial blade"
+								]
+							}
+						}
+					},
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": [
+							"fire bolt#c"
+						]
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Tieflings mature at the same rate as humans but live a few years longer."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fiendish Resistance",
+					"entries": [
+						"You have resistance to fire and necrotic damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Siphoning Hands",
+					"entries": [
+						"When you use your action to successfully deal necrotic damage, roll a number of {@dice 2d4;3d4;4d4;5d4;6d4|d4s} equal to your proficiency bonus. You gain a number of temporary hit points equal to the total rolled. Once you use this trait, you can't use it again until you finish a short or long rest. The temporary hit points last until the start of your next short or long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Envious Legacy",
+					"entries": [
+						"You know the {@spell Fire Bolt} cantrip. Once you reach 3rd level, you can cast the {@spell Hellish Rebuke} spell as a 2nd-level spell once per long rest with this trait. Once you reach 5th level, you can also cast the {@spell Primordial Blade} spell, dealing only fire damage, once per long rest with this trait without any material components. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Hellish Wings",
+					"entries": [
+						"You can summon a pair of fiery dark, spectral wings that temporarily sprout from your back. For 1 minute, you have a flying speed equal to your walking speed. You can summon your wings a number of times equal to your proficiency bonus per long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Envious Revelation",
+					"entries": [
+						"When you reach 3rd level, you can use a bonus action to unleash the fiendish energy within yourself, gaining the benefits of one of the revelations listed below (choose the option each time you transform). Your transformation lasts for 1 minute or until you end it (no action required). You can use this trait once per long rest.",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Toxic Jealousy",
+									"entry": "{@i Visual Fluff.} Your eyes briefly become pools of deep green, and ghostly, flightless wings sprout from your back temporarily. {@i Area of Effect.} Immediately after you transform, creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw ({@dc 8} + your proficiency bonus + your Charisma modifier) or become {@condition blinded} by jealousy until the end of your next turn. {@i Bonus Damage.} Once per turn, until the transformation ends, you can deal extra acid, necrotic, or poison damage (your choice) to one target when you deal damage to it with an attack or a magical effect. The extra damage equals your Proficiency Bonus."
+								},
+								{
+									"type": "item",
+									"name": "Fiery Fury",
+									"entry": "{@i Visual Fluff.} Searing red light temporarily radiates from your eyes and mouth. {@i Area of Effect.} For the duration, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes fire damage equal to your proficiency bonus. {@i Bonus Damage.} Until the transformation ends, once on each of your turns, you can deal extra fire damage to one target when you deal damage to it with an attack or a magical effect. The extra damage equals your Proficiency Bonus."
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common, Infernal, and one other {@filter standard language|languages|source=|type=standard} of your choice."
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
 			"name": "Tiefling (Gluttonous)",
 			"source": "MPMM",
 			"page": 34,
@@ -13391,6 +13576,191 @@
 									"type": "item",
 									"name": "Vile Death",
 									"entry": "{@i Visual Fluff.} Your eyes briefly become pools of sickly darkness, and putrid, flightless wings sprout from your back temporarily. {@i Area of Effect.} Immediately after you transform, creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw ({@dc 8} + your proficiency bonus + your Charisma modifier) or become {@condition poisoned} until the end of your next turn. {@i Bonus Damage.} Once per turn, until the transformation ends, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a magical effect. The extra damage equals your Proficiency Bonus."
+								},
+								{
+									"type": "item",
+									"name": "Fiery Fury",
+									"entry": "{@i Visual Fluff.} Searing red light temporarily radiates from your eyes and mouth. {@i Area of Effect.} For the duration, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes fire damage equal to your proficiency bonus. {@i Bonus Damage.} Until the transformation ends, once on each of your turns, you can deal extra fire damage to one target when you deal damage to it with an attack or a magical effect. The extra damage equals your Proficiency Bonus."
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common, Infernal, and one other {@filter standard language|languages|source=|type=standard} of your choice."
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Tiefling (Greedsome)",
+			"source": "MPMM",
+			"page": 34,
+			"ability": [
+                {
+                    "choose": {
+                        "weighted": {
+                            "from": [
+                                "str",
+                                "dex",
+                                "con",
+                                "int",
+                                "wis",
+                                "cha"
+                            ],
+                            "weights": [
+                                2,
+                                1
+                            ]
+                        }
+                    }
+                },
+                {
+                    "choose": {
+                        "weighted": {
+                            "from": [
+                                "str",
+                                "dex",
+                                "con",
+                                "int",
+                                "wis",
+                                "cha"
+                            ],
+                            "weights": [
+                                1,
+                                1,
+                                1
+                            ]
+                        }
+                    }
+                }
+            ],
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"heightAndWeight": {
+				"baseHeight": 57,
+				"heightMod": "2d8",
+				"baseWeight": 110,
+				"weightMod": "2d4"
+			},
+			"age": {
+				"mature": 20,
+				"max": 100
+			},
+			"darkvision": 60,
+			"traitTags": [
+				"Uncommon Race"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"infernal": true,
+					"anyStandard": 1
+				}
+			],
+			"resist": [
+				"fire",
+				"necrotic"
+			],
+			"soundClip": {
+				"type": "internal",
+				"path": "races/tiefling.mp3"
+			},
+			"additionalSpells": [
+				{
+					"innate": {
+						"3": {
+							"daily": {
+								"1": [
+									"tenser's floating disk"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"arcane lock"
+								]
+							}
+						}
+					},
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": [
+							"obfuscate object|bmt#c"
+						]
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Tieflings mature at the same rate as humans but live a few years longer."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fiendish Resistance",
+					"entries": [
+						"You have resistance to fire and necrotic damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Siphoning Hands",
+					"entries": [
+						"When you use your action to successfully deal necrotic damage, roll a number of {@dice 2d4;3d4;4d4;5d4;6d4|d4s} equal to your proficiency bonus. You gain a number of temporary hit points equal to the total rolled. Once you use this trait, you can't use it again until you finish a short or long rest. The temporary hit points last until the start of your next short or long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Greedsome Legacy",
+					"entries": [
+						"You know the {@spell Obfuscate Object|BMT} cantrip. Once you reach 3rd level, you can cast the {@spell Tenser's Floating Disk} spell once per long rest without any material components with this trait. Once you reach 5th level, you can also cast the {@spell Arcane Lock} spell once per long rest without any material components with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Hellish Wings",
+					"entries": [
+						"You can summon a pair of fiery dark, spectral wings that temporarily sprout from your back. For 1 minute, you have a flying speed equal to your walking speed. You can summon your wings a number of times equal to your proficiency bonus per long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Greedsome Revelation",
+					"entries": [
+						"When you reach 3rd level, you can use a bonus action to unleash the fiendish energy within yourself, gaining the benefits of one of the revelations listed below (choose the option each time you transform). Your transformation lasts for 1 minute or until you end it (no action required). You can use this trait once per long rest.",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Greedy Fear",
+									"entry": "{@i Visual Fluff.} Your eyes briefly become pools of blinding gold, and ghostly, flightless wings sprout from your back temporarily. {@i Area of Effect.} Immediately after you transform, creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw ({@dc 8} + your proficiency bonus + your Charisma modifier) or become {@condition paralyzed} until the end of your next turn. {@i Bonus Damage.} Once per turn, until the transformation ends, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a magical effect. The extra damage equals your Proficiency Bonus."
 								},
 								{
 									"type": "item",
@@ -14316,6 +14686,191 @@
 									"type": "item",
 									"name": "Sparkling Charm",
 									"entry": "{@i Visual Fluff.} Your eyes briefly become pools of darkness as glittering, flightless wings sprout from your back temporarily. {@i Area of Effect.} Immediately after you transform, creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw ({@dc 8} + your proficiency bonus + your Charisma modifier) or become {@condition blinded} and {@condition charmed} by you until the end of your next turn. {@i Bonus Damage.} Once per turn, until the transformation ends, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a magical effect. The extra damage equals your Proficiency Bonus."
+								},
+								{
+									"type": "item",
+									"name": "Fiery Fury",
+									"entry": "{@i Visual Fluff.} Searing red light temporarily radiates from your eyes and mouth. {@i Area of Effect.} For the duration, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes fire damage equal to your proficiency bonus. {@i Bonus Damage.} Until the transformation ends, once on each of your turns, you can deal extra fire damage to one target when you deal damage to it with an attack or a magical effect. The extra damage equals your Proficiency Bonus."
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common, Infernal, and one other {@filter standard language|languages|source=|type=standard} of your choice."
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Tiefling (Wrathful)",
+			"source": "MPMM",
+			"page": 34,
+			"ability": [
+                {
+                    "choose": {
+                        "weighted": {
+                            "from": [
+                                "str",
+                                "dex",
+                                "con",
+                                "int",
+                                "wis",
+                                "cha"
+                            ],
+                            "weights": [
+                                2,
+                                1
+                            ]
+                        }
+                    }
+                },
+                {
+                    "choose": {
+                        "weighted": {
+                            "from": [
+                                "str",
+                                "dex",
+                                "con",
+                                "int",
+                                "wis",
+                                "cha"
+                            ],
+                            "weights": [
+                                1,
+                                1,
+                                1
+                            ]
+                        }
+                    }
+                }
+            ],
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"heightAndWeight": {
+				"baseHeight": 57,
+				"heightMod": "2d8",
+				"baseWeight": 110,
+				"weightMod": "2d4"
+			},
+			"age": {
+				"mature": 20,
+				"max": 100
+			},
+			"darkvision": 60,
+			"traitTags": [
+				"Uncommon Race"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"infernal": true,
+					"anyStandard": 1
+				}
+			],
+			"resist": [
+				"fire",
+				"necrotic"
+			],
+			"soundClip": {
+				"type": "internal",
+				"path": "races/tiefling.mp3"
+			},
+			"additionalSpells": [
+				{
+					"innate": {
+						"3": {
+							"daily": {
+								"1": [
+									"wrathful smite#2"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"flame whip"
+								]
+							}
+						}
+					},
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": [
+							"vengeful blade|bmt#c"
+						]
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Tieflings mature at the same rate as humans but live a few years longer."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fiendish Resistance",
+					"entries": [
+						"You have resistance to fire and necrotic damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Siphoning Hands",
+					"entries": [
+						"When you use your action to successfully deal necrotic damage, roll a number of {@dice 2d4;3d4;4d4;5d4;6d4|d4s} equal to your proficiency bonus. You gain a number of temporary hit points equal to the total rolled. Once you use this trait, you can't use it again until you finish a short or long rest. The temporary hit points last until the start of your next short or long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Wrathful Legacy",
+					"entries": [
+						"You know the {@spell Vengeful Blade|BMT} cantrip. Once you reach 3rd level, you can cast the {@spell Wrathful Smite} spell as a 2nd-level spell once per long rest with this trait. Once you reach 5th level, you can also cast the {@spell Flame Whip} spell once per long rest with this trait without any material components. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Hellish Wings",
+					"entries": [
+						"You can summon a pair of fiery dark, spectral wings that temporarily sprout from your back. For 1 minute, you have a flying speed equal to your walking speed. You can summon your wings a number of times equal to your proficiency bonus per long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Wrathful Revelation",
+					"entries": [
+						"When you reach 3rd level, you can use a bonus action to unleash the fiendish energy within yourself, gaining the benefits of one of the revelations listed below (choose the option each time you transform). Your transformation lasts for 1 minute or until you end it (no action required). You can use this trait once per long rest.",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Traitorous Rage",
+									"entry": "{@i Visual Fluff.} Your eyes briefly become pools of flame, as a flaming halo appears above you and ghostly, flightless wings sprout from your back temporarily. {@i Area of Effect.} Immediately after you transform, creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw ({@dc 8} + your proficiency bonus + your Charisma modifier) or become {@condition charmed} by you until the end of your next turn and extremely hostile to all other creatures nearby, including their own allies. {@i Bonus Damage.} Once per turn, until the transformation ends, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a magical effect. The extra damage equals your Proficiency Bonus."
 								},
 								{
 									"type": "item",
@@ -23934,6 +24489,9 @@
 			"raceName": "Tiefling",
 			"raceSource": "PHB",
 			"page": 22,
+			"reprintedAs": [
+				"Tiefling (Greedsome)|MPMM"
+			],
 			"ability": [
 				{
 					"cha": 2,
@@ -23984,6 +24542,9 @@
 			"raceName": "Tiefling",
 			"raceSource": "PHB",
 			"page": 23,
+			"reprintedAs": [
+				"Tiefling (Envious)|MPMM"
+			],
 			"ability": [
 				{
 					"cha": 2,
@@ -24269,6 +24830,9 @@
 			"raceName": "Tiefling",
 			"raceSource": "PHB",
 			"page": 23,
+			"reprintedAs": [
+				"Tiefling (Wrathful)|MPMM"
+			],
 			"ability": [
 				{
 					"cha": 2,

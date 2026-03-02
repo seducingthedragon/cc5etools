@@ -9017,7 +9017,7 @@
             "components": {
                 "v": true,
                 "s": true,
-                "m": "a charred wooden hilt"
+                "m": "a lit wick"
             },
             "duration": [
                 {
@@ -16203,7 +16203,7 @@
             "components": {
                 "v": true,
                 "s": true,
-                "m": "a charred wooden hilt"
+                "m": "a lit match"
             },
             "duration": [
                 {
