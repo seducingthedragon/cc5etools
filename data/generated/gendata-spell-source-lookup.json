@@ -22749,6 +22749,11 @@
                 "SCC": {
                     "Strixhaven Initiate": true
                 }
+            },
+            "race": {
+                "MPMM": {
+                    "Genasi (Earth)": true
+                }
             }
         },
         "earthbind": {
