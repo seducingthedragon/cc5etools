@@ -1907,7 +1907,7 @@
             ]
 		},
 		{
-            "name": "Vengeful Blade",
+            "name": "Vengeful Attack",
             "source": "BMT",
             "page": 50,
 			"otherSources": [
@@ -1931,19 +1931,19 @@
                 }
             },
             "components": {
-                "s": true,
-                "m": {
-                    "text": "a melee weapon worth at least 1 gp",
-                    "cost": 100
-                }
+                "s": true
             },
             "duration": [
-                {
-                    "type": "instant"
-                }
-            ],
+	        	{
+	        		"type": "timed",
+	        		"duration": {
+	        			"type": "round",
+	        			"amount": 1
+	        		}
+	        	}
+	        ],
             "entries": [
-                "You brandish the weapon used in the spell's casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack's normal effects and then radiates a dark aura of energy until the start of your next turn. If the target makes an attack or casts a spell before then, the target takes {@damage 1d8} necrotic damage and the spell ends."
+                "You take the offensive and make a {@action attack||melee weapon attack} or an {@action unarmed attack||unarmed strike attack} against one creature within 5 feet of you. On a hit, the target suffers the normal attack damage and effects, then is covered by a dark aura of energy until the start of your next turn. If the target makes an attack or casts a spell before then, the target takes {@damage 1d8} necrotic damage and the spell ends."
             ],
             "entriesHigherLevel": [
                 {
