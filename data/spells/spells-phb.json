@@ -16216,7 +16216,8 @@
                 }
             ],
             "entries": [
-                "You evoke an elemental blade in a free hand, choosing one of the following damage types: acid, cold, fire, lightning, or poison. The elemental blade appears as if it were made of the chosen element in the shape of a scimitar, and lasts for the duration. If you let go of the blade, it disappears, but you can evoke the blade again as a bonus action without expending a spell slot.",
+                "You evoke an elemental blade in a free hand, choosing one of the following damage types for its associated blade: Acid (acid blade), Cold (ice blade), Fire (flame blade), Lightning (electric blade), or Poison (poison blade).",
+				"The elemental blade appears as if it were made of the chosen element in the shape of a scimitar, and lasts for the duration. If you let go of the blade, it disappears, but you can evoke the blade again as a bonus action without expending a spell slot.",
                 "Whenever you take the attack action, you can make a melee spell attack with the elemental blade against a target within 5 feet of you. On hit, it takes damage of the chosen type equal to {@damage 3d6} + your spellcasting modifier.",
                 "While in your hand, the blade sheds bright light in a 10-foot radius and dim light an additional 10 feet beyond that."
             ],

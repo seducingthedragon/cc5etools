@@ -4382,8 +4382,7 @@
 				{
 					"name": "Trance",
 					"entries": [
-						"Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.",
-						"{@note If you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed.}"
+						"Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep."
 					],
 					"type": "entries"
 				},
@@ -17421,7 +17420,8 @@
 					"type": "entries",
 					"name": "Wards and Seals",
 					"entries": [
-						"You can cast the {@spell Alarm} and {@spell Mage Armor} spells with this trait. Starting at 3rd level, you can also cast the {@spell Arcane Lock} spell with it. Once you cast any of these spells with this trait, you can't cast that spell with it again until you finish a long rest. Intelligence is your spellcasting ability for these spells, and you don't need material components for them when you cast them with this trait."
+						"You can cast the {@spell Alarm} and {@spell Mage Armor} spells with this trait once per long rest. Starting at 3rd level, you can cast the {@spell Arcane Lock} spell with this trait once per long rest. Intelligence is your spellcasting ability for these spells. You don't need material components for them when you cast them with this trait.",
+						"{@note Due to your {@u Spells of the Mark} trait, you cannot cast the above spells using any spell slots gained from a Spellcasting or Pact Magic class feature, unless they are listed below and you follow the casting rules provided by your class feature.}"
 					]
 				},
 				{
@@ -17654,9 +17654,8 @@
 					"type": "entries",
 					"name": "Drow Magic",
 					"entries": [
-						"You know one cantrip from the {@filter sorcerer spell list|spells|source=|level=0|class=sorcerer|components & miscellaneous=}. After a long rest, you can replace it with another {@filter sorcerer cantrip|spells|source=|level=0|class=sorcerer|components & miscellaneous=}.",
-						"When you reach 3rd level, you can cast the {@spell Faerie Fire} spell once per long rest without using a spell slot. When you reach 5th level, you can also cast the {@spell Darkness} spell once per long rest without using a spell slot. You always have these spells prepared and you can cast them without any material components. You can also cast these spells using spell slots you have of the appropriate level.",
-						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race)."
+						"You know one cantrip from the {@filter sorcerer spell list|spells|source=|level=0|class=sorcerer|components & miscellaneous=}. After a long rest, you can replace it with another {@filter sorcerer cantrip|spells|source=|level=0|class=sorcerer|components & miscellaneous=}. When you reach 3rd level, you can cast the {@spell Faerie Fire} spell once per long rest with this trait. When you reach 5th level, you can cast the {@spell Darkness} spell once per long rest with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race).",
+						"{@note You must provide material components for your cantrips, however you can ignore them regarding your leveled spells when cast with this trait. You can cast your leveled spells additional times if you have spell slots to expend.}"
 					]
 				},
 				{
@@ -17902,8 +17901,9 @@
 					"type": "entries",
 					"name": "High Elven Magic",
 					"entries": [
-						"Starting at level 3, you can cast {@spell Detect Magic} once per long rest without using a spell slot. At level 5, you can cast {@spell Levitate} once per long rest without using a spell slot. You always have these spells prepared and you can cast them without any material components. You can also cast these spells using spell slots you have of the appropriate level.",
-						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race)."
+						"Starting at level 3, you can cast {@spell Detect Magic} once per long rest with this trait. At level 5, you can cast {@spell Levitate} once per long rest with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race).",
+						"{@note You must provide material components for your cantrips, however you can ignore them regarding your leveled spells when cast with this trait. You can cast your leveled spells additional times if you have spell slots to expend.}",
+						"{@note If you have a feature that grants you spell slots, you can cast any of your leveled spells from this trait using the appropriate spell slot levels, ignoring the material components for {@spell Levitate}.}"
 					]
 				},
 				{
@@ -17972,7 +17972,7 @@
 									{
 										"type": "list",
 										"items": [
-											"You know one cantrip from the {@filter wizard spell list|spells|source=|level=0|class=wizard|components & miscellaneous=}. After a long rest, you can replace it with another {@filter wizard cantrip|spells|source=|level=0|class=wizard|components & miscellaneous=}. You use the spellcasting ability you chose for your High Elven Magic trait.",
+											"You know one cantrip from the {@filter wizard spell list|spells|source=|level=0|class=wizard|components & miscellaneous=}. After a long rest, you can replace it with another {@filter wizard cantrip|spells|source=|level=0|class=wizard|components & miscellaneous=}. You use the spellcasting ability you chose for your High Elven Magic trait. {@note You must provide the material components or use your spell casting focus gained from your class if applicable.}",
 											"Choose one of the following skills: {@skill Arcana}, {@skill History}, {@skill Nature}, or {@skill Religion}. When you make an Intelligence check using your chosen skill, you can roll a {@dice 1d4} and add the number rolled to the ability check."
 										]
 									}
@@ -18015,7 +18015,7 @@
 									{
 										"type": "list",
 										"items": [
-											"You know one cantrip from the {@filter bard spell list|spells|source=|level=0|class=bard|components & miscellaneous=}. After a long rest, you can replace it with another {@filter bardic cantrip|spells|source=|level=0|class=bard|components & miscellaneous=}. You use the spellcasting ability you chose for your High Elven Magic trait.",
+											"You know one cantrip from the {@filter bard spell list|spells|source=|level=0|class=bard|components & miscellaneous=}. After a long rest, you can replace it with another {@filter bardic cantrip|spells|source=|level=0|class=bard|components & miscellaneous=}. You use the spellcasting ability you chose for your High Elven Magic trait. {@note You must provide the material components or use your spell casting focus gained from your class if applicable.}",
 											"Choose one of the following skills: {@skill Deception}, {@skill Intimidation}, {@skill Performance}, or {@skill Persuasion}. When you make a Charisma check using your chosen skill, you can roll a {@dice 1d4} and add the number rolled to the ability check."
 										]
 									}
@@ -18109,7 +18109,8 @@
 					"type": "entries",
 					"name": "Shape Shadows",
 					"entries": [
-						"You know the {@spell Minor Illusion} cantrip. Starting at 3rd level, you can cast the {@spell Invisibility} spell once with this trait, and you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
+						"You know the {@spell Minor Illusion} cantrip. Starting at 3rd level, you can cast the {@spell Invisibility} spell once per long rest with this trait. Charisma is your spellcasting ability for these spells.",
+						"{@note You can cast {@spell Invisibility} from this trait using the appropriate spell slot levels if you have access to spell slots. You always ignore the material components for {@spell Invisibility}.}"
 					]
 				},
 				{
@@ -18489,9 +18490,8 @@
 					"type": "entries",
 					"name": "Primeval Magic",
 					"entries": [
-						"You know one cantrip of your choice from the {@filter druid spell list|spells|source=|level=0|class=druid|components & miscellaneous=}. After a long rest, you can replace it with another {@filter druidic cantrip|spells|source=|level=0|class=druid|components & miscellaneous=}.",
-						"Starting at level 3, you can cast {@spell Longstrider} once per long rest without using a spell slot. At level 5, you can cast {@spell Animal Messenger} once per long rest without using a spell slot. You always have these spells prepared and you can cast them without any material components. You can also cast these spells using spell slots you have of the appropriate level.",
-						"Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you select this race)."
+						"You know one cantrip of your choice from the {@filter druid spell list|spells|source=|level=0|class=druid|components & miscellaneous=}. After a long rest, you can replace it with another {@filter druidic cantrip|spells|source=|level=0|class=druid|components & miscellaneous=}. Starting at level 3, you can cast {@spell Longstrider} once per long rest with this trait. At level 5, you can cast {@spell Animal Messenger} once per long rest with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you select this race).",
+						"{@note You must provide material components for your cantrips, however you can ignore them regarding your leveled spells when cast with this trait. You can cast your leveled spells additional times if you have spell slots to expend.}"
 					]
 				},
 				{
@@ -19054,8 +19054,8 @@
 					"type": "entries",
 					"name": "Mingle with the Wind",
 					"entries": [
-						"You know the {@spell Shocking Grasp} cantrip. Starting at 3rd level, you can cast the {@spell Feather Fall} spell with this trait, without requiring a material component once per long rest. Starting 5th level, you can also cast the {@spell Levitate} spell with this trait, without requiring a material component once per long rest.",
-						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+						"You know the {@spell Shocking Grasp} cantrip. Starting at 3rd level, you can cast the {@spell Feather Fall} spell with this trait once per long rest. Starting 5th level, you can also cast the {@spell Levitate} spell with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).",
+						"{@note If you have a feature that grants you spell slots, you can cast any of your leveled spells from this trait using the appropriate spell slot levels. You ignore the material components for {@spell Levitate} and can replace it with a somatic component for {@spell Feather Fall}.}"
 					]
 				}
 			],
@@ -19119,8 +19119,8 @@
 					"type": "entries",
 					"name": "Merge with Stone",
 					"entries": [
-						"You know the {@spell Blade Ward} cantrip. Starting at 3rd level, you can cast {@spell Earth Tremor|XGE} with this trait, once per long rest. Starting at 5th level, you can cast the {@spell Pass Without Trace} spell with this trait, without requiring a material component once per long rest.",
-						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+						"You know the {@spell Blade Ward} cantrip. Starting at 3rd level, you can cast {@spell Earth Tremor|XGE} with this trait once per long rest. Starting at 5th level, you can cast the {@spell Pass Without Trace} spell with this trait once per long rest. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).",
+						"{@note If you have a feature that grants you spell slots, you can cast any of your leveled spells from this trait using the appropriate spell slot levels, ignoring the material components for {@spell Pass Without Trace}.}"
 					]
 				}
 			],
@@ -19187,8 +19187,8 @@
 					"type": "entries",
 					"name": "Reach to the Blaze",
 					"entries": [
-						"You know the {@spell Produce Flame} cantrip. Starting at 3rd level, you can cast the {@spell Burning Hands} spell with this trait once per long rest. Starting at 5th level, you can also cast the {@spell Primordial Blade} spell, dealing only Fire damage, with this trait, without a material component once per long rest.",
-						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+						"You know the {@spell Produce Flame} cantrip. Starting at 3rd level, you can cast the {@spell Burning Hands} spell with this trait once per long rest. Starting at 5th level, you can also cast the {@spell Primordial Blade} spell, dealing only Fire damage, with this trait once per long rest. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).",
+						"{@note If you have a feature that grants you spell slots, you can cast any of your leveled spells from this trait using the appropriate spell slot levels, ignoring the material components for {@spell Primordial Blade}, as long as you're summoning the flame blade.}"
 					]
 				}
 			],
@@ -19276,8 +19276,8 @@
 					"type": "entries",
 					"name": "Call to the Wave",
 					"entries": [
-						"You know the {@spell Acid Splash} cantrip. Starting at 3rd level, you can cast the {@spell Create or Destroy Water} spell with this trait once per long rest. Starting at 5th level, you can also cast the {@spell Water Walk} spell with this trait, without requiring a material component once per long rest.",
-						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+						"You know the {@spell Acid Splash} cantrip. Starting at 3rd level, you can cast the {@spell Create or Destroy Water} spell with this trait once per long rest. Starting at 5th level, you can also cast the {@spell Water Walk} spell with this trait once per long rest. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).",
+						"{@note If you have a feature that grants you spell slots, you can cast any of your leveled spells from this trait using the appropriate spell slot levels, ignoring material components.}"
 					]
 				}
 			],
@@ -19720,7 +19720,7 @@
 					"type": "entries",
 					"name": "Natural Illusionist",
 					"entries": [
-						"You know the {@spell Minor Illusion} cantrip. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you select this race)."
+						"You know the {@spell Minor Illusion} cantrip and can cast it without any material components. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you select this race)."
 					]
 				},
 				{
@@ -19812,7 +19812,8 @@
 					"type": "entries",
 					"name": "Scribe's Insight",
 					"entries": [
-						"You know the {@spell Message} cantrip. You can also cast {@spell Comprehend Languages} once with this trait, and you regain the ability to cast it when you finish a short or long rest. Starting at 3rd level, you can cast the {@spell Magic Mouth} spell with this trait, and you regain the ability to cast it when you finish a long rest. Intelligence is your spellcasting ability for these spells."
+						"You know the {@spell Message} cantrip. You can also cast {@spell Comprehend Languages} without material components with this trait once per short or long rest. Starting at 3rd level, you can cast the {@spell Magic Mouth} spell without material components with this trait once per long rest. Intelligence is your spellcasting ability for these spells.",
+						"{@note Due to your {@u Spells of the Mark} trait, you cannot cast the above spells using any spell slots gained from a Spellcasting or Pact Magic class feature, unless they are listed below and you follow the casting rules provided by your class feature.}"
 					]
 				},
 				{
@@ -19937,7 +19938,7 @@
 					"type": "entries",
 					"name": "Tinkerer's Care",
 					"entries": [
-						"You know the {@spell Mending} cantrip. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you select this race)."
+						"You know the {@spell Mending} cantrip and can cast it without any material components. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you select this race)."
 					]
 				},
 				{
@@ -20304,7 +20305,7 @@
 									"type": "item",
 									"name": "Drow Cantrip",
 									"entries": [
-										"You know one cantrip of your choice from the {@filter sorcerer spell list|spells|source=|level=0|class=sorcerer|components & miscellaneous=}. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (chose when you select this race)."
+										"You know one cantrip of your choice from the {@filter sorcerer spell list|spells|source=|level=0|class=sorcerer|components & miscellaneous=}. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (chose when you select this race). {@note You can replace {@b M} components with a {@b V} or {@b S} component, if it is missing the other one. You can ignore {@b M} components if it already has both {@b V and S} components.}"
 									]
 								},
 								{
@@ -20349,7 +20350,8 @@
 								"name": "Drow Descendant; Drow Cantrip",
 								"type": "entries",
 								"entries": [
-									"You know one cantrip of your choice from the {@filter sorcerer spell list|spells|source=|level=0|class=sorcerer|components & miscellaneous=}. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (chose when you select this race)."
+									"You know one cantrip of your choice from the {@filter sorcerer spell list|spells|source=|level=0|class=sorcerer|components & miscellaneous=}. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (chose when you select this race).",
+									"{@note You can replace {@b M} components with a {@b V} or {@b S} component, if it is missing the other one. You can ignore {@b M} components if it already has both {@b V and S} components.}"
 								]
 							}
 						}
@@ -20491,7 +20493,7 @@
 									"type": "item",
 									"name": "Moon Elf Cantrip",
 									"entries": [
-										"You know one cantrip of your choice from the {@filter bard spell list|spells|source=|level=0|class=bard|components & miscellaneous=}. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (chose when you select this race)."
+										"You know one cantrip of your choice from the {@filter bard spell list|spells|source=|level=0|class=bard|components & miscellaneous=}. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (chose when you select this race). {@note You can replace {@b M} components with a {@b V} or {@b S} component, if it is missing the other one. You can ignore {@b M} components if it already has both {@b V and S} components.}"
 									]
 								},
 								{
@@ -20536,7 +20538,8 @@
 								"name": "Moon Elf Descendant; Moon Elf Cantrip",
 								"type": "entries",
 								"entries": [
-									"You know one cantrip of your choice from the {@filter bard spell list|spells|source=|level=0|class=bard|components & miscellaneous=}. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (chose when you select this race)."
+									"You know one cantrip of your choice from the {@filter bard spell list|spells|source=|level=0|class=bard|components & miscellaneous=}. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (chose when you select this race).",
+									"{@note You can replace {@b M} components with a {@b V} or {@b S} component, if it is missing the other one. You can ignore {@b M} components if it already has both {@b V and S} components.}"
 								]
 							}
 						}
@@ -20858,7 +20861,7 @@
 									"type": "item",
 									"name": "Sun Elf Cantrip",
 									"entries": [
-										"You know one cantrip of your choice from the {@filter wizard spell list|spells|source=|level=0|class=wizard|components & miscellaneous=}. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (chose when you select this race)."
+										"You know one cantrip of your choice from the {@filter wizard spell list|spells|source=|level=0|class=wizard|components & miscellaneous=}. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (chose when you select this race). {@note You can replace {@b M} components with a {@b V} or {@b S} component, if it is missing the other one. You can ignore {@b M} components if it already has both {@b V and S} components.}"
 									]
 								}
 							]
@@ -20918,7 +20921,8 @@
 								"name": "Sun Elf Descendant; Sun Elf Cantrips",
 								"type": "entries",
 								"entries": [
-									"You know one cantrip of your choice from the {@filter wizard spell list|spells|source=|level=0|class=wizard|components & miscellaneous=}. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (chose when you select this race)."
+									"You know one cantrip of your choice from the {@filter wizard spell list|spells|source=|level=0|class=wizard|components & miscellaneous=}. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (chose when you select this race).",
+									"{@note You can replace {@b M} components with a {@b V} or {@b S} component, if it is missing the other one. You can ignore {@b M} components if it already has both {@b V and S} components.}"
 								]
 							}
 						}
@@ -21218,7 +21222,8 @@
 					"type": "entries",
 					"name": "Magical Detection",
 					"entries": [
-						"You can cast the {@spell Detect Magic} and {@spell Detect Poison and Disease} spells with this trait. Starting at 3rd level, you can also cast the {@spell See Invisibility} spell with it. Once you cast any of these spells with this trait, you can't cast that spell with it again until you finish a long rest. Wisdom is your spellcasting ability for these spells, and you don't require material components for them."
+						"You can cast the {@spell Detect Magic} and {@spell Detect Poison and Disease} spells with this trait once per long rest. Starting at 3rd level, you can cast the {@spell See Invisibility} spell with this trait once per long rest. Once you cast any of these spells with this trait, you can't cast that spell with it again until you finish a long rest. Wisdom is your spellcasting ability for these spells, and you don't require material components with this trait.",
+						"{@note Due to your {@u Spells of the Mark} trait, you cannot cast the above spells using any spell slots gained from a Spellcasting or Pact Magic class feature, unless they are listed below and you follow the casting rules provided by your class feature.}"
 					]
 				},
 				{
@@ -21299,7 +21304,7 @@
 					},
 					"innate": {
 						"3": {
-							"daily": {
+							"rest": {
 								"1": [
 									"gust of wind"
 								]
@@ -21351,7 +21356,8 @@
 					"type": "entries",
 					"name": "Headwinds",
 					"entries": [
-						"You know the {@spell Gust|XGE} cantrip. Starting at 3rd level, you can cast the {@spell Gust of Wind} spell once with this trait, and you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
+						"You know the {@spell Gust|XGE} cantrip. Starting at 3rd level, you can cast the {@spell Gust of Wind} spell once per short or long rest without any material components with this trait. Charisma is your spellcasting ability for these spells.",
+						"{@note Due to your {@u Spells of the Mark} trait, you cannot cast the above spells using any spell slots gained from a Spellcasting or Pact Magic class feature, unless they are listed below and you follow the casting rules provided by your class feature.}"
 					]
 				},
 				{
@@ -21811,7 +21817,7 @@
 									"type": "item",
 									"name": "Wood Elf Cantrip",
 									"entries": [
-										"You know one cantrip of your choice from the {@filter druid spell list|spells|source=|level=0|class=druid|components & miscellaneous=}. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (chose when you select this race)."
+										"You know one cantrip of your choice from the {@filter druid spell list|spells|source=|level=0|class=druid|components & miscellaneous=}. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (chose when you select this race). {@note You can replace {@b M} components with a {@b V} or {@b S} component, if it is missing the other one. You can ignore {@b M} components if it already has both {@b V and S} components.}"
 									]
 								}
 							]
@@ -21869,7 +21875,8 @@
 								"name": "Wood Elf Descendant; Wood Elf Cantrip",
 								"type": "entries",
 								"entries": [
-									"You know one cantrip of your choice from the {@filter druid spell list|spells|source=|level=0|class=druid|components & miscellaneous=}. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (chose when you select this race)."
+									"You know one cantrip of your choice from the {@filter druid spell list|spells|source=|level=0|class=druid|components & miscellaneous=}. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (chose when you select this race).",
+									"{@note You can replace {@b M} components with a {@b V} or {@b S} component, if it is missing the other one. You can ignore {@b M} components if it already has both {@b V and S} components.}"
 								]
 							}
 						}
@@ -21957,7 +21964,7 @@
 					"ability": "wis",
 					"innate": {
 						"1": {
-							"daily": {
+							"rest": {
 								"1": [
 									"hunter's mark"
 								]
@@ -22021,7 +22028,8 @@
 					"type": "entries",
 					"name": "Finder's Magic",
 					"entries": [
-						"You can cast the {@spell Hunter's Mark} spell with this trait. Starting at 3rd level, you can also cast the {@spell Locate Object} spell with it. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a long rest. Wisdom is your spellcasting ability for these spells."
+						"You can cast the {@spell Hunter's Mark} spell once per short or long rest with this trait. Starting at 3rd level, you can also cast the {@spell Locate Object} spell once per long rest without any material components with this trait. Wisdom is your spellcasting ability for these spells.",
+						"{@note Due to your {@u Spells of the Mark} trait, you cannot cast the above spells using any spell slots gained from a Spellcasting or Pact Magic class feature, unless they are listed below and you follow the casting rules provided by your class feature.}"
 					],
 					"data": {
 						"overwrite": "Relentless Endurance"
@@ -22317,7 +22325,8 @@
 					"type": "entries",
 					"name": "Child of the Wood",
 					"entries": [
-						"You know the {@spell Druidcraft} cantrip. When you reach 3rd level, you can cast the {@spell Entangle} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell Spike Growth} spell once with this trait and regain the ability to do so when you finish a long rest. Casting these spells with this trait doesn't require material components. Wisdom is your spellcasting ability for these spells."
+						"You know the {@spell Druidcraft} cantrip. When you reach 3rd level, you can cast the {@spell Entangle} spell once per long rest with this trait. When you reach 5th level, you can cast the {@spell Spike Growth} spell once per long rest with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race).",
+						"{@note If you have a feature that grants you spell slots, you can cast any of your leveled spells from this trait using the appropriate spell slot levels, ignoring the material components for {@spell Spike Growth}.}"
 					]
 				},
 				{
@@ -22413,7 +22422,7 @@
 					"ability": "wis",
 					"innate": {
 						"1": {
-							"daily": {
+							"rest": {
 								"1": [
 									"cure wounds"
 								]
@@ -22464,7 +22473,8 @@
 					"type": "entries",
 					"name": "Healing Touch",
 					"entries": [
-						"You can cast the {@spell Cure Wounds} spell with this trait. Starting at 3rd level, you can also cast {@spell Restoration} with it. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a long rest. Wisdom is your spellcasting ability for these spells."
+						"You can cast the {@spell Cure Wounds} spell once per short or long rest with this trait. Starting at 3rd level, you can cast {@spell Restoration} once per long rest with this trait. Wisdom is your spellcasting ability for these spells.",
+						"{@note Due to your {@u Spells of the Mark} trait, you cannot cast the above spells using any spell slots gained from a Spellcasting or Pact Magic class feature, unless they are listed below and you follow the casting rules provided by your class feature.}"
 					]
 				},
 				{
@@ -22582,7 +22592,8 @@
 					"type": "entries",
 					"name": "Innkeeper's Magic",
 					"entries": [
-						"You know the {@spell Prestidigitation} cantrip. You can also cast the {@spell Purify Food and Drink} and {@spell Unseen Servant} spells with this trait. Once you cast either spell with this trait, you can't cast that spell with it again until you finish long rest. Charisma is your spellcasting ability for these spells."
+						"You know the {@spell Prestidigitation} cantrip. You can also cast the {@spell Purify Food and Drink} and {@spell Unseen Servant} spells once per long rest, ignoring any material components, with this trait. Charisma is your spellcasting ability for these spells.",
+						"{@note Due to your {@u Spells of the Mark} trait, you cannot cast the above spells using any spell slots gained from a Spellcasting or Pact Magic class feature, unless they are listed below and you follow the casting rules provided by your class feature.}"
 					]
 				},
 				{
@@ -22880,7 +22891,8 @@
 					"type": "entries",
 					"name": "Primal Connection",
 					"entries": [
-						"You can cast the {@spell Animal Friendship} and {@spell Speak with Animals} spells with this trait, requiring no material component. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a short or long rest. Wisdom is your spellcasting ability for these spells."
+						"You can cast the {@spell Animal Friendship} and {@spell Speak with Animals} spells once per long rest, ignoring any material components, with this trait. Wisdom is your spellcasting ability for these spells.",
+						"{@note Due to your {@u Spells of the Mark} trait, you cannot cast the above spells using any spell slots gained from a Spellcasting or Pact Magic class feature, unless they are listed below and you follow the casting rules provided by your class feature.}"
 					]
 				},
 				{
@@ -23025,7 +23037,8 @@
 					"type": "entries",
 					"name": "Spellsmith",
 					"entries": [
-						"You know the {@spell Mending} cantrip. You can also cast the {@spell Magic Weapon} spell with this trait. Once you cast the spell with this trait, you can't do so again until you finish a long rest. Intelligence is your spellcasting ability for these spells."
+						"You know the {@spell Mending} cantrip and can cast it without any material components. You can also cast the {@spell Magic Weapon} spell once per long rest with this trait. Intelligence is your spellcasting ability for these spells.",
+						"{@note Due to your {@u Spells of the Mark} trait, you cannot cast the above spells using any spell slots gained from a Spellcasting or Pact Magic class feature, unless they are listed below and you follow the casting rules provided by your class feature.}"
 					]
 				},
 				{
@@ -23101,7 +23114,7 @@
 					"ability": "dex",
 					"innate": {
 						"1": {
-							"daily": {
+							"rest": {
 								"1": [
 									"misty step"
 								]
@@ -23152,7 +23165,8 @@
 					"type": "entries",
 					"name": "Magical Passage",
 					"entries": [
-						"You can cast the {@spell Misty Step} spell once with this trait, and you regain the ability to cast it when you finish a long rest. Dexterity is your spellcasting ability for this spell."
+						"You can cast the {@spell Misty Step} spell once per short or long rest with this trait. Dexterity is your spellcasting ability for this spell.",
+						"{@note Due to your {@u Spells of the Mark} trait, you cannot cast the above spell using any spell slots gained from a Spellcasting or Pact Magic class feature, unless they are listed below and you follow the casting rules provided by your class feature.}"
 					]
 				},
 				{
@@ -23219,7 +23233,7 @@
 					"ability": "wis",
 					"innate": {
 						"1": {
-							"daily": {
+							"rest": {
 								"1": [
 									"shield"
 								]
@@ -23263,7 +23277,8 @@
 					"type": "entries",
 					"name": "Guardian's Shield",
 					"entries": [
-						"You can cast the {@spell Shield} spell once with this trait, and you regain the ability to cast it after you finish a long rest. Wisdom is your spellcasting ability for this spell."
+						"You can cast the {@spell Shield} spell once per short or long rest with this trait. Wisdom is your spellcasting ability for this spell.",
+						"{@note Due to your {@u Spells of the Mark} trait, you cannot cast the above spell using any spell slots gained from a Spellcasting or Pact Magic class feature, unless they are listed below and you follow the casting rules provided by your class feature.}"
 					]
 				},
 				{
@@ -23393,7 +23408,7 @@
 					"ability": "wis",
 					"innate": {
 						"1": {
-							"daily": {
+							"rest": {
 								"1": [
 									"hunter's mark"
 								]
@@ -23451,7 +23466,8 @@
 					"type": "entries",
 					"name": "Finder's Magic",
 					"entries": [
-						"You can cast the {@spell Hunter's Mark} spell with this trait. Starting at 3rd level, you can also cast the {@spell Locate Object} spell with it. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a long rest. Wisdom is your spellcasting ability for these spells."
+						"You can cast the {@spell Hunter's Mark} spell once per short or long rest with this trait. Starting at 3rd level, you can cast the {@spell Locate Object} spell once per long rest, ignoring any material components, with this trait. Wisdom is your spellcasting ability for these spells.",
+						"{@note Due to your {@u Spells of the Mark} trait, you cannot cast the above spells using any spell slots gained from a Spellcasting or Pact Magic class feature, unless they are listed below and you follow the casting rules provided by your class feature.}"
 					]
 				},
 				{
@@ -24178,7 +24194,8 @@
 					"type": "entries",
 					"name": "Infernal Legacy",
 					"entries": [
-						"You know the {@spell Thaumaturgy} cantrip. Once you reach 3rd level, you can cast the {@spell Hellish Rebuke} spell as a 2nd-level spell with this trait; you regain the ability to cast it when you finish a long rest. Once you reach 5th level, you can also cast the {@spell Darkness} spell once per day with this trait; you regain the ability to cast it when you finish a long rest. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells."
+						"You know the {@spell Thaumaturgy} cantrip. Once you reach 3rd level, you can cast the {@spell Hellish Rebuke} spell as a 2nd-level spell with this trait; once per long rest. Once you reach 5th level, you can cast the {@spell Darkness} spell once per long rest with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race).",
+						"{@note If you have a feature that grants you spell slots, you can cast any of your leveled spells from this trait using the appropriate spell slot levels. You can replace the material component with a somatic one for {@spell Darkness}.}"
 					]
 				},
 				{
