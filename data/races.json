@@ -4929,6 +4929,7 @@
 			"traitTags": [
 				"Uncommon Race"
 			],
+			"darkvision": 60,
 			"languageProficiencies": [
 				{
 					"common": true,
@@ -4988,6 +4989,13 @@
 					"name": "Flight",
 					"entries": [
 						"Because of your wings, you have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
 					]
 				},
 				{
@@ -5133,6 +5141,7 @@
 				"Powerful Build",
 				"Uncommon Race"
 			],
+			"darkvision": 60,
 			"heightAndWeight": {
 				"baseHeight": 74,
 				"heightMod": "2d12",
@@ -5170,6 +5179,13 @@
 					"type": "entries",
 					"entries": [
 						"As humanoids related to the fey, firbolg have long lifespans. A firbolg reaches adulthood around 30, and the oldest of them can live for 500 years."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
 					]
 				},
 				{
