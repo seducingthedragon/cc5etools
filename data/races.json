@@ -196,6 +196,9 @@
 				"walk": 30,
 				"fly": true
 			},
+			"age": {
+				"max": 75
+			},
 			"traitTags": [
 				"Natural Weapon",
 				"Uncommon Race"
@@ -241,7 +244,7 @@
 					"type": "entries",
 					"name": "Talons",
 					"entries": [
-						"You have talons that you can use to make unarmed strikes. When you hit with them, the strike deals {@damage 1d6} + your Strength modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike."
+						"You have talons that you can use to make an {@action unarmed attack||unarmed strike attack}. When you hit with them, the strike deals {@damage 1d6} + your Strength modifier slashing damage, instead of the normal bludgeoning damage due to your natural weapons."
 					]
 				},
 				{
@@ -414,6 +417,7 @@
 				}
 			],
 			"size": [
+				"S",
 				"M"
 			],
 			"heightAndWeight": {
@@ -423,8 +427,7 @@
 				"weightMod": "2d4"
 			},
 			"age": {
-				"mature": 20,
-				"max": 160
+				"max": 180
 			},
 			"speed": 30,
 			"age": {
@@ -482,7 +485,8 @@
 					"name": "Age",
 					"type": "entries",
 					"entries": [
-						"Aasimar mature at the same rate as humans, but they can live up to 180 years."
+						"Aasimar mature at the same rate as humans, but they can live up to 180 years.",
+						"Additionally, if you choose to play a Small Aasimar, you can still use the Random Height and Weight table by halving the base values.."
 					]
 				},
 				{
@@ -534,12 +538,12 @@
 								{
 									"type": "item",
 									"name": "Necrotic Shroud",
-									"entry": "Your eyes briefly become pools of darkness, and ghostly, flightless wings sprout from your back temporarily. Creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw ({@dc 8} + your proficiency bonus + your Charisma modifier) or become {@condition frightened} of you until the end of your next turn. Until the transformation ends, once on each of your turns, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus."
+									"entry": "{@i Visual Fluff.} Your eyes briefly become pools of darkness, and ghostly, flightless wings sprout from your back temporarily. {@i Area of Effect.} Immediately after you transform, creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw ({@dc 8} + your proficiency bonus + your Charisma modifier) or become {@condition frightened} of you until the end of your next turn. {@i Bonus Damage.} Once per turn, until the transformation ends, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a magical effect. The extra damage equals your Proficiency Bonus."
 								},
 								{
 									"type": "item",
 									"name": "Radiant Consumption",
-									"entry": "Searing light temporarily radiates from your eyes and mouth. For the duration, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes radiant damage equal to your proficiency bonus. Until the transformation ends, once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus."
+									"entry": "{@i Visual Fluff.} Searing light temporarily radiates from your eyes and mouth. {@i Area of Effect.} For the duration, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes radiant damage equal to your proficiency bonus. {@i Bonus Damage.} Once per turn, until the transformation ends, you can deal extra radiant damage to one target when you deal damage to it with an attack or a magical effect. The extra damage equals your Proficiency Bonus."
 								}
 							]
 						}
@@ -1105,7 +1109,7 @@
 					"name": "Astral Trance",
 					"entries": [
 						"You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you remain conscious. While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice.",
-						"Whenever you finish this trance, you gain two proficiencies; one skill of your choice and one {@book weapon|phb|5|weapons} or {@book tool|phb|5|tools} of your choice, selected from the {@book Player's Handbook|PHB}. You mystically acquire these proficiencies by drawing them from shared elven memory and the experiences of entities on the Astral Plane, and you retain them until you finish your next long rest.",
+						"Whenever you finish this trance, you gain two proficiencies; one skill of your choice and one {@book weapon|phb|5|weapons} or {@book tool|phb|5|tools} of your choice. You mystically acquire these proficiencies by drawing them from shared elven memory and the experiences of entities on the Astral Plane, retaining them until you finish your next long rest.",
 						"{@note If you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed.}"
 					]
 				},
@@ -1261,6 +1265,9 @@
 				"S"
 			],
 			"speed": 30,
+			"age": {
+				"max": 500
+			},
 			"traitTags": [
 				"Improved Resting",
 				"Natural Armor",
@@ -1282,7 +1289,8 @@
 				"poison"
 			],
 			"conditionImmune": [
-				"disease"
+				"disease",
+				"poisoned"
 			],
 			"entries": [
 				{
@@ -1318,7 +1326,7 @@
 					"type": "entries",
 					"name": "Mechanical Nature",
 					"entries": [
-						"You have resistance to poison damage and immunity to disease, and you have advantage on saving throws against being {@condition paralyzed} or {@condition poisoned}. You don't need to eat, drink, or breathe."
+						"You have resistance to poison damage. You are immune to diseases and the {@condition poisoned} condition. You also have advantage on saving throws against being {@condition paralyzed} or {@condition petrified}. You don't need to eat, drink, or breathe."
 					]
 				},
 				{
@@ -1332,7 +1340,7 @@
 					"type": "entries",
 					"name": "Specialized Design",
 					"entries": [
-						"You gain two tool proficiencies of your choice, selected from the {@book Player's Handbook|PHB}."
+						"You gain two tool proficiencies of your choice."
 					]
 				},
 				{
@@ -1665,6 +1673,9 @@
 				"heightMod": "2d12",
 				"baseWeight": 200,
 				"weightMod": "2d6"
+			},
+			"age": {
+				"max": 80
 			},
 			"speed": 30,
 			"darkvision": 60,
@@ -2158,6 +2169,9 @@
 				"baseWeight": 600,
 				"weightMod": "2d12"
 			},
+			"age": {
+				"max": 100
+			},
 			"languageProficiencies": [
 				{
 					"common": true,
@@ -2210,7 +2224,7 @@
 					"type": "entries",
 					"name": "Hooves",
 					"entries": [
-						"You have hooves that you can use to make unarmed strikes. When you hit with them, the strike deals {@damage 1d6} + your Strength modifier bludgeoning damage, instead of the bludgeoning damage normal for an unarmed strike."
+						"You have hooves that you can use to make an {@action unarmed attack||unarmed strike attack}. When you hit with them, the strike deals {@damage 1d6} + your Strength modifier bludgeoning damage, instead of the normal bludgeoning damage due to your natural weapons."
 					]
 				},
 				{
@@ -2385,10 +2399,13 @@
 				"M"
 			],
 			"heightAndWeight": {
-				"baseHeight": 61,
-				"heightMod": "2d4",
-				"baseWeight": 115,
+				"baseHeight": "56",
+				"heightMod": "2d10",
+				"baseWeight": "115",
 				"weightMod": "2d4"
+			},
+			"age": {
+				"max": 100
 			},
 			"speed": 30,
 			"languageProficiencies": [
@@ -2417,13 +2434,6 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Age",
-					"entries": [
-						"Changelings mature slightly faster than humans but share a similar lifespan\u2014typically a century or less. While a changeling can transform to conceal their age, the effects of aging affect them similarly to humans."
-					]
-				},
-				{
-					"type": "entries",
 					"name": "Creature Type",
 					"entries": [
 						"You are a Fey."
@@ -2431,9 +2441,10 @@
 				},
 				{
 					"type": "entries",
-					"name": "Size",
+					"name": "Age",
 					"entries": [
-						"You are Medium or Small. You choose the size when you select this race."
+						"Changelings mature slightly faster than humans but share a similar lifespan\u2014typically a century or less. While a changeling can transform to conceal their age, the effects of aging affect them similarly to humans.",
+						"Additionally, if you choose to play a Small Changeling, you can still use the Random Height and Weight table by halving the base values."
 					]
 				},
 				{
@@ -2447,8 +2458,8 @@
 					"type": "entries",
 					"name": "Shapechanger",
 					"entries": [
-						"As an action, you change your appearance and your voice. You determine the specifics of the changes, including your coloration, hair length, and sex. You can also adjust your height between Medium and Small. You can make yourself appear as a member of another race, though none of your game statistics change. You can't duplicate the appearance of an individual you've never seen, and you must adopt a form that has the same basic arrangement of limbs that you have. Your clothing and equipment aren't changed by this trait.",
-						"You stay in the new form until you use an action to revert to your true form or until you die."
+						"As an action, you change your appearance and your voice. You determine the specifics of the changes, including your coloration, hair length, and sex. You can also adjust your height between Medium and Small. You can make yourself appear as a member of another race, though none of your game statistics change. You can't duplicate the appearance of an individual you've never seen, and you must adopt a form that has the same basic arrangement of limbs that you have. This trait doesn't change your clothing or equipment.",
+						"While in a new form, not that of your true form, you have advantage on Charisma checks. You stay in the new form until you use an action to revert to your true form or until you die."
 					]
 				},
 				{
@@ -2620,6 +2631,7 @@
 			"darkvision": 120,
 			"traitTags": [
 				"Magic Resistance",
+				"Superior Darkvision",
 				"Uncommon Race"
 			],
 			"languageProficiencies": [
@@ -2670,7 +2682,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Darkvision",
+					"name": "Superior Darkvision",
 					"entries": [
 						"You can see in dim light within 120 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
 					]
@@ -2712,6 +2724,9 @@
 			"name": "Dhampir",
 			"source": "VRGR",
 			"page": 16,
+			"reprintedAs": [
+				"Dhampyr|MPMM"
+			],
 			"lineage": "VRGR",
 			"size": [
 				"S",
@@ -2797,6 +2812,9 @@
 				"S",
 				"M"
 			],
+			"age": {
+				"max": 200
+			},
 			"speed": {
 				"walk": 35,
 				"climb": true
@@ -2805,6 +2823,9 @@
 			"traitTags": [
 				"Natural Weapon",
 				"Uncommon Race"
+			],
+			"resist": [
+				"necrotic"
 			],
 			"languageProficiencies": [
 				{
@@ -2815,16 +2836,9 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"You are Medium or Small. You choose the size when you gain this lineage."
-					]
-				},
-				{
-					"type": "entries",
 					"name": "Ancestral Legacy",
 					"entries": [
-						"If you replace a race with this lineage, you can keep the following elements of that race: any skill proficiencies you gained from it and any climbing, flying, or swimming speed you gained from it.",
+						"If you replace a race with this lineage, you can keep the following elements of that previous race: racial skill proficiencies, flying speed, and swimming speed.",
 						"If you don't keep any of those elements or you choose this lineage at character creation, you gain proficiency in two skills of your choice."
 					]
 				},
@@ -2839,30 +2853,42 @@
 					"type": "entries",
 					"name": "Deathless Nature",
 					"entries": [
-						"You don't need to breathe."
+						"You have resistance to necrotic damage. You don't need to breathe."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Spider Climb",
 					"entries": [
-						"You have a climbing speed equal to your walking speed. In addition, at 3rd level, you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free."
+						"You have a climbing speed equal to your walking speed. In addition, at 3rd level, you can move up, down, and across vertical surfaces and upside down along ceilings, hands free."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Vampiric Bite",
 					"entries": [
-						"Your fanged bite is a natural weapon, which counts as a simple melee weapon with which you are proficient. You add your Constitution modifier, instead of your Strength modifier, to the attack and damage rolls when you attack with this bite. It deals {@damage 1d4} piercing damage on a hit. While you are missing half or more of your hit points, you have advantage on attack rolls you make with this bite.",
-						"When you attack with this bite and hit a creature that isn't a Construct or an Undead, you can empower yourself in one of the following ways of your choice:",
+						"Your fangs are a natural weapon. When you use your {@action unarmed attack} and deal damage, you can choose to bite with your fangs. On a hit, you deal piercing damage equal to {@damage 1d4} plus your Constitution modifier instead of the normal bludgeoning damage. While you are {@status bloodied}, you have advantage on this bite's attack rolls. You also have advantage on the attack rolls against your {@condition grappled} target.",
 						{
 							"type": "list",
+							"style": "list-hang-notitle",
 							"items": [
-								"You regain hit points equal to the piercing damage dealt by the bite.",
-								"You gain a bonus to the next ability check or attack roll you make; the bonus equals the piercing damage dealt by the bite"
+								{
+									"type": "item",
+									"name": "Empowering Bite",
+									"entries": [
+										"When you make this Vampiric Bite Attack and hit a creature that isn't a Construct or an Undead, you can empower yourself in one of the following ways of your choice:",
+										{
+											"type": "list",
+											"items": [
+												"You regain hit points equal to the piercing damage dealt by the bite.",
+												"You gain a bonus to the next ability check or attack roll you make; the bonus equals the piercing damage dealt by the bite"
+											]
+										},
+										"You can empower yourself with this bite a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+									]
+								}
 							]
-						},
-						"You can empower yourself with this bite a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+						}
 					]
 				}
 			],
@@ -2875,6 +2901,45 @@
 			"page": 32,
 			"srd": true,
 			"lineage": true,
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
 			"speed": 30,
 			"size": [
 				"M"
@@ -2886,7 +2951,6 @@
 				"weightMod": "2d6"
 			},
 			"age": {
-				"mature": 15,
 				"max": 80
 			},
 			"traitTags": [
@@ -3029,7 +3093,159 @@
 				}
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"_versions": [
+				{
+					"_abstract": {
+						"name": "Dragonborn ({{color}})",
+						"source": "PHB",
+						"_mod": {
+							"entries": [
+								{
+									"mode": "removeArr",
+									"names": "Draconic Ancestry"
+								},
+								{
+									"mode": "replaceArr",
+									"replace": "Breath Weapon",
+									"items": {
+										"type": "entries",
+										"name": "Breath Weapon",
+										"entries": [
+											"You can use your action to exhale destructive energy in a {{area}}.",
+											"When you use your breath weapon, each creature in the area of the exhalation must make a {{savingThrow}} saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes {@damage 2d6} {{damageType}} damage on a failed save, and half as much damage on a successful one. The damage increases to {@damage 3d6} at 6th level, {@damage 4d6} at 11th level, and {@damage 5d6} at 16th level.",
+											"After you use your breath weapon, you can't use it again until you complete a short or long rest."
+										]
+									}
+								},
+								{
+									"mode": "replaceArr",
+									"replace": "Damage Resistance",
+									"items": {
+										"type": "entries",
+										"name": "Damage Resistance",
+										"entries": [
+											"You have resistance to {{damageType}} damage."
+										]
+									}
+								}
+							]
+						}
+					},
+					"_implementations": [
+						{
+							"_variables": {
+								"color": "Black",
+								"damageType": "acid",
+								"area": "5-foot-wide, 30-foot-long line",
+								"savingThrow": "Dexterity"
+							},
+							"resist": [
+								"acid"
+							]
+						},
+						{
+							"_variables": {
+								"color": "Blue",
+								"damageType": "lightning",
+								"area": "5-foot-wide, 30-foot-long line",
+								"savingThrow": "Dexterity"
+							},
+							"resist": [
+								"lightning"
+							]
+						},
+						{
+							"_variables": {
+								"color": "Brass",
+								"damageType": "fire",
+								"area": "5-foot-wide, 30-foot-long line",
+								"savingThrow": "Dexterity"
+							},
+							"resist": [
+								"fire"
+							]
+						},
+						{
+							"_variables": {
+								"color": "Bronze",
+								"damageType": "lightning",
+								"area": "5-foot-wide, 30-foot-long line",
+								"savingThrow": "Dexterity"
+							},
+							"resist": [
+								"lightning"
+							]
+						},
+						{
+							"_variables": {
+								"color": "Copper",
+								"damageType": "acid",
+								"area": "5-foot-wide, 30-foot-long line",
+								"savingThrow": "Dexterity"
+							},
+							"resist": [
+								"acid"
+							]
+						},
+						{
+							"_variables": {
+								"color": "Gold",
+								"damageType": "fire",
+								"area": "15-foot cone",
+								"savingThrow": "Dexterity"
+							},
+							"resist": [
+								"fire"
+							]
+						},
+						{
+							"_variables": {
+								"color": "Green",
+								"damageType": "poison",
+								"area": "15-foot cone",
+								"savingThrow": "Constitution"
+							},
+							"resist": [
+								"poison"
+							]
+						},
+						{
+							"_variables": {
+								"color": "Red",
+								"damageType": "fire",
+								"area": "15-foot cone",
+								"savingThrow": "Dexterity"
+							},
+							"resist": [
+								"fire"
+							]
+						},
+						{
+							"_variables": {
+								"color": "Silver",
+								"damageType": "cold",
+								"area": "15-foot cone",
+								"savingThrow": "Constitution"
+							},
+							"resist": [
+								"cold"
+							]
+						},
+						{
+							"_variables": {
+								"color": "White",
+								"damageType": "cold",
+								"area": "15-foot cone",
+								"savingThrow": "Constitution"
+							},
+							"resist": [
+								"cold"
+							]
+						}
+					]
+				}
+			]
 		},
 		{
 			"name": "Dragonborn (Chromatic)",
@@ -3047,7 +3263,6 @@
 				"weightMod": "2d6"
 			},
 			"age": {
-				"mature": 15,
 				"max": 80
 			},
 			"traitTags": [
@@ -3140,9 +3355,25 @@
 				},
 				{
 					"type": "entries",
-					"name": "Chromatic Warding",
+					"name": "Chromatic Enhancement",
 					"entries": [
-						"Starting at level 5, you can use an action to channel your draconic energy to protect yourself. For 1 minute, you become immune to the damage associated with your Chromatic Ancestry. Once you use this trait, you can't do so again until you finish a long rest."
+						"Starting at level 5, you can use your bonus action to transform yourself further by your Chromatic Dragon Ancestry with one of the options below (choose the option each type you transform). This transformation lasts for 10 minutes, or until you end it (no action required) or are {@condition incapacitated}. You can transform once per long rest, regardless of what option you choose.",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Chromatic Warding",
+									"entry": "For the duration of this transformation, you become immune to the damage type associated with your Chromatic Ancestry."
+								},
+								{
+									"type": "item",
+									"name": "Chromatic Flight",
+									"entry": "You sprout spectral wings on your back that appear to be made of the same energy as your Breath Weapon. For the duration, you have a flying speed equal to your walking speed."
+								}
+							]
+						}
 					]
 				}
 			],
@@ -3166,7 +3397,7 @@
 										"type": "entries",
 										"name": "Breath Weapon",
 										"entries": [
-											"When you take the {@action Attack} action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 30-foot line that is 5 feet wide. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes {@damage 1d10} {{damageType}} damage. On a successful save, it takes half as much damage. This damage increases by {@damage 1d10} when you reach 5th level ({@damage 2d10}), 11th level ({@damage 3d10}), and 17th level ({@damage 4d10}).",
+											"When you take the {@action Attack} action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot cone or a 30-foot line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes {@damage 1d10} {{damageType}} damage. On a successful save, it takes half as much damage. This damage increases by {@damage 1d10} when you reach 5th level ({@damage 2d10}), 11th level ({@damage 3d10}), and 17th level ({@damage 4d10}).",
 											"You can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
 										]
 									}
@@ -3251,7 +3482,6 @@
 				"weightMod": "2d6"
 			},
 			"age": {
-				"mature": 15,
 				"max": 80
 			},
 			"traitTags": [
@@ -3284,6 +3514,13 @@
 					"name": "Darkvision",
 					"entries": [
 						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Psionic Mind",
+					"entries": [
+						"You can send telepathic messages to any creature you can see within 30 feet of you. You don't need to share a language with the creature for it to understand these messages, but it must be able to understand at least one language to comprehend them."
 					]
 				},
 				{
@@ -3344,16 +3581,25 @@
 				},
 				{
 					"type": "entries",
-					"name": "Psionic Mind",
+					"name": "Gem Enhancement",
 					"entries": [
-						"You can send telepathic messages to any creature you can see within 30 feet of you. You don't need to share a language with the creature for it to understand these messages, but it must be able to understand at least one language to comprehend them."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Gem Flight",
-					"entries": [
-						"Starting at level 5, you can use a bonus action to manifest spectral wings on your body. These wings last for 1 minute. For the duration, you gain a flying speed equal to your walking speed and can hover. Once you use this trait, you can't do so again until you finish a long rest."
+						"Starting at level 5, you can use your bonus action to transform yourself further by your Chromatic Dragon Ancestry with one of the options below (choose the option each type you transform). This transformation lasts for 10 minutes, or until you end it (no action required) or are {@condition incapacitated}. You can transform once per long rest, regardless of what option you choose.",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Chromatic Warding",
+									"entry": "For the duration of this transformation, you become immune to the damage type associated with your Chromatic Ancestry."
+								},
+								{
+									"type": "item",
+									"name": "Gem Flight",
+									"entry": "You sprout spectral wings on your back that appear to be made of the same energy as your Breath Weapon. For the duration, you have a flying speed equal to your walking speed."
+								}
+							]
+						}
 					]
 				}
 			],
@@ -3462,7 +3708,6 @@
 				"weightMod": "2d6"
 			},
 			"age": {
-				"mature": 15,
 				"max": 80
 			},
 			"traitTags": [
@@ -3554,26 +3799,22 @@
 				},
 				{
 					"type": "entries",
-					"name": "Metallic Breath Weapon",
+					"name": "Metallic Enhancement",
 					"entries": [
-						"At 5th level, you gain a second breath weapon. Once per short or long rest, you can use your action to make one attack with an exhalation of a 30-foot cone or a 60-foot line that is 5 feet wide (choose the shape each time). The save DC is the same one as your standard Breath Weapon. Whenever you use this trait, choose one of the following options:",
+						"Starting at level 5, you can use your bonus action to transform yourself further by your Metallic Dragon Ancestry with one of the options below (choose the option each type you transform). This transformation lasts for 10 minutes, or until you end it (no action required) or are {@condition incapacitated}. You can transform once per long rest, regardless of what option you choose.",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
 									"type": "item",
-									"name": "Enervating Breath",
-									"entries": [
-										"Each creature in the cone must succeed on a Constitution saving throw or become {@condition incapacitated} until the start of your next turn and take damage equal to your standard breath weapon damage. On a successful save, a creature takes half damage only."
-									]
+									"name": "Metallic Breath",
+									"entry": "You summon the power of the Metallic Dragons and strengthen the power of your breath weapon by doubling the range, replacing the Dexterity saving throw with either a Strength saving throw or Constitution saving throw, and taking a full action for one breath weapon attack. On a failed Strength saving throw, targets are pushed 20 feet back and knocked {@condition prone}. On a failed Constitution saving throw, targets are {@condition incapacitated} until the start of your next turn. Regardless of which ability you use, all failed saves take full breath weapon damage, taking only half damage on a successful save."
 								},
 								{
 									"type": "item",
-									"name": "Repulsion Breath",
-									"entries": [
-										"Each creature in the cone must succeed on a Strength saving throw or be pushed 20 feet away from you, then knocked {@condition prone}, and take damage equal to your standard breath weapon damage. On a successful save, a creature takes half damage only."
-									]
+									"name": "Metallic Flight",
+									"entry": "You sprout spectral wings on your back that appear to be made of the same energy as your Breath Weapon. For the duration, you have a flying speed equal to your walking speed."
 								}
 							]
 						}
@@ -3600,7 +3841,7 @@
 										"type": "entries",
 										"name": "Breath Weapon",
 										"entries": [
-											"When you take the {@action Attack} action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 15-foot cone. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes {@damage 1d10} {{damageType}} damage. On a successful save, it takes half as much damage. This damage increases by {@damage 1d10} when you reach 5th level ({@damage 2d10}), 11th level ({@damage 3d10}), and 17th level ({@damage 4d10}).",
+											"When you take the {@action Attack} action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot cone or a 30-foot line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes {@damage 1d10} {{damageType}} damage. On a successful save, it takes half as much damage. This damage increases by {@damage 1d10} when you reach 5th level ({@damage 2d10}), 11th level ({@damage 3d10}), and 17th level ({@damage 4d10}).",
 											"You can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
 										]
 									}
@@ -3742,26 +3983,8 @@
 					"any": 1
 				}
 			],
-			"toolProficiencies": [
-				{
-					"choose": {
-						"from": [
-							"smith's tools",
-							"brewer's supplies",
-							"mason's tools"
-						]
-					}
-				}
-			],
-			"weaponProficiencies": [
-				{
-					"battleaxe|phb": true,
-					"handaxe|phb": true,
-					"light hammer|phb": true,
-					"warhammer|phb": true
-				}
-			],
 			"traitTags": [
+				"Superior Darkvision",
 				"Uncommon Race"
 			],
 			"additionalSpells": [
@@ -3813,30 +4036,16 @@
 				},
 				{
 					"type": "entries",
-					"name": "Duergar Resilience",
+					"name": "Duergar Toughness and Resilience",
 					"entries": [
-						"You have advantage on saving throws you make to avoid or end the {@condition poisoned} condition on yourself as well as resistance to poison damage. Additionally, you have advantage on saving throws you make to avoid or end the {@condition charmed} or {@condition stunned} condition on yourself."
+						"Your hit point maximum increases by 1, and it increases by 1 every time you gain a level. You have advantage on saving throws against being {@condition poisoned}, as well as resistance to poison damage."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Duergar Combat Training",
+					"name": "Psionic Fortitude",
 					"entries": [
-						"You have proficiency with the {@item battleaxe|phb}, {@item handaxe|phb}, {@item light hammer|phb}, and {@item warhammer|phb}. Additionally, your speed is not reduced by wearing heavy armor."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Tool Proficiency",
-					"entries": [
-						"You gain proficiency with one of the following artisan's tools of your choice: {@item Smith's tools|phb}, {@item brewer's supplies|phb}, or {@item mason's tools|phb}."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Stonecunning",
-					"entries": [
-						"Whenever you make an Intelligence ({@skill History}) check related to the origin of stonework, you are considered an expert in the {@skill History} skill, which allows you to double your proficiency bonus."
+						"You have advantage on saving throws you make to avoid or end the {@condition charmed} or {@condition stunned} condition on yourself."
 					]
 				},
 				{
@@ -3869,8 +4078,46 @@
 			],
 			"speed": 25,
 			"lineage": true,
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
 			"age": {
-				"mature": 20,
 				"max": 350
 			},
 			"darkvision": 60,
@@ -3930,9 +4177,16 @@
 				},
 				{
 					"type": "entries",
-					"name": "Dwarven Resilience",
+					"name": "Attuned to Tremors",
 					"entries": [
-						"You have advantage on saving throws against poison, and you have resistance against poison damage."
+						"As a bonus action, you gain {@sense tremorsense|MM} with a range of 60 feet for 10 minutes. You must be standing on or touching a stone surface, that can either be natural or worked, in order for your {@sense tremorsense|MM} to work. You can use this feature a number of times equal to your proficiency bonus per long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Dwarven Toughness and Resilience",
+					"entries": [
+						"Your hit point maximum increases by 1, and it increases by 1 every time you gain a level. You have advantage on saving throws against being {@condition poisoned}, and you have resistance against poison damage."
 					]
 				},
 				{
@@ -16540,206 +16794,6 @@
 			"hasFluffImages": true
 		},
 		{
-			"source": "PHB",
-			"raceName": "Dragonborn",
-			"raceSource": "PHB",
-			"page": 32,
-			"srd": true,
-			"ability": [
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
-								"dex",
-								"con",
-								"int",
-								"wis",
-								"cha"
-							],
-							"weights": [
-								2,
-								1
-							]
-						}
-					}
-				},
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
-								"dex",
-								"con",
-								"int",
-								"wis",
-								"cha"
-							],
-							"weights": [
-								1,
-								1,
-								1
-							]
-						}
-					}
-				}
-			],
-			"hasFluff": true,
-			"hasFluffImages": true,
-			"_versions": [
-				{
-					"_abstract": {
-						"name": "Dragonborn ({{color}})",
-						"source": "PHB",
-						"_mod": {
-							"entries": [
-								{
-									"mode": "removeArr",
-									"names": "Draconic Ancestry"
-								},
-								{
-									"mode": "replaceArr",
-									"replace": "Breath Weapon",
-									"items": {
-										"type": "entries",
-										"name": "Breath Weapon",
-										"entries": [
-											"You can use your action to exhale destructive energy in a {{area}}.",
-											"When you use your breath weapon, each creature in the area of the exhalation must make a {{savingThrow}} saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes {@damage 2d6} {{damageType}} damage on a failed save, and half as much damage on a successful one. The damage increases to {@damage 3d6} at 6th level, {@damage 4d6} at 11th level, and {@damage 5d6} at 16th level.",
-											"After you use your breath weapon, you can't use it again until you complete a short or long rest."
-										]
-									}
-								},
-								{
-									"mode": "replaceArr",
-									"replace": "Damage Resistance",
-									"items": {
-										"type": "entries",
-										"name": "Damage Resistance",
-										"entries": [
-											"You have resistance to {{damageType}} damage."
-										]
-									}
-								}
-							]
-						}
-					},
-					"_implementations": [
-						{
-							"_variables": {
-								"color": "Black",
-								"damageType": "acid",
-								"area": "5-foot-wide, 30-foot-long line",
-								"savingThrow": "Dexterity"
-							},
-							"resist": [
-								"acid"
-							]
-						},
-						{
-							"_variables": {
-								"color": "Blue",
-								"damageType": "lightning",
-								"area": "5-foot-wide, 30-foot-long line",
-								"savingThrow": "Dexterity"
-							},
-							"resist": [
-								"lightning"
-							]
-						},
-						{
-							"_variables": {
-								"color": "Brass",
-								"damageType": "fire",
-								"area": "5-foot-wide, 30-foot-long line",
-								"savingThrow": "Dexterity"
-							},
-							"resist": [
-								"fire"
-							]
-						},
-						{
-							"_variables": {
-								"color": "Bronze",
-								"damageType": "lightning",
-								"area": "5-foot-wide, 30-foot-long line",
-								"savingThrow": "Dexterity"
-							},
-							"resist": [
-								"lightning"
-							]
-						},
-						{
-							"_variables": {
-								"color": "Copper",
-								"damageType": "acid",
-								"area": "5-foot-wide, 30-foot-long line",
-								"savingThrow": "Dexterity"
-							},
-							"resist": [
-								"acid"
-							]
-						},
-						{
-							"_variables": {
-								"color": "Gold",
-								"damageType": "fire",
-								"area": "15-foot cone",
-								"savingThrow": "Dexterity"
-							},
-							"resist": [
-								"fire"
-							]
-						},
-						{
-							"_variables": {
-								"color": "Green",
-								"damageType": "poison",
-								"area": "15-foot cone",
-								"savingThrow": "Constitution"
-							},
-							"resist": [
-								"poison"
-							]
-						},
-						{
-							"_variables": {
-								"color": "Red",
-								"damageType": "fire",
-								"area": "15-foot cone",
-								"savingThrow": "Dexterity"
-							},
-							"resist": [
-								"fire"
-							]
-						},
-						{
-							"_variables": {
-								"color": "Silver",
-								"damageType": "cold",
-								"area": "15-foot cone",
-								"savingThrow": "Constitution"
-							},
-							"resist": [
-								"cold"
-							]
-						},
-						{
-							"_variables": {
-								"color": "White",
-								"damageType": "cold",
-								"area": "15-foot cone",
-								"savingThrow": "Constitution"
-							},
-							"resist": [
-								"cold"
-							]
-						}
-					]
-				}
-			]
-		},
-		{
 			"name": "Draconblood",
 			"source": "EGW",
 			"raceName": "Dragonborn",
@@ -16840,6 +16894,10 @@
 					}
 				}
 			],
+			"overwrite": {
+				"ability": true,
+				"traitTags": true
+			},
 			"hasFluff": true,
 			"hasFluffImages": true,
 			"_versions": [
@@ -17055,6 +17113,10 @@
 					}
 				}
 			],
+			"overwrite": {
+				"ability": true,
+				"traitTags": true
+			},
 			"hasFluff": true,
 			"hasFluffImages": true,
 			"_versions": [
@@ -17269,6 +17331,7 @@
 				}
 			],
 			"overwrite": {
+				"ability": true,
 				"languageProficiencies": true
 			},
 			"hasFluff": true,
@@ -17282,60 +17345,12 @@
 			"page": 20,
 			"srd": true,
 			"basicRules": true,
-			"ability": [
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
-								"dex",
-								"con",
-								"int",
-								"wis",
-								"cha"
-							],
-							"weights": [
-								2,
-								1
-							]
-						}
-					}
-				},
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
-								"dex",
-								"con",
-								"int",
-								"wis",
-								"cha"
-							],
-							"weights": [
-								1,
-								1,
-								1
-							]
-						}
-					}
-				}
-			],
 			"heightAndWeight": {
 				"baseHeight": 44,
 				"heightMod": "2d4",
 				"baseWeight": 115,
 				"weightMod": "2d6"
 			},
-			"entries": [
-				{
-					"name": "Dwarven Toughness",
-					"entries": [
-						"Your hit point maximum increases by 1, and it increases by 1 every time you gain a level."
-					],
-					"type": "entries"
-				}
-			],
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -17463,7 +17478,10 @@
 						}
 					]
 				}
-			]
+			],
+			"overwrite": {
+				"ability": true
+			}
 		},
 		{
 			"name": "Mountain",
@@ -17473,45 +17491,6 @@
 			"page": 20,
 			"basicRules": true,
 			"lineage": true,
-			"ability": [
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
-								"dex",
-								"con",
-								"int",
-								"wis",
-								"cha"
-							],
-							"weights": [
-								2,
-								1
-							]
-						}
-					}
-				},
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
-								"dex",
-								"con",
-								"int",
-								"wis",
-								"cha"
-							],
-							"weights": [
-								1,
-								1,
-								1
-							]
-						}
-					}
-				}
-			],
 			"heightAndWeight": {
 				"baseHeight": 48,
 				"heightMod": "2d4",
