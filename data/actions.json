@@ -26,7 +26,7 @@
                     "type": "entries",
                     "name": "Consumables",
                     "entries": [
-                        "Some items are used up when they are activated. A potion or elixir must be swallowed, or an oil applied to the body. The writing vanishes from a scroll when it is read. Once used, a consumable item loses its magic and no longer functions."
+                        "Some items are used up when they are activated. Once used, a consumable item loses its magic and no longer functions. Most consumable magic items take an action to use, with the exception of {@action drink a potion||drinking a potion}"
                     ]
                 },
                 {
@@ -60,7 +60,7 @@
                 }
             ],
             "entries": [
-                "When you take the Attack action, you can make one attack roll with a weapon, engage in {@action Two-Weapon Fighting}, or an {@action Unarmed Strike}.",
+                "When you take the Attack action, you can make an attack roll with a weapon, engage in {@action Two-Weapon Fighting}, or an {@action Unarmed Strike}.",
                 {
                     "type": "entries",
                     "entries": [
@@ -271,7 +271,15 @@
                 }
             ],
             "entries": [
-                "A Grappled creature can use its action to make a Strength ({@skill Athletics|PHB}) or Dexterity ({@skill Acrobatics|PHB}) check against the grapple's escape DC, ending the condition on itself on a success. The condition also ends if the grappler has the {@condition Incapacitated|PHB} condition or if the distance between the Grappled target and the grappler exceeds the grapple's range."
+                "A Grappled creature can use its action to make a Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check against the grappler, ending the condition on itself on a success. The DC to succeed will be one of the following, at DM's discretion:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Strength ({@skill Athletics}) Check rolled by the Grappler",
+                        "Escape DC Set by the Grappler ({@dc 8} + Grappler's Proficiency Bonus + Grappler's Strength Modifier)"
+                    ]
+                },
+                "The condition also ends if the grappler has the {@condition Incapacitated} condition or if the distance between the Grappled target and the grappler exceeds the grappler's reach."
             ]
         },
         {
@@ -408,7 +416,7 @@
             ],
             "entries": [
                 "In a fight, everyone is constantly watching for enemies to drop their guard. You can rarely move heedlessly past your foes without putting yourself in danger; doing so provokes an opportunity attack.",
-                "You can make an opportunity attack when a hostile creature that you can see moves out of your reach. To make the opportunity attack, you use your reaction to make one melee {@action Attack} or one {@action Unarmed Attack} using Strike against the provoking creature. The attack interrupts the provoking creature's movement, occurring right before the creature leaves your reach.",
+                "You can make an opportunity attack when a hostile creature that you can see moves out of your reach. To make the opportunity attack, you use your reaction to make one melee {@action Attack} or one {@action unarmed attack||Unarmed Strike Attack} against the provoking creature. The attack interrupts the provoking creature's movement, occurring right before the creature leaves your reach.",
                 "You can avoid provoking an opportunity attack by taking the {@action Disengage} action. You also don't provoke an opportunity attack when you teleport or when someone or something moves you without using your movement, action, or reaction. For example, you don't provoke an opportunity attack if an explosion hurls you out of a foe's reach or if gravity causes you to fall past an enemy.",
                 "However, if your ally targets a hostile creature in a way that results in that target moving out of your reach, such as with thorn whip or lightning lure and not by a general area of effect, you may target that creature with an opportunity attack with disadvantage."
             ]
@@ -511,7 +519,7 @@
                 }
             ],
             "entries": [
-                "With this option, a creature uses the {@action Unarmed Attack} Shove action from the {@book Player's Handbook|PHB} to force a target to the side, rather than away. The attacker has disadvantage on its Strength ({@skill Athletics}) check when it does so. If that check is successful, the attacker moves the target 5 feet to a different space within its reach."
+                "With this option, a creature uses the {@action unarmed attack||Unarmed Shove Attack} to force a target to the side, rather than away. The attacker has disadvantage on its Strength ({@skill Athletics}) check when it does so. If that check is successful, the attacker moves the target 5 feet to a different space within its reach."
             ]
         },
         {
@@ -548,7 +556,7 @@
                 }
             ],
             "entries": [
-                "When you engage in Two-Weapon Fighting, you will use both your Action and Bonus Action to make two weapon attacks. To do so, you must be wielding one light melee weapon in each hand that you are proficient in, for example: {@item dagger}.",
+                "When you engage in Two-Weapon Fighting, you will use both your Action and Bonus Action to make two weapon attacks. To do so, you must be wielding one light melee weapon in each hand that you are proficient in, for example: {@item dagger|PHB}.",
                 "Your main hand will make one {@action Attack} action while your off-hand will make one {@action Attack} action as a Bonus Action. When you hit with your off-hand, you do not add your ability modifier to the damage roll.",
                 "If either weapon has the thrown property, you can use its ranged ability as one or both attack, and still use two-weapon fighting.",
                 "When you make an opportunity attack while engaging in two-weapon fighting, you can only make one attack. If you make it with your off-hand weapon, the attack roll is made with disadvantage."
@@ -570,7 +578,7 @@
                 }
             ],
             "entries": [
-                "Instead of using a weapon to make a melee attack, you can use a punch, kick, head-butt, or similar forceful blow. This is an Unarmed Attack—a melee attack that involves you using your body to damage, grapple, or shove a target within 5 feet of you.",
+                "Instead of using a weapon to make a melee attack, you can use a punch, kick, head-butt, or similar forceful blow. This is an Unarmed Attack—a melee attack that involves you using your body to damage, grapple, or shove a target within 5 feet of you. If you are able to make multiple attacks with the {@action Attack} action, this attack replaces one of them.",
                 "Whenever you use your Unarmed Attack, choose one of the following options for its effect.",
                 {
                     "type": "entries",
@@ -579,21 +587,48 @@
                             "type": "entries",
                             "name": "Strike",
                             "entries": [
-                                "When you make an Unarmed Strike Attack, you make an attack roll against the target. Your bonus to the roll equals your Strength modifier plus your proficiency bonus. On a hit, the target takes Bludgeoning damage equal to {@dice 1d4} plus your Strength modifier."
+                                "When you make an {@action unarmed attack||Unarmed Strike Attack}, you make an attack roll against the target. Your bonus to the roll equals your Strength modifier plus your proficiency bonus. On a hit, the target takes Bludgeoning damage equal to {@dice 1d4} plus your Strength modifier."
                             ]
                         },
                         {
                             "type": "entries",
                             "name": "Grapple",
                             "entries": [
-                                "When you make an Unarmed Grapple Attack, the target must succeed on a Strength or Dexterity saving throw (it chooses which), or it has the {@condition Grappled|PHB} condition. The DC for the saving throw and any escape attempts equals 8 plus your Strength modifier and proficiency bonus. This grapple is possible only if the target is no more than one size larger than you and if you have a hand free to grab it."
+                                "When you make an {@action unarmed attack||Unarmed Grapple Attack}, it is possible only if the target is no more than one size larger than you and if you have a hand free to grab it. There are two ways to determine its outcome, at DM's discretion.",
+                                {
+                                    "type": "list",
+                                    "items": [
+                                        {
+                                            "type": "item",
+                                            "name": "Making Contested Rolls",
+                                            "entries": [
+                                                "Your target makes a Strength ({@skill Athletic}) or Dexterity ({@skill Acrobatic}) check (the target's choice) against your Strength ({@skill Athletic}) check, which sets the DC."
+                                            ]
+                                        },
+                                        {
+                                            "type": "item",
+                                            "name": "Using a Saving Throw",
+                                            "entries": [
+                                                "The target makes a Strength or Dexterity saving throw (target chooses) against your Unarmed DC."
+                                            ]
+                                        }
+                                    ]
+                                },
+                                "When you move, you can drag or carry the {@condition grappled} creature with you, but your speed is halved, unless the creature is two or more sizes smaller than you."
                             ]
                         },
                         {
                             "type": "entries",
                             "name": "Shove",
                             "entries": [
-                                "When you make an Unarmed Shove Attack, the target must succeed on a Strength or Dexterity saving throw (it chooses which), or you either push it 5 feet away or cause it to have the {@condition Prone|PHB} condition. The DC for the saving throw equals 8 plus your Strength modifier and proficiency Bonus. This shove is possible only if the target is no more than one size larger than you."
+                                "When you make an {@action unarmed attack||Unarmed Shove Attack}, the target must succeed on a Strength or Dexterity saving throw (it chooses which) against your Unarmed DC. On a fail, you either push it 5 feet away or cause it to be {@condition prone} (your choice). This shove is possible only if the target is no more than one size larger than you."
+                            ]
+                        },
+                        {
+                            "type": "abilityDc",
+                            "name": "Unarmed",
+                            "attributes": [
+                                "str"
                             ]
                         }
                     ]
