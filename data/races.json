@@ -18928,23 +18928,36 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Unending Breath",
+					"name": "Air Elemental Ancestry",
 					"entries": [
-						"You can hold your breath indefinitely while you're not {@condition incapacitated}."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Lightning Resistance",
-					"entries": [
-						"You have resistance to lightning damage."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Control Air",
-					"entries": [
-						"You have the ability to mold, shape, control, etc., air within a 5-foot cube of space in any manner that's harmless, including moving it into a neighboring 5-foot cube."
+						"As a descendant of powerful {@creature djinni||djinns}, your ability to interact with the element of Air naturally to you. You gain the following benefits:",
+						{
+							"type": "list",
+							"style": "list-hang",
+							"items": [
+								{
+									"type": "item",
+									"name": "Lightning Resistance",
+									"entries": [
+										"You have resistance to lightning damage."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Shaping the Breeze",
+									"entries": [
+										"You have the ability to mold, shape, control, etc., air within a 5-foot cube of space in any manner that's harmless, including moving it into a neighboring 5-foot cube."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Unending Breath",
+									"entries": [
+										"You can hold your breath indefinitely while you're not {@condition incapacitated}."
+									]
+								}
+							]
+						}
 					]
 				},
 				{
@@ -18953,6 +18966,23 @@
 					"entries": [
 						"You know the {@spell Shocking Grasp} cantrip. Starting at 3rd level, you can cast {@spell Feather Fall} once per long rest, without material components, with this trait. Starting 5th level, you can cast {@spell Levitate} once per long rest, without material components, with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).",
 						"{@note If you have a Spellcasting or Pact Magic class feature, you can cast the leveled spells from this trait using those spell slots, following the casting rules provided by your class.}"
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Variant Rule: Mixed Lineage",
+					"entries": [
+						"Those born Genasi come into existance a number of difference ways.",
+						{
+							"type": "list",
+							"items": [
+								"Born from Humanoid (non-Genasi) and {@creature Djinni} parents",
+								"Born from at least one {@race Genasi|MPMM} parent",
+								"Born from non-Genasi parents who lives near a place suffused by Air Elemental Magic"
+							]
+						},
+						"If your lineage involves one non-Genasi Humanoid parent and a {@creature Djinni}, you may gain one racial trait from your humanoid parent, at the discretion of your DM.",
+						"If your {@creature Djinni||non-Djinni} parent is of another creature type, such as Fey, please discuss with your DM on how that may impact your Genasi traits."
 					]
 				}
 			],
@@ -18992,32 +19022,80 @@
 					},
 					"known": {
 						"1": [
-							"blade ward#c"
+							"magic stone|xge#c"
 						]
 					}
+				}
+			],
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": "true"
 				}
 			],
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Earth Walk",
+					"name": "Earth Elemental Ancestry",
 					"entries": [
-						"You can move across {@quickref difficult terrain||3} without expending extra movement if you are using your walking speed on the ground or a floor."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Control Earth",
-					"entries": [
-						"You have the ability to mold, shape, control, etc., the dirt and ground within a 5-foot cube of space in any manner that's harmless, including moving it into a neighboring 5-foot cube."
+						"As a descendant of powerful {@creature dao||Daos}, your ability to interact with the element of Earth naturally to you. You gain the following benefits:",
+						{
+							"type": "list",
+							"style": "list-hang",
+							"items": [
+								{
+									"type": "item",
+									"name": "Nonmagical Resistance",
+									"entries": [
+										"You have resistance to nonmagical bludgeoning, piercing, and slashing damage."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Molding the Earth",
+									"entries": [
+										"You have the ability to mold, shape, control, etc., the dirt and ground within a 5-foot cube of space in any manner that's harmless, including moving it into a neighboring 5-foot cube."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Earth Walk",
+									"entries": [
+										"You can move across {@quickref difficult terrain||3} without expending extra movement if you are using your walking speed on the ground or a floor."
+									]
+								}
+							]
+						}
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Merge with Stone",
 					"entries": [
-						"You know the {@spell Blade Ward} cantrip. Starting at 3rd level, you can cast {@spell Earth Tremor|XGE} once per long rest with this trait. Starting at 5th level, you can cast {@spell Pass Without Trace} once per long rest, without material components, with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).",
+						"You know the {@spell Magic Stone|XGE} cantrip. Starting at 3rd level, you can cast {@spell Earth Tremor|XGE} once per long rest with this trait. Starting at 5th level, you can cast {@spell Pass Without Trace} once per long rest, without material components, with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).",
 						"{@note If you have a Spellcasting or Pact Magic class feature, you can cast the leveled spells from this trait using those spell slots, following the casting rules provided by your class.}"
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Variant Rule: Mixed Lineage",
+					"entries": [
+						"Those born Genasi come into existance a number of difference ways.",
+						{
+							"type": "list",
+							"items": [
+								"Born from Humanoid (non-Genasi) and {@creature Dao} parents",
+								"Born from at least one {@race Genasi|MPMM} parent",
+								"Born from non-Genasi parents who lives near a place suffused by Air Elemental Magic"
+							]
+						},
+						"If your lineage involves one non-Genasi Humanoid parent and a {@creature Dao}, you may gain one racial trait from your humanoid parent, at the discretion of your DM.",
+						"If your {@creature Dao||non-Dao} parent is of another creature type, such as Fey, please discuss with your DM on how that may impact your Genasi traits."
 					]
 				}
 			],
@@ -19086,6 +19164,23 @@
 					"entries": [
 						"You know the {@spell Produce Flame} cantrip. Starting at 3rd level, you can cast {@spell Burning Hands} once per long rest with this trait. Starting at 5th level, you can cast {@spell Primordial Blade}, summoning only the flame blade, once per long rest without material components with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).",
 						"{@note If you have a Spellcasting or Pact Magic class feature, you can cast the leveled spells from this trait using those spell slots, following the casting rules provided by your class.}"
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Variant Rule: Mixed Lineage",
+					"entries": [
+						"Those born Genasi come into existance a number of difference ways.",
+						{
+							"type": "list",
+							"items": [
+								"Born from Humanoid (non-Genasi) and {@creature Efreeti} parents",
+								"Born from at least one {@race Genasi|MPMM} parent",
+								"Born from non-Genasi parents who lives near a place suffused by Air Elemental Magic"
+							]
+						},
+						"If your lineage involves one non-Genasi Humanoid parent and a {@creature Efreeti}, you may gain one racial trait from your humanoid parent, at the discretion of your DM.",
+						"If your {@creature Efreeti||non-Efreeti} parent is of another creature type, such as Fey, please discuss with your DM on how that may impact your Genasi traits."
 					]
 				}
 			],
@@ -19175,6 +19270,23 @@
 					"entries": [
 						"You know the {@spell Acid Splash} cantrip. Starting at 3rd level, you can cast {@spell Create or Destroy Water} once per long rest, without material components, with this spell. Starting at 5th level, you can cast {@spell Water Walk} once per long rest, without material components, with this spell. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).",
 						"{@note If you have a Spellcasting or Pact Magic class feature, you can cast the leveled spells from this trait using those spell slots, following the casting rules provided by your class.}"
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Variant Rule: Mixed Lineage",
+					"entries": [
+						"Those born Genasi come into existance a number of difference ways.",
+						{
+							"type": "list",
+							"items": [
+								"Born from Humanoid (non-Genasi) and {@creature Marid} parents",
+								"Born from at least one {@race Genasi|MPMM} parent",
+								"Born from non-Genasi parents who lives near a place suffused by Air Elemental Magic"
+							]
+						},
+						"If your lineage involves one non-Genasi Humanoid parent and a {@creature Marid}, you may gain one racial trait from your humanoid parent, at the discretion of your DM.",
+						"If your {@creature Marid||non-Marid} parent is of another creature type, such as Fey, please discuss with your DM on how that may impact your Genasi traits."
 					]
 				}
 			],
