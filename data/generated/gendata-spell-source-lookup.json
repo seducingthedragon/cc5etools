@@ -2297,10 +2297,6 @@
                     }
                 },
                 "MPMM": {
-                    "Genasi (Earth)": {
-                        "baseName": "Genasi",
-                        "baseSource": "MPMM"
-                    },
                     "Half-Elf (Drow Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -24193,6 +24189,10 @@
                     }
                 },
                 "MPMM": {
+                    "Genasi (Earth)": {
+                        "baseName": "Genasi",
+                        "baseSource": "MPMM"
+                    },
                     "Half-Elf (Wood Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"

@@ -2177,7 +2177,7 @@
 				}
 			],
 			"entries": [
-                "You create a barrier of whirling blades made of magical energy as you extend your hand and trace a sigil of warding in the air. Until the end of your next turn, you have resistance against bludgeoning, piercing, and slashing damage dealt by weapon attacks."
+                "You create a barrier of whirling blades made of magical energy as you extend your hand and trace a sigil of warding in the air. Until the end of your next turn, you have resistance against nonmagical bludgeoning, piercing, and slashing damage."
             ],
 			"damageResist": [
 				"bludgeoning",
@@ -19603,7 +19603,7 @@
 				}
 			],
 			"entries": [
-				"This spell turns the flesh of a willing creature you touch as hard as stone. Until the spell ends, the target has resistance to nonmagical bludgeoning, piercing, and slashing damage."
+				"This spell turns the flesh of a willing creature you touch as hard as stone. Until the spell ends, the target has resistance to bludgeoning, piercing, and slashing damage, both nonmagical and magical."
 			],
 			"damageResist": [
 				"bludgeoning",
