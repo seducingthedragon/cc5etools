@@ -5953,6 +5953,45 @@
 			"source": "PHB",
 			"page": 35,
 			"srd": true,
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
 			"size": [
 				"S"
 			],
@@ -6670,9 +6709,9 @@
 				},
 				{
 					"type": "entries",
-					"name": "Little Giant",
+					"name": "Athletic",
 					"entries": [
-						"You have proficiency in the {@skill Athletics} skill, and you count as one size larger when determining your carrying weight and the weight you can push, drag, or lift."
+						"You have proficiency in the {@skill Athletics} skill."
 					]
 				},
 				{
@@ -6684,10 +6723,76 @@
 				},
 				{
 					"type": "entries",
-					"name": "Stone's Endurance",
+					"name": "Giant Ancestry",
 					"entries": [
-						"You can supernaturally draw on unyielding stone to shrug off harm. When you take damage, you can use your reaction to roll a {@dice d12}. Add your Constitution modifier to the number rolled and reduce the damage by that total.",
-						"You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+						"You and your family are descendents of Giants. Choose one of the following benefits as a boon tied to your ancestry. You can use your ancestral benefit a number of times equal to your proficiency bonus per long rest:",
+						{
+							"type": "list",
+							"items": [
+								{
+									"type": "item",
+									"name": "Cloud's Jaunt (Cloud Giant)",
+									"entries": [
+										"As a bonus action, you magically teleport up to 30 feet to an unoccupied space you can see."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Fire's Burn (Fire Giant)",
+									"entries": [
+										"When you hit a target with melee attack roll and deal damage, you can also deal an additional {@damage 1d10} Fire damage."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Frost's Chill (Frost Giant)",
+									"entries": [
+										"When you hit a target with an attack roll and deal damage, you can also deal an additional {@damage 1d8} Cold damage and reduce its speed by 10 feet until the start of your next turn."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Hill's Tumble (Hill Giant)",
+									"entries": [
+										"When you hit a Large or smaller creature with an attack roll and deal damage, you can instantly force the target {@condition prone}."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Stone's Endurance (Stone Giant)",
+									"entries": [
+										"When you take damage, you can take a reaction to reduce the damage dealt by {@dice 1d12} plus your Constitution modifier."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Storm's Response (Storm Giant)",
+									"entries": [
+										"When you take damage from a creature within 60 feet of you, you can take a reaction to deal {@damage 1d8} Lightning or Thunder damage (your choice) to that creature."
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Powerful Build",
+					"entries": [
+						"You count as one size larger when determining your carrying weight and the weight you can push, drag, or lift. Additionally, when you reach level 5, you gain the ability to expand into your {@b Large Form},",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Large Form",
+									"entries": [
+										"As a bonus action, you can change your size to Large, if you have enough space. This transformation lasts for 10 minutes or until you end it (no action required). For that duration, you have advantage on Strength checks and saving throws, and your speed increases by 10 feet. You can use this transformation once per long rest."
+									]
+								}
+							]
+						}
 					]
 				},
 				{
@@ -6699,7 +6804,189 @@
 				}
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"_versions": [
+				{
+					"name": "Goliath (Cloud Giant)",
+					"source": "MPMM",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "Giant Ancestry",
+							"items": {
+								"name": "Cloud Giant Ancestry",
+								"type": "entries",
+								"entries": [
+									"You and your family are descendents of Cloud Giants, granting you the following supernatural boon. You can use this benefit a number of times equal to your proficiency bonus per long rest.",
+									{
+										"type": "list",
+										"style": "list-hang-notitle",
+										"items": [
+											{
+												"type": "item",
+												"name": "Cloud's Jaunt",
+												"entries": [
+													"As a bonus action, you magically teleport up to 30 feet to an unoccupied space you can see."
+												]
+											}
+										]
+									}
+								]
+							}
+						}
+					}
+				},
+				{
+					"name": "Goliath (Fire Giant)",
+					"source": "MPMM",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "Giant Ancestry",
+							"items": {
+								"name": "Fire Giant Ancestry",
+								"type": "entries",
+								"entries": [
+									"You and your family are descendents of Fire Giants, granting you the following supernatural boon. You can use this benefit a number of times equal to your proficiency bonus per long rest.",
+									{
+										"type": "list",
+										"style": "list-hang-notitle",
+										"items": [
+											{
+												"type": "item",
+												"name": "Fire's Burn",
+												"entries": [
+													"When you hit a target with melee attack roll and deal damage, you can also deal an additional {@damage 1d10} Fire damage."
+												]
+											}
+										]
+									}
+								]
+							}
+						}
+					}
+				},
+				{
+					"name": "Goliath (Frost Giant)",
+					"source": "MPMM",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "Giant Ancestry",
+							"items": {
+								"name": "Frost Giant Ancestry",
+								"type": "entries",
+								"entries": [
+									"You and your family are descendents of Frost Giants, granting you the following supernatural boon. You can use this benefit a number of times equal to your proficiency bonus per long rest.",
+									{
+										"type": "list",
+										"style": "list-hang-notitle",
+										"items": [
+											{
+												"type": "item",
+												"name": "Frost's Chill",
+												"entries": [
+													"When you hit a target with an attack roll and deal damage, you can also deal an additional {@damage 1d8} Cold damage and reduce its speed by 10 feet until the start of your next turn."
+												]
+											}
+										]
+									}
+								]
+							}
+						}
+					}
+				},
+				{
+					"name": "Goliath (Hill Giant)",
+					"source": "MPMM",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "Giant Ancestry",
+							"items": {
+								"name": "Hill Giant Ancestry",
+								"type": "entries",
+								"entries": [
+									"You and your family are descendents of Hill Giants, granting you the following supernatural boon. You can use this benefit a number of times equal to your proficiency bonus per long rest.",
+									{
+										"type": "list",
+										"style": "list-hang-notitle",
+										"items": [
+											{
+												"type": "item",
+												"name": "Hill's Tumble",
+												"entries": [
+													"When you hit a Large or smaller creature with an attack roll and deal damage, you can instantly force the target {@condition prone}."
+												]
+											}
+										]
+									}
+								]
+							}
+						}
+					}
+				},
+				{
+					"name": "Goliath (Stone Giant)",
+					"source": "MPMM",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "Giant Ancestry",
+							"items": {
+								"name": "Stone Giant Ancestry",
+								"type": "entries",
+								"entries": [
+									"You and your family are descendents of Stone Giants, granting you the following supernatural boon. You can use this benefit a number of times equal to your proficiency bonus per long rest.",
+									{
+										"type": "list",
+										"style": "list-hang-notitle",
+										"items": [
+											{
+												"type": "item",
+												"name": "Stone's Endurance (Stone Giant)",
+												"entries": [
+													"When you take damage, you can take a reaction to reduce the damage dealt by {@dice 1d12} plus your Constitution modifier."
+												]
+											}
+										]
+									}
+								]
+							}
+						}
+					}
+				},
+				{
+					"name": "Goliath (Storm Giant)",
+					"source": "MPMM",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "Giant Ancestry",
+							"items": {
+								"name": "Storm Giant Ancestry",
+								"type": "entries",
+								"entries": [
+									"You and your family are descendents of Storm Giants, granting you the following supernatural boon. You can use this benefit a number of times equal to your proficiency bonus per long rest.",
+									{
+										"type": "list",
+										"style": "list-hang-notitle",
+										"items": [
+											{
+												"type": "item",
+												"name": "Storm's Response",
+												"entries": [
+													"When you take damage from a creature within 60 feet of you, you can take a reaction to deal {@damage 1d8} Lightning or Thunder damage (your choice) to that creature."
+												]
+											}
+										]
+									}
+								]
+							}
+						}
+					}
+				}
+			]
 		},
 		{
 			"name": "Goliath",
@@ -6926,8 +7213,13 @@
 				"walk": 25,
 				"climb": 25
 			},
+			"heightAndWeight": {
+				"baseHeight": 30,
+				"heightMod": "1d12",
+				"baseWeight": 20,
+				"weightMod": "1d4"
+			},
 			"age": {
-				"mature": 1,
 				"max": 50
 			},
 			"traitTags": [
@@ -18930,7 +19222,7 @@
 					"type": "entries",
 					"name": "Air Elemental Ancestry",
 					"entries": [
-						"As a descendant of powerful {@creature djinni||djinns}, your ability to interact with the element of Air naturally to you. You gain the following benefits:",
+						"As a descendant of powerful {@creature djinni||djinns}, your ability to interact with the element of Air comes naturally to you. You gain the following benefits:",
 						{
 							"type": "list",
 							"style": "list-hang",
@@ -18944,16 +19236,16 @@
 								},
 								{
 									"type": "item",
-									"name": "Shaping the Breeze",
+									"name": "Unending Breath",
 									"entries": [
-										"You have the ability to mold, shape, control, etc., air within a 5-foot cube of space in any manner that's harmless, including moving it into a neighboring 5-foot cube."
+										"You can hold your breath indefinitely while you're not {@condition incapacitated}."
 									]
 								},
 								{
 									"type": "item",
-									"name": "Unending Breath",
+									"name": "Directing the Breeze",
 									"entries": [
-										"You can hold your breath indefinitely while you're not {@condition incapacitated}."
+										"You have the ability to mold, shape, control, etc., air within a 5-foot cube of space in any manner that's harmless, including moving it into a neighboring 5-foot cube."
 									]
 								}
 							]
@@ -19043,7 +19335,7 @@
 					"type": "entries",
 					"name": "Earth Elemental Ancestry",
 					"entries": [
-						"As a descendant of powerful {@creature dao||Daos}, your ability to interact with the element of Earth naturally to you. You gain the following benefits:",
+						"As a descendant of powerful {@creature dao||Daos}, your ability to interact with the element of Earth comes naturally to you. You gain the following benefits:",
 						{
 							"type": "list",
 							"style": "list-hang",
@@ -19057,16 +19349,16 @@
 								},
 								{
 									"type": "item",
-									"name": "Molding the Earth",
+									"name": "Earth Walk",
 									"entries": [
-										"You have the ability to mold, shape, control, etc., the dirt and ground within a 5-foot cube of space in any manner that's harmless, including moving it into a neighboring 5-foot cube."
+										"You can move across nonmagical {@quickref difficult terrain||3} without expending extra movement as long as you are walking on natural material."
 									]
 								},
 								{
 									"type": "item",
-									"name": "Earth Walk",
+									"name": "Molding the Ground",
 									"entries": [
-										"You can move across {@quickref difficult terrain||3} without expending extra movement if you are using your walking speed on the ground or a floor."
+										"You have the ability to mold, shape, control, etc., the dirt and ground within a 5-foot cube of space in any manner that's harmless, including moving it into a neighboring 5-foot cube."
 									]
 								}
 							]
@@ -19146,16 +19438,36 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Fire Resistance",
+					"name": "Fire Elemental Ancestry",
 					"entries": [
-						"You have resistance to fire damage."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Control Fire",
-					"entries": [
-						"You have the ability to mold, shape, control, etc., fire within a 5-foot cube of space in any manner that's harmless, including moving it into a neighboring 5-foot cube."
+						"As a descendant of powerful {@creature efreeti||Efreetis}, your ability to interact with the element of Fire comes naturally to you. You gain the following benefits:",
+						{
+							"type": "list",
+							"style": "list-hang",
+							"items": [
+								{
+									"type": "item",
+									"name": "Fire Resistance",
+									"entries": [
+										"You have resistance to fire damage."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Illumination",
+									"entries": [
+										"In an instant, you can cause yourself to illuminate dim or bright light. This light does not extend past your space."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Controlling the Flame",
+									"entries": [
+										"You have the ability to mold, shape, control, etc., fire within a 5-foot cube of space in any manner that's harmless, including moving it into a neighboring 5-foot cube."
+									]
+								}
+							]
+						}
 					]
 				},
 				{
@@ -19240,28 +19552,41 @@
 					"type": "entries",
 					"name": "Speed",
 					"entries": [
-						"Your walking speed is 30 feet, and you have a swimming speed equal to your walking speed."
+						"You have a swimming speed equal to your walking speed."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Acid Resistance",
+					"name": "Water Elemental Ancestry",
 					"entries": [
-						"You have resistance to acid damage."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Amphibious",
-					"entries": [
-						"You breathe air and water."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Control Water",
-					"entries": [
-						"You have the ability to mold, shape, control, etc., water within a 5-foot cube of space in any manner that's harmless, including moving it into a neighboring 5-foot cube."
+						"As a descendant of powerful {@creature marid||Marids}, your ability to interact with the element of Water comes naturally to you. You gain the following benefits:",
+						{
+							"type": "list",
+							"style": "list-hang",
+							"items": [
+								{
+									"type": "entries",
+									"name": "Acid Resistance",
+									"entries": [
+										"You have resistance to acid damage."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Amphibious",
+									"entries": [
+										"You can breathe air and under water."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Shaping the Tides",
+									"entries": [
+										"You have the ability to mold, shape, control, etc., water within a 5-foot cube of space in any manner that's harmless, including moving it into a neighboring 5-foot cube."
+									]
+								}
+							]
+						}
 					]
 				},
 				{
@@ -19563,6 +19888,7 @@
 				}
 			],
 			"overwrite": {
+				"ability": true,
 				"languageProficiencies": true
 			}
 		},
@@ -19659,6 +19985,7 @@
 				}
 			],
 			"overwrite": {
+				"ability": true,
 				"languageProficiencies": true
 			},
 			"hasFluff": true
@@ -19669,45 +19996,6 @@
 			"raceName": "Gnome",
 			"raceSource": "PHB",
 			"page": 37,
-			"ability": [
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
-								"dex",
-								"con",
-								"int",
-								"wis",
-								"cha"
-							],
-							"weights": [
-								2,
-								1
-							]
-						}
-					}
-				},
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
-								"dex",
-								"con",
-								"int",
-								"wis",
-								"cha"
-							],
-							"weights": [
-								1,
-								1,
-								1
-							]
-						}
-					}
-				}
-			],
 			"additionalSpells": [
 				{
 					"ability": {
@@ -19720,6 +20008,11 @@
 					"known": {
 						"1": [
 							"minor illusion#c"
+						]
+					},
+					"innate": {
+						"1": [
+							"speak with animals"
 						]
 					}
 				}
@@ -19736,7 +20029,7 @@
 					"type": "entries",
 					"name": "Speak with Small Beasts",
 					"entries": [
-						"Through sounds and gestures, you can communicate simple ideas with Small or smaller beasts. Forest gnomes love animals and often keep squirrels, badgers, rabbits, moles, woodpeckers, and other creatures as beloved pets."
+						"You can cast {@spell Speak with Animals} at will when targeting Small or smaller Beasts, using the same ability choosen in your {@u Natural Illusionist} trait. Forest gnomes love animals and often keep squirrels, badgers, rabbits, moles, woodpeckers, and other creatures as beloved pets."
 					]
 				}
 			],
@@ -19865,7 +20158,10 @@
 						}
 					]
 				}
-			]
+			],
+			"overwrite": {
+				"ability": true
+			}
 		},
 		{
 			"name": "Rock",
@@ -19874,45 +20170,6 @@
 			"raceSource": "PHB",
 			"page": 37,
 			"srd": true,
-			"ability": [
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
-								"dex",
-								"con",
-								"int",
-								"wis",
-								"cha"
-							],
-							"weights": [
-								2,
-								1
-							]
-						}
-					}
-				},
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
-								"dex",
-								"con",
-								"int",
-								"wis",
-								"cha"
-							],
-							"weights": [
-								1,
-								1,
-								1
-							]
-						}
-					}
-				}
-			],
 			"toolProficiencies": [
 				{
 					"tinker's tools": true
@@ -19953,7 +20210,7 @@
 					"type": "entries",
 					"name": "Tinker",
 					"entries": [
-						"You have proficiency with {@item Tinker's Tools|phb}. Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up to three such devices active at a time.",
+						"You have proficiency with {@item Tinker's Tools|phb}. Using those tools, as well as help from your {@spell Mending} cantrip, you can spend 10 minutes constructing a Tiny clockwork device (AC 5, 5 hp). The device lasts for 8 hours, or earlier if you use your action to dismantle it with a touch. You can have up to three such devices active at a time.",
 						"When you create a device, choose one of the following options:",
 						{
 							"type": "list",
