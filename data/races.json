@@ -4503,7 +4503,7 @@
 					"name": "Fey Trance",
 					"entries": [
 						"You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness. While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice.",
-						"Whenever you finish this trance, you can change your season, and you can gain two proficiencies that you don't have, that are {@book weapons|phb|5|weapons} or {@book tools|phb|5|tools} (including one of each) of your choice selected from the {@book Player's Handbook|PHB}. You mystically acquire these proficiencies by drawing them from shared elven memory, and you retain them until you finish your next long rest."
+						"Whenever you finish this trance, you can change your season and gain two proficiencies that you don't have. Those proficiencies can be {@book weapons|phb|5|weapons} or {@book tools|phb|5|tools} (including one of each). You mystically acquire these proficiencies by drawing them from shared elven memory, and you retain them until you finish your next long rest."
 					]
 				},
 				{
@@ -4515,8 +4515,8 @@
 							"type": "list",
 							"items": [
 								"Autumn - {@spell Guidance}",
-								"Winter - {@spell Minor Illusion} {@note (you're able to replace {@b M} component for a {@b V} component)}",
-								"Spring - {@spell Friends} {@note (you're able to replace {@b M} component for a {@b V} component)}",
+								"Winter - {@spell Minor Illusion} {@note (you replace the {@b M} component for a {@b V} component)}",
+								"Spring - {@spell Friends} {@note (you replace the {@b M} component for a {@b V} component)}",
 								"Summer - {@spell Produce Flame}"
 							]
 						}
@@ -4566,6 +4566,45 @@
 			"page": 21,
 			"srd": true,
 			"basicRules": true,
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
 			"size": [
 				"M"
 			],
@@ -4596,53 +4635,39 @@
 			},
 			"entries": [
 				{
-					"name": "Age",
 					"type": "entries",
-					"entries": [
-						"Although elves reach physical maturity at about the same age as humans, the elven understanding of adulthood goes beyond physical growth to encompass worldly experience. An elf typically claims adulthood and an adult name around the age of 100 and can live to be 750 years old."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Elves range from under 5 to over 6 feet tall and have slender builds. Your size is Medium."
-					]
-				},
-				{
 					"name": "Darkvision",
 					"entries": [
 						"Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
-					],
-					"type": "entries"
+					]
 				},
 				{
+					"type": "entries",
 					"name": "Keen Senses",
 					"entries": [
 						"You have proficiency in the {@skill Perception} skill."
-					],
-					"type": "entries"
+					]
 				},
 				{
+					"type": "entries",
 					"name": "Fey Ancestry",
 					"entries": [
-						"You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
-					],
-					"type": "entries"
+						"You have advantage on saving throws you make to avoid or end the {@condition charmed} condition on yourself."
+					]
 				},
 				{
+					"type": "entries",
 					"name": "Trance",
 					"entries": [
-						"Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep."
-					],
-					"type": "entries"
+						"You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours, if you spend those hours in a trancelike meditation, during which you retain consciousness. While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice."
+					]
 				},
 				{
+					"type": "entries",
 					"name": "Languages",
 					"entries": [
 						"You can speak, read, and write Common and Elvish. Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires."
-					],
-					"type": "entries"
+					]
 				}
 			],
 			"hasFluff": true,
@@ -17524,45 +17549,6 @@
 			"raceName": "Elf",
 			"raceSource": "PHB",
 			"page": 24,
-			"ability": [
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
-								"dex",
-								"con",
-								"int",
-								"wis",
-								"cha"
-							],
-							"weights": [
-								2,
-								1
-							]
-						}
-					}
-				},
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
-								"dex",
-								"con",
-								"int",
-								"wis",
-								"cha"
-							],
-							"weights": [
-								1,
-								1,
-								1
-							]
-						}
-					}
-				}
-			],
 			"heightAndWeight": {
 				"baseHeight": 53,
 				"heightMod": "2d6",
@@ -17698,7 +17684,10 @@
 					],
 					"type": "entries"
 				}
-			]
+			],
+			"overwrite": {
+				"ability": true
+			}
 		},
 		{
 			"name": "Eladrin",
@@ -17759,7 +17748,10 @@
 				}
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"overwrite": {
+				"ability": true
+			}
 		},
 		{
 			"name": "High",
@@ -17770,45 +17762,6 @@
 			"srd": true,
 			"basicRules": true,
 			"speed": 30,
-			"ability": [
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
-								"dex",
-								"con",
-								"int",
-								"wis",
-								"cha"
-							],
-							"weights": [
-								2,
-								1
-							]
-						}
-					}
-				},
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
-								"dex",
-								"con",
-								"int",
-								"wis",
-								"cha"
-							],
-							"weights": [
-								1,
-								1,
-								1
-							]
-						}
-					}
-				}
-			],
 			"heightAndWeight": {
 				"baseHeight": 54,
 				"heightMod": "2d10",
@@ -18146,7 +18099,10 @@
 						}
 					]
 				}
-			]
+			],
+			"overwrite": {
+				"ability": true
+			}
 		},
 		{
 			"name": "Pallid",
@@ -18154,45 +18110,6 @@
 			"raceName": "Elf",
 			"raceSource": "PHB",
 			"page": 21,
-			"ability": [
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
-								"dex",
-								"con",
-								"int",
-								"wis",
-								"cha"
-							],
-							"weights": [
-								2,
-								1
-							]
-						}
-					}
-				},
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
-								"dex",
-								"con",
-								"int",
-								"wis",
-								"cha"
-							],
-							"weights": [
-								1,
-								1,
-								1
-							]
-						}
-					}
-				}
-			],
 			"heightAndWeight": {
 				"baseHeight": 54,
 				"heightMod": "2d10",
@@ -18329,7 +18246,11 @@
 					"type": "entries"
 				}
 			],
-			"hasFluff": true
+			"hasFluff": true,
+			"overwrite": {
+				"ability": true,
+				"speed": true
+			}
 		},
 		{
 			"name": "Shadar-kai",
@@ -18372,7 +18293,10 @@
 					"type": "entries"
 				}
 			],
-			"hasFluff": true
+			"hasFluff": true,
+			"overwrite": {
+				"ability": true
+			}
 		},
 		{
 			"name": "Wood",
@@ -18385,45 +18309,6 @@
 			"page": 24,
 			"basicRules": true,
 			"speed": 35,
-			"ability": [
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
-								"dex",
-								"con",
-								"int",
-								"wis",
-								"cha"
-							],
-							"weights": [
-								2,
-								1
-							]
-						}
-					}
-				},
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
-								"dex",
-								"con",
-								"int",
-								"wis",
-								"cha"
-							],
-							"weights": [
-								1,
-								1,
-								1
-							]
-						}
-					}
-				}
-			],
 			"heightAndWeight": {
 				"baseHeight": 54,
 				"heightMod": "2d10",
@@ -18510,7 +18395,10 @@
 				}
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"overwrite": {
+				"speed": true
+			}
 		},
 		{
 			"name": "Bishatar and Tirahar",
