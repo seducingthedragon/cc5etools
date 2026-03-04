@@ -426,9 +426,6 @@
 				"baseWeight": 110,
 				"weightMod": "2d4"
 			},
-			"age": {
-				"max": 180
-			},
 			"speed": 30,
 			"age": {
 				"max": 180
@@ -2399,9 +2396,9 @@
 				"M"
 			],
 			"heightAndWeight": {
-				"baseHeight": "56",
+				"baseHeight": 56,
 				"heightMod": "2d10",
-				"baseWeight": "115",
+				"baseWeight": 115,
 				"weightMod": "2d4"
 			},
 			"age": {
@@ -2631,7 +2628,6 @@
 			"darkvision": 120,
 			"traitTags": [
 				"Magic Resistance",
-				"Superior Darkvision",
 				"Uncommon Race"
 			],
 			"languageProficiencies": [
@@ -3984,7 +3980,6 @@
 				}
 			],
 			"traitTags": [
-				"Superior Darkvision",
 				"Uncommon Race"
 			],
 			"additionalSpells": [
@@ -5164,12 +5159,10 @@
 						]
 					},
 					"innate": {
-						"1": {
-							"rest": [
-								"detect magic",
-								"disguise self"
-							]
-						}
+						"1": [
+							"detect magic",
+							"disguise self"
+						]
 					}
 				}
 			],
@@ -5470,6 +5463,7 @@
 				}
 			],
 			"size": [
+				"S",
 				"M"
 			],
 			"speed": 30,
@@ -5493,20 +5487,6 @@
 				}
 			],
 			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Genasi mature at about the same rate as humans and reach adulthood in their late teens. They live somewhat longer than humans do, up to 120 years."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"You are Medium or Small. You choose the size when you select this race."
-					]
-				},
 				{
 					"type": "entries",
 					"name": "Darkvision",
@@ -5677,6 +5657,9 @@
 				"baseWeight": 100,
 				"weightMod": "2d4"
 			},
+			"age": {
+				"max": 100
+			},
 			"speed": 30,
 			"traitTags": [
 				"Skill Proficiency",
@@ -5726,13 +5709,6 @@
 				}
 			],
 			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Gith reach adulthood in their late teens and live for about a century."
-					]
-				},
 				{
 					"type": "entries",
 					"name": "Astral Knowledge",
@@ -5823,6 +5799,9 @@
 				"baseWeight": 90,
 				"weightMod": "1d4"
 			},
+			"age": {
+				"max": 100
+			},
 			"traitTags": [
 				"Uncommon Race"
 			],
@@ -5865,13 +5844,6 @@
 				}
 			],
 			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Gith reach adulthood in their late teens and live for about a century."
-					]
-				},
 				{
 					"type": "entries",
 					"name": "Githzerai Psionics",
@@ -6003,7 +5975,6 @@
 				"baseWeight": 35
 			},
 			"age": {
-				"mature": 40,
 				"max": 500
 			},
 			"darkvision": 60,
@@ -6018,20 +5989,6 @@
 				"path": "races/gnome.mp3"
 			},
 			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Gnomes mature at the same rate humans do, and most are expected to settle down into an adult life by around age 40. They can live 350 to almost 500 years."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Gnomes are between 3 and 4 feet tall and average about 40 pounds. Your size is Small."
-					]
-				},
 				{
 					"name": "Darkvision",
 					"entries": [
@@ -6351,6 +6308,9 @@
 				"heightMod": "2d4",
 				"baseWeight": 35
 			},
+			"age": {
+				"max": 60
+			},
 			"speed": 30,
 			"darkvision": 60,
 			"languageProficiencies": [
@@ -6363,13 +6323,6 @@
 				"Uncommon Race"
 			],
 			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Goblins reach adulthood at age 8 and live up to 60 years."
-					]
-				},
 				{
 					"type": "entries",
 					"name": "Creature Type",
@@ -6678,7 +6631,6 @@
 				"weightMod": "2d6"
 			},
 			"age": {
-				"mature": 20,
 				"max": 100
 			},
 			"traitTags": [
@@ -6700,13 +6652,6 @@
 				"cold"
 			],
 			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Goliaths have lifespans comparable to humans. They enter adulthood in their late teens and usually live less than a century."
-					]
-				},
 				{
 					"type": "entries",
 					"name": "Athletic",
@@ -7260,13 +7205,6 @@
 				},
 				{
 					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Grungs stand between 2½ and 3½ feet tall and average about 30 pounds. Your size is Small."
-					]
-				},
-				{
-					"type": "entries",
 					"name": "Arboreal Alertness",
 					"entries": [
 						"You have proficiency in the {@skill Perception} skill."
@@ -7550,13 +7488,6 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"You are Medium or Small. You choose the size when you select this race."
-					]
-				},
-				{
-					"type": "entries",
 					"name": "Dexterous Feet",
 					"entries": [
 						"As a bonus action, you can use your feet to manipulate an object, open or close a door or container, or pick up or set down a Tiny object."
@@ -7573,8 +7504,8 @@
 					"type": "entries",
 					"name": "Hadozee Dodge",
 					"entries": [
-						"The magic that runs in your veins heightens your natural defenses. When you take damage, you can use your reaction to roll a {@dice d6}. Add your proficiency bonus to the number rolled, and reduce the damage you take by an amount equal to that total (minimum of 0 damage).",
-						"You can use this trait a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest."
+						"The magic that runs in your veins heightens your natural defenses. When you take damage, you can use your reaction to reduce it. You can reduce the amount of damage you take by {@dice 1d6} plus your Proficiency Bonus.",
+						"You can use this trait a number of times equal to your proficiency bonus per long rest."
 					]
 				},
 				{
@@ -7605,7 +7536,6 @@
 				"weightMod": "2d4"
 			},
 			"age": {
-				"mature": 20,
 				"max": 180
 			},
 			"darkvision": 60,
@@ -7621,13 +7551,6 @@
 				"path": "races/half-elf.mp3"
 			},
 			"entries": [
-				{
-					"type": "entries",
-					"name": "Age",
-					"entries": [
-						"Half-elves mature at the same rate humans do and reach adulthood around the age of 20. They live much longer than humans, however, often exceeding 180 years."
-					]
-				},
 				{
 					"type": "entries",
 					"name": "Darkvision",
@@ -7658,6 +7581,45 @@
 			"source": "PHB",
 			"page": 40,
 			"srd": true,
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
 			"size": [
 				"M"
 			],
@@ -7669,7 +7631,6 @@
 				"weightMod": "2d6"
 			},
 			"age": {
-				"mature": 14,
 				"max": 75
 			},
 			"darkvision": 60,
@@ -7692,20 +7653,6 @@
 				"path": "races/half-orc.mp3"
 			},
 			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Half-orcs mature a little faster than humans, reaching adulthood around age 14. They age noticeably faster and rarely live longer than 75 years."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Half-orcs are somewhat larger and bulkier than humans, and they range from 5 to well over 6 feet tall. Your size is Medium."
-					]
-				},
 				{
 					"type": "entries",
 					"name": "Darkvision",
@@ -7762,7 +7709,6 @@
 				"baseWeight": 35
 			},
 			"age": {
-				"mature": 20,
 				"max": 250
 			},
 			"languageProficiencies": [
@@ -7777,17 +7723,10 @@
 			},
 			"entries": [
 				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"A halfling reaches adulthood at the age of 20 and generally lives into the middle of his or her second century."
-					]
-				},
-				{
 					"type": "entries",
 					"name": "Lucky",
 					"entries": [
-						"When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll."
+						"When you roll a 1 on a {@dice d20|D20 Roll} you can reroll the die and must use the new roll."
 					]
 				},
 				{
@@ -7880,13 +7819,6 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"You are Medium or Small. You choose the size when you select this race."
-					]
-				},
-				{
-					"type": "entries",
 					"name": "Hare-Trigger",
 					"entries": [
 						"You can add your proficiency bonus to your initiative rolls."
@@ -7910,7 +7842,7 @@
 					"type": "entries",
 					"name": "Rabbit Hop",
 					"entries": [
-						"As a bonus action, you can jump a number of feet equal to five times your proficiency bonus, without provoking opportunity attacks. You can use this trait only if your speed is greater than 0. You can use it a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+						"As a bonus action, you can jump a number of feet equal to five times your proficiency bonus, without provoking opportunity attacks. You can use this trait only if your speed is greater than 0. You can use it a number of times equal to your proficiency bonus per long rest."
 					]
 				},
 				{
@@ -8230,7 +8162,6 @@
 				"weightMod": "2d4"
 			},
 			"age": {
-				"mature": 20,
 				"max": 100
 			},
 			"traitTags": [
@@ -8245,13 +8176,6 @@
 				}
 			],
 			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Hobgoblins mature at the same rate as humans and have lifespans similar in length to theirs."
-					]
-				},
 				{
 					"type": "entries",
 					"name": "Creature Type",
@@ -8277,7 +8201,7 @@
 					"type": "entries",
 					"name": "Fey Gift",
 					"entries": [
-						"You can use this trait to take the {@action Help} action as a bonus action, and you can do so a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest. Starting at 3rd level, choose one of the options below each time you take the {@action Help} action with this trait:",
+						"You can use this trait to take the {@action Help} action as a bonus action, and you can do so a number of times equal to your proficiency bonus per long rest. Starting at 3rd level, choose one of the options below each time you take the {@action Help} action with this trait:",
 						{
 							"type": "list",
 							"items": [
@@ -8305,7 +8229,7 @@
 					"type": "entries",
 					"name": "Fortune from the Many",
 					"entries": [
-						"If you miss with an attack roll or fail an ability check or a saving throw, you can draw on your bonds of reciprocity to gain a bonus to the roll equal to the number of allies you can see within 30 feet of you (maximum bonus of +3). You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+						"If you fail a {@dice 1d20|D20 Roll}, you can draw on your bonds of reciprocity to gain a bonus to the roll equal to the number of allies you can see within 30 feet of you (maximum bonus of +3). You can use this trait a number of times equal to your proficiency bonus per long rest."
 					]
 				},
 				{
@@ -8429,6 +8353,7 @@
 			"srd": true,
 			"basicRules": true,
 			"size": [
+				"S",
 				"M"
 			],
 			"speed": 30,
@@ -8454,8 +8379,8 @@
 			},
 			"entries": [
 				{
-					"name": "Age",
 					"type": "entries",
+					"name": "Age",
 					"entries": [
 						"Humans reach adulthood in their late teens and live less than a century."
 					]
@@ -8468,11 +8393,11 @@
 					]
 				},
 				{
+					"type": "entries",
 					"name": "Languages",
 					"entries": [
 						"You can speak, read, and write Common and one other {@filter standard language|languages|source=|type=standard} language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Orc curses, Elvish musical expressions, Dwarvish military phrases, and so on."
-					],
-					"type": "entries"
+					]
 				}
 			],
 			"hasFluff": true,
@@ -20557,7 +20482,6 @@
 						"As a descendant of a Drow, you gain one of the following traits of your choice:",
 						{
 							"type": "list",
-							"style": "list-hang-notitle",
 							"items": [
 								{
 									"type": "item",
@@ -20744,7 +20668,6 @@
 						"As a descendant of a Moon Elf, you gain one of the following traits of your choice:",
 						{
 							"type": "list",
-							"style": "list-hang-notitle",
 							"items": [
 								{
 									"type": "item",
@@ -20940,7 +20863,6 @@
 						"As a descendant of a Sea Elf, you gain one of the following traits of your choice:",
 						{
 							"type": "list",
-							"style": "list-hang-notitle",
 							"items": [
 								{
 									"type": "item",
@@ -21104,7 +21026,6 @@
 						"As a descendant of a Sun Elf, you gain one of the following traits of your choice:",
 						{
 							"type": "list",
-							"style": "list-hang-notitle",
 							"items": [
 								{
 									"type": "item",
@@ -22057,7 +21978,6 @@
 						"As a descendant of a Wood Elf, you gain one of the following traits of your choice:",
 						{
 							"type": "list",
-							"style": "list-hang-notitle",
 							"items": [
 								{
 									"type": "item",
@@ -22149,45 +22069,6 @@
 			"raceName": "Half-Orc",
 			"raceSource": "PHB",
 			"page": 40,
-			"ability": [
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
-								"dex",
-								"con",
-								"int",
-								"wis",
-								"cha"
-							],
-							"weights": [
-								2,
-								1
-							]
-						}
-					}
-				},
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
-								"dex",
-								"con",
-								"int",
-								"wis",
-								"cha"
-							],
-							"weights": [
-								1,
-								1,
-								1
-							]
-						}
-					}
-				}
-			],
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -22347,7 +22228,10 @@
 						"overwrite": "Savage Attacks"
 					}
 				}
-			]
+			],
+			"overwrite": {
+				"ability": true
+			}
 		},
 		{
 			"name": "Ghostwise",
@@ -22491,11 +22375,11 @@
 			],
 			"entries": [
 				{
+					"type": "entries",
 					"name": "Naturally Stealthy",
 					"entries": [
-						"You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you."
-					],
-					"type": "entries"
+						"You can attempt to {@action hide} even when you are obscured only by a creature that is at least one size larger than you. You can also take the {@action hide||Hide Action} as a Bonus Action."
+					]
 				}
 			],
 			"hasFluff": true,
@@ -22946,11 +22830,11 @@
 			],
 			"entries": [
 				{
+					"type": "entries",
 					"name": "Stout Resilience",
 					"entries": [
-						"You have advantage on saving throws against poison, and you have resistance against poison damage."
-					],
-					"type": "entries"
+						"You have advantage on saving throws against being {@condition poisoned}, and you have resistance against poison damage."
+					]
 				}
 			],
 			"hasFluff": true,
@@ -22971,6 +22855,35 @@
 					"int": 1,
 					"wis": 1,
 					"cha": 1
+				}
+			],
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"athletics",
+							"insight",
+							"investigation",
+							"persuasion"
+						]
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Skill Proficiency",
+					"entries": [
+						"You gain one skill proficiency of your choice from the following list: {@skill Athletics}, {@skill Insight}, {@skill Investigation}, {@skill Persuasion}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Resourceful",
+					"entries": [
+						"When you finish a long rest, you gain {@dice 120|Inspiration}. This grants you the ability to roll a {@dice 1d20|D20 Roll} with advantage or someone else the ability to do so.",
+						"{@note The Inspiration Dice do not stack. If it is not used before your next long rest, it carries over but you do not gain a second one.}"
+					]
 				}
 			],
 			"hasFluff": true,
@@ -23593,15 +23506,39 @@
 			"ability": [
 				{
 					"choose": {
-						"from": [
-							"str",
-							"dex",
-							"con",
-							"int",
-							"wis",
-							"cha"
-						],
-						"count": 2
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
 					}
 				}
 			],
@@ -23617,18 +23554,26 @@
 			],
 			"entries": [
 				{
+					"type": "entries",
 					"name": "Skills",
 					"entries": [
 						"You gain proficiency in one skill of your choice."
-					],
-					"type": "entries"
+					]
 				},
 				{
+					"type": "entries",
 					"name": "Feat",
 					"entries": [
 						"You gain one {@5etools feat|feats.html} of your choice."
-					],
-					"type": "entries"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Resourceful",
+					"entries": [
+						"When you finish a long rest, you gain {@dice 120|Inspiration}. This grants you the ability to roll a {@dice 1d20|D20 Roll} with advantage or someone else the ability to do so.",
+						"{@note The Inspiration Dice do not stack. If it is not used before your next long rest, it carries over but you do not gain a second one.}"
+					]
 				}
 			]
 		},
@@ -23700,6 +23645,20 @@
 				}
 			],
 			"entries": [
+				{
+					"name": "Skills",
+					"entries": [
+						"You gain proficiency in one skill of your choice."
+					],
+					"type": "entries"
+				},
+				{
+					"type": "entries",
+					"name": "Feat",
+					"entries": [
+						"You gain one {@5etools feat|feats.html} of your choice."
+					]
+				},
 				{
 					"type": "entries",
 					"name": "Darkvision",
