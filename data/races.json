@@ -1104,7 +1104,7 @@
 					"type": "entries",
 					"name": "Starlight Step",
 					"entries": [
-						"As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+						"As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. You can use this trait a number of times equal to your proficiency bonus per long rest.",
 						"Starting at 3rd level, you can inflict {@condition blinded|PHB|blindness} as part of your Starlight Step. Immediately after you use your Starlight Step, each creature within 10 feet of you must make a Constitution saving throw against your Starlight Step DC or be {@condition blinded} until the end of their next turn.",
 						{
 							"type": "abilityDc",
@@ -1122,8 +1122,7 @@
 					"name": "Astral Trance",
 					"entries": [
 						"You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you remain conscious. While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice.",
-						"Whenever you finish this trance, you gain two proficiencies; one skill of your choice and one {@book weapon|phb|5|weapons} or {@book tool|phb|5|tools} of your choice. You mystically acquire these proficiencies by drawing them from shared elven memory and the experiences of entities on the Astral Plane, retaining them until you finish your next long rest.",
-						"{@note If you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed.}"
+						"Whenever you finish this trance, you gain two proficiencies; one skill of your choice and one {@book weapon|phb|5|weapons} or {@book tool|phb|5|tools} of your choice. You mystically acquire these proficiencies by drawing them from shared elven memory and the experiences of entities on the Astral Plane, retaining them until you finish your next long rest."
 					]
 				},
 				{
@@ -1317,7 +1316,14 @@
 					"type": "entries",
 					"name": "Armored Casing",
 					"entries": [
-						"You are encased in thin metal or some other durable material. While you aren't wearing armor, your base Armor Class is 13 + your Dexterity modifier."
+						"You are encased in thin metal or some other durable material. While you aren't wearing armor, your base Armor Class is 13 + your Dexterity modifier.",
+						{
+							"type": "inset",
+							"name": "Tip: AC Calculations Don't Stack",
+							"entries": [
+								"When the game gives you more than one way to calculate your Armor Class, you can use only one of them. You choose the one to use. For example, if you have the Auntognome's Natural Armor trait and the monk's Unarmored Defense feature, you don't mix them together. Instead, you choose which one determines your AC."
+							]
+						}
 					]
 				},
 				{
@@ -4532,6 +4538,22 @@
 				},
 				{
 					"type": "entries",
+					"name": "Seasonal Magic",
+					"entries": [
+						"You know a cantrip, based off of your current season, as seen listed below. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).",
+						{
+							"type": "list",
+							"items": [
+								"Autumn - {@spell Guidance}",
+								"Winter - {@spell Minor Illusion} {@note (you replace the {@b M} component for a {@b V} component)}",
+								"Spring - {@spell Friends} {@note (you replace the {@b M} component for a {@b V} component)}",
+								"Summer - {@spell Produce Flame}"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
 					"name": "Darkvision",
 					"entries": [
 						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
@@ -4553,40 +4575,9 @@
 				},
 				{
 					"type": "entries",
-					"name": "Languages",
-					"entries": [
-						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Fey Trance",
-					"entries": [
-						"You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness. While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice.",
-						"Whenever you finish this trance, you can change your season and gain two proficiencies that you don't have. Those proficiencies can be {@book weapons|phb|5|weapons} or {@book tools|phb|5|tools} (including one of each). You mystically acquire these proficiencies by drawing them from shared elven memory, and you retain them until you finish your next long rest."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Seasonal Magic",
-					"entries": [
-						"You know a cantrip, based off of your current season, as seen listed below. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).",
-						{
-							"type": "list",
-							"items": [
-								"Autumn - {@spell Guidance}",
-								"Winter - {@spell Minor Illusion} {@note (you replace the {@b M} component for a {@b V} component)}",
-								"Spring - {@spell Friends} {@note (you replace the {@b M} component for a {@b V} component)}",
-								"Summer - {@spell Produce Flame}"
-							]
-						}
-					]
-				},
-				{
-					"type": "entries",
 					"name": "Fey Step",
 					"entries": [
-						"As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+						"As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. You can use this trait a number of times equal to your proficiency bonus per long rest.",
 						"When you reach 3rd level, your Fey Step gain an additional effect based on your season; if the effect requires a saving throw, the save is made against your Fey Step DC:",
 						{
 							"type": "abilityDc",
@@ -4623,6 +4614,21 @@
 								}
 							]
 						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fey Trance",
+					"entries": [
+						"You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness. While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice.",
+						"Whenever you finish this trance, you can change your season and gain two proficiencies that you don't have. Those proficiencies can be {@book weapons|phb|5|weapons} or {@book tools|phb|5|tools} (including one of each). You mystically acquire these proficiencies by drawing them from shared elven memory, and you retain them until you finish your next long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
 					]
 				}
 			],
@@ -6463,9 +6469,6 @@
 				"max": 50
 			},
 			"darkvision": 60,
-			"traitTags": [
-				"Natural Armor"
-			],
 			"languageProficiencies": [
 				{
 					"common": true,
@@ -7302,7 +7305,7 @@
 					"type": "entries",
 					"name": "Poisonous Skin",
 					"entries": [
-						"Any creature that grapples you or otherwise comes into direct contact with your skin must succeed on a Constitution saving throw, against your Poisonous Skin DC, or become {@condition poisoned} for 1 minute. A {@condition poisoned} creature no longer in direct contact with you can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+						"Any creature of your choice that grapples you or otherwise comes into direct contact with your skin must succeed on a Constitution saving throw, against your Poisonous Skin DC, or become {@condition poisoned} for 1 minute. A {@condition poisoned} creature no longer in direct contact with you can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
 						"You can also apply this poison to any piercing weapon as part of an attack with that weapon, though when you hit the poison reacts differently. The target must succeed on a Constitution saving throw or take {@damage 2d4} poison damage.",
 						{
 							"type": "abilityDc",
@@ -9980,7 +9983,6 @@
 				"weightMod": "2d6"
 			},
 			"age": {
-				"mature": 20,
 				"max": 100
 			},
 			"darkvision": 60,
@@ -10008,60 +10010,46 @@
 			],
 			"entries": [
 				{
-					"name": "Age",
 					"type": "entries",
-					"entries": [
-						"Leonin mature and age at about the same rate as humans."
-					]
-				},
-				{
-					"name": "Alignment",
-					"type": "entries",
-					"entries": [
-						"Leonin tend toward good alignments. Leonin who are focused on the pride lean toward lawful good."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Leonin are typically over 6 feet tall, with some standing over 7 feet. Your size is Medium."
-					]
-				},
-				{
 					"name": "Darkvision",
 					"entries": [
 						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
-					],
-					"type": "entries"
+					]
 				},
 				{
+					"type": "entries",
 					"name": "Claws",
 					"entries": [
-						"Your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you can deal slashing damage equal to {@damage 1d4} + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
-					],
-					"type": "entries"
+						"Your claws are natural weapons, which you can use to make an {@action unarmed attack||unarmed strike attack}. If you hit with them, you can deal slashing damage equal to {@damage 1d4} + your Strength modifier, instead of the normal bludgeoning damage."
+					]
 				},
 				{
+					"type": "entries",
 					"name": "Hunter's Instincts",
 					"entries": [
 						"You have proficiency in one of the following skills of your choice: {@skill Athletics}, {@skill Intimidation}, {@skill Perception}, or {@skill Survival}."
-					],
-					"type": "entries"
+					]
 				},
 				{
+					"type": "entries",
 					"name": "Daunting Roar",
 					"entries": [
-						"As a bonus action, you can let out an especially menacing roar. Creatures of your choice within 10 feet of you that can hear you must succeed on a Wisdom saving throw or become {@condition frightened} of you until the end of your next turn. The DC of the save equals 8 + your proficiency bonus + your Constitution modifier. Once you use this trait, you can't use it again until you finish a short or long rest."
-					],
-					"type": "entries"
+						"As a bonus action, you can let out an especially menacing roar. Creatures of your choice within 10 feet of you that can hear you must succeed on a Wisdom saving throw, against your Daunting Roar DC, or become {@condition frightened} of you until the end of your next turn. You can use this trait once per short or long rest."
+					]
 				},
 				{
+					"type": "abilityDc",
+					"name": "Daunting Roar",
+					"attributes": [
+						"con"
+					]
+				},
+				{
+					"type": "entries",
 					"name": "Languages",
 					"entries": [
 						"You can speak, read, and write Common and Leonin."
-					],
-					"type": "entries"
+					]
 				}
 			],
 			"hasFluff": true,
@@ -10174,7 +10162,6 @@
 				"weightMod": "2d6"
 			},
 			"age": {
-				"mature": 14,
 				"max": 60
 			},
 			"traitTags": [
@@ -10205,13 +10192,6 @@
 			],
 			"entries": [
 				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Lizardfolk reach maturity around age 14 and rarely live longer than 60 years."
-					]
-				},
-				{
 					"type": "entries",
 					"name": "Speed",
 					"entries": [
@@ -10222,7 +10202,7 @@
 					"type": "entries",
 					"name": "Bite",
 					"entries": [
-						"You have a fanged maw that you can use to make unarmed strikes. When you hit with it, the strike deals {@damage 1d6} + your Strength modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike."
+						"You have a fanged maw that you can use to make {@action unarmed attack||unarmed strike attacks}. When you hit with it, the strike deals slashing damage equal to {@damage 1d6} + your Strength modifier, instead of the normal bludgeoning damage."
 					]
 				},
 				{
@@ -10236,14 +10216,21 @@
 					"type": "entries",
 					"name": "Hungry Jaws",
 					"entries": [
-						"You can throw yourself into a feeding frenzy. As a bonus action, you can make a special attack with your Bite. If the attack hits, it deals its normal damage, and you gain temporary hit points equal to your proficiency bonus. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+						"You can throw yourself into a feeding frenzy. As a bonus action, you can make a special attack with your Bite. If the attack hits, it deals its normal damage, and you gain temporary hit points equal to your proficiency bonus. You can use this trait a number of times equal to your proficiency bonus per long rest."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Natural Armor",
 					"entries": [
-						"You have tough, scaly skin. When you aren't wearing armor, your base AC is 13 + Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor."
+						"You have tough, scaly skin. When you aren't wearing armor, your base AC is 13 + Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor.",
+						{
+							"type": "inset",
+							"name": "Tip: AC Calculations Don't Stack",
+							"entries": [
+								"When the game gives you more than one way to calculate your Armor Class, you can use only one of them. You choose the one to use. For example, if you have the Lizardfolk's Natural Armor trait and the monk's Unarmored Defense feature, you don't mix them together. Instead, you choose which one determines your AC."
+							]
+						}
 					]
 				},
 				{
@@ -10448,7 +10435,14 @@
 				{
 					"name": "Natural Armor",
 					"entries": [
-						"You have tough, scaly skin. When you aren't wearing armor, your AC is 12 + your Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor."
+						"You have tough, scaly skin. When you aren't wearing armor, your AC is 12 + your Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor.",
+						{
+							"type": "inset",
+							"name": "Tip: AC Calculations Don't Stack",
+							"entries": [
+								"When the game gives you more than one way to calculate your Armor Class, you can use only one of them. You choose the one to use. For example, if you have the Locathah's Natural Armor trait and the monk's Unarmored Defense feature, you don't mix them together. Instead, you choose which one determines your AC."
+							]
+						}
 					],
 					"type": "entries"
 				},
@@ -10512,7 +10506,6 @@
 				"weightMod": "2d4"
 			},
 			"age": {
-				"mature": 20,
 				"max": 450
 			},
 			"traitTags": [
@@ -10531,20 +10524,6 @@
 					"name": "Age",
 					"entries": [
 						"Loxodons physically mature at the same rate as humans, but they live about 450 years. They highly value the weight of wisdom and experience and are considered young until they reach the age of 60."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Alignment",
-					"entries": [
-						"Most loxodons are lawful, believing in the value of a peaceful, ordered life. They also tend toward good."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Loxodons stand between 7 and 8 feet tall. Their massive bodies weigh between 300 and 400 pounds. Your size is Medium."
 					]
 				},
 				{
@@ -10924,6 +10903,7 @@
 			"speed": 30,
 			"traitTags": [
 				"Natural Weapon",
+				"Powerful Build",
 				"Uncommon Race"
 			],
 			"heightAndWeight": {
@@ -10933,7 +10913,6 @@
 				"weightMod": "2d6"
 			},
 			"age": {
-				"mature": 17,
 				"max": 150
 			},
 			"languageProficiencies": [
@@ -10954,7 +10933,7 @@
 					"type": "entries",
 					"name": "Horns",
 					"entries": [
-						"You have horns that you can use to make unarmed strikes. When you hit with them, the strike deals {@damage 1d6} + your Strength modifier piercing damage, instead of the bludgeoning damage normal for an unarmed strike."
+						"You have horns that you can use to make an {@action unarmed attack||unarmed strike attack}. When you hit with them, the strike deals piercing damage equal to {@damage 1d6} + your Strength modifier, instead of the normal bludgeoning damage."
 					]
 				},
 				{
@@ -10968,7 +10947,14 @@
 					"type": "entries",
 					"name": "Hammering Horns",
 					"entries": [
-						"Immediately after you hit a creature with a melee attack as part of the {@action Attack} action on your turn, you can use a bonus action to attempt to push that target with your horns. The target must be within 5 feet of you and no more than one size larger than you. Unless it succeeds on a Strength saving throw against a DC equal to 8 + your proficiency bonus + your Strength modifier, you can push it up to 10 feet away from you."
+						"Immediately after you hit a creature with a melee attack as part of the {@action Attack} action on your turn, you can use a bonus action to make an {@action unarmed attack||unarmed shove attack} against that target with your horns. The target must be within 5 feet of you and no more than one size larger than you. The target must make a Strength saving throw against your Hammering Horns DC, or you can shove it up to 10 feet away from you."
+					]
+				},
+				{
+					"type": "abilityDc",
+					"name": "Hammering Horns",
+					"attributes": [
+						"str"
 					]
 				},
 				{
@@ -10976,6 +10962,13 @@
 					"name": "Labyrinthine Recall",
 					"entries": [
 						"You always know which direction is north, and you have advantage on any Wisdom ({@skill Survival}) check you make to navigate or track."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Powerful Build",
+					"entries": [
+						"You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
 					]
 				},
 				{
@@ -11474,13 +11467,28 @@
 				"weightMod": "2d6"
 			},
 			"age": {
-				"mature": 12,
 				"max": 50
 			},
-			"darkvision": 60,
+			"darkvision": 120,
 			"traitTags": [
 				"Monstrous Race",
 				"Powerful Build"
+			],
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"animal handling",
+							"insight",
+							"intimidation",
+							"medicine",
+							"nature",
+							"perception",
+							"survival"
+						],
+						"count": 2
+					}
+				}
 			],
 			"languageProficiencies": [
 				{
@@ -11490,17 +11498,10 @@
 			],
 			"entries": [
 				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Orcs reach adulthood at age 12 and live up to 50 years."
-					]
-				},
-				{
 					"type": "entries",
 					"name": "Adrenaline Rush",
 					"entries": [
-						"You can take the {@action Dash} action as a bonus action. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+						"You can take the {@action Dash} action as a bonus action. You can use this trait a number of times equal to your proficiency bonus per long rest.",
 						"Whenever you use this trait, you gain a number of temporary hit points equal to your proficiency bonus."
 					]
 				},
@@ -11508,7 +11509,7 @@
 					"type": "entries",
 					"name": "Darkvision",
 					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+						"You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
 					]
 				},
 				{
@@ -11519,10 +11520,24 @@
 					]
 				},
 				{
+					"name": "Primal Intuition",
+					"entries": [
+						"You have proficiency in two of the following skills of your choice: {@skill Animal Handling}, {@skill Insight}, {@skill Intimidation}, {@skill Medicine}, {@skill Nature}, {@skill Perception}, and {@skill Survival}."
+					],
+					"type": "entries"
+				},
+				{
 					"type": "entries",
 					"name": "Relentless Endurance",
 					"entries": [
 						"When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. Once you use this trait, you can't do so again until you finish a long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Savage Attacks",
+					"entries": [
+						"When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit."
 					]
 				},
 				{
@@ -11757,13 +11772,6 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"You are Medium or Small. You choose the size when you select this race."
-					]
-				},
-				{
-					"type": "entries",
 					"name": "Darkvision",
 					"entries": [
 						"You can see in dim light within 120 feet of yourself as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
@@ -11932,6 +11940,7 @@
 				}
 			],
 			"traitTags": [
+				"Monstrous Race",
 				"Uncommon Race"
 			],
 			"entries": [
@@ -11940,13 +11949,6 @@
 					"name": "Creature Type",
 					"entries": [
 						"You are an Ooze."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"You are Medium or Small. You choose the size when you select this race."
 					]
 				},
 				{
@@ -11965,9 +11967,9 @@
 				},
 				{
 					"type": "entries",
-					"name": "Hold Breath",
+					"name": "Undying Breath",
 					"entries": [
-						"You can hold your breath for 1 hour."
+						"You can hold your breath indefinitely, as long as you are not {@condition incapacitated}."
 					]
 				},
 				{
@@ -12224,13 +12226,12 @@
 				"M"
 			],
 			"heightAndWeight": {
-				"baseHeight": 56,
+				"baseHeight": 44,
 				"heightMod": "2d8",
 				"baseWeight": 100,
 				"weightMod": "2d4"
 			},
 			"age": {
-				"mature": 20,
 				"max": 100
 			},
 			"speed": 35,
@@ -12265,17 +12266,10 @@
 					]
 				},
 				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Satyrs mature and age at about the same rate as humans."
-					]
-				},
-				{
 					"type": "entries",
 					"name": "Ram",
 					"entries": [
-						"You can use your head and horns to make unarmed strikes. When you hit with them, the strike deals {@damage 1d6} + your Strength modifier bludgeoning damage, instead of the bludgeoning damage normal for an unarmed strike."
+						"You can use your head and horns to make {@action unarmed attack||unarmed strike attacks}. When you hit with them, the strike deals bludgeoning damage equal to {@damage 1d6} + your Strength modifier, instead of the normal {@dice 1d4}."
 					]
 				},
 				{
@@ -12396,7 +12390,7 @@
 				}
 			],
 			"resist": [
-				"cold"
+				"acid"
 			],
 			"additionalSpells": [
 				{
@@ -12449,7 +12443,7 @@
 					"type": "entries",
 					"name": "Child of the Sea",
 					"entries": [
-						"You can breathe air and water, and you have resistance to cold damage."
+						"You can breathe air and water, and you have resistance to acid damage."
 					]
 				},
 				{
@@ -12465,7 +12459,7 @@
 					"name": "Oceanic Darkvision",
 					"entries": [
 						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.",
-						"Additionally, due to your need to see through the various particles in the sea resuling in some visual obscurity. While in a {@quickref Vision and Light||2||lightly obscured} area within Bright Light, you don't have disadvantage on {@skill Perception} checks that require sight."
+						"Additionally, while underwater in a {@quickref Vision and Light||2||lightly obscured} area within bright or dim light, you do not have disadvantage on {@skill Perception} checks that require sight."
 					]
 				},
 				{
@@ -12647,6 +12641,13 @@
 				},
 				{
 					"type": "entries",
+					"name": "Shadow Magic",
+					"entries": [
+						"You know one of the following cantrips of your choice: {@spell Douse Light|BMT}, {@spell Obfuscate Object|BMT}, or {@spell Spare the Dying}. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you select this race). After a long rest, you can swap your known cantrip for another one from this list."
+					]
+				},
+				{
+					"type": "entries",
 					"name": "Darkvision",
 					"entries": [
 						"You can see in dim light within 120 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
@@ -12675,9 +12676,10 @@
 				},
 				{
 					"type": "entries",
-					"name": "Languages",
+					"name": "Blessing of the Raven Queen",
 					"entries": [
-						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
+						"As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. You can use this trait a number of times equal to your proficiency bonus per long rest.",
+						"Starting at 3rd level, you also gain resistance to all damage when you teleport using this trait. The resistance lasts until the start of your next turn as you appear ghostly and translucent."
 					]
 				},
 				{
@@ -12690,17 +12692,9 @@
 				},
 				{
 					"type": "entries",
-					"name": "Shadow Magic",
+					"name": "Languages",
 					"entries": [
-						"You know one of the following cantrips of your choice: {@spell Douse Light|BMT}, {@spell Obfuscate Object|BMT}, or {@spell Spare the Dying}. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you select this race). After a long rest, you can swap your known cantrip for another one from this list."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Blessing of the Raven Queen",
-					"entries": [
-						"As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
-						"Starting at 3rd level, you also gain resistance to all damage when you teleport using this trait. The resistance lasts until the start of your next turn. During that time, you appear ghostly and translucent."
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
 					]
 				}
 			],
@@ -12843,7 +12837,6 @@
 				"weightMod": "2d4"
 			},
 			"age": {
-				"mature": 10,
 				"max": 70
 			},
 			"speed": 30,
@@ -12893,10 +12886,10 @@
 				},
 				{
 					"type": "entries",
-					"name": "Shifting",
+					"name": "Shifting Lineage",
 					"entries": [
-						"As a bonus action, you can assume a more bestial appearance. This transformation lasts for 1 minute, until you die, or until you revert to your normal appearance as a bonus action. When you shift, you gain temporary hit points equal to 2 × your proficiency bonus. You can shift a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
-						"Whenever you shift, you gain an additional benefit based on one of the following options (choose when you select this race):",
+						"When you choose this race, you choose one of the following options that best represents your lineage: Beasthide, Longtooth, Swiftstride, and Wildhunt. As a bonus action, you can shift, which allows you to assume a more bestial appearance. This transformation lasts for 1 minute, until you die, or until you revert to your normal appearance as a bonus action. You can shift a number of times equal to your proficiency bonus per long rest.",
+						"When you shift, you gain temporary hit points equal to 2 × your proficiency bonus as well as the benefits below, relating to your chosen lineage.",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
@@ -12904,22 +12897,34 @@
 								{
 									"type": "item",
 									"name": "Beasthide",
-									"entry": "You gain {@dice 1d6} additional temporary hit points. While shifted, you have a +1 bonus to your Armor Class."
+									"entries": [
+										"While shifted, you gain a +1 bonus to your Armor Class and gain resistance to nonmagical bludgeoning damage for the duration of your shift.",
+										"When you shift, you gain temporary hit points equal to {@dice 1d6} on top of the temporary hit points all shifters gain when they shift."
+									]
 								},
 								{
 									"type": "item",
 									"name": "Longtooth",
-									"entry": "When you shift and as a bonus action on your other turns while shifted, you can use your elongated fangs to make an unarmed strike. If you hit with your fangs, you can deal piercing damage equal to {@damage 1d6} + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
+									"entries": [
+										"While shifted, you gain natural weapons that allows you to make special {@action unarmed attack||unarmed attacks}. A Bite, or Claw attack, deals damage equal to {@damage 1d6} + your Strength modifier, with your Bite dealing piercing damage, while your Claws deal slashing damage.",
+										"Once per turn, if you make a successful {@action unarmed attack||unarmed grapple or shove attack}, ..."
+									]
 								},
 								{
 									"type": "item",
 									"name": "Swiftstride",
-									"entry": "While shifted, your walking speed increases by 10 feet. Additionally, you can move up to 10 feet as a reaction when a creature ends its turn within 5 feet of you. This reactive movement doesn't provoke opportunity attacks."
+									"entries": [
+										"While shifted, your walking speed increases by 10 feet. You can move up to 10 feet as a reaction when a creature ends its turn within 5 feet of you. This reactive movement doesn't provoke opportunity attacks.",
+										"You can also take the {@action Dash} action as a bonus action on subsequent turns while in your shifted form, as well as part of the same bonus action used to shift."
+									]
 								},
 								{
 									"type": "item",
 									"name": "Wildhunt",
-									"entry": "While shifted, you have advantage on Wisdom checks, and no creature within 30 feet of you can make an attack roll with advantage against you unless you're {@condition incapacitated}."
+									"entries": [
+										"While shifted, you have advantage on Wisdom checks, and no creature within 30 feet of you can make an attack roll with advantage against you unless you're {@condition incapacitated}.",
+										"You can also take the {@action Hide} action as a bonus action on subsequent turns while in your shifted form, as well as part of the same bonus action used to shift."
+									]
 								}
 							]
 						}
@@ -12947,12 +12952,21 @@
 								"name": "Shifting (Beasthide)",
 								"type": "entries",
 								"entries": [
-									"As a bonus action, you can assume a more bestial appearance. This transformation lasts for 1 minute, until you die, or until you revert to your normal appearance as a bonus action. When you shift, you gain temporary hit points equal to 2 × your proficiency bonus + {@dice 1d6}, and you regain all expended uses when you finish a long rest.",
-									"While shifted, you have a +1 bonus to your Armor Class."
+									"As a bonus action, you can assume a more bestial appearance. This transformation lasts for 1 minute, until you die, or until you revert to your normal appearance as a bonus action. When you shift, you gain temporary hit points equal to 2 × your proficiency bonus + {@dice 1d6}. You also gain a +1 bonus to your Armor Class and gain resistance to nonmagical bludgeoning damage for the duration of your shift.",
+									"You can use this trait a number of times equal to your proficiency bonus per long rest."
 								]
 							}
 						}
-					}
+					},
+					"resist": [
+						{
+							"resist": [
+								"bludgeoning"
+							],
+							"note": "from nonmagical attacks",
+							"cond": "true"
+						}
+					]
 				},
 				{
 					"name": "Shifter; Longtooth",
@@ -13038,6 +13052,7 @@
 			"darkvision": 60,
 			"traitTags": [
 				"Amphibious",
+				"Monstrous Race",
 				"Natural Armor",
 				"Natural Weapon"
 			],
@@ -13138,6 +13153,13 @@
 								}
 							]
 						}
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Tip: AC Calculations Don't Stack",
+					"entries": [
+						"When the game gives you more than one way to calculate your Armor Class, you can use only one of them. You choose the one to use. For example, if you have the Simic Hybrid's Carapace trait and the monk's Unarmored Defense feature, you don't mix them together. Instead, you choose which one determines your AC."
 					]
 				}
 			],
