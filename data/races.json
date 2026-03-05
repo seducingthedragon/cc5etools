@@ -535,7 +535,16 @@
 								{
 									"type": "item",
 									"name": "Necrotic Shroud",
-									"entry": "{@i Visual Fluff.} Your eyes briefly become pools of darkness, and ghostly, flightless wings sprout from your back temporarily. {@i Area of Effect.} Immediately after you transform, creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw ({@dc 8} + your proficiency bonus + your Charisma modifier) or become {@condition frightened} of you until the end of your next turn. {@i Bonus Damage.} Once per turn, until the transformation ends, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a magical effect. The extra damage equals your Proficiency Bonus."
+									"entries": [
+										"{@i Visual Fluff.} Your eyes briefly become pools of darkness, and ghostly, flightless wings sprout from your back temporarily. {@i Area of Effect.} Immediately after you transform, creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw against your Necrotic Shroud DC or become {@condition frightened} of you until the end of your next turn. {@i Bonus Damage.} Once per turn, until the transformation ends, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a magical effect. The extra damage equals your Proficiency Bonus."
+									]
+								},
+								{
+									"type": "abilityDc",
+									"name": "Necrotic Shroud",
+									"attributes": [
+										"cha"
+									]
 								},
 								{
 									"type": "item",
@@ -1050,9 +1059,7 @@
 					},
 					"ability": {
 						"choose": [
-							"int",
-							"wis",
-							"cha"
+							"con"
 						]
 					}
 				}
@@ -1098,7 +1105,16 @@
 					"name": "Starlight Step",
 					"entries": [
 						"As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
-						"Starting at 3rd level, you can inflict {@condition blinded|PHB|blindness} as part of your Starlight Step. Immediately after you use your Starlight Step, each creature within 10 feet of you must make a Constitution saving throw or be {@condition blinded} until the end of their next turn. The DC equals 8 + your proficiency bonus + your Intelligence, Wisdom, or Charisma modifier (choose when you select this race)."
+						"Starting at 3rd level, you can inflict {@condition blinded|PHB|blindness} as part of your Starlight Step. Immediately after you use your Starlight Step, each creature within 10 feet of you must make a Constitution saving throw against your Starlight Step DC or be {@condition blinded} until the end of their next turn.",
+						{
+							"type": "abilityDc",
+							"name": "Starlight Step",
+							"attributes": [
+								"int",
+								"wis",
+								"cha"
+							]
+						}
 					]
 				},
 				{
@@ -3069,8 +3085,15 @@
 					"name": "Breath Weapon",
 					"entries": [
 						"You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation.",
-						"When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes {@damage 2d6} damage on a failed save, and half as much damage on a successful one. The damage increases to {@damage 3d6} at 6th level, {@damage 4d6} at 11th level, and {@damage 5d6} at 16th level.",
-						"After you use your breath weapon, you can't use it again until you complete a short or long rest."
+						"When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry, against your Draconic DC. A creature takes {@damage 2d6} damage on a failed save, and half as much damage on a successful one. The damage increases to {@damage 3d6} at 6th level, {@damage 4d6} at 11th level, and {@damage 5d6} at 16th level.",
+						"You can use your Breath Weapon once per short or long rest.",
+						{
+							"type": "abilityDc",
+							"name": "Draconic",
+							"attributes": [
+								"con"
+							]
+						}
 					]
 				},
 				{
@@ -3110,7 +3133,7 @@
 										"entries": [
 											"You can use your action to exhale destructive energy in a {{area}}.",
 											"When you use your breath weapon, each creature in the area of the exhalation must make a {{savingThrow}} saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes {@damage 2d6} {{damageType}} damage on a failed save, and half as much damage on a successful one. The damage increases to {@damage 3d6} at 6th level, {@damage 4d6} at 11th level, and {@damage 5d6} at 16th level.",
-											"After you use your breath weapon, you can't use it again until you complete a short or long rest."
+											"You can use your Breath Weapon once per short or long rest."
 										]
 									}
 								},
@@ -3345,8 +3368,15 @@
 					"type": "entries",
 					"name": "Breath Weapon",
 					"entries": [
-						"When you take the {@action Attack} action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot cone or a 30-foot line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes {@damage 1d10} damage of the type associated with your Chromatic Ancestry. On a successful save, it takes half as much damage. This damage increases by {@damage 1d10} when you reach 5th level ({@damage 2d10}), 11th level ({@damage 3d10}), and 17th level ({@damage 4d10}).",
-						"You can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+						"When you take the {@action Attack} action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot cone or a 30-foot line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw  against your Draconic DC. On a failed save, the creature takes {@damage 1d10} damage of the type associated with your Chromatic Ancestry. On a successful save, it takes half as much damage. This damage increases by {@damage 1d10} when you reach 5th level ({@damage 2d10}), 11th level ({@damage 3d10}), and 17th level ({@damage 4d10}).",
+						"You can use your Breath Weapon a number of times equal to your proficiency bonus per long rest."
+					]
+				},
+				{
+					"type": "abilityDc",
+					"name": "Draconic",
+					"attributes": [
+						"con"
 					]
 				},
 				{
@@ -3393,8 +3423,15 @@
 										"type": "entries",
 										"name": "Breath Weapon",
 										"entries": [
-											"When you take the {@action Attack} action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot cone or a 30-foot line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes {@damage 1d10} {{damageType}} damage. On a successful save, it takes half as much damage. This damage increases by {@damage 1d10} when you reach 5th level ({@damage 2d10}), 11th level ({@damage 3d10}), and 17th level ({@damage 4d10}).",
-											"You can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+											"When you take the {@action Attack} action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot cone or a 30-foot line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw against your Draconic DC. On a failed save, the creature takes {@damage 1d10} {{damageType}} damage. On a successful save, it takes half as much damage. This damage increases by {@damage 1d10} when you reach 5th level ({@damage 2d10}), 11th level ({@damage 3d10}), and 17th level ({@damage 4d10}).",
+											"You can use your Breath Weapon a number of times equal to your proficiency bonus per long rest.",
+											{
+												"type": "abilityDc",
+												"name": "Draconic",
+												"attributes": [
+													"con"
+												]
+											}
 										]
 									}
 								},
@@ -3564,8 +3601,15 @@
 					"type": "entries",
 					"name": "Breath Weapon",
 					"entries": [
-						"When you take the {@action Attack} action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot cone or a 30-foot line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes {@damage 1d10} damage of the type associated with your Gem Ancestry. On a successful save, it takes half as much damage. This damage increases by {@damage 1d10} when you reach 5th level ({@damage 2d10}), 11th level ({@damage 3d10}), and 17th level ({@damage 4d10}).",
-						"You can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+						"When you take the {@action Attack} action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot cone or a 30-foot line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw against your Draconic DC. On a failed save, the creature takes {@damage 1d10} damage of the type associated with your Gem Ancestry. On a successful save, it takes half as much damage. This damage increases by {@damage 1d10} when you reach 5th level ({@damage 2d10}), 11th level ({@damage 3d10}), and 17th level ({@damage 4d10}).",
+						"You can use your Breath Weapon a number of times equal to your proficiency bonus per."
+					]
+				},
+				{
+					"type": "abilityDc",
+					"name": "Draconic",
+					"attributes": [
+						"con"
 					]
 				},
 				{
@@ -3619,8 +3663,15 @@
 										"type": "entries",
 										"name": "Breath Weapon",
 										"entries": [
-											"When you take the {@action Attack} action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 15-foot cone. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes {@damage 1d10} {{damageType}} damage. On a successful save, it takes half as much damage. This damage increases by {@damage 1d10} when you reach 5th level ({@damage 2d10}), 11th level ({@damage 3d10}), and 17th level ({@damage 4d10}).",
-											"You can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+											"When you take the {@action Attack} action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 15-foot cone. Each creature in that area must make a Dexterity saving throw against your Draconic DC. On a failed save, the creature takes {@damage 1d10} {{damageType}} damage. On a successful save, it takes half as much damage. This damage increases by {@damage 1d10} when you reach 5th level ({@damage 2d10}), 11th level ({@damage 3d10}), and 17th level ({@damage 4d10}).",
+											"You can use your Breath Weapon a number of times equal to your proficiency bonus per long rest.",
+											{
+												"type": "abilityDc",
+												"name": "Draconic",
+												"attributes": [
+													"con"
+												]
+											}
 										]
 									}
 								},
@@ -3789,8 +3840,15 @@
 					"type": "entries",
 					"name": "Breath Weapon",
 					"entries": [
-						"When you take the {@action Attack} action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot cone or a 30-foot line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes {@damage 1d10} damage of the type associated with your Metallic Ancestry. On a successful save, it takes half as much damage. This damage increases by {@damage 1d10} when you reach 5th level ({@damage 2d10}), 11th level ({@damage 3d10}), and 17th level ({@damage 4d10}).",
-						"You can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+						"When you take the {@action Attack} action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot cone or a 30-foot line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw against your Draconic DC. On a failed save, the creature takes {@damage 1d10} damage of the type associated with your Metallic Ancestry. On a successful save, it takes half as much damage. This damage increases by {@damage 1d10} when you reach 5th level ({@damage 2d10}), 11th level ({@damage 3d10}), and 17th level ({@damage 4d10}).",
+						"You can use your Breath Weapon a number of times equal to your proficiency bonus per long rest."
+					]
+				},
+				{
+					"type": "abilityDc",
+					"name": "Draconic",
+					"attributes": [
+						"con"
 					]
 				},
 				{
@@ -3838,7 +3896,14 @@
 										"name": "Breath Weapon",
 										"entries": [
 											"When you take the {@action Attack} action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot cone or a 30-foot line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes {@damage 1d10} {{damageType}} damage. On a successful save, it takes half as much damage. This damage increases by {@damage 1d10} when you reach 5th level ({@damage 2d10}), 11th level ({@damage 3d10}), and 17th level ({@damage 4d10}).",
-											"You can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+											"You can use your Breath Weapon a number of times equal to your proficiency bonus per long rest",
+											{
+												"type": "abilityDc",
+												"name": "Draconic",
+												"attributes": [
+													"con"
+												]
+											}
 										]
 									}
 								},
@@ -4522,7 +4587,16 @@
 					"name": "Fey Step",
 					"entries": [
 						"As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
-						"When you reach 3rd level, your Fey Step gain an additional effect based on your season; if the effect requires a saving throw, the DC equals 8 + your proficiency bonus + your Intelligence, Wisdom, or Charisma modifier (choose when you select this race):",
+						"When you reach 3rd level, your Fey Step gain an additional effect based on your season; if the effect requires a saving throw, the save is made against your Fey Step DC:",
+						{
+							"type": "abilityDc",
+							"name": "Fey Step",
+							"attributes": [
+								"int",
+								"wis",
+								"cha"
+							]
+						},
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
@@ -5193,7 +5267,7 @@
 					"type": "entries",
 					"name": "Hidden Step",
 					"entries": [
-						"As a bonus action, you can magically turn {@condition invisible} until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+						"As a bonus action, you can magically turn {@condition invisible} until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw. You can use this trait a number of times equal to your proficiency bonus per long rest."
 					]
 				},
 				{
@@ -6349,7 +6423,7 @@
 					"name": "Fury of the Small",
 					"entries": [
 						"When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals your proficiency bonus.",
-						"You can use this trait a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest, and you can use it no more than once per turn."
+						"You can use this trait a number of times equal to your proficiency bonus per long rest and no more than once per turn."
 					]
 				},
 				{
@@ -7228,8 +7302,15 @@
 					"type": "entries",
 					"name": "Poisonous Skin",
 					"entries": [
-						"Any creature that grapples you or otherwise comes into direct contact with your skin must succeed on a {@dc 12} Constitution saving throw or become {@condition poisoned} for 1 minute. A {@condition poisoned} creature no longer in direct contact with you can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
-						"You can also apply this poison to any piercing weapon as part of an attack with that weapon, though when you hit the poison reacts differently. The target must succeed on a {@dc 12} Constitution saving throw or take {@damage 2d4} poison damage."
+						"Any creature that grapples you or otherwise comes into direct contact with your skin must succeed on a Constitution saving throw, against your Poisonous Skin DC, or become {@condition poisoned} for 1 minute. A {@condition poisoned} creature no longer in direct contact with you can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+						"You can also apply this poison to any piercing weapon as part of an attack with that weapon, though when you hit the poison reacts differently. The target must succeed on a Constitution saving throw or take {@damage 2d4} poison damage.",
+						{
+							"type": "abilityDc",
+							"name": "Poisonous Skin",
+							"attributes": [
+								"con"
+							]
+						}
 					]
 				},
 				{
@@ -8364,7 +8445,6 @@
 				"weightMod": "2d4"
 			},
 			"age": {
-				"mature": 20,
 				"max": 100
 			},
 			"languageProficiencies": [
@@ -8383,13 +8463,6 @@
 					"name": "Age",
 					"entries": [
 						"Humans reach adulthood in their late teens and live less than a century."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium."
 					]
 				},
 				{
@@ -8722,7 +8795,6 @@
 				"weightMod": "1d6"
 			},
 			"age": {
-				"mature": 20,
 				"max": 100
 			},
 			"languageProficiencies": [
@@ -8737,24 +8809,10 @@
 			],
 			"entries": [
 				{
-					"name": "Age",
-					"entries": [
-						"Kalashtar mature and age at the same rate as humans."
-					],
-					"type": "entries"
-				},
-				{
 					"type": "entries",
 					"name": "Alignment",
 					"entries": [
 						"The noble spirit tied to a kalashtar drives it toward lawful and good behavior. Most kalashtar combine strong self-discipline with compassion for all beings, but some kalashtar resist the virtuous influence of their spirit."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Your size is Medium."
 					]
 				},
 				{
@@ -8906,6 +8964,9 @@
 				"S"
 			],
 			"speed": 30,
+			"age": {
+				"max": 120
+			},
 			"languageProficiencies": [
 				{
 					"common": true,
@@ -8940,7 +9001,7 @@
 					"type": "entries",
 					"name": "Fearless",
 					"entries": [
-						"You have advantage on saving throws you make to avoid or end the {@condition frightened} condition on yourself. When you fail a saving throw to avoid or end the {@condition frightened} condition on yourself, you can choose to succeed instead. Once you succeed on a saving throw in this way, you can't do so again until you finish a long rest."
+						"You have advantage on saving throws you make to avoid or end the {@condition frightened} condition on yourself. When you fail a saving throw to avoid or end the {@condition frightened} condition on yourself, you can choose to succeed instead. You can succeed the saving throw in this way once per long rest."
 					]
 				},
 				{
@@ -8954,8 +9015,17 @@
 					"type": "entries",
 					"name": "Taunt",
 					"entries": [
-						"You have an extraordinary ability to fluster creatures. As a bonus action, you can unleash a string of provoking words at a creature within 60 feet of yourself that can hear and understand you. The target must succeed on a Wisdom saving throw, or it has disadvantage on attack rolls against targets other than you until the start of your next turn. The DC equals 8 + your proficiency bonus + your Intelligence, Wisdom, or Charisma modifier (choose when you select this race).",
-						"You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+						"You have an extraordinary ability to fluster creatures. As a bonus action, you can unleash a string of provoking words at a creature within 60 feet of yourself that can hear and understand you. The target must succeed on a Wisdom saving throw, against your Taunt DC, or it has disadvantage on attack rolls against targets other than you until the start of your next turn.",
+						"You can use this bonus action a number of times equal to your proficiency bonus per long rest."
+					]
+				},
+				{
+					"type": "abilityDc",
+					"name": "Taunt",
+					"attributes": [
+						"int",
+						"wis",
+						"cha"
 					]
 				},
 				{
@@ -9036,7 +9106,6 @@
 				"weightMod": "1d6"
 			},
 			"age": {
-				"mature": 12,
 				"max": 60
 			},
 			"speed": 30,
@@ -9058,13 +9127,6 @@
 				},
 				{
 					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Your size is Medium or Small. You choose the size when you select this race."
-					]
-				},
-				{
-					"type": "entries",
 					"name": "Expert Duplication",
 					"entries": [
 						"When you copy writing or craftwork produced by yourself or someone else, you have advantage on any ability checks you make to produce an exact duplicate."
@@ -9075,14 +9137,21 @@
 					"name": "Kenku Recall",
 					"entries": [
 						"Thanks to your supernaturally good memory, you have proficiency in two skills of your choice.",
-						"Moreover, when you make an ability check using any skill in which you have proficiency, you can give yourself advantage on the check before rolling the {@dice d20}. You can give yourself advantage in this way a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+						"Moreover, when you make an ability check using any skill in which you have proficiency, you can give yourself advantage on the check before rolling the {@dice d20}. You can give yourself advantage in this way a number of times equal to your proficiency bonus per long rest."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Mimicry",
 					"entries": [
-						"You can accurately mimic sounds you have heard, including voices. A creature that hears the sounds you make can tell they are imitations only with a successful Wisdom ({@skill Insight}) check against a DC of 8 + your proficiency bonus + your Charisma modifier."
+						"You can accurately mimic sounds you have heard, including voices. A creature that hears the sounds you make can tell they are imitations only with a successful Wisdom ({@skill Insight}) check against your Mimicry DC."
+					]
+				},
+				{
+					"type": "abilityDc",
+					"name": "Mimcry",
+					"attributes": [
+						"cha"
 					]
 				}
 			],
@@ -9340,7 +9409,6 @@
 				"baseWeight": 25
 			},
 			"age": {
-				"mature": 6,
 				"max": 120
 			},
 			"speed": 30,
@@ -9399,7 +9467,7 @@
 					"type": "entries",
 					"name": "Draconic Cry",
 					"entries": [
-						"As a bonus action, you let out a cry at your enemies within 10 feet of you. Until the start of your next turn, you and your allies have advantage on attack rolls against any of those enemies who could hear you. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+						"As a bonus action, you let out a cry at your enemies within 10 feet of you. Until the start of your next turn, you and your allies have advantage on attack rolls against any of those enemies who could hear you. You can use this trait a number of times equal to your proficiency bonus per long rest."
 					]
 				},
 				{
@@ -17177,8 +17245,15 @@
 										"name": "Breath Weapon",
 										"entries": [
 											"You can use your action to exhale destructive energy in a {{area}}.",
-											"When you use your breath weapon, each creature in the area of the exhalation must make a {{savingThrow}} saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes {@damage 2d6} {{damageType}} damage on a failed save, and half as much damage on a successful one. The damage increases to {@damage 3d6} at 6th level, {@damage 4d6} at 11th level, and {@damage 5d6} at 16th level.",
-											"After you use your breath weapon, you can't use it again until you complete a short or long rest."
+											"When you use your breath weapon, each creature in the area of the exhalation must make a {{savingThrow}} saving throw against your Draconic DC. A creature takes {@damage 2d6} {{damageType}} damage on a failed save, and half as much damage on a successful one. The damage increases to {@damage 3d6} at 6th level, {@damage 4d6} at 11th level, and {@damage 5d6} at 16th level.",
+											"You can use your Breath Weapon once per short or long rest.",
+											{
+												"type": "abilityDc",
+												"name": "Draconic",
+												"attributes": [
+													"con"
+												]
+											}
 										]
 									}
 								}
@@ -17396,8 +17471,15 @@
 										"name": "Breath Weapon",
 										"entries": [
 											"You can use your action to exhale destructive energy in a {{area}}.",
-											"When you use your breath weapon, each creature in the area of the exhalation must make a {{savingThrow}} saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes {@damage 2d6} {{damageType}} damage on a failed save, and half as much damage on a successful one. The damage increases to {@damage 3d6} at 6th level, {@damage 4d6} at 11th level, and {@damage 5d6} at 16th level.",
-											"After you use your breath weapon, you can't use it again until you complete a short or long rest."
+											"When you use your breath weapon, each creature in the area of the exhalation must make a {{savingThrow}} saving throw against your Draconic DC. A creature takes {@damage 2d6} {{damageType}} damage on a failed save, and half as much damage on a successful one. The damage increases to {@damage 3d6} at 6th level, {@damage 4d6} at 11th level, and {@damage 5d6} at 16th level.",
+											"You can use your Breath Weapon once per short or long rest.",
+											{
+												"type": "abilityDc",
+												"name": "Draconic",
+												"attributes": [
+													"con"
+												]
+											}
 										]
 									}
 								}
@@ -22378,7 +22460,7 @@
 					"type": "entries",
 					"name": "Naturally Stealthy",
 					"entries": [
-						"You can attempt to {@action hide} even when you are obscured only by a creature that is at least one size larger than you. You can also take the {@action hide||Hide Action} as a Bonus Action."
+						"You can attempt to {@action hide} even when you are obscured only by a creature that is at least one size larger than you. You can also {@action hide} as a bonus action."
 					]
 				}
 			],
