@@ -12860,6 +12860,7 @@
 				}
 			],
 			"traitTags": [
+				"Monstrous Race",
 				"Uncommon Race"
 			],
 			"entries": [
@@ -12888,7 +12889,7 @@
 					"type": "entries",
 					"name": "Shifting Lineage",
 					"entries": [
-						"When you choose this race, you choose one of the following options that best represents your lineage: Beasthide, Longtooth, Swiftstride, and Wildhunt. As a bonus action, you can shift, which allows you to assume a more bestial appearance. This transformation lasts for 1 minute, until you die, or until you revert to your normal appearance as a bonus action. You can shift a number of times equal to your proficiency bonus per long rest.",
+						"When you choose this race, you choose one of the following options that best represents your lineage: Beasthide, Longtooth, Swiftstride, or Wildhunt. As a bonus action, you shift, allowing you to assume a more bestial appearance. This transformation lasts for 1 minute. It ends early if you die or you revert to your normal appearance as a bonus action. You can shift a number of times equal to your proficiency bonus per long rest.",
 						"When you shift, you gain temporary hit points equal to 2 × your proficiency bonus as well as the benefits below, relating to your chosen lineage.",
 						{
 							"type": "list",
@@ -12898,32 +12899,28 @@
 									"type": "item",
 									"name": "Beasthide",
 									"entries": [
-										"While shifted, you gain a +1 bonus to your Armor Class and gain resistance to nonmagical bludgeoning damage for the duration of your shift.",
-										"When you shift, you gain temporary hit points equal to {@dice 1d6} on top of the temporary hit points all shifters gain when they shift."
+										"When you enter your shift, you gain bonus temporary hit points equal to {@dice 1d6}. For the duration of your transformation, you have a +1 bonus to your Armor Class and gain resistance to nonmagical bludgeoning damage."
 									]
 								},
 								{
 									"type": "item",
 									"name": "Longtooth",
 									"entries": [
-										"While shifted, you gain natural weapons that allows you to make special {@action unarmed attack||unarmed attacks}. A Bite, or Claw attack, deals damage equal to {@damage 1d6} + your Strength modifier, with your Bite dealing piercing damage, while your Claws deal slashing damage.",
-										"Once per turn, if you make a successful {@action unarmed attack||unarmed grapple or shove attack}, ..."
+										"When you enter your shift, as part of the same bonus action, you can make a special {@action unarmed attack||unarmed strike attack} using elongated fangs. This bite attack deals piercing damage equal to {@damage 1d6} + your Strength modifier, instead of the normal bludgeoning damage. For the duration of your transformation, you can use a bonus action on subsequent turns to make this special {@action unarmed attack||bite attack}. Additionally, you gain claws, allowing your standard {@action unarmed attack||unarmed strike attacks} to deal slashing damage instead of bludgeoning damage."
 									]
 								},
 								{
 									"type": "item",
 									"name": "Swiftstride",
 									"entries": [
-										"While shifted, your walking speed increases by 10 feet. You can move up to 10 feet as a reaction when a creature ends its turn within 5 feet of you. This reactive movement doesn't provoke opportunity attacks.",
-										"You can also take the {@action Dash} action as a bonus action on subsequent turns while in your shifted form, as well as part of the same bonus action used to shift."
+										"When you enter your shift, as part of the same bonus action, you can also take the {@action Dash} action. For the duration of your transformation, you can use your bonus action on subsequent turns to {@action Dash}, your walking speed increases by 10 feet, and when a creature ends its turn within 5 feet of you, you can take a reaction to move up to 10 feet away without provoking opportunity attacks."
 									]
 								},
 								{
 									"type": "item",
 									"name": "Wildhunt",
 									"entries": [
-										"While shifted, you have advantage on Wisdom checks, and no creature within 30 feet of you can make an attack roll with advantage against you unless you're {@condition incapacitated}.",
-										"You can also take the {@action Hide} action as a bonus action on subsequent turns while in your shifted form, as well as part of the same bonus action used to shift."
+										"When you enter your shift, as part of the same bonus action, you can also take the {@action Hide} action. For the duration of your transformation, you can use your bonus action on subsequent turns to {@action hide}, you have advantage on Wisdom checks, and no creature within 30 feet of you can make an attack roll with advantage unless you're {@condition incapacitated}."
 									]
 								}
 							]
@@ -12952,7 +12949,7 @@
 								"name": "Shifting (Beasthide)",
 								"type": "entries",
 								"entries": [
-									"As a bonus action, you can assume a more bestial appearance. This transformation lasts for 1 minute, until you die, or until you revert to your normal appearance as a bonus action. When you shift, you gain temporary hit points equal to 2 × your proficiency bonus + {@dice 1d6}. You also gain a +1 bonus to your Armor Class and gain resistance to nonmagical bludgeoning damage for the duration of your shift.",
+									"As a bonus action, you can assume a more bestial appearance. This transformation lasts for 1 minute, until you die, or until you revert to your normal appearance as a bonus action. When you shift, you gain temporary hit points equal to 2 × your proficiency bonus + {@dice 1d6}. For the duration of your transformation, you have a +1 bonus to your Armor Class and gain resistance to nonmagical bludgeoning damage.",
 									"You can use this trait a number of times equal to your proficiency bonus per long rest."
 								]
 							}
@@ -12979,12 +12976,15 @@
 								"name": "Shifting (Longtooth)",
 								"type": "entries",
 								"entries": [
-									"As a bonus action, you can assume a more bestial appearance. This transformation lasts for 1 minute, until you die, or until you revert to your normal appearance as a bonus action. When you shift, you gain temporary hit points equal to 2 × your proficiency bonus, and you regain all expended uses when you finish a long rest.",
-									"When you shift and as a bonus action on your other turns while shifted, you can use your elongated fangs to make an unarmed strike. If you hit with your fangs, you can deal piercing damage equal to {@dice 1d6} + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
+									"As a bonus action, you can assume a more bestial appearance. This transformation lasts for 1 minute, until you die, or until you revert to your normal appearance as a bonus action. When you shift, you gain temporary hit points equal to 2 × your proficiency bonus and, as part of the same bonus action, you can make a special {@action unarmed attack||unarmed strike attack} using elongated fangs. This bite attack deals piercing damage equal to {@damage 1d6} + your Strength modifier, instead of the normal bludgeoning damage. For the duration of your transformation, you can use a bonus action on subsequent turns to make this special {@action unarmed attack||bite attack}. Additionally, you gain claws, allowing your standard {@action unarmed attack||unarmed strike attacks} to deal slashing damage instead of bludgeoning damage.",
+									"You can use this trait a number of times equal to your proficiency bonus per long rest."
 								]
 							}
 						}
-					}
+					},
+					"traitTags": [
+						"Natural Weapons"
+					]
 				},
 				{
 					"name": "Shifter; Swiftstride",
@@ -12997,8 +12997,8 @@
 								"name": "Shifting (Swiftstride)",
 								"type": "entries",
 								"entries": [
-									"As a bonus action, you can assume a more bestial appearance. This transformation lasts for 1 minute, until you die, or until you revert to your normal appearance as a bonus action. When you shift, you gain temporary hit points equal to 2 × your proficiency bonus, and you regain all expended uses when you finish a long rest.",
-									"While shifted, your walking speed increases by 10 feet. Additionally, you can move up to 10 feet as a reaction when a creature ends its turn within 5 feet of you. This reactive movement doesn't provoke opportunity attacks."
+									"As a bonus action, you can assume a more bestial appearance. This transformation lasts for 1 minute, until you die, or until you revert to your normal appearance as a bonus action. When you shift, you gain temporary hit points equal to 2 × your proficiency bonus and, as part of the same bonus action, you can also take the {@action Dash} action. For the duration of your transformation, you can use your bonus action on subsequent turns to {@action dash}. Additionally your walking speed increases by 10 feet and when a creature ends its turn within 5 feet of you, you can take a reaction to move up to 10 feet away without provoking opportunity attacks.",
+									"You can use this trait a number of times equal to your proficiency bonus per long rest."
 								]
 							}
 						}
@@ -13015,8 +13015,8 @@
 								"name": "Shifting (Wildhunt)",
 								"type": "entries",
 								"entries": [
-									"As a bonus action, you can assume a more bestial appearance. This transformation lasts for 1 minute, until you die, or until you revert to your normal appearance as a bonus action. When you shift, you gain temporary hit points equal to 2 × your proficiency bonus, and you regain all expended uses when you finish a long rest.",
-									"While shifted, you have advantage on Wisdom checks, and no creature within 30 feet of you can make an attack roll with advantage against you unless you're {@condition incapacitated}."
+									"As a bonus action, you can assume a more bestial appearance. This transformation lasts for 1 minute, until you die, or until you revert to your normal appearance as a bonus action. When you shift, you gain temporary hit points equal to 2 × your proficiency bonus and, as part of the same bonus action, you can also take the {@action Hide} action. For the duration of your transformation, you can use your bonus action on subsequent turns to {@action hide}. Additionally, you have advantage on Wisdom checks, and no creature within 30 feet of you can make an attack roll with advantage unless you're {@condition incapacitated}.",
+									"You can use this trait a number of times equal to your proficiency bonus per long rest."
 								]
 							}
 						}
