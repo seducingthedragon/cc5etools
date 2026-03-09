@@ -19561,8 +19561,6 @@
 			"raceName": "Dwarf",
 			"raceSource": "PHB",
 			"page": 20,
-			"srd": true,
-			"basicRules": true,
 			"heightAndWeight": {
 				"baseHeight": 44,
 				"heightMod": "2d4",
@@ -19749,7 +19747,6 @@
 			"raceName": "Dwarf",
 			"raceSource": "PHB",
 			"page": 20,
-			"basicRules": true,
 			"lineage": true,
 			"heightAndWeight": {
 				"baseHeight": 48,
