@@ -8041,6 +8041,240 @@
 			]
 		},
 		{
+			"name": "Half-Elf (Moon)",
+			"source": "MPMM",
+			"page": 21,
+			"otherSources": [
+				{
+					"source": "SCAG",
+					"page": 116
+				}
+			],
+			"ability": [
+                {
+                    "choose": {
+                        "weighted": {
+                            "from": [
+                                "str",
+                                "dex",
+                                "con",
+                                "int",
+                                "wis",
+                                "cha"
+                            ],
+                            "weights": [
+                                2,
+                                1
+                            ]
+                        }
+                    }
+                },
+                {
+                    "choose": {
+                        "weighted": {
+                            "from": [
+                                "str",
+                                "dex",
+                                "con",
+                                "int",
+                                "wis",
+                                "cha"
+                            ],
+                            "weights": [
+                                1,
+                                1,
+                                1
+                            ]
+                        }
+                    }
+                }
+            ],
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"lineage": true,
+			"heightAndWeight": {
+				"baseHeight": 57,
+				"heightMod": "2d8",
+				"baseWeight": 110,
+				"weightMod": "2d4"
+			},
+			"age": {
+				"max": 180
+			},
+			"darkvision": 60,
+			"soundClip": {
+				"type": "internal",
+				"path": "races/half-elf.mp3"
+			},
+			"traitTags": [
+				"Skill Bonus Dice"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"elvish": true,
+					"anyStandard": 1
+				}
+			],
+			"skillProficiencies": [
+				{
+					"any": 2
+				}
+			],
+			"weaponProficiencies": [
+				{
+					"longsword|phb": true,
+					"shortsword|phb": true,
+					"shortbow|phb": true,
+					"longbow|phb": true
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": {
+							"_": [
+								{
+									"choose": "level=0|class=Bard"
+								}
+							]
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"Thanks to your elf blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fey Ancestry",
+					"entries": [
+						"You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Skill Versatility",
+					"entries": [
+						"You gain proficiency in two skills of your choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Moon Elf Descendant (Choose 1)",
+					"entries": [
+						"As a descendant of a Moon Elf, you gain one of the following traits of your choice:",
+						{
+							"type": "list",
+							"items": [
+								{
+									"type": "item",
+									"name": "Elven Weapon Training",
+									"entries": [
+										"You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Moon Elf Cantrip",
+									"entries": [
+										"You know one cantrip of your choice from the {@filter bard spell list|spells|source=|level=0|class=bard|components & miscellaneous=} and can cast it without material components (unless there has a cost). Intelligence, Wisdom, or Charisma is your spellcasting ability for it (chose when you select this race)."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Socially Adept",
+									"entries": [
+										"When you make a Charisma ({@skill Persuasion}) check, you gain a bonus to the check equal to {@dice 1d4}"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common, Elvish, and one other {@filter standard language|languages|source=|type=standard} of your choice."
+					]
+				}
+			],
+			"_versions": [
+				{
+					"name": "Half-Elf (Moon; Weapons Training)",
+					"source": "MPMM",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "Moon Elf Descendant (Choose 1)",
+							"items": {
+								"name": "Elven Weapon Training",
+								"type": "entries",
+								"entries": [
+									"As a descendant of a Moon Elf, you have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
+								]
+							}
+						}
+					},
+					"additionalSpells": null,
+					"traitTags": null
+				},
+				{
+					"name": "Half-Elf (Moon; Magic)",
+					"source": "MPMM",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "Moon Elf Descendant (Choose 1)",
+							"items": {
+								"name": "Moon Elf Cantrip",
+								"type": "entries",
+								"entries": [
+									"As a descendant of a Moon Elf, you know one cantrip of your choice from the {@filter bard spell list|spells|source=|level=0|class=bard|components & miscellaneous=} and can cast it without material components (unless there has a cost). Intelligence, Wisdom, or Charisma is your spellcasting ability for it (chose when you select this race)."
+								]
+							}
+						}
+					},
+					"weaponProficiencies": null,
+					"traitTags": null
+				},
+				{
+					"name": "Half-Elf (Moon; Charming)",
+					"source": "MPMM",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "Moon Elf Descendant (Choose 1)",
+							"items": {
+								"name": "Socially Adept",
+								"type": "entries",
+								"entries": [
+									"As a descendant of a Moon Elf, when you make a Charisma ({@skill Persuasion}) check, you gain a bonus to the check equal to {@dice 1d4}."
+								]
+							}
+						}
+					},
+					"weaponProficiencies": null,
+					"additionalSpells": null
+				}
+			]
+		},
+		{
 			"name": "Half-Orc",
 			"source": "PHB",
 			"page": 40,
@@ -21449,193 +21683,6 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Moon Elf Ancestry",
-			"source": "MPMM",
-			"raceName": "Half-Elf",
-			"raceSource": "PHB",
-			"page": 13,
-			"otherSources": [
-				{
-					"source": "SCAG",
-					"page": 116
-				}
-			],
-			"ability": [
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
-								"dex",
-								"con",
-								"int",
-								"wis",
-								"cha"
-							],
-							"weights": [
-								2,
-								1
-							]
-						}
-					}
-				},
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
-								"dex",
-								"con",
-								"int",
-								"wis",
-								"cha"
-							],
-							"weights": [
-								1,
-								1,
-								1
-							]
-						}
-					}
-				}
-			],
-			"skillProficiencies": [
-				{
-					"any": 2
-				}
-			],
-			"weaponProficiencies": [
-				{
-					"longsword|phb": true,
-					"shortsword|phb": true,
-					"shortbow|phb": true,
-					"longbow|phb": true
-				}
-			],
-			"additionalSpells": [
-				{
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					},
-					"known": {
-						"1": {
-							"_": [
-								{
-									"choose": "level=0|class=Bard"
-								}
-							]
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"type": "entries",
-					"name": "Skill Versatility",
-					"entries": [
-						"You gain proficiency in two skills of your choice."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Moon Elf Descendant (Choose 1)",
-					"entries": [
-						"As a descendant of a Moon Elf, you gain one of the following traits of your choice:",
-						{
-							"type": "list",
-							"items": [
-								{
-									"type": "item",
-									"name": "Elven Weapon Training",
-									"entries": [
-										"You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
-									]
-								},
-								{
-									"type": "item",
-									"name": "Moon Elf Cantrip",
-									"entries": [
-										"You know one cantrip of your choice from the {@filter bard spell list|spells|source=|level=0|class=bard|components & miscellaneous=} and can cast it without material components (unless there has a cost). Intelligence, Wisdom, or Charisma is your spellcasting ability for it (chose when you select this race)."
-									]
-								},
-								{
-									"type": "item",
-									"name": "Socially Adept",
-									"entries": [
-										"Choose one of the following skills: {@skill Deception}, {@skill Intimidation}, {@skill Performance}, or {@skill Persuasion}. When you make a Charisma check using your chosen skill, you can roll a {@dice 1d4} and add the number rolled to the ability check."
-									]
-								}
-							]
-						}
-					]
-				}
-			],
-			"_versions": [
-				{
-					"name": "Moon Elf Ancestry; Elven Weapon Training",
-					"source": "MPMM",
-					"_mod": {
-						"entries": {
-							"mode": "replaceArr",
-							"replace": "Moon Elf Descendant (Choose 1)",
-							"items": {
-								"name": "Moon Elf Descendant; Elven Weapon Training",
-								"type": "entries",
-								"entries": [
-									"You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
-								]
-							}
-						}
-					},
-					"additionalSpells": null
-				},
-				{
-					"name": "Moon Elf Ancestry; Moon Elf Cantrip",
-					"source": "MPMM",
-					"_mod": {
-						"entries": {
-							"mode": "replaceArr",
-							"replace": "Moon Elf Descendant (Choose 1)",
-							"items": {
-								"name": "Moon Elf Descendant; Moon Elf Cantrip",
-								"type": "entries",
-								"entries": [
-									"You know one cantrip of your choice from the {@filter bard spell list|spells|source=|level=0|class=bard|components & miscellaneous=} and can cast it without material components (unless there has a cost). Intelligence, Wisdom, or Charisma is your spellcasting ability for it (chose when you select this race)."
-								]
-							}
-						}
-					},
-					"weaponProficiencies": null
-				},
-				{
-					"name": "Moon Elf Ancestry; Socially Adept",
-					"source": "MPMM",
-					"_mod": {
-						"entries": {
-							"mode": "replaceArr",
-							"replace": "Moon Elf Descendant (Choose 1)",
-							"items": {
-								"name": "Moon Elf Descendant; Socially Adept",
-								"type": "entries",
-								"entries": [
-									"Choose one of the following skills: {@skill Deception}, {@skill Intimidation}, {@skill Performance}, or {@skill Persuasion}. When you make a Charisma check using your chosen skill, you can roll a {@dice 1d4} and add the number rolled to the ability check."
-								]
-							}
-						}
-					},
-					"traitTags": [
-						"Skill Bonus Dice"
-					],
-					"weaponProficiencies": null,
-					"additionalSpells": null
-				}
-			]
-		},
-		{
 			"name": "Sea Elf Ancestry",
 			"source": "MPMM",
 			"raceName": "Half-Elf",
@@ -22467,7 +22514,7 @@
 			"name": "Variant; Moon Elf or Sun Elf Descent",
 			"source": "SCAG",
 			"reprintedAs": [
-				"Half-Elf (Moon Elf Ancestry)|MPMM",
+				"Half-Elf (Moon)|MPMM",
 				"Half-Elf (Sun Elf Ancestry)|MPMM"
 			],
 			"raceName": "Half-Elf",
