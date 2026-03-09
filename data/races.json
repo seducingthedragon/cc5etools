@@ -9118,6 +9118,11 @@
 			"age": {
 				"max": 120
 			},
+			"heightAndWeight": {
+				"baseHeight": 31,
+				"heightMod": "2d4",
+				"baseWeight": 35
+			},
 			"languageProficiencies": [
 				{
 					"common": true,
