@@ -6593,10 +6593,7 @@
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
-                    "Halfling (Lotusden)": {
-                        "baseName": "Halfling",
-                        "baseSource": "PHB"
-                    }
+                    "Halfling (Lotusden)": true
                 },
                 "WBtW": {
                     "Fairy": true
@@ -6888,10 +6885,7 @@
             },
             "race": {
                 "MPMM": {
-                    "Halfling (Lotusden)": {
-                        "baseName": "Halfling",
-                        "baseSource": "PHB"
-                    }
+                    "Halfling (Lotusden)": true
                 },
                 "EGW": {
                     "Halfling (Lotusden)": {
@@ -17328,10 +17322,7 @@
             },
             "race": {
                 "MPMM": {
-                    "Halfling (Lotusden)": {
-                        "baseName": "Halfling",
-                        "baseSource": "PHB"
-                    }
+                    "Halfling (Lotusden)": true
                 },
                 "EGW": {
                     "Halfling (Lotusden)": {

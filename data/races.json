@@ -7956,6 +7956,13 @@
 			"entries": [
 				{
 					"type": "entries",
+					"name": "Naturally Stealthy",
+					"entries": [
+						"You can attempt to {@action hide} even when you are obscured only by a creature that is at least one size larger than you."
+					]
+				},
+				{
+					"type": "entries",
 					"name": "Lucky",
 					"entries": [
 						"When you roll a 1 on a {@dice d20|D20 Roll} you can reroll the die and must use the new roll."
@@ -7972,7 +7979,7 @@
 					"type": "entries",
 					"name": "Halfling Nimbleness",
 					"entries": [
-						"You can move through the space of any creature that is of a size larger than yours."
+						"You can move through the space of any creature that is of a size larger than you, but you can't stop in the same space."
 					]
 				},
 				{
@@ -7980,6 +7987,292 @@
 					"name": "Languages",
 					"entries": [
 						"You can speak, read, and write Common and Halfling. The Halfling language isn't secret, but halflings are loath to share it with others. They write very little, so they don't have a rich body of literature. Their oral tradition, however, is very strong. Almost all halflings speak Common to converse with the people in whose lands they dwell or through which they are traveling."
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Halfling (Ghostwise)",
+			"source": "MPMM",
+			"page": 21,
+			"otherSources": [
+				{
+					"source": "SCAG",
+					"page": 110
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"size": [
+				"S"
+			],
+			"speed": 30,
+			"lineage": true,
+			"heightAndWeight": {
+				"baseHeight": 29,
+				"heightMod": "2d4",
+				"baseWeight": 35
+			},
+			"age": {
+				"max": 250
+			},
+			"traitTags": [
+				"Uncommon Race"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"halfling": true
+				}
+			],
+			"soundClip": {
+				"type": "internal",
+				"path": "races/halfling.mp3"
+			},
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Naturally Stealthy",
+					"entries": [
+						"You can attempt to {@action hide} even when you are obscured only by a creature that is at least one size larger than you."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Lucky",
+					"entries": [
+						"When you roll a 1 on a {@dice d20|D20 Roll} you can reroll the die and must use the new roll."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Brave",
+					"entries": [
+						"You have advantage on saving throws against being {@condition frightened}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Halfling Nimbleness",
+					"entries": [
+						"You can move through the space of any willing creature that is of a size larger than you, but you can't stop in the same space. It is considered {@quickref difficult terrain||3} to move through a space of an unwilling creature."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Silent Speech",
+					"entries": [
+						"You can speak telepathically to any creature within 30 feet of you. The creature understands you only if the two of you share a language. You can speak telepathically in this way to one creature at a time.",
+						"As an action, you can push the bounds of your telepathy to communicate to all creatures of your choice within 60 feet of you. This lasts for 1 hour, ending early if you choose so (no action required), or become {@condition incapacitated}. You can enhance your Silent Speech in this way once per long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Halfling."
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Halfling (Lotusden)",
+			"source": "MPMM",
+			"page": 22,
+			"otherSources": [
+				{
+					"source": "EGW",
+					"page": 164
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"size": [
+				"S"
+			],
+			"speed": 30,
+			"lineage": true,
+			"heightAndWeight": {
+				"baseHeight": 31,
+				"heightMod": "2d4",
+				"baseWeight": 35,
+				"weightMod": "1d2"
+			},
+			"age": {
+				"max": 250
+			},
+			"traitTags": [
+				"Uncommon Race"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"halfling": true
+				}
+			],
+			"soundClip": {
+				"type": "internal",
+				"path": "races/halfling.mp3"
+			},
+			"additionalSpells": [
+				{
+					"innate": {
+						"3": {
+							"daily": {
+								"1": [
+									"entangle"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"spike growth"
+								]
+							}
+						}
+					},
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": [
+							"druidcraft#c"
+						]
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Naturally Stealthy",
+					"entries": [
+						"You can attempt to {@action hide} even when you are obscured only by a creature that is at least one size larger than you."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Lucky",
+					"entries": [
+						"When you roll a 1 on a {@dice d20|D20 Roll} you can reroll the die and must use the new roll."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Brave",
+					"entries": [
+						"You have advantage on saving throws against being {@condition frightened}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Halfling Nimbleness",
+					"entries": [
+						"You can move through the space of any willing creature that is of a size larger than you, but you can't stop in the same space. It is considered {@quickref difficult terrain||3} to move through a space of an unwilling creature."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Timberwalk",
+					"entries": [
+						"Ability checks made to track you have disadvantage, and you can move across {@quickref difficult terrain||3} made of nonmagical plants and undergrowth without expending extra movement."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Child of the Wood",
+					"entries": [
+						"You know the {@spell Druidcraft} cantrip. When you reach 3rd level, you can cast {@spell Entangle} once per long rest with this trait. When you reach 5th level, you can cast {@spell Spike Growth} once per long rest, without material components, with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race).",
+						"{@note If you have a Spellcasting or Pact Magic class feature, you can cast the leveled spells from this trait using those spell slots, following the casting rules provided by your class.}"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Halfling."
 					]
 				}
 			],
@@ -22777,72 +23070,6 @@
 		},
 		{
 			"name": "Ghostwise",
-			"source": "MPMM",
-			"raceName": "Halfling",
-			"raceSource": "PHB",
-			"page": 13,
-			"otherSources": [
-				{
-					"source": "SCAG",
-					"page": 110
-				}
-			],
-			"ability": [
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
-								"dex",
-								"con",
-								"int",
-								"wis",
-								"cha"
-							],
-							"weights": [
-								2,
-								1
-							]
-						}
-					}
-				},
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
-								"dex",
-								"con",
-								"int",
-								"wis",
-								"cha"
-							],
-							"weights": [
-								1,
-								1,
-								1
-							]
-						}
-					}
-				}
-			],
-			"traitTags": [
-				"Uncommon Race"
-			],
-			"entries": [
-				{
-					"name": "Silent Speech",
-					"entries": [
-						"You can speak telepathically to any creature within 30 feet of you. The creature understands you only if the two of you share a language. You can speak telepathically in this way to one creature at a time."
-					],
-					"type": "entries"
-				}
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
-		},
-		{
-			"name": "Ghostwise",
 			"source": "SCAG",
 			"raceName": "Halfling",
 			"raceSource": "PHB",
@@ -22874,8 +23101,6 @@
 			"raceName": "Halfling",
 			"raceSource": "PHB",
 			"page": 28,
-			"srd": true,
-			"basicRules": true,
 			"ability": [
 				{
 					"choose": {
@@ -22915,109 +23140,17 @@
 					}
 				}
 			],
+			"heightAndWeight": {
+				"baseHeight": 31,
+				"heightMod": "2d4",
+				"baseWeight": 35
+			},
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Naturally Stealthy",
+					"name": "Quickly Unseen",
 					"entries": [
-						"You can attempt to {@action hide} even when you are obscured only by a creature that is at least one size larger than you. You can also {@action hide} as a bonus action."
-					]
-				}
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
-		},
-		{
-			"name": "Lotusden",
-			"source": "MPMM",
-			"raceName": "Halfling",
-			"raceSource": "PHB",
-			"page": 13,
-			"otherSources": [
-				{
-					"source": "EGW",
-					"page": 164
-				}
-			],
-			"ability": [
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
-								"dex",
-								"con",
-								"int",
-								"wis",
-								"cha"
-							],
-							"weights": [
-								2,
-								1
-							]
-						}
-					}
-				},
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
-								"dex",
-								"con",
-								"int",
-								"wis",
-								"cha"
-							],
-							"weights": [
-								1,
-								1,
-								1
-							]
-						}
-					}
-				}
-			],
-			"additionalSpells": [
-				{
-					"innate": {
-						"3": {
-							"daily": {
-								"1": [
-									"entangle"
-								]
-							}
-						},
-						"5": {
-							"daily": {
-								"1": [
-									"spike growth"
-								]
-							}
-						}
-					},
-					"ability": "wis",
-					"known": {
-						"1": [
-							"druidcraft#c"
-						]
-					}
-				}
-			],
-			"entries": [
-				{
-					"type": "entries",
-					"name": "Child of the Wood",
-					"entries": [
-						"You know the {@spell Druidcraft} cantrip. When you reach 3rd level, you can cast {@spell Entangle} once per long rest with this trait. When you reach 5th level, you can cast {@spell Spike Growth} once per long rest, without material components, with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race).",
-						"{@note If you have a Spellcasting or Pact Magic class feature, you can cast the leveled spells from this trait using those spell slots, following the casting rules provided by your class.}"
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Timberwalk",
-					"entries": [
-						"Ability checks made to track you have disadvantage, and you can move across {@quickref difficult terrain||3} made of nonmagical plants and undergrowth without expending extra movement."
+						"You can use a bonus action to {@action dash} or {@action hide}. Additionally, you have advantage on any {@skill Stealth} check to successfully hide, including in areas where you are {@quickref Vision and Light||2||lightly obscured}."
 					]
 				}
 			],
@@ -23145,6 +23278,11 @@
 					}
 				}
 			],
+			"heightAndWeight": {
+				"baseHeight": 31,
+				"heightMod": "2d4",
+				"baseWeight": 35
+			},
 			"entries": [
 				{
 					"type": "entries",
@@ -23220,6 +23358,11 @@
 				"Skill Bonus Dice",
 				"Tool Bonus Dice"
 			],
+			"heightAndWeight": {
+				"baseHeight": 31,
+				"heightMod": "2d4",
+				"baseWeight": 35
+			},
 			"additionalSpells": [
 				{
 					"ability": "cha",
@@ -23327,7 +23470,6 @@
 			"raceName": "Halfling",
 			"raceSource": "PHB",
 			"page": 28,
-			"basicRules": true,
 			"ability": [
 				{
 					"choose": {
@@ -23367,6 +23509,12 @@
 					}
 				}
 			],
+			"heightAndWeight": {
+				"baseHeight": 29,
+				"heightMod": "2d4",
+				"baseWeight": 35,
+				"weightMod": "1d2"
+			},
 			"resist": [
 				"poison"
 			],
