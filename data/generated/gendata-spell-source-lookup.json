@@ -618,10 +618,7 @@
                         "baseName": "Genasi",
                         "baseSource": "MPMM"
                     },
-                    "Half-Elf (Drow Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Drow)": true,
                     "Half-Elf (Sun Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -2297,10 +2294,7 @@
                     }
                 },
                 "MPMM": {
-                    "Half-Elf (Drow Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Drow)": true,
                     "Half-Elf (Moon Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -3160,10 +3154,7 @@
                     }
                 },
                 "MPMM": {
-                    "Half-Elf (Drow Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Drow)": true,
                     "Half-Elf (Sun Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -5040,10 +5031,7 @@
                 },
                 "MPMM": {
                     "Astral Elf": true,
-                    "Half-Elf (Drow Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Drow)": true,
                     "Half-Elf (Moon Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -7677,10 +7665,7 @@
                     }
                 },
                 "MPMM": {
-                    "Half-Elf (Drow Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Drow)": true,
                     "Half-Elf (Sun Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -8459,10 +8444,7 @@
                 },
                 "MPMM": {
                     "Eladrin": true,
-                    "Half-Elf (Drow Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Drow)": true,
                     "Half-Elf (Moon Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -8759,10 +8741,7 @@
                     }
                 },
                 "MPMM": {
-                    "Half-Elf (Drow Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Drow)": true,
                     "Half-Elf (Moon Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -11184,10 +11163,7 @@
                 "MPMM": {
                     "Aasimar": true,
                     "Astral Elf": true,
-                    "Half-Elf (Drow Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Drow)": true,
                     "Half-Elf (Moon Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -11702,10 +11678,7 @@
                 "MPMM": {
                     "Githyanki": true,
                     "Githzerai": true,
-                    "Half-Elf (Drow Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Drow)": true,
                     "Half-Elf (Moon Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -12460,10 +12433,7 @@
                     }
                 },
                 "MPMM": {
-                    "Half-Elf (Drow Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Drow)": true,
                     "Half-Elf (Moon Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -12597,10 +12567,7 @@
                     }
                 },
                 "MPMM": {
-                    "Half-Elf (Drow Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Drow)": true,
                     "Half-Elf (Moon Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -12767,10 +12734,7 @@
                 },
                 "MPMM": {
                     "Eladrin": true,
-                    "Half-Elf (Drow Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Drow)": true,
                     "Half-Elf (Moon Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -13985,10 +13949,7 @@
                     }
                 },
                 "MPMM": {
-                    "Half-Elf (Drow Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Drow)": true,
                     "Half-Elf (Sun Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -14301,10 +14262,7 @@
                 },
                 "MPMM": {
                     "Deep Gnome": true,
-                    "Half-Elf (Drow Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Drow)": true,
                     "Half-Elf (Moon Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -15094,10 +15052,7 @@
                     }
                 },
                 "MPMM": {
-                    "Half-Elf (Drow Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Drow)": true,
                     "Half-Elf (Sun Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -16549,10 +16504,7 @@
                         "baseName": "Genasi",
                         "baseSource": "MPMM"
                     },
-                    "Half-Elf (Drow Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Drow)": true,
                     "Half-Elf (Sun Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -18023,10 +17975,7 @@
                     }
                 },
                 "MPMM": {
-                    "Half-Elf (Drow Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Drow)": true,
                     "Half-Elf (Sun Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -18701,10 +18650,7 @@
                     }
                 },
                 "MPMM": {
-                    "Half-Elf (Drow Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Drow)": true,
                     "Half-Elf (Moon Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -19966,10 +19912,7 @@
                     }
                 },
                 "MPMM": {
-                    "Half-Elf (Drow Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Drow)": true,
                     "Half-Elf (Sun Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -20271,10 +20214,7 @@
                     }
                 },
                 "MPMM": {
-                    "Half-Elf (Drow Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Drow)": true,
                     "Half-Elf (Sun Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -20575,10 +20515,7 @@
                     }
                 },
                 "MPMM": {
-                    "Half-Elf (Drow Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Drow)": true,
                     "Half-Elf (Sun Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -20709,10 +20646,7 @@
                     }
                 },
                 "MPMM": {
-                    "Half-Elf (Drow Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Drow)": true,
                     "Half-Elf (Sun Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -21305,10 +21239,7 @@
                     }
                 },
                 "MPMM": {
-                    "Half-Elf (Drow Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Drow)": true,
                     "Half-Elf (Sun Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -22295,10 +22226,7 @@
                     }
                 },
                 "MPMM": {
-                    "Half-Elf (Drow Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Drow)": true,
                     "Half-Elf (Sun Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -22487,10 +22415,7 @@
                     }
                 },
                 "MPMM": {
-                    "Half-Elf (Drow Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Drow)": true,
                     "Half-Elf (Sun Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -22975,10 +22900,7 @@
                     }
                 },
                 "MPMM": {
-                    "Half-Elf (Drow Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Drow)": true,
                     "Half-Elf (Sun Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -23465,10 +23387,7 @@
                     }
                 },
                 "MPMM": {
-                    "Half-Elf (Drow Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Drow)": true,
                     "Half-Elf (Sun Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -23643,10 +23562,7 @@
                     }
                 },
                 "MPMM": {
-                    "Half-Elf (Drow Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Drow)": true,
                     "Half-Elf (Sun Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -23954,10 +23870,7 @@
                     }
                 },
                 "MPMM": {
-                    "Half-Elf (Drow Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Drow)": true,
                     "Half-Elf (Sun Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -24561,10 +24474,7 @@
                     }
                 },
                 "MPMM": {
-                    "Half-Elf (Drow Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Drow)": true,
                     "Half-Elf (Sun Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -25048,10 +24958,7 @@
                     }
                 },
                 "MPMM": {
-                    "Half-Elf (Drow Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Drow)": true,
                     "Half-Elf (Sea Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -25628,10 +25535,7 @@
                     }
                 },
                 "MPMM": {
-                    "Half-Elf (Drow Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Drow)": true,
                     "Half-Elf (Moon Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -26398,10 +26302,7 @@
                     }
                 },
                 "MPMM": {
-                    "Half-Elf (Drow Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Drow)": true,
                     "Half-Elf (Moon Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -26640,10 +26541,7 @@
                     }
                 },
                 "MPMM": {
-                    "Half-Elf (Drow Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Drow)": true,
                     "Half-Elf (Moon Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -26954,10 +26852,7 @@
                     }
                 },
                 "MPMM": {
-                    "Half-Elf (Drow Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Drow)": true,
                     "Half-Elf (Moon Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -27062,10 +26957,7 @@
                     }
                 },
                 "MPMM": {
-                    "Half-Elf (Drow Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Drow)": true,
                     "Half-Elf (Moon Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -27176,10 +27068,7 @@
                     }
                 },
                 "MPMM": {
-                    "Half-Elf (Drow Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Drow)": true,
                     "Half-Elf (Moon Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -27599,10 +27488,7 @@
                     }
                 },
                 "MPMM": {
-                    "Half-Elf (Drow Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Drow)": true,
                     "Half-Elf (Sun Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"

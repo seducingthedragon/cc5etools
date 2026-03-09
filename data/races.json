@@ -7809,6 +7809,238 @@
 			"hasFluffImages": true
 		},
 		{
+			"name": "Half-Elf (Drow)",
+			"source": "MPMM",
+			"page": 21,
+			"otherSources": [
+				{
+					"source": "SCAG",
+					"page": 116
+				}
+			],
+			"ability": [
+                {
+                    "choose": {
+                        "weighted": {
+                            "from": [
+                                "str",
+                                "dex",
+                                "con",
+                                "int",
+                                "wis",
+                                "cha"
+                            ],
+                            "weights": [
+                                2,
+                                1
+                            ]
+                        }
+                    }
+                },
+                {
+                    "choose": {
+                        "weighted": {
+                            "from": [
+                                "str",
+                                "dex",
+                                "con",
+                                "int",
+                                "wis",
+                                "cha"
+                            ],
+                            "weights": [
+                                1,
+                                1,
+                                1
+                            ]
+                        }
+                    }
+                }
+            ],
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"lineage": true,
+			"heightAndWeight": {
+				"baseHeight": 55,
+				"heightMod": "2d8",
+				"baseWeight": 100,
+				"weightMod": "2d4"
+			},
+			"age": {
+				"max": 180
+			},
+			"darkvision": 60,
+			"soundClip": {
+				"type": "internal",
+				"path": "races/half-elf.mp3"
+			},
+			"languageProficiencies": [
+				{
+					"common": true,
+					"elvish": true,
+					"anyStandard": 1
+				}
+			],
+			"traitTags": [
+				"Uncommon Race"
+			],
+			"skillProficiencies": [
+				{
+					"any": 2
+				}
+			],
+			"weaponProficiencies": [
+				{
+					"rapier|phb": true,
+					"shortsword|phb": true,
+					"hand crossbow|phb": true
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": {
+							"_": [
+								{
+									"choose": "level=0|class=Sorcerer"
+								}
+							]
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"Thanks to your elf blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fey Ancestry",
+					"entries": [
+						"You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Skill Versatility",
+					"entries": [
+						"You gain proficiency in two skills of your choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Drow Descendant (Choose 1)",
+					"entries": [
+						"As a descendant of a Drow, you gain one of the following traits of your choice:",
+						{
+							"type": "list",
+							"items": [
+								{
+									"type": "item",
+									"name": "Close Quarters Weapon Training",
+									"entries": [
+										"You have proficiency with {@item rapier|phb|rapiers}, {@item shortsword|phb|shortswords}, and {@item hand crossbow|phb|hand crossbows}."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Drow Cantrip",
+									"entries": [
+										"You know one cantrip of your choice from the {@filter sorcerer spell list|spells|source=|level=0|class=sorcerer|components & miscellaneous=} and can cast it without material components (unless there has a cost). Intelligence, Wisdom, or Charisma is your spellcasting ability for it (chose when you select this race)."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Superior Darkvision",
+									"entries": [
+										"Your darkvision extends farthur than others. You gain an additional 60 feet to your darkvision, for a total of 120 feet."
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common, Elvish, and one other {@filter standard language|languages|source=|type=standard} of your choice."
+					]
+				}
+			],
+			"_versions": [
+				{
+					"name": "Half-Elf (Drow; Weapons Training)",
+					"source": "MPMM",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "Drow Descendant (Choose 1)",
+							"items": {
+								"name": "Close Quarters Weapon Training",
+								"type": "entries",
+								"entries": [
+									"As a descendant of a Drow, you have proficiency with {@item rapier|phb|rapiers}, {@item shortsword|phb|shortswords}, and {@item hand crossbow|phb|hand crossbows}."
+								]
+							}
+						}
+					},
+					"additionalSpells": null
+				},
+				{
+					"name": "Half-Elf (Drow; Magic)",
+					"source": "MPMM",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "Drow Descendant (Choose 1)",
+							"items": {
+								"name": "Drow Cantrip",
+								"type": "entries",
+								"entries": [
+									"As a descendant of a Drow, you know one cantrip of your choice from the {@filter sorcerer spell list|spells|source=|level=0|class=sorcerer|components & miscellaneous=} and can cast it without material components (unless there has a cost). Intelligence, Wisdom, or Charisma is your spellcasting ability for it (chose when you select this race)."
+								]
+							}
+						}
+					},
+					"weaponProficiencies": null
+				},
+				{
+					"name": "Half-Elf (Drow; Extended Darkvision)",
+					"source": "MPMM",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "Drow Descendant (Choose 1)",
+							"items": {
+								"name": "Superior Darkvision",
+								"type": "entries",
+								"entries": [
+									"As a descendant of a Drow, your darkvision extends farthur than others. You gain an additional 60 feet to your darkvision, for a total of 120 feet."
+								]
+							}
+						}
+					},
+					"darkvision": 120,
+					"weaponProficiencies": null,
+					"additionalSpells": null
+				}
+			]
+		},
+		{
 			"name": "Half-Orc",
 			"source": "PHB",
 			"page": 40,
@@ -7996,7 +8228,7 @@
 		{
 			"name": "Halfling (Ghostwise)",
 			"source": "MPMM",
-			"page": 21,
+			"page": 22,
 			"otherSources": [
 				{
 					"source": "SCAG",
@@ -21217,194 +21449,6 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Drow Ancestry",
-			"source": "MPMM",
-			"raceName": "Half-Elf",
-			"raceSource": "PHB",
-			"page": 13,
-			"otherSources": [
-				{
-					"source": "SCAG",
-					"page": 116
-				}
-			],
-			"ability": [
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
-								"dex",
-								"con",
-								"int",
-								"wis",
-								"cha"
-							],
-							"weights": [
-								2,
-								1
-							]
-						}
-					}
-				},
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
-								"dex",
-								"con",
-								"int",
-								"wis",
-								"cha"
-							],
-							"weights": [
-								1,
-								1,
-								1
-							]
-						}
-					}
-				}
-			],
-			"traitTags": [
-				"Uncommon Race"
-			],
-			"skillProficiencies": [
-				{
-					"any": 2
-				}
-			],
-			"weaponProficiencies": [
-				{
-					"rapier|phb": true,
-					"shortsword|phb": true,
-					"hand crossbow|phb": true
-				}
-			],
-			"additionalSpells": [
-				{
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					},
-					"known": {
-						"1": {
-							"_": [
-								{
-									"choose": "level=0|class=Sorcerer"
-								}
-							]
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"type": "entries",
-					"name": "Skill Versatility",
-					"entries": [
-						"You gain proficiency in two skills of your choice."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Drow Descendant (Choose 1)",
-					"entries": [
-						"As a descendant of a Drow, you gain one of the following traits of your choice:",
-						{
-							"type": "list",
-							"items": [
-								{
-									"type": "item",
-									"name": "Close Quarters Weapon Training",
-									"entries": [
-										"You have proficiency with {@item rapier|phb|rapiers}, {@item shortsword|phb|shortswords}, and {@item hand crossbow|phb|hand crossbows}."
-									]
-								},
-								{
-									"type": "item",
-									"name": "Drow Cantrip",
-									"entries": [
-										"You know one cantrip of your choice from the {@filter sorcerer spell list|spells|source=|level=0|class=sorcerer|components & miscellaneous=} and can cast it without material components (unless there has a cost). Intelligence, Wisdom, or Charisma is your spellcasting ability for it (chose when you select this race)."
-									]
-								},
-								{
-									"type": "item",
-									"name": "Superior Darkvision",
-									"entries": [
-										"Your darkvision extends farthur than others. You gain an additional 60 feet to your darkvision, for a total of 120 feet."
-									]
-								}
-							]
-						}
-					]
-				}
-			],
-			"_versions": [
-				{
-					"name": "Drow Ancestry; Close Quarters Weapon Training",
-					"source": "MPMM",
-					"_mod": {
-						"entries": {
-							"mode": "replaceArr",
-							"replace": "Drow Descendant (Choose 1)",
-							"items": {
-								"name": "Drow Descendant; Close Quarters Weapon Training",
-								"type": "entries",
-								"entries": [
-									"You have proficiency with {@item rapier|phb|rapiers}, {@item shortsword|phb|shortswords}, and {@item hand crossbow|phb|hand crossbows}."
-								]
-							}
-						}
-					},
-					"additionalSpells": null
-				},
-				{
-					"name": "Drow Ancestry; Drow Cantrip",
-					"source": "MPMM",
-					"_mod": {
-						"entries": {
-							"mode": "replaceArr",
-							"replace": "Drow Descendant (Choose 1)",
-							"items": {
-								"name": "Drow Descendant; Drow Cantrip",
-								"type": "entries",
-								"entries": [
-									"You know one cantrip of your choice from the {@filter sorcerer spell list|spells|source=|level=0|class=sorcerer|components & miscellaneous=} and can cast it without material components (unless there has a cost). Intelligence, Wisdom, or Charisma is your spellcasting ability for it (chose when you select this race)."
-								]
-							}
-						}
-					}
-				},
-				{
-					"name": "Drow Ancestry; Superior Darkvision",
-					"source": "MPMM",
-					"_mod": {
-						"entries": {
-							"mode": "replaceArr",
-							"replace": "Drow Descendant (Choose 1)",
-							"items": {
-								"name": "Drow Descendant; Superior Darkvision",
-								"type": "entries",
-								"entries": [
-									"Your darkvision extends farthur than others. You gain an additional 60 feet to your darkvision, for a total of 120 feet."
-								]
-							}
-						}
-					},
-					"darkvision": 120,
-					"traitTags": [
-						"Superior Darkvision"
-					],
-					"additionalSpells": null
-				}
-			]
-		},
-		{
 			"name": "Moon Elf Ancestry",
 			"source": "MPMM",
 			"raceName": "Half-Elf",
@@ -22049,7 +22093,7 @@
 			"raceSource": "PHB",
 			"page": 116,
 			"reprintedAs": [
-				"Half-Elf (Drow Ancestry)|MPMM"
+				"Half-Elf (Drow)|MPMM"
 			],
 			"ability": [
 				{
