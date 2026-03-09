@@ -12004,6 +12004,12 @@
                 }
             },
             "race": {
+                "PHB": {
+                    "Dwarf (Hill)": {
+                        "baseName": "Dwarf",
+                        "baseSource": "PHB"
+                    }
+                },
                 "ERLW": {
                     "Human (Mark of Making)": {
                         "baseName": "Human",
@@ -16364,6 +16370,12 @@
                 }
             },
             "race": {
+                "PHB": {
+                    "Dwarf (Hill)": {
+                        "baseName": "Dwarf",
+                        "baseSource": "PHB"
+                    }
+                },
                 "ERLW": {
                     "Human (Mark of Sentinel)": {
                         "baseName": "Human",
@@ -18678,6 +18690,10 @@
             },
             "race": {
                 "PHB": {
+                    "Dwarf (Hill)": {
+                        "baseName": "Dwarf",
+                        "baseSource": "PHB"
+                    },
                     "Elf (Drow)": {
                         "baseName": "Elf",
                         "baseSource": "PHB"
