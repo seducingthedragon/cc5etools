@@ -619,10 +619,7 @@
                         "baseSource": "MPMM"
                     },
                     "Half-Elf (Drow)": true,
-                    "Half-Elf (Sun Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Sun)": true,
                     "Kobold": true
                 },
                 "SCAG": {
@@ -2296,10 +2293,7 @@
                 "MPMM": {
                     "Half-Elf (Drow)": true,
                     "Half-Elf (Moon)": true,
-                    "Half-Elf (Sun Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Sun)": true,
                     "Kobold": true
                 },
                 "SCAG": {
@@ -3152,10 +3146,7 @@
                 },
                 "MPMM": {
                     "Half-Elf (Drow)": true,
-                    "Half-Elf (Sun Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Sun)": true,
                     "Kobold": true,
                     "Tiefling (Resentful)": true
                 },
@@ -5030,10 +5021,7 @@
                     "Astral Elf": true,
                     "Half-Elf (Drow)": true,
                     "Half-Elf (Moon)": true,
-                    "Half-Elf (Sun Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Sun)": true,
                     "Kobold": true
                 },
                 "PSX": {
@@ -7660,10 +7648,7 @@
                 },
                 "MPMM": {
                     "Half-Elf (Drow)": true,
-                    "Half-Elf (Sun Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Sun)": true,
                     "Kobold": true,
                     "Tiefling (Envious)": true
                 },
@@ -8440,10 +8425,7 @@
                     "Eladrin": true,
                     "Half-Elf (Drow)": true,
                     "Half-Elf (Moon)": true,
-                    "Half-Elf (Sun Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Sun)": true,
                     "Kobold": true,
                     "Tiefling (Lustful)": true
                 },
@@ -9209,10 +9191,7 @@
                 "MPMM": {
                     "Eladrin": true,
                     "Half-Elf (Moon)": true,
-                    "Half-Elf (Sun Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Sun)": true,
                     "Half-Elf (Wood Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -11150,10 +11129,7 @@
                     "Astral Elf": true,
                     "Half-Elf (Drow)": true,
                     "Half-Elf (Moon)": true,
-                    "Half-Elf (Sun Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Sun)": true,
                     "Kobold": true
                 },
                 "VGM": {
@@ -11662,10 +11638,7 @@
                     "Githzerai": true,
                     "Half-Elf (Drow)": true,
                     "Half-Elf (Moon)": true,
-                    "Half-Elf (Sun Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Sun)": true,
                     "Kobold": true
                 },
                 "SCAG": {
@@ -12414,10 +12387,7 @@
                 "MPMM": {
                     "Half-Elf (Drow)": true,
                     "Half-Elf (Moon)": true,
-                    "Half-Elf (Sun Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Sun)": true,
                     "Half-Elf (Wood Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -12545,10 +12515,7 @@
                 "MPMM": {
                     "Half-Elf (Drow)": true,
                     "Half-Elf (Moon)": true,
-                    "Half-Elf (Sun Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Sun)": true,
                     "Kobold": true
                 },
                 "PSX": {
@@ -12709,10 +12676,7 @@
                     "Eladrin": true,
                     "Half-Elf (Drow)": true,
                     "Half-Elf (Moon)": true,
-                    "Half-Elf (Sun Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Sun)": true,
                     "Kobold": true,
                     "Tiefling (Prideful)": true
                 },
@@ -13920,10 +13884,7 @@
                 },
                 "MPMM": {
                     "Half-Elf (Drow)": true,
-                    "Half-Elf (Sun Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Sun)": true,
                     "Half-Elf (Wood Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -14234,10 +14195,7 @@
                     "Deep Gnome": true,
                     "Half-Elf (Drow)": true,
                     "Half-Elf (Moon)": true,
-                    "Half-Elf (Sun Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Sun)": true,
                     "Kobold": true
                 },
                 "PSX": {
@@ -15020,10 +14978,7 @@
                 },
                 "MPMM": {
                     "Half-Elf (Drow)": true,
-                    "Half-Elf (Sun Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Sun)": true,
                     "Kobold": true,
                     "Tiefling (Slothful)": true
                 },
@@ -15293,10 +15248,7 @@
                 },
                 "MPMM": {
                     "Half-Elf (Moon)": true,
-                    "Half-Elf (Sun Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Sun)": true,
                     "Half-Elf (Wood Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -16469,10 +16421,7 @@
                         "baseSource": "MPMM"
                     },
                     "Half-Elf (Drow)": true,
-                    "Half-Elf (Sun Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Sun)": true,
                     "Kobold": true
                 },
                 "SCAG": {
@@ -17940,10 +17889,7 @@
                 },
                 "MPMM": {
                     "Half-Elf (Drow)": true,
-                    "Half-Elf (Sun Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Sun)": true,
                     "Kobold": true
                 },
                 "SCAG": {
@@ -18616,10 +18562,7 @@
                 "MPMM": {
                     "Half-Elf (Drow)": true,
                     "Half-Elf (Moon)": true,
-                    "Half-Elf (Sun Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Sun)": true,
                     "Kobold": true
                 },
                 "PSX": {
@@ -19872,10 +19815,7 @@
                 "MPMM": {
                     "Half-Elf (Drow)": true,
                     "Half-Elf (Moon)": true,
-                    "Half-Elf (Sun Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Sun)": true,
                     "Kobold": true
                 },
                 "PSX": {
@@ -20174,10 +20114,7 @@
                 },
                 "MPMM": {
                     "Half-Elf (Drow)": true,
-                    "Half-Elf (Sun Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Sun)": true,
                     "Kobold": true
                 },
                 "PSX": {
@@ -20475,10 +20412,7 @@
                 },
                 "MPMM": {
                     "Half-Elf (Drow)": true,
-                    "Half-Elf (Sun Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Sun)": true,
                     "Kobold": true
                 },
                 "PSX": {
@@ -20606,10 +20540,7 @@
                 },
                 "MPMM": {
                     "Half-Elf (Drow)": true,
-                    "Half-Elf (Sun Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Sun)": true,
                     "Kobold": true
                 },
                 "PSX": {
@@ -21199,10 +21130,7 @@
                 },
                 "MPMM": {
                     "Half-Elf (Drow)": true,
-                    "Half-Elf (Sun Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Sun)": true,
                     "Kobold": true
                 },
                 "PSX": {
@@ -22186,10 +22114,7 @@
                 },
                 "MPMM": {
                     "Half-Elf (Drow)": true,
-                    "Half-Elf (Sun Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Sun)": true,
                     "Half-Elf (Wood Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -22375,10 +22300,7 @@
                 },
                 "MPMM": {
                     "Half-Elf (Drow)": true,
-                    "Half-Elf (Sun Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Sun)": true,
                     "Half-Elf (Wood Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -22860,10 +22782,7 @@
                 },
                 "MPMM": {
                     "Half-Elf (Drow)": true,
-                    "Half-Elf (Sun Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Sun)": true,
                     "Half-Elf (Wood Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -23347,10 +23266,7 @@
                 },
                 "MPMM": {
                     "Half-Elf (Drow)": true,
-                    "Half-Elf (Sun Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Sun)": true,
                     "Half-Elf (Wood Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -23522,10 +23438,7 @@
                 },
                 "MPMM": {
                     "Half-Elf (Drow)": true,
-                    "Half-Elf (Sun Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Sun)": true,
                     "Half-Elf (Wood Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -23830,10 +23743,7 @@
                 },
                 "MPMM": {
                     "Half-Elf (Drow)": true,
-                    "Half-Elf (Sun Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Sun)": true,
                     "Half-Elf (Wood Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -24434,10 +24344,7 @@
                 },
                 "MPMM": {
                     "Half-Elf (Drow)": true,
-                    "Half-Elf (Sun Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Sun)": true,
                     "Half-Elf (Wood Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -24919,10 +24826,7 @@
                 "MPMM": {
                     "Half-Elf (Drow)": true,
                     "Half-Elf (Sea)": true,
-                    "Half-Elf (Sun Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Sun)": true,
                     "Half-Elf (Wood Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -25493,10 +25397,7 @@
                 "MPMM": {
                     "Half-Elf (Drow)": true,
                     "Half-Elf (Moon)": true,
-                    "Half-Elf (Sun Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Sun)": true,
                     "Half-Elf (Wood Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -25694,10 +25595,7 @@
                     }
                 },
                 "MPMM": {
-                    "Half-Elf (Sun Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    }
+                    "Half-Elf (Sun)": true
                 },
                 "SCAG": {
                     "Half-Elf (Variant; Moon Elf or Sun Elf Descent)": {
@@ -26257,10 +26155,7 @@
                 "MPMM": {
                     "Half-Elf (Drow)": true,
                     "Half-Elf (Moon)": true,
-                    "Half-Elf (Sun Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Sun)": true,
                     "Half-Elf (Wood Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -26493,10 +26388,7 @@
                 "MPMM": {
                     "Half-Elf (Drow)": true,
                     "Half-Elf (Moon)": true,
-                    "Half-Elf (Sun Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Sun)": true,
                     "Half-Elf (Wood Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -26903,10 +26795,7 @@
                 "MPMM": {
                     "Half-Elf (Drow)": true,
                     "Half-Elf (Moon)": true,
-                    "Half-Elf (Sun Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Sun)": true,
                     "Half-Elf (Wood Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -27011,10 +26900,7 @@
                 "MPMM": {
                     "Half-Elf (Drow)": true,
                     "Half-Elf (Moon)": true,
-                    "Half-Elf (Sun Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Sun)": true,
                     "Half-Elf (Wood Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
@@ -27427,10 +27313,7 @@
                 },
                 "MPMM": {
                     "Half-Elf (Drow)": true,
-                    "Half-Elf (Sun Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Sun)": true,
                     "Kobold": true,
                     "Tiefling (Wrathful)": true
                 },

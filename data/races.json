@@ -8509,6 +8509,241 @@
 			]
 		},
 		{
+			"name": "Half-Elf (Sun)",
+			"source": "MPMM",
+			"page": 21,
+			"otherSources": [
+				{
+					"source": "SCAG",
+					"page": 116
+				}
+			],
+			"ability": [
+                {
+                    "choose": {
+                        "weighted": {
+                            "from": [
+                                "str",
+                                "dex",
+                                "con",
+                                "int",
+                                "wis",
+                                "cha"
+                            ],
+                            "weights": [
+                                2,
+                                1
+                            ]
+                        }
+                    }
+                },
+                {
+                    "choose": {
+                        "weighted": {
+                            "from": [
+                                "str",
+                                "dex",
+                                "con",
+                                "int",
+                                "wis",
+                                "cha"
+                            ],
+                            "weights": [
+                                1,
+                                1,
+                                1
+                            ]
+                        }
+                    }
+                }
+            ],
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"lineage": true,
+			"heightAndWeight": {
+				"baseHeight": 58,
+				"heightMod": "2d8",
+				"baseWeight": 105,
+				"weightMod": "2d4"
+			},
+			"age": {
+				"max": 180
+			},
+			"darkvision": 60,
+			"soundClip": {
+				"type": "internal",
+				"path": "races/half-elf.mp3"
+			},
+			"traitTags": [
+				"Uncommon Race"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"elvish": true,
+					"anyStandard": 1
+				}
+			],
+			"skillProficiencies": [
+				{
+					"any": 2
+				}
+			],
+			"weaponProficiencies": [
+				{
+					"longsword|phb": true,
+					"shortsword|phb": true,
+					"shortbow|phb": true,
+					"longbow|phb": true
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": {
+							"_": [
+								{
+									"choose": "level=0|class=Wizard"
+								}
+							]
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"Thanks to your elf blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fey Ancestry",
+					"entries": [
+						"You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Skill Versatility",
+					"entries": [
+						"You gain proficiency in two skills of your choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sun Elf Descendant (Choose 1)",
+					"entries": [
+						"As a descendant of a Sun Elf, you gain one of the following traits of your choice:",
+						{
+							"type": "list",
+							"items": [
+								{
+									"type": "item",
+									"name": "Elven Weapon Training",
+									"entries": [
+										"You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Sun Elf Cantrip",
+									"entries": [
+										"You know one cantrip of your choice from the {@filter wizard spell list|spells|source=|level=0|class=wizard|components & miscellaneous=} and can cast it without material components (unless there is a cost). Intelligence, Wisdom, or Charisma is your spellcasting ability for it (chose when you select this race)."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Intellectual Studies",
+									"entries": [
+										"Choose one of the following skills: {@skill Arcana}, {@skill History}, or {@skill Religion}. When you make an Intelligence check using your chosen skill, you can add {@dice 1d4} to the total of your skill check."
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common, Elvish, and one other {@filter standard language|languages|source=|type=standard} of your choice."
+					]
+				}
+			],
+			"_versions": [
+				{
+					"name": "Half-Elf (Sun; Weapons Training)",
+					"source": "MPMM",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "Sun Elf Descendant (Choose 1)",
+							"items": {
+								"name": "Elven Weapon Training",
+								"type": "entries",
+								"entries": [
+									"As a descendant of a Sun Elf, you have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
+								]
+							}
+						}
+					},
+					"additionalSpells": null
+				},
+				{
+					"name": "Half-Elf (Sun; Magic",
+					"source": "MPMM",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "Sun Elf Descendant (Choose 1)",
+							"items": {
+								"name": "Sun Elf Cantrip",
+								"type": "entries",
+								"entries": [
+									"As a descendant of a Sun Elf, you know one cantrip of your choice from the {@filter wizard spell list|spells|source=|level=0|class=wizard|components & miscellaneous=} and can cast it without material components (unless there is a cost). Intelligence, Wisdom, or Charisma is your spellcasting ability for it (chose when you select this race)."
+								]
+							}
+						}
+					},
+					"weaponProficiencies": null
+				},
+				{
+					"name": "Half-Elf (Sun; Studious",
+					"source": "MPMM",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "Sun Elf Descendant (Choose 1)",
+							"items": {
+								"name": "Intellectual Studies",
+								"type": "entries",
+								"entries": [
+									"As a descendant of a Sun Elf, you choose one of the following skills: {@skill Arcana}, {@skill History}, or {@skill Religion}. When you make an Intelligence check using your chosen skill, you can add {@dice 1d4} to the total of your skill check."
+								]
+							}
+						}
+					},
+					"traitTags": [
+						"Skill Bonus Dice"
+					],
+					"weaponProficiencies": null,
+					"additionalSpells": null
+				}
+			]
+		},
+		{
 			"name": "Half-Orc",
 			"source": "PHB",
 			"page": 40,
@@ -21917,196 +22152,6 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Sun Elf Ancestry",
-			"source": "MPMM",
-			"raceName": "Half-Elf",
-			"raceSource": "PHB",
-			"page": 13,
-			"otherSources": [
-				{
-					"source": "SCAG",
-					"page": 116
-				}
-			],
-			"ability": [
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
-								"dex",
-								"con",
-								"int",
-								"wis",
-								"cha"
-							],
-							"weights": [
-								2,
-								1
-							]
-						}
-					}
-				},
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
-								"dex",
-								"con",
-								"int",
-								"wis",
-								"cha"
-							],
-							"weights": [
-								1,
-								1,
-								1
-							]
-						}
-					}
-				}
-			],
-			"traitTags": [
-				"Uncommon Race"
-			],
-			"skillProficiencies": [
-				{
-					"any": 2
-				}
-			],
-			"weaponProficiencies": [
-				{
-					"longsword|phb": true,
-					"shortsword|phb": true,
-					"shortbow|phb": true,
-					"longbow|phb": true
-				}
-			],
-			"additionalSpells": [
-				{
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					},
-					"known": {
-						"1": {
-							"_": [
-								{
-									"choose": "level=0|class=Wizard"
-								}
-							]
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"type": "entries",
-					"name": "Skill Versatility",
-					"entries": [
-						"You gain proficiency in two skills of your choice."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Sun Elf Descendant (Choose 1)",
-					"entries": [
-						"As a descendant of a Sun Elf, you gain one of the following traits of your choice:",
-						{
-							"type": "list",
-							"items": [
-								{
-									"type": "item",
-									"name": "Elven Weapon Training",
-									"entries": [
-										"You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
-									]
-								},
-								{
-									"type": "item",
-									"name": "Intellectual Studies",
-									"entries": [
-										"Choose one of the following skills: {@skill Arcana}, {@skill History}, {@skill Nature}, or {@skill Religion}. When you make an Intelligence check using your chosen skill, you can roll a {@dice 1d4} and add the number rolled to the ability check."
-									]
-								},
-								{
-									"type": "item",
-									"name": "Sun Elf Cantrip",
-									"entries": [
-										"You know one cantrip of your choice from the {@filter wizard spell list|spells|source=|level=0|class=wizard|components & miscellaneous=} and can cast it without material components (unless there is a cost). Intelligence, Wisdom, or Charisma is your spellcasting ability for it (chose when you select this race)."
-									]
-								}
-							]
-						}
-					]
-				}
-			],
-			"_versions": [
-				{
-					"name": "Sun Elf Ancestry; Elven Weapon Training",
-					"source": "MPMM",
-					"_mod": {
-						"entries": {
-							"mode": "replaceArr",
-							"replace": "Sun Elf Descendant (Choose 1)",
-							"items": {
-								"name": "Sun Elf Descendant; Elven Weapon Training",
-								"type": "entries",
-								"entries": [
-									"You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
-								]
-							}
-						}
-					},
-					"additionalSpells": null
-				},
-				{
-					"name": "Sun Elf Ancestry; Intellectual Studies",
-					"source": "MPMM",
-					"_mod": {
-						"entries": {
-							"mode": "replaceArr",
-							"replace": "Sun Elf Descendant (Choose 1)",
-							"items": {
-								"name": "Sun Elf Descendant; Intellectual Studies",
-								"type": "entries",
-								"entries": [
-									"Choose one of the following skills: {@skill Arcana}, {@skill History}, {@skill Nature}, or {@skill Religion}. When you make an Intelligence check using your chosen skill, you can roll a {@dice 1d4} and add the number rolled to the ability check."
-								]
-							}
-						}
-					},
-					"traitTags": [
-						"Skill Bonus Dice"
-					],
-					"weaponProficiencies": null,
-					"additionalSpells": null
-				},
-				{
-					"name": "Sun Elf Ancestry; Sun Elf Cantrips",
-					"source": "MPMM",
-					"_mod": {
-						"entries": {
-							"mode": "replaceArr",
-							"replace": "Sun Elf Descendant (Choose 1)",
-							"items": {
-								"name": "Sun Elf Descendant; Sun Elf Cantrips",
-								"type": "entries",
-								"entries": [
-									"You know one cantrip of your choice from the {@filter wizard spell list|spells|source=|level=0|class=wizard|components & miscellaneous=} and can cast it without material components (unless there is a cost). Intelligence, Wisdom, or Charisma is your spellcasting ability for it (chose when you select this race)."
-								]
-							}
-						}
-					},
-					"weaponProficiencies": null
-				}
-			]
-		},
-		{
 			"name": "Variant; Aquatic Elf Descent",
 			"source": "SCAG",
 			"raceName": "Half-Elf",
@@ -22581,7 +22626,7 @@
 			"source": "SCAG",
 			"reprintedAs": [
 				"Half-Elf (Moon)|MPMM",
-				"Half-Elf (Sun Elf Ancestry)|MPMM"
+				"Half-Elf (Sun)|MPMM"
 			],
 			"raceName": "Half-Elf",
 			"raceSource": "PHB",
