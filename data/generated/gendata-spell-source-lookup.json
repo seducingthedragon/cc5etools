@@ -12779,7 +12779,8 @@
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"
                     },
-                    "Kobold": true
+                    "Kobold": true,
+                    "Tiefling (Prideful)": true
                 },
                 "PSX": {
                     "Merfolk (Ixalan; Blue)": {
@@ -17092,6 +17093,9 @@
                         "baseName": "Human",
                         "baseSource": "PHB"
                     }
+                },
+                "MPMM": {
+                    "Triton": true
                 }
             },
             "reward": {
@@ -18175,8 +18179,17 @@
                     }
                 },
                 "MPMM": {
+                    "Aasimar": true,
                     "Duergar": true,
-                    "Tiefling (Prideful)": true
+                    "Tiefling (Envious)": true,
+                    "Tiefling (Gluttonous)": true,
+                    "Tiefling (Greedsome)": true,
+                    "Tiefling (Lustful)": true,
+                    "Tiefling (Prideful)": true,
+                    "Tiefling (Resentful)": true,
+                    "Tiefling (Slothful)": true,
+                    "Tiefling (Vain)": true,
+                    "Tiefling (Wrathful)": true
                 },
                 "MTF": {
                     "Tiefling (Asmodeus)": {
@@ -25045,7 +25058,8 @@
                         "baseSource": "PHB"
                     },
                     "Kobold": true,
-                    "Sea Elf": true
+                    "Sea Elf": true,
+                    "Triton": true
                 },
                 "PSX": {
                     "Merfolk (Ixalan; Blue)": {

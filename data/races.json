@@ -15864,6 +15864,14 @@
 							"wis",
 							"cha"
 						]
+					},
+					"known": {
+						"1": [
+							"shape water|xge#c"
+						],
+						"3": [
+							"speak with animals"
+						]
 					}
 				}
 			],
@@ -15980,6 +15988,43 @@
 							"trident|phb": true,
 							"whip|phb": true
 						}
+					],
+					"overwrite": [
+						"additionalSpells"
+					],
+					"additionalSpells": [
+						{
+							"innate": {
+								"1": {
+									"daily": {
+										"1": [
+											"fog cloud"
+										]
+									}
+								},
+								"3": {
+									"daily": {
+										"1": [
+											"gust of wind"
+										]
+									}
+								},
+								"5": {
+									"daily": {
+										"1": [
+											"water walk"
+										]
+									}
+								}
+							},
+							"ability": {
+								"choose": [
+									"int",
+									"wis",
+									"cha"
+								]
+							}
+						}
 					]
 				},
 				{
@@ -15998,20 +16043,6 @@
 							}
 						}
 					},
-					"additionalSpells": [
-						{
-							"innate": {
-								"3": [
-									"speak with animals"
-								]
-							},
-							"known": {
-								"1": [
-									"shape water|xge#c"
-								]
-							}
-						}
-					],
 					"resist": [
 						"acid"
 					]
