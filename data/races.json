@@ -456,7 +456,8 @@
 					},
 					"known": {
 						"1": [
-							"light#c"
+							"light#c",
+							"thaumaturgy#c"
 						]
 					},
 					"innate": {
@@ -511,7 +512,7 @@
 					"type": "entries",
 					"name": "Angelic Legacy",
 					"entries": [
-						"You know the {@spell Light} cantrip and can cast it without any material components. Starting at level 3, you can cast {@spell Ceremony|XGE} once per long rest, without having the material component consumed, with this trait. When you reach level 5, you can cast {@spell Prayer of Healing} once per long rest with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you select this race).",
+						"You know two cantrips: {@spell Light} and {@spell Thaumaturgy}. You can cast {@spell Light} without any material components. Starting at level 3, you can cast {@spell Ceremony|XGE} once per long rest, without having the material component consumed, with this trait. When you reach level 5, you can cast {@spell Prayer of Healing} once per long rest with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you select this race).",
 						"{@note If you have a Spellcasting or Pact Magic class feature, you can cast the leveled spells from this trait using those spell slots, following the casting rules provided by your class.}"
 					]
 				},
@@ -529,6 +530,13 @@
 					"entries": [
 						"When you reach 3rd level, you can use a bonus action to unleash the celestial energy within yourself, gaining the benefits of one of the revelations listed below (choose the option each time you transform). Your transformation lasts for 1 minute or until you end it (no action required). You can use this trait once per long rest.",
 						{
+							"type": "abilityDc",
+							"name": "Necrotic Shroud",
+							"attributes": [
+								"cha"
+							]
+						},
+						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
@@ -537,13 +545,6 @@
 									"name": "Necrotic Shroud",
 									"entries": [
 										"{@i Visual Fluff.} Your eyes briefly become pools of darkness, and ghostly, flightless wings sprout from your back temporarily. {@i Area of Effect.} Immediately after you transform, creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw against your Necrotic Shroud DC or become {@condition frightened} of you until the end of your next turn. {@i Bonus Damage.} Once per turn, until the transformation ends, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a magical effect. The extra damage equals your Proficiency Bonus."
-									]
-								},
-								{
-									"type": "abilityDc",
-									"name": "Necrotic Shroud",
-									"attributes": [
-										"cha"
 									]
 								},
 								{
@@ -12390,7 +12391,7 @@
 				}
 			],
 			"resist": [
-				"acid"
+				"cold"
 			],
 			"additionalSpells": [
 				{
@@ -12443,7 +12444,7 @@
 					"type": "entries",
 					"name": "Child of the Sea",
 					"entries": [
-						"You can breathe air and water, and you have resistance to acid damage."
+						"You can breathe air and water, and you have resistance to cold damage."
 					]
 				},
 				{
@@ -13366,7 +13367,6 @@
 				"weightMod": "2d4"
 			},
 			"age": {
-				"mature": 20,
 				"max": 100
 			},
 			"darkvision": 60,
@@ -13388,20 +13388,6 @@
 			],
 			"entries": [
 				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Tabaxi have lifespans equivalent to humans."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"You are Medium or Small. You choose the size when you select this race."
-					]
-				},
-				{
 					"type": "entries",
 					"name": "Speed",
 					"entries": [
@@ -13412,7 +13398,7 @@
 					"type": "entries",
 					"name": "Cat's Claws",
 					"entries": [
-						"You can use your claws to make unarmed strikes. When you hit with them, the strike deals {@damage 1d6} + your Strength modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike."
+						"You can use your claws to make {@action unarmed attack||unarmed strike attacks}. On a hit, the strike deals slashing damage equal to {@damage 1d6} + your Strength modifier, instead of the normal bludgeoning."
 					]
 				},
 				{
@@ -13711,13 +13697,6 @@
 				},
 				{
 					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"You are Medium or Small. You choose the size when you select this race."
-					]
-				},
-				{
-					"type": "entries",
 					"name": "Chameleon Carapace",
 					"entries": [
 						"While you aren't wearing armor, your carapace gives you a base Armor Class of 13 + your Dexterity modifier.",
@@ -13881,7 +13860,6 @@
 				"weightMod": "2d4"
 			},
 			"age": {
-				"mature": 20,
 				"max": 100
 			},
 			"darkvision": 60,
@@ -13930,19 +13908,13 @@
 					},
 					"known": {
 						"1": [
-							"fire bolt#c"
+							"fire bolt#c",
+							"thaumaturgy#c"
 						]
 					}
 				}
 			],
 			"entries": [
-				{
-					"type": "entries",
-					"name": "Age",
-					"entries": [
-						"Tieflings mature at the same rate as humans but live a few years longer."
-					]
-				},
 				{
 					"type": "entries",
 					"name": "Fiendish Resistance",
@@ -13968,7 +13940,7 @@
 					"type": "entries",
 					"name": "Envious Legacy",
 					"entries": [
-						"You know the {@spell Fire Bolt} cantrip. Once you reach 3rd level, you can cast {@spell Hellish Rebuke} as a 2nd-level spell once per long rest with this trait. Once you reach 5th level, you can cast {@spell Primordial Blade}, summoning only the flame blade, once per long rest without material components with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race).",
+						"You know two cantrips: {@spell Fire Bolt} and {@spell Thaumaturgy}. Once you reach 3rd level, you can cast {@spell Hellish Rebuke} as a 2nd-level spell once per long rest with this trait. Once you reach 5th level, you can cast {@spell Primordial Blade}, summoning only the flame blade, once per long rest without material components with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race).",
 						"{@note If you have a Spellcasting or Pact Magic class feature, you can cast the leveled spells from this trait using those spell slots, following the casting rules provided by your class.}"
 					]
 				},
@@ -13986,13 +13958,20 @@
 					"entries": [
 						"When you reach 3rd level, you can use a bonus action to unleash the fiendish energy within yourself, gaining the benefits of one of the revelations listed below (choose the option each time you transform). Your transformation lasts for 1 minute or until you end it (no action required). You can use this trait once per long rest.",
 						{
+							"type": "abilityDc",
+							"name": "Toxic Jealousy",
+							"attributes": [
+								"cha"
+							]
+						},
+						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
 									"type": "item",
 									"name": "Toxic Jealousy",
-									"entry": "{@i Visual Fluff.} Your eyes briefly become pools of deep green, and ghostly, flightless wings sprout from your back temporarily. {@i Area of Effect.} Immediately after you transform, creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw ({@dc 8} + your proficiency bonus + your Charisma modifier) or become {@condition blinded} by jealousy until the end of your next turn. {@i Bonus Damage.} Once per turn, until the transformation ends, you can deal extra acid, necrotic, or poison damage (your choice) to one target when you deal damage to it with an attack or a magical effect. The extra damage equals your Proficiency Bonus."
+									"entry": "{@i Visual Fluff.} Your eyes briefly become pools of deep green, and ghostly, flightless wings sprout from your back temporarily. {@i Area of Effect.} Immediately after you transform, creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw or become {@condition blinded} by jealousy until the end of your next turn. {@i Bonus Damage.} Once per turn, until the transformation ends, you can deal extra acid, necrotic, or poison damage (your choice) to one target when you deal damage to it with an attack or a magical effect. The extra damage equals your Proficiency Bonus."
 								},
 								{
 									"type": "item",
@@ -14068,7 +14047,6 @@
 				"weightMod": "2d4"
 			},
 			"age": {
-				"mature": 20,
 				"max": 100
 			},
 			"darkvision": 60,
@@ -14117,19 +14095,13 @@
 					},
 					"known": {
 						"1": [
-							"retrieve|bmt#c"
+							"retrieve|bmt#c",
+							"thaumaturgy#c"
 						]
 					}
 				}
 			],
 			"entries": [
-				{
-					"type": "entries",
-					"name": "Age",
-					"entries": [
-						"Tieflings mature at the same rate as humans but live a few years longer."
-					]
-				},
 				{
 					"type": "entries",
 					"name": "Fiendish Resistance",
@@ -14155,7 +14127,7 @@
 					"type": "entries",
 					"name": "Gluttonous Legacy",
 					"entries": [
-						"You know the {@spell Retrieve|BMT} cantrip. Once you reach 3rd level, you can cast {@spell Ray of Sickness} as a 2nd-level spell, once per long rest with this trait. Once you reach 5th level, you can also cast the {@spell Hangover|BMT} spell once per long rest, without material components, with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race).",
+						"You know two cantrips: {@spell Retrieve|BMT} and {@spell Thaumaturgy}. Once you reach 3rd level, you can cast {@spell Ray of Sickness} as a 2nd-level spell, once per long rest with this trait. Once you reach 5th level, you can also cast the {@spell Hangover|BMT} spell once per long rest, without material components, with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race).",
 						"{@note If you have a Spellcasting or Pact Magic class feature, you can cast the leveled spells from this trait using those spell slots, following the casting rules provided by your class.}"
 					]
 				},
@@ -14173,13 +14145,20 @@
 					"entries": [
 						"When you reach 3rd level, you can use a bonus action to unleash the fiendish energy within yourself, gaining the benefits of one of the revelations listed below (choose the option each time you transform). Your transformation lasts for 1 minute or until you end it (no action required). You can use this trait once per long rest.",
 						{
+							"type": "abilityDc",
+							"name": "Vile Death",
+							"attributes": [
+								"cha"
+							]
+						},
+						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
 									"type": "item",
 									"name": "Vile Death",
-									"entry": "{@i Visual Fluff.} Your eyes briefly become pools of sickly darkness, and putrid, flightless wings sprout from your back temporarily. {@i Area of Effect.} Immediately after you transform, creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw ({@dc 8} + your proficiency bonus + your Charisma modifier) or become {@condition poisoned} until the end of your next turn. {@i Bonus Damage.} Once per turn, until the transformation ends, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a magical effect. The extra damage equals your Proficiency Bonus."
+									"entry": "{@i Visual Fluff.} Your eyes briefly become pools of sickly darkness, and putrid, flightless wings sprout from your back temporarily. {@i Area of Effect.} Immediately after you transform, creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw or become {@condition poisoned} until the end of your next turn. {@i Bonus Damage.} Once per turn, until the transformation ends, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a magical effect. The extra damage equals your Proficiency Bonus."
 								},
 								{
 									"type": "item",
@@ -14255,7 +14234,6 @@
 				"weightMod": "2d4"
 			},
 			"age": {
-				"mature": 20,
 				"max": 100
 			},
 			"darkvision": 60,
@@ -14304,19 +14282,13 @@
 					},
 					"known": {
 						"1": [
-							"obfuscate object|bmt#c"
+							"obfuscate object|bmt#c",
+							"thaumaturgy#c"
 						]
 					}
 				}
 			],
 			"entries": [
-				{
-					"type": "entries",
-					"name": "Age",
-					"entries": [
-						"Tieflings mature at the same rate as humans but live a few years longer."
-					]
-				},
 				{
 					"type": "entries",
 					"name": "Fiendish Resistance",
@@ -14342,7 +14314,7 @@
 					"type": "entries",
 					"name": "Greedsome Legacy",
 					"entries": [
-						"You know the {@spell Obfuscate Object|BMT} cantrip. Once you reach 3rd level, you can cast {@spell Tenser's Floating Disk} once per long rest, without material components, with this trait. Once you reach 5th level, you can cast {@spell Arcane Lock} once per long rest, without the material component being consumed, with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race).",
+						"You know two cantrips: {@spell Obfuscate Object|BMT} and {@spell Thaumaturgy}. Once you reach 3rd level, you can cast {@spell Tenser's Floating Disk} once per long rest, without material components, with this trait. Once you reach 5th level, you can cast {@spell Arcane Lock} once per long rest, without the material component being consumed, with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race).",
 						"{@note If you have a Spellcasting or Pact Magic class feature, you can cast the leveled spells from this trait using those spell slots, following the casting rules provided by your class.}"
 					]
 				},
@@ -14360,13 +14332,20 @@
 					"entries": [
 						"When you reach 3rd level, you can use a bonus action to unleash the fiendish energy within yourself, gaining the benefits of one of the revelations listed below (choose the option each time you transform). Your transformation lasts for 1 minute or until you end it (no action required). You can use this trait once per long rest.",
 						{
+							"type": "abilityDc",
+							"name": "Greedy Fear",
+							"attributes": [
+								"cha"
+							]
+						},
+						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
 									"type": "item",
 									"name": "Greedy Fear",
-									"entry": "{@i Visual Fluff.} Your eyes briefly become pools of blinding gold, and ghostly, flightless wings sprout from your back temporarily. {@i Area of Effect.} Immediately after you transform, creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw ({@dc 8} + your proficiency bonus + your Charisma modifier) or become {@condition paralyzed} until the end of your next turn. {@i Bonus Damage.} Once per turn, until the transformation ends, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a magical effect. The extra damage equals your Proficiency Bonus."
+									"entry": "{@i Visual Fluff.} Your eyes briefly become pools of blinding gold, and ghostly, flightless wings sprout from your back temporarily. {@i Area of Effect.} Immediately after you transform, creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw or become {@condition paralyzed} until the end of your next turn. {@i Bonus Damage.} Once per turn, until the transformation ends, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a magical effect. The extra damage equals your Proficiency Bonus."
 								},
 								{
 									"type": "item",
@@ -14442,7 +14421,6 @@
 				"weightMod": "2d4"
 			},
 			"age": {
-				"mature": 20,
 				"max": 100
 			},
 			"darkvision": 60,
@@ -14491,19 +14469,13 @@
 					},
 					"known": {
 						"1": [
-							"friends#c"
+							"friends#c",
+							"thaumaturgy#c"
 						]
 					}
 				}
 			],
 			"entries": [
-				{
-					"type": "entries",
-					"name": "Age",
-					"entries": [
-						"Tieflings mature at the same rate as humans but live a few years longer."
-					]
-				},
 				{
 					"type": "entries",
 					"name": "Fiendish Resistance",
@@ -14529,7 +14501,7 @@
 					"type": "entries",
 					"name": "Lustful Legacy",
 					"entries": [
-						"You know the {@spell Friends} cantrip and can cast it without any material components. Once you reach 3rd level, you can cast {@spell Charm Person} as a 2nd-level spell, once per long rest with this trait. Once you reach 5th level, you can cast {@spell Enthrall} once per long rest with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race).",
+						"You know two cantrips: {@spell Friends} and {@spell Thaumaturgy}. You can cast {@spell Friends} without any material components. Once you reach 3rd level, you can cast {@spell Charm Person} as a 2nd-level spell, once per long rest with this trait. Once you reach 5th level, you can cast {@spell Enthrall} once per long rest with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race).",
 						"{@note If you have a Spellcasting or Pact Magic class feature, you can cast the leveled spells from this trait using those spell slots, following the casting rules provided by your class.}"
 					]
 				},
@@ -14547,13 +14519,20 @@
 					"entries": [
 						"When you reach 3rd level, you can use a bonus action to unleash the fiendish energy within yourself, gaining the benefits of one of the revelations listed below (choose the option each time you transform). Your transformation lasts for 1 minute or until you end it (no action required). You can use this trait once per long rest.",
 						{
+							"type": "abilityDc",
+							"name": "Entranced Charm",
+							"attributes": [
+								"cha"
+							]
+						},
+						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
 									"type": "item",
 									"name": "Entranced Charm",
-									"entry": "{@i Visual Fluff.} Your eyes briefly become red pools of darkness, and ghostly, flightless wings sprout from your back temporarily, wafting sweet aroma through the air. {@i Area of Effect.} Immediately after you transform, creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw ({@dc 8} + your proficiency bonus + your Charisma modifier) or become {@condition charmed} by you for 1 minute. At the end of each {@condition charmed} target's turn, they can repeat the save in order to end the condition early. {@i Bonus Damage.} Once per turn, until the transformation ends, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a magical effect. The extra damage equals your Proficiency Bonus."
+									"entry": "{@i Visual Fluff.} Your eyes briefly become red pools of darkness, and ghostly, flightless wings sprout from your back temporarily, wafting sweet aroma through the air. {@i Area of Effect.} Immediately after you transform, creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw or become {@condition charmed} by you for 1 minute. At the end of each {@condition charmed} target's turn, they can repeat the save in order to end the condition early. {@i Bonus Damage.} Once per turn, until the transformation ends, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a magical effect. The extra damage equals your Proficiency Bonus."
 								},
 								{
 									"type": "item",
@@ -14629,7 +14608,6 @@
 				"weightMod": "2d4"
 			},
 			"age": {
-				"mature": 20,
 				"max": 100
 			},
 			"darkvision": 60,
@@ -14678,19 +14656,13 @@
 					},
 					"known": {
 						"1": [
+							"minor illusion#c",
 							"thaumaturgy#c"
 						]
 					}
 				}
 			],
 			"entries": [
-				{
-					"type": "entries",
-					"name": "Age",
-					"entries": [
-						"Tieflings mature at the same rate as humans but live a few years longer."
-					]
-				},
 				{
 					"type": "entries",
 					"name": "Fiendish Resistance",
@@ -14716,7 +14688,7 @@
 					"type": "entries",
 					"name": "Prideful Legacy",
 					"entries": [
-						"You know the {@spell Thaumaturgy} cantrip. Once you reach 3rd level, you can cast {@spell Command} as a 2nd-level spell, once per long rest with this trait. Once you reach 5th level, you can cast {@spell Suggestion} once per long rest, without material components, with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race).",
+						"You know two cantrips: {@spell Minor Illusion} and {@spell Thaumaturgy} cantrip. You can cast {@spell Minor Illusion} without any material components. Once you reach 3rd level, you can cast {@spell Command} as a 2nd-level spell, once per long rest with this trait. Once you reach 5th level, you can cast {@spell Suggestion} once per long rest, without material components, with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race).",
 						"{@note If you have a Spellcasting or Pact Magic class feature, you can cast the leveled spells from this trait using those spell slots, following the casting rules provided by your class.}"
 					]
 				},
@@ -14734,13 +14706,20 @@
 					"entries": [
 						"When you reach 3rd level, you can use a bonus action to unleash the fiendish energy within yourself, gaining the benefits of one of the revelations listed below (choose the option each time you transform). Your transformation lasts for 1 minute or until you end it (no action required). You can use this trait once per long rest.",
 						{
+							"type": "abilityDc",
+							"name": "Commanding Charm",
+							"attributes": [
+								"str"
+							]
+						},
+						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
 									"type": "item",
 									"name": "Commanding Charm",
-									"entry": "{@i Visual Fluff.} Your eyes briefly become pools of darkness, and ghostly, flightless wings sprout from your back temporarily. {@i Area of Effect.} Immediately after you transform, creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw ({@dc 8} + your proficiency bonus + your Charisma modifier) or become {@condition charmed} by you until the end of your next turn. Before the end of your turn, you can issue one command that all {@condition charmed} targets must follow on their next turn. The command cannot involve harming itself or the condition will immediately end. {@i Bonus Damage.} Once per turn, until the transformation ends, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a magical effect. The extra damage equals your Proficiency Bonus."
+									"entry": "{@i Visual Fluff.} Your eyes briefly become pools of darkness, and ghostly, flightless wings sprout from your back temporarily. {@i Area of Effect.} Immediately after you transform, creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw or become {@condition charmed} by you until the end of your next turn. Before the end of your turn, you can issue one command that all {@condition charmed} targets must follow on their next turn. The command cannot involve harming itself or the condition will immediately end. {@i Bonus Damage.} Once per turn, until the transformation ends, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a magical effect. The extra damage equals your Proficiency Bonus."
 								},
 								{
 									"type": "item",
@@ -14816,7 +14795,6 @@
 				"weightMod": "2d4"
 			},
 			"age": {
-				"mature": 20,
 				"max": 100
 			},
 			"darkvision": 60,
@@ -14865,19 +14843,13 @@
 					},
 					"known": {
 						"1": [
-							"chill touch#c"
+							"chill touch#c",
+							"thaumaturgy#c"
 						]
 					}
 				}
 			],
 			"entries": [
-				{
-					"type": "entries",
-					"name": "Age",
-					"entries": [
-						"Tieflings mature at the same rate as humans but live a few years longer."
-					]
-				},
 				{
 					"type": "entries",
 					"name": "Fiendish Resistance",
@@ -14903,7 +14875,7 @@
 					"type": "entries",
 					"name": "Resentful Legacy",
 					"entries": [
-						"You know the {@spell Chill Touch} cantrip. Once you reach 3rd level, you can cast {@spell Searing Smite} as a 2nd-level spell, once per long rest with this trait. Once you reach 5th level, you can cast {@spell Scorching Ray} once per long rest with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race).",
+						"You know two cantrips: {@spell Chill Touch} and {@spell Thaumaturgy}. Once you reach 3rd level, you can cast {@spell Searing Smite} as a 2nd-level spell, once per long rest with this trait. Once you reach 5th level, you can cast {@spell Scorching Ray} once per long rest with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race).",
 						"{@note If you have a Spellcasting or Pact Magic class feature, you can cast the leveled spells from this trait using those spell slots, following the casting rules provided by your class.}"
 					]
 				},
@@ -14921,13 +14893,20 @@
 					"entries": [
 						"When you reach 3rd level, you can use a bonus action to unleash the fiendish energy within yourself, gaining the benefits of one of the revelations listed below (choose the option each time you transform). Your transformation lasts for 1 minute or until you end it (no action required). You can use this trait once per long rest.",
 						{
+							"type": "abilityDc",
+							"name": "Frozen Fear",
+							"attributes": [
+								"cha"
+							]
+						},
+						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
 									"type": "item",
 									"name": "Frozen Fear",
-									"entry": "{@i Visual Fluff.} Your eyes briefly become pools of darkness, and icey, flightless wings sprout from your back temporarily as the air around you grows cold from resentment. {@i Area of Effect.} Immediately after you transform, creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw ({@dc 8} + your proficiency bonus + your Charisma modifier) or become {@condition incapacitated} and {@condition frightened} of you until the end of your next turn. {@i Bonus Damage.} Once per turn, until the transformation ends, you can deal extra necrotic or cold damage (your choice) to one target when you deal damage to it with an attack or a magical effect. The extra damage equals your Proficiency Bonus."
+									"entry": "{@i Visual Fluff.} Your eyes briefly become pools of darkness, and icey, flightless wings sprout from your back temporarily as the air around you grows cold from resentment. {@i Area of Effect.} Immediately after you transform, creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw or become {@condition incapacitated} and {@condition frightened} of you until the end of your next turn. {@i Bonus Damage.} Once per turn, until the transformation ends, you can deal extra necrotic or cold damage (your choice) to one target when you deal damage to it with an attack or a magical effect. The extra damage equals your Proficiency Bonus."
 								},
 								{
 									"type": "item",
@@ -15003,7 +14982,6 @@
 				"weightMod": "2d4"
 			},
 			"age": {
-				"mature": 20,
 				"max": 100
 			},
 			"darkvision": 60,
@@ -15052,19 +15030,13 @@
 					},
 					"known": {
 						"1": [
-							"ray of frost#c"
+							"ray of frost#c",
+							"thaumaturgy#c"
 						]
 					}
 				}
 			],
 			"entries": [
-				{
-					"type": "entries",
-					"name": "Age",
-					"entries": [
-						"Tieflings mature at the same rate as humans but live a few years longer."
-					]
-				},
 				{
 					"type": "entries",
 					"name": "Fiendish Resistance",
@@ -15090,7 +15062,7 @@
 					"type": "entries",
 					"name": "Slothful Legacy",
 					"entries": [
-						"You know the {@spell Ray of Frost} cantrip. Once you reach 3rd level, you can cast the {@spell Bane} spell as a 2nd-level spell, once per long rest without material components with this trait. Once you reach 5th level, you can cast {@spell Hold Person} once per long rest, without material components, with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race).",
+						"You know two cantrips: {@spell Ray of Frost} and {@spell Thaumaturgy}. Once you reach 3rd level, you can cast the {@spell Bane} spell as a 2nd-level spell, once per long rest without material components with this trait. Once you reach 5th level, you can cast {@spell Hold Person} once per long rest, without material components, with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race).",
 						"{@note If you have a Spellcasting or Pact Magic class feature, you can cast the leveled spells from this trait using those spell slots, following the casting rules provided by your class.}"
 					]
 				},
@@ -15107,6 +15079,13 @@
 					"name": "Slothful Revelation",
 					"entries": [
 						"When you reach 3rd level, you can use a bonus action to unleash the fiendish energy within yourself, gaining the benefits of one of the revelations listed below (choose the option each time you transform). Your transformation lasts for 1 minute or until you end it (no action required). You can use this trait once per long rest.",
+						{
+							"type": "abilityDc",
+							"name": "Sluggish Fall",
+							"attributes": [
+								"cha"
+							]
+						},
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
@@ -15190,7 +15169,6 @@
 				"weightMod": "2d4"
 			},
 			"age": {
-				"mature": 20,
 				"max": 100
 			},
 			"darkvision": 60,
@@ -15239,19 +15217,13 @@
 					},
 					"known": {
 						"1": [
+							"thaumaturgy#c",
 							"vicious mockery#c"
 						]
 					}
 				}
 			],
 			"entries": [
-				{
-					"type": "entries",
-					"name": "Age",
-					"entries": [
-						"Tieflings mature at the same rate as humans but live a few years longer."
-					]
-				},
 				{
 					"type": "entries",
 					"name": "Fiendish Resistance",
@@ -15277,7 +15249,7 @@
 					"type": "entries",
 					"name": "Vain Legacy",
 					"entries": [
-						"You know the {@spell Vicious Mockery} cantrip. Once you reach 3rd level, you can cast the {@spell Rumor|BMT} spell once per long rest with this trait. Once you reach 5th level, you can cast {@spell Shadow Puppets|BMT} once per long rest, without material components, with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race).",
+						"You know two cantrips: {@spell Thaumaturgy} and {@spell Vicious Mockery}. Once you reach 3rd level, you can cast the {@spell Rumor|BMT} spell once per long rest with this trait. Once you reach 5th level, you can cast {@spell Shadow Puppets|BMT} once per long rest, without material components, with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race).",
 						"{@note If you have a Spellcasting or Pact Magic class feature, you can cast the leveled spells from this trait using those spell slots, following the casting rules provided by your class.}"
 					]
 				},
@@ -15295,13 +15267,20 @@
 					"entries": [
 						"When you reach 3rd level, you can use a bonus action to unleash the fiendish energy within yourself, gaining the benefits of one of the revelations listed below (choose the option each time you transform). Your transformation lasts for 1 minute or until you end it (no action required). You can use this trait once per long rest.",
 						{
+							"type": "abilityDc",
+							"name": "Sparkling Charm",
+							"attributes": [
+								"cha"
+							]
+						},
+						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
 									"type": "item",
 									"name": "Sparkling Charm",
-									"entry": "{@i Visual Fluff.} Your eyes briefly become pools of darkness as glittering, flightless wings sprout from your back temporarily. {@i Area of Effect.} Immediately after you transform, creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw ({@dc 8} + your proficiency bonus + your Charisma modifier) or become {@condition blinded} and {@condition charmed} by you until the end of your next turn. {@i Bonus Damage.} Once per turn, until the transformation ends, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a magical effect. The extra damage equals your Proficiency Bonus."
+									"entry": "{@i Visual Fluff.} Your eyes briefly become pools of darkness as glittering, flightless wings sprout from your back temporarily. {@i Area of Effect.} Immediately after you transform, creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw or become {@condition blinded} and {@condition charmed} by you until the end of your next turn. {@i Bonus Damage.} Once per turn, until the transformation ends, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a magical effect. The extra damage equals your Proficiency Bonus."
 								},
 								{
 									"type": "item",
@@ -15377,7 +15356,6 @@
 				"weightMod": "2d4"
 			},
 			"age": {
-				"mature": 20,
 				"max": 100
 			},
 			"darkvision": 60,
@@ -15426,6 +15404,7 @@
 					},
 					"known": {
 						"1": [
+							"thaumaturgy#c",
 							"vengeful attack|bmt#c"
 						]
 					}
@@ -15464,7 +15443,7 @@
 					"type": "entries",
 					"name": "Wrathful Legacy",
 					"entries": [
-						"You know the {@spell Vengeful Attack|BMT} cantrip. Once you reach 3rd level, you can cast {@spell Wrathful Smite} as a 2nd-level spell, once per long rest with this trait. Once you reach 5th level, you can cast {@spell Flame Whip} once per long rest, without material components, with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race).",
+						"You know two cantrips: {@spell Thaumaturgy} and {@spell Vengeful Attack|BMT}. Once you reach 3rd level, you can cast {@spell Wrathful Smite} as a 2nd-level spell, once per long rest with this trait. Once you reach 5th level, you can cast {@spell Flame Whip} once per long rest, without material components, with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race).",
 						"{@note If you have a Spellcasting or Pact Magic class feature, you can cast the leveled spells from this trait using those spell slots, following the casting rules provided by your class.}"
 					]
 				},
@@ -15482,13 +15461,20 @@
 					"entries": [
 						"When you reach 3rd level, you can use a bonus action to unleash the fiendish energy within yourself, gaining the benefits of one of the revelations listed below (choose the option each time you transform). Your transformation lasts for 1 minute or until you end it (no action required). You can use this trait once per long rest.",
 						{
+							"type": "abilityDc",
+							"name": "Traitorous Rage",
+							"attributes": [
+								"cha"
+							]
+						},
+						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
 									"type": "item",
 									"name": "Traitorous Rage",
-									"entry": "{@i Visual Fluff.} Your eyes briefly become pools of flame, as a flaming halo appears above you and ghostly, flightless wings sprout from your back temporarily. {@i Area of Effect.} Immediately after you transform, creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw ({@dc 8} + your proficiency bonus + your Charisma modifier) or become {@condition charmed} by you until the end of your next turn and extremely hostile to all other creatures nearby, including their own allies. {@i Bonus Damage.} Once per turn, until the transformation ends, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a magical effect. The extra damage equals your Proficiency Bonus."
+									"entry": "{@i Visual Fluff.} Your eyes briefly become pools of flame, as a flaming halo appears above you and ghostly, flightless wings sprout from your back temporarily. {@i Area of Effect.} Immediately after you transform, creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw or become {@condition charmed} by you until the end of your next turn and extremely hostile to all other creatures nearby, including their own allies. {@i Bonus Damage.} Once per turn, until the transformation ends, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a magical effect. The extra damage equals your Proficiency Bonus."
 								},
 								{
 									"type": "item",
@@ -15586,16 +15572,9 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"You are Medium or Small. You choose the size when you select this race."
-					]
-				},
-				{
-					"type": "entries",
 					"name": "Claws",
 					"entries": [
-						"You have claws that you can use to make unarmed strikes. When you hit with them, the strike deals {@damage 1d6} + your Strength modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike."
+						"You have claws that you can use to make {@action unarmed attack||unarmed strike attacks}. On a hit, the strike deals slashing damage equal to {@damage 1d6} + your Strength modifier, instead of the normal bludgeoning damage."
 					]
 				},
 				{
@@ -15609,7 +15588,7 @@
 					"type": "entries",
 					"name": "Natural Armor",
 					"entries": [
-						"Your shell provides you a base AC of 17 (your Dexterity modifier doesn't affect this number). You can't wear light, medium, or heavy armor, but if you are using a shield, you can apply the shield's bonus as normal."
+						"Your shell provides you a base Armor Class of 17 (your Dexterity modifier doesn't affect this number). You can't wear light, medium, or heavy armor, but if you are using a shield, you can apply the shield's bonus as normal."
 					]
 				},
 				{
@@ -15838,7 +15817,6 @@
 				"weightMod": "2d4"
 			},
 			"age": {
-				"mature": 15,
 				"max": 200
 			},
 			"darkvision": 60,
@@ -15915,7 +15893,7 @@
 					"type": "entries",
 					"name": "Control Air and Water",
 					"entries": [
-						"You know the {@spell Fog Cloud} cantrip. Starting at 3rd level, you can cast {@spell Gust of Wind} once per long rest, without material components, with this trait. Starting at 5th level, you can cast {@spell Water Walk} once per long rest, without material components, with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).",
+						"You can cast {@spell Fog Cloud} once per long rest with this trait. Starting at 3rd level, you can cast {@spell Gust of Wind} once per long rest, without material components, with this trait. Starting at 5th level, you can cast {@spell Water Walk} once per long rest, without material components, with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).",
 						"{@note If you have a Spellcasting or Pact Magic class feature, you can cast the leveled spells from this trait using those spell slots, following the casting rules provided by your class.}"
 					]
 				},
@@ -15923,7 +15901,8 @@
 					"type": "entries",
 					"name": "Darkvision",
 					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.",
+						"Additionally, while underwater in a {@quickref Vision and Light||2||lightly obscured} area within bright or dim light, you do not have disadvantage on {@skill Perception} checks that require sight."
 					]
 				},
 				{
@@ -15942,6 +15921,33 @@
 				},
 				{
 					"type": "entries",
+					"name": "Triton Pride",
+					"entries": [
+						"As part of the Triton lineage and its community, you gain one of the following benefits of your choice:",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Warrior: Sea Weapon Proficiency",
+									"entries": [
+										"You are proficient with the {@item net|PHB}, {@item spear|PHB}, and {@item trident|PHB}. You ignore disadvantage when throwing one of these weapons at its long range. While underwater, you can throw these weapons at its long range, however you have disadvantage on the attack roll. Additionally, the {@item spear|PHB} and {@item trident|PHB} has the finesse property for you."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Aquatic Mage: Additional Spells",
+									"entries": [
+										"You know the cantrip {@spell Shape Water|XGE}. At level 3, you also can cast {@spell Speak with Animals} at-will to creatures through your Emissary of the Sea trait. These spells use the spellcasting ability you chose with your Control Air and Water trait. You also gain additional damage resistance to acid."
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
 					"name": "Languages",
 					"entries": [
 						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
@@ -15949,7 +15955,68 @@
 				}
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"_versions": [
+				{
+					"name": "Triton; Warrior",
+					"source": "MPMM",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "Triton Pride",
+							"items": {
+								"name": "Triton Pride: Sea Weapon Proficiency",
+								"type": "entries",
+								"entries": [
+									"You are proficient with the {@item net|PHB}, {@item spear|PHB}, and {@item trident|PHB}. You ignore disadvantage when throwing one of these weapons at its long range. While underwater, you can throw these weapons at its long range, however you have disadvantage on the attack roll. Additionally, the {@item spear|PHB} and {@item trident|PHB} has the finesse property for you."
+								]
+							}
+						}
+					},
+					"weaponProficiencies": [
+						{
+							"net|phb": true,
+							"spear|phb": true,
+							"trident|phb": true,
+							"whip|phb": true
+						}
+					]
+				},
+				{
+					"name": "Triton; Aquatic Mage",
+					"source": "MPMM",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "Triton Pride",
+							"items": {
+								"name": "Triton Pride: Additional Spells",
+								"type": "entries",
+								"entries": [
+									"You know the cantrip {@spell Shape Water|XGE}. At level 3, you also can cast {@spell Speak with Animals} at-will to creatures through your Emissary of the Sea trait. These spells use the spellcasting ability you chose with your Control Air and Water trait. You also gain additional damage resistance to acid."
+								]
+							}
+						}
+					},
+					"additionalSpells": [
+						{
+							"innate": {
+								"3": [
+									"speak with animals"
+								]
+							},
+							"known": {
+								"1": [
+									"shape water|xge#c"
+								]
+							}
+						}
+					],
+					"resist": [
+						"acid"
+					]
+				}
+			]
 		},
 		{
 			"name": "Triton",
@@ -16525,6 +16592,9 @@
 			"name": "Warforged",
 			"source": "ERLW",
 			"page": 35,
+			"reprintedAs": [
+				"Warforged|MPMM"
+			],
 			"size": [
 				"M"
 			],
@@ -16659,6 +16729,164 @@
 			"hasFluffImages": true
 		},
 		{
+			"name": "Warforged",
+			"source": "MPMM",
+			"page": 36,
+			"otherSources": [
+				{
+					"source": "ERLW",
+					"page": 35
+				}
+			],
+			"size": [
+				"M"
+			],
+			"creatureTypes": [
+				"construct"
+			],
+			"speed": 30,
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"heightAndWeight": {
+				"baseHeight": 70,
+				"heightMod": "2d6",
+				"baseWeight": 270,
+				"weightMod": "4"
+			},
+			"age": {
+				"max": 30
+			},
+			"traitTags": [
+				"Improved Resting",
+				"Magic Resistance",
+				"Natural Armor",
+				"Uncommon Race"
+			],
+			"skillProficiencies": [
+				{
+					"any": 1
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"anyStandard": 1
+				}
+			],
+			"toolProficiencies": [
+				{
+					"any": 1
+				}
+			],
+			"resist": [
+				"poison"
+			],
+			"conditionImmune": [
+				"disease"
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Creature Type",
+					"entries": [
+						"You are a Construct."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Constructed Resilience",
+					"entries": [
+						"You were created to have remarkable fortitude, represented by the following benefits:",
+						{
+							"type": "list",
+							"items": [
+								"You have advantage on saving throws against being {@condition poisoned}, and you have resistance to poison damage.",
+								"You don't need to eat, drink, or breathe.",
+								"You are immune to disease.",
+								"You don't need to sleep, and magic can't put you to sleep.",
+								"You are immune to magical aging effects."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sentry's Rest",
+					"entries": [
+						"When you take a long rest, you must spend at least six hours in an inactive, motionless state, rather than sleeping. In this state, you appear inert, but it doesn't render you {@condition unconscious}, and you can see and hear as normal."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Integrated Protection",
+					"entries": [
+						"Your body has built-in defensive layers, which can be enhanced with armor:",
+						{
+							"type": "list",
+							"items": [
+								"Your base Armor Class is 10 + 1 + your Dexterity or Constitution Modifier (your choice).",
+								"You can don only armor with which you have proficiency. To don armor other than a shield, you must incorporate it into your body over the course of 1 hour, during which you remain in contact with the armor. To doff armor, you must spend 1 hour removing it. You can rest while donning or doffing armor in this way.",
+								"While you live, the armor incorporated into your body can't be removed against your will."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Specialized Design",
+					"entries": [
+						"You gain one skill proficiency and one tool proficiency of your choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other {@filter standard language|languages|source=|type=standard} of your choice."
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
 			"name": "Yuan-Ti",
 			"source": "MPMM",
 			"page": 36,
@@ -16713,7 +16941,6 @@
 				"weightMod": "2d4"
 			},
 			"age": {
-				"mature": 20,
 				"max": 100
 			},
 			"speed": 30,
@@ -16760,20 +16987,6 @@
 				}
 			],
 			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Purebloods mature at the same rate as humans and have lifespans similar in length to theirs."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"You are Medium or Small. You choose the size when you select this race."
-					]
-				},
 				{
 					"type": "entries",
 					"name": "Darkvision",
@@ -24514,7 +24727,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Devilish Wings",
+					"name": "Hellish Wings",
 					"entries": [
 						"As a bonus action, you can summon a pair of fiery dark, spectral wings that temporarily sprout from your back. For 1 minute, you have a flying speed equal to your walking speed. You can summon your wings a number of times equal to your proficiency bonus per long rest.",
 						"Additionally, when you use your bonus action to transform into your Devilish Charm Revelation, you can summon your Hellish Wings as part of that same bonus action."
@@ -24524,7 +24737,14 @@
 					"type": "entries",
 					"name": "Fiendish Revelation",
 					"entries": [
-						"When you reach 3rd level, you can use a bonus action to unleash the fiendish energy within yourself, gaining the benefits of one of the revelations listed below (choose the option each time you transform). Your transformation lasts for 1 minute or until you end it (no action required). Once you transform using a revelation, you can't use it again until you finish a long rest.",
+						"When you reach 3rd level, you can use a bonus action to unleash the fiendish energy within yourself, gaining the benefits of one of the revelations listed below (choose the option each time you transform). Your transformation lasts for 1 minute or until you end it (no action required). You can use this trait once per long rest.",
+						{
+							"type": "abilityDc",
+							"name": "Devilish Charm",
+							"attributes": [
+								"cha"
+							]
+						},
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
@@ -24532,7 +24752,7 @@
 								{
 									"type": "item",
 									"name": "Devilish Charm",
-									"entry": "{@i Visual Fluff.} Your eyes briefly become pools of darkness, and ghostly, flightless wings sprout from your back temporarily. {@i Area of Effect.} Creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw ({@dc 8} + your proficiency bonus + your Charisma modifier) or become {@condition charmed} to you until the end of your next turn. {@i Bonus Damage.} Once per turn, until the transformation ends, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a magical effect. The extra damage equals your Proficiency Bonus."
+									"entry": "{@i Visual Fluff.} Your eyes briefly become pools of darkness, and ghostly, flightless wings sprout from your back temporarily. {@i Area of Effect.} Creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw or become {@condition charmed} to you until the end of your next turn. {@i Bonus Damage.} Once per turn, until the transformation ends, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a magical effect. The extra damage equals your Proficiency Bonus."
 								},
 								{
 									"type": "item",
