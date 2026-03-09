@@ -24918,10 +24918,7 @@
                 },
                 "MPMM": {
                     "Half-Elf (Drow)": true,
-                    "Half-Elf (Sea Elf Ancestry)": {
-                        "baseName": "Half-Elf",
-                        "baseSource": "PHB"
-                    },
+                    "Half-Elf (Sea)": true,
                     "Half-Elf (Sun Elf Ancestry)": {
                         "baseName": "Half-Elf",
                         "baseSource": "PHB"

@@ -8275,6 +8275,240 @@
 			]
 		},
 		{
+			"name": "Half-Elf (Sea)",
+			"source": "MPMM",
+			"page": 21,
+			"otherSources": [
+				{
+					"source": "SCAG",
+					"page": 116
+				}
+			],
+			"ability": [
+                {
+                    "choose": {
+                        "weighted": {
+                            "from": [
+                                "str",
+                                "dex",
+                                "con",
+                                "int",
+                                "wis",
+                                "cha"
+                            ],
+                            "weights": [
+                                2,
+                                1
+                            ]
+                        }
+                    }
+                },
+                {
+                    "choose": {
+                        "weighted": {
+                            "from": [
+                                "str",
+                                "dex",
+                                "con",
+                                "int",
+                                "wis",
+                                "cha"
+                            ],
+                            "weights": [
+                                1,
+                                1,
+                                1
+                            ]
+                        }
+                    }
+                }
+            ],
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"lineage": true,
+			"heightAndWeight": {
+				"baseHeight": 57,
+				"heightMod": "2d8",
+				"baseWeight": 115,
+				"weightMod": "2d4"
+			},
+			"age": {
+				"max": 180
+			},
+			"darkvision": 60,
+			"traitTags": [
+				"Uncommon Race"
+			],
+			"soundClip": {
+				"type": "internal",
+				"path": "races/half-elf.mp3"
+			},
+			"languageProficiencies": [
+				{
+					"common": true,
+					"elvish": true,
+					"anyStandard": 1
+				}
+			],
+			"skillProficiencies": [
+				{
+					"any": 2
+				}
+			],
+			"weaponProficiencies": [
+				{
+					"spear|phb": true,
+					"trident|phb": true,
+					"light crossbow|phb": true,
+					"net|phb": true
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": [
+							"shape water|xge#c"
+						]
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"Thanks to your elf blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fey Ancestry",
+					"entries": [
+						"You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Skill Versatility",
+					"entries": [
+						"You gain proficiency in two skills of your choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sea Elf Descendant (Choose 1)",
+					"entries": [
+						"As a descendant of a Sea Elf, you gain one of the following traits of your choice:",
+						{
+							"type": "list",
+							"items": [
+								{
+									"type": "item",
+									"name": "Sea Combat Training",
+									"entries": [
+										"You have proficiency with the {@item spear|phb}, {@item trident|phb}, {@item light crossbow|phb}, and {@item net|phb}."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Shaper of Water",
+									"entries": [
+										"You know the {@spell Shape Water|XGE} cantrip. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you select this race)."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Friend of the Sea",
+									"entries": [
+										"You gain a swimming speed of 30 feet, can breath air and under water, and can communicate simple ideas with any beast that has an innate swimming speed, although you are unable to understand them without additional supports."
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common, Elvish, and one other {@filter standard language|languages|source=|type=standard} of your choice."
+					]
+				}
+			],
+			"_versions": [
+				{
+					"name": "Half-Elf (Sea; Weapons Training)",
+					"source": "MPMM",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "Sea Elf Descendant (Choose 1)",
+							"items": {
+								"name": "Sea Combat Training",
+								"type": "entries",
+								"entries": [
+									"As a descendant of a Sea Elf, you have proficiency with the {@item spear|phb}, {@item trident|phb}, {@item light crossbow|phb}, and {@item net|phb}."
+								]
+							}
+						}
+					},
+					"additionalSpells": null
+				},
+				{
+					"name": "Half-Elf (Sea; Magic)",
+					"source": "MPMM",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "Sea Elf Descendant (Choose 1)",
+							"items": {
+								"name": "Shaper of Water",
+								"type": "entries",
+								"entries": [
+									"As a descendant of a Sea Elf, you know the {@spell Shape Water|XGE} cantrip. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you select this race)."
+								]
+							}
+						}
+					},
+					"weaponProficiencies": null
+				},
+				{
+					"name": "Half-Elf (Sea; Water Adept)",
+					"source": "MPMM",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "Sea Elf Descendant (Choose 1)",
+							"items": {
+								"name": "Friend of the Sea",
+								"type": "entries",
+								"entries": [
+									"As a descendant of a Sea Elf, you gain a swimming speed of 30 feet, can breath air and under water, and can communicate simple ideas with any beast that has an innate swimming speed, although you are unable to understand them without additional supports."
+								]
+							}
+						}
+					},
+					"speed": {
+						"swim": 30
+					},
+					"traitTags": [
+						"Amphibious"
+					],
+					"additionalSpells": null,
+					"weaponProficiencies": null
+				}
+			]
+		},
+		{
 			"name": "Half-Orc",
 			"source": "PHB",
 			"page": 40,
@@ -21683,174 +21917,6 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Sea Elf Ancestry",
-			"source": "MPMM",
-			"raceName": "Half-Elf",
-			"raceSource": "PHB",
-			"page": 13,
-			"otherSources": [
-				{
-					"source": "SCAG",
-					"page": 116
-				}
-			],
-			"ability": [
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
-								"dex",
-								"con",
-								"int",
-								"wis",
-								"cha"
-							],
-							"weights": [
-								2,
-								1
-							]
-						}
-					}
-				},
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
-								"dex",
-								"con",
-								"int",
-								"wis",
-								"cha"
-							],
-							"weights": [
-								1,
-								1,
-								1
-							]
-						}
-					}
-				}
-			],
-			"traitTags": [
-				"Amphibious",
-				"Uncommon Race"
-			],
-			"skillProficiencies": [
-				{
-					"any": 2
-				}
-			],
-			"additionalSpells": [
-				{
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					},
-					"known": {
-						"1": [
-							"shape water|xge#c"
-						]
-					}
-				}
-			],
-			"weaponProficiencies": [
-				{
-					"spear|phb": true,
-					"trident|phb": true,
-					"light crossbow|phb": true,
-					"net|phb": true
-				}
-			],
-			"entries": [
-				{
-					"type": "entries",
-					"name": "Skill Versatility",
-					"entries": [
-						"You gain proficiency in two skills of your choice."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Friend of the Sea",
-					"entries": [
-						"You are amphibious, which allows you to breathe air and under water. You can communicate simple ideas with any beast that has an innate swimming speed, however you are unable to understand them without additional supports.",
-						"You also know the {@spell Shape Water|XGE} cantrip. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you select this race)."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Sea Elf Descendant (Choose 1)",
-					"entries": [
-						"As a descendant of a Sea Elf, you gain one of the following traits of your choice:",
-						{
-							"type": "list",
-							"items": [
-								{
-									"type": "item",
-									"name": "Sea Combat Training",
-									"entries": [
-										"You have proficiency with the {@item spear|phb}, {@item trident|phb}, {@item light crossbow|phb}, and {@item net|phb}."
-									]
-								},
-								{
-									"type": "item",
-									"name": "Swim Speed",
-									"entries": [
-										"You gain a swimming speed of 30 ft."
-									]
-								}
-							]
-						}
-					]
-				}
-			],
-			"_versions": [
-				{
-					"name": "Sea Elf Ancestry; Sea Combat Training",
-					"source": "MPMM",
-					"_mod": {
-						"entries": {
-							"mode": "replaceArr",
-							"replace": "Sea Elf Descendant (Choose 1)",
-							"items": {
-								"name": "Sea Elf Descendant; Sea Combat Training",
-								"type": "entries",
-								"entries": [
-									"You have proficiency with the {@item spear|phb}, {@item trident|phb}, {@item light crossbow|phb}, and {@item net|phb}."
-								]
-							}
-						}
-					}
-				},
-				{
-					"name": "Sea Elf Ancestry; Swim Speed",
-					"source": "MPMM",
-					"_mod": {
-						"entries": {
-							"mode": "replaceArr",
-							"replace": "Sea Elf Descendant (Choose 1)",
-							"items": {
-								"name": "Sea Elf Descendant; Swim Speed",
-								"type": "entries",
-								"entries": [
-									"You gain a swimming speed of 30 ft."
-								]
-							}
-						}
-					},
-					"speed": {
-						"swim": 30
-					},
-					"weaponProficiencies": null
-				}
-			]
-		},
-		{
 			"name": "Sun Elf Ancestry",
 			"source": "MPMM",
 			"raceName": "Half-Elf",
@@ -22047,7 +22113,7 @@
 			"raceSource": "PHB",
 			"page": 116,
 			"reprintedAs": [
-				"Half-Elf (Sea Elf Ancestry)|MPMM"
+				"Half-Elf (Sea)|MPMM"
 			],
 			"speed": 30,
 			"ability": [
