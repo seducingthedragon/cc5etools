@@ -2463,8 +2463,7 @@
 					"type": "entries",
 					"name": "Age",
 					"entries": [
-						"Changelings mature slightly faster than humans but share a similar lifespan\u2014typically a century or less. While a changeling can transform to conceal their age, the effects of aging affect them similarly to humans.",
-						"Additionally, if you choose to play a Small Changeling, you can still use the Random Height and Weight table by halving the base values."
+						"Changelings mature slightly faster than humans but share a similar lifespan\u2014typically a century or less. While a changeling can transform to conceal their age, the effects of aging affect them similarly to humans."
 					]
 				},
 				{
@@ -4124,6 +4123,168 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Drider",
+			"source": "MPMM",
+			"page": 12,
+			"creatureTypes": [
+				"monstrosity"
+			],
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 30,
+				"climb": 20
+			},
+			"traitTags": [
+				"Monstrous Race",
+				"Natural Armor",
+				"Powerful Build"
+			],
+			"heightAndWeight": {
+				"baseHeight": 70,
+				"heightMod": "1d8",
+				"baseWeight": 350,
+				"weightMod": "2d12"
+			},
+			"age": {
+				"max": 750
+			},
+			"resist": [
+				"poison"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"elvish": true,
+					"any": 1
+				}
+			],
+			"skillProficiencies": [
+				{
+					"perception": true
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"1": [
+							"animal friendship"
+						]
+					},
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Creature Type",
+					"entries": [
+						"You are a Monstrosity. You are also considered an {@race Elf} for any prerequisite or effect that requires you to be an {@race Elf}, at DM's discretion."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Superior Darkvision",
+					"entries": [
+						"You have superior vision in dark and dim conditions. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fey Anestry",
+					"entries": [
+						"You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep. Additionally, you have advantage against being {@condition frightened} and moved against your will."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Keen Senses",
+					"entries": [
+						"You have proficiency in the {@skill Perception} skill."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Arachnid Build",
+					"entries": [
+						"Due to your body being part spider, you gain the following benefits:",
+						{
+							"type": "list",
+							"items": [
+								"You can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check and you ignore movement restrictions caused by webbing, as long as you are not wearing heavy armor.",
+								"You count as one size larger when determining your carrying capacity, the weight you can push or drag, and the impact of {@action unarmed attack||unarmed shove and grapple attacks}.",
+								"Your natural armor is 12 + your Dexterity modifier and you can still benefit from a shield.",
+								"You are resistant to poison damage and you can create your own webbing, which can carry your weight plus your max carrying capacity.",
+								"You can cast {@spell Speak with Animals} at-will, targetting spiders that are Beast or Monstrosity creature types. Intelligence, Wisdom, or Charisma is your spellcasting ability for this spell (choose when you select this race)."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Trance",
+					"entries": [
+						"You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours, if you spend those hours in a trancelike meditation, during which you retain consciousness. While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common, Elvish, and one other language that you and your DM agree is appropriate for your character."
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Duergar",
