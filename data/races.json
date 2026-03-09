@@ -17957,6 +17957,48 @@
 				"baseWeight": 115,
 				"weightMod": "2d6"
 			},
+			"additionalSpells": [
+				{
+					"innate": {
+						"3": {
+							"daily": {
+								"1": [
+									"shield of faith"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"magic weapon"
+								]
+							}
+						}
+					},
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": [
+							"true strike#c"
+						]
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Arcana and Combat",
+					"entries": [
+						"You know the {@spell True Strike} cantrip. Starting at level 3, you can cast {@spell Shield of Faith} once per long rest, without material components, with this trait. Starting at level 5, you can cast {@spell Magic Weapon} once per long rest with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).",
+						"{@note If you have a Spellcasting or Pact Magic class feature, you can cast the leveled spells from this trait using those spell slots, following the casting rules provided by your class.}"
+					]
+				}
+			],
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
