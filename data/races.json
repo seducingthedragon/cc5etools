@@ -3376,21 +3376,21 @@
 					"name": "Breath Weapon",
 					"entries": [
 						"When you take the {@action Attack} action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot cone or a 30-foot line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw  against your Draconic DC. On a failed save, the creature takes {@damage 1d10} damage of the type associated with your Chromatic Ancestry. On a successful save, it takes half as much damage. This damage increases by {@damage 1d10} when you reach 5th level ({@damage 2d10}), 11th level ({@damage 3d10}), and 17th level ({@damage 4d10}).",
-						"You can use your Breath Weapon a number of times equal to your proficiency bonus per long rest."
-					]
-				},
-				{
-					"type": "abilityDc",
-					"name": "Draconic",
-					"attributes": [
-						"con"
+						"You can use your Breath Weapon a number of times equal to your proficiency bonus per long rest.",
+						{
+							"type": "abilityDc",
+							"name": "Draconic",
+							"attributes": [
+								"con"
+							]
+						}
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Chromatic Enhancement",
 					"entries": [
-						"Starting at level 5, you can use your bonus action to transform yourself further by your Chromatic Dragon Ancestry with one of the options below (choose the option each type you transform). This transformation lasts for 10 minutes, or until you end it (no action required) or are {@condition incapacitated}. You can transform once per long rest, regardless of what option you choose.",
+						"Starting at level 5, you can use your bonus action to transform yourself further by your Chromatic Dragon Ancestry with one of the options below (choose the option each type you transform). This transformation lasts for 1 hour, or until you end it (no action required) or are {@condition incapacitated}. You can transform once per long rest, regardless of what option you choose.",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
@@ -3398,12 +3398,26 @@
 								{
 									"type": "item",
 									"name": "Chromatic Warding",
-									"entry": "For the duration of this transformation, you become immune to the damage type associated with your Chromatic Ancestry."
+									"entries": [
+										"For the duration of this transformation, you become immune to the damage type associated with your Chromatic Ancestry,  and gain resistance to one other damage type associated with Chromatic Dragons that's not your own:.",
+										{
+											"type": "list",
+											"items": [
+												"Acid",
+												"Cold",
+												"Fire",
+												"Lightning",
+												"Poison"
+											]
+										}
+									]
 								},
 								{
 									"type": "item",
 									"name": "Chromatic Flight",
-									"entry": "You sprout spectral wings on your back that appear to be made of the same energy as your Breath Weapon. For the duration, you have a flying speed equal to your walking speed."
+									"entries": [
+										"You sprout spectral wings on your back that appear to be made of the same energy as your Breath Weapon. For the duration, you have a flying speed equal to your walking speed."
+									]
 								}
 							]
 						}
@@ -3450,6 +3464,47 @@
 										"name": "Draconic Resistance",
 										"entries": [
 											"You have resistance to {{damageType}} damage."
+										]
+									}
+								},
+								{
+									"mode": "replaceArr",
+									"replace": "Chromatic Enhancement",
+									"items": {
+										"type": "entries",
+										"name": "Chromatic ({{color}}) Enhancement",
+										"entries": [
+											"Starting at level 5, you can use your bonus action to transform yourself further by your {{color}} Dragon Ancestry with one of the options below (choose the option each type you transform). This transformation lasts for 1 hour, or until you end it (no action required) or are {@condition incapacitated}. You can transform once per long rest, regardless of what option you choose.",
+											{
+												"type": "list",
+												"style": "list-hang-notitle",
+												"items": [
+													{
+														"type": "item",
+														"name": "Chromatic Warding",
+														"entries": [
+															"For the duration of this transformation, you become immune to {{damageType}} and gain resistance to one other damage type associated with Chromatic Dragons that's not your own:",
+															{
+																"type": "list",
+																"items": [
+																	"Acid",
+																	"Cold",
+																	"Fire",
+																	"Lightning",
+																	"Poison"
+																]
+															}
+														]
+													},
+													{
+														"type": "item",
+														"name": "Chromatic Flight",
+														"entries": [
+															"You sprout spectral wings on your back that appear to be made of {{color}} {{damageType}}. For the duration, you have a flying speed equal to your walking speed."
+														]
+													}
+												]
+											}
 										]
 									}
 								}
@@ -3609,14 +3664,14 @@
 					"name": "Breath Weapon",
 					"entries": [
 						"When you take the {@action Attack} action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot cone or a 30-foot line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw against your Draconic DC. On a failed save, the creature takes {@damage 1d10} damage of the type associated with your Gem Ancestry. On a successful save, it takes half as much damage. This damage increases by {@damage 1d10} when you reach 5th level ({@damage 2d10}), 11th level ({@damage 3d10}), and 17th level ({@damage 4d10}).",
-						"You can use your Breath Weapon a number of times equal to your proficiency bonus per."
-					]
-				},
-				{
-					"type": "abilityDc",
-					"name": "Draconic",
-					"attributes": [
-						"con"
+						"You can use your Breath Weapon a number of times equal to your proficiency bonus per.",
+						{
+							"type": "abilityDc",
+							"name": "Draconic",
+							"attributes": [
+								"con"
+							]
+						}
 					]
 				},
 				{
@@ -3630,20 +3685,35 @@
 					"type": "entries",
 					"name": "Gem Enhancement",
 					"entries": [
-						"Starting at level 5, you can use your bonus action to transform yourself further by your Chromatic Dragon Ancestry with one of the options below (choose the option each type you transform). This transformation lasts for 10 minutes, or until you end it (no action required) or are {@condition incapacitated}. You can transform once per long rest, regardless of what option you choose.",
+						"Starting at level 5, you can use your bonus action to transform yourself further by your Gem Dragon Ancestry with one of the options below (choose the option each type you transform). The duration of this transformation is based on which form you choose, lasting until you end it (no action required) or are {@condition incapacitated}. You can transform once per long rest, regardless of what option you choose.",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
 									"type": "item",
-									"name": "Chromatic Warding",
-									"entry": "For the duration of this transformation, you become immune to the damage type associated with your Chromatic Ancestry."
+									"name": "Crystaline Swarm",
+									"entries": [
+										"For 1 minute, you transform into a Medium Swarm of Tiny Gem Dragonborns, temporarily gaining the following {@b swarm} benefits.",
+										{
+											"type": "list",
+											"items": [
+												"You are able to move through and occupy another creature's space and vice versa.",
+												"You gain damage resistances to bludgeoning, piercing, and slashing damage.",
+												"You are immune from being {@condition grappled}, {@condition restrained}, or knocked {@condition prone}.",
+												"You have advantage on saving throws against being {@condition charmed}, {@condition frightened}, {@condition paralyzed}, {@condition petrified}, or {@condition stunned}."
+											]
+										},
+										"Additionally, you gain damage immunity based on your Gem Ancestry and your armor class increases by 5, maintaining all other traits and features.",
+										"This transformation can end early if you become {@status bloodied}, resulting in your form automatically reforming back together."
+									]
 								},
 								{
 									"type": "item",
 									"name": "Gem Flight",
-									"entry": "You sprout spectral wings on your back that appear to be made of the same energy as your Breath Weapon. For the duration, you have a flying speed equal to your walking speed."
+									"entries": [
+										"You sprout spectral wings on your back that appear to be made of the same energy as your Breath Weapon. For up to 1 hour, you have a flying speed equal to your walking speed."
+									]
 								}
 							]
 						}
@@ -3690,6 +3760,48 @@
 										"name": "Draconic Resistance",
 										"entries": [
 											"You have resistance to {{damageType}} damage."
+										]
+									}
+								},
+								{
+									"mode": "replaceArr",
+									"replace": "Gem Enhancement",
+									"items": {
+										"type": "entries",
+										"name": "{{color}} Enhancement",
+										"entries": [
+											"Starting at level 5, you can use your bonus action to transform yourself further by your {{color}} Dragon Ancestry with one of the options below (choose the option each type you transform). The duration of this transformation is based on which form you choose, lasting until you end it (no action required) or are {@condition incapacitated}. You can transform once per long rest, regardless of what option you choose.",
+											{
+												"type": "list",
+												"style": "list-hang-notitle",
+												"items": [
+													{
+														"type": "item",
+														"name": "Crystaline Swarm",
+														"entries": [
+															"For 1 minute, you transform into a Medium Swarm of Tiny {{color}} Dragonborns, temporarily gaining the following {@b swarm} benefits.",
+															{
+																"type": "list",
+																"items": [
+																	"You are able to move through and occupy another creature's space and vice versa.",
+																	"You gain damage resistances to bludgeoning, piercing, and slashing damage.",
+																	"You are immune from being {@condition grappled}, {@condition restrained}, or knocked {@condition prone}.",
+																	"You have advantage on saving throws against being {@condition charmed}, {@condition frightened}, {@condition paralyzed}, {@condition petrified}, or {@condition stunned}."
+																]
+															},
+															"Additionally, you gain damage immunity to {{damageType}} damage and your armor class increases by 5, maintaining all other traits and features.",
+															"This transformation can end early if you become {@status bloodied}, resulting in your form automatically reforming back together."
+														]
+													},
+													{
+														"type": "item",
+														"name": "Gem Flight",
+														"entries": [
+															"You sprout spectral wings on your back that appear to be made of {{color}} {{damageType}}. For up to 1 hour, you have a flying speed equal to your walking speed."
+														]
+													}
+												]
+											}
 										]
 									}
 								}
@@ -3848,21 +3960,21 @@
 					"name": "Breath Weapon",
 					"entries": [
 						"When you take the {@action Attack} action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot cone or a 30-foot line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw against your Draconic DC. On a failed save, the creature takes {@damage 1d10} damage of the type associated with your Metallic Ancestry. On a successful save, it takes half as much damage. This damage increases by {@damage 1d10} when you reach 5th level ({@damage 2d10}), 11th level ({@damage 3d10}), and 17th level ({@damage 4d10}).",
-						"You can use your Breath Weapon a number of times equal to your proficiency bonus per long rest."
-					]
-				},
-				{
-					"type": "abilityDc",
-					"name": "Draconic",
-					"attributes": [
-						"con"
+						"You can use your Breath Weapon a number of times equal to your proficiency bonus per long rest.",
+						{
+							"type": "abilityDc",
+							"name": "Draconic",
+							"attributes": [
+								"con"
+							]
+						}
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Metallic Enhancement",
 					"entries": [
-						"Starting at level 5, you can use your bonus action to transform yourself further by your Metallic Dragon Ancestry with one of the options below (choose the option each type you transform). This transformation lasts for 10 minutes, or until you end it (no action required) or are {@condition incapacitated}. You can transform once per long rest, regardless of what option you choose.",
+						"Starting at level 5, you can use your bonus action to transform yourself further by your Metallic Dragon Ancestry with one of the options below (choose the option each type you transform). The duration of this transformation is dependent on what form you choose. It lasts until you end it (no action required) or are {@condition incapacitated}. You can transform once per long rest, regardless of what option you choose.",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
@@ -3870,12 +3982,16 @@
 								{
 									"type": "item",
 									"name": "Metallic Breath",
-									"entry": "You summon the power of the Metallic Dragons and strengthen the power of your breath weapon by doubling the range, replacing the Dexterity saving throw with either a Strength saving throw or Constitution saving throw, and taking a full action for one breath weapon attack. On a failed Strength saving throw, targets are pushed 20 feet back and knocked {@condition prone}. On a failed Constitution saving throw, targets are {@condition incapacitated} until the start of your next turn. Regardless of which ability you use, all failed saves take full breath weapon damage, taking only half damage on a successful save."
+									"entries": [
+										"For 1 minute, you summon the power of the Metallic Dragons and strengthen the power of your breath weapon by doubling the range, replacing the Dexterity saving throw with either a Strength saving throw or Constitution saving throw, and taking a full action for one breath weapon attack. On a failed Strength saving throw, targets are pushed 20 feet back and knocked {@condition prone}. On a failed Constitution saving throw, targets are {@condition incapacitated} until the start of your next turn. Regardless of which ability you use, all failed saves take full breath weapon damage, taking only half damage on a successful save."
+									]
 								},
 								{
 									"type": "item",
 									"name": "Metallic Flight",
-									"entry": "You sprout spectral wings on your back that appear to be made of the same energy as your Breath Weapon. For the duration, you have a flying speed equal to your walking speed."
+									"entries": [
+										"You sprout spectral wings on your back that appear to be made of the same energy as your Breath Weapon. For 1 hour, you have a flying speed equal to your walking speed."
+									]
 								}
 							]
 						}
@@ -3922,6 +4038,37 @@
 										"name": "Draconic Resistance",
 										"entries": [
 											"You have resistance to {{damageType}} damage."
+										]
+									}
+								},
+								{
+									"mode": "replaceArr",
+									"replace": "Metallic Enhancement",
+									"items": {
+										"type": "entries",
+										"name": "{{color}} Enhancement",
+										"entries": [
+											"Starting at level 5, you can use your bonus action to transform yourself further by your {{color}} Dragon Ancestry with one of the options below (choose the option each type you transform). The duration of this transformation is dependent on what form you choose. It lasts until you end it (no action required) or are {@condition incapacitated}. You can transform once per long rest, regardless of what option you choose.",
+											{
+												"type": "list",
+												"style": "list-hang-notitle",
+												"items": [
+													{
+														"type": "item",
+														"name": "Metallic Breath",
+														"entries": [
+															"For 1 minute, you summon the power of the {{color}} Dragons and strengthen the power of your breath weapon by doubling the range, replacing the Dexterity saving throw with either a Strength saving throw or Constitution saving throw, and taking a full action for one breath weapon attack. On a failed Strength saving throw, targets are pushed 20 feet back and knocked {@condition prone}. On a failed Constitution saving throw, targets are {@condition incapacitated} until the start of your next turn. Regardless of which ability you use, all failed saves take full {{damageType}} breath weapon damage, taking only half damage on a successful save."
+														]
+													},
+													{
+														"type": "item",
+														"name": "Metallic Flight",
+														"entries": [
+															"You sprout spectral wings on your back that appear to be made of {{color}} {{damageType}}. For 1 hour, you have a flying speed equal to your walking speed."
+														]
+													}
+												]
+											}
 										]
 									}
 								}
