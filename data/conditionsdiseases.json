@@ -352,7 +352,7 @@
 						}
 					]
 				},
-    		    "If you are Incapacitated and either {@condition Paralyzed}, {@condition Petrified}, {@condition Stunned}, or {@condition Unconscious}, use their guidelines for any overlapping effects."
+    		    "If you become {@u incapacitated} due to either being {@condition Paralyzed}, {@condition Petrified}, {@condition Stunned}, or {@condition Unconscious}, use their guidelines for any overlapping effects."
 			]
 		},
 		{
