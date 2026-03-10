@@ -2236,7 +2236,7 @@
 					"type": "entries",
 					"name": "Equine Build",
 					"entries": [
-						"You count as one size larger when determining your carrying capacity and the weight you can push or drag.",
+						"You count as one size larger when determining your carrying capacity and the weight you can push or drag. Due to your equine shape, the space you predominately control is the square you place your front legs. You occupy one additional square behind you (for your rear legs) with limited control.",
 						"In addition, any climb that requires hands and feet is especially difficult for you because of your equine legs. When you make such a climb, each foot of movement costs you 4 extra feet instead of the normal 1 extra foot."
 					]
 				},
@@ -2244,7 +2244,7 @@
 					"type": "entries",
 					"name": "Hooves",
 					"entries": [
-						"You have hooves that you can use to make an {@action unarmed attack||unarmed strike attack}. When you hit with them, the strike deals {@damage 1d6} + your Strength modifier bludgeoning damage, instead of the normal bludgeoning damage due to your natural weapons."
+						"You have hooves that you can use to make an {@action unarmed attack||unarmed strike attack}. When you hit with them, the strike deals {@damage 1d6} + your Strength modifier bludgeoning damage, instead of the normal bludgeoning damage due to your natural weapons. Additionally, when you make this attack using your rear legs, your reach extends an additional 5 feet from your controlling square."
 					]
 				},
 				{
@@ -4131,6 +4131,9 @@
 			"creatureTypes": [
 				"monstrosity"
 			],
+			"creatureTypeTags": [
+				"elf"
+			],
 			"ability": [
 				{
 					"choose": {
@@ -4171,55 +4174,41 @@
 				}
 			],
 			"size": [
-				"M"
+				"L"
 			],
 			"speed": {
 				"walk": 30,
 				"climb": 20
 			},
+			"lineage": true,
 			"traitTags": [
+				"Improved Resting",
 				"Monstrous Race",
-				"Natural Armor",
-				"Powerful Build"
+				"Natural Armor"
 			],
 			"heightAndWeight": {
 				"baseHeight": 70,
 				"heightMod": "1d8",
-				"baseWeight": 350,
+				"baseWeight": 400,
 				"weightMod": "2d12"
 			},
 			"age": {
 				"max": 750
 			},
+			"darkvision": 120,
 			"resist": [
 				"poison"
-			],
-			"languageProficiencies": [
-				{
-					"common": true,
-					"elvish": true,
-					"any": 1
-				}
 			],
 			"skillProficiencies": [
 				{
 					"perception": true
 				}
 			],
-			"additionalSpells": [
+			"languageProficiencies": [
 				{
-					"innate": {
-						"1": [
-							"animal friendship"
-						]
-					},
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					}
+					"common": true,
+					"elvish": true,
+					"anyStandard": 1
 				}
 			],
 			"entries": [
@@ -4232,54 +4221,92 @@
 				},
 				{
 					"type": "entries",
-					"name": "Superior Darkvision",
+					"name": "Spider Speech",
 					"entries": [
-						"You have superior vision in dark and dim conditions. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"You can speak with spiders that are Beast or Monstrosity creature types, however you have no innate ability to understand them in return, without the aid of additional supports."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Fey Anestry",
+					"name": "Spider Form",
 					"entries": [
-						"You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep. Additionally, you have advantage against being {@condition frightened} and moved against your will."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Keen Senses",
-					"entries": [
-						"You have proficiency in the {@skill Perception} skill."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Arachnid Build",
-					"entries": [
-						"Due to your body being part spider, you gain the following benefits:",
+						"Your spider form grants you certain benefits. As long as you are not wearing heavy armor or encumbered, you ignore non-magical {@quickref difficult terrain||3} and both non-magical and magical {@spell web||webs}, can walk vertically and upside down without hands or checks, and can hang by your own webbing. You have advantage against saving throws against being moved against your will, excluding {@condition prone}. When you make and fail a saving throw to avoid being knocked {@condition prone}, you can use your Spiderflex trait.",
 						{
 							"type": "list",
+							"style": "list-hang-notitle",
 							"items": [
-								"You can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check and you ignore movement restrictions caused by webbing, as long as you are not wearing heavy armor.",
-								"You count as one size larger when determining your carrying capacity, the weight you can push or drag, and the impact of {@action unarmed attack||unarmed shove and grapple attacks}.",
-								"Your natural armor is 12 + your Dexterity modifier and you can still benefit from a shield.",
-								"You are resistant to poison damage and you can create your own webbing, which can carry your weight plus your max carrying capacity.",
-								"You can cast {@spell Speak with Animals} at-will, targetting spiders that are Beast or Monstrosity creature types. Intelligence, Wisdom, or Charisma is your spellcasting ability for this spell (choose when you select this race)."
+								{
+									"type": "item",
+									"name": "Spiderflex",
+									"entries": [
+										"When you fail a saving throw that forces you {@condition prone}, you can use your reaction to repeat the save to determine the position you land {@condition prone}. On a second fail, you land on your back, which will take your full movement to stand back up. On a success, you land sitting upright, which will take only 5 feet of your movement to stand up.",
+										"You can use this trait a number of times equal to your proficiency bonus per long rest without using your reaction."
+									]
+								}
 							]
 						}
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Trance",
+					"name": "Drow Anestry",
 					"entries": [
-						"You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours, if you spend those hours in a trancelike meditation, during which you retain consciousness. While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice."
+						"Due to Driders, historically, being members of the {@race Elf (Drow)|PHB|Drow Lineage}, they gain the following Drow Traits:",
+						{
+							"type": "list",
+							"items": [
+								{
+									"type": "item",
+									"name": "Keen Senses",
+									"entries": [
+										"You have proficiency in the {@skill Perception} skill."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Fey Ancestry",
+									"entries": [
+										"You have advantage on saving throws you make to avoid or end the {@condition charmed} or {@condition frightened} condition on yourself."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Trance",
+									"entries": [
+										"You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours, if you spend those hours in a trancelike meditation, during which you retain consciousness. While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Superior Darkvision",
+									"entries": [
+										"Accustomed to the depths of the Underdark, you have superior vision in dark and dim conditions. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Drow Weapon Training",
+									"entries": [
+										"You have proficiency with {@item rapier|phb|rapiers}, {@item shortsword|phb|shortswords}, and {@item hand crossbow|phb|hand crossbows}."
+									]
+								}
+							]
+						},
+						{
+							"type": "inset",
+							"name": "Variant Rule: Other Elven Lineage",
+							"entries": [
+								"While Driders were first created from Drow, the transformation can be done on other Elven lineages. With DM permission, you can play a Drider with a different Elven lineage. Regardless of what lineage you tie your Drider to, the transformation removes any racial spellcasting trait, while maintaining any similar lineage traits that align with the ones listed above (fey ancestry, keen senses, trance, darkvision, and weapon training if applicable).",
+								"If your Elven lineage has other racial traits, not listed above, such as any \"(blank) Step\" trait, beast communication, or bonus skill die traits, consult with your DM on which, if any, additional Elven lineage racial traits are maintained with your Drider."
+							]
+						}
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Languages",
 					"entries": [
-						"You can speak, read, and write Common, Elvish, and one other language that you and your DM agree is appropriate for your character."
+						"You can speak, read, and write Common, Elvish and 1 other language of your choice."
 					]
 				}
 			],
