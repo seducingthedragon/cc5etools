@@ -1089,9 +1089,9 @@
 				},
 				{
 					"type": "entries",
-					"name": "Fey Ancestry",
+					"name": "Fey Astral Ancestry",
 					"entries": [
-						"You have advantage on saving throws you make to avoid or end the {@condition charmed} condition on yourself."
+						"You have advantage on saving throws you make to avoid or end the {@condition charmed} or {@condition blinded} condition on yourself."
 					]
 				},
 				{
@@ -4183,8 +4183,7 @@
 			"lineage": true,
 			"traitTags": [
 				"Improved Resting",
-				"Monstrous Race",
-				"Natural Armor"
+				"Monstrous Race"
 			],
 			"heightAndWeight": {
 				"baseHeight": 70,
@@ -4211,6 +4210,13 @@
 					"anyStandard": 1
 				}
 			],
+			"weaponProficiencies": [
+				{
+					"rapier|phb": true,
+					"shortsword|phb": true,
+					"hand crossbow|phb": true
+				}
+			],
 			"entries": [
 				{
 					"type": "entries",
@@ -4230,28 +4236,30 @@
 					"type": "entries",
 					"name": "Spider Form",
 					"entries": [
-						"Your spider form grants you certain benefits. As long as you are not wearing heavy armor or encumbered, you ignore non-magical {@quickref difficult terrain||3} and both non-magical and magical {@spell web||webs}, can walk vertically and upside down without hands or checks, and can hang by your own webbing. You have advantage against saving throws against being moved against your will, excluding {@condition prone}. When you make and fail a saving throw to avoid being knocked {@condition prone}, you can use your Spiderflex trait.",
+						"Your spider form grants you certain benefits. As long as you are not wearing heavy armor or encumbered,",
 						{
 							"type": "list",
-							"style": "list-hang-notitle",
 							"items": [
-								{
-									"type": "item",
-									"name": "Spiderflex",
-									"entries": [
-										"When you fail a saving throw that forces you {@condition prone}, you can use your reaction to repeat the save to determine the position you land {@condition prone}. On a second fail, you land on your back, which will take your full movement to stand back up. On a success, you land sitting upright, which will take only 5 feet of your movement to stand up.",
-										"You can use this trait a number of times equal to your proficiency bonus per long rest without using your reaction."
-									]
-								}
+								"You ignore non-magical {@quickref difficult terrain||3} and both non-magical and magical {@spell web||webs}",
+								"You can walk vertically and upside down without hands or checks, and can hang by your own webbing.",
+								"You have advantage against saving throws that would force you to move against your will."
 							]
 						}
 					]
 				},
 				{
 					"type": "entries",
+					"name": "Spiderflex",
+					"entries": [
+						"When you fail a saving throw that forces you {@condition prone}, you can use your reaction to repeat the save, as a straight roll, to determine the position you land {@condition prone}. On a second fail, you land on your back, which will take your full movement to stand back up. On a success, you land sitting upright, which will take only 5 feet of your movement to stand up.",
+						"You can use this trait a number of times equal to your proficiency bonus per long rest without using your reaction."
+					]
+				},
+				{
+					"type": "entries",
 					"name": "Drow Anestry",
 					"entries": [
-						"Due to Driders, historically, being members of the {@race Elf (Drow)|PHB|Drow Lineage}, they gain the following Drow Traits:",
+						"Due to Driders, historically, being members of the {@race Elf (Drow)|PHB|Drow Lineage}, they maintain the following Drow Traits:",
 						{
 							"type": "list",
 							"items": [
@@ -4264,7 +4272,7 @@
 								},
 								{
 									"type": "item",
-									"name": "Fey Ancestry",
+									"name": "Underdark Fey Ancestry",
 									"entries": [
 										"You have advantage on saving throws you make to avoid or end the {@condition charmed} or {@condition frightened} condition on yourself."
 									]
@@ -4864,7 +4872,7 @@
 				}
 			],
 			"entries": [
-				"{@i Choose your eladrin's season: autumn, winter, spring, or summer. When finishing a long rest, you can change your season. See the \"Info\" tab for more information.}",
+				"{@note Choose your eladrin's season: autumn, winter, spring, or summer. When finishing a long rest, you can change your season. See the \"Info\" tab for more information.}",
 				{
 					"type": "entries",
 					"name": "Creature Type",
@@ -4897,9 +4905,9 @@
 				},
 				{
 					"type": "entries",
-					"name": "Fey Ancestry",
+					"name": "Enhanced Fey Ancestry",
 					"entries": [
-						"You have advantage on saving throws you make to avoid or end the {@condition charmed} condition on yourself."
+						"You have advantage on saving throws you make to avoid or end the {@condition charmed} condition on yourself. When you fail a saving throw to avoid or end the {@condition charmed} condition on yourself, you can choose to succeed instead. You can automatically succeed in this way once per long rest."
 					]
 				},
 				{
@@ -4914,7 +4922,7 @@
 					"name": "Fey Step",
 					"entries": [
 						"As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. You can use this trait a number of times equal to your proficiency bonus per long rest.",
-						"When you reach 3rd level, your Fey Step gain an additional effect based on your season; if the effect requires a saving throw, the save is made against your Fey Step DC:",
+						"Starting at 3rd level, your Fey Step gain an additional effect based on your season; if the effect requires a saving throw, the save is made against your Fey Step DC:",
 						{
 							"type": "abilityDc",
 							"name": "Fey Step",
@@ -14265,9 +14273,9 @@
 				},
 				{
 					"type": "entries",
-					"name": "Fey Ancestry",
+					"name": "Sea Fey Ancestry",
 					"entries": [
-						"You have advantage on saving throws you make to avoid or end the {@condition charmed} condition on yourself."
+						"You have advantage on saving throws you make to avoid or end the {@condition charmed} or {@condition deafened} condition on yourself."
 					]
 				},
 				{
@@ -14449,16 +14457,16 @@
 				},
 				{
 					"type": "entries",
-					"name": "Darkvision",
+					"name": "Superior Darkvision",
 					"entries": [
 						"You can see in dim light within 120 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Fey Ancestry",
+					"name": "Deadly Fey Ancestry",
 					"entries": [
-						"You have advantage on saving throws you make to avoid or end the {@condition charmed} condition on yourself."
+						"You have advantage on saving throws you make to avoid or end the {@condition charmed} or {@condition paralyzed} condition on yourself."
 					]
 				},
 				{
@@ -14480,12 +14488,12 @@
 					"name": "Blessing of the Raven Queen",
 					"entries": [
 						"As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. You can use this trait a number of times equal to your proficiency bonus per long rest.",
-						"Starting at 3rd level, you also gain resistance to all damage when you teleport using this trait. The resistance lasts until the start of your next turn as you appear ghostly and translucent."
+						"Starting at 3rd level, you also gain resistance to all damage and temporarily gain immunity against necrotic damage when you teleport using this trait. The resistance lasts until the start of your next turn as you appear ghostly and translucent."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Fey Trance",
+					"name": "Shadow Trance",
 					"entries": [
 						"You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness. While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice.",
 						"Whenever you finish this trance, you can gain two proficiencies that you don't have, that are {@book weapons|phb|5|weapons} or {@book tools|phb|5|tools} (including one of each) of your choice selected from the {@book Player's Handbook|PHB}. You mystically acquire these proficiencies by drawing them from shared elven memory, and you retain them until you finish your next long rest."
@@ -20180,6 +20188,16 @@
 					],
 					"data": {
 						"overwrite": "Darkvision"
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Underdark Fey Ancestry",
+					"entries": [
+						"You have advantage on saving throws you make to avoid or end the {@condition charmed} or {@condition frightened} condition on yourself."
+					],
+					"data": {
+						"overwrite": "Fey Ancestry"
 					}
 				},
 				{
