@@ -18718,6 +18718,155 @@
 			"hasFluffImages": true
 		},
 		{
+			"name": "Wild Elf",
+			"source": "MPMM",
+			"page": 36,
+			"lineage": true,
+			"ability": [
+                {
+                    "choose": {
+                        "weighted": {
+                            "from": [
+                                "str",
+                                "dex",
+                                "con",
+                                "int",
+                                "wis",
+                                "cha"
+                            ],
+                            "weights": [
+                                2,
+                                1
+                            ]
+                        }
+                    }
+                },
+                {
+                    "choose": {
+                        "weighted": {
+                            "from": [
+                                "str",
+                                "dex",
+                                "con",
+                                "int",
+                                "wis",
+                                "cha"
+                            ],
+                            "weights": [
+                                1,
+                                1,
+                                1
+                            ]
+                        }
+                    }
+                }
+            ],
+			"size": [
+				"M"
+			],
+				"creatureTypes": [
+				"humanoid"
+			],
+			"creatureTypeTags": [
+				"elf"
+			],
+			"speed": {
+				"walk": 35,
+				"climb": 25
+			},
+			"heightAndWeight": {
+				"baseHeight": 56,
+				"heightMod": "2d10",
+				"baseWeight": 100,
+				"weightMod": "2d4"
+			},
+			"age": {
+				"max": 750
+			},
+			"darkvision": 120,
+			"traitTags": [
+				"Improved Resting",
+				"Skill Bonus Dice",
+				"Tool Proficiency",
+				"Uncommon Race",
+				"Weapon Proficiency"
+			],
+			"skillProficiencies": [
+				{
+					"perception": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"elvish": true,
+					"any": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Creature Type",
+					"entries": [
+						"You are a Humanoid. You are also considered an {@race Elf} for any prerequisite or effect that requires you to be an {@race Elf}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Keen Senses",
+					"entries": [
+						"You have proficiency in the {@skill Perception}. Additionally, when you make a Wisdom ({@skill Perception}) check, you can roll a {@dice d4} and add the number rolled to the ability check."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fey Ancestry",
+					"entries": [
+						"You have advantage on saving throws you make to avoid or end the {@condition charmed} condition on yourself."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Jungle Movements",
+					"entries": [
+						"Your base walking speed is 35 feet and you have a climb speed of 25 feet. You can take the {@action Hide} action as a bonus action and can attempt to {@action hide} even when you are only {@quickref Vision and Light||2||lightly obscured} by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Enhanced Vision",
+					"entries": [
+						"You have supervior darkvision. You can see in dim light within 120 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray. Additionally, you can ignore disadvantage on {@skill Perception} checks while in a {@quickref Vision and Light||2||lightly obscured} area once per short or long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Primal Step",
+					"entries": [
+						"As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. You can use this trait a number of times equal to your proficiency bonus per long rest.",
+						"Starting at 3rd level, all ranged attack rolls against you are made with disadvantage when you teleport using this trait, lasting until the start of your next turn as you yourself, become {@quickref Vision and Light||2||lightly obscured}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Wild Trance",
+					"entries": [
+						"You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness. While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice.",
+						"Whenever you finish this trance, you can gain two proficiencies that you don't have, that are {@book weapons|phb|5|weapons} or {@book tools|phb|5|tools} (including one of each) of your choice selected from the {@book Player's Handbook|PHB}. You mystically acquire these proficiencies by drawing them from shared elven memory, and you retain them until you finish your next long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common, Elvish, and one other language that you and your DM agree is appropriate for your character."
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
 			"name": "Yuan-Ti",
 			"source": "MPMM",
 			"page": 36,
