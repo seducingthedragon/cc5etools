@@ -4798,6 +4798,7 @@
 			"darkvision": 60,
 			"traitTags": [
 				"Improved Resting",
+				"Skill Bonus Dice",
 				"Tool Proficiency",
 				"Uncommon Race",
 				"Weapon Proficiency"
@@ -4813,64 +4814,6 @@
 					"perception": true
 				}
 			],
-			"additionalSpells": [
-				{
-					"known": {
-						"1": [
-							"friends#c"
-						]
-					},
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					}
-				},
-				{
-					"known": {
-						"1": [
-							"guidance#c"
-						]
-					},
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					}
-				},
-				{
-					"known": {
-						"1": [
-							"minor illusion#c"
-						]
-					},
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					}
-				},
-				{
-					"known": {
-						"1": [
-							"produce flame#c"
-						]
-					},
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					}
-				}
-			],
 			"entries": [
 				"{@note Choose your eladrin's season: autumn, winter, spring, or summer. When finishing a long rest, you can change your season. See the \"Info\" tab for more information.}",
 				{
@@ -4882,16 +4825,40 @@
 				},
 				{
 					"type": "entries",
-					"name": "Seasonal Magic",
+					"name": "Season Related Enhancements",
 					"entries": [
-						"You know a cantrip, based off of your current season, as seen listed below. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).",
+						"Due to your seasonal nature, you gain the following enhancements based off of the season you are currently in.",
 						{
 							"type": "list",
 							"items": [
-								"Autumn - {@spell Guidance}",
-								"Winter - {@spell Minor Illusion} {@note (you replace the {@b M} component for a {@b V} component)}",
-								"Spring - {@spell Friends} {@note (you replace the {@b M} component for a {@b V} component)}",
-								"Summer - {@spell Produce Flame}"
+								{
+									"type": "item",
+									"name": "Autumn's Support",
+									"entries": [
+										"When you take the {@action Help} action, the target you are helping gains a bonus to their {@dice 1d20|D20 roll} equal to {@dice 1d4}. If you are {@action help||helping} with a skill you are proficient in, the bonus equals {@dice 1d6} instead."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Winter's Chill",
+									"entries": [
+										"You have the ability to emit the chill of a cold Winter's night at will. This chill cannot create snow or freeze a medium sized creature. You can, however, with a touch, cool the temperature of a target {@i (object or creature)} down to a point of near freezing. You control the temperate and if the chill is even present."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Spring's Charm",
+									"entries": [
+										"You have this magical nature about you, which allows you to build friends everywhere. After just 10 minutes of social interaction, you can change a person's feelings towards you from hostile to indifferent, and then from indifferent to friendly. You also gain a bonus to your Charisma ({@skill Persuasion}) checks equal to {@dice 1d4}."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Summer's Heat",
+									"entries": [
+										"You have the ability to emit the heat of a high noon Summer's day at will. This heat cannot produce fire, however, with a touch, you can heat a target {@i (object or creature)} up to a point of almost burning it. You control the temperate and if the heat is even present."
+									]
+								}
 							]
 						}
 					]

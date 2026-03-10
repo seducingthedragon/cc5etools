@@ -8419,7 +8419,6 @@
                     }
                 },
                 "MPMM": {
-                    "Eladrin": true,
                     "Half-Elf (Drow)": true,
                     "Half-Elf (Moon)": true,
                     "Half-Elf (Sun)": true,
@@ -9186,7 +9185,6 @@
                     }
                 },
                 "MPMM": {
-                    "Eladrin": true,
                     "Half-Elf (Moon)": true,
                     "Half-Elf (Sun)": true,
                     "Half-Elf (Wood)": true
@@ -12664,7 +12662,6 @@
                     }
                 },
                 "MPMM": {
-                    "Eladrin": true,
                     "Half-Elf (Drow)": true,
                     "Half-Elf (Moon)": true,
                     "Half-Elf (Sun)": true,
@@ -14403,7 +14400,6 @@
                     }
                 },
                 "MPMM": {
-                    "Eladrin": true,
                     "Half-Elf (Wood)": true,
                     "Genasi (Fire)": {
                         "baseName": "Genasi",
