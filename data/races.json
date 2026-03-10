@@ -21504,7 +21504,6 @@
 						"As a descendant of powerful {@creature djinni||djinns}, your ability to interact with the element of Air comes naturally to you. You gain the following benefits:",
 						{
 							"type": "list",
-							"style": "list-hang",
 							"items": [
 								{
 									"type": "item",
@@ -21617,7 +21616,6 @@
 						"As a descendant of powerful {@creature dao||Daos}, your ability to interact with the element of Earth comes naturally to you. You gain the following benefits:",
 						{
 							"type": "list",
-							"style": "list-hang",
 							"items": [
 								{
 									"type": "item",
@@ -21722,7 +21720,6 @@
 						"As a descendant of powerful {@creature efreeti||Efreetis}, your ability to interact with the element of Fire comes naturally to you. You gain the following benefits:",
 						{
 							"type": "list",
-							"style": "list-hang",
 							"items": [
 								{
 									"type": "item",
@@ -21841,7 +21838,6 @@
 						"As a descendant of powerful {@creature marid||Marids}, your ability to interact with the element of Water comes naturally to you. You gain the following benefits:",
 						{
 							"type": "list",
-							"style": "list-hang",
 							"items": [
 								{
 									"type": "entries",

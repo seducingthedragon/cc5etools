@@ -271,7 +271,7 @@
                 }
             ],
             "entries": [
-                "A Grappled creature can use its action to make a Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check against the grappler, ending the condition on itself on a success. The DC to succeed will be one of the following, at DM's discretion:",
+                "A Grappled creature can use its action to make a Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check against the grappler, ending the condition on itself on a success. The DC to succeed will be one of the following, at your DM's discretion:",
                 {
                     "type": "list",
                     "items": [
@@ -579,56 +579,62 @@
             ],
             "entries": [
                 "Instead of using a weapon to make a melee attack, you can use a punch, kick, head-butt, or similar forceful blow. This is an Unarmed Attack—a melee attack that involves you using your body to damage, grapple, or shove a target within 5 feet of you. If you are able to make multiple attacks with the {@action Attack} action, this attack replaces one of them.",
-                "Whenever you use your Unarmed Attack, choose one of the following options for its effect.",
                 {
                     "type": "entries",
+                    "name": "Types of Unarmed Attacks",
                     "entries": [
+                        "Whenever you use your Unarmed Attack, choose one of the following options for its effect.",
                         {
                             "type": "entries",
-                            "name": "Strike",
+                            "name": "Unamred Strike Attack",
                             "entries": [
-                                "When you make an {@action unarmed attack||Unarmed Strike Attack}, you make an attack roll against the target. Your bonus to the roll equals your Strength modifier plus your proficiency bonus. On a hit, the target takes Bludgeoning damage equal to {@dice 1d4} plus your Strength modifier."
+                                "When you make an {@action unarmed attack||Unarmed Strike Attack}, you make an attack roll against the target within reach. On a hit, the target takes bludgeoning damage equal to {@dice 1d4} + your Strength modifier. You are considered proficient in Unarmed Strike Attacks."
                             ]
                         },
                         {
                             "type": "entries",
-                            "name": "Grapple",
+                            "name": "Unarmed Grapple Attack",
                             "entries": [
-                                "When you make an {@action unarmed attack||Unarmed Grapple Attack}, it is possible only if the target is no more than one size larger than you and if you have a hand free to grab it. There are two ways to determine its outcome, at DM's discretion.",
+                                "When you make an {@action unarmed attack||Unarmed Grapple Attack}, you target one creature within reach as long as they are no more than one size larger than you and have at least one hand free to grab.",
+                                "To determine the outcome, you and your target make {@b Contested Rolls} against one another. Your target makes a Strength ({@skill Athletic}) or Dexterity ({@skill Acrobatic}) check (it chooses) against your Strength ({@skill Athletic}) check, which sets the DC. On a fail, your target is {@condition grappled} by you.",
+                                "You can drag or carry the {@condition grappled} creature with you when you move, however, your speed is halved, unless the creature is two or more sizes smaller than you."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Unarmed Shove Attack",
+                            "entries": [
+                                "When you make an {@action unarmed attack||Unarmed Shove Attack}, you target one creature within reach as long as the target is no more than one size larger than you.",
+                                "Similarly with the Unarmed Grapple Attack, your target makes a Strength ({@skill Athletic}) or Dexterity ({@skill Acrobatic}) check (it chooses) against your Strength ({@skill Athletic}) check, which sets the DC. On a fail, you either push it 5 feet away or cause it to be {@condition prone} (your choice)."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Variant Rules",
+                    "entries": [
+                        "Due to the nature of Unarmed Attacks, there are a lot of areas to expand, change, or restrict, based off of your world, your character, and your roleplay actions. Below are just a couple of ideas for variant rules regarding Unarmed Attacks, These are all at the {@u discretion of your DM}.",
+                        {
+                            "type": "entries",
+                            "name": "Save DC and Saving Throw",
+                            "entries": [
+                                "Sometimes, you may want to use the standard Save DC formula instead of contested rolls for Unarmed Grapple or Shove Attacks. If that's the case, your target makes a Strength or Dexterity saving throw against your Unarmed Save DC, formula below.",
                                 {
-                                    "type": "list",
-                                    "items": [
-                                        {
-                                            "type": "item",
-                                            "name": "Making Contested Rolls",
-                                            "entries": [
-                                                "Your target makes a Strength ({@skill Athletic}) or Dexterity ({@skill Acrobatic}) check (the target's choice) against your Strength ({@skill Athletic}) check, which sets the DC."
-                                            ]
-                                        },
-                                        {
-                                            "type": "item",
-                                            "name": "Using a Saving Throw",
-                                            "entries": [
-                                                "The target makes a Strength or Dexterity saving throw (target chooses) against your Unarmed DC."
-                                            ]
-                                        }
+                                    "type": "abilityDc",
+                                    "name": "Unarmed",
+                                    "attributes": [
+                                        "str"
                                     ]
-                                },
-                                "When you move, you can drag or carry the {@condition grappled} creature with you, but your speed is halved, unless the creature is two or more sizes smaller than you."
+                                }
                             ]
                         },
                         {
                             "type": "entries",
-                            "name": "Shove",
+                            "name": "Bonus Conditions",
                             "entries": [
-                                "When you make an {@action unarmed attack||Unarmed Shove Attack}, the target must succeed on a Strength or Dexterity saving throw (it chooses which) against your Unarmed DC. On a fail, you either push it 5 feet away or cause it to be {@condition prone} (your choice). This shove is possible only if the target is no more than one size larger than you."
-                            ]
-                        },
-                        {
-                            "type": "abilityDc",
-                            "name": "Unarmed",
-                            "attributes": [
-                                "str"
+                                "Sometimes, how you strike, grapple, or even shove, may result in additional conditions. The use of additional conditions is completely up to the DM and based on how you narrative your actions. A strike on its own, can easily be interpreted as a simple punch to the chest. If you added flavor, such as saying \"I kick the back of the target's knees\", it's possible that you may have kicked a target {@condition prone}.",
+                                "When it comes to grappling, there's no description given as to how you grapple your traget, only what is necessary for it to be successful. Pinning a target by the throat against a wall is a grapple. Holding a target in a headlock from behind is also a grappl, however with a little bit of pressure on the throat, may result in an {@condition incapacitated} target."
                             ]
                         }
                     ]
