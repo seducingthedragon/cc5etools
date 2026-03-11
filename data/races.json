@@ -21429,7 +21429,7 @@
 			"page": 16,
 			"speed": 35,
 			"resist": [
-				"lightning"
+				"thunder"
 			],
 			"additionalSpells": [
 				{
@@ -21474,9 +21474,9 @@
 							"items": [
 								{
 									"type": "item",
-									"name": "Lightning Resistance",
+									"name": "Thunder Resistance",
 									"entries": [
-										"You have resistance to lightning damage."
+										"You have resistance to thunder damage."
 									]
 								},
 								{
@@ -21513,13 +21513,14 @@
 						{
 							"type": "list",
 							"items": [
-								"Born from Humanoid (non-Genasi) and {@creature Djinni} parents",
-								"Born from at least one {@race Genasi|MPMM} parent",
-								"Born from non-Genasi parents who lives near a place suffused by Air Elemental Magic"
+								"Born from Humanoid (non-Genasi) and {@creature Djinni} parents,",
+								"Born from at least one {@race Genasi|MPMM} parent,",
+								"Born from non-Genasi parents who lives near a place suffused by Air Elemental Magic,",
+								"Or other creative ways not listed here."
 							]
 						},
 						"If your lineage involves one non-Genasi Humanoid parent and a {@creature Djinni}, you may gain one racial trait from your humanoid parent, at the discretion of your DM.",
-						"If your {@creature Djinni||non-Djinni} parent is of another creature type, such as Fey, please discuss with your DM on how that may impact your Genasi traits."
+						"If your {@creature Djinni||non-Djinni} parent is from another creature type, such as Fey, please discuss with your DM on how that may impact your Genasi traits."
 					]
 				}
 			],
@@ -21625,13 +21626,14 @@
 						{
 							"type": "list",
 							"items": [
-								"Born from Humanoid (non-Genasi) and {@creature Dao} parents",
-								"Born from at least one {@race Genasi|MPMM} parent",
-								"Born from non-Genasi parents who lives near a place suffused by Air Elemental Magic"
+								"Born from Humanoid (non-Genasi) and {@creature Dao} parents,",
+								"Born from at least one {@race Genasi|MPMM} parent,",
+								"Born from non-Genasi parents who lives near a place suffused by Earth Elemental Magic,",
+								"Or other creative ways not listed here."
 							]
 						},
 						"If your lineage involves one non-Genasi Humanoid parent and a {@creature Dao}, you may gain one racial trait from your humanoid parent, at the discretion of your DM.",
-						"If your {@creature Dao||non-Dao} parent is of another creature type, such as Fey, please discuss with your DM on how that may impact your Genasi traits."
+						"If your {@creature Dao||non-Dao} parent is from another creature type, such as Fey, please discuss with your DM on how that may impact your Genasi traits."
 					]
 				}
 			],
@@ -21729,13 +21731,14 @@
 						{
 							"type": "list",
 							"items": [
-								"Born from Humanoid (non-Genasi) and {@creature Efreeti} parents",
-								"Born from at least one {@race Genasi|MPMM} parent",
-								"Born from non-Genasi parents who lives near a place suffused by Air Elemental Magic"
+								"Born from Humanoid (non-Genasi) and {@creature Efreeti} parents,",
+								"Born from at least one {@race Genasi|MPMM} parent,",
+								"Born from non-Genasi parents who lives near a place suffused by Fire Elemental Magic,",
+								"Or other creative ways not listed here."
 							]
 						},
 						"If your lineage involves one non-Genasi Humanoid parent and a {@creature Efreeti}, you may gain one racial trait from your humanoid parent, at the discretion of your DM.",
-						"If your {@creature Efreeti||non-Efreeti} parent is of another creature type, such as Fey, please discuss with your DM on how that may impact your Genasi traits."
+						"If your {@creature Efreeti||non-Efreeti} parent is from another creature type, such as Fey, please discuss with your DM on how that may impact your Genasi traits."
 					]
 				}
 			],
@@ -21847,13 +21850,14 @@
 						{
 							"type": "list",
 							"items": [
-								"Born from Humanoid (non-Genasi) and {@creature Marid} parents",
-								"Born from at least one {@race Genasi|MPMM} parent",
-								"Born from non-Genasi parents who lives near a place suffused by Air Elemental Magic"
+								"Born from Humanoid (non-Genasi) and {@creature Marid} parents,",
+								"Born from at least one {@race Genasi|MPMM} parent,",
+								"Born from non-Genasi parents who lives near a place suffused by Water Elemental Magic,",
+								"Or other creative ways not listed here."
 							]
 						},
 						"If your lineage involves one non-Genasi Humanoid parent and a {@creature Marid}, you may gain one racial trait from your humanoid parent, at the discretion of your DM.",
-						"If your {@creature Marid||non-Marid} parent is of another creature type, such as Fey, please discuss with your DM on how that may impact your Genasi traits."
+						"If your {@creature Marid||non-Marid} parent is from another creature type, such as Fey, please discuss with your DM on how that may impact your Genasi traits."
 					]
 				}
 			],
