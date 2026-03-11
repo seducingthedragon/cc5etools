@@ -15084,6 +15084,10 @@
                     }
                 },
                 "MPMM": {
+                    "Genasi (Ooze)": {
+                        "baseName": "Genasi",
+                        "baseSource": "MPMM"
+                    },
                     "Tiefling (Gluttonous)": true
                 }
             },
@@ -21402,6 +21406,14 @@
                 "DSotDQ": {
                     "Adept of the Black Robes": true
                 }
+            },
+            "race": {
+                "MPMM": {
+                    "Genasi (Ooze)": {
+                        "baseName": "Genasi",
+                        "baseSource": "MPMM"
+                    }
+                }
             }
         }
     },
@@ -24476,6 +24488,10 @@
                     }
                 },
                 "MPMM": {
+                    "Genasi (Ooze)": {
+                        "baseName": "Genasi",
+                        "baseSource": "MPMM"
+                    },
                     "Half-Elf (Wood)": true
                 },
                 "PSK": {

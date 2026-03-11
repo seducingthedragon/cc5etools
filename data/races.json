@@ -21862,15 +21862,7 @@
 			"speed": 25,
 			"resist": [
 				"fire",
-				{
-					"resist": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks",
-					"cond": "true"
-				}
+				"poison"
 			],
 			"additionalSpells": [
 				{
@@ -21924,7 +21916,7 @@
 									"type": "item",
 									"name": "Resistance",
 									"entries": [
-										"You have resistance to fire damage and non-magical bludgeoning, piercing, and slashing damage. You also ignore non-magical {@quickref difficult terrain||3}."
+										"You have resistance to fire and poison damage. You also ignore non-magical {@quickref difficult terrain||3}."
 									]
 								},
 								{
@@ -21964,6 +21956,112 @@
 								"Born from Humanoid (non-Genasi) and a powerful Para-Elemental Being as your parents,",
 								"Born from two different elemental {@race Genasi|MPMM} parents,",
 								"Born from non-Genasi parents who lives near a place suffused by both Fire and Earth Elemental Magic or by your Magma Para-Elemental Magic,",
+								"Or other creative ways not listed here."
+							]
+						},
+						"If your lineage involves one non-Genasi Humanoid parent, you may gain one racial trait from your humanoid parent, at the discretion of your DM.",
+						"If your Non-Elemental Planar parent is from another creature type, such as Fey, please discuss with your DM on how that may impact your Genasi traits."
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Ooze",
+			"source": "MPMM",
+			"raceName": "Genasi",
+			"raceSource": "MPMM",
+			"page": 17,
+			"resist": [
+				"acid",
+				"poison"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"3": {
+							"daily": {
+								"1": [
+									"ray of sickness"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"wither and bloom|tce"
+								]
+							}
+						}
+					},
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": [
+							"primal savagery|xge#c"
+						]
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Para-Elemental Ancestry",
+					"entries": [
+						"As a descendant of the Para-Elemental Plane of Ooze, a mixture of Earth and Water, fluffyfluffflufffluff. You gain the following benefits:",
+						{
+							"type": "list",
+							"items": [
+								{
+									"type": "item",
+									"name": "Resistances",
+									"entries": [
+										"You have resistance to acid and poison damage."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Nearly Gelatenous",
+									"entries": [
+										"Your body is solid, but just barely. Your form is somewhere between the solid humanoid form of a {@race Genasi (Water)|MPMM|Water Genasi} and a maluble form of a {@race Plasmoid|MPMM}. Once per turn, you can subtract {@dice 1d4} from the nonmagical bludgeoning, piercing, or slashing damage dealt to you (no action required)."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Guiding the Gel",
+									"entries": [
+										"You have the ability to create an oozy-like substance from a natural earthy source, and mold, shape, control, etc., similar substances within a 5-foot cube of space in a manner that's harmless, including moving it into a neighboring 5-foot cube. This does not apply to ooze creatures without additional aid."
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Magic's Primordial Ooze",
+					"entries": [
+						"You know the {@spell Primal Savagery|XGE} cantrip. Starting at 3rd level, you can cast {@spell Ray of Sickness} once per long rest with this trait. Starting 5th level, you can cast {@spell Wither and Bloom|TCE} once per long rest, without material components, with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).",
+						"{@note If you have a Spellcasting or Pact Magic class feature, you can cast the leveled spells from this trait using those spell slots, following the casting rules provided by your class.}"
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Variant Rule: Mixed Lineage",
+					"entries": [
+						"Those born Genasi come into existance a number of difference ways, especially when you're a child of the Para-Elements.",
+						{
+							"type": "list",
+							"items": [
+								"Born from Humanoid (non-Genasi) and a powerful Para-Elemental Being as your parents,",
+								"Born from two different elemental {@race Genasi|MPMM} parents,",
+								"Born from non-Genasi parents who lives near a place suffused by both Earth and Water Elemental Magic or by your Ooze Para-Elemental Magic,",
 								"Or other creative ways not listed here."
 							]
 						},
