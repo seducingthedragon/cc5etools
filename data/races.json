@@ -21812,7 +21812,7 @@
 									"type": "item",
 									"name": "Immunity and Vulnerability",
 									"entries": [
-										"You have immunity to cold damage, however you are vulnerable to fire damage. You're also naturally adapted to cold climates, as described in chapter 5 of the Dungeon Master's Guide."
+										"You have immunity to cold damage, however you are vulnerable to fire damage. You're also naturally adapted to cold climates, as described in {@book chapter 5 of the Dungeon Master's Guide|DMG|5|Extreme Cold}."
 									]
 								},
 								{
@@ -22161,7 +22161,7 @@
 								},
 								{
 									"type": "item",
-									"name": "",
+									"name": "Guiding Ash",
 									"entries": [
 										"You have the ability to create smoke from a decaying source, and mold, shape, control, etc., smoke within a 5-foot cube of space in a manner that's harmless, including moving it into a neighboring 5-foot cube."
 									]
