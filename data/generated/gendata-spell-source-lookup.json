@@ -479,6 +479,14 @@
                         }
                     }
                 }
+            },
+            "race": {
+                "MPMM": {
+                    "Genasi (Ice)": {
+                        "baseName": "Genasi",
+                        "baseSource": "MPMM"
+                    }
+                }
             }
         },
         "summon dragon spirit": {
@@ -9676,6 +9684,14 @@
                     "Adept of the Red Robes": true
                 }
             },
+            "race": {
+                "MPMM": {
+                    "Genasi (Magma)": {
+                        "baseName": "Genasi",
+                        "baseSource": "MPMM"
+                    }
+                }
+            },
             "reward": {
                 "MOT": {
                     "Purphoros's Votary": true
@@ -15808,6 +15824,10 @@
             },
             "race": {
                 "MPMM": {
+                    "Genasi (Magma)": {
+                        "baseName": "Genasi",
+                        "baseSource": "MPMM"
+                    },
                     "Tiefling (Resentful)": true
                 },
                 "MTF": {
@@ -18018,6 +18038,10 @@
                 "MPMM": {
                     "Aasimar": true,
                     "Duergar": true,
+                    "Genasi (Magma)": {
+                        "baseName": "Genasi",
+                        "baseSource": "MPMM"
+                    },
                     "Tiefling (Envious)": true,
                     "Tiefling (Gluttonous)": true,
                     "Tiefling (Greedsome)": true,
@@ -24049,6 +24073,14 @@
                 "DSotDQ": {
                     "Adept of the Red Robes": true
                 }
+            },
+            "race": {
+                "MPMM": {
+                    "Genasi (Earth)": {
+                        "baseName": "Genasi",
+                        "baseSource": "MPMM"
+                    }
+                }
             }
         },
         "melf's minute meteors": {
@@ -25016,14 +25048,6 @@
                                 "name": "Arcane Trickster"
                             }
                         }
-                    }
-                }
-            },
-            "race": {
-                "MPMM": {
-                    "Genasi (Ice)": {
-                        "baseName": "Genasi",
-                        "baseSource": "MPMM"
                     }
                 }
             }

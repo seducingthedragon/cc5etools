@@ -21546,7 +21546,7 @@
 						"5": {
 							"daily": {
 								"1": [
-									"pass without trace"
+									"maximilian's earthen grasp|xge"
 								]
 							}
 						}
@@ -21614,7 +21614,7 @@
 					"type": "entries",
 					"name": "Merge with Stone",
 					"entries": [
-						"You know the {@spell Magic Stone|XGE} cantrip. Starting at 3rd level, you can cast {@spell Earth Tremor|XGE} once per long rest with this trait. Starting at 5th level, you can cast {@spell Pass Without Trace} once per long rest, without material components, with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).",
+						"You know the {@spell Magic Stone|XGE} cantrip. Starting at 3rd level, you can cast {@spell Earth Tremor|XGE} once per long rest with this trait. Starting at 5th level, you can cast {@spell Maximilian's Earthen Grasp|XGE} once per long rest, without material components, with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).",
 						"{@note If you have a Spellcasting or Pact Magic class feature, you can cast the leveled spells from this trait using those spell slots, following the casting rules provided by your class.}"
 					]
 				},
@@ -21770,7 +21770,7 @@
 						"5": {
 							"daily": {
 								"1": [
-									"snilloc's snowball swarm|xge"
+									"rime's binding ice|ftd"
 								]
 							}
 						}
@@ -21816,7 +21816,7 @@
 									"type": "item",
 									"name": "Form Icicles",
 									"entries": [
-										"You have the ability to create icicles from a water source, mold, shape, control, etc., ice within a 5-foot cube of space in a manner that's harmless, including moving it into a neighboring 5-foot cube."
+										"You have the ability to create icicles from a water source, and mold, shape, control, etc., ice within a 5-foot cube of space in a manner that's harmless, including moving it into a neighboring 5-foot cube."
 									]
 								}
 							]
@@ -21827,7 +21827,7 @@
 					"type": "entries",
 					"name": "Magic of the Frost",
 					"entries": [
-						"You know the {@spell Frostbite|XGE} cantrip. Starting at 3rd level, you can cast {@spell Ice Knife|XGE} once per long rest, without material components, with this trait. Starting 5th level, you can cast {@spell Snilloc's Snowball Swarm|XGE} once per long rest, without material components, with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).",
+						"You know the {@spell Frostbite|XGE} cantrip. Starting at 3rd level, you can cast {@spell Ice Knife|XGE} once per long rest, without material components, with this trait. Starting 5th level, you can cast {@spell Rime's Binding Ice|FTD} once per long rest, without material components, with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).",
 						"{@note If you have a Spellcasting or Pact Magic class feature, you can cast the leveled spells from this trait using those spell slots, following the casting rules provided by your class.}"
 					]
 				},
@@ -21842,6 +21842,128 @@
 								"Born from Humanoid (non-Genasi) and a powerful Para-Elemental Being as your parents,",
 								"Born from two different elemental {@race Genasi|MPMM} parents,",
 								"Born from non-Genasi parents who lives near a place suffused by both Air and Water Elemental Magic or by your Ice Para-Elemental Magic,",
+								"Or other creative ways not listed here."
+							]
+						},
+						"If your lineage involves one non-Genasi Humanoid parent, you may gain one racial trait from your humanoid parent, at the discretion of your DM.",
+						"If your Non-Elemental Planar parent is from another creature type, such as Fey, please discuss with your DM on how that may impact your Genasi traits."
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Magma",
+			"source": "MPMM",
+			"raceName": "Genasi",
+			"raceSource": "MPMM",
+			"page": 17,
+			"speed": 25,
+			"resist": [
+				"fire",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": "true"
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"3": {
+							"daily": {
+								"1": [
+									"searing smite"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"heat metal"
+								]
+							}
+						}
+					},
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": [
+							"thaumaturgy#c"
+						]
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Speed",
+					"entries": [
+						"Due to your elemental nature, your speed is 25 feet."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Para-Elemental Ancestry",
+					"entries": [
+						"As a descendant of the Para-Elemental Plane of Magma, a mixture of Fire and Earth, you are tied to the most primal component of the world and of the natural land. You gain the following benefits:",
+						{
+							"type": "list",
+							"items": [
+								{
+									"type": "item",
+									"name": "Resistance",
+									"entries": [
+										"You have resistance to fire damage and non-magical bludgeoning, piercing, and slashing damage. You also ignore non-magical {@quickref difficult terrain||3}."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Natural Light Source",
+									"entries": [
+										"Similarly to {@race Genasi (Fire)|MPMM|Fire Genasi}, you have the ability to generate light, however, this light does not emit from yourself. Instead, you can choose to emit dim and bright light from the cracks in the natural earth below your feet. You can also allow the light to maintain the path you had walked up to 30 feet behind you. This light does not glow beyond its present space."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Maneuvering Magma",
+									"entries": [
+										"You have the ability to create magma from a rocky/stone source, and mold, shape, control, etc., magma within a 5-foot cube of space in a manner that's harmless, including moving it into a neighboring 5-foot cube."
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fire and Stone",
+					"entries": [
+						"You know the {@spell Thaumaturgy} cantrip. Additionally, when you cast {@spell Thaumaturgy} with the Tremors effect, you can add additional tremors equal to your level. Starting at 3rd level, you can cast {@spell Searing Smite} once per long rest with this trait. Starting 5th level, you can cast {@spell Heat Metal} once per long rest, without material components, with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).",
+						"{@note If you have a Spellcasting or Pact Magic class feature, you can cast the leveled spells from this trait using those spell slots, following the casting rules provided by your class.}"
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Variant Rule: Mixed Lineage",
+					"entries": [
+						"Those born Genasi come into existance a number of difference ways, especially when you're a child of the Para-Elements.",
+						{
+							"type": "list",
+							"items": [
+								"Born from Humanoid (non-Genasi) and a powerful Para-Elemental Being as your parents,",
+								"Born from two different elemental {@race Genasi|MPMM} parents,",
+								"Born from non-Genasi parents who lives near a place suffused by both Fire and Earth Elemental Magic or by your Magma Para-Elemental Magic,",
 								"Or other creative ways not listed here."
 							]
 						},
