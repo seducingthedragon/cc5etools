@@ -23225,6 +23225,10 @@
                     }
                 },
                 "MPMM": {
+                    "Genasi (Ice)": {
+                        "baseName": "Genasi",
+                        "baseSource": "MPMM"
+                    },
                     "Half-Elf (Drow)": true,
                     "Half-Elf (Sun)": true,
                     "Half-Elf (Wood)": true,
@@ -23514,6 +23518,14 @@
                 },
                 "SCC": {
                     "Strixhaven Initiate": true
+                }
+            },
+            "race": {
+                "MPMM": {
+                    "Genasi (Ice)": {
+                        "baseName": "Genasi",
+                        "baseSource": "MPMM"
+                    }
                 }
             }
         },
@@ -25004,6 +25016,14 @@
                                 "name": "Arcane Trickster"
                             }
                         }
+                    }
+                }
+            },
+            "race": {
+                "MPMM": {
+                    "Genasi (Ice)": {
+                        "baseName": "Genasi",
+                        "baseSource": "MPMM"
                     }
                 }
             }

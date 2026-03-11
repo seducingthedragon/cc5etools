@@ -21532,7 +21532,7 @@
 			"source": "MPMM",
 			"raceName": "Genasi",
 			"raceSource": "MPMM",
-			"page": 17,
+			"page": 16,
 			"additionalSpells": [
 				{
 					"innate": {
@@ -21645,7 +21645,7 @@
 			"source": "MPMM",
 			"raceName": "Genasi",
 			"raceSource": "MPMM",
-			"page": 17,
+			"page": 16,
 			"resist": [
 				"fire"
 			],
@@ -21739,6 +21739,114 @@
 						},
 						"If your lineage involves one non-Genasi Humanoid parent and a {@creature Efreeti}, you may gain one racial trait from your humanoid parent, at the discretion of your DM.",
 						"If your {@creature Efreeti||non-Efreeti} parent is from another creature type, such as Fey, please discuss with your DM on how that may impact your Genasi traits."
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Ice",
+			"source": "MPMM",
+			"raceName": "Genasi",
+			"raceSource": "MPMM",
+			"page": 16,
+			"resist": [
+				"cold"
+			],
+			"vulnerable": [
+				"fire"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"3": {
+							"daily": {
+								"1": [
+									"ice knife|xge"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"snilloc's snowball swarm|xge"
+								]
+							}
+						}
+					},
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": [
+							"frostbite|xge#c"
+						]
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Para-Elemental Ancestry",
+					"entries": [
+						"As a descendant of the Para-Elemental Plane of Ice, a mixture of Air and Water, the cold is a place of warmth and comfort for you. You gain the following benefits:",
+						{
+							"type": "list",
+							"items": [
+								{
+									"type": "item",
+									"name": "Resistance and Vulnerability",
+									"entries": [
+										"You have resistance to cold damage, however you are vulnerable to fire damage. You're also naturally adapted to cold climates, as described in chapter 5 of the Dungeon Master's Guide."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Ice Path",
+									"entries": [
+										"At will, you can form a solid ice path on a water's surface, emanating out from you by an additional 5 feet. This allows you the ability to walk on water, solidifying an additional 5-feet as you move in one direction and melting the path behind you. This does not work on any other liquid-based surface."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Form Icicles",
+									"entries": [
+										"You have the ability to create icicles from a water source, mold, shape, control, etc., ice within a 5-foot cube of space in a manner that's harmless, including moving it into a neighboring 5-foot cube."
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Magic of the Frost",
+					"entries": [
+						"You know the {@spell Frostbite|XGE} cantrip. Starting at 3rd level, you can cast {@spell Ice Knife|XGE} once per long rest, without material components, with this trait. Starting 5th level, you can cast {@spell Snilloc's Snowball Swarm|XGE} once per long rest, without material components, with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).",
+						"{@note If you have a Spellcasting or Pact Magic class feature, you can cast the leveled spells from this trait using those spell slots, following the casting rules provided by your class.}"
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Variant Rule: Mixed Lineage",
+					"entries": [
+						"Those born Genasi come into existance a number of difference ways, especially when you're a child of the Para-Elements.",
+						{
+							"type": "list",
+							"items": [
+								"Born from Humanoid (non-Genasi) and a powerful Para-Elemental Being as your parents,",
+								"Born from two different elemental {@race Genasi|MPMM} parents,",
+								"Born from non-Genasi parents who lives near a place suffused by both Air and Water Elemental Magic or by your Ice Para-Elemental Magic,",
+								"Or other creative ways not listed here."
+							]
+						},
+						"If your lineage involves one non-Genasi Humanoid parent, you may gain one racial trait from your humanoid parent, at the discretion of your DM.",
+						"If your Non-Elemental Planar parent is from another creature type, such as Fey, please discuss with your DM on how that may impact your Genasi traits."
 					]
 				}
 			],
