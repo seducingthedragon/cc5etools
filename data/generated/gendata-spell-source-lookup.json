@@ -6143,6 +6143,14 @@
                 "SCC": {
                     "Strixhaven Initiate": true
                 }
+            },
+            "race": {
+                "MPMM": {
+                    "Genasi (Smoke)": {
+                        "baseName": "Genasi",
+                        "baseSource": "MPMM"
+                    }
+                }
             }
         },
         "divination": {
@@ -11024,12 +11032,6 @@
                         "baseSource": "EEPC"
                     }
                 },
-                "MPMM": {
-                    "Genasi (Air)": {
-                        "baseName": "Genasi",
-                        "baseSource": "MPMM"
-                    }
-                },
                 "ERLW": {
                     "Half-Elf (Variant; Mark of Storm)": {
                         "baseName": "Half-Elf",
@@ -11642,6 +11644,10 @@
                     }
                 },
                 "MPMM": {
+                    "Genasi (Air)": {
+                        "baseName": "Genasi",
+                        "baseSource": "MPMM"
+                    },
                     "Githyanki": true,
                     "Githzerai": true,
                     "Half-Elf (Drow)": true,
@@ -12678,6 +12684,10 @@
                     }
                 },
                 "MPMM": {
+                    "Genasi (Smoke)": {
+                        "baseName": "Genasi",
+                        "baseSource": "MPMM"
+                    },
                     "Half-Elf (Drow)": true,
                     "Half-Elf (Moon)": true,
                     "Half-Elf (Sun)": true,
@@ -13438,7 +13448,7 @@
                     }
                 },
                 "MPMM": {
-                    "Genasi (Earth)": {
+                    "Genasi (Smoke)": {
                         "baseName": "Genasi",
                         "baseSource": "MPMM"
                     }
@@ -16415,10 +16425,6 @@
                     }
                 },
                 "MPMM": {
-                    "Genasi (Air)": {
-                        "baseName": "Genasi",
-                        "baseSource": "MPMM"
-                    },
                     "Half-Elf (Drow)": true,
                     "Half-Elf (Sun)": true,
                     "Kobold": true
@@ -25807,6 +25813,14 @@
                                 "name": "Arcane Trickster"
                             }
                         }
+                    }
+                }
+            },
+            "race": {
+                "MPMM": {
+                    "Genasi (Air)": {
+                        "baseName": "Genasi",
+                        "baseSource": "MPMM"
                     }
                 }
             }

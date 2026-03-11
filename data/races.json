@@ -21427,7 +21427,10 @@
 			"raceName": "Genasi",
 			"raceSource": "MPMM",
 			"page": 16,
-			"speed": 35,
+			"speed": {
+				"walk": 30,
+				"fly": true
+			},
 			"resist": [
 				"thunder"
 			],
@@ -21444,7 +21447,7 @@
 						"5": {
 							"daily": {
 								"1": [
-									"levitate"
+									"warding wind|xge"
 								]
 							}
 						}
@@ -21458,12 +21461,19 @@
 					},
 					"known": {
 						"1": [
-							"shocking grasp#c"
+							"mage hand#c"
 						]
 					}
 				}
 			],
 			"entries": [
+				{
+					"type": "entries",
+					"name": "Speed",
+					"entries": [
+						"Due to your airy nature, you have a fly speed equal to your walking speed, however you cannot maintain flight if you are {@condition incapacitated}."
+					]
+				},
 				{
 					"type": "entries",
 					"name": "Air Elemental Ancestry",
@@ -21501,7 +21511,7 @@
 					"type": "entries",
 					"name": "Mingle with the Wind",
 					"entries": [
-						"You know the {@spell Shocking Grasp} cantrip. Starting at 3rd level, you can cast {@spell Feather Fall} once per long rest, without material components, with this trait. Starting 5th level, you can cast {@spell Levitate} once per long rest, without material components, with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).",
+						"You know the {@spell Mage Hand} cantrip. With this trait, you can make the hand {@condition invisible} and extend its reach to 60 feet. Starting at 3rd level, you can cast {@spell Feather Fall} once per long rest, without material components, with this trait. Starting 5th level, you can cast {@spell Warding Wind|XGE} once per long rest with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).",
 						"{@note If you have a Spellcasting or Pact Magic class feature, you can cast the leveled spells from this trait using those spell slots, following the casting rules provided by your class.}"
 					]
 				},
@@ -21751,7 +21761,7 @@
 			"raceName": "Genasi",
 			"raceSource": "MPMM",
 			"page": 16,
-			"resist": [
+			"immune": [
 				"cold"
 			],
 			"vulnerable": [
@@ -21794,15 +21804,15 @@
 					"type": "entries",
 					"name": "Para-Elemental Ancestry",
 					"entries": [
-						"As a descendant of the Para-Elemental Plane of Ice, a mixture of Air and Water, the cold is a place of warmth and comfort for you. You gain the following benefits:",
+						"As a descendant of the Para-Elemental Plane of Ice, a mixture of Water and Air, the cold is a place of warmth and comfort for you. You gain the following benefits:",
 						{
 							"type": "list",
 							"items": [
 								{
 									"type": "item",
-									"name": "Resistance and Vulnerability",
+									"name": "Immunity and Vulnerability",
 									"entries": [
-										"You have resistance to cold damage, however you are vulnerable to fire damage. You're also naturally adapted to cold climates, as described in chapter 5 of the Dungeon Master's Guide."
+										"You have immunity to cold damage, however you are vulnerable to fire damage. You're also naturally adapted to cold climates, as described in chapter 5 of the Dungeon Master's Guide."
 									]
 								},
 								{
@@ -21861,8 +21871,8 @@
 			"page": 17,
 			"speed": 25,
 			"resist": [
-				"fire",
-				"poison"
+				"acid",
+				"fire"
 			],
 			"additionalSpells": [
 				{
@@ -21916,7 +21926,7 @@
 									"type": "item",
 									"name": "Resistance",
 									"entries": [
-										"You have resistance to fire and poison damage. You also ignore non-magical {@quickref difficult terrain||3}."
+										"You have resistance to fire and acid damage. You also ignore non-magical {@quickref difficult terrain||3}."
 									]
 								},
 								{
@@ -22014,7 +22024,7 @@
 					"type": "entries",
 					"name": "Para-Elemental Ancestry",
 					"entries": [
-						"As a descendant of the Para-Elemental Plane of Ooze, a mixture of Earth and Water, fluffyfluffflufffluff. You gain the following benefits:",
+						"As a descendant of the Para-Elemental Plane of Ooze, a mixture of Earth and Water, your essence is made from death and decay yet so much of life springs from its existance. You gain the following benefits:",
 						{
 							"type": "list",
 							"items": [
@@ -22022,7 +22032,7 @@
 									"type": "item",
 									"name": "Resistances",
 									"entries": [
-										"You have resistance to acid and poison damage."
+										"You have resistance to acid and poison damage. Additionally, you have advantage on saving throws against being {@condition poisoned}."
 									]
 								},
 								{
@@ -22062,6 +22072,123 @@
 								"Born from Humanoid (non-Genasi) and a powerful Para-Elemental Being as your parents,",
 								"Born from two different elemental {@race Genasi|MPMM} parents,",
 								"Born from non-Genasi parents who lives near a place suffused by both Earth and Water Elemental Magic or by your Ooze Para-Elemental Magic,",
+								"Or other creative ways not listed here."
+							]
+						},
+						"If your lineage involves one non-Genasi Humanoid parent, you may gain one racial trait from your humanoid parent, at the discretion of your DM.",
+						"If your Non-Elemental Planar parent is from another creature type, such as Fey, please discuss with your DM on how that may impact your Genasi traits."
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Smoke",
+			"source": "MPMM",
+			"raceName": "Genasi",
+			"raceSource": "MPMM",
+			"page": 17,
+			"resist": [
+				"poison",
+				"psychic"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"3": {
+							"daily": {
+								"1": [
+									"dissonant whispers"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"pass without trace"
+								]
+							}
+						}
+					},
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": [
+							"minor illusion#c"
+						]
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Darkvision and Obscured Vision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.",
+						"Additionally, your darkvision allows you to see through {@quickref Vision and Light||2||heavily obscured} areas as if they were {@quickref Vision and Light||2||lightly obscured}, and see through {@quickref Vision and Light||2||lightly obscured} areas as if they were not. You still cannot see through magical darkness without additional supports."
+					],
+					"data": {
+						"overwrite": "Darkvision"
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Para-Elemental Ancestry",
+					"entries": [
+						"As a descendant of the Para-Elemental Plane of Smoke, a mixture of Air and Fire, the disorienting nature of these clouds bring you comfort. You gain the following benefits:",
+						{
+							"type": "list",
+							"items": [
+								{
+									"type": "item",
+									"name": "Resistances",
+									"entries": [
+										"You have resistance to poison and psychic damage."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Still Breath",
+									"entries": [
+										"You are able to hold your breath for up to 1 hour, without making any checks."
+									]
+								},
+								{
+									"type": "item",
+									"name": "",
+									"entries": [
+										"You have the ability to create smoke from a decaying source, and mold, shape, control, etc., smoke within a 5-foot cube of space in a manner that's harmless, including moving it into a neighboring 5-foot cube."
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Smokey Confusion",
+					"entries": [
+						"You know the {@spell Minor Illusion} cantrip. Starting at 3rd level, you can cast {@spell Dissonant Whispers} once per long rest with this trait. Starting 5th level, you can cast {@spell Pass without Trace} once per long rest, without material components, with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).",
+						"{@note If you have a Spellcasting or Pact Magic class feature, you can cast the leveled spells from this trait using those spell slots, following the casting rules provided by your class.}"
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Variant Rule: Mixed Lineage",
+					"entries": [
+						"Those born Genasi come into existance a number of difference ways, especially when you're a child of the Para-Elements.",
+						{
+							"type": "list",
+							"items": [
+								"Born from Humanoid (non-Genasi) and a powerful Para-Elemental Being as your parents,",
+								"Born from two different elemental {@race Genasi|MPMM} parents,",
+								"Born from non-Genasi parents who lives near a place suffused by both Air and Fire Elemental Magic or by your Smoke Para-Elemental Magic,",
 								"Or other creative ways not listed here."
 							]
 						},
