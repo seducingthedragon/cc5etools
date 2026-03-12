@@ -17,13 +17,13 @@
 				}
 			],
 			"entries": [
-				"While you have the Blinded condition, you experience the following effects.",
+				"While you have the {@u Blinded} condition, you experience the following effects.",
 				{
 					"type": "entries",
 					"entries": [
 						{
 							"type": "entries",
-							"name": "Auto Fail",
+							"name": "Automatic Fail",
 							"entries": [
 								"You cannot see and automatically fail any ability check and saving throw that requires sight."
 							]
@@ -32,7 +32,7 @@
 							"type": "entries",
 							"name": "Attacks Affected",
 							"entries": [
-								"Attack rolls against you have advantage, and your attack rolls have disadvantage."
+								"{@action Attack||Attack rolls} against you have advantage, and your {@action Attack||attack rolls} have disadvantage."
 							]
 						}
 					]
@@ -57,7 +57,7 @@
 				}
 			],
 			"entries": [
-				"While you have the Charmed condition, you experience the following effects.",
+				"While you have the {@u Charmed} condition, you experience the following effects.",
 				{
 					"type": "entries",
 					"entries": [
@@ -65,7 +65,7 @@
 							"type": "entries",
 							"name": "Non-Threatening",
 							"entries": [
-								"You can't attack the charmer or target the charmer with harmful abilities or magical effects."
+								"You cannot {@action attack} the charmer or target the charmer with harmful abilities or magical effects."
 							]
 						},
 						{
@@ -97,7 +97,7 @@
 				}
 			],
 			"entries": [
-				"While you are Deafened, you cannot hear and automatically fail any ability check and saving throw that requires hearing."
+				"While you are {@u Deafened}, you cannot hear and automatically fail any ability check and saving throw that requires hearing."
 			],
 			"hasFluffImages": true
 		},
@@ -114,73 +114,75 @@
 				}
 			],
 			"entries": [
-				"While you have the Exhaustion condition, you experience the following effects.",
+				"{@i This condition is cumulative. Each time you receive it, you gain {@u 1 Exhaustion Level}. You die if your Exhaustion level is 6.}",
+				"While you have the {@u Exhaustion} condition, you experience the following effects.",
 				{
 					"type": "entries",
 					"entries": [
 						{
 							"type": "entries",
-							"name": "Exhaustion Levels",
-							"entries": [
-								"This condition is cumulative. Each time you receive it, you gain 1 Exhaustion level. You die if your Exhaustion level is 6."
-							]
-						},
-						{
-							"type": "entries",
 							"name": "D20 Tests Affected",
 							"entries": [
-								"When you make a D20 Test the roll is reduced by 2 times your Exhaustion level."
+								"When you make a {@dice d20|D20}, the roll is reduced by 2x's your exhaustion level."
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Speed Reduced",
 							"entries": [
-								"Your speed is reduced by a number of feet equal to 5 times your Exhaustion level."
+								"Your speed is reduced by a number of feet equal to 5x's your exhaustion level."
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Removing Exhaustion Levels",
 							"entries": [
-								"Finishing a Long Rest removes 1 of your Exhaustion levels. When your Exhaustion level reaches 0, the condition ends."
+								"Finishing a {@quickref resting|PHB|2|0|long rest} removes 1 exhaustion level. When your exhaustion level reaches 0, the condition ends."
 							]
 						}
 					]
 				},
-      		  {
+      		  	{
 					"type": "table",
 					"colLabels": [
-						"Level",
-						"Effect"
+						"Exhaustion Level",
+						"{@dice d20|D20 Roll} Penalty",
+						"Movement Speed Penalty"
 					],
 					"colStyles": [
-						"col-1 text-center",
-						"col-11"
+						"col-4 text-center",
+						"col-4 text-center",
+						"col-4 text-center"
 					],
 					"rows": [
 						[
 							"1",
-							"\u22122 on D20 rolls, \u22125ft from Movement Speed"
+							"{@dice 1d20-2|-2}",
+							"-5ft"
 						],
 						[
 							"2",
-							"\u22124 on D20 rolls, \u221210ft from Movement Speed"
+							"{@dice 1d20-4|-4}",
+							"-10ft"
 						],
 						[
 							"3",
-							"\u22126 on D20 rolls, \u221215ft from Movement Speed"
+							"{@dice 1d20-6|-6}",
+							"-15ft"
 						],
 						[
 							"4",
-							"\u22128 on D20 rolls, \u221220ft from Movement Speed"
+							"{@dice 1d20-8|-8}",
+							"-20ft"
 						],
 						[
 							"5",
-							"\u221210 on D20 rolls, \u221225ft from Movement Speed"
+							"{@dice 1d20-10|-10}",
+							"-25ft"
 						],
 						[
 							"6",
+							"Death",
 							"Death"
 						]
 					]
@@ -204,7 +206,7 @@
 				}
 			],
 			"entries": [
-				"While you have the Frightened condition, you experience the following effects.",
+				"While you have the {@u Frightened} condition, you experience the following effects.",
 				{
 					"type": "entries",
 					"entries": [
@@ -219,7 +221,7 @@
 							"type": "entries",
 							"name": "Movement Impacted",
 							"entries": [
-								"You can't willingly move closer to the source of your fear."
+								"You can't willingly move closer to the source of your fear, not can you {@action attack} it."
 							]
 						}
 					]
@@ -244,7 +246,7 @@
 				}
 			],
 			"entries": [
-				"While you have the Grappled condition, you experience the following effects.",
+				"While you have the {@u Grappled} condition, you experience the following effects.",
 				{
 					"type": "entries",
 					"entries": [
@@ -252,21 +254,21 @@
 							"type": "entries",
 							"name": "Speed 0",
 							"entries": [
-								"Your speed is 0 and can't increase."
+								"Your speed is 0 and cannot increase."
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Attacks Affected",
 							"entries": [
-								"You have Disadvantage on attack rolls against any target other than the grappler."
+								"You have disadvantage on {@action Attack||attack rolls} against any target other than the grappler."
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Movable",
 							"entries": [
-								"The grappler can drag or carry you when it moves, but every foot of movement costs it 1 extra foot unless you are Tiny or two or more sizes smaller than it."
+								"You are moveable by the grappler."
 							]
 						}
 					]
@@ -278,11 +280,9 @@
 			"name": "Hidden",
 			"source": "PHB",
 			"page": 290,
-			"srd": true,
-			"basicRules": true,
 			"entries": [
-				"On a successful Stealth check to {@action hide}, you gain the Hidden Condition, granting you total cover behind the object or creature you are hiding behind, concealing your presence.",
-				"While hidden, you cannot be perceived without the use of movement, noise, or magic, and you gain the following benefits.",
+				"On a successful Stealth check to {@action hide}, you gain the {@u Hidden} Condition, granting you total cover behind the object or creature you are hiding behind, concealing your presence.",
+				"While {@u hidden}, you cannot be perceived without the use of movement, noise, or magic. You gain the following benefits.",
 				{
 					"type": "entries",
 					"entries": [
@@ -297,15 +297,13 @@
 							"type": "entries",
 							"name": "Surprise",
 							"entries": [
-								"You have advantage on your next attack roll immediately after your {@action hide} Action. If your next action is related to magic, such as casting spells, and it requires a saving throw, the targeted creature(s) will make their saving throw with disadvantage as long as you were able to see them while hidden and the spell does not have any Verbal components."
+								"You have advantage on your next {@action Attack||attack roll} immediately after your {@action Hide} action. If your next action involves casting a spell that requires a saving throw, the target will make the save with disadvantage, as long as you can see them while {@u hidden} and the spell does not have any verbal components."
 							]
 						}
 					]
 				},
-				"After taking any action or making any perceivable audible sound, you are no longer Hidden."
-			],
-			"seeAlsoCondition": [
-    		    "Invisible"
+				"After taking any type of action or making any perceivable audible sound, you no longer have the {@u Hidden} condition. Moving from your hiding spot may also result in losing this condition, at the discretion of your DM.",
+				"{@note See also the condition: {@condition Invisible}.}"
 			]
 		},
 		{
@@ -325,7 +323,7 @@
 				}
 			],
 			"entries": [
-				"While you have the Incapacitated condition, you experience the following effects.",
+				"While you have the {@u Incapacitated} condition, you experience the following effects.",
 				{
 					"type": "entries",
 					"entries": [
@@ -333,26 +331,26 @@
 							"type": "entries",
 							"name": "Limited Abilities",
 							"entries": [
-								"You can't take any action, bonus action, or reactions. In addition, you immediately lose concentration if you are concentrating on a spell.."
+								"You can't take any action, bonus action, or reactions. In addition, you immediately lose {@status concentration} if you are concentrating on a spell."
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Slow to React, Slow to Respond",
 							"entries": [
-								"You have disadvantage on Initiative. If you are proficiency in either Strength or Dexterity Saving Throws, you lose your proficiency bonus while Incapacitated."
+								"You have disadvantage on Initiative rolls, Strength saving throws, and Dexterity saving throws."
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Stunted Interactions",
 							"entries": [
-								"Your movement speed drops to 5ft and appears uncontrolled, and your speech is mumbled and incoherent, however you are still able to make auditory noise. "
+								"Your movement speed drops to 5 feet and it appears uncontrolled. Your speech is mumbled and incoherent, however you are still able to make auditory noise."
 							]
 						}
 					]
 				},
-    		    "If you become {@u incapacitated} due to either being {@condition Paralyzed}, {@condition Petrified}, {@condition Stunned}, or {@condition Unconscious}, use their guidelines for any overlapping effects."
+    		    "If you become {@u incapacitated} due to being {@condition Paralyzed}, {@condition Petrified}, {@condition Stunned}, or {@condition Unconscious}, use their guidelines for any overlapping effects."
 			]
 		},
 		{
@@ -372,8 +370,8 @@
 				}
 			],
 			"entries": [
-				"When you have the Invisible Condition, you, as well as the belongings you are wearing and carrying, become transparent. You cannot be seen without the aid of magic or a special sense, however, your actions can still produce noise and visibly impact your environment.",
-				"While Invisible, you gain the following benefits.",
+				"{@i When you have the {@u Invisible} condition, you, as well as the belongings you are wearing and carrying, become transparent. Your actions can still produce noise and visibly impact your environment.}",
+				"While {@u Invisible}, you gain the following benefits.",
 				{
 					"type": "entries",
 					"entries": [
@@ -381,30 +379,28 @@
 							"type": "entries",
 							"name": "Initiative Boost",
 							"entries": [
-								"You gain advantage on initiative rolls."
+								"You gain advantage on Initiative rolls."
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Attacks Affected",
 							"entries": [
-								"Your attacks have advantage while attacks against you have disadvantage. You lose this benefit against individual creatures that can see you while you're still invisible."
+								"Your {@action Attack||attacks} have advantage while {@action Attack||attacks} against you have disadvantage, as long as your target/attacker does not have a special sense, or use of specific magic, to see invisible creatures."
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Hidden",
 							"entries": [
-								"You have advantage when making a Dexterity ({@skill Stealth}) Check to {@action hide}, granting the {@condition hidden} Condition on a success, however any noise made, including casting spells with a verbal component, will end the {@condition hidden} Condition, while maintaining your invisibility pending any caveats related to how you became Invisible."
+								"You have advantage when making a Dexterity ({@skill Stealth}) Check to take the {@action hide} action, granting the {@condition hidden} Condition on a success. However, any noise made, including casting spells with a verbal component, will end the {@condition hidden} Condition, while maintaining your invisibility pending any caveats related to how you became Invisible."
 							]
 						}
 					]
-				}
+				},
+				"{@note See also the condition: {@condition Hidden}.}"
 			],
-			"hasFluffImages": true,
-    		"seeAlsoCondition": [
-    		    "Hidden"
-			]
+			"hasFluffImages": true
 		},
 		{
 			"name": "Paralyzed",
@@ -423,7 +419,7 @@
 				}
 			],
 			"entries": [
-				"While you have the paralyzed, you experience the following effects.",
+				"While you have the {@u Paralyzed}, you experience the following effects.",
 				{
 					"type": "entries",
 					"entries": [
@@ -431,21 +427,21 @@
 							"type": "entries",
 							"name": "Incapacitated Plus",
 							"entries": [
-								"You are restrained and have the {@condition Incapacitated|PHB} condition. Your movement speed is dropped to 0 and cannot be increased. Additionally, you cannot speak and you automatically fail Strength and Dexterity Saving Throws. "
+								"You are restrained and have the {@condition Incapacitated} condition. Your movement speed is dropped to 0 and cannot be increased. Additionally, you cannot speak and you automatically fail Strength and Dexterity Saving Throws. "
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Easy Target",
 							"entries": [
-								"Attack rolls against you have advantage and if the attacker hits you while within 5 feet of you, the attack roll is considered a Critical Hit. "
+								"{@action Attack||Attack rolls} against you have advantage. If the attacker hits you while within 5 feet of you, the {@action Attack||attack rolls} is considered a {@b Critical Hit}. "
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Paralysis",
 							"entries": [
-								"You lose the ability to move or feel any body part from the neck down as you are frozen in the position you were in when you gained the condition. When you make a Perception check that relies on the feeling of touch or physical sensation, you automatically fail the check."
+								"You lose the ability to move or feel any body part from the neck down as you are frozen in the position you were in when you gained the condition. When you make a {@skill Perception} check that relies on the feeling of touch or physical sensation, you automatically fail the check."
 							]
 						}
 					]
@@ -470,7 +466,7 @@
 				}
 			],
 			"entries": [
-				"While you are Petrified, you experience the following effects.",
+				"While you are {@u Petrified}, you experience the following effects.",
 				{
 					"type": "entries",
 					"entries": [
@@ -485,14 +481,14 @@
 							"type": "entries",
 							"name": "Incapacitated Plus",
 							"entries": [
-								"You have the {@condition Incapacitated|PHB} condition, can't move (speed 0) or speak, and are unaware of your surroundings"
+								"You have the {@condition Incapacitated} condition, can't move (speed 0) or speak, and are unaware of your surroundings"
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Easy Target and Autofails",
 							"entries": [
-								" Attack rolls against the you have advantage. Your Armor Class is related to the material object that you are turned into. The DM will have that information. You also automatically fail all saving throws and ability checks."
+								"{@action Attack||Attack rolls} against the you have advantage. You also automatically fail all saving throws and ability checks. Your Armor Class is related to the material object that you are turned into. The DM will have that information. "
 							]
 						},
 						{
@@ -504,7 +500,7 @@
 						}
 					]
 				},
-     		   "Only a level 5 {@spell Restoration} spell or similar magic can remove the condition and transform you back into yourself."
+     		   "Only a {@spell Restoration||level 5 Restoration} spell or similar magic can remove the condition and transform you back into yourself."
 			],
 			"hasFluffImages": true
 		},
@@ -525,7 +521,7 @@
 				}
 			],
 			"entries": [
-				"While you have the Poisoned condition, you have disadvantage on all attack rolls and ability checks."
+				"While you have the {@u Poisoned} condition, you have disadvantage on all {@action Attack||attack rolls} and ability checks."
 			],
 			"hasFluffImages": true
 		},
@@ -546,7 +542,7 @@
 				}
 			],
 			"entries": [
-				"While you are Prone, you experience the following effects.",
+				"While you are {@u Prone}, you experience the following effects.",
 				{
 					"type": "entries",
 					"entries": [
@@ -554,21 +550,21 @@
 							"type": "entries",
 							"name": "Limited Mobility",
 							"entries": [
-								"Your only movement option is to crawl, unless you stand up and end the condition, which uses half of your movement to stand up."
+								"Your only movement option is to crawl, unless you stand up to end the condition. This uses half of your movement to stand up."
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Attacks Affected",
 							"entries": [
-								"You have Disadvantage on attack rolls."
+								"You have disadvantage on {@action Attack||attack rolls}."
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Melee Target",
 							"entries": [
-								"An attack roll against you has advantage if the attacker is within melee range. Otherwise, their attack roll has disadvantage."
+								"{@action Attack||attack rolls} against you has advantage, if the attacker is within melee range. Otherwise, their {@action Attack||attack rolls} has disadvantage."
 							]
 						}
 					]
@@ -593,7 +589,7 @@
 				}
 			],
 			"entries": [
-				"While you are restrained, you experience the following effects.",
+				"While you are {@u Restrained}, you experience the following effects.",
 				{
 					"type": "entries",
 					"entries": [
@@ -601,21 +597,21 @@
 							"type": "entries",
 							"name": "Speed 0",
 							"entries": [
-								"Your speed is 0 and can't increase."
+								"Your speed is 0 and cannot increase."
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Attacks Affected",
 							"entries": [
-								"{@action Attack|PHB} rolls against you have Advantage, and your attack rolls have Disadvantage."
+								"{@action Attack||Attack rolls} against you have advantage, and your {@action attack||attack rolls} have disadvantage."
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Saving Throws Affected",
 							"entries": [
-								"You have Disadvantage on Dexterity Saving Throws."
+								"You have disadvantage on Dexterity saving throws."
 							]
 						}
 					]
@@ -640,7 +636,7 @@
 				}
 			],
 			"entries": [
-				"While you have the Stunned condition, you experience the following effects.",
+				"While you have the {@u Stunned} condition, you experience the following effects.",
 				{
 					"type": "entries",
 					"entries": [
@@ -648,21 +644,21 @@
 							"type": "entries",
 							"name": "Incapacitated Plus",
 							"entries": [
-								"You have the {@condition Incapacitated|PHB} condition, your speed is 0, and you can't speak. Your physical movements from your space appear uncontrolled and uncoordinated. "
+								"You have the {@condition Incapacitated|PHB} condition, your speed is 0, and you cannot speak. Your physical movements from your space appear uncontrolled and uncoordinated. "
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Awareness Challenges",
 							"entries": [
-								"You struggle maintaining awareness of your situation and environment. Making any Intelligence, Wisdom, or Charisma check while stunned is made with disadvantage."
+								"You struggle maintaining awareness of your situation and environment. Your Intelligence, Wisdom, and Charisma checks are made with disadvantage."
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Easy Target",
 							"entries": [
-								"{You automatically fail Strength and Dexterity Saving Throws, and attack rolls against you have advantage against you."
+								"{You automatically fail Strength and Dexterity Saving Throws, and {@action Attack||attack rolls} against you have advantage against you."
 							]
 						}
 					]
@@ -687,7 +683,7 @@
 				}
 			],
 			"entries": [
-				"While you are unconscious, you experience the following effects.",
+				"While you are {@u unconscious}, you experience the following effects.",
 				{
 					"type": "entries",
 					"entries": [
@@ -695,36 +691,45 @@
 							"type": "entries",
 							"name": "Multi-Conditions",
 							"entries": [
-								"You have the {@condition Incapacitated|PHB} and {@condition Prone|PHB} conditions, and you drop whatever you're holding. When this condition ends, you remain {@condition Prone|PHB}."
+								"You have the {@condition Incapacitated} and {@condition Prone} conditions, and you drop whatever you're holding. When this condition ends, you remain {@condition prone}."
 							]
 						},
 						{
 							"type": "entries",
 							"name": "No Response",
 							"entries": [
-								"You automatically fail Strength and Dexterity Saving Throws. Your speed is 0 as you can't move, you can't speak, and you are unaware of your surroundings."
+								"You automatically fail Strength and Dexterity Saving Throws. Your speed is 0 as you cannot move, cannot speak, and are unaware of your surroundings."
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Easy Target",
 							"entries": [
-								"Attack rolls against you have advantage. If the attacker hits you while within 5 feet of you, the attack roll is considered a Critical Hit. "
+								"{@action Attack||Attack rolls} against you have advantage. If the attacker hits you while within 5 feet of you, the {@action Attack||attack roll} is considered a {@b Critical Hit}. "
 							]
-						},
+						}
+						
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Importance of the \"How\"",
+					"entries": [
+						"Being {@u unconscious} is something every character experiences, which is why \"How a Player becomes Unconscious\" is important to know. A player who is sleeping is {@u unconscious}. A player who faints becomes {@u unconscious}. A player who is targeted with the {@spell Sleep} spell has a risk of becoming {@u unconscious}. There is one situation where becoming {@u unconscious} comes with serious consequences, such as making {@quickref Death Saving Throws||3||Death Saving Throws}.",
 						{
 							"type": "entries",
-							"name": "Specialized Effects",
+							"name": "Zero Hit Points",
 							"entries": [
-								"If you gain this condition due to dropping to 0 Hit Points, you experience additional effects.",
+								"If you gain this condition due to dropping to {@u 0 Hit Points}, you experience additional effects.",
                     		    {
-                         		   "type": "list",
-                          		  "items": [
+                         			"type": "list",
+                          		  	"items": [
                              		   "Taking any damage results in 1 Failed Death Saving Throw.",
-                             		   "Taking damage from a Critical Hit results in 2 Failed Death Saving Throws.",
-                             		   "Regaining any number of hit points ends the Unconscious Condition."
-                            ]
-                       	}
+                             		   "Taking damage from a {@b Critical Hit} results in 2 Failed Death Saving Throws.",
+                             		   "Regaining any number of hit points ends the {@u Unconscious} condition.",
+									   "Being stabilized without gaining any hit points, maintains the condition, however you no longer need to make Death Saving Throws, until you take damage again."
+                            		]
+                       			}
 							]
 						}
 					]
