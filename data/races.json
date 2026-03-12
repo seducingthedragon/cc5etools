@@ -12852,6 +12852,161 @@
 			"hasFluffImages": true
 		},
 		{
+			"name": "Mushroomfolk",
+			"source": "MPMM",
+			"page": 27,
+			"lineage": true,
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"age": {
+				"max": 50
+			},
+			"darkvision": 60,
+			"traitTags": [
+				"Sunlight Sensitivity"
+			],
+			"skillProficiencies": [
+				{
+					"survival": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"other": true,
+					"choose": {
+						"from": [
+							"common",
+							"undercommon"
+						],
+						"count": 1
+					}
+				}
+			],
+			"resist": [
+				"poison"
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"Accustomed to life underground, you can see in {@quickref Vision and Light|PHB|2|0|dim light} within 60 feet of you as if it were {@quickref Vision and Light|PHB|2|0|bright light}, and in {@quickref Vision and Light|PHB|2|0|darkness} as if it were {@quickref Vision and Light|PHB|2|0|dim light}. You can't discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fungoid Form",
+					"entries": [
+						"You are a humanoid, though the fungal nature of your body and your unique diet of decayed vegetable and animal matter marks you with some plant-like characteristics. You have advantage on saving throws against poison, and you have resistance to poison damage. In addition, you are immune to disease."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"Though exposure to sunlight will not kill you like most myconids, you have disadvantage on attack rolls and on Wisdom ({@skill Perception}) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Hardy Survivor",
+					"entries": [
+						"Your upbringing in mushroomfolk society has taught you how to defend yourself and find food. You have proficiency in the {@skill Survival} skill."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Rapport Spores",
+					"entries": [
+						"While Mushroomfolk developed the ability to speak verbally as part of their humanoid nature, they maintained the telepathic communication of their plant cousins. You can communicate telepathically with all creatures within 30 ft. of you, provided the other creature understands at least one language.",
+						"You can activate and deactivate these spores at will."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Action Spores",
+					"entries": [
+						"As a Mushroomfolk, you are able to use spores similarly to your plant cousins, the Myconids. As an action, you can use one of your spores below, lasting for the duration specified. You can use this trait, regardless of which spores you use, once per short or long rest. Some spores may use your Spores Save DC, formula below.",
+						{
+							"type": "abilityDc",
+							"name": "Spores",
+							"attributes": [
+								"str",
+								"con",
+								"wis"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items":
+							[
+								{
+									"type": "item",
+									"name": "Hallucination Spores (Once per Short or Long Rest)",
+									"entries": [
+										"As an action, you can produce spores that effect all creatures within 30 feet of you that aren't undead, constructs, or elementals. These creatures are all affected as per the cantrip {@spell Minor Illusion} for 1 minute. You do not need to concentrate on this effect."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Pacifying Spores (Once per Short or Long Rest)",
+									"entries": [
+										"As an action, you can force a creature within 5 feet of you to make a Constitution saving throw. On a failed save, the target is {@condition stunned} for 1 minute. It can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Mushroomfolk and your choice of Common or Undercommon."
+					]
+				}
+			],
+			"hasFluffImages": true
+		},
+		{
 			"name": "Naga",
 			"source": "PSA",
 			"page": 21,
@@ -25877,6 +26032,224 @@
 						"You have proficiency with {@item navigator's tools|phb} and in the {@skill Survival} skill."
 					],
 					"type": "entries"
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Corrosive",
+			"source": "MPMM",
+			"raceName": "Mushroomfolk",
+			"raceSource": "MPMM",
+			"page": 27,
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"resist": [
+				"acid"
+			],
+			"skillProficiencies": [
+				{
+					"athletics": true
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Acid Cap",
+					"entries": [
+						"As an Acid Cap Mushroomfolk, you gain proficiency in the {@skill Athletics} skill and you have resistance to acid damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Acid Cap Spores",
+					"entries": [
+						"As a Mushroomfolk, you are able to use spores similarly to your plant cousins, the Myconids. As an action, you can use one of your spores below, lasting for the duration specified. You can use this trait, regardless of which spores you use, a number of times equal to your Constitution Modifier per long rest. Some spores may use your Spores Save DC, formula below.",
+						{
+							"type": "abilityDc",
+							"name": "Spores",
+							"attributes": [
+								"str",
+								"con",
+								"wis"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items":
+							[
+								{
+									"type": "entries",
+									"name": "Acid Spores (Reaction)",
+									"entries": [
+										"When you are hit by a melee weapon attack within 5 feet of you, you can use your reaction to emit acidic spores. If you do, the attacker takes acid damage equal to half your level (rounded up)."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Hallucination Spores (Action)",
+									"entries": [
+										"As an action, you can produce spores that effect all creatures within 30 feet of you that aren't undead, constructs, or elementals. These creatures are all affected as per the cantrip {@spell Minor Illusion} for 1 minute. You do not need to concentrate on this effect."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Pacifying Spores (Action)",
+									"entries": [
+										"As an action, you can force a creature within 5 feet of you to make a Constitution saving throw. On a failed save, the target is {@condition stunned} for 1 minute. It can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+									]
+								}
+							]
+						}
+					],
+					"data": {
+						"overwrite": "Action Spores"
+					}
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Favored",
+			"source": "MPMM",
+			"raceName": "Mushroomfolk",
+			"raceSource": "MPMM",
+			"page": 28,
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"skillProficiencies": [
+				{
+					"persuasion": true
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"3": {
+							"daily": {
+								"1": [
+									"bless"
+								]
+							}
+						}
+					},
+					"ability": {
+								"choose": [
+									"int",
+									"wis",
+									"cha"
+								]
+							},
+					"known": {
+						"1": [
+							"spare the dying"
+						]
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Favored Leadership",
+					"entries": [
+						"As a Favored Mushroomfolk, you gain proficiency in the {@skill Persuasion} skill."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Blessed Help",
+					"entries": [
+						"Your intuition and connection to your allies allows you to assist and protect them. You know the {@spell Spare the Dying} cantrip. When you reach 3rd level, you can cast the {@spell Bless} once per long rest, without material components, with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you select this race).",
+						"{@note If you have a Spellcasting or Pact Magic class feature, you can cast the leveled spells from this trait using those spell slots, following the casting rules provided by your class.}"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Favored Spores",
+					"entries": [
+						"As a Mushroomfolk, you are able to use spores similarly to your plant cousins, the Myconids. As an action, you can use one of your spores below, lasting for the duration specified. You can use this trait, regardless of which spores you use, a number of times equal to your Constitution Modifier per long rest. Some spores may use your Spores Save DC, formula below.",
+						{
+							"type": "abilityDc",
+							"name": "Spores",
+							"attributes": [
+								"str",
+								"con",
+								"wis"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items":
+							[
+								{
+									"type": "item",
+									"name": "Restful Spores",
+									"entries": [
+										"If you or any friendly creatures within 30 feet of you regain hit points at the end of a {@quickref resting|PHB|2|0|short rest} by spending one or more Hit Dice, each of those creatures regains additional hit points equal to your proficiency bonus."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Hallucination Spores (Action)",
+									"entries": [
+										"As an action, you can produce spores that effect all creatures within 30 feet of you that aren't undead, constructs, or elementals. These creatures are all affected as per the cantrip {@spell Minor Illusion} for 1 minute. You do not need to concentrate on this effect."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Pacifying Spores (Action)",
+									"entries": [
+										"As an action, you can force a creature within 5 feet of you to make a Constitution saving throw. On a failed save, the target is {@condition stunned} for 1 minute. It can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+									]
+								}
+							]
+						}
+					],
+					"data": {
+						"overwrite": "Action Spores"
+					}
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Scout",
+			"source": "MPMM",
+			"raceName": "Mushroomfolk",
+			"raceSource": "MPMM",
+			"page": 28,
+			"size": [
+				"S"
+			],
+			"speed": 35,
+			"skillProficiencies": [
+				{
+					"stealth": true
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Stealth Proficiency",
+					"entries": [
+						"You have proficiency in the {@skill Stealth} skill."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Adaptable Camouflage",
+					"entries": [
+						"If you spend at least 1 minute in an environment with ample naturally occurring plants or fungi, such as a grassland, a forest, or an underground fungal cavern, you can adjust your natural coloration to blend in with the local plant life. If you do so, you have advantage on Dexterity ({@skill Stealth}) checks for the next 24 hours while in that environment."
+					]
 				}
 			],
 			"hasFluff": true,

@@ -2371,6 +2371,14 @@
                 "SCC": {
                     "Strixhaven Initiate": true
                 }
+            },
+            "race": {
+                "MPMM": {
+                    "Mushroomfolk (Favored)": {
+                        "baseName": "Mushroomfolk",
+                        "baseSource": "MPMM"
+                    }
+                }
             }
         },
         "blight": {
@@ -16886,6 +16894,10 @@
             },
             "race": {
                 "MPMM": {
+                    "Mushroomfolk (Favored)": {
+                        "baseName": "Mushroomfolk",
+                        "baseSource": "MPMM"
+                    },
                     "Shadar-Kai": true
                 }
             }
