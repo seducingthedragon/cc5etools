@@ -1000,10 +1000,8 @@
 			"name": "Bloodied",
 			"source": "PHB",
 			"page": 203,
-			"srd": true,
-			"basicRules": true,
 			"entries": [
-				"A creature is Bloodied while it has half its Hit Points or fewer remaining."
+				"A creature is {@u Bloodied} while it has half its Hit Points or fewer remaining."
 			]
 		},
 		{
@@ -1013,18 +1011,35 @@
 			"srd": true,
 			"basicRules": true,
 			"entries": [
-				"Some spells require you to maintain {@status concentration} in order to keep their magic active. If you lose {@status concentration}, such a spell ends.",
-				"If a spell must be maintained with {@status concentration}, that fact appears in its Duration entry, and the spell specifies how long you can concentrate on it. You can end {@status concentration} at any time (no action required).",
-				"Normal activity, such as moving and attacking, doesn't interfere with {@status concentration}. The following factors can break {@status concentration}:",
+				"If a spell requires you to maintain {@u concentration}, the spell will state that with its duration along with the maximum length the spell can be maintained. You can end {@u concentration} at any time (no action required).",
+				"Normal activity, such as moving and attacking, doesn't interfere with {@u concentration}. The following factors can break {@u concentration}:",
 				{
 					"type": "list",
 					"items": [
-						"{@b Casting another spell that requires concentration.} You lose {@status concentration} on a spell if you cast another spell that requires {@status concentration}. You can't concentrate on two spells at once.",
-						"{@b Taking damage.} Whenever you take damage while you are {@status concentration||concentrating} on a spell, you must make a Constitution saving throw to maintain your {@status concentration}. The DC equals 10 or half the damage you take, whichever number is higher. If you take damage from multiple sources, such as an arrow and a dragon's breath, you make a separate saving throw for each source of damage.",
-						"{@b Being incapacitated or killed.} You lose {@status concentration} on a spell if you are {@condition incapacitated} or if you die."
+						{
+							"type": "item",
+							"name": "Casting another Concentration Spell or Activity",
+							"entries": [
+								"You lose {@u concentration} on the first spell if you cast another spell that requires {@u concentration}. You can't concentrate on two spells at once."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Taking Damage and Lacking the Constitution",
+							"entries": [
+								"When you take damage while {@u concentrating}, you must make a Constitution saving throw to maintain it. The DC to meet is {@u DC 10} or {@u DC Half the damage you just took}, whichever number is higher. If you take damage from multiple sources, such as an arrow and a dragon's breath, you make a separate saving throw for each source of damage."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Being Incapacitated or Killed",
+							"entries": [
+								"You lose {@u concentration} on a spell if you are {@condition incapacitated} or if you die."
+							]
+						}
 					]
 				},
-				"The DM might also decide that certain environmental phenomena, such as a wave crashing over you while you're on a storm-tossed ship, require you to succeed on a {@dc 10} Constitution saving throw to maintain {@status concentration} on a spell."
+				"Additionally, your DM may determine other reasons that can risk your {@u concentration} breaking."
 			]
 		},
 		{
@@ -1034,7 +1049,7 @@
             "srd": true,
             "basicRules": true,
             "entries": [
-                "Sometimes when you and your allies, as well as your enemies, are surprised, they are not always \"caught with their pants down,\" and yet sometimes they are. Your DM will let you know how surprise has impacted your initiative relating to one of the two ways listed below. Additionally, a member of a group can be surprised even if the other members aren't.",
+                "Sometimes when you and your allies, as well as your enemies, are {@u surprised}, they are not always \"caught with their pants down,\" and yet sometimes they are. Your DM will let you know how surprise has impacted your initiative relating to one of the two ways listed below. Additionally, a member of a group can be surprised even if the other members aren't.",
                 {
                     "type": "entries",
                     "entries": [
@@ -1042,14 +1057,14 @@
                             "type": "entries",
                             "name": "Shocked by the Unexpected",
                             "entries": [
-                                "When you're surprised in this manner, you roll initiative as you would normally do, however you can't move or take an action on your first turn of the combat, and you can't take a reaction until that turn ends."
+                                "When you're {@u surprised} in this manner, you roll initiative as you would normally do, however you can't move or take an action on your first turn of the combat, and you can't take a reaction until that turn ends."
                             ]
                         },
                         {
                             "type": "entries",
-                            "name": "Ready but Wasn't",
+                            "name": "Ready but Not Completly",
                             "entries": [
-                                "When someone is surprised in this way, they have Disadvantage on their initiative rolls. They also get to interact within the first round of combat under normal conditions."
+                                "When someone is {@u surprised} in this way, they have Disadvantage on their initiative rolls. They also get to interact within the first round of combat under normal conditions."
                             ]
                         }
                     ]
